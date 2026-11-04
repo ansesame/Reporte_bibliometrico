@@ -1,7 +1,7 @@
 {
     "meta": {
-        "count": 19,
-        "db_response_time_ms": 91,
+        "count": 17,
+        "db_response_time_ms": 79,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -182,7 +182,7 @@
             "doi": "https://doi.org/10.1007/s11069-024-06686-y",
             "title": "Historical trends and future implications of disasters in Honduras",
             "display_name": "Historical trends and future implications of disasters in Honduras",
-            "relevance_score": 205.13983,
+            "relevance_score": 205.62898,
             "publication_year": 2024,
             "publication_date": "2024-05-22",
             "ids": {
@@ -423,11 +423,11 @@
                 "value_usd": 3790
             },
             "apc_paid": null,
-            "fwci": 10.0843,
+            "fwci": 7.8949,
             "has_fulltext": false,
-            "cited_by_count": 14,
+            "cited_by_count": 15,
             "citation_normalized_percentile": {
-                "value": 0.97900977,
+                "value": 0.97262508,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": true
             },
@@ -764,8 +764,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 56,
@@ -843,7 +843,7 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 6
+                    "cited_by_count": 7
                 },
                 {
                     "year": 2025,
@@ -854,7 +854,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-09-13T09:14:26.050021",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2024-05-23T00:00:00"
         },
         {
@@ -862,7 +862,7 @@
             "doi": "https://doi.org/10.18356/67a3a7e6-en-fr",
             "title": "No. 50971. International development association and Honduras",
             "display_name": "No. 50971. International development association and Honduras",
-            "relevance_score": 201.17865,
+            "relevance_score": 200.93929,
             "publication_year": 2020,
             "publication_date": "2020-06-11",
             "ids": {
@@ -1156,17 +1156,17 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/17",
+                    "display_name": "Partnerships for the goals",
                     "score": 1.0,
-                    "display_name": "Partnerships for the goals"
+                    "id": "https://metadata.un.org/sdg/17"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -1293,7 +1293,7 @@
             "doi": "https://doi.org/10.5281/zenodo.18086546",
             "title": "Gestión del riesgo de desastres en la formación docente de Universidad Pedagógica de Honduras",
             "display_name": "Gestión del riesgo de desastres en la formación docente de Universidad Pedagógica de Honduras",
-            "relevance_score": 197.19823,
+            "relevance_score": 197.18573,
             "publication_year": 2025,
             "publication_date": "2025-10-07",
             "ids": {
@@ -1778,17 +1778,17 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/4",
+                    "display_name": "Quality education",
                     "score": 0.9235000014305115,
-                    "display_name": "Quality education"
+                    "id": "https://metadata.un.org/sdg/4"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7126228311.pdf",
@@ -2169,7 +2169,7 @@
             "doi": "https://doi.org/10.18235/0002881",
             "title": "Gestión del riesgo de desastres y resiliencia comunitaria en barrios vulnerables en Guatemala, El Salvador y Honduras",
             "display_name": "Gestión del riesgo de desastres y resiliencia comunitaria en barrios vulnerables en Guatemala, El Salvador y Honduras",
-            "relevance_score": 175.90204,
+            "relevance_score": 176.39203,
             "publication_year": 2020,
             "publication_date": "2020-09-29",
             "ids": {
@@ -2279,7 +2279,7 @@
             "apc_paid": null,
             "fwci": null,
             "has_fulltext": false,
-            "cited_by_count": 0,
+            "cited_by_count": 1,
             "citation_normalized_percentile": null,
             "cited_by_percentile_year": null,
             "biblio": {
@@ -2465,22 +2465,22 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 1.0,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.41670000553131104,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -2612,8 +2612,13 @@
                     42
                 ]
             },
-            "counts_by_year": [],
-            "updated_date": "2026-09-29T14:09:16.559479",
+            "counts_by_year": [
+                {
+                    "year": 2026,
+                    "cited_by_count": 1
+                }
+            ],
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2020-12-07T00:00:00"
         },
         {
@@ -2621,7 +2626,7 @@
             "doi": "https://doi.org/10.1016/j.worlddev.2020.104996",
             "title": "Making social services work better for the poor: Evidence from a natural experiment with health sector decentralization in Honduras",
             "display_name": "Making social services work better for the poor: Evidence from a natural experiment with health sector decentralization in Honduras",
-            "relevance_score": 169.71626,
+            "relevance_score": 170.91508,
             "publication_year": 2020,
             "publication_date": "2020-05-12",
             "ids": {
@@ -2747,11 +2752,11 @@
                 "value_usd": 2600
             },
             "apc_paid": null,
-            "fwci": 4.6758,
+            "fwci": 4.462,
             "has_fulltext": false,
-            "cited_by_count": 26,
+            "cited_by_count": 29,
             "citation_normalized_percentile": {
-                "value": 0.9505193,
+                "value": 0.94831171,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": true
             },
@@ -3165,25 +3170,25 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
+                    "display_name": "Peace, justice, and strong institutions",
                     "score": 0.8046000003814697,
-                    "display_name": "Peace, justice, and strong institutions"
+                    "id": "https://metadata.un.org/sdg/16"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/3",
+                    "display_name": "Good health and well-being",
                     "score": 0.428600013256073,
-                    "display_name": "Good health and well-being"
+                    "id": "https://metadata.un.org/sdg/3"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.4074000120162964,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 }
             ],
             "study_designs": [
                 {
-                    "id": "https://openalex.org/study-designs/observational-study",
-                    "display_name": "Observational Study"
+                    "display_name": "Observational Study",
+                    "id": "https://openalex.org/study-designs/observational-study"
                 }
             ],
             "awards": [],
@@ -3205,8 +3210,8 @@
                 }
             ],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 91,
@@ -3214,9 +3219,7 @@
                 "https://openalex.org/W117193865",
                 "https://openalex.org/W145835555",
                 "https://openalex.org/W562431879",
-                "https://openalex.org/W611321302",
                 "https://openalex.org/W1485991056",
-                "https://openalex.org/W1492567276",
                 "https://openalex.org/W1509292812",
                 "https://openalex.org/W1516939497",
                 "https://openalex.org/W1536565679",
@@ -3232,6 +3235,7 @@
                 "https://openalex.org/W1974644091",
                 "https://openalex.org/W1983205396",
                 "https://openalex.org/W1989681489",
+                "https://openalex.org/W1992375205",
                 "https://openalex.org/W1993483985",
                 "https://openalex.org/W1994062728",
                 "https://openalex.org/W1994263859",
@@ -3284,6 +3288,7 @@
                 "https://openalex.org/W2161753984",
                 "https://openalex.org/W2232238163",
                 "https://openalex.org/W2259114710",
+                "https://openalex.org/W2282237924",
                 "https://openalex.org/W2312609030",
                 "https://openalex.org/W2312811521",
                 "https://openalex.org/W2320003789",
@@ -3319,7 +3324,7 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 1
+                    "cited_by_count": 3
                 },
                 {
                     "year": 2025,
@@ -3327,7 +3332,7 @@
                 },
                 {
                     "year": 2024,
-                    "cited_by_count": 3
+                    "cited_by_count": 4
                 },
                 {
                     "year": 2023,
@@ -3346,7 +3351,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2020-05-21T00:00:00"
         },
         {
@@ -3354,7 +3359,7 @@
             "doi": null,
             "title": "Honduras - LATIN AMERICA AND CARIBBEAN- P131094- Disaster Risk Management Project - Procurement Plan",
             "display_name": "Honduras - LATIN AMERICA AND CARIBBEAN- P131094- Disaster Risk Management Project - Procurement Plan",
-            "relevance_score": 157.5515,
+            "relevance_score": 157.6719,
             "publication_year": 2019,
             "publication_date": "2019-05-27",
             "ids": {
@@ -3641,8 +3646,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -3669,7 +3674,7 @@
             "doi": "https://doi.org/10.1596/43137",
             "title": "Understanding Compound Events in Fragile Contexts: Retrospective Compound Risk Analysis of Tropical Storms Eta and lota in Honduras",
             "display_name": "Understanding Compound Events in Fragile Contexts: Retrospective Compound Risk Analysis of Tropical Storms Eta and lota in Honduras",
-            "relevance_score": 149.23071,
+            "relevance_score": 149.056,
             "publication_year": 2022,
             "publication_date": "2022-04-24",
             "ids": {
@@ -4026,8 +4031,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -4596,7 +4601,7 @@
             "doi": "https://doi.org/10.5377/rus.v6iix.19516",
             "title": "Análisis geoespacial de los proyectos de vinculación relacionados a gestión de riesgo de desastres y adaptación al cambio climático de la DVUS/UNAH 2010–2023 y el nivel de vulnerabilidad municipal en Honduras",
             "display_name": "Análisis geoespacial de los proyectos de vinculación relacionados a gestión de riesgo de desastres y adaptación al cambio climático de la DVUS/UNAH 2010–2023 y el nivel de vulnerabilidad municipal en Honduras",
-            "relevance_score": 141.82242,
+            "relevance_score": 142.08969,
             "publication_year": 2024,
             "publication_date": "2024-12-12",
             "ids": {
@@ -4744,7 +4749,7 @@
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.36004308,
+                "value": 0.32364363,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -4967,39 +4972,42 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.875,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.5378999710083008,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.5351999998092651,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/17",
+                    "display_name": "Partnerships for the goals",
                     "score": 0.5217000246047974,
-                    "display_name": "Partnerships for the goals"
+                    "id": "https://metadata.un.org/sdg/17"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4412792707.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W4412792707.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 2,
+            "referenced_works": [
+                "https://openalex.org/W2069996931",
+                "https://openalex.org/W2988740752"
+            ],
             "related_works": [
                 "https://openalex.org/W2988740752",
                 "https://openalex.org/W187019438",
@@ -5359,7 +5367,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-08-21T09:56:20.448147",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2025-10-10T00:00:00"
         },
         {
@@ -5367,7 +5375,7 @@
             "doi": null,
             "title": "Disclosable Version of the ISR - Honduras DRM Development Policy Credit with a Catastrophe Deferred Drawdown Option (Cat DDO) - P172567 - Sequence No : 01",
             "display_name": "Disclosable Version of the ISR - Honduras DRM Development Policy Credit with a Catastrophe Deferred Drawdown Option (Cat DDO) - P172567 - Sequence No : 01",
-            "relevance_score": 119.348236,
+            "relevance_score": 119.5751,
             "publication_year": 2020,
             "publication_date": "2020-06-03",
             "ids": {
@@ -5649,8 +5657,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -5677,7 +5685,7 @@
             "doi": null,
             "title": "Appraisal Program Information Document (PID) - Honduras DRM Development Policy Credit with a Catastrophe Deferred Drawdown Option (Cat DDO) - P172567",
             "display_name": "Appraisal Program Information Document (PID) - Honduras DRM Development Policy Credit with a Catastrophe Deferred Drawdown Option (Cat DDO) - P172567",
-            "relevance_score": 118.58073,
+            "relevance_score": 119.10403,
             "publication_year": 2019,
             "publication_date": "2019-11-14",
             "ids": {
@@ -5931,8 +5939,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -5959,7 +5967,7 @@
             "doi": "https://doi.org/10.5377/umh-s.v6i1.21649",
             "title": "CAMBIO CLIMÁTICO Y LA GESTIÓN INTEGRAL DEL RIESGO DE DESASTRES: UN ENFOQUE HISTÓRICO-CONTINENTAL Y SU TRASCENDENCIA EN HONDURAS",
             "display_name": "CAMBIO CLIMÁTICO Y LA GESTIÓN INTEGRAL DEL RIESGO DE DESASTRES: UN ENFOQUE HISTÓRICO-CONTINENTAL Y SU TRASCENDENCIA EN HONDURAS",
-            "relevance_score": 107.49155,
+            "relevance_score": 107.7617,
             "publication_year": 2025,
             "publication_date": "2025-12-11",
             "ids": {
@@ -6050,7 +6058,7 @@
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.3416339,
+                "value": 0.30823464,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -6317,24 +6325,26 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 1.0,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4417442329.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W4417442329.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 1,
+            "referenced_works": [
+                "https://openalex.org/W3002022765"
+            ],
             "related_works": [
                 "https://openalex.org/W3087778638",
                 "https://openalex.org/W6968402315",
@@ -6709,7 +6719,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-10-28T10:33:24.094632",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2025-12-17T00:00:00"
         },
         {
@@ -6717,7 +6727,7 @@
             "doi": null,
             "title": "Evaluación de relaciones entre extensión de inundación e impactos en cultivos en la cuenca del Río Aguán en honduras, utilizando datos de tecnología radar de apertura sintética (SAR)",
             "display_name": "Evaluación de relaciones entre extensión de inundación e impactos en cultivos en la cuenca del Río Aguán en honduras, utilizando datos de tecnología radar de apertura sintética (SAR)",
-            "relevance_score": 97.54243,
+            "relevance_score": 98.24997,
             "publication_year": 2023,
             "publication_date": "2023-01-01",
             "ids": {
@@ -7097,27 +7107,27 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/2",
+                    "display_name": "Zero hunger",
                     "score": 0.6735000014305115,
-                    "display_name": "Zero hunger"
+                    "id": "https://metadata.un.org/sdg/2"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/6",
+                    "display_name": "Clean water and sanitation",
                     "score": 0.6618000268936157,
-                    "display_name": "Clean water and sanitation"
+                    "id": "https://metadata.un.org/sdg/6"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.46149998903274536,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7135295166.pdf",
@@ -7923,7 +7933,7 @@
             "doi": null,
             "title": "Disclosable Restructuring Paper - Disaster Risk Management Project - P131094",
             "display_name": "Disclosable Restructuring Paper - Disaster Risk Management Project - P131094",
-            "relevance_score": 66.24486,
+            "relevance_score": 65.971985,
             "publication_year": 2019,
             "publication_date": "2019-04-08",
             "ids": {
@@ -8238,17 +8248,17 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/17",
+                    "display_name": "Partnerships for the goals",
                     "score": 0.5217000246047974,
-                    "display_name": "Partnerships for the goals"
+                    "id": "https://metadata.un.org/sdg/17"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -8596,7 +8606,7 @@
             "doi": "https://doi.org/10.15359/rgac.75-2.10",
             "title": "Método para el cálculo del riesgo de inundaciones a escala de cuencas y municipios en América Central",
             "display_name": "Método para el cálculo del riesgo de inundaciones a escala de cuencas y municipios en América Central",
-            "relevance_score": 46.380745,
+            "relevance_score": 46.341507,
             "publication_year": 2025,
             "publication_date": "2025-07-01",
             "ids": {
@@ -8836,16 +8846,16 @@
             "corresponding_institution_ids": [],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.8254,
+            "fwci": 0.6995,
             "has_fulltext": true,
             "cited_by_count": 2,
             "citation_normalized_percentile": {
-                "value": 0.6958457,
+                "value": 0.65539158,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 96,
+                "min": 95,
                 "max": 97
             },
             "biblio": {
@@ -9097,29 +9107,36 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/6",
+                    "display_name": "Clean water and sanitation",
                     "score": 0.53329998254776,
-                    "display_name": "Clean water and sanitation"
+                    "id": "https://metadata.un.org/sdg/6"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.5142999887466431,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4411995000.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W4411995000.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 6,
+            "referenced_works": [
+                "https://openalex.org/W2953976602",
+                "https://openalex.org/W3207316924",
+                "https://openalex.org/W4200153564",
+                "https://openalex.org/W4323659749",
+                "https://openalex.org/W4393494327",
+                "https://openalex.org/W4395961498"
+            ],
             "related_works": [
                 "https://openalex.org/W6981685680",
                 "https://openalex.org/W2735959349",
@@ -9748,7 +9765,7 @@
                     "cited_by_count": 2
                 }
             ],
-            "updated_date": "2026-10-08T09:06:37.294493",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2025-10-10T00:00:00"
         },
         {
@@ -9756,7 +9773,7 @@
             "doi": "https://doi.org/10.17271/23178604123720245424",
             "title": "Aplicabilidade de estratégias endêmicas, de desastres e resiliência aos impactos climáticos no Século XXI",
             "display_name": "Aplicabilidade de estratégias endêmicas, de desastres e resiliência aos impactos climáticos no Século XXI",
-            "relevance_score": 36.089233,
+            "relevance_score": 36.03276,
             "publication_year": 2024,
             "publication_date": "2024-08-30",
             "ids": {
@@ -10257,27 +10274,27 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.8787999749183655,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.821399986743927,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/15",
+                    "display_name": "Life on land",
                     "score": 0.4390000104904175,
-                    "display_name": "Life on land"
+                    "id": "https://metadata.un.org/sdg/15"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4406123118.pdf",
@@ -10676,7 +10693,7 @@
             "doi": "https://doi.org/10.1016/j.ijdrr.2020.101732",
             "title": "The challenges of impact evaluation: Attempting to measure the effectiveness of community-based disaster risk management",
             "display_name": "The challenges of impact evaluation: Attempting to measure the effectiveness of community-based disaster risk management",
-            "relevance_score": 35.329636,
+            "relevance_score": 35.590443,
             "publication_year": 2020,
             "publication_date": "2020-06-29",
             "ids": {
@@ -11027,11 +11044,11 @@
                 "currency": "USD",
                 "value_usd": 1200
             },
-            "fwci": 11.3451,
+            "fwci": 10.573,
             "has_fulltext": true,
-            "cited_by_count": 61,
+            "cited_by_count": 65,
             "citation_normalized_percentile": {
-                "value": 0.98396743,
+                "value": 0.98275593,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": true
             },
@@ -11512,19 +11529,19 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/3",
+                    "display_name": "Good health and well-being",
                     "score": 0.6240000128746033,
-                    "display_name": "Good health and well-being"
+                    "id": "https://metadata.un.org/sdg/3"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/17",
+                    "display_name": "Partnerships for the goals",
                     "score": 0.5120999813079834,
-                    "display_name": "Partnerships for the goals"
+                    "id": "https://metadata.un.org/sdg/17"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.47999998927116394,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 }
             ],
             "study_designs": [],
@@ -11557,8 +11574,8 @@
                 }
             ],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W3037078107.pdf",
@@ -12055,11 +12072,11 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 12
+                    "cited_by_count": 15
                 },
                 {
                     "year": 2025,
-                    "cited_by_count": 4
+                    "cited_by_count": 5
                 },
                 {
                     "year": 2024,
@@ -12082,7 +12099,7 @@
                     "cited_by_count": 3
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2020-07-02T00:00:00"
         },
         {
@@ -12090,7 +12107,7 @@
             "doi": "https://doi.org/10.1108/s0731-90532026000047a002",
             "title": "Understanding Vulnerability to Poverty and Natural Disasters in Latin America and the Caribbean",
             "display_name": "Understanding Vulnerability to Poverty and Natural Disasters in Latin America and the Caribbean",
-            "relevance_score": 35.18579,
+            "relevance_score": 34.914207,
             "publication_year": 2026,
             "publication_date": "2026-04-17",
             "ids": {
@@ -12132,7 +12149,7 @@
                 "raw_type": "book-chapter"
             },
             "volume": {
-                "id": "https://openalex.org/W7154728069",
+                "id": "https://openalex.org/W7153488442",
                 "display_name": "Econometrics of Climate, Energy, and Green Transition"
             },
             "type": "book-chapter",
@@ -12313,7 +12330,7 @@
             "has_fulltext": false,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.30461177,
+                "value": 0.28908945,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -12632,27 +12649,27 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 1.0,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.7390999794006348,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 }
             ],
             "study_designs": [
                 {
-                    "id": "https://openalex.org/study-designs/observational-study",
-                    "display_name": "Observational Study"
+                    "display_name": "Observational Study",
+                    "id": "https://openalex.org/study-designs/observational-study"
                 }
             ],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 14,
@@ -13123,3200 +13140,8 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-10-14T16:39:01.820549",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2026-04-18T00:00:00"
-        },
-        {
-            "id": "https://openalex.org/W7135224551",
-            "doi": "https://doi.org/10.1596/1813-9450-10826",
-            "title": "Understanding Vulnerability to Poverty and Natural Disasters in Latin America and the Caribbean",
-            "display_name": "Understanding Vulnerability to Poverty and Natural Disasters in Latin America and the Caribbean",
-            "relevance_score": 34.47216,
-            "publication_year": 2024,
-            "publication_date": "2024-06-28",
-            "ids": {
-                "openalex": "https://openalex.org/W7135224551",
-                "doi": "https://doi.org/10.1596/1813-9450-10826"
-            },
-            "language": "en",
-            "primary_location": {
-                "id": "pmh:oai:openknowledge.worldbank.org:10986/41798",
-                "doi": "https://doi.org/10.1596/1813-9450-10826",
-                "is_oa": true,
-                "landing_page_url": "https://hdl.handle.net/10986/41798",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4377196270",
-                    "display_name": "The World Bank Open Knowledge Repository (World Bank)",
-                    "issn_l": null,
-                    "issn": null,
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [],
-                    "host_organization": "https://openalex.org/I1334329717",
-                    "host_organization_name": "World Bank",
-                    "host_organization_lineage": [
-                        "https://openalex.org/I1334329717"
-                    ],
-                    "host_organization_lineage_names": [],
-                    "type": "repository"
-                },
-                "license": "cc-by",
-                "license_id": "https://openalex.org/licenses/cc-by",
-                "version": "submittedVersion",
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": "Working Paper"
-            },
-            "volume": null,
-            "type": "report",
-            "indexed_in": [],
-            "open_access": {
-                "is_oa": true,
-                "oa_status": "green",
-                "oa_url": "https://hdl.handle.net/10986/41798",
-                "any_repository_has_fulltext": true
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5085311293",
-                        "display_name": "Gustavo Canavire‐Bacarreza",
-                        "orcid": "https://orcid.org/0000-0002-7801-1688",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0002-7801-1688"
-                        ]
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Canavire Bacarreza, Gustavo J.",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5065226510",
-                        "display_name": "Adriana Conconi",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Conconi, Adriana",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5071779815",
-                        "display_name": "Sergio Olivieri",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Olivieri, Sergio",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "last",
-                    "author": {
-                        "id": "https://openalex.org/A5050106243",
-                        "display_name": "Monserrat Serio",
-                        "orcid": "https://orcid.org/0000-0002-4427-4324",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0002-4427-4324"
-                        ]
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Serio, Monserrat",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 0,
-            "institutions_distinct_count": 0,
-            "corresponding_author_ids": [],
-            "corresponding_institution_ids": [],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": null,
-            "has_fulltext": false,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": null,
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": null,
-                "issue": null,
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T10747",
-                "display_name": "Disaster Management and Resilience",
-                "score": 0.9643999934196472,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/3312",
-                    "display_name": "Sociology and Political Science"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/33",
-                    "display_name": "Social Sciences"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T10747",
-                    "display_name": "Disaster Management and Resilience",
-                    "score": 0.9643999934196472,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3312",
-                        "display_name": "Sociology and Political Science"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T11886",
-                    "display_name": "Agricultural risk and resilience",
-                    "score": 0.01360000018030405,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1111",
-                        "display_name": "Soil Science"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/11",
-                        "display_name": "Agricultural and Biological Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/1",
-                        "display_name": "Life Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T10446",
-                    "display_name": "Income, Poverty, and Inequality",
-                    "score": 0.010300000198185444,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3312",
-                        "display_name": "Sociology and Political Science"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/vulnerability-to-poverty",
-                    "display_name": "poverty vulnerability",
-                    "score": 0.9660000205039978
-                },
-                {
-                    "id": "https://openalex.org/keywords/natural-disasters",
-                    "display_name": "natural disasters",
-                    "score": 0.968999981880188
-                },
-                {
-                    "id": "https://openalex.org/keywords/floods",
-                    "display_name": "floods",
-                    "score": 0.5580000281333923
-                },
-                {
-                    "id": "https://openalex.org/keywords/landslides",
-                    "display_name": "landslides",
-                    "score": 0.9610000252723694
-                },
-                {
-                    "id": "https://openalex.org/keywords/cyclones",
-                    "display_name": "cyclones",
-                    "score": 0.9869999885559082
-                },
-                {
-                    "id": "https://openalex.org/keywords/earthquakes",
-                    "display_name": "earthquakes",
-                    "score": 0.9990000128746033
-                },
-                {
-                    "id": "https://openalex.org/keywords/drought",
-                    "display_name": "drought",
-                    "score": 0.9629999995231628
-                },
-                {
-                    "id": "https://openalex.org/keywords/coping-strategies",
-                    "display_name": "coping strategies",
-                    "score": 0.9369999766349792
-                },
-                {
-                    "id": "https://openalex.org/keywords/adaptation-strategies",
-                    "display_name": "adaptation strategies",
-                    "score": 0.8820000290870667
-                },
-                {
-                    "id": "https://openalex.org/keywords/disaster-risk-management",
-                    "display_name": "disaster risk management",
-                    "score": 0.6159999966621399
-                },
-                {
-                    "id": "https://openalex.org/keywords/latin-america-and-the-caribbean",
-                    "display_name": "Latin America and the Caribbean",
-                    "score": 0.7950000166893005
-                },
-                {
-                    "id": "https://openalex.org/keywords/household-surveys",
-                    "display_name": "household surveys",
-                    "score": 0.38199999928474426
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C158886217",
-                    "wikidata": "https://www.wikidata.org/wiki/Q16799549",
-                    "display_name": "Latin Americans",
-                    "level": 2,
-                    "score": 0.7597000002861023
-                },
-                {
-                    "id": "https://openalex.org/C189326681",
-                    "wikidata": "https://www.wikidata.org/wiki/Q10294",
-                    "display_name": "Poverty",
-                    "level": 2,
-                    "score": 0.7310000061988831
-                },
-                {
-                    "id": "https://openalex.org/C95713431",
-                    "wikidata": "https://www.wikidata.org/wiki/Q631425",
-                    "display_name": "Vulnerability (computing)",
-                    "level": 2,
-                    "score": 0.7167999744415283
-                },
-                {
-                    "id": "https://openalex.org/C166566181",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8065",
-                    "display_name": "Natural disaster",
-                    "level": 2,
-                    "score": 0.6801999807357788
-                },
-                {
-                    "id": "https://openalex.org/C39410599",
-                    "wikidata": "https://www.wikidata.org/wiki/Q3433179",
-                    "display_name": "Natural hazard",
-                    "level": 2,
-                    "score": 0.6341000199317932
-                },
-                {
-                    "id": "https://openalex.org/C73282008",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1759895",
-                    "display_name": "Coping (psychology)",
-                    "level": 2,
-                    "score": 0.45730000734329224
-                },
-                {
-                    "id": "https://openalex.org/C205649164",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
-                    "display_name": "Geography",
-                    "level": 0,
-                    "score": 0.45320001244544983
-                },
-                {
-                    "id": "https://openalex.org/C49261128",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1132455",
-                    "display_name": "Hazard",
-                    "level": 2,
-                    "score": 0.4514999985694885
-                },
-                {
-                    "id": "https://openalex.org/C2908767363",
-                    "wikidata": "https://www.wikidata.org/wiki/Q664609",
-                    "display_name": "Caribbean region",
-                    "level": 3,
-                    "score": 0.40209999680519104
-                },
-                {
-                    "id": "https://openalex.org/C47768531",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1127188",
-                    "display_name": "Development economics",
-                    "level": 1,
-                    "score": 0.3813999891281128
-                },
-                {
-                    "id": "https://openalex.org/C139807058",
-                    "wikidata": "https://www.wikidata.org/wiki/Q352374",
-                    "display_name": "Adaptation (eye)",
-                    "level": 2,
-                    "score": 0.29919999837875366
-                },
-                {
-                    "id": "https://openalex.org/C107826830",
-                    "wikidata": "https://www.wikidata.org/wiki/Q929380",
-                    "display_name": "Environmental resource management",
-                    "level": 1,
-                    "score": 0.29670000076293945
-                },
-                {
-                    "id": "https://openalex.org/C29985473",
-                    "wikidata": "https://www.wikidata.org/wiki/Q188460",
-                    "display_name": "Natural resource",
-                    "level": 2,
-                    "score": 0.29580000042915344
-                },
-                {
-                    "id": "https://openalex.org/C83864248",
-                    "wikidata": "https://www.wikidata.org/wiki/Q177323",
-                    "display_name": "Developing country",
-                    "level": 2,
-                    "score": 0.2953999936580658
-                },
-                {
-                    "id": "https://openalex.org/C167063184",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1400839",
-                    "display_name": "Vulnerability assessment",
-                    "level": 3,
-                    "score": 0.2904999852180481
-                },
-                {
-                    "id": "https://openalex.org/C50522688",
-                    "wikidata": "https://www.wikidata.org/wiki/Q189833",
-                    "display_name": "Economic growth",
-                    "level": 1,
-                    "score": 0.2872999906539917
-                },
-                {
-                    "id": "https://openalex.org/C122637931",
-                    "wikidata": "https://www.wikidata.org/wiki/Q118084",
-                    "display_name": "Unit (ring theory)",
-                    "level": 2,
-                    "score": 0.2824000120162964
-                },
-                {
-                    "id": "https://openalex.org/C2776608160",
-                    "wikidata": "https://www.wikidata.org/wiki/Q4785462",
-                    "display_name": "Natural (archaeology)",
-                    "level": 2,
-                    "score": 0.27619999647140503
-                },
-                {
-                    "id": "https://openalex.org/C132651083",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7942",
-                    "display_name": "Climate change",
-                    "level": 2,
-                    "score": 0.27149999141693115
-                },
-                {
-                    "id": "https://openalex.org/C2779501324",
-                    "wikidata": "https://www.wikidata.org/wiki/Q581445",
-                    "display_name": "Social vulnerability",
-                    "level": 3,
-                    "score": 0.26660001277923584
-                },
-                {
-                    "id": "https://openalex.org/C62555980",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1460420",
-                    "display_name": "Emergency management",
-                    "level": 2,
-                    "score": 0.2653999924659729
-                },
-                {
-                    "id": "https://openalex.org/C91375879",
-                    "wikidata": "https://www.wikidata.org/wiki/Q15473274",
-                    "display_name": "Environmental planning",
-                    "level": 1,
-                    "score": 0.25369998812675476
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "pmh:oai:openknowledge.worldbank.org:10986/41798",
-                    "doi": "https://doi.org/10.1596/1813-9450-10826",
-                    "is_oa": true,
-                    "landing_page_url": "https://hdl.handle.net/10986/41798",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4377196270",
-                        "display_name": "The World Bank Open Knowledge Repository (World Bank)",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": "https://openalex.org/I1334329717",
-                        "host_organization_name": "World Bank",
-                        "host_organization_lineage": [
-                            "https://openalex.org/I1334329717"
-                        ],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": "cc-by",
-                    "license_id": "https://openalex.org/licenses/cc-by",
-                    "version": "submittedVersion",
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": "Working Paper"
-                }
-            ],
-            "best_oa_location": {
-                "id": "pmh:oai:openknowledge.worldbank.org:10986/41798",
-                "doi": "https://doi.org/10.1596/1813-9450-10826",
-                "is_oa": true,
-                "landing_page_url": "https://hdl.handle.net/10986/41798",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4377196270",
-                    "display_name": "The World Bank Open Knowledge Repository (World Bank)",
-                    "issn_l": null,
-                    "issn": null,
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [],
-                    "host_organization": "https://openalex.org/I1334329717",
-                    "host_organization_name": "World Bank",
-                    "host_organization_lineage": [
-                        "https://openalex.org/I1334329717"
-                    ],
-                    "host_organization_lineage_names": [],
-                    "type": "repository"
-                },
-                "license": "cc-by",
-                "license_id": "https://openalex.org/licenses/cc-by",
-                "version": "submittedVersion",
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": "Working Paper"
-            },
-            "sustainable_development_goals": [
-                {
-                    "id": "https://metadata.un.org/sdg/1",
-                    "score": 1.0,
-                    "display_name": "No poverty"
-                },
-                {
-                    "id": "https://metadata.un.org/sdg/10",
-                    "score": 0.7390999794006348,
-                    "display_name": "Reduced inequalities"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": false,
-                "pdf": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W7156605027",
-                "https://openalex.org/W2157241155",
-                "https://openalex.org/W3124121214",
-                "https://openalex.org/W7072356490",
-                "https://openalex.org/W2050890671",
-                "https://openalex.org/W2182747858",
-                "https://openalex.org/W811218353",
-                "https://openalex.org/W7166575040",
-                "https://openalex.org/W7100814680",
-                "https://openalex.org/W187210838"
-            ],
-            "abstract_inverted_index": {
-                "This": [
-                    0,
-                    149
-                ],
-                "paper": [
-                    1,
-                    51
-                ],
-                "provides": [
-                    2
-                ],
-                "the": [
-                    3,
-                    14,
-                    17,
-                    37,
-                    40,
-                    62,
-                    69,
-                    78,
-                    87,
-                    98,
-                    125,
-                    138,
-                    156,
-                    175,
-                    181,
-                    187
-                ],
-                "first": [
-                    4,
-                    88
-                ],
-                "measures": [
-                    5
-                ],
-                "of": [
-                    6,
-                    90,
-                    100,
-                    140,
-                    158
-                ],
-                "vulnerability": [
-                    7,
-                    107
-                ],
-                "to": [
-                    8,
-                    72,
-                    94,
-                    108,
-                    112,
-                    154
-                ],
-                "poverty": [
-                    9,
-                    109
-                ],
-                "in": [
-                    10,
-                    36,
-                    136,
-                    171,
-                    180,
-                    200
-                ],
-                "Latin": [
-                    11,
-                    66
-                ],
-                "America": [
-                    12,
-                    67
-                ],
-                "and": [
-                    13,
-                    30,
-                    48,
-                    68,
-                    81,
-                    115,
-                    118,
-                    143
-                ],
-                "Caribbean": [
-                    15,
-                    70
-                ],
-                "at": [
-                    16,
-                    21
-                ],
-                "household": [
-                    18,
-                    59,
-                    92
-                ],
-                "level": [
-                    19
-                ],
-                "looking": [
-                    20
-                ],
-                "natural": [
-                    22,
-                    75,
-                    95,
-                    126,
-                    159
-                ],
-                "hazards": [
-                    23,
-                    76
-                ],
-                "such": [
-                    24
-                ],
-                "as": [
-                    25
-                ],
-                "floods,": [
-                    26
-                ],
-                "landslides,": [
-                    27
-                ],
-                "cyclones,": [
-                    28
-                ],
-                "earthquakes,": [
-                    29
-                ],
-                "droughts.": [
-                    31
-                ],
-                "It": [
-                    32
-                ],
-                "considers": [
-                    33
-                ],
-                "seven": [
-                    34
-                ],
-                "countries": [
-                    35
-                ],
-                "region:": [
-                    38
-                ],
-                "Brazil,": [
-                    39
-                ],
-                "Dominican": [
-                    41
-                ],
-                "Republic,": [
-                    42
-                ],
-                "Ecuador,": [
-                    43
-                ],
-                "El": [
-                    44
-                ],
-                "Salvador,": [
-                    45
-                ],
-                "Honduras,": [
-                    46
-                ],
-                "Mexico,": [
-                    47
-                ],
-                "Peru.": [
-                    49
-                ],
-                "The": [
-                    50,
-                    103,
-                    129,
-                    161
-                ],
-                "constructs": [
-                    52
-                ],
-                "a": [
-                    53
-                ],
-                "unique": [
-                    54
-                ],
-                "data": [
-                    55,
-                    73,
-                    188
-                ],
-                "base": [
-                    56
-                ],
-                "that": [
-                    57,
-                    106,
-                    186,
-                    191
-                ],
-                "links": [
-                    58
-                ],
-                "surveys": [
-                    60
-                ],
-                "from": [
-                    61,
-                    77
-                ],
-                "Socio-Economic": [
-                    63
-                ],
-                "Database": [
-                    64
-                ],
-                "for": [
-                    65,
-                    166
-                ],
-                "database": [
-                    71,
-                    80
-                ],
-                "on": [
-                    74,
-                    124
-                ],
-                "ThinkHazard": [
-                    79
-                ],
-                "Emergency": [
-                    82
-                ],
-                "Events": [
-                    83
-                ],
-                "Database,": [
-                    84
-                ],
-                "which": [
-                    85
-                ],
-                "permits": [
-                    86
-                ],
-                "estimates": [
-                    89
-                ],
-                "how": [
-                    91
-                ],
-                "exposure": [
-                    93
-                ],
-                "events": [
-                    96
-                ],
-                "raises": [
-                    97
-                ],
-                "probability": [
-                    99
-                ],
-                "being": [
-                    101
-                ],
-                "poor.": [
-                    102
-                ],
-                "results": [
-                    104
-                ],
-                "suggest": [
-                    105
-                ],
-                "is": [
-                    110,
-                    120,
-                    164
-                ],
-                "related": [
-                    111
-                ],
-                "households'": [
-                    113
-                ],
-                "coping": [
-                    114,
-                    141
-                ],
-                "adaptation": [
-                    116,
-                    144
-                ],
-                "strategies,": [
-                    117
-                ],
-                "there": [
-                    119
-                ],
-                "great": [
-                    121
-                ],
-                "heterogeneity": [
-                    122
-                ],
-                "depending": [
-                    123
-                ],
-                "hazard": [
-                    127
-                ],
-                "assumed.": [
-                    128
-                ],
-                "evidence": [
-                    130
-                ],
-                "generated": [
-                    131
-                ],
-                "by": [
-                    132
-                ],
-                "this": [
-                    133
-                ],
-                "approach": [
-                    134,
-                    163
-                ],
-                "helps": [
-                    135
-                ],
-                "understanding": [
-                    137,
-                    150
-                ],
-                "lack": [
-                    139
-                ],
-                "mechanisms": [
-                    142
-                ],
-                "strategies": [
-                    145
-                ],
-                "among": [
-                    146
-                ],
-                "vulnerable": [
-                    147,
-                    169
-                ],
-                "households.": [
-                    148
-                ],
-                "can": [
-                    151,
-                    177,
-                    194
-                ],
-                "be": [
-                    152,
-                    178
-                ],
-                "used": [
-                    153
-                ],
-                "mitigate": [
-                    155
-                ],
-                "effects": [
-                    157
-                ],
-                "disasters.": [
-                    160
-                ],
-                "evidence-based": [
-                    162
-                ],
-                "useful": [
-                    165
-                ],
-                "identifying": [
-                    167
-                ],
-                "specific": [
-                    168
-                ],
-                "communities": [
-                    170
-                ],
-                "disaster-prone": [
-                    172
-                ],
-                "areas.": [
-                    173
-                ],
-                "Furthermore,": [
-                    174
-                ],
-                "information": [
-                    176
-                ],
-                "presented": [
-                    179
-                ],
-                "most": [
-                    182
-                ],
-                "disaggregated": [
-                    183
-                ],
-                "representative": [
-                    184
-                ],
-                "unit": [
-                    185
-                ],
-                "allow": [
-                    189
-                ],
-                "so": [
-                    190
-                ],
-                "policy": [
-                    192
-                ],
-                "makers": [
-                    193
-                ],
-                "build": [
-                    195
-                ],
-                "more": [
-                    196
-                ],
-                "efficient": [
-                    197
-                ],
-                "management": [
-                    198
-                ],
-                "policies": [
-                    199
-                ],
-                "their": [
-                    201
-                ],
-                "location.": [
-                    202
-                ]
-            },
-            "counts_by_year": [],
-            "updated_date": "2026-10-12T09:40:04.860316",
-            "created_date": "2026-03-14T00:00:00"
-        },
-        {
-            "id": "https://openalex.org/W2990511111",
-            "doi": "https://doi.org/10.31243/bcoyu.20.2019.684",
-            "title": "Desastres naturales y desigualdad: evidencia en América Latina y El Caribe",
-            "display_name": "Desastres naturales y desigualdad: evidencia en América Latina y El Caribe",
-            "relevance_score": 28.838959,
-            "publication_year": 2019,
-            "publication_date": "2019-03-31",
-            "ids": {
-                "openalex": "https://openalex.org/W2990511111",
-                "doi": "https://doi.org/10.31243/bcoyu.20.2019.684",
-                "mag": "2990511111"
-            },
-            "language": "es",
-            "primary_location": {
-                "id": "mag:2990511111",
-                "doi": "https://doi.org/10.31243/bcoyu.20.2019.684",
-                "is_oa": true,
-                "landing_page_url": "https://revistas.uta.edu.ec/erevista/index.php/bcoyu/article/download/684/665",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4210218446",
-                    "display_name": "Bolentín de Coyuntura",
-                    "issn_l": "2528-7931",
-                    "issn": [
-                        "2528-7931",
-                        "2600-5727"
-                    ],
-                    "is_oa": true,
-                    "is_in_doaj": true,
-                    "is_core": false,
-                    "listed_in": [
-                        "doaj",
-                        "erih-plus",
-                        "latindex"
-                    ],
-                    "host_organization": "https://openalex.org/P4310318828",
-                    "host_organization_name": "Universidad Técnica de Ambato",
-                    "host_organization_lineage": [
-                        "https://openalex.org/P4310318828"
-                    ],
-                    "host_organization_lineage_names": [
-                        "Universidad Técnica de Ambato"
-                    ],
-                    "type": "journal"
-                },
-                "license": "cc-by-nc",
-                "license_id": "https://openalex.org/licenses/cc-by-nc",
-                "version": null,
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": "Bolentín de Coyuntura",
-                "raw_type": null
-            },
-            "volume": null,
-            "type": "article",
-            "indexed_in": [],
-            "open_access": {
-                "is_oa": true,
-                "oa_status": "diamond",
-                "oa_url": "https://revistas.uta.edu.ec/erevista/index.php/bcoyu/article/download/684/665",
-                "any_repository_has_fulltext": true
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5001315907",
-                        "display_name": "Pierre Gilles Fernand Desfrancois",
-                        "orcid": "https://orcid.org/0000-0003-2841-3272",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0003-2841-3272"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I4210118937",
-                            "display_name": "Universidad Israel",
-                            "ror": "https://ror.org/029zzvq50",
-                            "country_code": "EC",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I4210118937"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "EC"
-                    ],
-                    "is_corresponding": true,
-                    "raw_author_name": "Pierre Desfrancois",
-                    "raw_affiliation_strings": [
-                        "Universidad Tecnológica Israel - Ecuador"
-                    ],
-                    "raw_orcid": "https://orcid.org/0000-0003-2841-3272",
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Tecnológica Israel - Ecuador",
-                            "institution_ids": [
-                                "https://openalex.org/I4210118937"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 1,
-            "institutions_distinct_count": 1,
-            "corresponding_author_ids": [
-                "https://openalex.org/A5001315907"
-            ],
-            "corresponding_institution_ids": [
-                "https://openalex.org/I4210118937"
-            ],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.5035,
-            "has_fulltext": false,
-            "cited_by_count": 1,
-            "citation_normalized_percentile": {
-                "value": 0.79437468,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": {
-                "min": 88,
-                "max": 93
-            },
-            "biblio": {
-                "volume": "1",
-                "issue": "20",
-                "first_page": "4",
-                "last_page": "8"
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T10446",
-                "display_name": "Income, Poverty, and Inequality",
-                "score": 0.961899995803833,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/3312",
-                    "display_name": "Sociology and Political Science"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/33",
-                    "display_name": "Social Sciences"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T10446",
-                    "display_name": "Income, Poverty, and Inequality",
-                    "score": 0.961899995803833,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3312",
-                        "display_name": "Sociology and Political Science"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T10747",
-                    "display_name": "Disaster Management and Resilience",
-                    "score": 0.021400000900030136,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3312",
-                        "display_name": "Sociology and Political Science"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T11742",
-                    "display_name": "Economic Theory and Policy",
-                    "score": 0.003599999938160181,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2000",
-                        "display_name": "General Economics, Econometrics and Finance"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/20",
-                        "display_name": "Economics, Econometrics and Finance"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/natural-disasters",
-                    "display_name": "natural disasters",
-                    "score": 1.0
-                },
-                {
-                    "id": "https://openalex.org/keywords/income-inequality",
-                    "display_name": "income inequality",
-                    "score": 0.996999979019165
-                },
-                {
-                    "id": "https://openalex.org/keywords/economic-impact-of-disasters",
-                    "display_name": "economic impact of disasters",
-                    "score": 0.8500000238418579
-                },
-                {
-                    "id": "https://openalex.org/keywords/gini-coefficient",
-                    "display_name": "Gini coefficient",
-                    "score": 0.9070000052452087
-                },
-                {
-                    "id": "https://openalex.org/keywords/medium-term-effects",
-                    "display_name": "medium-term effects",
-                    "score": 0.8029999732971191
-                },
-                {
-                    "id": "https://openalex.org/keywords/disaster-risk-management",
-                    "display_name": "disaster risk management",
-                    "score": 0.4490000009536743
-                },
-                {
-                    "id": "https://openalex.org/keywords/latin-america-and-the-caribbean",
-                    "display_name": "Latin America and the Caribbean",
-                    "score": 0.9779999852180481
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C513380476",
-                    "wikidata": "https://www.wikidata.org/wiki/Q5055020",
-                    "display_name": "Economic inequality",
-                    "level": 3,
-                    "score": 0.7022098898887634
-                },
-                {
-                    "id": "https://openalex.org/C189326681",
-                    "wikidata": "https://www.wikidata.org/wiki/Q10294",
-                    "display_name": "Poverty",
-                    "level": 2,
-                    "score": 0.6427594423294067
-                },
-                {
-                    "id": "https://openalex.org/C45555294",
-                    "wikidata": "https://www.wikidata.org/wiki/Q28113351",
-                    "display_name": "Inequality",
-                    "level": 2,
-                    "score": 0.6071330308914185
-                },
-                {
-                    "id": "https://openalex.org/C2779206190",
-                    "wikidata": "https://www.wikidata.org/wiki/Q162455",
-                    "display_name": "Gini coefficient",
-                    "level": 4,
-                    "score": 0.5529124736785889
-                },
-                {
-                    "id": "https://openalex.org/C549774020",
-                    "wikidata": "https://www.wikidata.org/wiki/Q851147",
-                    "display_name": "Welfare economics",
-                    "level": 1,
-                    "score": 0.5388474464416504
-                },
-                {
-                    "id": "https://openalex.org/C158886217",
-                    "wikidata": "https://www.wikidata.org/wiki/Q16799549",
-                    "display_name": "Latin Americans",
-                    "level": 2,
-                    "score": 0.52261883020401
-                },
-                {
-                    "id": "https://openalex.org/C166566181",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8065",
-                    "display_name": "Natural disaster",
-                    "level": 2,
-                    "score": 0.49844861030578613
-                },
-                {
-                    "id": "https://openalex.org/C519300510",
-                    "wikidata": "https://www.wikidata.org/wiki/Q3915542",
-                    "display_name": "Income distribution",
-                    "level": 3,
-                    "score": 0.4969947636127472
-                },
-                {
-                    "id": "https://openalex.org/C162324750",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8134",
-                    "display_name": "Economics",
-                    "level": 0,
-                    "score": 0.48523974418640137
-                },
-                {
-                    "id": "https://openalex.org/C2908647359",
-                    "wikidata": "https://www.wikidata.org/wiki/Q2625603",
-                    "display_name": "Population",
-                    "level": 2,
-                    "score": 0.47170448303222656
-                },
-                {
-                    "id": "https://openalex.org/C132000672",
-                    "wikidata": "https://www.wikidata.org/wiki/Q6158427",
-                    "display_name": "Income inequality metrics",
-                    "level": 4,
-                    "score": 0.4318392276763916
-                },
-                {
-                    "id": "https://openalex.org/C47768531",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1127188",
-                    "display_name": "Development economics",
-                    "level": 1,
-                    "score": 0.3825531601905823
-                },
-                {
-                    "id": "https://openalex.org/C205649164",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
-                    "display_name": "Geography",
-                    "level": 0,
-                    "score": 0.3176618814468384
-                },
-                {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.3155924081802368
-                },
-                {
-                    "id": "https://openalex.org/C144024400",
-                    "wikidata": "https://www.wikidata.org/wiki/Q21201",
-                    "display_name": "Sociology",
-                    "level": 0,
-                    "score": 0.23998990654945374
-                },
-                {
-                    "id": "https://openalex.org/C50522688",
-                    "wikidata": "https://www.wikidata.org/wiki/Q189833",
-                    "display_name": "Economic growth",
-                    "level": 1,
-                    "score": 0.17492404580116272
-                },
-                {
-                    "id": "https://openalex.org/C149923435",
-                    "wikidata": "https://www.wikidata.org/wiki/Q37732",
-                    "display_name": "Demography",
-                    "level": 1,
-                    "score": 0.14823457598686218
-                },
-                {
-                    "id": "https://openalex.org/C33923547",
-                    "wikidata": "https://www.wikidata.org/wiki/Q395",
-                    "display_name": "Mathematics",
-                    "level": 0,
-                    "score": 0.13805058598518372
-                },
-                {
-                    "id": "https://openalex.org/C153294291",
-                    "wikidata": "https://www.wikidata.org/wiki/Q25261",
-                    "display_name": "Meteorology",
-                    "level": 1,
-                    "score": 0.0
-                },
-                {
-                    "id": "https://openalex.org/C134306372",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7754",
-                    "display_name": "Mathematical analysis",
-                    "level": 1,
-                    "score": 0.0
-                },
-                {
-                    "id": "https://openalex.org/C199539241",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7748",
-                    "display_name": "Law",
-                    "level": 1,
-                    "score": 0.0
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "mag:2990511111",
-                    "doi": "https://doi.org/10.31243/bcoyu.20.2019.684",
-                    "is_oa": true,
-                    "landing_page_url": "https://revistas.uta.edu.ec/erevista/index.php/bcoyu/article/download/684/665",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4210218446",
-                        "display_name": "Bolentín de Coyuntura",
-                        "issn_l": "2528-7931",
-                        "issn": [
-                            "2528-7931",
-                            "2600-5727"
-                        ],
-                        "is_oa": true,
-                        "is_in_doaj": true,
-                        "is_core": false,
-                        "listed_in": [
-                            "doaj",
-                            "erih-plus",
-                            "latindex"
-                        ],
-                        "host_organization": "https://openalex.org/P4310318828",
-                        "host_organization_name": "Universidad Técnica de Ambato",
-                        "host_organization_lineage": [
-                            "https://openalex.org/P4310318828"
-                        ],
-                        "host_organization_lineage_names": [
-                            "Universidad Técnica de Ambato"
-                        ],
-                        "type": "journal"
-                    },
-                    "license": "cc-by-nc",
-                    "license_id": "https://openalex.org/licenses/cc-by-nc",
-                    "version": null,
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": "Bolentín de Coyuntura",
-                    "raw_type": null
-                }
-            ],
-            "best_oa_location": {
-                "id": "mag:2990511111",
-                "doi": "https://doi.org/10.31243/bcoyu.20.2019.684",
-                "is_oa": true,
-                "landing_page_url": "https://revistas.uta.edu.ec/erevista/index.php/bcoyu/article/download/684/665",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4210218446",
-                    "display_name": "Bolentín de Coyuntura",
-                    "issn_l": "2528-7931",
-                    "issn": [
-                        "2528-7931",
-                        "2600-5727"
-                    ],
-                    "is_oa": true,
-                    "is_in_doaj": true,
-                    "is_core": false,
-                    "listed_in": [
-                        "doaj",
-                        "erih-plus",
-                        "latindex"
-                    ],
-                    "host_organization": "https://openalex.org/P4310318828",
-                    "host_organization_name": "Universidad Técnica de Ambato",
-                    "host_organization_lineage": [
-                        "https://openalex.org/P4310318828"
-                    ],
-                    "host_organization_lineage_names": [
-                        "Universidad Técnica de Ambato"
-                    ],
-                    "type": "journal"
-                },
-                "license": "cc-by-nc",
-                "license_id": "https://openalex.org/licenses/cc-by-nc",
-                "version": null,
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": "Bolentín de Coyuntura",
-                "raw_type": null
-            },
-            "sustainable_development_goals": [
-                {
-                    "id": "https://metadata.un.org/sdg/10",
-                    "score": 0.9629999995231628,
-                    "display_name": "Reduced inequalities"
-                },
-                {
-                    "id": "https://metadata.un.org/sdg/1",
-                    "score": 0.8928999900817871,
-                    "display_name": "No poverty"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": false,
-                "pdf": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W4410701567",
-                "https://openalex.org/W2971808719",
-                "https://openalex.org/W3165106647",
-                "https://openalex.org/W4281961773",
-                "https://openalex.org/W2080113437",
-                "https://openalex.org/W7200685928",
-                "https://openalex.org/W3124447083",
-                "https://openalex.org/W4384765212",
-                "https://openalex.org/W6997413528",
-                "https://openalex.org/W3155022340"
-            ],
-            "abstract_inverted_index": {
-                "This": [
-                    0,
-                    121,
-                    142
-                ],
-                "research": [
-                    1
-                ],
-                "paper": [
-                    2,
-                    425
-                ],
-                "explores": [
-                    3
-                ],
-                "the": [
-                    4,
-                    16,
-                    28,
-                    42,
-                    49,
-                    53,
-                    58,
-                    62,
-                    65,
-                    69,
-                    73,
-                    83,
-                    90,
-                    97,
-                    105,
-                    114,
-                    118,
-                    128,
-                    137,
-                    140,
-                    150,
-                    154,
-                    158,
-                    307,
-                    376,
-                    396,
-                    418,
-                    478,
-                    484,
-                    551,
-                    591,
-                    620,
-                    675,
-                    678,
-                    772,
-                    799,
-                    824
-                ],
-                "relationship": [
-                    5
-                ],
-                "between": [
-                    6,
-                    553
-                ],
-                "natural": [
-                    7,
-                    36,
-                    87,
-                    110,
-                    370,
-                    481,
-                    531,
-                    742,
-                    755,
-                    796,
-                    814
-                ],
-                "disasters": [
-                    8,
-                    37,
-                    88,
-                    111,
-                    302,
-                    394,
-                    413,
-                    459,
-                    482,
-                    756,
-                    797,
-                    815
-                ],
-                "and": [
-                    9,
-                    15,
-                    152,
-                    198,
-                    263,
-                    267,
-                    303,
-                    366,
-                    395,
-                    403,
-                    417,
-                    460,
-                    502,
-                    510,
-                    542,
-                    547,
-                    556,
-                    562,
-                    572,
-                    600,
-                    603,
-                    627,
-                    644,
-                    674,
-                    786
-                ],
-                "income": [
-                    10,
-                    39,
-                    63,
-                    168,
-                    233,
-                    262,
-                    347,
-                    524,
-                    648,
-                    817
-                ],
-                "inequality": [
-                    11,
-                    40,
-                    93,
-                    135,
-                    197,
-                    594,
-                    775
-                ],
-                "in": [
-                    12,
-                    41,
-                    48,
-                    96,
-                    117,
-                    136,
-                    149,
-                    153,
-                    157,
-                    196,
-                    200,
-                    306,
-                    349,
-                    414,
-                    486,
-                    558,
-                    593,
-                    595,
-                    650,
-                    681,
-                    703,
-                    774,
-                    776
-                ],
-                "Latin": [
-                    13,
-                    350,
-                    415,
-                    559,
-                    596,
-                    651,
-                    777
-                ],
-                "America": [
-                    14,
-                    288,
-                    331,
-                    416,
-                    436,
-                    445,
-                    778
-                ],
-                "Caribbean": [
-                    17
-                ],
-                "based": [
-                    18,
-                    112
-                ],
-                "on": [
-                    19,
-                    89,
-                    104,
-                    113,
-                    260,
-                    375,
-                    483,
-                    550,
-                    647,
-                    700,
-                    816
-                ],
-                "a": [
-                    20
-                ],
-                "panel": [
-                    21,
-                    821
-                ],
-                "data": [
-                    22,
-                    822
-                ],
-                "model": [
-                    23,
-                    54
-                ],
-                "covering": [
-                    24
-                ],
-                "14": [
-                    25
-                ],
-                "countries": [
-                    26,
-                    138
-                ],
-                "during": [
-                    27,
-                    823
-                ],
-                "period": [
-                    29,
-                    825
-                ],
-                "2000-2017.": [
-                    30
-                ],
-                "The": [
-                    31,
-                    44,
-                    241,
-                    256,
-                    293,
-                    310,
-                    489,
-                    640,
-                    709,
-                    720,
-                    735,
-                    744
-                ],
-                "econometric": [
-                    32
-                ],
-                "study": [
-                    33,
-                    374
-                ],
-                "revealed": [
-                    34
-                ],
-                "that": [
-                    35,
-                    55,
-                    82
-                ],
-                "worsen": [
-                    38
-                ],
-                "region.": [
-                    43,
-                    141
-                ],
-                "results": [
-                    45
-                ],
-                "are": [
-                    46,
-                    102
-                ],
-                "significant": [
-                    47,
-                    106
-                ],
-                "two": [
-                    50
-                ],
-                "specifications": [
-                    51
-                ],
-                "of": [
-                    52,
-                    64,
-                    68,
-                    75,
-                    86,
-                    92,
-                    109,
-                    130,
-                    139,
-                    204,
-                    258,
-                    313,
-                    369,
-                    381,
-                    401,
-                    422,
-                    480,
-                    508,
-                    534,
-                    564,
-                    619,
-                    623,
-                    642,
-                    677,
-                    698,
-                    711,
-                    723,
-                    726,
-                    737,
-                    741,
-                    783,
-                    801,
-                    813
-                ],
-                "is,": [
-                    56
-                ],
-                "using": [
-                    57,
-                    820
-                ],
-                "Gini": [
-                    59
-                ],
-                "coefficient": [
-                    60
-                ],
-                "or": [
-                    61,
-                    526
-                ],
-                "first": [
-                    66
-                ],
-                "quintile": [
-                    67
-                ],
-                "population": [
-                    70
-                ],
-                "to": [
-                    71,
-                    133,
-                    147,
-                    780,
-                    827
-                ],
-                "measure": [
-                    72
-                ],
-                "level": [
-                    74,
-                    91
-                ],
-                "inequalities.": [
-                    76
-                ],
-                "In": [
-                    77,
-                    598
-                ],
-                "addition,": [
-                    78
-                ],
-                "it": [
-                    79
-                ],
-                "is": [
-                    80,
-                    94,
-                    144
-                ],
-                "observed": [
-                    81
-                ],
-                "negative": [
-                    84
-                ],
-                "effect": [
-                    85
-                ],
-                "maintained": [
-                    95
-                ],
-                "medium": [
-                    98
-                ],
-                "term.": [
-                    99
-                ],
-                "hen,": [
-                    100
-                ],
-                "hypotheses": [
-                    101
-                ],
-                "issued": [
-                    103
-                ],
-                "medium-term": [
-                    107
-                ],
-                "impact": [
-                    108,
-                    479
-                ],
-                "existing": [
-                    115
-                ],
-                "works": [
-                    116
-                ],
-                "recent": [
-                    119
-                ],
-                "literature.": [
-                    120
-                ],
-                "work": [
-                    122
-                ],
-                "constitutes": [
-                    123
-                ],
-                "an": [
-                    124
-                ],
-                "important": [
-                    125
-                ],
-                "contribution": [
-                    126
-                ],
-                "for": [
-                    127,
-                    235,
-                    568,
-                    630
-                ],
-                "design": [
-                    129
-                ],
-                "public": [
-                    131
-                ],
-                "policies": [
-                    132
-                ],
-                "reduce": [
-                    134
-                ],
-                "result": [
-                    143
-                ],
-                "also": [
-                    145
-                ],
-                "robust": [
-                    146
-                ],
-                "changes": [
-                    148
-                ],
-                "methodology": [
-                    151
-                ],
-                "variables": [
-                    155
-                ],
-                "used": [
-                    156
-                ],
-                "model.": [
-                    159
-                ],
-                "Keywords:": [
-                    162
-                ],
-                "Natural": [
-                    164,
-                    393,
-                    412,
-                    458
-                ],
-                "disasters,": [
-                    165
-                ],
-                "economic": [
-                    166,
-                    344,
-                    645
-                ],
-                "impact,": [
-                    167
-                ],
-                "inequality.": [
-                    169,
-                    504
-                ],
-                "URL:": [
-                    172
-                ],
-                "http://revistas.uta.edu.ec/erevista/index.php/bcoyu/article/view/684": [
-                    175
-                ],
-                "DOI:": [
-                    179
-                ],
-                "http://dx.doi.org/10.31164/bcoyu.20.2019.684": [
-                    181
-                ],
-                "References:": [
-                    185
-                ],
-                "Alvaredo,": [
-                    188
-                ],
-                "F.": [
-                    189,
-                    210
-                ],
-                "&": [
-                    190,
-                    227,
-                    248,
-                    278,
-                    346,
-                    359,
-                    389,
-                    454,
-                    470,
-                    496,
-                    517,
-                    586,
-                    613,
-                    668,
-                    691,
-                    750,
-                    767
-                ],
-                "Gasparini,": [
-                    191
-                ],
-                "L.": [
-                    192,
-                    582,
-                    615
-                ],
-                "(2015).": [
-                    193,
-                    362,
-                    770
-                ],
-                "Recent": [
-                    194
-                ],
-                "trends": [
-                    195
-                ],
-                "poverty": [
-                    199,
-                    236
-                ],
-                "developing": [
-                    201,
-                    704
-                ],
-                "countries”,": [
-                    202
-                ],
-                "Handbook": [
-                    203
-                ],
-                "Income": [
-                    205
-                ],
-                "Distribution.": [
-                    206
-                ],
-                "A.": [
-                    207,
-                    280,
-                    341,
-                    519,
-                    638
-                ],
-                "Atkinson": [
-                    208
-                ],
-                "y": [
-                    209,
-                    290,
-                    324,
-                    333,
-                    438
-                ],
-                "Bourguignon": [
-                    211
-                ],
-                "(eds.),": [
-                    212
-                ],
-                "vol.": [
-                    213
-                ],
-                "2,": [
-                    214
-                ],
-                "Amsterdam,": [
-                    215
-                ],
-                "Elsevier.": [
-                    216
-                ],
-                "Azevedo,": [
-                    218
-                ],
-                "J.": [
-                    219,
-                    246,
-                    274,
-                    299,
-                    472,
-                    473,
-                    498,
-                    666
-                ],
-                "P.,": [
-                    220
-                ],
-                "Inchauste,": [
-                    221
-                ],
-                "G.,": [
-                    222,
-                    358
-                ],
-                "Olivieri,": [
-                    223
-                ],
-                "S.,": [
-                    224,
-                    658
-                ],
-                "Saavedra,": [
-                    225
-                ],
-                "J.,": [
-                    226
-                ],
-                "Winkler,": [
-                    228
-                ],
-                "H.": [
-                    229,
-                    752
-                ],
-                "(2013).": [
-                    230,
-                    811
-                ],
-                "Is": [
-                    231,
-                    771
-                ],
-                "labor": [
-                    232
-                ],
-                "responsible": [
-                    234
-                ],
-                "reduction?": [
-                    237
-                ],
-                "A": [
-                    238,
-                    372
-                ],
-                "decomposition": [
-                    239
-                ],
-                "approach.": [
-                    240
-                ],
-                "World": [
-                    242,
-                    294,
-                    490,
-                    683,
-                    745,
-                    804
-                ],
-                "Bank.": [
-                    243,
-                    295,
-                    491,
-                    746
-                ],
-                "Baez,": [
-                    245,
-                    273
-                ],
-                "E.,": [
-                    247,
-                    275,
-                    388,
-                    585
-                ],
-                "Santos,": [
-                    249
-                ],
-                "I.": [
-                    250,
-                    391,
-                    718
-                ],
-                "V.": [
-                    251,
-                    689
-                ],
-                "(2008).": [
-                    252,
-                    521
-                ],
-                "On": [
-                    253
-                ],
-                "shaky": [
-                    254
-                ],
-                "ground:": [
-                    255
-                ],
-                "effects": [
-                    257,
-                    365,
-                    641
-                ],
-                "earthquakes": [
-                    259
-                ],
-                "household": [
-                    261
-                ],
-                "poverty.": [
-                    264
-                ],
-                "RPP": [
-                    265
-                ],
-                "LAC-MDGs": [
-                    266
-                ],
-                "Poverty-02/2008,": [
-                    268
-                ],
-                "RBLAC-UNDP,": [
-                    269,
-                    575
-                ],
-                "New": [
-                    270,
-                    576
-                ],
-                "York.": [
-                    271,
-                    577
-                ],
-                "Rodriguez-Castelan,": [
-                    276
-                ],
-                "C.,": [
-                    277,
-                    662
-                ],
-                "Fuchs,": [
-                    279
-                ],
-                "(2017).": [
-                    281,
-                    320,
-                    499
-                ],
-                "?Desarrollo": [
-                    282
-                ],
-                "Economico": [
-                    283
-                ],
-                "Inestable?": [
-                    284
-                ],
-                "Choques": [
-                    285
-                ],
-                "Agregados": [
-                    286
-                ],
-                "en": [
-                    287,
-                    327
-                ],
-                "Latina": [
-                    289,
-                    332,
-                    437
-                ],
-                "el": [
-                    291,
-                    334,
-                    439
-                ],
-                "Caribe.": [
-                    292
-                ],
-                "Barro,": [
-                    297
-                ],
-                "R.": [
-                    298,
-                    792
-                ],
-                "(2006).": [
-                    300,
-                    457,
-                    794
-                ],
-                "Rare": [
-                    301
-                ],
-                "asset": [
-                    304
-                ],
-                "markets": [
-                    305,
-                    702
-                ],
-                "twentieth": [
-                    308
-                ],
-                "century.": [
-                    309
-                ],
-                "Quarterly": [
-                    311
-                ],
-                "Journal": [
-                    312,
-                    380,
-                    533,
-                    710,
-                    725,
-                    782
-                ],
-                "Economics,": [
-                    314,
-                    405
-                ],
-                "121(3),": [
-                    315
-                ],
-                "823-866.": [
-                    316
-                ],
-                "Bello,": [
-                    318
-                ],
-                "O.": [
-                    319,
-                    468
-                ],
-                "Desastres,": [
-                    321
-                ],
-                "crecimiento": [
-                    322
-                ],
-                "economico": [
-                    323
-                ],
-                "respuesta": [
-                    325
-                ],
-                "fiscal": [
-                    326
-                ],
-                "los": [
-                    328
-                ],
-                "paises": [
-                    329
-                ],
-                "de": [
-                    330,
-                    444
-                ],
-                "Caribe,": [
-                    335
-                ],
-                "1972-2010.": [
-                    336
-                ],
-                "Revista": [
-                    337
-                ],
-                "Cepal.": [
-                    338
-                ],
-                "Berry,": [
-                    340
-                ],
-                "(1998).": [
-                    342
-                ],
-                "Poverty,": [
-                    343,
-                    573
-                ],
-                "reform": [
-                    345,
-                    646
-                ],
-                "distribution": [
-                    348,
-                    649
-                ],
-                "America.": [
-                    351,
-                    488,
-                    597,
-                    652
-                ],
-                "Boulder,": [
-                    352
-                ],
-                "Colorado,": [
-                    353
-                ],
-                "Lynne": [
-                    354
-                ],
-                "Rienner.": [
-                    355
-                ],
-                "Caruso,": [
-                    357
-                ],
-                "Miller,": [
-                    360
-                ],
-                "S.": [
-                    361,
-                    494,
-                    637,
-                    657
-                ],
-                "Long": [
-                    363
-                ],
-                "run": [
-                    364
-                ],
-                "intergenerational": [
-                    367
-                ],
-                "transmission": [
-                    368
-                ],
-                "disasters:": [
-                    371
-                ],
-                "case": [
-                    373
-                ],
-                "1970": [
-                    377
-                ],
-                "Ancash": [
-                    378
-                ],
-                "Earthquake.": [
-                    379
-                ],
-                "development": [
-                    382
-                ],
-                "economics,": [
-                    383,
-                    536,
-                    728
-                ],
-                "117,": [
-                    384
-                ],
-                "134-150.": [
-                    385
-                ],
-                "Cavallo,": [
-                    387
-                ],
-                "Noy,": [
-                    390,
-                    717
-                ],
-                "(2011).": [
-                    392
-                ],
-                "economy—a": [
-                    397
-                ],
-                "survey.": [
-                    398
-                ],
-                "International": [
-                    399
-                ],
-                "Review": [
-                    400
-                ],
-                "Environmental": [
-                    402
-                ],
-                "Resource": [
-                    404
-                ],
-                "5(1),": [
-                    406
-                ],
-                "63-102.": [
-                    407
-                ],
-                "Charveriat,": [
-                    409
-                ],
-                "C.": [
-                    410,
-                    588,
-                    733
-                ],
-                "(2000).": [
-                    411,
-                    639
-                ],
-                "Caribbean:": [
-                    419
-                ],
-                "An": [
-                    420
-                ],
-                "overview": [
-                    421
-                ],
-                "risk.": [
-                    423
-                ],
-                "Working": [
-                    424
-                ],
-                "434,": [
-                    426
-                ],
-                "Inter-American": [
-                    427
-                ],
-                "Development": [
-                    428,
-                    712,
-                    727,
-                    785
-                ],
-                "Bank,": [
-                    429,
-                    805
-                ],
-                "Washington": [
-                    430
-                ],
-                "DC.": [
-                    431
-                ],
-                "Comision": [
-                    433
-                ],
-                "Economica": [
-                    434
-                ],
-                "para": [
-                    435
-                ],
-                "Caribe": [
-                    440
-                ],
-                "(CEPAL).": [
-                    441
-                ],
-                "Panorama": [
-                    442
-                ],
-                "Social": [
-                    443,
-                    511,
-                    806
-                ],
-                "Latina,": [
-                    446
-                ],
-                "2017": [
-                    447
-                ],
-                "(LC/PUB.2018/1-P).": [
-                    448
-                ],
-                "Santiago,": [
-                    449
-                ],
-                "2018": [
-                    450
-                ],
-                "Helmer,": [
-                    452
-                ],
-                "M": [
-                    453
-                ],
-                "Hilhorst,": [
-                    455
-                ],
-                "D.": [
-                    456,
-                    515,
-                    693
-                ],
-                "climate": [
-                    461,
-                    624
-                ],
-                "change.": [
-                    462,
-                    625
-                ],
-                "Disasters,": [
-                    463
-                ],
-                "30(1),": [
-                    464,
-                    685
-                ],
-                "1-4.": [
-                    465
-                ],
-                "Ishizawa,": [
-                    467
-                ],
-                "A.,": [
-                    469,
-                    690
-                ],
-                "Miranda,": [
-                    471
-                ],
-                "(2016).": [
-                    474,
-                    589
-                ],
-                "Weathering": [
-                    475
-                ],
-                "storms:": [
-                    476
-                ],
-                "understanding": [
-                    477
-                ],
-                "poor": [
-                    485,
-                    680
-                ],
-                "Central": [
-                    487
-                ],
-                "Islam,": [
-                    493
-                ],
-                "N.,": [
-                    495,
-                    580
-                ],
-                "Winkel,": [
-                    497
-                ],
-                "Climate": [
-                    500
-                ],
-                "change": [
-                    501
-                ],
-                "social": [
-                    503,
-                    802
-                ],
-                "United": [
-                    505
-                ],
-                "Nations,": [
-                    506
-                ],
-                "Department": [
-                    507
-                ],
-                "Economic": [
-                    509,
-                    760
-                ],
-                "Affairs.": [
-                    512
-                ],
-                "Kellenberg,": [
-                    514
-                ],
-                "K.,": [
-                    516
-                ],
-                "Mobarak,": [
-                    518
-                ],
-                "M.": [
-                    520
-                ],
-                "Does": [
-                    522
-                ],
-                "rising": [
-                    523
-                ],
-                "increase": [
-                    525
-                ],
-                "decrease": [
-                    527
-                ],
-                "damage": [
-                    528
-                ],
-                "risk": [
-                    529
-                ],
-                "from": [
-                    530,
-                    707
-                ],
-                "disasters?.": [
-                    532
-                ],
-                "urban": [
-                    535
-                ],
-                "63(3),": [
-                    537
-                ],
-                "788-802.": [
-                    538
-                ],
-                "Lopez-Calva,": [
-                    540,
-                    581
-                ],
-                "LF": [
-                    541
-                ],
-                "E": [
-                    543
-                ],
-                "Ortiz-Juarez": [
-                    544
-                ],
-                "(2009).": [
-                    545,
-                    695,
-                    719,
-                    734
-                ],
-                "Evidence": [
-                    546
-                ],
-                "Policy": [
-                    548
-                ],
-                "Lessons": [
-                    549
-                ],
-                "Links": [
-                    552
-                ],
-                "Disaster": [
-                    554
-                ],
-                "Risk": [
-                    555
-                ],
-                "Poverty": [
-                    557
-                ],
-                "America:": [
-                    560
-                ],
-                "Methodology": [
-                    561
-                ],
-                "Summary": [
-                    563
-                ],
-                "Country": [
-                    565
-                ],
-                "Studies.": [
-                    566
-                ],
-                "Research": [
-                    567
-                ],
-                "Public": [
-                    569
-                ],
-                "Policy,": [
-                    570
-                ],
-                "MDGs": [
-                    571
-                ],
-                "MDG-01-2009,": [
-                    574
-                ],
-                "Lustig,": [
-                    579
-                ],
-                "F.,": [
-                    583
-                ],
-                "Ortiz-Juarez,": [
-                    584
-                ],
-                "Monga,": [
-                    587
-                ],
-                "Deconstructing": [
-                    590
-                ],
-                "decline": [
-                    592,
-                    773
-                ],
-                "Inequality": [
-                    599
-                ],
-                "growth:": [
-                    601
-                ],
-                "Patterns": [
-                    602
-                ],
-                "policy": [
-                    604
-                ],
-                "(pp.": [
-                    605
-                ],
-                "212-247).": [
-                    606
-                ],
-                "Palgrave": [
-                    607
-                ],
-                "Macmillan,": [
-                    608
-                ],
-                "London.": [
-                    609
-                ],
-                "Mendelsohn,": [
-                    611
-                ],
-                "R.,": [
-                    612
-                ],
-                "Williams,": [
-                    614
-                ],
-                "(2004).": [
-                    616
-                ],
-                "Comparing": [
-                    617
-                ],
-                "forecasts": [
-                    618
-                ],
-                "global": [
-                    621
-                ],
-                "impacts": [
-                    622,
-                    697
-                ],
-                "Mitigation": [
-                    626
-                ],
-                "Adaptation": [
-                    628
-                ],
-                "Strategies": [
-                    629
-                ],
-                "Global": [
-                    631
-                ],
-                "Change,": [
-                    632
-                ],
-                "9(4),": [
-                    633
-                ],
-                "315-333.": [
-                    634
-                ],
-                "Morley,": [
-                    636
-                ],
-                "growth": [
-                    643
-                ],
-                "Cepal": [
-                    653
-                ],
-                "Review.": [
-                    654
-                ],
-                "Morris,": [
-                    656
-                ],
-                "Neidecker-Gonzales,": [
-                    659
-                ],
-                "O.,": [
-                    660
-                ],
-                "Carletto,": [
-                    661
-                ],
-                "Munguia,": [
-                    663
-                ],
-                "M.,": [
-                    664,
-                    667,
-                    749,
-                    766
-                ],
-                "Medina,": [
-                    665
-                ],
-                "Wodon,": [
-                    669
-                ],
-                "Q.": [
-                    670
-                ],
-                "(2002).": [
-                    671,
-                    753
-                ],
-                "Hurricane": [
-                    672
-                ],
-                "Mitch": [
-                    673
-                ],
-                "livelihoods": [
-                    676
-                ],
-                "rural": [
-                    679
-                ],
-                "Honduras.": [
-                    682
-                ],
-                "development,": [
-                    684
-                ],
-                "49-60.": [
-                    686
-                ],
-                "Mueller,": [
-                    688
-                ],
-                "Osgood,": [
-                    692
-                ],
-                "E.": [
-                    694,
-                    810
-                ],
-                "Long-term": [
-                    696
-                ],
-                "droughts": [
-                    699
-                ],
-                "labour": [
-                    701
-                ],
-                "countries:": [
-                    705
-                ],
-                "evidence": [
-                    706
-                ],
-                "Brazil.": [
-                    708
-                ],
-                "Studies,": [
-                    713
-                ],
-                "45(10),": [
-                    714
-                ],
-                "1651-1662.": [
-                    715
-                ],
-                "macroeconomic": [
-                    721,
-                    739
-                ],
-                "consequences": [
-                    722
-                ],
-                "disasters.": [
-                    724,
-                    743
-                ],
-                "88(2),": [
-                    729
-                ],
-                "221-231.": [
-                    730
-                ],
-                "Raddatz,": [
-                    732
-                ],
-                "wrath": [
-                    736
-                ],
-                "God:": [
-                    738
-                ],
-                "costs": [
-                    740
-                ],
-                "Skidmore,": [
-                    748
-                ],
-                "Toya,": [
-                    751
-                ],
-                "Do": [
-                    754
-                ],
-                "promote": [
-                    757
-                ],
-                "long‐run": [
-                    758
-                ],
-                "growth?.": [
-                    759
-                ],
-                "inquiry,": [
-                    761
-                ],
-                "40(4),": [
-                    762
-                ],
-                "664-687.": [
-                    763
-                ],
-                "Szekely,": [
-                    765
-                ],
-                "Mendoza,": [
-                    768
-                ],
-                "P.": [
-                    769
-                ],
-                "here": [
-                    779
-                ],
-                "stay?.": [
-                    781
-                ],
-                "Human": [
-                    784
-                ],
-                "Capabilities,": [
-                    787
-                ],
-                "16(3),": [
-                    788
-                ],
-                "397-419.": [
-                    789
-                ],
-                "Vakis,": [
-                    791
-                ],
-                "N.": [
-                    793
-                ],
-                "Complementing": [
-                    795
-                ],
-                "management:": [
-                    798
-                ],
-                "role": [
-                    800
-                ],
-                "protection.": [
-                    803
-                ],
-                "Protection.": [
-                    807
-                ],
-                "Yamamura,": [
-                    809
-                ],
-                "Impact": [
-                    812
-                ],
-                "inequality:": [
-                    818
-                ],
-                "Analysis": [
-                    819
-                ],
-                "1965": [
-                    826
-                ],
-                "2004.": [
-                    828
-                ],
-                "Munich": [
-                    829
-                ],
-                "Personal": [
-                    830
-                ],
-                "RePEc": [
-                    831
-                ],
-                "Archive.": [
-                    832
-                ]
-            },
-            "counts_by_year": [
-                {
-                    "year": 2021,
-                    "cited_by_count": 1
-                }
-            ],
-            "updated_date": "2026-10-28T10:33:24.094632",
-            "created_date": "2019-12-05T00:00:00"
         }
     ],
     "group_by": []

@@ -1,7 +1,7 @@
 {
     "meta": {
         "count": 33,
-        "db_response_time_ms": 348,
+        "db_response_time_ms": 572,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -207,7 +207,7 @@
             "doi": "https://doi.org/10.18356/9789210041065c041",
             "title": "No. 44819. International Development Association and Honduras",
             "display_name": "No. 44819. International Development Association and Honduras",
-            "relevance_score": 176.61014,
+            "relevance_score": 176.56252,
             "publication_year": 2020,
             "publication_date": "2020-12-29",
             "ids": {
@@ -540,26 +540,26 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Partnerships for the goals",
-                    "score": 1.0,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "id": "https://metadata.un.org/sdg/17",
+                    "score": 1.0
                 },
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.6618000268936157,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.6618000268936157
                 },
                 {
                     "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.4943999946117401,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/9",
+                    "score": 0.4943999946117401
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -670,7 +670,7 @@
             "doi": "https://doi.org/10.2499/p15738coll2.133808",
             "title": "Gender and food security in Honduras",
             "display_name": "Gender and food security in Honduras",
-            "relevance_score": 174.5061,
+            "relevance_score": 174.59503,
             "publication_year": 2020,
             "publication_date": "2020-01-01",
             "ids": {
@@ -1151,23 +1151,23 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Gender equality",
-                    "score": 1.0,
-                    "id": "https://metadata.un.org/sdg/5"
+                    "id": "https://metadata.un.org/sdg/5",
+                    "score": 1.0
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.9629999995231628,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.9629999995231628
                 },
                 {
                     "display_name": "Zero hunger",
-                    "score": 0.958299994468689,
-                    "id": "https://metadata.un.org/sdg/2"
+                    "id": "https://metadata.un.org/sdg/2",
+                    "score": 0.958299994468689
                 },
                 {
                     "display_name": "No poverty",
-                    "score": 0.8928999900817871,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.8928999900817871
                 }
             ],
             "study_designs": [
@@ -1179,8 +1179,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -1634,7 +1634,7 @@
             "doi": "https://doi.org/10.25669/fe5d-a1nn",
             "title": "Modeling natural resource scarcity and poverty effects on fertility in Honduras, Nepal, and Tanzania",
             "display_name": "Modeling natural resource scarcity and poverty effects on fertility in Honduras, Nepal, and Tanzania",
-            "relevance_score": 167.39449,
+            "relevance_score": 168.06357,
             "publication_year": 2019,
             "publication_date": "2019-05-29",
             "ids": {
@@ -2168,8 +2168,8 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "No poverty",
-                    "score": 0.8928999900817871,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.8928999900817871
                 }
             ],
             "study_designs": [
@@ -2181,8 +2181,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W67249623.pdf",
@@ -2929,7 +2929,7 @@
             "doi": null,
             "title": "TaiwanICDF Partners with Catholic Relief Services to Help Honduras Strengthen Community-Based and Municipal Water and Sanitation Systems",
             "display_name": "TaiwanICDF Partners with Catholic Relief Services to Help Honduras Strengthen Community-Based and Municipal Water and Sanitation Systems",
-            "relevance_score": 165.11638,
+            "relevance_score": 165.50887,
             "publication_year": 2021,
             "publication_date": "2021-01-13",
             "ids": {
@@ -3229,26 +3229,26 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.9090999960899353,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.9090999960899353
                 },
                 {
                     "display_name": "Partnerships for the goals",
-                    "score": 0.75,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "id": "https://metadata.un.org/sdg/17",
+                    "score": 0.75
                 },
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.504800021648407,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.504800021648407
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -3374,11 +3374,816 @@
             "created_date": "2021-01-18T00:00:00"
         },
         {
+            "id": "https://openalex.org/W4393914078",
+            "doi": "https://doi.org/10.31273/alternautas.v3i2.1048",
+            "title": "Governance in \"Murky Waters\": the Political Fields of Water Extractivism in Honduras",
+            "display_name": "Governance in \"Murky Waters\": the Political Fields of Water Extractivism in Honduras",
+            "relevance_score": 153.11664,
+            "publication_year": 2022,
+            "publication_date": "2022-02-07",
+            "ids": {
+                "openalex": "https://openalex.org/W4393914078",
+                "doi": "https://doi.org/10.31273/alternautas.v3i2.1048"
+            },
+            "language": "en",
+            "primary_location": {
+                "id": "doi:10.31273/alternautas.v3i2.1048",
+                "doi": "https://doi.org/10.31273/alternautas.v3i2.1048",
+                "is_oa": true,
+                "landing_page_url": "http://dx.doi.org/10.31273/alternautas.v3i2.1048",
+                "pdf_url": "https://reinventionjournal.org/index.php/alternautas/article/download/1048/719",
+                "source": {
+                    "id": "https://openalex.org/S4220651292",
+                    "display_name": "Alternautas",
+                    "issn_l": "2057-4924",
+                    "issn": [
+                        "2057-4924"
+                    ],
+                    "is_oa": true,
+                    "is_in_doaj": true,
+                    "is_core": false,
+                    "listed_in": [
+                        "doaj",
+                        "erih-plus",
+                        "latindex",
+                        "vabb-shw"
+                    ],
+                    "host_organization": "https://openalex.org/P4310311834",
+                    "host_organization_name": "University of Warwick",
+                    "host_organization_lineage": [
+                        "https://openalex.org/P4310311834"
+                    ],
+                    "host_organization_lineage_names": [
+                        "University of Warwick"
+                    ],
+                    "type": "journal"
+                },
+                "license": "cc-by-nc-sa",
+                "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "Alternautas",
+                "raw_type": "journal-article"
+            },
+            "volume": null,
+            "type": "article",
+            "indexed_in": [
+                "crossref",
+                "doaj"
+            ],
+            "open_access": {
+                "is_oa": true,
+                "oa_status": "diamond",
+                "oa_url": "https://reinventionjournal.org/index.php/alternautas/article/download/1048/719",
+                "any_repository_has_fulltext": true
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": "https://openalex.org/A5088132163",
+                        "display_name": "Ingo Gentes",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": true,
+                    "raw_author_name": "Ingo Gentes",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 0,
+            "institutions_distinct_count": 0,
+            "corresponding_author_ids": [
+                "https://openalex.org/A5088132163"
+            ],
+            "corresponding_institution_ids": [],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": 0.0,
+            "has_fulltext": false,
+            "cited_by_count": 0,
+            "citation_normalized_percentile": {
+                "value": 0.34289263,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": false
+            },
+            "cited_by_percentile_year": null,
+            "biblio": {
+                "volume": "3",
+                "issue": "2",
+                "first_page": null,
+                "last_page": null
+            },
+            "is_retracted": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T12248",
+                "display_name": "Water Governance and Infrastructure",
+                "score": 0.9613999724388123,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/3320",
+                    "display_name": "Political Science and International Relations"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/33",
+                    "display_name": "Social Sciences"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T12248",
+                    "display_name": "Water Governance and Infrastructure",
+                    "score": 0.9613999724388123,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3320",
+                        "display_name": "Political Science and International Relations"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T14232",
+                    "display_name": "Water Resource Management and Quality",
+                    "score": 0.038100000470876694,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2312",
+                        "display_name": "Water Science and Technology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/23",
+                        "display_name": "Environmental Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T13687",
+                    "display_name": "Extractivism and Socioeconomic Issues",
+                    "score": 9.999999747378752e-05,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3312",
+                        "display_name": "Sociology and Political Science"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/water-governance",
+                    "display_name": "water governance",
+                    "score": 0.8240000009536743
+                },
+                {
+                    "id": "https://openalex.org/keywords/political-field",
+                    "display_name": "political field",
+                    "score": 0.6359999775886536
+                },
+                {
+                    "id": "https://openalex.org/keywords/water-and-sanitation-policy",
+                    "display_name": "water and sanitation policy",
+                    "score": 0.7440000176429749
+                },
+                {
+                    "id": "https://openalex.org/keywords/institutional-restructuring",
+                    "display_name": "institutional restructuring",
+                    "score": 0.625
+                },
+                {
+                    "id": "https://openalex.org/keywords/honduras",
+                    "display_name": "Honduras",
+                    "score": 0.38199999928474426
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C94625758",
+                    "wikidata": "https://www.wikidata.org/wiki/Q7163",
+                    "display_name": "Politics",
+                    "level": 2,
+                    "score": 0.7161424160003662
+                },
+                {
+                    "id": "https://openalex.org/C39389867",
+                    "wikidata": "https://www.wikidata.org/wiki/Q380767",
+                    "display_name": "Corporate governance",
+                    "level": 2,
+                    "score": 0.6905790567398071
+                },
+                {
+                    "id": "https://openalex.org/C17744445",
+                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
+                    "display_name": "Political science",
+                    "level": 0,
+                    "score": 0.5857492089271545
+                },
+                {
+                    "id": "https://openalex.org/C138921699",
+                    "wikidata": "https://www.wikidata.org/wiki/Q47555",
+                    "display_name": "Political economy",
+                    "level": 1,
+                    "score": 0.382515549659729
+                },
+                {
+                    "id": "https://openalex.org/C199539241",
+                    "wikidata": "https://www.wikidata.org/wiki/Q7748",
+                    "display_name": "Law",
+                    "level": 1,
+                    "score": 0.25556695461273193
+                },
+                {
+                    "id": "https://openalex.org/C144133560",
+                    "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+                    "display_name": "Business",
+                    "level": 0,
+                    "score": 0.2156282365322113
+                },
+                {
+                    "id": "https://openalex.org/C144024400",
+                    "wikidata": "https://www.wikidata.org/wiki/Q21201",
+                    "display_name": "Sociology",
+                    "level": 0,
+                    "score": 0.1408594846725464
+                },
+                {
+                    "id": "https://openalex.org/C10138342",
+                    "wikidata": "https://www.wikidata.org/wiki/Q43015",
+                    "display_name": "Finance",
+                    "level": 1,
+                    "score": 0.0
+                }
+            ],
+            "mesh": [],
+            "locations_count": 2,
+            "locations": [
+                {
+                    "id": "doi:10.31273/alternautas.v3i2.1048",
+                    "doi": "https://doi.org/10.31273/alternautas.v3i2.1048",
+                    "is_oa": true,
+                    "landing_page_url": "http://dx.doi.org/10.31273/alternautas.v3i2.1048",
+                    "pdf_url": "https://reinventionjournal.org/index.php/alternautas/article/download/1048/719",
+                    "source": {
+                        "id": "https://openalex.org/S4220651292",
+                        "display_name": "Alternautas",
+                        "issn_l": "2057-4924",
+                        "issn": [
+                            "2057-4924"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": false,
+                        "listed_in": [
+                            "doaj",
+                            "erih-plus",
+                            "latindex",
+                            "vabb-shw"
+                        ],
+                        "host_organization": "https://openalex.org/P4310311834",
+                        "host_organization_name": "University of Warwick",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310311834"
+                        ],
+                        "host_organization_lineage_names": [
+                            "University of Warwick"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc-sa",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Alternautas",
+                    "raw_type": "journal-article"
+                },
+                {
+                    "id": "pmh:oai:doaj.org/article:b94259fbcc194efe85ddaa13e1160732",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://doaj.org/article/b94259fbcc194efe85ddaa13e1160732",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306401280",
+                        "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": null,
+                        "host_organization_name": null,
+                        "host_organization_lineage": [],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "cc-by-sa",
+                    "license_id": "https://openalex.org/licenses/cc-by-sa",
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": "Alternautas, Vol 3, Iss 2 (2022)",
+                    "raw_type": "article"
+                }
+            ],
+            "best_oa_location": {
+                "id": "doi:10.31273/alternautas.v3i2.1048",
+                "doi": "https://doi.org/10.31273/alternautas.v3i2.1048",
+                "is_oa": true,
+                "landing_page_url": "http://dx.doi.org/10.31273/alternautas.v3i2.1048",
+                "pdf_url": "https://reinventionjournal.org/index.php/alternautas/article/download/1048/719",
+                "source": {
+                    "id": "https://openalex.org/S4220651292",
+                    "display_name": "Alternautas",
+                    "issn_l": "2057-4924",
+                    "issn": [
+                        "2057-4924"
+                    ],
+                    "is_oa": true,
+                    "is_in_doaj": true,
+                    "is_core": false,
+                    "listed_in": [
+                        "doaj",
+                        "erih-plus",
+                        "latindex",
+                        "vabb-shw"
+                    ],
+                    "host_organization": "https://openalex.org/P4310311834",
+                    "host_organization_name": "University of Warwick",
+                    "host_organization_lineage": [
+                        "https://openalex.org/P4310311834"
+                    ],
+                    "host_organization_lineage_names": [
+                        "University of Warwick"
+                    ],
+                    "type": "journal"
+                },
+                "license": "cc-by-nc-sa",
+                "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "Alternautas",
+                "raw_type": "journal-article"
+            },
+            "sustainable_development_goals": [
+                {
+                    "display_name": "Clean water and sanitation",
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.965499997138977
+                },
+                {
+                    "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
+                    "score": 0.8999999761581421
+                }
+            ],
+            "study_designs": [],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "grobid_xml": false,
+                "pdf": true
+            },
+            "content_urls": {
+                "pdf": "https://content.openalex.org/works/W4393914078.pdf"
+            },
+            "referenced_works_count": 0,
+            "referenced_works": [],
+            "related_works": [
+                "https://openalex.org/W180752523",
+                "https://openalex.org/W48996482",
+                "https://openalex.org/W228034316",
+                "https://openalex.org/W2185868511",
+                "https://openalex.org/W138492396",
+                "https://openalex.org/W278051842",
+                "https://openalex.org/W217614586",
+                "https://openalex.org/W2281398169",
+                "https://openalex.org/W2307239649",
+                "https://openalex.org/W4400175933"
+            ],
+            "abstract_inverted_index": {
+                "Profound": [
+                    0
+                ],
+                "changes": [
+                    1
+                ],
+                "in": [
+                    2,
+                    9,
+                    13,
+                    56,
+                    68,
+                    151
+                ],
+                "public": [
+                    3,
+                    19,
+                    72
+                ],
+                "administration": [
+                    4,
+                    47
+                ],
+                "after": [
+                    5
+                ],
+                "the": [
+                    6,
+                    25,
+                    46,
+                    105,
+                    126
+                ],
+                "presidential": [
+                    7
+                ],
+                "elections": [
+                    8
+                ],
+                "Honduras": [
+                    10
+                ],
+                "(2013)": [
+                    11
+                ],
+                "resulted": [
+                    12
+                ],
+                "a": [
+                    14,
+                    34,
+                    82,
+                    98
+                ],
+                "re-structuring": [
+                    15
+                ],
+                "and": [
+                    16,
+                    21,
+                    52,
+                    71,
+                    87,
+                    117,
+                    131,
+                    144,
+                    154
+                ],
+                "regrouping": [
+                    17
+                ],
+                "of": [
+                    18
+                ],
+                "institutions": [
+                    20
+                ],
+                "autonomous": [
+                    22
+                ],
+                "entities": [
+                    23,
+                    146
+                ],
+                "for": [
+                    24,
+                    85,
+                    104,
+                    129
+                ],
+                "relevant": [
+                    26
+                ],
+                "legislative": [
+                    27
+                ],
+                "period": [
+                    28
+                ],
+                "(2014-2018).": [
+                    29
+                ],
+                "These": [
+                    30
+                ],
+                "adjustments,": [
+                    31
+                ],
+                "thought": [
+                    32
+                ],
+                "as": [
+                    33,
+                    64,
+                    66,
+                    119,
+                    121
+                ],
+                "“new": [
+                    35
+                ],
+                "public-private": [
+                    36
+                ],
+                "co-management”": [
+                    37
+                ],
+                "–": [
+                    38
+                ],
+                "aimed": [
+                    39
+                ],
+                "to": [
+                    40,
+                    60,
+                    79,
+                    125
+                ],
+                "“…tangible": [
+                    41
+                ],
+                "impacts": [
+                    42
+                ],
+                "not": [
+                    43
+                ],
+                "only": [
+                    44
+                ],
+                "within": [
+                    45,
+                    50
+                ],
+                "but": [
+                    48
+                ],
+                "also": [
+                    49
+                ],
+                "communities": [
+                    51
+                ],
+                "scattered": [
+                    53
+                ],
+                "settlements": [
+                    54
+                ],
+                "which,": [
+                    55
+                ],
+                "turn,": [
+                    57
+                ],
+                "are": [
+                    58
+                ],
+                "expected": [
+                    59
+                ],
+                "be": [
+                    61
+                ],
+                "both,": [
+                    62
+                ],
+                "beneficiaries": [
+                    63
+                ],
+                "well": [
+                    65,
+                    120
+                ],
+                "participants": [
+                    67
+                ],
+                "innovative": [
+                    69
+                ],
+                "sectorial": [
+                    70
+                ],
+                "policies": [
+                    73
+                ],
+                "programs.”": [
+                    74
+                ],
+                "The": [
+                    75
+                ],
+                "governments’": [
+                    76
+                ],
+                "goal": [
+                    77
+                ],
+                "was": [
+                    78
+                ],
+                "carry": [
+                    80
+                ],
+                "out": [
+                    81
+                ],
+                "National": [
+                    83
+                ],
+                "Plan": [
+                    84,
+                    90
+                ],
+                "Water": [
+                    86,
+                    130
+                ],
+                "Sanitation": [
+                    88,
+                    132
+                ],
+                "(PLANASA,": [
+                    89
+                ],
+                "Nacional": [
+                    91
+                ],
+                "de": [
+                    92,
+                    137
+                ],
+                "Agua": [
+                    93,
+                    138
+                ],
+                "y": [
+                    94,
+                    140
+                ],
+                "Saneamiento)": [
+                    95
+                ],
+                "together": [
+                    96
+                ],
+                "with": [
+                    97
+                ],
+                "still": [
+                    99
+                ],
+                "pending": [
+                    100
+                ],
+                "financial": [
+                    101
+                ],
+                "sector": [
+                    102,
+                    107
+                ],
+                "policy": [
+                    103
+                ],
+                "WASH": [
+                    106
+                ],
+                "(CONASA,": [
+                    108
+                ],
+                "2013b,": [
+                    109
+                ],
+                "c,": [
+                    110
+                ],
+                "2014).": [
+                    111
+                ],
+                "Both": [
+                    112
+                ],
+                "politics": [
+                    113
+                ],
+                "established": [
+                    114
+                ],
+                "different": [
+                    115
+                ],
+                "mechanisms": [
+                    116
+                ],
+                "instruments": [
+                    118
+                ],
+                "strategic": [
+                    122
+                ],
+                "guidelines": [
+                    123
+                ],
+                "according": [
+                    124
+                ],
+                "Framework": [
+                    127
+                ],
+                "Law": [
+                    128
+                ],
+                "(2003,": [
+                    133
+                ],
+                "FLWS,": [
+                    134
+                ],
+                "Ley": [
+                    135
+                ],
+                "Marco": [
+                    136
+                ],
+                "Potable": [
+                    139
+                ],
+                "Saneamiento).": [
+                    141
+                ],
+                "New": [
+                    142
+                ],
+                "secretaries": [
+                    143
+                ],
+                "institutional": [
+                    145
+                ],
+                "generated": [
+                    147
+                ],
+                "adjoined": [
+                    148
+                ],
+                "existing": [
+                    149
+                ],
+                "ones": [
+                    150
+                ],
+                "their": [
+                    152
+                ],
+                "technical": [
+                    153
+                ],
+                "administrative": [
+                    155
+                ],
+                "mandate.": [
+                    156
+                ]
+            },
+            "counts_by_year": [],
+            "updated_date": "2026-05-22T06:13:13.366637",
+            "created_date": "2024-04-04T00:00:00"
+        },
+        {
             "id": "https://openalex.org/W4387911983",
             "doi": "https://doi.org/10.1093/eurpub/ckad160.1548",
             "title": "Strengths, weaknesses, opportunities and threats of a community-based egg program in rural Honduras",
             "display_name": "Strengths, weaknesses, opportunities and threats of a community-based egg program in rural Honduras",
-            "relevance_score": 152.78806,
+            "relevance_score": 153.01892,
             "publication_year": 2023,
             "publication_date": "2023-10-01",
             "ids": {
@@ -4077,26 +4882,26 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.9391000270843506,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.9391000270843506
                 },
                 {
                     "display_name": "Zero hunger",
-                    "score": 0.9208999872207642,
-                    "id": "https://metadata.un.org/sdg/2"
+                    "id": "https://metadata.un.org/sdg/2",
+                    "score": 0.9208999872207642
                 },
                 {
                     "display_name": "No poverty",
-                    "score": 0.666700005531311,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.666700005531311
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4387911983.pdf",
@@ -4844,816 +5649,11 @@
             "created_date": "2023-10-25T00:00:00"
         },
         {
-            "id": "https://openalex.org/W4393914078",
-            "doi": "https://doi.org/10.31273/alternautas.v3i2.1048",
-            "title": "Governance in \"Murky Waters\": the Political Fields of Water Extractivism in Honduras",
-            "display_name": "Governance in \"Murky Waters\": the Political Fields of Water Extractivism in Honduras",
-            "relevance_score": 152.77493,
-            "publication_year": 2022,
-            "publication_date": "2022-02-07",
-            "ids": {
-                "openalex": "https://openalex.org/W4393914078",
-                "doi": "https://doi.org/10.31273/alternautas.v3i2.1048"
-            },
-            "language": "en",
-            "primary_location": {
-                "id": "doi:10.31273/alternautas.v3i2.1048",
-                "doi": "https://doi.org/10.31273/alternautas.v3i2.1048",
-                "is_oa": true,
-                "landing_page_url": "http://dx.doi.org/10.31273/alternautas.v3i2.1048",
-                "pdf_url": "https://reinventionjournal.org/index.php/alternautas/article/download/1048/719",
-                "source": {
-                    "id": "https://openalex.org/S4220651292",
-                    "display_name": "Alternautas",
-                    "issn_l": "2057-4924",
-                    "issn": [
-                        "2057-4924"
-                    ],
-                    "is_oa": true,
-                    "is_in_doaj": true,
-                    "is_core": false,
-                    "listed_in": [
-                        "doaj",
-                        "erih-plus",
-                        "latindex",
-                        "vabb-shw"
-                    ],
-                    "host_organization": "https://openalex.org/P4310311834",
-                    "host_organization_name": "University of Warwick",
-                    "host_organization_lineage": [
-                        "https://openalex.org/P4310311834"
-                    ],
-                    "host_organization_lineage_names": [
-                        "University of Warwick"
-                    ],
-                    "type": "journal"
-                },
-                "license": "cc-by-nc-sa",
-                "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "Alternautas",
-                "raw_type": "journal-article"
-            },
-            "volume": null,
-            "type": "article",
-            "indexed_in": [
-                "crossref",
-                "doaj"
-            ],
-            "open_access": {
-                "is_oa": true,
-                "oa_status": "diamond",
-                "oa_url": "https://reinventionjournal.org/index.php/alternautas/article/download/1048/719",
-                "any_repository_has_fulltext": true
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5088132163",
-                        "display_name": "Ingo Gentes",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": true,
-                    "raw_author_name": "Ingo Gentes",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 0,
-            "institutions_distinct_count": 0,
-            "corresponding_author_ids": [
-                "https://openalex.org/A5088132163"
-            ],
-            "corresponding_institution_ids": [],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.0,
-            "has_fulltext": false,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": {
-                "value": 0.34289263,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": "3",
-                "issue": "2",
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T12248",
-                "display_name": "Water Governance and Infrastructure",
-                "score": 0.9613999724388123,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/3320",
-                    "display_name": "Political Science and International Relations"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/33",
-                    "display_name": "Social Sciences"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T12248",
-                    "display_name": "Water Governance and Infrastructure",
-                    "score": 0.9613999724388123,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3320",
-                        "display_name": "Political Science and International Relations"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T14232",
-                    "display_name": "Water Resource Management and Quality",
-                    "score": 0.038100000470876694,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2312",
-                        "display_name": "Water Science and Technology"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/23",
-                        "display_name": "Environmental Science"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T13687",
-                    "display_name": "Extractivism and Socioeconomic Issues",
-                    "score": 9.999999747378752e-05,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3312",
-                        "display_name": "Sociology and Political Science"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/water-governance",
-                    "display_name": "water governance",
-                    "score": 0.8240000009536743
-                },
-                {
-                    "id": "https://openalex.org/keywords/political-field",
-                    "display_name": "political field",
-                    "score": 0.6359999775886536
-                },
-                {
-                    "id": "https://openalex.org/keywords/water-and-sanitation-policy",
-                    "display_name": "water and sanitation policy",
-                    "score": 0.7440000176429749
-                },
-                {
-                    "id": "https://openalex.org/keywords/institutional-restructuring",
-                    "display_name": "institutional restructuring",
-                    "score": 0.625
-                },
-                {
-                    "id": "https://openalex.org/keywords/honduras",
-                    "display_name": "Honduras",
-                    "score": 0.38199999928474426
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C94625758",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7163",
-                    "display_name": "Politics",
-                    "level": 2,
-                    "score": 0.7161424160003662
-                },
-                {
-                    "id": "https://openalex.org/C39389867",
-                    "wikidata": "https://www.wikidata.org/wiki/Q380767",
-                    "display_name": "Corporate governance",
-                    "level": 2,
-                    "score": 0.6905790567398071
-                },
-                {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.5857492089271545
-                },
-                {
-                    "id": "https://openalex.org/C138921699",
-                    "wikidata": "https://www.wikidata.org/wiki/Q47555",
-                    "display_name": "Political economy",
-                    "level": 1,
-                    "score": 0.382515549659729
-                },
-                {
-                    "id": "https://openalex.org/C199539241",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7748",
-                    "display_name": "Law",
-                    "level": 1,
-                    "score": 0.25556695461273193
-                },
-                {
-                    "id": "https://openalex.org/C144133560",
-                    "wikidata": "https://www.wikidata.org/wiki/Q4830453",
-                    "display_name": "Business",
-                    "level": 0,
-                    "score": 0.2156282365322113
-                },
-                {
-                    "id": "https://openalex.org/C144024400",
-                    "wikidata": "https://www.wikidata.org/wiki/Q21201",
-                    "display_name": "Sociology",
-                    "level": 0,
-                    "score": 0.1408594846725464
-                },
-                {
-                    "id": "https://openalex.org/C10138342",
-                    "wikidata": "https://www.wikidata.org/wiki/Q43015",
-                    "display_name": "Finance",
-                    "level": 1,
-                    "score": 0.0
-                }
-            ],
-            "mesh": [],
-            "locations_count": 2,
-            "locations": [
-                {
-                    "id": "doi:10.31273/alternautas.v3i2.1048",
-                    "doi": "https://doi.org/10.31273/alternautas.v3i2.1048",
-                    "is_oa": true,
-                    "landing_page_url": "http://dx.doi.org/10.31273/alternautas.v3i2.1048",
-                    "pdf_url": "https://reinventionjournal.org/index.php/alternautas/article/download/1048/719",
-                    "source": {
-                        "id": "https://openalex.org/S4220651292",
-                        "display_name": "Alternautas",
-                        "issn_l": "2057-4924",
-                        "issn": [
-                            "2057-4924"
-                        ],
-                        "is_oa": true,
-                        "is_in_doaj": true,
-                        "is_core": false,
-                        "listed_in": [
-                            "doaj",
-                            "erih-plus",
-                            "latindex",
-                            "vabb-shw"
-                        ],
-                        "host_organization": "https://openalex.org/P4310311834",
-                        "host_organization_name": "University of Warwick",
-                        "host_organization_lineage": [
-                            "https://openalex.org/P4310311834"
-                        ],
-                        "host_organization_lineage_names": [
-                            "University of Warwick"
-                        ],
-                        "type": "journal"
-                    },
-                    "license": "cc-by-nc-sa",
-                    "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
-                    "version": "publishedVersion",
-                    "is_accepted": true,
-                    "is_published": true,
-                    "raw_source_name": "Alternautas",
-                    "raw_type": "journal-article"
-                },
-                {
-                    "id": "pmh:oai:doaj.org/article:b94259fbcc194efe85ddaa13e1160732",
-                    "doi": null,
-                    "is_oa": true,
-                    "landing_page_url": "https://doaj.org/article/b94259fbcc194efe85ddaa13e1160732",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4306401280",
-                        "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": null,
-                        "host_organization_name": null,
-                        "host_organization_lineage": [],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": "cc-by-sa",
-                    "license_id": "https://openalex.org/licenses/cc-by-sa",
-                    "version": "submittedVersion",
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": "Alternautas, Vol 3, Iss 2 (2022)",
-                    "raw_type": "article"
-                }
-            ],
-            "best_oa_location": {
-                "id": "doi:10.31273/alternautas.v3i2.1048",
-                "doi": "https://doi.org/10.31273/alternautas.v3i2.1048",
-                "is_oa": true,
-                "landing_page_url": "http://dx.doi.org/10.31273/alternautas.v3i2.1048",
-                "pdf_url": "https://reinventionjournal.org/index.php/alternautas/article/download/1048/719",
-                "source": {
-                    "id": "https://openalex.org/S4220651292",
-                    "display_name": "Alternautas",
-                    "issn_l": "2057-4924",
-                    "issn": [
-                        "2057-4924"
-                    ],
-                    "is_oa": true,
-                    "is_in_doaj": true,
-                    "is_core": false,
-                    "listed_in": [
-                        "doaj",
-                        "erih-plus",
-                        "latindex",
-                        "vabb-shw"
-                    ],
-                    "host_organization": "https://openalex.org/P4310311834",
-                    "host_organization_name": "University of Warwick",
-                    "host_organization_lineage": [
-                        "https://openalex.org/P4310311834"
-                    ],
-                    "host_organization_lineage_names": [
-                        "University of Warwick"
-                    ],
-                    "type": "journal"
-                },
-                "license": "cc-by-nc-sa",
-                "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "Alternautas",
-                "raw_type": "journal-article"
-            },
-            "sustainable_development_goals": [
-                {
-                    "display_name": "Clean water and sanitation",
-                    "score": 0.965499997138977,
-                    "id": "https://metadata.un.org/sdg/6"
-                },
-                {
-                    "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.8999999761581421,
-                    "id": "https://metadata.un.org/sdg/16"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "pdf": true,
-                "grobid_xml": false
-            },
-            "content_urls": {
-                "pdf": "https://content.openalex.org/works/W4393914078.pdf"
-            },
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W180752523",
-                "https://openalex.org/W48996482",
-                "https://openalex.org/W228034316",
-                "https://openalex.org/W2185868511",
-                "https://openalex.org/W138492396",
-                "https://openalex.org/W278051842",
-                "https://openalex.org/W217614586",
-                "https://openalex.org/W2281398169",
-                "https://openalex.org/W2307239649",
-                "https://openalex.org/W4400175933"
-            ],
-            "abstract_inverted_index": {
-                "Profound": [
-                    0
-                ],
-                "changes": [
-                    1
-                ],
-                "in": [
-                    2,
-                    9,
-                    13,
-                    56,
-                    68,
-                    151
-                ],
-                "public": [
-                    3,
-                    19,
-                    72
-                ],
-                "administration": [
-                    4,
-                    47
-                ],
-                "after": [
-                    5
-                ],
-                "the": [
-                    6,
-                    25,
-                    46,
-                    105,
-                    126
-                ],
-                "presidential": [
-                    7
-                ],
-                "elections": [
-                    8
-                ],
-                "Honduras": [
-                    10
-                ],
-                "(2013)": [
-                    11
-                ],
-                "resulted": [
-                    12
-                ],
-                "a": [
-                    14,
-                    34,
-                    82,
-                    98
-                ],
-                "re-structuring": [
-                    15
-                ],
-                "and": [
-                    16,
-                    21,
-                    52,
-                    71,
-                    87,
-                    117,
-                    131,
-                    144,
-                    154
-                ],
-                "regrouping": [
-                    17
-                ],
-                "of": [
-                    18
-                ],
-                "institutions": [
-                    20
-                ],
-                "autonomous": [
-                    22
-                ],
-                "entities": [
-                    23,
-                    146
-                ],
-                "for": [
-                    24,
-                    85,
-                    104,
-                    129
-                ],
-                "relevant": [
-                    26
-                ],
-                "legislative": [
-                    27
-                ],
-                "period": [
-                    28
-                ],
-                "(2014-2018).": [
-                    29
-                ],
-                "These": [
-                    30
-                ],
-                "adjustments,": [
-                    31
-                ],
-                "thought": [
-                    32
-                ],
-                "as": [
-                    33,
-                    64,
-                    66,
-                    119,
-                    121
-                ],
-                "“new": [
-                    35
-                ],
-                "public-private": [
-                    36
-                ],
-                "co-management”": [
-                    37
-                ],
-                "–": [
-                    38
-                ],
-                "aimed": [
-                    39
-                ],
-                "to": [
-                    40,
-                    60,
-                    79,
-                    125
-                ],
-                "“…tangible": [
-                    41
-                ],
-                "impacts": [
-                    42
-                ],
-                "not": [
-                    43
-                ],
-                "only": [
-                    44
-                ],
-                "within": [
-                    45,
-                    50
-                ],
-                "but": [
-                    48
-                ],
-                "also": [
-                    49
-                ],
-                "communities": [
-                    51
-                ],
-                "scattered": [
-                    53
-                ],
-                "settlements": [
-                    54
-                ],
-                "which,": [
-                    55
-                ],
-                "turn,": [
-                    57
-                ],
-                "are": [
-                    58
-                ],
-                "expected": [
-                    59
-                ],
-                "be": [
-                    61
-                ],
-                "both,": [
-                    62
-                ],
-                "beneficiaries": [
-                    63
-                ],
-                "well": [
-                    65,
-                    120
-                ],
-                "participants": [
-                    67
-                ],
-                "innovative": [
-                    69
-                ],
-                "sectorial": [
-                    70
-                ],
-                "policies": [
-                    73
-                ],
-                "programs.”": [
-                    74
-                ],
-                "The": [
-                    75
-                ],
-                "governments’": [
-                    76
-                ],
-                "goal": [
-                    77
-                ],
-                "was": [
-                    78
-                ],
-                "carry": [
-                    80
-                ],
-                "out": [
-                    81
-                ],
-                "National": [
-                    83
-                ],
-                "Plan": [
-                    84,
-                    90
-                ],
-                "Water": [
-                    86,
-                    130
-                ],
-                "Sanitation": [
-                    88,
-                    132
-                ],
-                "(PLANASA,": [
-                    89
-                ],
-                "Nacional": [
-                    91
-                ],
-                "de": [
-                    92,
-                    137
-                ],
-                "Agua": [
-                    93,
-                    138
-                ],
-                "y": [
-                    94,
-                    140
-                ],
-                "Saneamiento)": [
-                    95
-                ],
-                "together": [
-                    96
-                ],
-                "with": [
-                    97
-                ],
-                "still": [
-                    99
-                ],
-                "pending": [
-                    100
-                ],
-                "financial": [
-                    101
-                ],
-                "sector": [
-                    102,
-                    107
-                ],
-                "policy": [
-                    103
-                ],
-                "WASH": [
-                    106
-                ],
-                "(CONASA,": [
-                    108
-                ],
-                "2013b,": [
-                    109
-                ],
-                "c,": [
-                    110
-                ],
-                "2014).": [
-                    111
-                ],
-                "Both": [
-                    112
-                ],
-                "politics": [
-                    113
-                ],
-                "established": [
-                    114
-                ],
-                "different": [
-                    115
-                ],
-                "mechanisms": [
-                    116
-                ],
-                "instruments": [
-                    118
-                ],
-                "strategic": [
-                    122
-                ],
-                "guidelines": [
-                    123
-                ],
-                "according": [
-                    124
-                ],
-                "Framework": [
-                    127
-                ],
-                "Law": [
-                    128
-                ],
-                "(2003,": [
-                    133
-                ],
-                "FLWS,": [
-                    134
-                ],
-                "Ley": [
-                    135
-                ],
-                "Marco": [
-                    136
-                ],
-                "Potable": [
-                    139
-                ],
-                "Saneamiento).": [
-                    141
-                ],
-                "New": [
-                    142
-                ],
-                "secretaries": [
-                    143
-                ],
-                "institutional": [
-                    145
-                ],
-                "generated": [
-                    147
-                ],
-                "adjoined": [
-                    148
-                ],
-                "existing": [
-                    149
-                ],
-                "ones": [
-                    150
-                ],
-                "their": [
-                    152
-                ],
-                "technical": [
-                    153
-                ],
-                "administrative": [
-                    155
-                ],
-                "mandate.": [
-                    156
-                ]
-            },
-            "counts_by_year": [],
-            "updated_date": "2026-05-22T06:13:13.366637",
-            "created_date": "2024-04-04T00:00:00"
-        },
-        {
             "id": "https://openalex.org/W4361200438",
             "doi": "https://doi.org/10.1596/39449",
             "title": "Honduras Poverty Assessment: Toward a Path of Poverty Reduction and Inclusive Growth",
             "display_name": "Honduras Poverty Assessment: Toward a Path of Poverty Reduction and Inclusive Growth",
-            "relevance_score": 149.03935,
+            "relevance_score": 149.88893,
             "publication_year": 2023,
             "publication_date": "2023-02-01",
             "ids": {
@@ -6174,21 +6174,21 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "No poverty",
-                    "score": 1.0,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 1.0
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 1.0,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 1.0
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -6882,7 +6882,7 @@
             "doi": "https://doi.org/10.18687/laccei2026.1.1.1102",
             "title": "Predictive Modeling of Child Stunting in Honduras Using Explainable Machine Learning",
             "display_name": "Predictive Modeling of Child Stunting in Honduras Using Explainable Machine Learning",
-            "relevance_score": 145.75853,
+            "relevance_score": 145.55745,
             "publication_year": 2026,
             "publication_date": "2026-01-01",
             "ids": {
@@ -7077,7 +7077,7 @@
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.67711031,
+                "value": 0.6357994,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -7325,38 +7325,57 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.9391000270843506,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.9391000270843506
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.7390999794006348,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.7390999794006348
                 },
                 {
                     "display_name": "Zero hunger",
-                    "score": 0.6875,
-                    "id": "https://metadata.un.org/sdg/2"
+                    "id": "https://metadata.un.org/sdg/2",
+                    "score": 0.6875
                 },
                 {
                     "display_name": "No poverty",
-                    "score": 0.666700005531311,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.666700005531311
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7197008282.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W7197008282.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 18,
+            "referenced_works": [
+                "https://openalex.org/W1966716734",
+                "https://openalex.org/W1968492123",
+                "https://openalex.org/W2011301426",
+                "https://openalex.org/W2075623847",
+                "https://openalex.org/W2112151961",
+                "https://openalex.org/W2132794807",
+                "https://openalex.org/W2154432893",
+                "https://openalex.org/W2161643046",
+                "https://openalex.org/W2168268121",
+                "https://openalex.org/W2286698476",
+                "https://openalex.org/W2342249984",
+                "https://openalex.org/W2525984666",
+                "https://openalex.org/W2528600432",
+                "https://openalex.org/W2960236837",
+                "https://openalex.org/W2999615587",
+                "https://openalex.org/W3025213933",
+                "https://openalex.org/W4205452629",
+                "https://openalex.org/W4408548920"
+            ],
             "related_works": [
                 "https://openalex.org/W7196992408",
                 "https://openalex.org/W7196963695",
@@ -7832,7 +7851,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-10-29T09:56:32.521200",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2026-08-07T00:00:00"
         },
         {
@@ -7840,7 +7859,7 @@
             "doi": "https://doi.org/10.5377/innovare.v11i2.14780",
             "title": "Percepción ciudadana sobre condiciones de vida y gestión municipal en dos comunidades rurales hondureñas",
             "display_name": "Percepción ciudadana sobre condiciones de vida y gestión municipal en dos comunidades rurales hondureñas",
-            "relevance_score": 141.52142,
+            "relevance_score": 142.30028,
             "publication_year": 2022,
             "publication_date": "2022-08-30",
             "ids": {
@@ -8319,18 +8338,18 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "No poverty",
-                    "score": 0.8928999900817871,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.8928999900817871
                 },
                 {
                     "display_name": "Sustainable cities and communities",
-                    "score": 0.8787999749183655,
-                    "id": "https://metadata.un.org/sdg/11"
+                    "id": "https://metadata.un.org/sdg/11",
+                    "score": 0.8787999749183655
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.7578999996185303,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.7578999996185303
                 }
             ],
             "study_designs": [
@@ -8342,8 +8361,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4296444518.pdf",
@@ -8896,7 +8915,7 @@
             "doi": "https://doi.org/10.5377/rct.v13i25.10413",
             "title": "Gobernanza territorial, oportunidades para el desarrollo y sostenibilidad en Santa Rosa de Copán, Honduras",
             "display_name": "Gobernanza territorial, oportunidades para el desarrollo y sostenibilidad en Santa Rosa de Copán, Honduras",
-            "relevance_score": 139.11055,
+            "relevance_score": 139.34503,
             "publication_year": 2020,
             "publication_date": "2020-11-21",
             "ids": {
@@ -9003,11 +9022,11 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 1.6358,
+            "fwci": 1.5519,
             "has_fulltext": true,
             "cited_by_count": 2,
             "citation_normalized_percentile": {
-                "value": 0.8845513,
+                "value": 0.87814313,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -9266,24 +9285,25 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Sustainable cities and communities",
-                    "score": 0.875,
-                    "id": "https://metadata.un.org/sdg/11"
+                    "id": "https://metadata.un.org/sdg/11",
+                    "score": 0.875
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W3122524648.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W3122524648.grobid-xml"
             },
-            "referenced_works_count": 12,
+            "referenced_works_count": 13,
             "referenced_works": [
                 "https://openalex.org/W1487833140",
+                "https://openalex.org/W1511713726",
                 "https://openalex.org/W1926805253",
                 "https://openalex.org/W1960770758",
                 "https://openalex.org/W2340607758",
@@ -9680,313 +9700,15 @@
                     "cited_by_count": 2
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-02-01T00:00:00"
-        },
-        {
-            "id": "https://openalex.org/W3009650333",
-            "doi": null,
-            "title": "Concept Environmental and Social Review Summary (ESRS) - Water and Sanitation Sustainability Project in Honduras - P173125",
-            "display_name": "Concept Environmental and Social Review Summary (ESRS) - Water and Sanitation Sustainability Project in Honduras - P173125",
-            "relevance_score": 137.53482,
-            "publication_year": 2020,
-            "publication_date": "2020-02-14",
-            "ids": {
-                "openalex": "https://openalex.org/W3009650333",
-                "mag": "3009650333"
-            },
-            "language": "en",
-            "primary_location": {
-                "id": "mag:3009650333",
-                "doi": null,
-                "is_oa": false,
-                "landing_page_url": "http://documents.worldbank.org/curated/en/977161581657178167/Concept-Environmental-and-Social-Review-Summary-ESRS-Water-and-Sanitation-Sustainability-Project-in-Honduras-P173125",
-                "pdf_url": null,
-                "source": null,
-                "license": null,
-                "license_id": null,
-                "version": null,
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": null
-            },
-            "volume": null,
-            "type": "article",
-            "indexed_in": [],
-            "open_access": {
-                "is_oa": false,
-                "oa_status": "closed",
-                "oa_url": null,
-                "any_repository_has_fulltext": false
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5091497202",
-                        "display_name": "Marco Antonio Aguero",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": true,
-                    "raw_author_name": "Marco Antonio Aguero",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 0,
-            "institutions_distinct_count": 0,
-            "corresponding_author_ids": [
-                "https://openalex.org/A5091497202"
-            ],
-            "corresponding_institution_ids": [],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.0,
-            "has_fulltext": false,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": {
-                "value": 0.02887341,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": null,
-                "issue": null,
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T12227",
-                "display_name": "Environmental and Social Impact Assessments",
-                "score": 0.7271000146865845,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/2308",
-                    "display_name": "Management, Monitoring, Policy and Law"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/23",
-                    "display_name": "Environmental Science"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/3",
-                    "display_name": "Physical Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T12227",
-                    "display_name": "Environmental and Social Impact Assessments",
-                    "score": 0.7271000146865845,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2308",
-                        "display_name": "Management, Monitoring, Policy and Law"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/23",
-                        "display_name": "Environmental Science"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T14232",
-                    "display_name": "Water Resource Management and Quality",
-                    "score": 0.2240999937057495,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2312",
-                        "display_name": "Water Science and Technology"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/23",
-                        "display_name": "Environmental Science"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T11781",
-                    "display_name": "Wastewater Treatment and Reuse",
-                    "score": 0.010599999688565731,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2311",
-                        "display_name": "Waste Management and Disposal"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/23",
-                        "display_name": "Environmental Science"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/water-supply",
-                    "display_name": "water supply",
-                    "score": 0.8220000267028809
-                },
-                {
-                    "id": "https://openalex.org/keywords/sanitation",
-                    "display_name": "sanitation",
-                    "score": 0.9959999918937683
-                },
-                {
-                    "id": "https://openalex.org/keywords/social-and-environmental-sustainability",
-                    "display_name": "socio-environmental sustainability",
-                    "score": 0.5770000219345093
-                },
-                {
-                    "id": "https://openalex.org/keywords/project-impact-assessment",
-                    "display_name": "project impact assessment",
-                    "score": 0.40400001406669617
-                },
-                {
-                    "id": "https://openalex.org/keywords/honduras",
-                    "display_name": "Honduras",
-                    "score": 0.47600001096725464
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C2780151969",
-                    "wikidata": "https://www.wikidata.org/wiki/Q949149",
-                    "display_name": "Sanitation",
-                    "level": 2,
-                    "score": 0.7074092030525208
-                },
-                {
-                    "id": "https://openalex.org/C66204764",
-                    "wikidata": "https://www.wikidata.org/wiki/Q219416",
-                    "display_name": "Sustainability",
-                    "level": 2,
-                    "score": 0.6575702428817749
-                },
-                {
-                    "id": "https://openalex.org/C91375879",
-                    "wikidata": "https://www.wikidata.org/wiki/Q15473274",
-                    "display_name": "Environmental planning",
-                    "level": 1,
-                    "score": 0.4250185191631317
-                },
-                {
-                    "id": "https://openalex.org/C107826830",
-                    "wikidata": "https://www.wikidata.org/wiki/Q929380",
-                    "display_name": "Environmental resource management",
-                    "level": 1,
-                    "score": 0.3623575270175934
-                },
-                {
-                    "id": "https://openalex.org/C205649164",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
-                    "display_name": "Geography",
-                    "level": 0,
-                    "score": 0.26908451318740845
-                },
-                {
-                    "id": "https://openalex.org/C39432304",
-                    "wikidata": "https://www.wikidata.org/wiki/Q188847",
-                    "display_name": "Environmental science",
-                    "level": 0,
-                    "score": 0.26198041439056396
-                },
-                {
-                    "id": "https://openalex.org/C87717796",
-                    "wikidata": "https://www.wikidata.org/wiki/Q146326",
-                    "display_name": "Environmental engineering",
-                    "level": 1,
-                    "score": 0.11833015084266663
-                },
-                {
-                    "id": "https://openalex.org/C18903297",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7150",
-                    "display_name": "Ecology",
-                    "level": 1,
-                    "score": 0.08790206909179688
-                },
-                {
-                    "id": "https://openalex.org/C86803240",
-                    "wikidata": "https://www.wikidata.org/wiki/Q420",
-                    "display_name": "Biology",
-                    "level": 0,
-                    "score": 0.0
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "mag:3009650333",
-                    "doi": null,
-                    "is_oa": false,
-                    "landing_page_url": "http://documents.worldbank.org/curated/en/977161581657178167/Concept-Environmental-and-Social-Review-Summary-ESRS-Water-and-Sanitation-Sustainability-Project-in-Honduras-P173125",
-                    "pdf_url": null,
-                    "source": null,
-                    "license": null,
-                    "license_id": null,
-                    "version": null,
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": null
-                }
-            ],
-            "best_oa_location": null,
-            "sustainable_development_goals": [
-                {
-                    "display_name": "Clean water and sanitation",
-                    "score": 0.7778000235557556,
-                    "id": "https://metadata.un.org/sdg/6"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "pdf": false,
-                "grobid_xml": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W3021455997",
-                "https://openalex.org/W2935684439",
-                "https://openalex.org/W2970124854",
-                "https://openalex.org/W3011088467",
-                "https://openalex.org/W3015308856",
-                "https://openalex.org/W2992946530",
-                "https://openalex.org/W3040905925",
-                "https://openalex.org/W3010159119",
-                "https://openalex.org/W3041919004",
-                "https://openalex.org/W2979306140"
-            ],
-            "abstract_inverted_index": null,
-            "counts_by_year": [],
-            "updated_date": "2025-11-06T04:12:42.849631",
-            "created_date": "2020-03-13T00:00:00"
         },
         {
             "id": "https://openalex.org/W3211635524",
             "doi": "https://doi.org/10.1016/j.jrurstud.2021.10.002",
             "title": "Bridging social capital theory and practice: Evidence from community-managed water treatment plants in Honduras",
             "display_name": "Bridging social capital theory and practice: Evidence from community-managed water treatment plants in Honduras",
-            "relevance_score": 136.60384,
+            "relevance_score": 138.96388,
             "publication_year": 2021,
             "publication_date": "2021-11-05",
             "ids": {
@@ -10162,11 +9884,11 @@
                 "currency": "USD",
                 "value_usd": 3020
             },
-            "fwci": 1.1899,
+            "fwci": 1.3193,
             "has_fulltext": false,
-            "cited_by_count": 24,
+            "cited_by_count": 29,
             "citation_normalized_percentile": {
-                "value": 0.75152867,
+                "value": 0.76995791,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -10484,21 +10206,21 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.8999999761581421,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.8999999761581421
                 },
                 {
                     "display_name": "Sustainable cities and communities",
-                    "score": 0.7250000238418579,
-                    "id": "https://metadata.un.org/sdg/11"
+                    "id": "https://metadata.un.org/sdg/11",
+                    "score": 0.7250000238418579
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 59,
@@ -11113,46 +10835,46 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 3
-                },
-                {
-                    "year": 2025,
-                    "cited_by_count": 5
-                },
-                {
-                    "year": 2024,
                     "cited_by_count": 4
                 },
                 {
-                    "year": 2023,
+                    "year": 2025,
                     "cited_by_count": 7
+                },
+                {
+                    "year": 2024,
+                    "cited_by_count": 5
+                },
+                {
+                    "year": 2023,
+                    "cited_by_count": 8
                 },
                 {
                     "year": 2022,
                     "cited_by_count": 5
                 }
             ],
-            "updated_date": "2026-10-30T12:39:25.321706",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-11-22T00:00:00"
         },
         {
-            "id": "https://openalex.org/W2986006493",
+            "id": "https://openalex.org/W3009650333",
             "doi": null,
-            "title": "Honduras - LATIN AMERICA AND CARIBBEAN- P170469- TEGUCIGALPA: WATER SUPPLY STRENGTHENING PROJECT - Procurement Plan",
-            "display_name": "Honduras - LATIN AMERICA AND CARIBBEAN- P170469- TEGUCIGALPA: WATER SUPPLY STRENGTHENING PROJECT - Procurement Plan",
-            "relevance_score": 136.39441,
-            "publication_year": 2019,
-            "publication_date": "2019-10-15",
+            "title": "Concept Environmental and Social Review Summary (ESRS) - Water and Sanitation Sustainability Project in Honduras - P173125",
+            "display_name": "Concept Environmental and Social Review Summary (ESRS) - Water and Sanitation Sustainability Project in Honduras - P173125",
+            "relevance_score": 137.8142,
+            "publication_year": 2020,
+            "publication_date": "2020-02-14",
             "ids": {
-                "openalex": "https://openalex.org/W2986006493",
-                "mag": "2986006493"
+                "openalex": "https://openalex.org/W3009650333",
+                "mag": "3009650333"
             },
             "language": "en",
             "primary_location": {
-                "id": "mag:2986006493",
+                "id": "mag:3009650333",
                 "doi": null,
                 "is_oa": false,
-                "landing_page_url": "https://documents.worldbank.org/curated/en/946461590778926860/Honduras-LATIN-AMERICA-AND-CARIBBEAN-P170469-TEGUCIGALPA-WATER-SUPPLY-STRENGTHENING-PROJECT-Procurement-Plan",
+                "landing_page_url": "http://documents.worldbank.org/curated/en/977161581657178167/Concept-Environmental-and-Social-Review-Summary-ESRS-Water-and-Sanitation-Sustainability-Project-in-Honduras-P173125",
                 "pdf_url": null,
                 "source": null,
                 "license": null,
@@ -11176,15 +10898,15 @@
                 {
                     "author_position": "first",
                     "author": {
-                        "id": "https://openalex.org/A5073836426",
-                        "display_name": "Nasry Juan Asfura Zablah",
+                        "id": "https://openalex.org/A5091497202",
+                        "display_name": "Marco Antonio Aguero",
                         "orcid": null,
                         "observed_orcids": []
                     },
                     "institutions": [],
                     "countries": [],
                     "is_corresponding": true,
-                    "raw_author_name": "Nasry Juan Asfura Zablah",
+                    "raw_author_name": "Marco Antonio Aguero",
                     "raw_affiliation_strings": [],
                     "raw_orcid": null,
                     "affiliations": []
@@ -11194,7 +10916,7 @@
             "countries_distinct_count": 0,
             "institutions_distinct_count": 0,
             "corresponding_author_ids": [
-                "https://openalex.org/A5073836426"
+                "https://openalex.org/A5091497202"
             ],
             "corresponding_institution_ids": [],
             "apc_list": null,
@@ -11203,7 +10925,7 @@
             "has_fulltext": false,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.20701439,
+                "value": 0.02887341,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -11218,44 +10940,44 @@
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
-                "id": "https://openalex.org/T12779",
-                "display_name": "Public Procurement and Policy",
-                "score": 0.75,
+                "id": "https://openalex.org/T12227",
+                "display_name": "Environmental and Social Impact Assessments",
+                "score": 0.7271000146865845,
                 "subfield": {
-                    "id": "https://openalex.org/subfields/1408",
-                    "display_name": "Strategy and Management"
+                    "id": "https://openalex.org/subfields/2308",
+                    "display_name": "Management, Monitoring, Policy and Law"
                 },
                 "field": {
-                    "id": "https://openalex.org/fields/14",
-                    "display_name": "Business, Management and Accounting"
+                    "id": "https://openalex.org/fields/23",
+                    "display_name": "Environmental Science"
                 },
                 "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
+                    "id": "https://openalex.org/domains/3",
+                    "display_name": "Physical Sciences"
                 }
             },
             "topics": [
                 {
-                    "id": "https://openalex.org/T12779",
-                    "display_name": "Public Procurement and Policy",
-                    "score": 0.75,
+                    "id": "https://openalex.org/T12227",
+                    "display_name": "Environmental and Social Impact Assessments",
+                    "score": 0.7271000146865845,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/1408",
-                        "display_name": "Strategy and Management"
+                        "id": "https://openalex.org/subfields/2308",
+                        "display_name": "Management, Monitoring, Policy and Law"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/14",
-                        "display_name": "Business, Management and Accounting"
+                        "id": "https://openalex.org/fields/23",
+                        "display_name": "Environmental Science"
                     },
                     "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
                     }
                 },
                 {
                     "id": "https://openalex.org/T14232",
                     "display_name": "Water Resource Management and Quality",
-                    "score": 0.11819999665021896,
+                    "score": 0.2240999937057495,
                     "subfield": {
                         "id": "https://openalex.org/subfields/2312",
                         "display_name": "Water Science and Technology"
@@ -11270,20 +10992,20 @@
                     }
                 },
                 {
-                    "id": "https://openalex.org/T12248",
-                    "display_name": "Water Governance and Infrastructure",
-                    "score": 0.06589999794960022,
+                    "id": "https://openalex.org/T11781",
+                    "display_name": "Wastewater Treatment and Reuse",
+                    "score": 0.010599999688565731,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/3320",
-                        "display_name": "Political Science and International Relations"
+                        "id": "https://openalex.org/subfields/2311",
+                        "display_name": "Waste Management and Disposal"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
+                        "id": "https://openalex.org/fields/23",
+                        "display_name": "Environmental Science"
                     },
                     "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
                     }
                 }
             ],
@@ -11291,131 +11013,91 @@
                 {
                     "id": "https://openalex.org/keywords/water-supply",
                     "display_name": "water supply",
-                    "score": 0.984000027179718
+                    "score": 0.8220000267028809
                 },
                 {
-                    "id": "https://openalex.org/keywords/water-utilities",
-                    "display_name": "water utilities",
-                    "score": 0.6129999756813049
+                    "id": "https://openalex.org/keywords/sanitation",
+                    "display_name": "sanitation",
+                    "score": 0.9959999918937683
                 },
                 {
-                    "id": "https://openalex.org/keywords/procurement-planning",
-                    "display_name": "procurement planning",
-                    "score": 0.46299999952316284
+                    "id": "https://openalex.org/keywords/social-and-environmental-sustainability",
+                    "display_name": "socio-environmental sustainability",
+                    "score": 0.5770000219345093
                 },
                 {
-                    "id": "https://openalex.org/keywords/tegucigalpa",
-                    "display_name": "Tegucigalpa",
-                    "score": 0.8370000123977661
+                    "id": "https://openalex.org/keywords/project-impact-assessment",
+                    "display_name": "project impact assessment",
+                    "score": 0.40400001406669617
                 },
                 {
-                    "id": "https://openalex.org/keywords/urban-water-services",
-                    "display_name": "urban water services",
-                    "score": 0.5360000133514404
-                },
-                {
-                    "id": "https://openalex.org/keywords/project-procurement",
-                    "display_name": "project procurement",
-                    "score": 0.38499999046325684
+                    "id": "https://openalex.org/keywords/honduras",
+                    "display_name": "Honduras",
+                    "score": 0.47600001096725464
                 }
             ],
             "concepts": [
                 {
-                    "id": "https://openalex.org/C158886217",
-                    "wikidata": "https://www.wikidata.org/wiki/Q16799549",
-                    "display_name": "Latin Americans",
+                    "id": "https://openalex.org/C2780151969",
+                    "wikidata": "https://www.wikidata.org/wiki/Q949149",
+                    "display_name": "Sanitation",
                     "level": 2,
-                    "score": 0.7451708316802979
+                    "score": 0.7074092030525208
                 },
                 {
-                    "id": "https://openalex.org/C2776505523",
-                    "wikidata": "https://www.wikidata.org/wiki/Q4785468",
-                    "display_name": "Plan (archaeology)",
+                    "id": "https://openalex.org/C66204764",
+                    "wikidata": "https://www.wikidata.org/wiki/Q219416",
+                    "display_name": "Sustainability",
                     "level": 2,
-                    "score": 0.5247690677642822
+                    "score": 0.6575702428817749
                 },
                 {
-                    "id": "https://openalex.org/C97053079",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1061108",
-                    "display_name": "Water supply",
-                    "level": 2,
-                    "score": 0.46699419617652893
+                    "id": "https://openalex.org/C91375879",
+                    "wikidata": "https://www.wikidata.org/wiki/Q15473274",
+                    "display_name": "Environmental planning",
+                    "level": 1,
+                    "score": 0.4250185191631317
+                },
+                {
+                    "id": "https://openalex.org/C107826830",
+                    "wikidata": "https://www.wikidata.org/wiki/Q929380",
+                    "display_name": "Environmental resource management",
+                    "level": 1,
+                    "score": 0.3623575270175934
                 },
                 {
                     "id": "https://openalex.org/C205649164",
                     "wikidata": "https://www.wikidata.org/wiki/Q1071",
                     "display_name": "Geography",
                     "level": 0,
-                    "score": 0.4473973512649536
+                    "score": 0.26908451318740845
                 },
                 {
-                    "id": "https://openalex.org/C201650216",
-                    "wikidata": "https://www.wikidata.org/wiki/Q829492",
-                    "display_name": "Procurement",
-                    "level": 2,
-                    "score": 0.4175302982330322
-                },
-                {
-                    "id": "https://openalex.org/C50522688",
-                    "wikidata": "https://www.wikidata.org/wiki/Q189833",
-                    "display_name": "Economic growth",
-                    "level": 1,
-                    "score": 0.3974701166152954
-                },
-                {
-                    "id": "https://openalex.org/C144133560",
-                    "wikidata": "https://www.wikidata.org/wiki/Q4830453",
-                    "display_name": "Business",
+                    "id": "https://openalex.org/C39432304",
+                    "wikidata": "https://www.wikidata.org/wiki/Q188847",
+                    "display_name": "Environmental science",
                     "level": 0,
-                    "score": 0.3764626085758209
-                },
-                {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.3741600513458252
-                },
-                {
-                    "id": "https://openalex.org/C162324750",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8134",
-                    "display_name": "Economics",
-                    "level": 0,
-                    "score": 0.15639320015907288
-                },
-                {
-                    "id": "https://openalex.org/C127413603",
-                    "wikidata": "https://www.wikidata.org/wiki/Q11023",
-                    "display_name": "Engineering",
-                    "level": 0,
-                    "score": 0.13710057735443115
-                },
-                {
-                    "id": "https://openalex.org/C166957645",
-                    "wikidata": "https://www.wikidata.org/wiki/Q23498",
-                    "display_name": "Archaeology",
-                    "level": 1,
-                    "score": 0.0971134603023529
-                },
-                {
-                    "id": "https://openalex.org/C162853370",
-                    "wikidata": "https://www.wikidata.org/wiki/Q39809",
-                    "display_name": "Marketing",
-                    "level": 1,
-                    "score": 0.0928393006324768
-                },
-                {
-                    "id": "https://openalex.org/C199539241",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7748",
-                    "display_name": "Law",
-                    "level": 1,
-                    "score": 0.0
+                    "score": 0.26198041439056396
                 },
                 {
                     "id": "https://openalex.org/C87717796",
                     "wikidata": "https://www.wikidata.org/wiki/Q146326",
                     "display_name": "Environmental engineering",
                     "level": 1,
+                    "score": 0.11833015084266663
+                },
+                {
+                    "id": "https://openalex.org/C18903297",
+                    "wikidata": "https://www.wikidata.org/wiki/Q7150",
+                    "display_name": "Ecology",
+                    "level": 1,
+                    "score": 0.08790206909179688
+                },
+                {
+                    "id": "https://openalex.org/C86803240",
+                    "wikidata": "https://www.wikidata.org/wiki/Q420",
+                    "display_name": "Biology",
+                    "level": 0,
                     "score": 0.0
                 }
             ],
@@ -11423,10 +11105,10 @@
             "locations_count": 1,
             "locations": [
                 {
-                    "id": "mag:2986006493",
+                    "id": "mag:3009650333",
                     "doi": null,
                     "is_oa": false,
-                    "landing_page_url": "https://documents.worldbank.org/curated/en/946461590778926860/Honduras-LATIN-AMERICA-AND-CARIBBEAN-P170469-TEGUCIGALPA-WATER-SUPPLY-STRENGTHENING-PROJECT-Procurement-Plan",
+                    "landing_page_url": "http://documents.worldbank.org/curated/en/977161581657178167/Concept-Environmental-and-Social-Review-Summary-ESRS-Water-and-Sanitation-Sustainability-Project-in-Honduras-P173125",
                     "pdf_url": null,
                     "source": null,
                     "license": null,
@@ -11442,48 +11124,43 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.7778000235557556,
-                    "id": "https://metadata.un.org/sdg/6"
-                },
-                {
-                    "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.4943999946117401,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.7778000235557556
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
             "referenced_works": [],
             "related_works": [
-                "https://openalex.org/W2942537947",
-                "https://openalex.org/W2346692559",
-                "https://openalex.org/W2948946068",
-                "https://openalex.org/W2955674919",
-                "https://openalex.org/W2501700509",
-                "https://openalex.org/W6941437113",
-                "https://openalex.org/W2945802449",
-                "https://openalex.org/W2942313744",
-                "https://openalex.org/W2805961245",
-                "https://openalex.org/W2912936882"
+                "https://openalex.org/W3021455997",
+                "https://openalex.org/W2935684439",
+                "https://openalex.org/W2970124854",
+                "https://openalex.org/W3011088467",
+                "https://openalex.org/W3015308856",
+                "https://openalex.org/W2992946530",
+                "https://openalex.org/W3040905925",
+                "https://openalex.org/W3010159119",
+                "https://openalex.org/W3041919004",
+                "https://openalex.org/W2979306140"
             ],
             "abstract_inverted_index": null,
             "counts_by_year": [],
             "updated_date": "2025-11-06T04:12:42.849631",
-            "created_date": "2019-11-22T00:00:00"
+            "created_date": "2020-03-13T00:00:00"
         },
         {
             "id": "https://openalex.org/W3144891384",
             "doi": null,
             "title": "Azure: Mobilization of Technical Services and Capital to Strengthen Community-Based and Municipal Operated Water and Sanitation Systems in Honduras",
             "display_name": "Azure: Mobilization of Technical Services and Capital to Strengthen Community-Based and Municipal Operated Water and Sanitation Systems in Honduras",
-            "relevance_score": 136.34038,
+            "relevance_score": 136.57622,
             "publication_year": 2021,
             "publication_date": "2021-01-08",
             "ids": {
@@ -11814,31 +11491,31 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.9090999960899353,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.9090999960899353
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.576200008392334,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.576200008392334
                 },
                 {
                     "display_name": "Partnerships for the goals",
-                    "score": 0.5217000246047974,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "id": "https://metadata.un.org/sdg/17",
+                    "score": 0.5217000246047974
                 },
                 {
                     "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.4943999946117401,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/9",
+                    "score": 0.4943999946117401
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -11961,11 +11638,354 @@
             "created_date": "2021-04-13T00:00:00"
         },
         {
+            "id": "https://openalex.org/W2986006493",
+            "doi": null,
+            "title": "Honduras - LATIN AMERICA AND CARIBBEAN- P170469- TEGUCIGALPA: WATER SUPPLY STRENGTHENING PROJECT - Procurement Plan",
+            "display_name": "Honduras - LATIN AMERICA AND CARIBBEAN- P170469- TEGUCIGALPA: WATER SUPPLY STRENGTHENING PROJECT - Procurement Plan",
+            "relevance_score": 136.49237,
+            "publication_year": 2019,
+            "publication_date": "2019-10-15",
+            "ids": {
+                "openalex": "https://openalex.org/W2986006493",
+                "mag": "2986006493"
+            },
+            "language": "en",
+            "primary_location": {
+                "id": "mag:2986006493",
+                "doi": null,
+                "is_oa": false,
+                "landing_page_url": "https://documents.worldbank.org/curated/en/946461590778926860/Honduras-LATIN-AMERICA-AND-CARIBBEAN-P170469-TEGUCIGALPA-WATER-SUPPLY-STRENGTHENING-PROJECT-Procurement-Plan",
+                "pdf_url": null,
+                "source": null,
+                "license": null,
+                "license_id": null,
+                "version": null,
+                "is_accepted": false,
+                "is_published": false,
+                "raw_source_name": null,
+                "raw_type": null
+            },
+            "volume": null,
+            "type": "article",
+            "indexed_in": [],
+            "open_access": {
+                "is_oa": false,
+                "oa_status": "closed",
+                "oa_url": null,
+                "any_repository_has_fulltext": false
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": "https://openalex.org/A5073836426",
+                        "display_name": "Nasry Juan Asfura Zablah",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": true,
+                    "raw_author_name": "Nasry Juan Asfura Zablah",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 0,
+            "institutions_distinct_count": 0,
+            "corresponding_author_ids": [
+                "https://openalex.org/A5073836426"
+            ],
+            "corresponding_institution_ids": [],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": 0.0,
+            "has_fulltext": false,
+            "cited_by_count": 0,
+            "citation_normalized_percentile": {
+                "value": 0.20701439,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": false
+            },
+            "cited_by_percentile_year": null,
+            "biblio": {
+                "volume": null,
+                "issue": null,
+                "first_page": null,
+                "last_page": null
+            },
+            "is_retracted": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T12779",
+                "display_name": "Public Procurement and Policy",
+                "score": 0.75,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/1408",
+                    "display_name": "Strategy and Management"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/14",
+                    "display_name": "Business, Management and Accounting"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T12779",
+                    "display_name": "Public Procurement and Policy",
+                    "score": 0.75,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1408",
+                        "display_name": "Strategy and Management"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/14",
+                        "display_name": "Business, Management and Accounting"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T14232",
+                    "display_name": "Water Resource Management and Quality",
+                    "score": 0.11819999665021896,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2312",
+                        "display_name": "Water Science and Technology"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/23",
+                        "display_name": "Environmental Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T12248",
+                    "display_name": "Water Governance and Infrastructure",
+                    "score": 0.06589999794960022,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3320",
+                        "display_name": "Political Science and International Relations"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/water-supply",
+                    "display_name": "water supply",
+                    "score": 0.984000027179718
+                },
+                {
+                    "id": "https://openalex.org/keywords/water-utilities",
+                    "display_name": "water utilities",
+                    "score": 0.6129999756813049
+                },
+                {
+                    "id": "https://openalex.org/keywords/procurement-planning",
+                    "display_name": "procurement planning",
+                    "score": 0.46299999952316284
+                },
+                {
+                    "id": "https://openalex.org/keywords/tegucigalpa",
+                    "display_name": "Tegucigalpa",
+                    "score": 0.8370000123977661
+                },
+                {
+                    "id": "https://openalex.org/keywords/urban-water-services",
+                    "display_name": "urban water services",
+                    "score": 0.5360000133514404
+                },
+                {
+                    "id": "https://openalex.org/keywords/project-procurement",
+                    "display_name": "project procurement",
+                    "score": 0.38499999046325684
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C158886217",
+                    "wikidata": "https://www.wikidata.org/wiki/Q16799549",
+                    "display_name": "Latin Americans",
+                    "level": 2,
+                    "score": 0.7451708316802979
+                },
+                {
+                    "id": "https://openalex.org/C2776505523",
+                    "wikidata": "https://www.wikidata.org/wiki/Q4785468",
+                    "display_name": "Plan (archaeology)",
+                    "level": 2,
+                    "score": 0.5247690677642822
+                },
+                {
+                    "id": "https://openalex.org/C97053079",
+                    "wikidata": "https://www.wikidata.org/wiki/Q1061108",
+                    "display_name": "Water supply",
+                    "level": 2,
+                    "score": 0.46699419617652893
+                },
+                {
+                    "id": "https://openalex.org/C205649164",
+                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
+                    "display_name": "Geography",
+                    "level": 0,
+                    "score": 0.4473973512649536
+                },
+                {
+                    "id": "https://openalex.org/C201650216",
+                    "wikidata": "https://www.wikidata.org/wiki/Q829492",
+                    "display_name": "Procurement",
+                    "level": 2,
+                    "score": 0.4175302982330322
+                },
+                {
+                    "id": "https://openalex.org/C50522688",
+                    "wikidata": "https://www.wikidata.org/wiki/Q189833",
+                    "display_name": "Economic growth",
+                    "level": 1,
+                    "score": 0.3974701166152954
+                },
+                {
+                    "id": "https://openalex.org/C144133560",
+                    "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+                    "display_name": "Business",
+                    "level": 0,
+                    "score": 0.3764626085758209
+                },
+                {
+                    "id": "https://openalex.org/C17744445",
+                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
+                    "display_name": "Political science",
+                    "level": 0,
+                    "score": 0.3741600513458252
+                },
+                {
+                    "id": "https://openalex.org/C162324750",
+                    "wikidata": "https://www.wikidata.org/wiki/Q8134",
+                    "display_name": "Economics",
+                    "level": 0,
+                    "score": 0.15639320015907288
+                },
+                {
+                    "id": "https://openalex.org/C127413603",
+                    "wikidata": "https://www.wikidata.org/wiki/Q11023",
+                    "display_name": "Engineering",
+                    "level": 0,
+                    "score": 0.13710057735443115
+                },
+                {
+                    "id": "https://openalex.org/C166957645",
+                    "wikidata": "https://www.wikidata.org/wiki/Q23498",
+                    "display_name": "Archaeology",
+                    "level": 1,
+                    "score": 0.0971134603023529
+                },
+                {
+                    "id": "https://openalex.org/C162853370",
+                    "wikidata": "https://www.wikidata.org/wiki/Q39809",
+                    "display_name": "Marketing",
+                    "level": 1,
+                    "score": 0.0928393006324768
+                },
+                {
+                    "id": "https://openalex.org/C199539241",
+                    "wikidata": "https://www.wikidata.org/wiki/Q7748",
+                    "display_name": "Law",
+                    "level": 1,
+                    "score": 0.0
+                },
+                {
+                    "id": "https://openalex.org/C87717796",
+                    "wikidata": "https://www.wikidata.org/wiki/Q146326",
+                    "display_name": "Environmental engineering",
+                    "level": 1,
+                    "score": 0.0
+                }
+            ],
+            "mesh": [],
+            "locations_count": 1,
+            "locations": [
+                {
+                    "id": "mag:2986006493",
+                    "doi": null,
+                    "is_oa": false,
+                    "landing_page_url": "https://documents.worldbank.org/curated/en/946461590778926860/Honduras-LATIN-AMERICA-AND-CARIBBEAN-P170469-TEGUCIGALPA-WATER-SUPPLY-STRENGTHENING-PROJECT-Procurement-Plan",
+                    "pdf_url": null,
+                    "source": null,
+                    "license": null,
+                    "license_id": null,
+                    "version": null,
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": null
+                }
+            ],
+            "best_oa_location": null,
+            "sustainable_development_goals": [
+                {
+                    "display_name": "Clean water and sanitation",
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.7778000235557556
+                },
+                {
+                    "display_name": "Industry, innovation and infrastructure",
+                    "id": "https://metadata.un.org/sdg/9",
+                    "score": 0.4943999946117401
+                }
+            ],
+            "study_designs": [],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "grobid_xml": false,
+                "pdf": false
+            },
+            "content_urls": null,
+            "referenced_works_count": 0,
+            "referenced_works": [],
+            "related_works": [
+                "https://openalex.org/W2942537947",
+                "https://openalex.org/W2346692559",
+                "https://openalex.org/W2948946068",
+                "https://openalex.org/W2955674919",
+                "https://openalex.org/W2501700509",
+                "https://openalex.org/W6941437113",
+                "https://openalex.org/W2945802449",
+                "https://openalex.org/W2942313744",
+                "https://openalex.org/W2805961245",
+                "https://openalex.org/W2912936882"
+            ],
+            "abstract_inverted_index": null,
+            "counts_by_year": [],
+            "updated_date": "2025-11-06T04:12:42.849631",
+            "created_date": "2019-11-22T00:00:00"
+        },
+        {
             "id": "https://openalex.org/W3024404229",
             "doi": null,
             "title": "Concept Project Information Document (PID) - Water and Sanitation Sustainability Project in Honduras - P173125",
             "display_name": "Concept Project Information Document (PID) - Water and Sanitation Sustainability Project in Honduras - P173125",
-            "relevance_score": 132.29256,
+            "relevance_score": 132.8312,
             "publication_year": 2020,
             "publication_date": "2020-02-19",
             "ids": {
@@ -12236,16 +12256,16 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.6618000268936157,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.6618000268936157
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -12272,7 +12292,7 @@
             "doi": "https://doi.org/10.18280/ijsdp.160304",
             "title": "Governance Network Theory Re-examined: Implications of the Research Findings of the Water and Sanitation Sector Governance Network of the Municipality of Tela, Honduras",
             "display_name": "Governance Network Theory Re-examined: Implications of the Research Findings of the Water and Sanitation Sector Governance Network of the Municipality of Tela, Honduras",
-            "relevance_score": 109.52132,
+            "relevance_score": 110.53182,
             "publication_year": 2021,
             "publication_date": "2021-06-22",
             "ids": {
@@ -12387,15 +12407,15 @@
             "apc_paid": null,
             "fwci": 0.0,
             "has_fulltext": true,
-            "cited_by_count": 2,
+            "cited_by_count": 4,
             "citation_normalized_percentile": {
-                "value": 0.14242144,
+                "value": 0.14620156,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 90,
-                "max": 96
+                "min": 94,
+                "max": 97
             },
             "biblio": {
                 "volume": "16",
@@ -12699,13 +12719,13 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.8046000003814697,
-                    "id": "https://metadata.un.org/sdg/16"
+                    "id": "https://metadata.un.org/sdg/16",
+                    "score": 0.8046000003814697
                 },
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.53329998254776,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.53329998254776
                 }
             ],
             "study_designs": [],
@@ -12728,8 +12748,8 @@
                 }
             ],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W3174194079.pdf",
@@ -13120,14 +13140,14 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 1
+                    "cited_by_count": 2
                 },
                 {
                     "year": 2025,
-                    "cited_by_count": 1
+                    "cited_by_count": 2
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-07-05T00:00:00"
         },
         {
@@ -13135,7 +13155,7 @@
             "doi": "https://doi.org/10.18235/0001885",
             "title": "Access to Water and Sanitation Services in Dispersed Rural Settlements: The Path to Universalization",
             "display_name": "Access to Water and Sanitation Services in Dispersed Rural Settlements: The Path to Universalization",
-            "relevance_score": 98.57909,
+            "relevance_score": 98.68052,
             "publication_year": 2019,
             "publication_date": "2019-06-04",
             "ids": {
@@ -13448,36 +13468,36 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.965499997138977,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.965499997138977
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.7578999996185303,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.7578999996185303
                 },
                 {
                     "display_name": "Zero hunger",
-                    "score": 0.5666999816894531,
-                    "id": "https://metadata.un.org/sdg/2"
+                    "id": "https://metadata.un.org/sdg/2",
+                    "score": 0.5666999816894531
                 },
                 {
                     "display_name": "Partnerships for the goals",
-                    "score": 0.5217000246047974,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "id": "https://metadata.un.org/sdg/17",
+                    "score": 0.5217000246047974
                 },
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.504800021648407,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.504800021648407
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 2,
@@ -13621,7 +13641,7 @@
             "doi": "https://doi.org/10.5377/pdac.v16i0.10229",
             "title": "Condiciones de vida de pobladores de la colonia El Rodeo, sector No 2, municipio de El Paraíso, departamento de El Paraíso, Honduras",
             "display_name": "Condiciones de vida de pobladores de la colonia El Rodeo, sector No 2, municipio de El Paraíso, departamento de El Paraíso, Honduras",
-            "relevance_score": 84.631134,
+            "relevance_score": 84.750656,
             "publication_year": 2020,
             "publication_date": "2020-09-22",
             "ids": {
@@ -14113,18 +14133,18 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "No poverty",
-                    "score": 0.8928999900817871,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.8928999900817871
                 },
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.5683000087738037,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.5683000087738037
                 },
                 {
                     "display_name": "Sustainable cities and communities",
-                    "score": 0.5142999887466431,
-                    "id": "https://metadata.un.org/sdg/11"
+                    "id": "https://metadata.un.org/sdg/11",
+                    "score": 0.5142999887466431
                 }
             ],
             "study_designs": [
@@ -14136,8 +14156,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W3095917664.pdf",
@@ -14625,7 +14645,7 @@
             "doi": "https://doi.org/10.5377/rus.v7i10.21229",
             "title": "Fortalecimiento de capacidades para la gestión sostenible del agua potable en comunidades rurales en Honduras: una experiencia de formación técnica desde la Carrera de Ingeniería Civil de la UNAH",
             "display_name": "Fortalecimiento de capacidades para la gestión sostenible del agua potable en comunidades rurales en Honduras: una experiencia de formación técnica desde la Carrera de Ingeniería Civil de la UNAH",
-            "relevance_score": 76.779175,
+            "relevance_score": 76.88833,
             "publication_year": 2025,
             "publication_date": "2025-12-24",
             "ids": {
@@ -14891,7 +14911,7 @@
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.31984721,
+                "value": 0.29309994,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -15174,38 +15194,44 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.965499997138977,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.965499997138977
                 },
                 {
                     "display_name": "Quality education",
-                    "score": 0.7566999793052673,
-                    "id": "https://metadata.un.org/sdg/4"
+                    "id": "https://metadata.un.org/sdg/4",
+                    "score": 0.7566999793052673
                 },
                 {
                     "display_name": "Partnerships for the goals",
-                    "score": 0.5217000246047974,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "id": "https://metadata.un.org/sdg/17",
+                    "score": 0.5217000246047974
                 },
                 {
                     "display_name": "Zero hunger",
-                    "score": 0.4359000027179718,
-                    "id": "https://metadata.un.org/sdg/2"
+                    "id": "https://metadata.un.org/sdg/2",
+                    "score": 0.4359000027179718
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7117163082.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W7117163082.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 5,
+            "referenced_works": [
+                "https://openalex.org/W2274721257",
+                "https://openalex.org/W2481450923",
+                "https://openalex.org/W4396723468",
+                "https://openalex.org/W4404774363",
+                "https://openalex.org/W4406504207"
+            ],
             "related_works": [
                 "https://openalex.org/W6995687860",
                 "https://openalex.org/W2009545707",
@@ -15803,7 +15829,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-10-28T10:33:24.094632",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2025-12-24T00:00:00"
         },
         {
@@ -15811,7 +15837,7 @@
             "doi": "https://doi.org/10.1142/s2382624x20710022",
             "title": "Policy Note: Policy Responses to Ensure Access to Water and Sanitation Services During COVID-19: Snapshots from the Environment for Development (EfD) Network",
             "display_name": "Policy Note: Policy Responses to Ensure Access to Water and Sanitation Services During COVID-19: Snapshots from the Environment for Development (EfD) Network",
-            "relevance_score": 61.991417,
+            "relevance_score": 62.105885,
             "publication_year": 2020,
             "publication_date": "2020-09-19",
             "ids": {
@@ -17067,36 +17093,36 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.8999999761581421,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.8999999761581421
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.7390999794006348,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.7390999794006348
                 },
                 {
                     "display_name": "No poverty",
-                    "score": 0.666700005531311,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.666700005531311
                 },
                 {
                     "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.5473999977111816,
-                    "id": "https://metadata.un.org/sdg/16"
+                    "id": "https://metadata.un.org/sdg/16",
+                    "score": 0.5473999977111816
                 },
                 {
                     "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.428600013256073,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/9",
+                    "score": 0.428600013256073
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 1,
@@ -17593,7 +17619,7 @@
             "doi": "https://doi.org/10.47633/zbhepw32",
             "title": "Situación de la pandemia de la Covid-19 en América Central al 9 de marzo de 2021",
             "display_name": "Situación de la pandemia de la Covid-19 en América Central al 9 de marzo de 2021",
-            "relevance_score": 46.75329,
+            "relevance_score": 46.881256,
             "publication_year": 2021,
             "publication_date": "2021-06-23",
             "ids": {
@@ -18082,16 +18108,16 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.9537000060081482,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.9537000060081482
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4417510867.pdf",
@@ -18595,7 +18621,7 @@
             "doi": "https://doi.org/10.18235/0001873",
             "title": "Reaching the Last Mile: Providing Water and Sanitation Services to Dispersed Rural Communities",
             "display_name": "Reaching the Last Mile: Providing Water and Sanitation Services to Dispersed Rural Communities",
-            "relevance_score": 44.699657,
+            "relevance_score": 44.723694,
             "publication_year": 2019,
             "publication_date": "2019-09-16",
             "ids": {
@@ -18854,31 +18880,31 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Partnerships for the goals",
-                    "score": 0.9090999960899353,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "id": "https://metadata.un.org/sdg/17",
+                    "score": 0.9090999960899353
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.7307999730110168,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.7307999730110168
                 },
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.6618000268936157,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.6618000268936157
                 },
                 {
                     "display_name": "No poverty",
-                    "score": 0.41670000553131104,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.41670000553131104
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -18985,7 +19011,7 @@
             "doi": "https://doi.org/10.4000/books.pur.158442",
             "title": "Les acronymes",
             "display_name": "Les acronymes",
-            "relevance_score": 38.39997,
+            "relevance_score": 38.203796,
             "publication_year": 2020,
             "publication_date": "2020-01-01",
             "ids": {
@@ -19322,8 +19348,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -19491,7 +19517,7 @@
             "doi": null,
             "title": "Necesidades de inversión en agua potable y saneamiento en América Latina y el Caribe: efectos en el empleo verde y el valor agregado bruto",
             "display_name": "Necesidades de inversión en agua potable y saneamiento en América Latina y el Caribe: efectos en el empleo verde y el valor agregado bruto",
-            "relevance_score": 34.40996,
+            "relevance_score": 34.394978,
             "publication_year": 2023,
             "publication_date": "2023-09-21",
             "ids": {
@@ -19876,31 +19902,31 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.965499997138977,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.965499997138977
                 },
                 {
                     "display_name": "Decent work and economic growth",
-                    "score": 0.9211000204086304,
-                    "id": "https://metadata.un.org/sdg/8"
+                    "id": "https://metadata.un.org/sdg/8",
+                    "score": 0.9211000204086304
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.7307999730110168,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.7307999730110168
                 },
                 {
                     "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.5378999710083008,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/9",
+                    "score": 0.5378999710083008
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -20408,7 +20434,7 @@
             "doi": null,
             "title": "Intervención a la quebrada Agua Amarilla (YU´KIÇ WALA) en la vereda El Mesón municipio de Morales, mediante la realización de actividades encaminadas a buscar su recuperación",
             "display_name": "Intervención a la quebrada Agua Amarilla (YU´KIÇ WALA) en la vereda El Mesón municipio de Morales, mediante la realización de actividades encaminadas a buscar su recuperación",
-            "relevance_score": 34.150986,
+            "relevance_score": 34.150528,
             "publication_year": 2020,
             "publication_date": "2020-01-01",
             "ids": {
@@ -20777,16 +20803,16 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.965499997138977,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.965499997138977
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7132925090.pdf",
@@ -21358,7 +21384,7 @@
             "doi": "https://doi.org/10.14455/isec.2026.13(1).wre-03",
             "title": "EVALUATION OF HIGH-DENSITY POLYETHYLENE VERSUS POLYVINYL CHLORIDE PIPES IN DRINKING WATER CONVEYANCE IN RURAL AREAS",
             "display_name": "EVALUATION OF HIGH-DENSITY POLYETHYLENE VERSUS POLYVINYL CHLORIDE PIPES IN DRINKING WATER CONVEYANCE IN RURAL AREAS",
-            "relevance_score": 28.13323,
+            "relevance_score": 28.172014,
             "publication_year": 2026,
             "publication_date": "2026-03-01",
             "ids": {
@@ -21794,31 +21820,31 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Industry, innovation and infrastructure",
-                    "score": 1.0,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/9",
+                    "score": 1.0
                 },
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.965499997138977,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.965499997138977
                 },
                 {
                     "display_name": "Sustainable cities and communities",
-                    "score": 0.761900007724762,
-                    "id": "https://metadata.un.org/sdg/11"
+                    "id": "https://metadata.un.org/sdg/11",
+                    "score": 0.761900007724762
                 },
                 {
                     "display_name": "Responsible consumption and production",
-                    "score": 0.5925999879837036,
-                    "id": "https://metadata.un.org/sdg/12"
+                    "id": "https://metadata.un.org/sdg/12",
+                    "score": 0.5925999879837036
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -22357,7 +22383,7 @@
             "doi": "https://doi.org/10.57709/3523792",
             "title": "Perceptions of Water, Sanitation and Hygiene Interventions in Select Communities in Central America. Recommendations to Explore the Issue of Sustainability",
             "display_name": "Perceptions of Water, Sanitation and Hygiene Interventions in Select Communities in Central America. Recommendations to Explore the Issue of Sustainability",
-            "relevance_score": 21.156052,
+            "relevance_score": 21.239513,
             "publication_year": 2022,
             "publication_date": "2022-05-17",
             "ids": {
@@ -22905,13 +22931,13 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.8863999843597412,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.8863999843597412
                 },
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.5683000087738037,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.5683000087738037
                 }
             ],
             "study_designs": [],
@@ -22934,8 +22960,8 @@
                 }
             ],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W773686931.pdf",
@@ -22948,7 +22974,6 @@
                 "https://openalex.org/W134359337",
                 "https://openalex.org/W1488872175",
                 "https://openalex.org/W1517358941",
-                "https://openalex.org/W1554602408",
                 "https://openalex.org/W1605916864",
                 "https://openalex.org/W1973928213",
                 "https://openalex.org/W1981618429",
@@ -22999,7 +23024,8 @@
                 "https://openalex.org/W2172098474",
                 "https://openalex.org/W2329524186",
                 "https://openalex.org/W2612291386",
-                "https://openalex.org/W3022607203"
+                "https://openalex.org/W2905821330",
+                "https://openalex.org/W2910502237"
             ],
             "related_works": [
                 "https://openalex.org/W2146784355",
@@ -23611,7 +23637,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-09-11T09:22:31.653822",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2016-06-24T00:00:00"
         },
         {
@@ -23619,7 +23645,7 @@
             "doi": "https://doi.org/10.26633/rpsp.2023.59",
             "title": "Sexual and reproductive health of migrant women and girls from the Northern Triangle of Central America",
             "display_name": "Sexual and reproductive health of migrant women and girls from the Northern Triangle of Central America",
-            "relevance_score": 15.86575,
+            "relevance_score": 15.950071,
             "publication_year": 2023,
             "publication_date": "2023-01-01",
             "ids": {
@@ -23868,16 +23894,16 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 3.7813,
+            "fwci": 3.5511,
             "has_fulltext": true,
-            "cited_by_count": 14,
+            "cited_by_count": 15,
             "citation_normalized_percentile": {
-                "value": 0.93370368,
+                "value": 0.92989807,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": true
             },
             "cited_by_percentile_year": {
-                "min": 94,
+                "min": 93,
                 "max": 99
             },
             "biblio": {
@@ -24370,26 +24396,26 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.979200005531311,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.979200005531311
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.8974000215530396,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.8974000215530396
                 },
                 {
                     "display_name": "Gender equality",
-                    "score": 0.6025999784469604,
-                    "id": "https://metadata.un.org/sdg/5"
+                    "id": "https://metadata.un.org/sdg/5",
+                    "score": 0.6025999784469604
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4323340260.pdf",
@@ -24902,7 +24928,7 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 5
+                    "cited_by_count": 6
                 },
                 {
                     "year": 2025,
@@ -24917,7 +24943,7 @@
                     "cited_by_count": 4
                 }
             ],
-            "updated_date": "2026-10-29T09:56:32.521200",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2023-03-08T00:00:00"
         },
         {
@@ -24925,7 +24951,7 @@
             "doi": "https://doi.org/10.69821/remuvac.v3i1.314",
             "title": "Carga del dengue y determinantes socioambientales en Centroamérica, 2020-2025",
             "display_name": "Carga del dengue y determinantes socioambientales en Centroamérica, 2020-2025",
-            "relevance_score": 13.544088,
+            "relevance_score": 13.538153,
             "publication_year": 2026,
             "publication_date": "2026-03-30",
             "ids": {
@@ -25473,21 +25499,21 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Good health and well-being",
-                    "score": 0.9537000060081482,
-                    "id": "https://metadata.un.org/sdg/3"
+                    "id": "https://metadata.un.org/sdg/3",
+                    "score": 0.9537000060081482
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.4000000059604645,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.4000000059604645
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7160444588.pdf",
@@ -26042,7 +26068,7 @@
             "doi": "https://doi.org/10.18235/0013127",
             "title": "Water Policies to Support Investment in Humans and Nature a Compilation of Good Practices in Latin America And The Caribbean: A Collaborative Review of Legal and Project Good Practices in Eight Countries",
             "display_name": "Water Policies to Support Investment in Humans and Nature a Compilation of Good Practices in Latin America And The Caribbean: A Collaborative Review of Legal and Project Good Practices in Eight Countries",
-            "relevance_score": 12.723499,
+            "relevance_score": 12.820231,
             "publication_year": 2024,
             "publication_date": "2024-08-22",
             "ids": {
@@ -26357,21 +26383,21 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.9595999717712402,
-                    "id": "https://metadata.un.org/sdg/16"
+                    "id": "https://metadata.un.org/sdg/16",
+                    "score": 0.9595999717712402
                 },
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.9090999960899353,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.9090999960899353
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -26682,7 +26708,7 @@
             "doi": "https://doi.org/10.1108/dpm-04-2020-0115",
             "title": "A neglected issue: informal settlements, urban development, and disaster risk reduction in Latin America and the Caribbean",
             "display_name": "A neglected issue: informal settlements, urban development, and disaster risk reduction in Latin America and the Caribbean",
-            "relevance_score": 11.924175,
+            "relevance_score": 12.1005945,
             "publication_year": 2020,
             "publication_date": "2020-06-01",
             "ids": {
@@ -26836,16 +26862,16 @@
             "corresponding_institution_ids": [],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 25.0075,
+            "fwci": 23.2812,
             "has_fulltext": false,
-            "cited_by_count": 91,
+            "cited_by_count": 96,
             "citation_normalized_percentile": {
-                "value": 0.99550499,
+                "value": 0.99530061,
                 "is_in_top_1_percent": true,
                 "is_in_top_10_percent": true
             },
             "cited_by_percentile_year": {
-                "min": 89,
+                "min": 88,
                 "max": 100
             },
             "biblio": {
@@ -27153,36 +27179,36 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Sustainable cities and communities",
-                    "score": 1.0,
-                    "id": "https://metadata.un.org/sdg/11"
+                    "id": "https://metadata.un.org/sdg/11",
+                    "score": 1.0
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.7307999730110168,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.7307999730110168
                 },
                 {
                     "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.7297000288963318,
-                    "id": "https://metadata.un.org/sdg/16"
+                    "id": "https://metadata.un.org/sdg/16",
+                    "score": 0.7297000288963318
                 },
                 {
                     "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.5378999710083008,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/9",
+                    "score": 0.5378999710083008
                 },
                 {
                     "display_name": "Partnerships for the goals",
-                    "score": 0.5217000246047974,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "id": "https://metadata.un.org/sdg/17",
+                    "score": 0.5217000246047974
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 26,
@@ -27206,11 +27232,11 @@
                 "https://openalex.org/W2563962632",
                 "https://openalex.org/W2600428596",
                 "https://openalex.org/W2725380022",
+                "https://openalex.org/W2788255963",
                 "https://openalex.org/W2802720059",
                 "https://openalex.org/W2804103385",
                 "https://openalex.org/W2970025666",
                 "https://openalex.org/W3165064679",
-                "https://openalex.org/W4231231808",
                 "https://openalex.org/W4233915483",
                 "https://openalex.org/W4244442216"
             ],
@@ -27775,15 +27801,15 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 16
+                    "cited_by_count": 18
                 },
                 {
                     "year": 2025,
-                    "cited_by_count": 14
+                    "cited_by_count": 16
                 },
                 {
                     "year": 2024,
-                    "cited_by_count": 15
+                    "cited_by_count": 16
                 },
                 {
                     "year": 2023,
@@ -27802,7 +27828,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2019-08-13T00:00:00"
         },
         {
@@ -27810,7 +27836,7 @@
             "doi": "https://doi.org/10.1016/j.worlddev.2025.107255",
             "title": "Effect of women’s inclusion on conservation and management practices of Water User Associations",
             "display_name": "Effect of women’s inclusion on conservation and management practices of Water User Associations",
-            "relevance_score": 10.643393,
+            "relevance_score": 10.756179,
             "publication_year": 2025,
             "publication_date": "2025-11-27",
             "ids": {
@@ -28382,23 +28408,23 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Gender equality",
-                    "score": 0.9940000176429749,
-                    "id": "https://metadata.un.org/sdg/5"
+                    "id": "https://metadata.un.org/sdg/5",
+                    "score": 0.9940000176429749
                 },
                 {
                     "display_name": "Clean water and sanitation",
-                    "score": 0.965499997138977,
-                    "id": "https://metadata.un.org/sdg/6"
+                    "id": "https://metadata.un.org/sdg/6",
+                    "score": 0.965499997138977
                 },
                 {
                     "display_name": "Reduced inequalities",
-                    "score": 0.8974000215530396,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "score": 0.8974000215530396
                 },
                 {
                     "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.666700005531311,
-                    "id": "https://metadata.un.org/sdg/16"
+                    "id": "https://metadata.un.org/sdg/16",
+                    "score": 0.666700005531311
                 }
             ],
             "study_designs": [
@@ -28410,8 +28436,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 43,
@@ -28487,7 +28513,7 @@
             "doi": "https://doi.org/10.3389/fclim.2024.1297002",
             "title": "A major blind spot in drought risk financing: water services in low-income countries",
             "display_name": "A major blind spot in drought risk financing: water services in low-income countries",
-            "relevance_score": 2.1635702,
+            "relevance_score": 2.1967568,
             "publication_year": 2024,
             "publication_date": "2024-06-21",
             "ids": {
@@ -28691,17 +28717,17 @@
                 "currency": "USD",
                 "value_usd": 2125
             },
-            "fwci": 0.4442,
+            "fwci": 0.3975,
             "has_fulltext": false,
             "cited_by_count": 2,
             "citation_normalized_percentile": {
-                "value": 0.64834636,
+                "value": 0.60379652,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
                 "min": 90,
-                "max": 96
+                "max": 95
             },
             "biblio": {
                 "volume": "6",
@@ -29005,36 +29031,37 @@
             "sustainable_development_goals": [
                 {
                     "display_name": "Partnerships for the goals",
-                    "score": 0.9090999960899353,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "id": "https://metadata.un.org/sdg/17",
+                    "score": 0.9090999960899353
                 },
                 {
                     "display_name": "No poverty",
-                    "score": 0.8928999900817871,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "score": 0.8928999900817871
                 },
                 {
                     "display_name": "Climate action",
-                    "score": 0.685699999332428,
-                    "id": "https://metadata.un.org/sdg/13"
+                    "id": "https://metadata.un.org/sdg/13",
+                    "score": 0.685699999332428
                 },
                 {
                     "display_name": "Decent work and economic growth",
-                    "score": 0.48510000109672546,
-                    "id": "https://metadata.un.org/sdg/8"
+                    "id": "https://metadata.un.org/sdg/8",
+                    "score": 0.48510000109672546
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 15,
             "referenced_works": [
                 "https://openalex.org/W1482079225",
+                "https://openalex.org/W1491450605",
                 "https://openalex.org/W2790657174",
                 "https://openalex.org/W2897330198",
                 "https://openalex.org/W2902724451",
@@ -29042,7 +29069,6 @@
                 "https://openalex.org/W3086498009",
                 "https://openalex.org/W3116911090",
                 "https://openalex.org/W3132854611",
-                "https://openalex.org/W4230953156",
                 "https://openalex.org/W4313366994",
                 "https://openalex.org/W4328104238",
                 "https://openalex.org/W4365458577",
@@ -32688,7 +32714,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-30T12:39:25.321706",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2024-06-22T00:00:00"
         }
     ],

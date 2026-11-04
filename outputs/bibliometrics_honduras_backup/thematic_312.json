@@ -1,7 +1,7 @@
 {
     "meta": {
         "count": 5,
-        "db_response_time_ms": 78,
+        "db_response_time_ms": 112,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -183,969 +183,11 @@
     },
     "results": [
         {
-            "id": "https://openalex.org/W4200110670",
-            "doi": "https://doi.org/10.18235/0003885",
-            "title": "BIDeconomics Honduras: oportunidades de mayor desarrollo para todos en post pandemia",
-            "display_name": "BIDeconomics Honduras: oportunidades de mayor desarrollo para todos en post pandemia",
-            "relevance_score": 171.85484,
-            "publication_year": 2021,
-            "publication_date": "2021-12-23",
-            "ids": {
-                "openalex": "https://openalex.org/W4200110670",
-                "doi": "https://doi.org/10.18235/0003885"
-            },
-            "language": "es",
-            "primary_location": {
-                "id": "doi:10.18235/0003885",
-                "doi": "https://doi.org/10.18235/0003885",
-                "is_oa": false,
-                "landing_page_url": "https://doi.org/10.18235/0003885",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4306463453",
-                    "display_name": "Inter-American Development Bank eBooks",
-                    "issn_l": null,
-                    "issn": null,
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [],
-                    "host_organization": null,
-                    "host_organization_name": null,
-                    "host_organization_lineage": [],
-                    "host_organization_lineage_names": [],
-                    "type": "ebook platform"
-                },
-                "license": null,
-                "license_id": null,
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": null,
-                "raw_type": "monograph"
-            },
-            "volume": null,
-            "type": "book",
-            "indexed_in": [
-                "crossref"
-            ],
-            "open_access": {
-                "is_oa": false,
-                "oa_status": "closed",
-                "oa_url": null,
-                "any_repository_has_fulltext": false
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": null,
-                        "display_name": "Jordi Prat",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Jordi Prat",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5007228483",
-                        "display_name": "Josiel Sánchez Barahona",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Josiel Sánchez Barahona",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5007610035",
-                        "display_name": "Ana Belén Yépez Andino",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Ana Andino",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5030460497",
-                        "display_name": "Marta Ruiz-Arranz",
-                        "orcid": "https://orcid.org/0009-0006-0805-0098",
-                        "observed_orcids": [
-                            "https://orcid.org/0009-0006-0805-0098"
-                        ]
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Marta Ruiz-Arranz",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": "https://orcid.org/0009-0006-0805-0098",
-                    "affiliations": []
-                },
-                {
-                    "author_position": "last",
-                    "author": {
-                        "id": "https://openalex.org/A5032574462",
-                        "display_name": "María José Jarquín",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "María José Jarquín",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 0,
-            "institutions_distinct_count": 0,
-            "corresponding_author_ids": [],
-            "corresponding_institution_ids": [],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.0,
-            "has_fulltext": false,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": {
-                "value": 0.13490196,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": null,
-                "issue": null,
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T14501",
-                "display_name": "Global Economic and Social Development",
-                "score": 0.322299987077713,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/2002",
-                    "display_name": "Economics and Econometrics"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/20",
-                    "display_name": "Economics, Econometrics and Finance"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T14501",
-                    "display_name": "Global Economic and Social Development",
-                    "score": 0.322299987077713,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2002",
-                        "display_name": "Economics and Econometrics"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/20",
-                        "display_name": "Economics, Econometrics and Finance"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T13867",
-                    "display_name": "Economic Growth and Development",
-                    "score": 0.29269999265670776,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1710",
-                        "display_name": "Information Systems"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/17",
-                        "display_name": "Computer Science"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T10393",
-                    "display_name": "Economic Growth and Productivity",
-                    "score": 0.09040000289678574,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2002",
-                        "display_name": "Economics and Econometrics"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/20",
-                        "display_name": "Economics, Econometrics and Finance"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/honduras",
-                    "display_name": "Honduras",
-                    "score": 0.37700000405311584
-                },
-                {
-                    "id": "https://openalex.org/keywords/post-pandemic-economic-recovery",
-                    "display_name": "post-pandemic economic recovery",
-                    "score": 0.718999981880188
-                },
-                {
-                    "id": "https://openalex.org/keywords/covid-19",
-                    "display_name": "COVID-19 pandemic",
-                    "score": 0.7319999933242798
-                },
-                {
-                    "id": "https://openalex.org/keywords/household-poverty",
-                    "display_name": "household poverty",
-                    "score": 0.6549999713897705
-                },
-                {
-                    "id": "https://openalex.org/keywords/sustainable-development",
-                    "display_name": "sustainable development",
-                    "score": 0.5210000276565552
-                },
-                {
-                    "id": "https://openalex.org/keywords/inclusive-growth",
-                    "display_name": "inclusive growth",
-                    "score": 0.9380000233650208
-                },
-                {
-                    "id": "https://openalex.org/keywords/transparency",
-                    "display_name": "transparency",
-                    "score": 0.656000018119812
-                },
-                {
-                    "id": "https://openalex.org/keywords/productive-infrastructure",
-                    "display_name": "productive infrastructure",
-                    "score": 0.9570000171661377
-                },
-                {
-                    "id": "https://openalex.org/keywords/social-infrastructure",
-                    "display_name": "social infrastructure",
-                    "score": 0.9539999961853027
-                },
-                {
-                    "id": "https://openalex.org/keywords/public-services",
-                    "display_name": "public services",
-                    "score": 0.8140000104904175
-                },
-                {
-                    "id": "https://openalex.org/keywords/productive-activities",
-                    "display_name": "productive activities",
-                    "score": 0.6179999709129333
-                },
-                {
-                    "id": "https://openalex.org/keywords/gender-equity",
-                    "display_name": "gender equity",
-                    "score": 0.8479999899864197
-                },
-                {
-                    "id": "https://openalex.org/keywords/diversity",
-                    "display_name": "diversity",
-                    "score": 0.7139999866485596
-                },
-                {
-                    "id": "https://openalex.org/keywords/climate-change-adaptation",
-                    "display_name": "climate change adaptation",
-                    "score": 0.9879999756813049
-                },
-                {
-                    "id": "https://openalex.org/keywords/digitalization",
-                    "display_name": "digitalization",
-                    "score": 0.9190000295639038
-                },
-                {
-                    "id": "https://openalex.org/keywords/innovation",
-                    "display_name": "innovation",
-                    "score": 0.9639999866485596
-                },
-                {
-                    "id": "https://openalex.org/keywords/competitiveness",
-                    "display_name": "competitiveness",
-                    "score": 0.6389999985694885
-                },
-                {
-                    "id": "https://openalex.org/keywords/productivity",
-                    "display_name": "productivity",
-                    "score": 0.9750000238418579
-                },
-                {
-                    "id": "https://openalex.org/keywords/economic-growth",
-                    "display_name": "economic growth",
-                    "score": 0.5479999780654907
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.6508936285972595
-                },
-                {
-                    "id": "https://openalex.org/C15708023",
-                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
-                    "display_name": "Humanities",
-                    "level": 1,
-                    "score": 0.44702932238578796
-                },
-                {
-                    "id": "https://openalex.org/C205649164",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
-                    "display_name": "Geography",
-                    "level": 0,
-                    "score": 0.34400904178619385
-                },
-                {
-                    "id": "https://openalex.org/C138885662",
-                    "wikidata": "https://www.wikidata.org/wiki/Q5891",
-                    "display_name": "Philosophy",
-                    "level": 0,
-                    "score": 0.11106696724891663
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "doi:10.18235/0003885",
-                    "doi": "https://doi.org/10.18235/0003885",
-                    "is_oa": false,
-                    "landing_page_url": "https://doi.org/10.18235/0003885",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4306463453",
-                        "display_name": "Inter-American Development Bank eBooks",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": null,
-                        "host_organization_name": null,
-                        "host_organization_lineage": [],
-                        "host_organization_lineage_names": [],
-                        "type": "ebook platform"
-                    },
-                    "license": null,
-                    "license_id": null,
-                    "version": "publishedVersion",
-                    "is_accepted": true,
-                    "is_published": true,
-                    "raw_source_name": null,
-                    "raw_type": "monograph"
-                }
-            ],
-            "best_oa_location": null,
-            "sustainable_development_goals": [
-                {
-                    "score": 0.833299994468689,
-                    "id": "https://metadata.un.org/sdg/8",
-                    "display_name": "Decent work and economic growth"
-                },
-                {
-                    "score": 0.6773999929428101,
-                    "id": "https://metadata.un.org/sdg/9",
-                    "display_name": "Industry, innovation and infrastructure"
-                },
-                {
-                    "score": 0.4000000059604645,
-                    "id": "https://metadata.un.org/sdg/10",
-                    "display_name": "Reduced inequalities"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": false,
-                "pdf": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W6981334993",
-                "https://openalex.org/W7017260951",
-                "https://openalex.org/W4245415351",
-                "https://openalex.org/W1595584709",
-                "https://openalex.org/W171185498",
-                "https://openalex.org/W4200251603",
-                "https://openalex.org/W2899762257",
-                "https://openalex.org/W4297778599",
-                "https://openalex.org/W7209996505",
-                "https://openalex.org/W3152915877"
-            ],
-            "abstract_inverted_index": {
-                "La": [
-                    0
-                ],
-                "pandemia": [
-                    1
-                ],
-                "del": [
-                    2,
-                    40,
-                    76,
-                    80,
-                    90,
-                    123,
-                    194,
-                    216
-                ],
-                "COVID-19": [
-                    3
-                ],
-                "y": [
-                    4,
-                    42,
-                    54,
-                    109,
-                    115,
-                    121,
-                    139,
-                    141,
-                    162,
-                    171,
-                    196,
-                    202,
-                    214,
-                    224
-                ],
-                "las": [
-                    5,
-                    14,
-                    27,
-                    131
-                ],
-                "tormentas": [
-                    6,
-                    28
-                ],
-                "tropicales": [
-                    7,
-                    29
-                ],
-                "de": [
-                    8,
-                    16,
-                    18,
-                    35,
-                    45,
-                    74,
-                    112,
-                    118,
-                    125,
-                    137,
-                    163,
-                    209
-                ],
-                "2020": [
-                    9
-                ],
-                "implicaron": [
-                    10
-                ],
-                "un": [
-                    11,
-                    66,
-                    220
-                ],
-                "retroceso": [
-                    12
-                ],
-                "en": [
-                    13,
-                    25,
-                    97,
-                    133,
-                    152,
-                    188,
-                    211
-                ],
-                "condiciones": [
-                    15
-                ],
-                "vida": [
-                    17
-                ],
-                "los": [
-                    19,
-                    46,
-                    62,
-                    78,
-                    102
-                ],
-                "hondureños.": [
-                    20
-                ],
-                "El": [
-                    21
-                ],
-                "PIB": [
-                    22,
-                    41
-                ],
-                "cayó": [
-                    23
-                ],
-                "9%": [
-                    24
-                ],
-                "2020,": [
-                    26
-                ],
-                "Eta": [
-                    30
-                ],
-                "e": [
-                    31,
-                    69,
-                    154
-                ],
-                "Iota": [
-                    32
-                ],
-                "dejaron": [
-                    33
-                ],
-                "daños": [
-                    34
-                ],
-                "por": [
-                    36,
-                    148
-                ],
-                "lo": [
-                    37
-                ],
-                "menos": [
-                    38
-                ],
-                "8%": [
-                    39
-                ],
-                "la": [
-                    43,
-                    72,
-                    88,
-                    134,
-                    191,
-                    212
-                ],
-                "pobreza": [
-                    44
-                ],
-                "hogares": [
-                    47
-                ],
-                "aumentó": [
-                    48
-                ],
-                "14": [
-                    49
-                ],
-                "puntos": [
-                    50
-                ],
-                "porcentuales": [
-                    51
-                ],
-                "entre": [
-                    52
-                ],
-                "2019": [
-                    53
-                ],
-                "2020.": [
-                    55,
-                    92
-                ],
-                "Este": [
-                    56
-                ],
-                "documento": [
-                    57
-                ],
-                "presenta": [
-                    58
-                ],
-                "una": [
-                    59
-                ],
-                "actualización": [
-                    60
-                ],
-                "a": [
-                    61,
-                    181
-                ],
-                "desafíos": [
-                    63,
-                    79,
-                    104
-                ],
-                "para": [
-                    64,
-                    158,
-                    168,
-                    218
-                ],
-                "lograr": [
-                    65,
-                    174
-                ],
-                "desarrollo": [
-                    67,
-                    96,
-                    124
-                ],
-                "sostenible": [
-                    68,
-                    178
-                ],
-                "inclusivo.": [
-                    70
-                ],
-                "Utilizando": [
-                    71
-                ],
-                "metodología": [
-                    73
-                ],
-                "diagnóstico": [
-                    75
-                ],
-                "crecimiento,": [
-                    77
-                ],
-                "país": [
-                    81,
-                    217
-                ],
-                "se": [
-                    82,
-                    85
-                ],
-                "mantienen,": [
-                    83
-                ],
-                "pero": [
-                    84
-                ],
-                "profundizaron": [
-                    86
-                ],
-                "con": [
-                    87,
-                    190
-                ],
-                "crisis": [
-                    89
-                ],
-                "año": [
-                    91
-                ],
-                "Para": [
-                    93
-                ],
-                "impulsar": [
-                    94
-                ],
-                "el": [
-                    95,
-                    205
-                ],
-                "Honduras": [
-                    98
-                ],
-                "es": [
-                    99
-                ],
-                "necesario": [
-                    100
-                ],
-                "abordar": [
-                    101
-                ],
-                "cuatro": [
-                    103
-                ],
-                "fundamentales": [
-                    105
-                ],
-                "identificados:": [
-                    106
-                ],
-                "institucionalidad": [
-                    107,
-                    213
-                ],
-                "fiscal": [
-                    108
-                ],
-                "transparencia,": [
-                    110
-                ],
-                "ampliación": [
-                    111
-                ],
-                "infraestructura": [
-                    113
-                ],
-                "productiva": [
-                    114
-                ],
-                "social,": [
-                    116
-                ],
-                "mejora": [
-                    117
-                ],
-                "servicios": [
-                    119
-                ],
-                "públicos,": [
-                    120
-                ],
-                "promoción": [
-                    122
-                ],
-                "actividades": [
-                    126
-                ],
-                "productivas.": [
-                    127
-                ],
-                "De": [
-                    128
-                ],
-                "manera": [
-                    129
-                ],
-                "transversal,": [
-                    130
-                ],
-                "mejoras": [
-                    132,
-                    210
-                ],
-                "institucionalidad,": [
-                    135
-                ],
-                "equidad": [
-                    136
-                ],
-                "género": [
-                    138
-                ],
-                "diversidad,": [
-                    140
-                ],
-                "adaptación": [
-                    142
-                ],
-                "al": [
-                    143
-                ],
-                "cambio": [
-                    144
-                ],
-                "climático,": [
-                    145
-                ],
-                "sin": [
-                    146
-                ],
-                "dejar": [
-                    147
-                ],
-                "detrás": [
-                    149
-                ],
-                "avances": [
-                    150
-                ],
-                "concretos": [
-                    151
-                ],
-                "digitalización": [
-                    153
-                ],
-                "innovación,": [
-                    155
-                ],
-                "serán": [
-                    156
-                ],
-                "claves": [
-                    157
-                ],
-                "cerrar": [
-                    159
-                ],
-                "brechas": [
-                    160
-                ],
-                "sociales": [
-                    161
-                ],
-                "infraestructura,": [
-                    164
-                ],
-                "mientras": [
-                    165
-                ],
-                "que": [
-                    166,
-                    179
-                ],
-                "acciones": [
-                    167
-                ],
-                "mayor": [
-                    169,
-                    175
-                ],
-                "competitividad": [
-                    170,
-                    201
-                ],
-                "productividad": [
-                    172
-                ],
-                "permitirán": [
-                    173
-                ],
-                "crecimiento": [
-                    176,
-                    221
-                ],
-                "económico": [
-                    177,
-                    222
-                ],
-                "beneficie": [
-                    180
-                ],
-                "más": [
-                    182
-                ],
-                "personas.": [
-                    183
-                ],
-                "Las": [
-                    184
-                ],
-                "recomendaciones": [
-                    185
-                ],
-                "propuestas": [
-                    186
-                ],
-                "están": [
-                    187
-                ],
-                "línea": [
-                    189
-                ],
-                "Visión": [
-                    192
-                ],
-                "2025": [
-                    193
-                ],
-                "BID": [
-                    195
-                ],
-                "pretenden": [
-                    197
-                ],
-                "disminuir": [
-                    198
-                ],
-                "brechas,": [
-                    199
-                ],
-                "incrementar": [
-                    200
-                ],
-                "productividad,": [
-                    203
-                ],
-                "reactivar": [
-                    204
-                ],
-                "sector": [
-                    206
-                ],
-                "productivo,": [
-                    207
-                ],
-                "acompañado": [
-                    208
-                ],
-                "gobernabilidad": [
-                    215
-                ],
-                "inducir": [
-                    219
-                ],
-                "inclusivo": [
-                    223
-                ],
-                "sostenible.": [
-                    225
-                ]
-            },
-            "counts_by_year": [],
-            "updated_date": "2026-09-29T14:09:16.559479",
-            "created_date": "2021-12-31T00:00:00"
-        },
-        {
             "id": "https://openalex.org/W4404779955",
             "doi": "https://doi.org/10.1177/17488958241289362",
             "title": "Enduring flows: The transit of drugs in contemporary Honduras",
             "display_name": "Enduring flows: The transit of drugs in contemporary Honduras",
-            "relevance_score": 171.74344,
+            "relevance_score": 172.47264,
             "publication_year": 2024,
             "publication_date": "2024-11-26",
             "ids": {
@@ -1271,13 +313,13 @@
                 "currency": "USD",
                 "value_usd": 3450
             },
-            "fwci": 2.8812,
+            "fwci": 2.1053,
             "has_fulltext": false,
             "cited_by_count": 4,
             "citation_normalized_percentile": {
-                "value": 0.91717321,
+                "value": 0.88771517,
                 "is_in_top_1_percent": false,
-                "is_in_top_10_percent": true
+                "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
                 "min": 89,
@@ -1463,7 +505,7 @@
                 }
             ],
             "mesh": [],
-            "locations_count": 1,
+            "locations_count": 2,
             "locations": [
                 {
                     "id": "doi:10.1177/17488958241289362",
@@ -1510,6 +552,37 @@
                     "is_published": true,
                     "raw_source_name": "Criminology &amp; Criminal Justice",
                     "raw_type": "journal-article"
+                },
+                {
+                    "id": "pmh:oai:ora.ox.ac.uk:uuid:9e38bba5-db9b-4dc1-afa3-df76a2dfd114",
+                    "doi": null,
+                    "is_oa": false,
+                    "landing_page_url": "https://ora.ox.ac.uk/objects/uuid:9e38bba5-db9b-4dc1-afa3-df76a2dfd114/files/rbr86b5004",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306402636",
+                        "display_name": "Oxford University Research Archive (ORA) (University of Oxford)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I40120149",
+                        "host_organization_name": "University of Oxford",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I40120149"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Jisc Publications Router",
+                    "raw_type": "Journal article"
                 }
             ],
             "best_oa_location": {
@@ -1560,9 +633,9 @@
             },
             "sustainable_development_goals": [
                 {
+                    "display_name": "Peace, justice, and strong institutions",
                     "score": 0.8999999761581421,
-                    "id": "https://metadata.un.org/sdg/16",
-                    "display_name": "Peace, justice, and strong institutions"
+                    "id": "https://metadata.un.org/sdg/16"
                 }
             ],
             "study_designs": [],
@@ -1580,14 +653,13 @@
                 }
             ],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 34,
             "referenced_works": [
                 "https://openalex.org/W625028906",
-                "https://openalex.org/W1574051957",
                 "https://openalex.org/W1579571995",
                 "https://openalex.org/W1966166858",
                 "https://openalex.org/W1979290264",
@@ -1619,7 +691,8 @@
                 "https://openalex.org/W4291016739",
                 "https://openalex.org/W4296878488",
                 "https://openalex.org/W4311111354",
-                "https://openalex.org/W4312530867"
+                "https://openalex.org/W4312530867",
+                "https://openalex.org/W4409479422"
             ],
             "related_works": [
                 "https://openalex.org/W2783418383",
@@ -2305,15 +1378,973 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-09-06T09:10:53.072986",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2024-11-28T00:00:00"
+        },
+        {
+            "id": "https://openalex.org/W4200110670",
+            "doi": "https://doi.org/10.18235/0003885",
+            "title": "BIDeconomics Honduras: oportunidades de mayor desarrollo para todos en post pandemia",
+            "display_name": "BIDeconomics Honduras: oportunidades de mayor desarrollo para todos en post pandemia",
+            "relevance_score": 172.27762,
+            "publication_year": 2021,
+            "publication_date": "2021-12-23",
+            "ids": {
+                "openalex": "https://openalex.org/W4200110670",
+                "doi": "https://doi.org/10.18235/0003885"
+            },
+            "language": "es",
+            "primary_location": {
+                "id": "doi:10.18235/0003885",
+                "doi": "https://doi.org/10.18235/0003885",
+                "is_oa": false,
+                "landing_page_url": "https://doi.org/10.18235/0003885",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S4306463453",
+                    "display_name": "Inter-American Development Bank eBooks",
+                    "issn_l": null,
+                    "issn": null,
+                    "is_oa": false,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [],
+                    "host_organization": null,
+                    "host_organization_name": null,
+                    "host_organization_lineage": [],
+                    "host_organization_lineage_names": [],
+                    "type": "ebook platform"
+                },
+                "license": null,
+                "license_id": null,
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": null,
+                "raw_type": "monograph"
+            },
+            "volume": null,
+            "type": "book",
+            "indexed_in": [
+                "crossref"
+            ],
+            "open_access": {
+                "is_oa": false,
+                "oa_status": "closed",
+                "oa_url": null,
+                "any_repository_has_fulltext": false
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": null,
+                        "display_name": "Jordi Prat",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Jordi Prat",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                },
+                {
+                    "author_position": "middle",
+                    "author": {
+                        "id": "https://openalex.org/A5007228483",
+                        "display_name": "Josiel Sánchez Barahona",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Josiel Sánchez Barahona",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                },
+                {
+                    "author_position": "middle",
+                    "author": {
+                        "id": "https://openalex.org/A5007610035",
+                        "display_name": "Ana Belén Yépez Andino",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Ana Andino",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                },
+                {
+                    "author_position": "middle",
+                    "author": {
+                        "id": "https://openalex.org/A5030460497",
+                        "display_name": "Marta Ruiz-Arranz",
+                        "orcid": "https://orcid.org/0009-0006-0805-0098",
+                        "observed_orcids": [
+                            "https://orcid.org/0009-0006-0805-0098"
+                        ]
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Marta Ruiz-Arranz",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": "https://orcid.org/0009-0006-0805-0098",
+                    "affiliations": []
+                },
+                {
+                    "author_position": "last",
+                    "author": {
+                        "id": "https://openalex.org/A5032574462",
+                        "display_name": "María José Jarquín",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "María José Jarquín",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 0,
+            "institutions_distinct_count": 0,
+            "corresponding_author_ids": [],
+            "corresponding_institution_ids": [],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": 0.0,
+            "has_fulltext": false,
+            "cited_by_count": 0,
+            "citation_normalized_percentile": {
+                "value": 0.13490196,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": false
+            },
+            "cited_by_percentile_year": null,
+            "biblio": {
+                "volume": null,
+                "issue": null,
+                "first_page": null,
+                "last_page": null
+            },
+            "is_retracted": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T14501",
+                "display_name": "Global Economic and Social Development",
+                "score": 0.322299987077713,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/2002",
+                    "display_name": "Economics and Econometrics"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/20",
+                    "display_name": "Economics, Econometrics and Finance"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T14501",
+                    "display_name": "Global Economic and Social Development",
+                    "score": 0.322299987077713,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2002",
+                        "display_name": "Economics and Econometrics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/20",
+                        "display_name": "Economics, Econometrics and Finance"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T13867",
+                    "display_name": "Economic Growth and Development",
+                    "score": 0.29269999265670776,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1710",
+                        "display_name": "Information Systems"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/17",
+                        "display_name": "Computer Science"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T10393",
+                    "display_name": "Economic Growth and Productivity",
+                    "score": 0.09040000289678574,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2002",
+                        "display_name": "Economics and Econometrics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/20",
+                        "display_name": "Economics, Econometrics and Finance"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/honduras",
+                    "display_name": "Honduras",
+                    "score": 0.37700000405311584
+                },
+                {
+                    "id": "https://openalex.org/keywords/post-pandemic-economic-recovery",
+                    "display_name": "post-pandemic economic recovery",
+                    "score": 0.718999981880188
+                },
+                {
+                    "id": "https://openalex.org/keywords/covid-19",
+                    "display_name": "COVID-19 pandemic",
+                    "score": 0.7319999933242798
+                },
+                {
+                    "id": "https://openalex.org/keywords/household-poverty",
+                    "display_name": "household poverty",
+                    "score": 0.6549999713897705
+                },
+                {
+                    "id": "https://openalex.org/keywords/sustainable-development",
+                    "display_name": "sustainable development",
+                    "score": 0.5210000276565552
+                },
+                {
+                    "id": "https://openalex.org/keywords/inclusive-growth",
+                    "display_name": "inclusive growth",
+                    "score": 0.9380000233650208
+                },
+                {
+                    "id": "https://openalex.org/keywords/transparency",
+                    "display_name": "transparency",
+                    "score": 0.656000018119812
+                },
+                {
+                    "id": "https://openalex.org/keywords/productive-infrastructure",
+                    "display_name": "productive infrastructure",
+                    "score": 0.9570000171661377
+                },
+                {
+                    "id": "https://openalex.org/keywords/social-infrastructure",
+                    "display_name": "social infrastructure",
+                    "score": 0.9539999961853027
+                },
+                {
+                    "id": "https://openalex.org/keywords/public-services",
+                    "display_name": "public services",
+                    "score": 0.8140000104904175
+                },
+                {
+                    "id": "https://openalex.org/keywords/productive-activities",
+                    "display_name": "productive activities",
+                    "score": 0.6179999709129333
+                },
+                {
+                    "id": "https://openalex.org/keywords/gender-equity",
+                    "display_name": "gender equity",
+                    "score": 0.8479999899864197
+                },
+                {
+                    "id": "https://openalex.org/keywords/diversity",
+                    "display_name": "diversity",
+                    "score": 0.7139999866485596
+                },
+                {
+                    "id": "https://openalex.org/keywords/climate-change-adaptation",
+                    "display_name": "climate change adaptation",
+                    "score": 0.9879999756813049
+                },
+                {
+                    "id": "https://openalex.org/keywords/digitalization",
+                    "display_name": "digitalization",
+                    "score": 0.9190000295639038
+                },
+                {
+                    "id": "https://openalex.org/keywords/innovation",
+                    "display_name": "innovation",
+                    "score": 0.9639999866485596
+                },
+                {
+                    "id": "https://openalex.org/keywords/competitiveness",
+                    "display_name": "competitiveness",
+                    "score": 0.6389999985694885
+                },
+                {
+                    "id": "https://openalex.org/keywords/productivity",
+                    "display_name": "productivity",
+                    "score": 0.9750000238418579
+                },
+                {
+                    "id": "https://openalex.org/keywords/economic-growth",
+                    "display_name": "economic growth",
+                    "score": 0.5479999780654907
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C17744445",
+                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
+                    "display_name": "Political science",
+                    "level": 0,
+                    "score": 0.6508936285972595
+                },
+                {
+                    "id": "https://openalex.org/C15708023",
+                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
+                    "display_name": "Humanities",
+                    "level": 1,
+                    "score": 0.44702932238578796
+                },
+                {
+                    "id": "https://openalex.org/C205649164",
+                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
+                    "display_name": "Geography",
+                    "level": 0,
+                    "score": 0.34400904178619385
+                },
+                {
+                    "id": "https://openalex.org/C138885662",
+                    "wikidata": "https://www.wikidata.org/wiki/Q5891",
+                    "display_name": "Philosophy",
+                    "level": 0,
+                    "score": 0.11106696724891663
+                }
+            ],
+            "mesh": [],
+            "locations_count": 1,
+            "locations": [
+                {
+                    "id": "doi:10.18235/0003885",
+                    "doi": "https://doi.org/10.18235/0003885",
+                    "is_oa": false,
+                    "landing_page_url": "https://doi.org/10.18235/0003885",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306463453",
+                        "display_name": "Inter-American Development Bank eBooks",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": null,
+                        "host_organization_name": null,
+                        "host_organization_lineage": [],
+                        "host_organization_lineage_names": [],
+                        "type": "ebook platform"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": null,
+                    "raw_type": "monograph"
+                }
+            ],
+            "best_oa_location": null,
+            "sustainable_development_goals": [
+                {
+                    "display_name": "Decent work and economic growth",
+                    "score": 0.833299994468689,
+                    "id": "https://metadata.un.org/sdg/8"
+                },
+                {
+                    "display_name": "Industry, innovation and infrastructure",
+                    "score": 0.6773999929428101,
+                    "id": "https://metadata.un.org/sdg/9"
+                },
+                {
+                    "display_name": "Reduced inequalities",
+                    "score": 0.4000000059604645,
+                    "id": "https://metadata.un.org/sdg/10"
+                }
+            ],
+            "study_designs": [],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "pdf": false,
+                "grobid_xml": false
+            },
+            "content_urls": null,
+            "referenced_works_count": 0,
+            "referenced_works": [],
+            "related_works": [
+                "https://openalex.org/W6981334993",
+                "https://openalex.org/W7017260951",
+                "https://openalex.org/W4245415351",
+                "https://openalex.org/W1595584709",
+                "https://openalex.org/W171185498",
+                "https://openalex.org/W4200251603",
+                "https://openalex.org/W2899762257",
+                "https://openalex.org/W4297778599",
+                "https://openalex.org/W7209996505",
+                "https://openalex.org/W3152915877"
+            ],
+            "abstract_inverted_index": {
+                "La": [
+                    0
+                ],
+                "pandemia": [
+                    1
+                ],
+                "del": [
+                    2,
+                    40,
+                    76,
+                    80,
+                    90,
+                    123,
+                    194,
+                    216
+                ],
+                "COVID-19": [
+                    3
+                ],
+                "y": [
+                    4,
+                    42,
+                    54,
+                    109,
+                    115,
+                    121,
+                    139,
+                    141,
+                    162,
+                    171,
+                    196,
+                    202,
+                    214,
+                    224
+                ],
+                "las": [
+                    5,
+                    14,
+                    27,
+                    131
+                ],
+                "tormentas": [
+                    6,
+                    28
+                ],
+                "tropicales": [
+                    7,
+                    29
+                ],
+                "de": [
+                    8,
+                    16,
+                    18,
+                    35,
+                    45,
+                    74,
+                    112,
+                    118,
+                    125,
+                    137,
+                    163,
+                    209
+                ],
+                "2020": [
+                    9
+                ],
+                "implicaron": [
+                    10
+                ],
+                "un": [
+                    11,
+                    66,
+                    220
+                ],
+                "retroceso": [
+                    12
+                ],
+                "en": [
+                    13,
+                    25,
+                    97,
+                    133,
+                    152,
+                    188,
+                    211
+                ],
+                "condiciones": [
+                    15
+                ],
+                "vida": [
+                    17
+                ],
+                "los": [
+                    19,
+                    46,
+                    62,
+                    78,
+                    102
+                ],
+                "hondureños.": [
+                    20
+                ],
+                "El": [
+                    21
+                ],
+                "PIB": [
+                    22,
+                    41
+                ],
+                "cayó": [
+                    23
+                ],
+                "9%": [
+                    24
+                ],
+                "2020,": [
+                    26
+                ],
+                "Eta": [
+                    30
+                ],
+                "e": [
+                    31,
+                    69,
+                    154
+                ],
+                "Iota": [
+                    32
+                ],
+                "dejaron": [
+                    33
+                ],
+                "daños": [
+                    34
+                ],
+                "por": [
+                    36,
+                    148
+                ],
+                "lo": [
+                    37
+                ],
+                "menos": [
+                    38
+                ],
+                "8%": [
+                    39
+                ],
+                "la": [
+                    43,
+                    72,
+                    88,
+                    134,
+                    191,
+                    212
+                ],
+                "pobreza": [
+                    44
+                ],
+                "hogares": [
+                    47
+                ],
+                "aumentó": [
+                    48
+                ],
+                "14": [
+                    49
+                ],
+                "puntos": [
+                    50
+                ],
+                "porcentuales": [
+                    51
+                ],
+                "entre": [
+                    52
+                ],
+                "2019": [
+                    53
+                ],
+                "2020.": [
+                    55,
+                    92
+                ],
+                "Este": [
+                    56
+                ],
+                "documento": [
+                    57
+                ],
+                "presenta": [
+                    58
+                ],
+                "una": [
+                    59
+                ],
+                "actualización": [
+                    60
+                ],
+                "a": [
+                    61,
+                    181
+                ],
+                "desafíos": [
+                    63,
+                    79,
+                    104
+                ],
+                "para": [
+                    64,
+                    158,
+                    168,
+                    218
+                ],
+                "lograr": [
+                    65,
+                    174
+                ],
+                "desarrollo": [
+                    67,
+                    96,
+                    124
+                ],
+                "sostenible": [
+                    68,
+                    178
+                ],
+                "inclusivo.": [
+                    70
+                ],
+                "Utilizando": [
+                    71
+                ],
+                "metodología": [
+                    73
+                ],
+                "diagnóstico": [
+                    75
+                ],
+                "crecimiento,": [
+                    77
+                ],
+                "país": [
+                    81,
+                    217
+                ],
+                "se": [
+                    82,
+                    85
+                ],
+                "mantienen,": [
+                    83
+                ],
+                "pero": [
+                    84
+                ],
+                "profundizaron": [
+                    86
+                ],
+                "con": [
+                    87,
+                    190
+                ],
+                "crisis": [
+                    89
+                ],
+                "año": [
+                    91
+                ],
+                "Para": [
+                    93
+                ],
+                "impulsar": [
+                    94
+                ],
+                "el": [
+                    95,
+                    205
+                ],
+                "Honduras": [
+                    98
+                ],
+                "es": [
+                    99
+                ],
+                "necesario": [
+                    100
+                ],
+                "abordar": [
+                    101
+                ],
+                "cuatro": [
+                    103
+                ],
+                "fundamentales": [
+                    105
+                ],
+                "identificados:": [
+                    106
+                ],
+                "institucionalidad": [
+                    107,
+                    213
+                ],
+                "fiscal": [
+                    108
+                ],
+                "transparencia,": [
+                    110
+                ],
+                "ampliación": [
+                    111
+                ],
+                "infraestructura": [
+                    113
+                ],
+                "productiva": [
+                    114
+                ],
+                "social,": [
+                    116
+                ],
+                "mejora": [
+                    117
+                ],
+                "servicios": [
+                    119
+                ],
+                "públicos,": [
+                    120
+                ],
+                "promoción": [
+                    122
+                ],
+                "actividades": [
+                    126
+                ],
+                "productivas.": [
+                    127
+                ],
+                "De": [
+                    128
+                ],
+                "manera": [
+                    129
+                ],
+                "transversal,": [
+                    130
+                ],
+                "mejoras": [
+                    132,
+                    210
+                ],
+                "institucionalidad,": [
+                    135
+                ],
+                "equidad": [
+                    136
+                ],
+                "género": [
+                    138
+                ],
+                "diversidad,": [
+                    140
+                ],
+                "adaptación": [
+                    142
+                ],
+                "al": [
+                    143
+                ],
+                "cambio": [
+                    144
+                ],
+                "climático,": [
+                    145
+                ],
+                "sin": [
+                    146
+                ],
+                "dejar": [
+                    147
+                ],
+                "detrás": [
+                    149
+                ],
+                "avances": [
+                    150
+                ],
+                "concretos": [
+                    151
+                ],
+                "digitalización": [
+                    153
+                ],
+                "innovación,": [
+                    155
+                ],
+                "serán": [
+                    156
+                ],
+                "claves": [
+                    157
+                ],
+                "cerrar": [
+                    159
+                ],
+                "brechas": [
+                    160
+                ],
+                "sociales": [
+                    161
+                ],
+                "infraestructura,": [
+                    164
+                ],
+                "mientras": [
+                    165
+                ],
+                "que": [
+                    166,
+                    179
+                ],
+                "acciones": [
+                    167
+                ],
+                "mayor": [
+                    169,
+                    175
+                ],
+                "competitividad": [
+                    170,
+                    201
+                ],
+                "productividad": [
+                    172
+                ],
+                "permitirán": [
+                    173
+                ],
+                "crecimiento": [
+                    176,
+                    221
+                ],
+                "económico": [
+                    177,
+                    222
+                ],
+                "beneficie": [
+                    180
+                ],
+                "más": [
+                    182
+                ],
+                "personas.": [
+                    183
+                ],
+                "Las": [
+                    184
+                ],
+                "recomendaciones": [
+                    185
+                ],
+                "propuestas": [
+                    186
+                ],
+                "están": [
+                    187
+                ],
+                "línea": [
+                    189
+                ],
+                "Visión": [
+                    192
+                ],
+                "2025": [
+                    193
+                ],
+                "BID": [
+                    195
+                ],
+                "pretenden": [
+                    197
+                ],
+                "disminuir": [
+                    198
+                ],
+                "brechas,": [
+                    199
+                ],
+                "incrementar": [
+                    200
+                ],
+                "productividad,": [
+                    203
+                ],
+                "reactivar": [
+                    204
+                ],
+                "sector": [
+                    206
+                ],
+                "productivo,": [
+                    207
+                ],
+                "acompañado": [
+                    208
+                ],
+                "gobernabilidad": [
+                    215
+                ],
+                "inducir": [
+                    219
+                ],
+                "inclusivo": [
+                    223
+                ],
+                "sostenible.": [
+                    225
+                ]
+            },
+            "counts_by_year": [],
+            "updated_date": "2026-09-29T14:09:16.559479",
+            "created_date": "2021-12-31T00:00:00"
         },
         {
             "id": "https://openalex.org/W4405797915",
             "doi": "https://doi.org/10.56712/latam.v5i6.3195",
             "title": "Medios de vida y capacidad adaptativa en las familias de la microcuenca del río Talgua, Honduras 2024",
             "display_name": "Medios de vida y capacidad adaptativa en las familias de la microcuenca del río Talgua, Honduras 2024",
-            "relevance_score": 130.52199,
+            "relevance_score": 130.8946,
             "publication_year": 2024,
             "publication_date": "2024-12-26",
             "ids": {
@@ -2363,7 +2394,7 @@
                 "is_oa": true,
                 "oa_status": "hybrid",
                 "oa_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
-                "any_repository_has_fulltext": false
+                "any_repository_has_fulltext": true
             },
             "authorships": [
                 {
@@ -2460,7 +2491,7 @@
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.21147667,
+                "value": 0.20093937,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -2605,7 +2636,7 @@
                 }
             ],
             "mesh": [],
-            "locations_count": 1,
+            "locations_count": 2,
             "locations": [
                 {
                     "id": "doi:10.56712/latam.v5i6.3195",
@@ -2639,6 +2670,37 @@
                     "is_published": true,
                     "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
                     "raw_type": "journal-article"
+                },
+                {
+                    "id": "pmh:oai:dialnet.unirioja.es:ART0001749688",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://dialnet.unirioja.es/servlet/oaiart?codigo=10082245",
+                    "pdf_url": "https://dialnet.unirioja.es/descarga/articulo/10082245.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4306401293",
+                        "display_name": "Dialnet (Universidad de la Rioja)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I168974976",
+                        "host_organization_name": "Universidad de La Rioja",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I168974976"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": "Latam: revista latinoamericana de Ciencias Sociales y Humanidades, ISSN 2789-3855, null 5, Nº. 6, 2024 (Ejemplar dedicado a: LATAM; 1 – 20)",
+                    "raw_type": "text (article)"
                 }
             ],
             "best_oa_location": {
@@ -2676,27 +2738,27 @@
             },
             "sustainable_development_goals": [
                 {
+                    "display_name": "No poverty",
                     "score": 0.666700005531311,
-                    "id": "https://metadata.un.org/sdg/1",
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
+                    "display_name": "Zero hunger",
                     "score": 0.40450000762939453,
-                    "id": "https://metadata.un.org/sdg/2",
-                    "display_name": "Zero hunger"
+                    "id": "https://metadata.un.org/sdg/2"
                 }
             ],
             "study_designs": [
                 {
-                    "id": "https://openalex.org/study-designs/observational-study",
-                    "display_name": "Observational Study"
+                    "display_name": "Observational Study",
+                    "id": "https://openalex.org/study-designs/observational-study"
                 }
             ],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4405797915.pdf",
@@ -3241,7 +3303,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-10-27T15:51:10.671819",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2024-12-26T00:00:00"
         },
         {
@@ -3249,7 +3311,7 @@
             "doi": "https://doi.org/10.18235/0003310",
             "title": "Evaluación de los efectos e impactos de la tormenta tropical Eta y el huracán Iota en Honduras",
             "display_name": "Evaluación de los efectos e impactos de la tormenta tropical Eta y el huracán Iota en Honduras",
-            "relevance_score": 112.83361,
+            "relevance_score": 114.13936,
             "publication_year": 2021,
             "publication_date": "2021-05-28",
             "ids": {
@@ -3327,7 +3389,7 @@
             "apc_paid": null,
             "fwci": null,
             "has_fulltext": false,
-            "cited_by_count": 4,
+            "cited_by_count": 6,
             "citation_normalized_percentile": null,
             "cited_by_percentile_year": null,
             "biblio": {
@@ -3534,8 +3596,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -4387,6 +4449,10 @@
             },
             "counts_by_year": [
                 {
+                    "year": 2026,
+                    "cited_by_count": 1
+                },
+                {
                     "year": 2025,
                     "cited_by_count": 1
                 },
@@ -4396,14 +4462,14 @@
                 },
                 {
                     "year": 2023,
-                    "cited_by_count": 1
+                    "cited_by_count": 2
                 },
                 {
                     "year": 2021,
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-05-21T06:26:12.895304",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-06-22T00:00:00"
         },
         {
@@ -4411,7 +4477,7 @@
             "doi": "https://doi.org/10.5377/innovare.v8i2.9086",
             "title": "Simulación con robots colaborativos para prácticas de sistemas de información logística con estudiantes de ingeniería",
             "display_name": "Simulación con robots colaborativos para prácticas de sistemas de información logística con estudiantes de ingeniería",
-            "relevance_score": 10.73777,
+            "relevance_score": 10.735846,
             "publication_year": 2019,
             "publication_date": "2019-12-31",
             "ids": {
@@ -4813,22 +4879,22 @@
             },
             "sustainable_development_goals": [
                 {
+                    "display_name": "Quality education",
                     "score": 0.8278999924659729,
-                    "id": "https://metadata.un.org/sdg/4",
-                    "display_name": "Quality education"
+                    "id": "https://metadata.un.org/sdg/4"
                 },
                 {
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.5378999710083008,
-                    "id": "https://metadata.un.org/sdg/9",
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W3006150102.pdf",

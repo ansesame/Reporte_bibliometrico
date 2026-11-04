@@ -1,7 +1,7 @@
 {
     "meta": {
-        "count": 24,
-        "db_response_time_ms": 81,
+        "count": 23,
+        "db_response_time_ms": 114,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -187,7 +187,7 @@
             "doi": "https://doi.org/10.5089/9781513507859.002",
             "title": "Honduras",
             "display_name": "Honduras",
-            "relevance_score": 271.33008,
+            "relevance_score": 271.28827,
             "publication_year": 2019,
             "publication_date": "2019-07-01",
             "ids": {
@@ -507,8 +507,8 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.5473999977111816
                 }
             ],
@@ -516,8 +516,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4232919707.pdf",
@@ -946,7 +946,7 @@
             "doi": "https://doi.org/10.1787/5faef716-en",
             "title": "Honduras",
             "display_name": "Honduras",
-            "relevance_score": 232.99783,
+            "relevance_score": 233.1128,
             "publication_year": 2023,
             "publication_date": "2023-09-23",
             "ids": {
@@ -1243,13 +1243,13 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.9595999717712402
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/17",
                     "display_name": "Partnerships for the goals",
+                    "id": "https://metadata.un.org/sdg/17",
                     "score": 0.75
                 }
             ],
@@ -1257,8 +1257,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 1,
@@ -1934,7 +1934,7 @@
             "doi": "https://doi.org/10.5377/lrd.v43i1.15245",
             "title": "El Acceso de la Administración Tributaria a la Información Bancaria en Honduras",
             "display_name": "El Acceso de la Administración Tributaria a la Información Bancaria en Honduras",
-            "relevance_score": 221.22437,
+            "relevance_score": 221.62105,
             "publication_year": 2022,
             "publication_date": "2022-12-08",
             "ids": {
@@ -2251,8 +2251,8 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.833299994468689
                 }
             ],
@@ -2266,8 +2266,8 @@
                 }
             ],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4311881479.pdf",
@@ -2723,7 +2723,7 @@
             "doi": "https://doi.org/10.1787/ff8e1fee-en",
             "title": "Honduras",
             "display_name": "Honduras",
-            "relevance_score": 198.2704,
+            "relevance_score": 198.11272,
             "publication_year": 2022,
             "publication_date": "2022-10-04",
             "ids": {
@@ -3015,13 +3015,13 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.9595999717712402
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/17",
                     "display_name": "Partnerships for the goals",
+                    "id": "https://metadata.un.org/sdg/17",
                     "score": 0.75
                 }
             ],
@@ -3029,8 +3029,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 1,
@@ -3969,7 +3969,7 @@
             "doi": "https://doi.org/10.59403/2f52j1s",
             "title": "A Decade of VAT Reforms in Honduras: A Legislative Fixation on Exemptions",
             "display_name": "A Decade of VAT Reforms in Honduras: A Legislative Fixation on Exemptions",
-            "relevance_score": 187.39484,
+            "relevance_score": 187.52988,
             "publication_year": 2024,
             "publication_date": "2024-05-15",
             "ids": {
@@ -4270,8 +4270,8 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.6601999998092651
                 }
             ],
@@ -4279,8 +4279,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 3,
@@ -4565,7 +4565,7 @@
             "doi": "https://doi.org/10.5377/innovare.v11i2.14793",
             "title": "Sostenibilidad fiscal en Honduras",
             "display_name": "Sostenibilidad fiscal en Honduras",
-            "relevance_score": 186.49002,
+            "relevance_score": 186.24461,
             "publication_year": 2022,
             "publication_date": "2022-08-30",
             "ids": {
@@ -4910,8 +4910,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4296299261.pdf",
@@ -5130,7 +5130,7 @@
             "doi": "https://doi.org/10.56712/latam.v4i5.1339",
             "title": "Curva de Laffer: Análisis de la Tributación en Honduras",
             "display_name": "Curva de Laffer: Análisis de la Tributación en Honduras",
-            "relevance_score": 182.90388,
+            "relevance_score": 184.77428,
             "publication_year": 2023,
             "publication_date": "2023-11-14",
             "ids": {
@@ -5180,7 +5180,7 @@
                 "is_oa": true,
                 "oa_status": "hybrid",
                 "oa_url": "https://latam.redilat.org/index.php/lt/article/download/1339/1671",
-                "any_repository_has_fulltext": false
+                "any_repository_has_fulltext": true
             },
             "authorships": [
                 {
@@ -5235,15 +5235,18 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.0,
+            "fwci": 0.3605,
             "has_fulltext": true,
-            "cited_by_count": 0,
+            "cited_by_count": 2,
             "citation_normalized_percentile": {
-                "value": 0.18929498,
+                "value": 0.67695949,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
-            "cited_by_percentile_year": null,
+            "cited_by_percentile_year": {
+                "min": 90,
+                "max": 95
+            },
             "biblio": {
                 "volume": "4",
                 "issue": "5",
@@ -5438,7 +5441,7 @@
                 }
             ],
             "mesh": [],
-            "locations_count": 1,
+            "locations_count": 2,
             "locations": [
                 {
                     "id": "doi:10.56712/latam.v4i5.1339",
@@ -5472,6 +5475,37 @@
                     "is_published": true,
                     "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
                     "raw_type": "journal-article"
+                },
+                {
+                    "id": "pmh:oai:dialnet.unirioja.es:ART0001688907",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://dialnet.unirioja.es/servlet/oaiart?codigo=9586526",
+                    "pdf_url": "https://dialnet.unirioja.es/descarga/articulo/9586526.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4306401293",
+                        "display_name": "Dialnet (Universidad de la Rioja)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I168974976",
+                        "host_organization_name": "Universidad de La Rioja",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I168974976"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": "Latam: revista latinoamericana de Ciencias Sociales y Humanidades, ISSN 2789-3855, null 4, Nº. 5, 2023 (Ejemplar dedicado a: LATAM IX; 1– 15)",
+                    "raw_type": "text (article)"
                 }
             ],
             "best_oa_location": {
@@ -5512,8 +5546,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4388667438.pdf",
@@ -5522,9 +5556,9 @@
             "referenced_works_count": 7,
             "referenced_works": [
                 "https://openalex.org/W316403625",
+                "https://openalex.org/W1500464695",
                 "https://openalex.org/W1530362166",
                 "https://openalex.org/W2085877464",
-                "https://openalex.org/W2110310624",
                 "https://openalex.org/W2750493349",
                 "https://openalex.org/W3013088278",
                 "https://openalex.org/W4289736953"
@@ -5824,8 +5858,17 @@
                     108
                 ]
             },
-            "counts_by_year": [],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "counts_by_year": [
+                {
+                    "year": 2026,
+                    "cited_by_count": 1
+                },
+                {
+                    "year": 2025,
+                    "cited_by_count": 1
+                }
+            ],
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2023-11-15T00:00:00"
         },
         {
@@ -5833,7 +5876,7 @@
             "doi": "https://doi.org/10.1787/a78756b9-en",
             "title": "Global Forum on Transparency and Exchange of Information for Tax Purposes: Honduras 2025 (Second Round)",
             "display_name": "Global Forum on Transparency and Exchange of Information for Tax Purposes: Honduras 2025 (Second Round)",
-            "relevance_score": 161.81781,
+            "relevance_score": 161.91832,
             "publication_year": 2025,
             "publication_date": "2025-07-07",
             "ids": {
@@ -6176,8 +6219,8 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.8046000003814697
                 }
             ],
@@ -6185,8 +6228,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4412092470.pdf",
@@ -6437,741 +6480,11 @@
             "created_date": "2025-07-08T00:00:00"
         },
         {
-            "id": "https://openalex.org/W7217364875",
-            "doi": null,
-            "title": "Knowledge management for the acceleration of digital processes focused on the satisfaction of users of the Servicio de A dministración de Rentas in Honduras",
-            "display_name": "Knowledge management for the acceleration of digital processes focused on the satisfaction of users of the Servicio de A dministración de Rentas in Honduras",
-            "relevance_score": 144.94998,
-            "publication_year": 2020,
-            "publication_date": "2020-12-09",
-            "ids": {
-                "openalex": "https://openalex.org/W7217364875"
-            },
-            "language": "es",
-            "primary_location": {
-                "id": "pmh:oai:ojs.erevistas.saber.ula.ve:article/16658",
-                "doi": null,
-                "is_oa": true,
-                "landing_page_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/view/16658",
-                "pdf_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
-                "source": {
-                    "id": "https://openalex.org/S4210227408",
-                    "display_name": "Sapienza Organizacional",
-                    "issn_l": "2443-4256",
-                    "issn": [
-                        "2443-4256",
-                        "2443-4418"
-                    ],
-                    "is_oa": true,
-                    "is_in_doaj": true,
-                    "is_core": false,
-                    "listed_in": [
-                        "doaj",
-                        "erih-plus"
-                    ],
-                    "host_organization": "https://openalex.org/P4310318775",
-                    "host_organization_name": "University of the Andes",
-                    "host_organization_lineage": [
-                        "https://openalex.org/P4310318775"
-                    ],
-                    "host_organization_lineage_names": [
-                        "University of the Andes"
-                    ],
-                    "type": "journal"
-                },
-                "license": "cc-by-nc-sa",
-                "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "2443-4418",
-                "raw_type": "info:eu-repo/semantics/article"
-            },
-            "volume": null,
-            "type": "article",
-            "indexed_in": [],
-            "open_access": {
-                "is_oa": true,
-                "oa_status": "diamond",
-                "oa_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
-                "any_repository_has_fulltext": false
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5075504708",
-                        "display_name": "Gracia María Andino",
-                        "orcid": "https://orcid.org/0000-0002-3247-4636",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0002-3247-4636"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I169009895",
-                            "display_name": "National Autonomous University of Honduras",
-                            "ror": "https://ror.org/03xyve152",
-                            "country_code": "HN",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "HN"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Andino, Gracia María",
-                    "raw_affiliation_strings": [
-                        "Universidad Nacional Autónoma de Honduras (UNAH)"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras (UNAH)",
-                            "institution_ids": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5004093167",
-                        "display_name": "Héctor Antonio González Pineda",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I169009895",
-                            "display_name": "National Autonomous University of Honduras",
-                            "ror": "https://ror.org/03xyve152",
-                            "country_code": "HN",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "HN"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Pineda, Héctor",
-                    "raw_affiliation_strings": [
-                        "Universidad Nacional Autónoma de Honduras (UNAH)"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras (UNAH)",
-                            "institution_ids": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "author_position": "last",
-                    "author": {
-                        "id": "https://openalex.org/A5032719954",
-                        "display_name": "Ramón Armando Varela Zuniga",
-                        "orcid": "https://orcid.org/0000-0003-0672-5451",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0003-0672-5451"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I169009895",
-                            "display_name": "National Autonomous University of Honduras",
-                            "ror": "https://ror.org/03xyve152",
-                            "country_code": "HN",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "HN"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Varela, Ramón Armando",
-                    "raw_affiliation_strings": [
-                        "Universidad Nacional Autónoma de Honduras (UNAH)"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras (UNAH)",
-                            "institution_ids": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 1,
-            "institutions_distinct_count": 1,
-            "corresponding_author_ids": [],
-            "corresponding_institution_ids": [
-                "https://openalex.org/I169009895"
-            ],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.0,
-            "has_fulltext": true,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": {
-                "value": 0.61719807,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": null,
-                "issue": null,
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T14246",
-                "display_name": "E-Learning and Knowledge Management",
-                "score": 0.24300000071525574,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/1706",
-                    "display_name": "Computer Science Applications"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/17",
-                    "display_name": "Computer Science"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/3",
-                    "display_name": "Physical Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T14246",
-                    "display_name": "E-Learning and Knowledge Management",
-                    "score": 0.24300000071525574,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1706",
-                        "display_name": "Computer Science Applications"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/17",
-                        "display_name": "Computer Science"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T10953",
-                    "display_name": "E-Government and Public Services",
-                    "score": 0.2150000035762787,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3320",
-                        "display_name": "Political Science and International Relations"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T13874",
-                    "display_name": "Information Architecture and Usability",
-                    "score": 0.13779999315738678,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1710",
-                        "display_name": "Information Systems"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/17",
-                        "display_name": "Computer Science"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/knowledge-management",
-                    "display_name": "knowledge management",
-                    "score": 1.0
-                },
-                {
-                    "id": "https://openalex.org/keywords/digital-processes",
-                    "display_name": "digital processes",
-                    "score": 0.7799999713897705
-                },
-                {
-                    "id": "https://openalex.org/keywords/tax-administration",
-                    "display_name": "tax administration",
-                    "score": 0.8370000123977661
-                },
-                {
-                    "id": "https://openalex.org/keywords/user-satisfaction",
-                    "display_name": "user satisfaction",
-                    "score": 0.8230000138282776
-                },
-                {
-                    "id": "https://openalex.org/keywords/public-service-websites",
-                    "display_name": "public service websites",
-                    "score": 0.4350000023841858
-                },
-                {
-                    "id": "https://openalex.org/keywords/audit-firms",
-                    "display_name": "public accounting firms",
-                    "score": 0.6449999809265137
-                },
-                {
-                    "id": "https://openalex.org/keywords/public-accountants",
-                    "display_name": "public accountants",
-                    "score": 0.5659999847412109
-                },
-                {
-                    "id": "https://openalex.org/keywords/e-government",
-                    "display_name": "e-government",
-                    "score": 0.41999998688697815
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C56739046",
-                    "wikidata": "https://www.wikidata.org/wiki/Q192060",
-                    "display_name": "Knowledge management",
-                    "level": 1,
-                    "score": 0.4650000035762787
-                },
-                {
-                    "id": "https://openalex.org/C15708023",
-                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
-                    "display_name": "Humanities",
-                    "level": 1,
-                    "score": 0.4230000078678131
-                },
-                {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.4174000024795532
-                },
-                {
-                    "id": "https://openalex.org/C195094911",
-                    "wikidata": "https://www.wikidata.org/wiki/Q14167904",
-                    "display_name": "Process management",
-                    "level": 1,
-                    "score": 0.35109999775886536
-                },
-                {
-                    "id": "https://openalex.org/C41008148",
-                    "wikidata": "https://www.wikidata.org/wiki/Q21198",
-                    "display_name": "Computer science",
-                    "level": 0,
-                    "score": 0.3411000072956085
-                },
-                {
-                    "id": "https://openalex.org/C39549134",
-                    "wikidata": "https://www.wikidata.org/wiki/Q133080",
-                    "display_name": "Public relations",
-                    "level": 1,
-                    "score": 0.30720001459121704
-                },
-                {
-                    "id": "https://openalex.org/C144133560",
-                    "wikidata": "https://www.wikidata.org/wiki/Q4830453",
-                    "display_name": "Business",
-                    "level": 0,
-                    "score": 0.2962999939918518
-                },
-                {
-                    "id": "https://openalex.org/C117896860",
-                    "wikidata": "https://www.wikidata.org/wiki/Q11376",
-                    "display_name": "Acceleration",
-                    "level": 2,
-                    "score": 0.27950000762939453
-                },
-                {
-                    "id": "https://openalex.org/C144024400",
-                    "wikidata": "https://www.wikidata.org/wiki/Q21201",
-                    "display_name": "Sociology",
-                    "level": 0,
-                    "score": 0.27950000762939453
-                },
-                {
-                    "id": "https://openalex.org/C110354214",
-                    "wikidata": "https://www.wikidata.org/wiki/Q6314146",
-                    "display_name": "Engineering management",
-                    "level": 1,
-                    "score": 0.25130000710487366
-                },
-                {
-                    "id": "https://openalex.org/C161191863",
-                    "wikidata": "https://www.wikidata.org/wiki/Q199655",
-                    "display_name": "Library science",
-                    "level": 1,
-                    "score": 0.25049999356269836
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "pmh:oai:ojs.erevistas.saber.ula.ve:article/16658",
-                    "doi": null,
-                    "is_oa": true,
-                    "landing_page_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/view/16658",
-                    "pdf_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
-                    "source": {
-                        "id": "https://openalex.org/S4210227408",
-                        "display_name": "Sapienza Organizacional",
-                        "issn_l": "2443-4256",
-                        "issn": [
-                            "2443-4256",
-                            "2443-4418"
-                        ],
-                        "is_oa": true,
-                        "is_in_doaj": true,
-                        "is_core": false,
-                        "listed_in": [
-                            "doaj",
-                            "erih-plus"
-                        ],
-                        "host_organization": "https://openalex.org/P4310318775",
-                        "host_organization_name": "University of the Andes",
-                        "host_organization_lineage": [
-                            "https://openalex.org/P4310318775"
-                        ],
-                        "host_organization_lineage_names": [
-                            "University of the Andes"
-                        ],
-                        "type": "journal"
-                    },
-                    "license": "cc-by-nc-sa",
-                    "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
-                    "version": "publishedVersion",
-                    "is_accepted": true,
-                    "is_published": true,
-                    "raw_source_name": "2443-4418",
-                    "raw_type": "info:eu-repo/semantics/article"
-                }
-            ],
-            "best_oa_location": {
-                "id": "pmh:oai:ojs.erevistas.saber.ula.ve:article/16658",
-                "doi": null,
-                "is_oa": true,
-                "landing_page_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/view/16658",
-                "pdf_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
-                "source": {
-                    "id": "https://openalex.org/S4210227408",
-                    "display_name": "Sapienza Organizacional",
-                    "issn_l": "2443-4256",
-                    "issn": [
-                        "2443-4256",
-                        "2443-4418"
-                    ],
-                    "is_oa": true,
-                    "is_in_doaj": true,
-                    "is_core": false,
-                    "listed_in": [
-                        "doaj",
-                        "erih-plus"
-                    ],
-                    "host_organization": "https://openalex.org/P4310318775",
-                    "host_organization_name": "University of the Andes",
-                    "host_organization_lineage": [
-                        "https://openalex.org/P4310318775"
-                    ],
-                    "host_organization_lineage_names": [
-                        "University of the Andes"
-                    ],
-                    "type": "journal"
-                },
-                "license": "cc-by-nc-sa",
-                "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "2443-4418",
-                "raw_type": "info:eu-repo/semantics/article"
-            },
-            "sustainable_development_goals": [],
-            "study_designs": [
-                {
-                    "id": "https://openalex.org/study-designs/observational-study",
-                    "display_name": "Observational Study"
-                }
-            ],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": true,
-                "pdf": true
-            },
-            "content_urls": {
-                "pdf": "https://content.openalex.org/works/W7217364875.pdf",
-                "grobid_xml": "https://content.openalex.org/works/W7217364875.grobid-xml"
-            },
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W3158251538",
-                "https://openalex.org/W7155269975",
-                "https://openalex.org/W7020219670",
-                "https://openalex.org/W7056023532",
-                "https://openalex.org/W7113288419",
-                "https://openalex.org/W2350964778",
-                "https://openalex.org/W7037422401",
-                "https://openalex.org/W7155249196",
-                "https://openalex.org/W7047662762",
-                "https://openalex.org/W7155272090"
-            ],
-            "abstract_inverted_index": {
-                "Esta": [
-                    0
-                ],
-                "investigación": [
-                    1
-                ],
-                "aborda": [
-                    2
-                ],
-                "la": [
-                    3,
-                    8,
-                    82
-                ],
-                "gestión": [
-                    4
-                ],
-                "del": [
-                    5,
-                    45
-                ],
-                "conocimiento": [
-                    6
-                ],
-                "para": [
-                    7
-                ],
-                "aceleración": [
-                    9
-                ],
-                "de": [
-                    10,
-                    16,
-                    18,
-                    25,
-                    38,
-                    40,
-                    51,
-                    64,
-                    75,
-                    78,
-                    81
-                ],
-                "procesos": [
-                    11
-                ],
-                "digitales": [
-                    12
-                ],
-                "en": [
-                    13,
-                    20,
-                    47,
-                    54
-                ],
-                "el": [
-                    14,
-                    48,
-                    58,
-                    62
-                ],
-                "Servicio": [
-                    15
-                ],
-                "Administración": [
-                    17
-                ],
-                "Rentas": [
-                    19
-                ],
-                "Honduras.": [
-                    21
-                ],
-                "La": [
-                    22
-                ],
-                "metodología": [
-                    23
-                ],
-                "es": [
-                    24
-                ],
-                "tipo": [
-                    26
-                ],
-                "exploratorio,": [
-                    27
-                ],
-                "correccional": [
-                    28
-                ],
-                "y": [
-                    29,
-                    66
-                ],
-                "descriptivo;": [
-                    30
-                ],
-                "se": [
-                    31
-                ],
-                "aplicó": [
-                    32
-                ],
-                "una": [
-                    33
-                ],
-                "encuesta": [
-                    34
-                ],
-                "a": [
-                    35,
-                    43
-                ],
-                "64": [
-                    36
-                ],
-                "ejecutivos": [
-                    37
-                ],
-                "firmas": [
-                    39
-                ],
-                "auditoría": [
-                    41
-                ],
-                "registradas": [
-                    42
-                ],
-                "junio": [
-                    44
-                ],
-                "2020": [
-                    46
-                ],
-                "Colegio": [
-                    49
-                ],
-                "Hondureño": [
-                    50
-                ],
-                "Profesionales": [
-                    52
-                ],
-                "Universitarios": [
-                    53
-                ],
-                "Contaduría": [
-                    55
-                ],
-                "Pública.": [
-                    56
-                ],
-                "Finalmente,": [
-                    57
-                ],
-                "estudio": [
-                    59
-                ],
-                "permitió": [
-                    60
-                ],
-                "medir": [
-                    61
-                ],
-                "grado": [
-                    63
-                ],
-                "satisfacción": [
-                    65
-                ],
-                "conocer": [
-                    67
-                ],
-                "los": [
-                    68,
-                    76,
-                    79
-                ],
-                "servicios": [
-                    69,
-                    80
-                ],
-                "que": [
-                    70
-                ],
-                "contribuyen": [
-                    71
-                ],
-                "al": [
-                    72
-                ],
-                "desempeño": [
-                    73
-                ],
-                "laboral": [
-                    74
-                ],
-                "usuarios": [
-                    77
-                ],
-                "página": [
-                    83
-                ],
-                "web.Recibido:": [
-                    84
-                ],
-                "16-05-2020Aceptado:": [
-                    85
-                ],
-                "20-07-2020": [
-                    86
-                ]
-            },
-            "counts_by_year": [],
-            "updated_date": "2026-10-12T09:40:04.860316",
-            "created_date": "2026-10-03T00:00:00"
-        },
-        {
             "id": "https://openalex.org/W4311315243",
             "doi": "https://doi.org/10.5377/ru.v1i1.15411",
             "title": "Reforma fiscal en Honduras: lineamientos de política fiscal y de ingresos progresiva con articulación a la política social",
             "display_name": "Reforma fiscal en Honduras: lineamientos de política fiscal y de ingresos progresiva con articulación a la política social",
-            "relevance_score": 140.11742,
+            "relevance_score": 140.27097,
             "publication_year": 2022,
             "publication_date": "2022-12-13",
             "ids": {
@@ -7546,8 +6859,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4311315243.pdf",
@@ -7953,7 +7266,7 @@
             "doi": "https://doi.org/10.5377/ru.v1i1.21458",
             "title": "Desafíos tributarios y financieros en el emprendimiento hondureño: hacia una cultura de cumplimiento fiscal",
             "display_name": "Desafíos tributarios y financieros en el emprendimiento hondureño: hacia una cultura de cumplimiento fiscal",
-            "relevance_score": 135.61244,
+            "relevance_score": 136.02373,
             "publication_year": 2025,
             "publication_date": "2025-12-15",
             "ids": {
@@ -8357,22 +7670,22 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/8",
                     "display_name": "Decent work and economic growth",
+                    "id": "https://metadata.un.org/sdg/8",
                     "score": 0.6452000141143799
                 }
             ],
             "study_designs": [
                 {
-                    "id": "https://openalex.org/study-designs/observational-study",
-                    "display_name": "Observational Study"
+                    "display_name": "Observational Study",
+                    "id": "https://openalex.org/study-designs/observational-study"
                 }
             ],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7163331234.pdf",
@@ -8651,7 +7964,7 @@
             "doi": null,
             "title": "La gestión del conocimiento para la aceleración de procesos digitales centrados en la satisfacción de los usuarios del Servicio de Administración de Rentas en Honduras.",
             "display_name": "La gestión del conocimiento para la aceleración de procesos digitales centrados en la satisfacción de los usuarios del Servicio de Administración de Rentas en Honduras.",
-            "relevance_score": 117.80426,
+            "relevance_score": 115.7342,
             "publication_year": 2020,
             "publication_date": "2020-12-09",
             "ids": {
@@ -8660,11 +7973,11 @@
             },
             "language": "es",
             "primary_location": {
-                "id": "mag:3158251538",
+                "id": "pmh:oai:ojs.erevistas.saber.ula.ve:article/16658",
                 "doi": null,
                 "is_oa": true,
-                "landing_page_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
-                "pdf_url": null,
+                "landing_page_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/view/16658",
+                "pdf_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
                 "source": {
                     "id": "https://openalex.org/S4210227408",
                     "display_name": "Sapienza Organizacional",
@@ -8692,11 +8005,11 @@
                 },
                 "license": "cc-by-nc-sa",
                 "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
-                "version": null,
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": "Sapienza Organizacional",
-                "raw_type": null
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "2443-4418",
+                "raw_type": "info:eu-repo/semantics/article"
             },
             "volume": null,
             "type": "article",
@@ -8837,10 +8150,10 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": 0.0,
-            "has_fulltext": false,
+            "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.31149758,
+                "value": 0.32030769,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -8999,8 +8312,47 @@
                 }
             ],
             "mesh": [],
-            "locations_count": 1,
+            "locations_count": 2,
             "locations": [
+                {
+                    "id": "pmh:oai:ojs.erevistas.saber.ula.ve:article/16658",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/view/16658",
+                    "pdf_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
+                    "source": {
+                        "id": "https://openalex.org/S4210227408",
+                        "display_name": "Sapienza Organizacional",
+                        "issn_l": "2443-4256",
+                        "issn": [
+                            "2443-4256",
+                            "2443-4418"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": false,
+                        "listed_in": [
+                            "doaj",
+                            "erih-plus"
+                        ],
+                        "host_organization": "https://openalex.org/P4310318775",
+                        "host_organization_name": "University of the Andes",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310318775"
+                        ],
+                        "host_organization_lineage_names": [
+                            "University of the Andes"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc-sa",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "2443-4418",
+                    "raw_type": "info:eu-repo/semantics/article"
+                },
                 {
                     "id": "mag:3158251538",
                     "doi": null,
@@ -9042,11 +8394,11 @@
                 }
             ],
             "best_oa_location": {
-                "id": "mag:3158251538",
+                "id": "pmh:oai:ojs.erevistas.saber.ula.ve:article/16658",
                 "doi": null,
                 "is_oa": true,
-                "landing_page_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
-                "pdf_url": null,
+                "landing_page_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/view/16658",
+                "pdf_url": "http://erevistas.saber.ula.ve/index.php/sapienza/article/download/16658/21921927798",
                 "source": {
                     "id": "https://openalex.org/S4210227408",
                     "display_name": "Sapienza Organizacional",
@@ -9074,32 +8426,35 @@
                 },
                 "license": "cc-by-nc-sa",
                 "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
-                "version": null,
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": "Sapienza Organizacional",
-                "raw_type": null
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "2443-4418",
+                "raw_type": "info:eu-repo/semantics/article"
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/8",
                     "display_name": "Decent work and economic growth",
+                    "id": "https://metadata.un.org/sdg/8",
                     "score": 0.48510000109672546
                 }
             ],
             "study_designs": [
                 {
-                    "id": "https://openalex.org/study-designs/observational-study",
-                    "display_name": "Observational Study"
+                    "display_name": "Observational Study",
+                    "id": "https://openalex.org/study-designs/observational-study"
                 }
             ],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": true,
+                "grobid_xml": true
             },
-            "content_urls": null,
+            "content_urls": {
+                "pdf": "https://content.openalex.org/works/W3158251538.pdf",
+                "grobid_xml": "https://content.openalex.org/works/W3158251538.grobid-xml"
+            },
             "referenced_works_count": 0,
             "referenced_works": [],
             "related_works": [
@@ -9115,212 +8470,222 @@
                 "https://openalex.org/W7037422401"
             ],
             "abstract_inverted_index": {
-                "This": [
+                "Esta": [
                     0
                 ],
-                "research": [
+                "investigación": [
                     1
                 ],
-                "deals": [
+                "aborda": [
                     2
                 ],
-                "with": [
-                    3
+                "la": [
+                    3,
+                    8,
+                    82
                 ],
-                "knowledge": [
+                "gestión": [
                     4
                 ],
-                "management": [
-                    5
+                "del": [
+                    5,
+                    45
                 ],
-                "for": [
+                "conocimiento": [
                     6
                 ],
-                "the": [
-                    7,
-                    13,
-                    44,
-                    54,
-                    58,
+                "para": [
+                    7
+                ],
+                "aceleración": [
+                    9
+                ],
+                "de": [
+                    10,
+                    16,
+                    18,
+                    25,
+                    38,
+                    40,
+                    51,
                     64,
-                    69,
-                    73,
+                    75,
+                    78,
+                    81
+                ],
+                "procesos": [
+                    11
+                ],
+                "digitales": [
+                    12
+                ],
+                "en": [
+                    13,
+                    20,
+                    47,
+                    54
+                ],
+                "el": [
+                    14,
+                    48,
+                    58,
+                    62
+                ],
+                "Servicio": [
+                    15
+                ],
+                "Administración": [
+                    17
+                ],
+                "Rentas": [
+                    19
+                ],
+                "Honduras.": [
+                    21
+                ],
+                "La": [
+                    22
+                ],
+                "metodología": [
+                    23
+                ],
+                "es": [
+                    24
+                ],
+                "tipo": [
+                    26
+                ],
+                "exploratorio,": [
+                    27
+                ],
+                "correccional": [
+                    28
+                ],
+                "y": [
+                    29,
+                    66
+                ],
+                "descriptivo;": [
+                    30
+                ],
+                "se": [
+                    31
+                ],
+                "aplicó": [
+                    32
+                ],
+                "una": [
+                    33
+                ],
+                "encuesta": [
+                    34
+                ],
+                "a": [
+                    35,
+                    43
+                ],
+                "64": [
+                    36
+                ],
+                "ejecutivos": [
+                    37
+                ],
+                "firmas": [
+                    39
+                ],
+                "auditoría": [
+                    41
+                ],
+                "registradas": [
+                    42
+                ],
+                "junio": [
+                    44
+                ],
+                "2020": [
+                    46
+                ],
+                "Colegio": [
+                    49
+                ],
+                "Hondureño": [
+                    50
+                ],
+                "Profesionales": [
+                    52
+                ],
+                "Universitarios": [
+                    53
+                ],
+                "Contaduría": [
+                    55
+                ],
+                "Pública.": [
+                    56
+                ],
+                "Finalmente,": [
+                    57
+                ],
+                "estudio": [
+                    59
+                ],
+                "permitió": [
+                    60
+                ],
+                "medir": [
+                    61
+                ],
+                "grado": [
+                    63
+                ],
+                "satisfacción": [
+                    65
+                ],
+                "conocer": [
+                    67
+                ],
+                "los": [
+                    68,
                     76,
                     79
                 ],
-                "acceleration": [
-                    8
+                "servicios": [
+                    69,
+                    80
                 ],
-                "of": [
-                    9,
-                    35,
-                    40,
-                    60,
-                    72,
-                    75
-                ],
-                "digital": [
-                    10
-                ],
-                "processes": [
-                    11
-                ],
-                "in": [
-                    12,
-                    19
-                ],
-                "Servicio": [
-                    14
-                ],
-                "de": [
-                    15,
-                    17,
-                    47
-                ],
-                "Administracion": [
-                    16
-                ],
-                "Rentas": [
-                    18
-                ],
-                "Honduras.": [
-                    20
-                ],
-                "The": [
-                    21
-                ],
-                "methodology": [
-                    22
-                ],
-                "is": [
-                    23
-                ],
-                "exploratory,": [
-                    24
-                ],
-                "correctional": [
-                    25
-                ],
-                "and": [
-                    26,
-                    62
-                ],
-                "descriptive;": [
-                    27
-                ],
-                "A": [
-                    28
-                ],
-                "survey": [
-                    29
-                ],
-                "was": [
-                    30
-                ],
-                "applied": [
-                    31
-                ],
-                "to": [
-                    32,
-                    68
-                ],
-                "64": [
-                    33
-                ],
-                "executives": [
-                    34
-                ],
-                "audit": [
-                    36
-                ],
-                "firms": [
-                    37
-                ],
-                "registered": [
-                    38
-                ],
-                "as": [
-                    39
-                ],
-                "June": [
-                    41
-                ],
-                "2020": [
-                    42
-                ],
-                "at": [
-                    43
-                ],
-                "Colegio": [
-                    45
-                ],
-                "Hondureno": [
-                    46
-                ],
-                "Profesionales": [
-                    48
-                ],
-                "Universitarios": [
-                    49
-                ],
-                "en": [
-                    50
-                ],
-                "Contaduria": [
-                    51
-                ],
-                "Publica.": [
-                    52
-                ],
-                "Finally,": [
-                    53
-                ],
-                "study": [
-                    55
-                ],
-                "allowed": [
-                    56
-                ],
-                "measuring": [
-                    57
-                ],
-                "degree": [
-                    59
-                ],
-                "satisfaction": [
-                    61
-                ],
-                "knowing": [
-                    63
-                ],
-                "services": [
-                    65,
-                    77
-                ],
-                "that": [
-                    66
-                ],
-                "contribute": [
-                    67
-                ],
-                "job": [
+                "que": [
                     70
                 ],
-                "performance": [
+                "contribuyen": [
                     71
                 ],
-                "users": [
+                "al": [
+                    72
+                ],
+                "desempeño": [
+                    73
+                ],
+                "laboral": [
                     74
                 ],
-                "on": [
-                    78
+                "usuarios": [
+                    77
                 ],
-                "website.": [
-                    80
+                "página": [
+                    83
+                ],
+                "web.Recibido:": [
+                    84
+                ],
+                "16-05-2020Aceptado:": [
+                    85
+                ],
+                "20-07-2020": [
+                    86
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-10-28T10:33:24.094632",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-05-10T00:00:00"
         },
         {
@@ -9328,7 +8693,7 @@
             "doi": null,
             "title": "Análisis del sistema simple de tributación en Colombia y otros países",
             "display_name": "Análisis del sistema simple de tributación en Colombia y otros países",
-            "relevance_score": 44.16606,
+            "relevance_score": 44.194378,
             "publication_year": 2021,
             "publication_date": "2021-01-29",
             "ids": {
@@ -9611,8 +8976,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -10011,7 +9376,7 @@
             "doi": "https://doi.org/10.1787/14a6e2ec-es",
             "title": "Resumen ejecutivo",
             "display_name": "Resumen ejecutivo",
-            "relevance_score": 39.208878,
+            "relevance_score": 39.297985,
             "publication_year": 2023,
             "publication_date": "2023-05-16",
             "ids": {
@@ -10324,8 +9689,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -10533,7 +9898,7 @@
             "doi": "https://doi.org/10.18235/0012975",
             "title": "Unraveling the Paradox of Anticorruption Messaging: Experimental Evidence from a Tax Administration Reform",
             "display_name": "Unraveling the Paradox of Anticorruption Messaging: Experimental Evidence from a Tax Administration Reform",
-            "relevance_score": 35.18501,
+            "relevance_score": 35.337585,
             "publication_year": 2024,
             "publication_date": "2024-05-17",
             "ids": {
@@ -11187,28 +10552,28 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.833299994468689
                 }
             ],
             "study_designs": [
                 {
-                    "id": "https://openalex.org/study-designs/clinical-trial",
-                    "display_name": "Clinical Trial"
+                    "display_name": "Clinical Trial",
+                    "id": "https://openalex.org/study-designs/clinical-trial"
                 }
             ],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4398255617.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W4398255617.grobid-xml"
             },
-            "referenced_works_count": 18,
+            "referenced_works_count": 17,
             "referenced_works": [
                 "https://openalex.org/W780714422",
                 "https://openalex.org/W1764063067",
@@ -11224,7 +10589,6 @@
                 "https://openalex.org/W3208213086",
                 "https://openalex.org/W3216637368",
                 "https://openalex.org/W3217346392",
-                "https://openalex.org/W4248343393",
                 "https://openalex.org/W4292661637",
                 "https://openalex.org/W4293152421",
                 "https://openalex.org/W6808138807"
@@ -11583,979 +10947,15 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2024-05-24T00:00:00"
-        },
-        {
-            "id": "https://openalex.org/W7222377193",
-            "doi": null,
-            "title": "Unraveling the Paradox of Anticorruption Messaging: Experimental Evidence from a Tax Administration Reform",
-            "display_name": "Unraveling the Paradox of Anticorruption Messaging: Experimental Evidence from a Tax Administration Reform",
-            "relevance_score": 34.60195,
-            "publication_year": 2025,
-            "publication_date": "2025-11-05",
-            "ids": {
-                "openalex": "https://openalex.org/W7222377193"
-            },
-            "language": "en",
-            "primary_location": {
-                "id": "pmh:oai:https://nottingham-repository.worktribe.com/:56681785",
-                "doi": null,
-                "is_oa": true,
-                "landing_page_url": "https://nottingham-repository.worktribe.com/output/56681785",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4306402483",
-                    "display_name": "Repository@Nottingham (University of Nottingham)",
-                    "issn_l": null,
-                    "issn": null,
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [],
-                    "host_organization": "https://openalex.org/I142263535",
-                    "host_organization_name": "University of Nottingham",
-                    "host_organization_lineage": [
-                        "https://openalex.org/I142263535"
-                    ],
-                    "host_organization_lineage_names": [],
-                    "type": "repository"
-                },
-                "license": "cc-by",
-                "license_id": "https://openalex.org/licenses/cc-by",
-                "version": "submittedVersion",
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": "Journal Article"
-            },
-            "volume": null,
-            "type": "article",
-            "indexed_in": [],
-            "open_access": {
-                "is_oa": true,
-                "oa_status": "green",
-                "oa_url": "https://nottingham-repository.worktribe.com/output/56681785",
-                "any_repository_has_fulltext": true
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5079489752",
-                        "display_name": "Nicolás Ajzenman",
-                        "orcid": "https://orcid.org/0000-0002-8568-8363",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0002-8568-8363"
-                        ]
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Ajzenman, Nicolas",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5004025028",
-                        "display_name": "Guillermo Cruces",
-                        "orcid": "https://orcid.org/0000-0002-1965-5897",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0002-1965-5897"
-                        ]
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Cruces, Guillermo",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5158919063",
-                        "display_name": "Germán Feierherd",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Feierherd, Germán",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5092870126",
-                        "display_name": "Ignacio Lunghi",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Lunghi, Ignacio",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                },
-                {
-                    "author_position": "last",
-                    "author": {
-                        "id": "https://openalex.org/A5019312196",
-                        "display_name": "MartÃ­n Ardanaz",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": false,
-                    "raw_author_name": "Ardanaz, Martin",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 0,
-            "institutions_distinct_count": 0,
-            "corresponding_author_ids": [],
-            "corresponding_institution_ids": [],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.0,
-            "has_fulltext": false,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": {
-                "value": 0.74284203,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": null,
-                "issue": null,
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T11257",
-                "display_name": "Taxation and Compliance Studies",
-                "score": 0.8432999849319458,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/2002",
-                    "display_name": "Economics and Econometrics"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/20",
-                    "display_name": "Economics, Econometrics and Finance"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T11257",
-                    "display_name": "Taxation and Compliance Studies",
-                    "score": 0.8432999849319458,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2002",
-                        "display_name": "Economics and Econometrics"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/20",
-                        "display_name": "Economics, Econometrics and Finance"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T11042",
-                    "display_name": "Corruption and Economic Development",
-                    "score": 0.15230000019073486,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3312",
-                        "display_name": "Sociology and Political Science"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T10646",
-                    "display_name": "Experimental Behavioral Economics Studies",
-                    "score": 0.0007999999797903001,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3311",
-                        "display_name": "Safety Research"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/corruption-perception",
-                    "display_name": "corruption perception",
-                    "score": 0.8199999928474426
-                },
-                {
-                    "id": "https://openalex.org/keywords/tax-compliance",
-                    "display_name": "tax compliance",
-                    "score": 0.7770000100135803
-                },
-                {
-                    "id": "https://openalex.org/keywords/tax-evasion",
-                    "display_name": "tax evasion",
-                    "score": 0.7260000109672546
-                },
-                {
-                    "id": "https://openalex.org/keywords/belief-updating",
-                    "display_name": "belief updating",
-                    "score": 0.7710000276565552
-                },
-                {
-                    "id": "https://openalex.org/keywords/message-sequencing",
-                    "display_name": "message sequencing",
-                    "score": 0.5950000286102295
-                },
-                {
-                    "id": "https://openalex.org/keywords/tax-administration-reform",
-                    "display_name": "tax administration reform",
-                    "score": 0.7960000038146973
-                },
-                {
-                    "id": "https://openalex.org/keywords/institutional-trust",
-                    "display_name": "institutional trust",
-                    "score": 0.6389999985694885
-                },
-                {
-                    "id": "https://openalex.org/keywords/honduras",
-                    "display_name": "Honduras",
-                    "score": 0.39800000190734863
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C9992130",
-                    "wikidata": "https://www.wikidata.org/wiki/Q484954",
-                    "display_name": "Pessimism",
-                    "level": 2,
-                    "score": 0.7426999807357788
-                },
-                {
-                    "id": "https://openalex.org/C2780027415",
-                    "wikidata": "https://www.wikidata.org/wiki/Q524648",
-                    "display_name": "Language change",
-                    "level": 2,
-                    "score": 0.6639000177383423
-                },
-                {
-                    "id": "https://openalex.org/C18296254",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1395219",
-                    "display_name": "Skepticism",
-                    "level": 2,
-                    "score": 0.659600019454956
-                },
-                {
-                    "id": "https://openalex.org/C2989421709",
-                    "wikidata": "https://www.wikidata.org/wiki/Q6502151",
-                    "display_name": "Tax evasion",
-                    "level": 2,
-                    "score": 0.618399977684021
-                },
-                {
-                    "id": "https://openalex.org/C100001284",
-                    "wikidata": "https://www.wikidata.org/wiki/Q2248246",
-                    "display_name": "Public economics",
-                    "level": 1,
-                    "score": 0.6039999723434448
-                },
-                {
-                    "id": "https://openalex.org/C2778137410",
-                    "wikidata": "https://www.wikidata.org/wiki/Q2732820",
-                    "display_name": "Government (linguistics)",
-                    "level": 2,
-                    "score": 0.5577999949455261
-                },
-                {
-                    "id": "https://openalex.org/C162324750",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8134",
-                    "display_name": "Economics",
-                    "level": 0,
-                    "score": 0.5429999828338623
-                },
-                {
-                    "id": "https://openalex.org/C551662922",
-                    "wikidata": "https://www.wikidata.org/wiki/Q2346630",
-                    "display_name": "Tax reform",
-                    "level": 2,
-                    "score": 0.5145000219345093
-                },
-                {
-                    "id": "https://openalex.org/C26760741",
-                    "wikidata": "https://www.wikidata.org/wiki/Q160402",
-                    "display_name": "Perception",
-                    "level": 2,
-                    "score": 0.5110999941825867
-                },
-                {
-                    "id": "https://openalex.org/C28719098",
-                    "wikidata": "https://www.wikidata.org/wiki/Q44946",
-                    "display_name": "Point (geometry)",
-                    "level": 2,
-                    "score": 0.4645000100135803
-                },
-                {
-                    "id": "https://openalex.org/C162077342",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1062630",
-                    "display_name": "Tax credit",
-                    "level": 2,
-                    "score": 0.3707999885082245
-                },
-                {
-                    "id": "https://openalex.org/C121964417",
-                    "wikidata": "https://www.wikidata.org/wiki/Q385503",
-                    "display_name": "Tax revenue",
-                    "level": 2,
-                    "score": 0.3643999993801117
-                },
-                {
-                    "id": "https://openalex.org/C2780765947",
-                    "wikidata": "https://www.wikidata.org/wiki/Q12033531",
-                    "display_name": "Administration (probate law)",
-                    "level": 2,
-                    "score": 0.3625999987125397
-                },
-                {
-                    "id": "https://openalex.org/C2992972582",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8161",
-                    "display_name": "Tax administration",
-                    "level": 3,
-                    "score": 0.3450999855995178
-                },
-                {
-                    "id": "https://openalex.org/C2776360696",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1938414",
-                    "display_name": "Taxpayer",
-                    "level": 2,
-                    "score": 0.33799999952316284
-                },
-                {
-                    "id": "https://openalex.org/C2780023022",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1338171",
-                    "display_name": "Compensation (psychology)",
-                    "level": 2,
-                    "score": 0.3269999921321869
-                },
-                {
-                    "id": "https://openalex.org/C2776805697",
-                    "wikidata": "https://www.wikidata.org/wiki/Q3445707",
-                    "display_name": "Tax policy",
-                    "level": 3,
-                    "score": 0.3179999887943268
-                },
-                {
-                    "id": "https://openalex.org/C2781251061",
-                    "wikidata": "https://www.wikidata.org/wiki/Q5416089",
-                    "display_name": "Evasion (ethics)",
-                    "level": 3,
-                    "score": 0.3172000050544739
-                },
-                {
-                    "id": "https://openalex.org/C144133560",
-                    "wikidata": "https://www.wikidata.org/wiki/Q4830453",
-                    "display_name": "Business",
-                    "level": 0,
-                    "score": 0.3156999945640564
-                },
-                {
-                    "id": "https://openalex.org/C162222271",
-                    "wikidata": "https://www.wikidata.org/wiki/Q92779871",
-                    "display_name": "Public good",
-                    "level": 2,
-                    "score": 0.31029999256134033
-                },
-                {
-                    "id": "https://openalex.org/C9652623",
-                    "wikidata": "https://www.wikidata.org/wiki/Q190109",
-                    "display_name": "Field (mathematics)",
-                    "level": 2,
-                    "score": 0.3043999969959259
-                },
-                {
-                    "id": "https://openalex.org/C114725131",
-                    "wikidata": "https://www.wikidata.org/wiki/Q190837",
-                    "display_name": "Tipping point (physics)",
-                    "level": 2,
-                    "score": 0.30230000615119934
-                },
-                {
-                    "id": "https://openalex.org/C185798385",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1161707",
-                    "display_name": "Benchmark (surveying)",
-                    "level": 2,
-                    "score": 0.2992999851703644
-                },
-                {
-                    "id": "https://openalex.org/C113216237",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1771708",
-                    "display_name": "Indirect tax",
-                    "level": 3,
-                    "score": 0.2799000144004822
-                },
-                {
-                    "id": "https://openalex.org/C2778719706",
-                    "wikidata": "https://www.wikidata.org/wiki/Q6501447",
-                    "display_name": "Local government",
-                    "level": 2,
-                    "score": 0.26759999990463257
-                },
-                {
-                    "id": "https://openalex.org/C109986646",
-                    "wikidata": "https://www.wikidata.org/wiki/Q546113",
-                    "display_name": "Public policy",
-                    "level": 2,
-                    "score": 0.2614000141620636
-                },
-                {
-                    "id": "https://openalex.org/C8031360",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1071788",
-                    "display_name": "Crowding out",
-                    "level": 2,
-                    "score": 0.2554999887943268
-                },
-                {
-                    "id": "https://openalex.org/C83864248",
-                    "wikidata": "https://www.wikidata.org/wiki/Q177323",
-                    "display_name": "Developing country",
-                    "level": 2,
-                    "score": 0.2554999887943268
-                },
-                {
-                    "id": "https://openalex.org/C147859227",
-                    "wikidata": "https://www.wikidata.org/wiki/Q294217",
-                    "display_name": "Public sector",
-                    "level": 2,
-                    "score": 0.25110000371932983
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "pmh:oai:https://nottingham-repository.worktribe.com/:56681785",
-                    "doi": null,
-                    "is_oa": true,
-                    "landing_page_url": "https://nottingham-repository.worktribe.com/output/56681785",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4306402483",
-                        "display_name": "Repository@Nottingham (University of Nottingham)",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": "https://openalex.org/I142263535",
-                        "host_organization_name": "University of Nottingham",
-                        "host_organization_lineage": [
-                            "https://openalex.org/I142263535"
-                        ],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": "cc-by",
-                    "license_id": "https://openalex.org/licenses/cc-by",
-                    "version": "submittedVersion",
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": "Journal Article"
-                }
-            ],
-            "best_oa_location": {
-                "id": "pmh:oai:https://nottingham-repository.worktribe.com/:56681785",
-                "doi": null,
-                "is_oa": true,
-                "landing_page_url": "https://nottingham-repository.worktribe.com/output/56681785",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4306402483",
-                    "display_name": "Repository@Nottingham (University of Nottingham)",
-                    "issn_l": null,
-                    "issn": null,
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [],
-                    "host_organization": "https://openalex.org/I142263535",
-                    "host_organization_name": "University of Nottingham",
-                    "host_organization_lineage": [
-                        "https://openalex.org/I142263535"
-                    ],
-                    "host_organization_lineage_names": [],
-                    "type": "repository"
-                },
-                "license": "cc-by",
-                "license_id": "https://openalex.org/licenses/cc-by",
-                "version": "submittedVersion",
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": "Journal Article"
-            },
-            "sustainable_development_goals": [
-                {
-                    "id": "https://metadata.un.org/sdg/16",
-                    "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.8046000003814697
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": false,
-                "pdf": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W2802964160",
-                "https://openalex.org/W4292661637",
-                "https://openalex.org/W3217346392",
-                "https://openalex.org/W7204757401",
-                "https://openalex.org/W3195297198",
-                "https://openalex.org/W2941605232",
-                "https://openalex.org/W6986822595",
-                "https://openalex.org/W4410434083",
-                "https://openalex.org/W7162582303",
-                "https://openalex.org/W3127940915"
-            ],
-            "abstract_inverted_index": {
-                "Corruption-and": [
-                    0
-                ],
-                "the": [
-                    1,
-                    52
-                ],
-                "widespread": [
-                    2
-                ],
-                "perception": [
-                    3
-                ],
-                "of": [
-                    4,
-                    48
-                ],
-                "it-poses": [
-                    5
-                ],
-                "significant": [
-                    6
-                ],
-                "obstacles": [
-                    7
-                ],
-                "to": [
-                    8,
-                    18,
-                    24,
-                    50,
-                    142
-                ],
-                "development": [
-                    9
-                ],
-                "by": [
-                    10,
-                    28
-                ],
-                "eroding": [
-                    11
-                ],
-                "institutional": [
-                    12,
-                    70
-                ],
-                "trust": [
-                    13
-                ],
-                "and": [
-                    14,
-                    100,
-                    109,
-                    145
-                ],
-                "reducing": [
-                    15
-                ],
-                "citizens'": [
-                    16
-                ],
-                "willingness": [
-                    17
-                ],
-                "pay": [
-                    19
-                ],
-                "taxes.": [
-                    20
-                ],
-                "Yet,": [
-                    21
-                ],
-                "government": [
-                    22,
-                    57
-                ],
-                "efforts": [
-                    23,
-                    84,
-                    104
-                ],
-                "improve": [
-                    25
-                ],
-                "public": [
-                    26
-                ],
-                "perceptions": [
-                    27
-                ],
-                "combating": [
-                    29
-                ],
-                "corruption": [
-                    30,
-                    49,
-                    108
-                ],
-                "may": [
-                    31
-                ],
-                "prove": [
-                    32
-                ],
-                "ineffective-or": [
-                    33
-                ],
-                "even": [
-                    34
-                ],
-                "backfire-when": [
-                    35
-                ],
-                "confronted": [
-                    36
-                ],
-                "with": [
-                    37,
-                    116
-                ],
-                "entrenched": [
-                    38
-                ],
-                "pessimistic": [
-                    39,
-                    98
-                ],
-                "beliefs.": [
-                    40
-                ],
-                "We": [
-                    41
-                ],
-                "propose": [
-                    42
-                ],
-                "that": [
-                    43,
-                    78,
-                    95,
-                    121,
-                    132
-                ],
-                "providing": [
-                    44
-                ],
-                "an": [
-                    45,
-                    69
-                ],
-                "external": [
-                    46
-                ],
-                "benchmark": [
-                    47
-                ],
-                "shift": [
-                    51
-                ],
-                "reference": [
-                    53
-                ],
-                "point": [
-                    54
-                ],
-                "before": [
-                    55
-                ],
-                "highlighting": [
-                    56
-                ],
-                "actions": [
-                    58
-                ],
-                "can": [
-                    59
-                ],
-                "mitigate": [
-                    60
-                ],
-                "these": [
-                    61
-                ],
-                "negative": [
-                    62,
-                    88
-                ],
-                "effects.": [
-                    63,
-                    89
-                ],
-                "In": [
-                    64
-                ],
-                "a": [
-                    65,
-                    92
-                ],
-                "survey": [
-                    66
-                ],
-                "experiment": [
-                    67,
-                    115
-                ],
-                "exploiting": [
-                    68
-                ],
-                "reform": [
-                    71,
-                    83
-                ],
-                "within": [
-                    72
-                ],
-                "Honduras's": [
-                    73
-                ],
-                "tax": [
-                    74,
-                    110,
-                    127
-                ],
-                "agency,": [
-                    75
-                ],
-                "we": [
-                    76
-                ],
-                "find": [
-                    77
-                ],
-                "messages": [
-                    79
-                ],
-                "focusing": [
-                    80
-                ],
-                "solely": [
-                    81
-                ],
-                "on": [
-                    82
-                ],
-                "have": [
-                    85
-                ],
-                "limited": [
-                    86
-                ],
-                "or": [
-                    87
-                ],
-                "By": [
-                    90
-                ],
-                "contrast,": [
-                    91
-                ],
-                "combined": [
-                    93
-                ],
-                "message": [
-                    94
-                ],
-                "first": [
-                    96,
-                    143
-                ],
-                "corrects": [
-                    97
-                ],
-                "beliefs": [
-                    99
-                ],
-                "then": [
-                    101
-                ],
-                "highlights": [
-                    102
-                ],
-                "anti-corruption": [
-                    103
-                ],
-                "significantly": [
-                    105
-                ],
-                "reduces": [
-                    106
-                ],
-                "perceived": [
-                    107
-                ],
-                "evasion": [
-                    111
-                ],
-                "intentions.": [
-                    112
-                ],
-                "A": [
-                    113
-                ],
-                "field": [
-                    114
-                ],
-                "approximately": [
-                    117
-                ],
-                "45,000": [
-                    118
-                ],
-                "taxpayers": [
-                    119
-                ],
-                "confirms": [
-                    120
-                ],
-                "this": [
-                    122
-                ],
-                "sequencing": [
-                    123
-                ],
-                "approach": [
-                    124
-                ],
-                "increases": [
-                    125
-                ],
-                "actual": [
-                    126
-                ],
-                "compliance.": [
-                    128
-                ],
-                "These": [
-                    129
-                ],
-                "findings": [
-                    130
-                ],
-                "suggest": [
-                    131
-                ],
-                "belief": [
-                    133
-                ],
-                "updating": [
-                    134
-                ],
-                "is": [
-                    135,
-                    140
-                ],
-                "possible-but": [
-                    136
-                ],
-                "only": [
-                    137
-                ],
-                "when": [
-                    138
-                ],
-                "information": [
-                    139
-                ],
-                "structured": [
-                    141
-                ],
-                "engage": [
-                    144
-                ],
-                "recalibrate": [
-                    146
-                ],
-                "skeptical": [
-                    147
-                ],
-                "priors.": [
-                    148
-                ]
-            },
-            "counts_by_year": [],
-            "updated_date": "2026-10-20T09:52:01.089006",
-            "created_date": "2026-10-16T00:00:00"
         },
         {
             "id": "https://openalex.org/W7208908447",
             "doi": null,
             "title": "2024 General Report on the Protection of Taxpayers’ Rights",
             "display_name": "2024 General Report on the Protection of Taxpayers’ Rights",
-            "relevance_score": 34.08526,
+            "relevance_score": 34.0811,
             "publication_year": 2025,
             "publication_date": "2025-01-01",
             "ids": {
@@ -13065,8 +11465,8 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.7297000288963318
                 }
             ],
@@ -13074,8 +11474,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7208908447.pdf",
@@ -13105,7 +11505,7 @@
             "doi": null,
             "title": "Análisis del sistema simple de tributación en Colombia y otros países",
             "display_name": "Análisis del sistema simple de tributación en Colombia y otros países",
-            "relevance_score": 33.28026,
+            "relevance_score": 33.386524,
             "publication_year": 2021,
             "publication_date": "2021-01-29",
             "ids": {
@@ -13404,8 +11804,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -13808,7 +12208,7 @@
             "doi": "https://doi.org/10.1111/1475-5890.12343",
             "title": "Symposium: tax equity around the world – introduction",
             "display_name": "Symposium: tax equity around the world – introduction",
-            "relevance_score": 30.86846,
+            "relevance_score": 31.208378,
             "publication_year": 2023,
             "publication_date": "2023-09-01",
             "ids": {
@@ -13993,15 +12393,18 @@
                 "currency": "USD",
                 "value_usd": 3550
             },
-            "fwci": 0.0,
+            "fwci": 0.3774,
             "has_fulltext": true,
-            "cited_by_count": 0,
+            "cited_by_count": 1,
             "citation_normalized_percentile": {
-                "value": 0.15781305,
+                "value": 0.62249586,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
-            "cited_by_percentile_year": null,
+            "cited_by_percentile_year": {
+                "min": 92,
+                "max": 95
+            },
             "biblio": {
                 "volume": "44",
                 "issue": "3",
@@ -14349,8 +12752,8 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/10",
                     "display_name": "Reduced inequalities",
+                    "id": "https://metadata.un.org/sdg/10",
                     "score": 0.7578999996185303
                 }
             ],
@@ -14372,8 +12775,8 @@
                 }
             ],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4386602309.pdf",
@@ -16297,8 +14700,13 @@
                     999
                 ]
             },
-            "counts_by_year": [],
-            "updated_date": "2026-11-03T10:50:19.383937",
+            "counts_by_year": [
+                {
+                    "year": 2026,
+                    "cited_by_count": 1
+                }
+            ],
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2023-09-12T00:00:00"
         },
         {
@@ -16306,7 +14714,7 @@
             "doi": null,
             "title": "Comparativo de sistemas tributarios de la región centroamericana, como herramienta para el fortalecimiento profesional del contador público.",
             "display_name": "Comparativo de sistemas tributarios de la región centroamericana, como herramienta para el fortalecimiento profesional del contador público.",
-            "relevance_score": 27.450937,
+            "relevance_score": 27.50879,
             "publication_year": 2019,
             "publication_date": "2019-11-01",
             "ids": {
@@ -16656,8 +15064,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -17653,11 +16061,1133 @@
             "created_date": "2020-08-18T00:00:00"
         },
         {
+            "id": "https://openalex.org/W4416215043",
+            "doi": "https://doi.org/10.1086/739666",
+            "title": "Unraveling the Paradox of Anticorruption Messaging: Experimental Evidence from a Tax Administration Reform",
+            "display_name": "Unraveling the Paradox of Anticorruption Messaging: Experimental Evidence from a Tax Administration Reform",
+            "relevance_score": 23.64939,
+            "publication_year": 2025,
+            "publication_date": "2025-11-14",
+            "ids": {
+                "openalex": "https://openalex.org/W4416215043",
+                "doi": "https://doi.org/10.1086/739666"
+            },
+            "language": "en",
+            "primary_location": {
+                "id": "doi:10.1086/739666",
+                "doi": "https://doi.org/10.1086/739666",
+                "is_oa": false,
+                "landing_page_url": "https://doi.org/10.1086/739666",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S95650557",
+                    "display_name": "The Journal of Politics",
+                    "issn_l": "0022-3816",
+                    "issn": [
+                        "0022-3816",
+                        "1468-2508"
+                    ],
+                    "is_oa": false,
+                    "is_in_doaj": false,
+                    "is_core": true,
+                    "listed_in": [
+                        "anvur-class-a",
+                        "anvur-scientific",
+                        "cwts-core",
+                        "erih-plus",
+                        "jufo-3",
+                        "norway-2",
+                        "poland-140",
+                        "russia-white-list-1",
+                        "vabb-shw"
+                    ],
+                    "host_organization": "https://openalex.org/P4310315672",
+                    "host_organization_name": "University of Chicago Press",
+                    "host_organization_lineage": [
+                        "https://openalex.org/P4310315672",
+                        "https://openalex.org/P4310315690"
+                    ],
+                    "host_organization_lineage_names": [
+                        "University of Chicago Press",
+                        "University of Chicago"
+                    ],
+                    "type": "journal"
+                },
+                "license": null,
+                "license_id": null,
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "The Journal of Politics",
+                "raw_type": "journal-article"
+            },
+            "volume": null,
+            "type": "article",
+            "indexed_in": [
+                "crossref"
+            ],
+            "open_access": {
+                "is_oa": true,
+                "oa_status": "green",
+                "oa_url": "https://doi.org/10.2139/ssrn.4795363",
+                "any_repository_has_fulltext": true
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": "https://openalex.org/A5079489752",
+                        "display_name": "Nicolás Ajzenman",
+                        "orcid": "https://orcid.org/0000-0002-8568-8363",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0002-8568-8363"
+                        ]
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Nicolás Ajzenman",
+                    "raw_affiliation_strings": [
+                        ""
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "",
+                            "institution_ids": []
+                        }
+                    ]
+                },
+                {
+                    "author_position": "middle",
+                    "author": {
+                        "id": "https://openalex.org/A5077615314",
+                        "display_name": "Martín Ardanaz",
+                        "orcid": "https://orcid.org/0000-0003-4471-2117",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0003-4471-2117"
+                        ]
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Martín Ardanaz",
+                    "raw_affiliation_strings": [
+                        ""
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "",
+                            "institution_ids": []
+                        }
+                    ]
+                },
+                {
+                    "author_position": "middle",
+                    "author": {
+                        "id": "https://openalex.org/A5004025028",
+                        "display_name": "Guillermo Cruces",
+                        "orcid": "https://orcid.org/0000-0002-1965-5897",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0002-1965-5897"
+                        ]
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Guillermo Cruces",
+                    "raw_affiliation_strings": [
+                        ""
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "",
+                            "institution_ids": []
+                        }
+                    ]
+                },
+                {
+                    "author_position": "middle",
+                    "author": {
+                        "id": "https://openalex.org/A5080542700",
+                        "display_name": "Germán Feierherd",
+                        "orcid": "https://orcid.org/0000-0003-3414-7994",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0003-3414-7994"
+                        ]
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "German Feierherd",
+                    "raw_affiliation_strings": [
+                        ""
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "",
+                            "institution_ids": []
+                        }
+                    ]
+                },
+                {
+                    "author_position": "last",
+                    "author": {
+                        "id": "https://openalex.org/A5092870126",
+                        "display_name": "Ignacio Lunghi",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Ignacio Lunghi",
+                    "raw_affiliation_strings": [
+                        ""
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "",
+                            "institution_ids": []
+                        }
+                    ]
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 0,
+            "institutions_distinct_count": 0,
+            "corresponding_author_ids": [],
+            "corresponding_institution_ids": [],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": 0.0,
+            "has_fulltext": false,
+            "cited_by_count": 0,
+            "citation_normalized_percentile": {
+                "value": 0.26859208,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": false
+            },
+            "cited_by_percentile_year": null,
+            "biblio": {
+                "volume": null,
+                "issue": null,
+                "first_page": null,
+                "last_page": null
+            },
+            "is_retracted": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T11042",
+                "display_name": "Corruption and Economic Development",
+                "score": 0.8521000146865845,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/3312",
+                    "display_name": "Sociology and Political Science"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/33",
+                    "display_name": "Social Sciences"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T11042",
+                    "display_name": "Corruption and Economic Development",
+                    "score": 0.8521000146865845,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3312",
+                        "display_name": "Sociology and Political Science"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T11257",
+                    "display_name": "Taxation and Compliance Studies",
+                    "score": 0.1265999972820282,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2002",
+                        "display_name": "Economics and Econometrics"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/20",
+                        "display_name": "Economics, Econometrics and Finance"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T10213",
+                    "display_name": "Public Policy and Administration Research",
+                    "score": 0.004900000058114529,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3321",
+                        "display_name": "Public Administration"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/tax-administration-reform",
+                    "display_name": "tax administration reform",
+                    "score": 0.7889999747276306
+                },
+                {
+                    "id": "https://openalex.org/keywords/corruption",
+                    "display_name": "corruption",
+                    "score": 0.5109999775886536
+                },
+                {
+                    "id": "https://openalex.org/keywords/public-communication",
+                    "display_name": "public communication",
+                    "score": 0.3240000009536743
+                },
+                {
+                    "id": "https://openalex.org/keywords/tax-compliance",
+                    "display_name": "tax compliance",
+                    "score": 0.5090000033378601
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C162324750",
+                    "wikidata": "https://www.wikidata.org/wiki/Q8134",
+                    "display_name": "Economics",
+                    "level": 0,
+                    "score": 0.5011000037193298
+                },
+                {
+                    "id": "https://openalex.org/C2992972582",
+                    "wikidata": "https://www.wikidata.org/wiki/Q8161",
+                    "display_name": "Tax administration",
+                    "level": 3,
+                    "score": 0.4729999899864197
+                },
+                {
+                    "id": "https://openalex.org/C2780765947",
+                    "wikidata": "https://www.wikidata.org/wiki/Q12033531",
+                    "display_name": "Administration (probate law)",
+                    "level": 2,
+                    "score": 0.46299999952316284
+                },
+                {
+                    "id": "https://openalex.org/C17744445",
+                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
+                    "display_name": "Political science",
+                    "level": 0,
+                    "score": 0.43950000405311584
+                },
+                {
+                    "id": "https://openalex.org/C138921699",
+                    "wikidata": "https://www.wikidata.org/wiki/Q47555",
+                    "display_name": "Political economy",
+                    "level": 1,
+                    "score": 0.3781000077724457
+                },
+                {
+                    "id": "https://openalex.org/C144133560",
+                    "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+                    "display_name": "Business",
+                    "level": 0,
+                    "score": 0.3720000088214874
+                },
+                {
+                    "id": "https://openalex.org/C551662922",
+                    "wikidata": "https://www.wikidata.org/wiki/Q2346630",
+                    "display_name": "Tax reform",
+                    "level": 2,
+                    "score": 0.3644999861717224
+                },
+                {
+                    "id": "https://openalex.org/C105639569",
+                    "wikidata": "https://www.wikidata.org/wiki/Q582577",
+                    "display_name": "Economic policy",
+                    "level": 1,
+                    "score": 0.3596999943256378
+                },
+                {
+                    "id": "https://openalex.org/C190253527",
+                    "wikidata": "https://www.wikidata.org/wiki/Q295354",
+                    "display_name": "Law and economics",
+                    "level": 1,
+                    "score": 0.34950000047683716
+                },
+                {
+                    "id": "https://openalex.org/C100001284",
+                    "wikidata": "https://www.wikidata.org/wiki/Q2248246",
+                    "display_name": "Public economics",
+                    "level": 1,
+                    "score": 0.31929999589920044
+                },
+                {
+                    "id": "https://openalex.org/C2776805697",
+                    "wikidata": "https://www.wikidata.org/wiki/Q3445707",
+                    "display_name": "Tax policy",
+                    "level": 3,
+                    "score": 0.28769999742507935
+                },
+                {
+                    "id": "https://openalex.org/C3116431",
+                    "wikidata": "https://www.wikidata.org/wiki/Q31728",
+                    "display_name": "Public administration",
+                    "level": 1,
+                    "score": 0.28299999237060547
+                }
+            ],
+            "mesh": [],
+            "locations_count": 6,
+            "locations": [
+                {
+                    "id": "doi:10.1086/739666",
+                    "doi": "https://doi.org/10.1086/739666",
+                    "is_oa": false,
+                    "landing_page_url": "https://doi.org/10.1086/739666",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S95650557",
+                        "display_name": "The Journal of Politics",
+                        "issn_l": "0022-3816",
+                        "issn": [
+                            "0022-3816",
+                            "1468-2508"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": true,
+                        "listed_in": [
+                            "anvur-class-a",
+                            "anvur-scientific",
+                            "cwts-core",
+                            "erih-plus",
+                            "jufo-3",
+                            "norway-2",
+                            "poland-140",
+                            "russia-white-list-1",
+                            "vabb-shw"
+                        ],
+                        "host_organization": "https://openalex.org/P4310315672",
+                        "host_organization_name": "University of Chicago Press",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4310315672",
+                            "https://openalex.org/P4310315690"
+                        ],
+                        "host_organization_lineage_names": [
+                            "University of Chicago Press",
+                            "University of Chicago"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "The Journal of Politics",
+                    "raw_type": "journal-article"
+                },
+                {
+                    "id": "doi:10.2139/ssrn.4795363",
+                    "doi": "https://doi.org/10.2139/ssrn.4795363",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.2139/ssrn.4795363",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210172589",
+                        "display_name": "SSRN Electronic Journal",
+                        "issn_l": "1556-5068",
+                        "issn": [
+                            "1556-5068"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I1318003438",
+                        "host_organization_name": "RELX Group (Netherlands)",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I1318003438"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "acceptedVersion",
+                    "is_accepted": true,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "posted-content"
+                },
+                {
+                    "id": "pmh:oai:nottingham-repository.worktribe.com:56681785",
+                    "doi": null,
+                    "is_oa": false,
+                    "landing_page_url": "https://nottingham-repository.worktribe.com/file/56681785/1/Unraveling%20the%20Paradox%20of%20Anticorruption%20Messaging%3A%20Experimental%20Evidence%20from%20a%20Tax%20Administration%20Reform",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306402483",
+                        "display_name": "Repository@Nottingham (University of Nottingham)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I142263535",
+                        "host_organization_name": "University of Nottingham",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I142263535"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "acceptedVersion",
+                    "is_accepted": true,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "Journal Article"
+                },
+                {
+                    "id": "pmh:oai:RePEc:idb:brikps:13555",
+                    "doi": null,
+                    "is_oa": false,
+                    "landing_page_url": "https://publications.iadb.org/publications/english/document/Unraveling-the-Paradox-of-Anticorruption-Messaging-Experimental-Evidence-from-a-Tax-Administration-Reform.pdf",
+                    "pdf_url": "https://publications.iadb.org/publications/english/document/Unraveling-the-Paradox-of-Anticorruption-Messaging-Experimental-Evidence-from-a-Tax-Administration-Reform.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4306401271",
+                        "display_name": "RePEc: Research Papers in Economics",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I77793887",
+                        "host_organization_name": "Federal Reserve Bank of St. Louis",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I77793887"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "preprint"
+                },
+                {
+                    "id": "pmh:oai:repositorio.udesa.edu.ar:10908/26684",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://repositorio.udesa.edu.ar/handle/10908/26684",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4377196605",
+                        "display_name": "San Andres Digital Repository  (University of San Andrés)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I4064826",
+                        "host_organization_name": "University of San Andrés",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I4064826"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "cc-by-nc-nd",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "info:eu-repo/semantics/workingPaper"
+                },
+                {
+                    "id": "pmh:oai:https://nottingham-repository.worktribe.com/:56681785",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://nottingham-repository.worktribe.com/output/56681785",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306402483",
+                        "display_name": "Repository@Nottingham (University of Nottingham)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I142263535",
+                        "host_organization_name": "University of Nottingham",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I142263535"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "Journal Article"
+                }
+            ],
+            "best_oa_location": {
+                "id": "doi:10.2139/ssrn.4795363",
+                "doi": "https://doi.org/10.2139/ssrn.4795363",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.2139/ssrn.4795363",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S4210172589",
+                    "display_name": "SSRN Electronic Journal",
+                    "issn_l": "1556-5068",
+                    "issn": [
+                        "1556-5068"
+                    ],
+                    "is_oa": true,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [],
+                    "host_organization": "https://openalex.org/I1318003438",
+                    "host_organization_name": "RELX Group (Netherlands)",
+                    "host_organization_lineage": [
+                        "https://openalex.org/I1318003438"
+                    ],
+                    "host_organization_lineage_names": [],
+                    "type": "repository"
+                },
+                "license": null,
+                "license_id": null,
+                "version": "acceptedVersion",
+                "is_accepted": true,
+                "is_published": false,
+                "raw_source_name": null,
+                "raw_type": "posted-content"
+            },
+            "sustainable_development_goals": [
+                {
+                    "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
+                    "score": 0.9595999717712402
+                }
+            ],
+            "study_designs": [],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "pdf": false,
+                "grobid_xml": false
+            },
+            "content_urls": null,
+            "referenced_works_count": 61,
+            "referenced_works": [
+                "https://openalex.org/W430011393",
+                "https://openalex.org/W1559877068",
+                "https://openalex.org/W1573144025",
+                "https://openalex.org/W1764063067",
+                "https://openalex.org/W1906615810",
+                "https://openalex.org/W1991128340",
+                "https://openalex.org/W2009710863",
+                "https://openalex.org/W2011572126",
+                "https://openalex.org/W2076886682",
+                "https://openalex.org/W2094450202",
+                "https://openalex.org/W2095331327",
+                "https://openalex.org/W2099336820",
+                "https://openalex.org/W2115048421",
+                "https://openalex.org/W2121401111",
+                "https://openalex.org/W2121870456",
+                "https://openalex.org/W2132490153",
+                "https://openalex.org/W2132553681",
+                "https://openalex.org/W2147478345",
+                "https://openalex.org/W2161535853",
+                "https://openalex.org/W2170545497",
+                "https://openalex.org/W2218038812",
+                "https://openalex.org/W2282237924",
+                "https://openalex.org/W2314972133",
+                "https://openalex.org/W2479768508",
+                "https://openalex.org/W2580701943",
+                "https://openalex.org/W2599935353",
+                "https://openalex.org/W2738001859",
+                "https://openalex.org/W2756381479",
+                "https://openalex.org/W2802964160",
+                "https://openalex.org/W2847615053",
+                "https://openalex.org/W2900230278",
+                "https://openalex.org/W2996570391",
+                "https://openalex.org/W2999613994",
+                "https://openalex.org/W3047285963",
+                "https://openalex.org/W3124069454",
+                "https://openalex.org/W3124176255",
+                "https://openalex.org/W3124626047",
+                "https://openalex.org/W3126124149",
+                "https://openalex.org/W3144117578",
+                "https://openalex.org/W3144683470",
+                "https://openalex.org/W3195297198",
+                "https://openalex.org/W3201191844",
+                "https://openalex.org/W3214132880",
+                "https://openalex.org/W3216637368",
+                "https://openalex.org/W3217346392",
+                "https://openalex.org/W4226226823",
+                "https://openalex.org/W4237329471",
+                "https://openalex.org/W4251645647",
+                "https://openalex.org/W4292661637",
+                "https://openalex.org/W4293152421",
+                "https://openalex.org/W4300170376",
+                "https://openalex.org/W4308078544",
+                "https://openalex.org/W4366525124",
+                "https://openalex.org/W4387149026",
+                "https://openalex.org/W4390598770",
+                "https://openalex.org/W4391651768",
+                "https://openalex.org/W4391654099",
+                "https://openalex.org/W4394673656",
+                "https://openalex.org/W4402558190",
+                "https://openalex.org/W4404204750",
+                "https://openalex.org/W4406079739"
+            ],
+            "related_works": [
+                "https://openalex.org/W6962896626",
+                "https://openalex.org/W6887583030",
+                "https://openalex.org/W7086614352",
+                "https://openalex.org/W2921836305",
+                "https://openalex.org/W3124535187",
+                "https://openalex.org/W2566482569",
+                "https://openalex.org/W641912208",
+                "https://openalex.org/W7024667071",
+                "https://openalex.org/W7034666706",
+                "https://openalex.org/W2795231323"
+            ],
+            "abstract_inverted_index": {
+                "Corruption—and": [
+                    0
+                ],
+                "the": [
+                    1,
+                    52
+                ],
+                "widespread": [
+                    2
+                ],
+                "perception": [
+                    3
+                ],
+                "of": [
+                    4,
+                    48
+                ],
+                "it—poses": [
+                    5
+                ],
+                "significant": [
+                    6
+                ],
+                "obstacles": [
+                    7
+                ],
+                "to": [
+                    8,
+                    18,
+                    24,
+                    50,
+                    142
+                ],
+                "development": [
+                    9
+                ],
+                "by": [
+                    10,
+                    28
+                ],
+                "eroding": [
+                    11
+                ],
+                "institutional": [
+                    12,
+                    70
+                ],
+                "trust": [
+                    13
+                ],
+                "and": [
+                    14,
+                    100,
+                    109,
+                    145
+                ],
+                "reducing": [
+                    15
+                ],
+                "citizens’": [
+                    16
+                ],
+                "willingness": [
+                    17
+                ],
+                "pay": [
+                    19
+                ],
+                "taxes.": [
+                    20
+                ],
+                "Yet,": [
+                    21
+                ],
+                "government": [
+                    22,
+                    57
+                ],
+                "efforts": [
+                    23,
+                    84,
+                    104
+                ],
+                "improve": [
+                    25
+                ],
+                "public": [
+                    26
+                ],
+                "perceptions": [
+                    27
+                ],
+                "combating": [
+                    29
+                ],
+                "corruption": [
+                    30,
+                    49,
+                    108
+                ],
+                "may": [
+                    31
+                ],
+                "prove": [
+                    32
+                ],
+                "ineffective—or": [
+                    33
+                ],
+                "even": [
+                    34
+                ],
+                "backfire—when": [
+                    35
+                ],
+                "confronted": [
+                    36
+                ],
+                "with": [
+                    37,
+                    116
+                ],
+                "entrenched": [
+                    38
+                ],
+                "pessimistic": [
+                    39,
+                    98
+                ],
+                "beliefs.": [
+                    40
+                ],
+                "We": [
+                    41
+                ],
+                "propose": [
+                    42
+                ],
+                "that": [
+                    43,
+                    78,
+                    95,
+                    121,
+                    132
+                ],
+                "providing": [
+                    44
+                ],
+                "an": [
+                    45,
+                    69
+                ],
+                "external": [
+                    46
+                ],
+                "benchmark": [
+                    47
+                ],
+                "shift": [
+                    51
+                ],
+                "reference": [
+                    53
+                ],
+                "point": [
+                    54
+                ],
+                "before": [
+                    55
+                ],
+                "highlighting": [
+                    56
+                ],
+                "actions": [
+                    58
+                ],
+                "can": [
+                    59
+                ],
+                "mitigate": [
+                    60
+                ],
+                "these": [
+                    61
+                ],
+                "negative": [
+                    62,
+                    88
+                ],
+                "effects.": [
+                    63,
+                    89
+                ],
+                "In": [
+                    64
+                ],
+                "a": [
+                    65,
+                    92
+                ],
+                "survey": [
+                    66
+                ],
+                "experiment": [
+                    67,
+                    115
+                ],
+                "exploiting": [
+                    68
+                ],
+                "reform": [
+                    71,
+                    83
+                ],
+                "within": [
+                    72
+                ],
+                "Honduras’s": [
+                    73
+                ],
+                "tax": [
+                    74,
+                    110,
+                    127
+                ],
+                "agency,": [
+                    75
+                ],
+                "we": [
+                    76
+                ],
+                "find": [
+                    77
+                ],
+                "messages": [
+                    79
+                ],
+                "focusing": [
+                    80
+                ],
+                "solely": [
+                    81
+                ],
+                "on": [
+                    82
+                ],
+                "have": [
+                    85
+                ],
+                "limited": [
+                    86
+                ],
+                "or": [
+                    87
+                ],
+                "By": [
+                    90
+                ],
+                "contrast,": [
+                    91
+                ],
+                "combined": [
+                    93
+                ],
+                "message": [
+                    94
+                ],
+                "first": [
+                    96,
+                    143
+                ],
+                "corrects": [
+                    97
+                ],
+                "beliefs": [
+                    99
+                ],
+                "then": [
+                    101
+                ],
+                "highlights": [
+                    102
+                ],
+                "anti-corruption": [
+                    103
+                ],
+                "significantly": [
+                    105
+                ],
+                "reduces": [
+                    106
+                ],
+                "perceived": [
+                    107
+                ],
+                "evasion": [
+                    111
+                ],
+                "intentions.": [
+                    112
+                ],
+                "A": [
+                    113
+                ],
+                "field": [
+                    114
+                ],
+                "approximately": [
+                    117
+                ],
+                "45,000": [
+                    118
+                ],
+                "taxpayers": [
+                    119
+                ],
+                "confirms": [
+                    120
+                ],
+                "this": [
+                    122
+                ],
+                "sequencing": [
+                    123
+                ],
+                "approach": [
+                    124
+                ],
+                "increases": [
+                    125
+                ],
+                "actual": [
+                    126
+                ],
+                "compliance.": [
+                    128
+                ],
+                "These": [
+                    129
+                ],
+                "findings": [
+                    130
+                ],
+                "suggest": [
+                    131
+                ],
+                "belief": [
+                    133
+                ],
+                "updating": [
+                    134
+                ],
+                "is": [
+                    135,
+                    140
+                ],
+                "possible—but": [
+                    136
+                ],
+                "only": [
+                    137
+                ],
+                "when": [
+                    138
+                ],
+                "information": [
+                    139
+                ],
+                "structured": [
+                    141
+                ],
+                "engage": [
+                    144
+                ],
+                "recalibrate": [
+                    146
+                ],
+                "skeptical": [
+                    147
+                ],
+                "priors.": [
+                    148
+                ]
+            },
+            "counts_by_year": [],
+            "updated_date": "2026-11-04T10:54:05.112534",
+            "created_date": "2025-11-14T00:00:00"
+        },
+        {
             "id": "https://openalex.org/W7214879356",
             "doi": null,
             "title": "Núcleos de apoyo contable y fiscal - NAF",
             "display_name": "Núcleos de apoyo contable y fiscal - NAF",
-            "relevance_score": 14.396497,
+            "relevance_score": 14.421576,
             "publication_year": 2019,
             "publication_date": "2019-06-28",
             "ids": {
@@ -17960,8 +17490,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -18218,7 +17748,7 @@
             "doi": "https://doi.org/10.18196/jerss.v7i1.16606",
             "title": "The Analysis of Income Gap in Lower Middle-Income Countries",
             "display_name": "The Analysis of Income Gap in Lower Middle-Income Countries",
-            "relevance_score": 11.195506,
+            "relevance_score": 11.26701,
             "publication_year": 2023,
             "publication_date": "2023-02-23",
             "ids": {
@@ -18811,28 +18341,28 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/10",
                     "display_name": "Reduced inequalities",
+                    "id": "https://metadata.un.org/sdg/10",
                     "score": 0.9629999995231628
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/8",
                     "display_name": "Decent work and economic growth",
+                    "id": "https://metadata.un.org/sdg/8",
                     "score": 0.9211000204086304
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
                     "display_name": "No poverty",
+                    "id": "https://metadata.un.org/sdg/1",
                     "score": 0.8928999900817871
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16",
                     "score": 0.6601999998092651
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
                     "display_name": "Industry, innovation and infrastructure",
+                    "id": "https://metadata.un.org/sdg/9",
                     "score": 0.5378999710083008
                 }
             ],
@@ -18840,8 +18370,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4361211738.pdf",
@@ -19339,7 +18869,7 @@
             "doi": null,
             "title": "Diseño de un manual de atención al cliente para los núcleos de apoyo contable y fiscal (naf) de la Universidad de Córdoba en los trámites y servicios tributarios ofertados por la Dirección de Impuestos y Aduanas Nacionales",
             "display_name": "Diseño de un manual de atención al cliente para los núcleos de apoyo contable y fiscal (naf) de la Universidad de Córdoba en los trámites y servicios tributarios ofertados por la Dirección de Impuestos y Aduanas Nacionales",
-            "relevance_score": 5.065849,
+            "relevance_score": 5.157601,
             "publication_year": 2021,
             "publication_date": "2021-09-30",
             "ids": {
@@ -19671,8 +19201,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -21022,7 +20552,7 @@
             "doi": "https://doi.org/10.1111/1475-5890.12342",
             "title": "Tax equity around the world: a discussion",
             "display_name": "Tax equity around the world: a discussion",
-            "relevance_score": 3.6928134,
+            "relevance_score": 3.7896378,
             "publication_year": 2023,
             "publication_date": "2023-09-01",
             "ids": {
@@ -21209,17 +20739,17 @@
                 "currency": "USD",
                 "value_usd": 3550
             },
-            "fwci": 0.5838,
+            "fwci": 0.7548,
             "has_fulltext": false,
-            "cited_by_count": 1,
+            "cited_by_count": 2,
             "citation_normalized_percentile": {
-                "value": 0.73497342,
+                "value": 0.73498851,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
                 "min": 90,
-                "max": 94
+                "max": 95
             },
             "biblio": {
                 "volume": "44",
@@ -21555,8 +21085,8 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/10",
                     "display_name": "Reduced inequalities",
+                    "id": "https://metadata.un.org/sdg/10",
                     "score": 0.7578999996185303
                 }
             ],
@@ -21578,8 +21108,8 @@
                 }
             ],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 9,
@@ -25338,11 +24868,15 @@
             },
             "counts_by_year": [
                 {
+                    "year": 2026,
+                    "cited_by_count": 1
+                },
+                {
                     "year": 2025,
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-11-03T10:50:19.383937",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2023-09-14T00:00:00"
         }
     ],

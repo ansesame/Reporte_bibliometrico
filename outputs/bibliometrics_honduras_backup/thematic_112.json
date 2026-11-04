@@ -1,7 +1,7 @@
 {
     "meta": {
-        "count": 37,
-        "db_response_time_ms": 204,
+        "count": 36,
+        "db_response_time_ms": 267,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -202,7 +202,7 @@
             "doi": "https://doi.org/10.18235/0002036",
             "title": "The Energy Access Dividend in Honduras and Haiti",
             "display_name": "The Energy Access Dividend in Honduras and Haiti",
-            "relevance_score": 256.1849,
+            "relevance_score": 256.2013,
             "publication_year": 2019,
             "publication_date": "2019-12-02",
             "ids": {
@@ -674,24 +674,24 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.9853000044822693,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.8974000215530396,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.8928999900817871,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -1027,7 +1027,7 @@
             "doi": "https://doi.org/10.32418/rfs.2020.296.3310",
             "title": "Optimización de plantas hidroeléctricas para abastecer poblaciones rurales en Honduras",
             "display_name": "Optimización de plantas hidroeléctricas para abastecer poblaciones rurales en Honduras",
-            "relevance_score": 227.26146,
+            "relevance_score": 226.16481,
             "publication_year": 2020,
             "publication_date": "2020-06-26",
             "ids": {
@@ -1146,7 +1146,7 @@
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.03630024,
+                "value": 0.03601568,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -1303,7 +1303,7 @@
                 }
             ],
             "mesh": [],
-            "locations_count": 2,
+            "locations_count": 3,
             "locations": [
                 {
                     "id": "doi:10.32418/rfs.2020.296.3310",
@@ -1345,6 +1345,37 @@
                     "is_published": true,
                     "raw_source_name": "Revista de Fomento Social",
                     "raw_type": "journal-article"
+                },
+                {
+                    "id": "pmh:oai:dialnet.unirioja.es:ART0001408293",
+                    "doi": null,
+                    "is_oa": false,
+                    "landing_page_url": "https://dialnet.unirioja.es/servlet/oaiart?codigo=7554095",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306401293",
+                        "display_name": "Dialnet (Universidad de la Rioja)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I168974976",
+                        "host_organization_name": "Universidad de La Rioja",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I168974976"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": "Revista de fomento social, ISSN 0015-6043, Nº 296, 2020, pags. 93-138",
+                    "raw_type": "text (article)"
                 },
                 {
                     "id": "pmh:oai:doaj.org/article:4d4a1fabb5f24f5eb41e25ceb5408e43",
@@ -1419,19 +1450,19 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.9853000044822693,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.8970999717712402,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.41670000553131104,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 }
             ],
             "study_designs": [],
@@ -1829,7 +1860,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-09-08T07:41:39.490200",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2020-07-02T00:00:00"
         },
         {
@@ -1837,7 +1868,7 @@
             "doi": "https://doi.org/10.1080/10714839.2025.2542089",
             "title": "The Sinister Side of Solar Energy in Honduras",
             "display_name": "The Sinister Side of Solar Energy in Honduras",
-            "relevance_score": 190.59258,
+            "relevance_score": 190.48982,
             "publication_year": 2025,
             "publication_date": "2025-07-03",
             "ids": {
@@ -2153,9 +2184,9 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.875,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 }
             ],
             "study_designs": [],
@@ -2288,7 +2319,7 @@
             "doi": "https://doi.org/10.2172/2479456",
             "title": "Fortalecimiento de la Electrificación Rural en Honduras: Una Evaluación Integrada de PV+BESS y Usos Productivos de la Electricidad en Gracias a Dios, Honduras [Empowering Rural Electrification in Honduras: An Integrated Assessment of PV/BESS and Productive Uses of Electricity in Gracias a Dios] (Spanish Translation)",
             "display_name": "Fortalecimiento de la Electrificación Rural en Honduras: Una Evaluación Integrada de PV+BESS y Usos Productivos de la Electricidad en Gracias a Dios, Honduras [Empowering Rural Electrification in Honduras: An Integrated Assessment of PV/BESS and Productive Uses of Electricity in Gracias a Dios] (Spanish Translation)",
-            "relevance_score": 182.84811,
+            "relevance_score": 184.13925,
             "publication_year": 2024,
             "publication_date": "2024-11-27",
             "ids": {
@@ -2878,24 +2909,24 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.666700005531311,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.4399999976158142,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -3608,7 +3639,7 @@
             "doi": "https://doi.org/10.1145/3497701.3497735",
             "title": "Technical and Economic Feasibility for Passive Housing in the Social Sector of Honduras",
             "display_name": "Technical and Economic Feasibility for Passive Housing in the Social Sector of Honduras",
-            "relevance_score": 171.47289,
+            "relevance_score": 171.47772,
             "publication_year": 2021,
             "publication_date": "2021-10-15",
             "ids": {
@@ -4045,34 +4076,34 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.8970999717712402,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.8928999900817871,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.8787999749183655,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.75,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.4000000059604645,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 }
             ],
             "study_designs": [],
@@ -4742,7 +4773,7 @@
             "doi": "https://doi.org/10.18260/1-2--5480",
             "title": "Creating A Sustainable Energy Business In Rural Honduras",
             "display_name": "Creating A Sustainable Energy Business In Rural Honduras",
-            "relevance_score": 170.60631,
+            "relevance_score": 170.95796,
             "publication_year": 2020,
             "publication_date": "2020-09-03",
             "ids": {
@@ -5338,29 +5369,29 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.75,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/8",
+                    "display_name": "Decent work and economic growth",
                     "score": 0.6452000141143799,
-                    "display_name": "Decent work and economic growth"
+                    "id": "https://metadata.un.org/sdg/8"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/4",
+                    "display_name": "Quality education",
                     "score": 0.6164000034332275,
-                    "display_name": "Quality education"
+                    "id": "https://metadata.un.org/sdg/4"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.41670000553131104,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 }
             ],
             "study_designs": [],
@@ -6265,7 +6296,7 @@
             "doi": "https://doi.org/10.1016/j.envres.2022.113869",
             "title": "Effects of household and participant characteristics on personal exposure and kitchen concentration of fine particulate matter and black carbon in rural Honduras",
             "display_name": "Effects of household and participant characteristics on personal exposure and kitchen concentration of fine particulate matter and black carbon in rural Honduras",
-            "relevance_score": 162.09998,
+            "relevance_score": 162.03793,
             "publication_year": 2022,
             "publication_date": "2022-07-09",
             "ids": {
@@ -6731,17 +6762,17 @@
                 "value_usd": 3550
             },
             "apc_paid": null,
-            "fwci": 0.2965,
+            "fwci": 0.2935,
             "has_fulltext": true,
             "cited_by_count": 5,
             "citation_normalized_percentile": {
-                "value": 0.42692837,
+                "value": 0.4142833,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 89,
-                "max": 97
+                "min": 88,
+                "max": 96
             },
             "biblio": {
                 "volume": "214",
@@ -7209,14 +7240,14 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/3",
+                    "display_name": "Good health and well-being",
                     "score": 0.9789000153541565,
-                    "display_name": "Good health and well-being"
+                    "id": "https://metadata.un.org/sdg/3"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.5351999998092651,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -7256,10 +7287,13 @@
                 }
             ],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "pdf": true,
+                "grobid_xml": true
             },
-            "content_urls": null,
+            "content_urls": {
+                "pdf": "https://content.openalex.org/works/W4284994869.pdf",
+                "grobid_xml": "https://content.openalex.org/works/W4284994869.grobid-xml"
+            },
             "referenced_works_count": 24,
             "referenced_works": [
                 "https://openalex.org/W2028560537",
@@ -7314,7 +7348,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-31T12:09:11.096373",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2022-07-11T00:00:00"
         },
         {
@@ -7322,7 +7356,7 @@
             "doi": "https://doi.org/10.2172/2477184",
             "title": "Empowering Rural Electrification in Honduras: An Integrated Assessment of PV/BESS and Productive Uses of Electricity in Gracias a Dios",
             "display_name": "Empowering Rural Electrification in Honduras: An Integrated Assessment of PV/BESS and Productive Uses of Electricity in Gracias a Dios",
-            "relevance_score": 155.79633,
+            "relevance_score": 155.82344,
             "publication_year": 2024,
             "publication_date": "2024-11-07",
             "ids": {
@@ -7777,24 +7811,24 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.666700005531311,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.4399999976158142,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -8504,7 +8538,7 @@
             "doi": "https://doi.org/10.1109/urucon63440.2024.10850276",
             "title": "Diesel vs. Hybrid Isolated Generation: A Comparative Study for Social Electrification in Gracias a Dios, Honduras",
             "display_name": "Diesel vs. Hybrid Isolated Generation: A Comparative Study for Social Electrification in Gracias a Dios, Honduras",
-            "relevance_score": 145.27017,
+            "relevance_score": 144.86148,
             "publication_year": 2024,
             "publication_date": "2024-11-18",
             "ids": {
@@ -8906,19 +8940,19 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 1.0,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -9401,7 +9435,7 @@
             "doi": "https://doi.org/10.1109/sgc64640.2024.10983548",
             "title": "Technical and Economic Comparison of Optimizing Hybrid Systems in Rural Areas of Iran, Honduras, and Zambia Under Various Environmental and Economic Conditions",
             "display_name": "Technical and Economic Comparison of Optimizing Hybrid Systems in Rural Areas of Iran, Honduras, and Zambia Under Various Environmental and Economic Conditions",
-            "relevance_score": 140.87605,
+            "relevance_score": 141.21217,
             "publication_year": 2024,
             "publication_date": "2024-12-31",
             "ids": {
@@ -9809,19 +9843,19 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 1.0,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.8970999717712402,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -10247,7 +10281,7 @@
             "doi": "https://doi.org/10.17979/spudc.9788497497749.0618",
             "title": "Modelado de micro-central hidráulica para el diseño de controladores con aplicación en regiones aisladas de Honduras",
             "display_name": "Modelado de micro-central hidráulica para el diseño de controladores con aplicación en regiones aisladas de Honduras",
-            "relevance_score": 140.56392,
+            "relevance_score": 140.99835,
             "publication_year": 2020,
             "publication_date": "2020-08-04",
             "ids": {
@@ -10791,14 +10825,14 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.9853000044822693,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -11654,7 +11688,7 @@
             "doi": null,
             "title": "Analysis of energy demand assessment methodologies for the design of a hybrid renewable mini-grid in a rural isolated community in Honduras",
             "display_name": "Analysis of energy demand assessment methodologies for the design of a hybrid renewable mini-grid in a rural isolated community in Honduras",
-            "relevance_score": 139.73557,
+            "relevance_score": 140.11644,
             "publication_year": 2019,
             "publication_date": "2019-09-03",
             "ids": {
@@ -11925,19 +11959,19 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.9879999756813049,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.5378999710083008,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.5351999998092651,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -11972,7 +12006,7 @@
             "doi": "https://doi.org/10.1109/temsconlatam61834.2024.10717811",
             "title": "Feasibility Study on the Implementation of Residential Photovoltaic Energy as an Alternative to the Electricity Subsidy in the Hamlet of San Pedro Calero of Honduras",
             "display_name": "Feasibility Study on the Implementation of Residential Photovoltaic Energy as an Alternative to the Electricity Subsidy in the Hamlet of San Pedro Calero of Honduras",
-            "relevance_score": 135.64838,
+            "relevance_score": 136.24469,
             "publication_year": 2024,
             "publication_date": "2024-07-18",
             "ids": {
@@ -12388,24 +12422,24 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.685699999332428,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.651199996471405,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.5142999887466431,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 }
             ],
             "study_designs": [],
@@ -12844,7 +12878,7 @@
             "doi": "https://doi.org/10.18260/1-2--3497",
             "title": "Key Experiences In Developing A Sustainable Water Distribution And Filtration Project In Rural Honduras: A New Paradigm In “Service Learning”",
             "display_name": "Key Experiences In Developing A Sustainable Water Distribution And Filtration Project In Rural Honduras: A New Paradigm In “Service Learning”",
-            "relevance_score": 128.77356,
+            "relevance_score": 129.0863,
             "publication_year": 2020,
             "publication_date": "2020-09-03",
             "ids": {
@@ -13258,14 +13292,14 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/6",
+                    "display_name": "Clean water and sanitation",
                     "score": 0.8999999761581421,
-                    "display_name": "Clean water and sanitation"
+                    "id": "https://metadata.un.org/sdg/6"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/17",
+                    "display_name": "Partnerships for the goals",
                     "score": 0.8658999800682068,
-                    "display_name": "Partnerships for the goals"
+                    "id": "https://metadata.un.org/sdg/17"
                 }
             ],
             "study_designs": [],
@@ -13832,7 +13866,7 @@
             "doi": null,
             "title": "Diseño de una comunidad de energía de más de 500 personas para explotar una mini red eléctrica híbrida aislada de energías renovables de 70 kWp en Honduras",
             "display_name": "Diseño de una comunidad de energía de más de 500 personas para explotar una mini red eléctrica híbrida aislada de energías renovables de 70 kWp en Honduras",
-            "relevance_score": 105.81529,
+            "relevance_score": 106.04762,
             "publication_year": 2020,
             "publication_date": "2020-11-13",
             "ids": {
@@ -14047,14 +14081,14 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -14089,7 +14123,7 @@
             "doi": null,
             "title": "Cálculo de la Huella de Carbono de un proyecto de sistema híbrido de energías renovables (52 kWp de fotovoltaica y un gasificador de biomasa) para una comunidad rural aislada en Honduras de 500 personas aproximadamente",
             "display_name": "Cálculo de la Huella de Carbono de un proyecto de sistema híbrido de energías renovables (52 kWp de fotovoltaica y un gasificador de biomasa) para una comunidad rural aislada en Honduras de 500 personas aproximadamente",
-            "relevance_score": 94.353905,
+            "relevance_score": 94.726234,
             "publication_year": 2021,
             "publication_date": "2021-02-25",
             "ids": {
@@ -14316,19 +14350,19 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 1.0,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/12",
+                    "display_name": "Responsible consumption and production",
                     "score": 0.7811999917030334,
-                    "display_name": "Responsible consumption and production"
+                    "id": "https://metadata.un.org/sdg/12"
                 }
             ],
             "study_designs": [],
@@ -14363,7 +14397,7 @@
             "doi": "https://doi.org/10.55463/issn.1674-2974.53.1.2",
             "title": "Energy Poverty, Trade Openness and Foreign Direct Investment: Evidence from Latin America",
             "display_name": "Energy Poverty, Trade Openness and Foreign Direct Investment: Evidence from Latin America",
-            "relevance_score": 86.692856,
+            "relevance_score": 86.3355,
             "publication_year": 2026,
             "publication_date": "2026-02-21",
             "ids": {
@@ -14843,34 +14877,34 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.9853000044822693,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/8",
+                    "display_name": "Decent work and economic growth",
                     "score": 0.9211000204086304,
-                    "display_name": "Decent work and economic growth"
+                    "id": "https://metadata.un.org/sdg/8"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.8928999900817871,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.7578999996185303,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.5351999998092651,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -15637,7 +15671,7 @@
             "doi": "https://doi.org/10.61547/3475",
             "title": "Identificando las necesidades energéticas para proyectos de electrificación rural de comunidades aisladas de la red eléctrica.",
             "display_name": "Identificando las necesidades energéticas para proyectos de electrificación rural de comunidades aisladas de la red eléctrica.",
-            "relevance_score": 71.53924,
+            "relevance_score": 71.66295,
             "publication_year": 2023,
             "publication_date": "2023-01-01",
             "ids": {
@@ -16266,34 +16300,34 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.9786999821662903,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/17",
+                    "display_name": "Partnerships for the goals",
                     "score": 0.5217000246047974,
-                    "display_name": "Partnerships for the goals"
+                    "id": "https://metadata.un.org/sdg/17"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.41670000553131104,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.4000000059604645,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 }
             ],
             "study_designs": [],
@@ -16800,7 +16834,7 @@
             "doi": "https://doi.org/10.3390/su13031072",
             "title": "When Unfair Trade Is Also at Home: The Economic Sustainability of Coffee Farms",
             "display_name": "When Unfair Trade Is Also at Home: The Economic Sustainability of Coffee Farms",
-            "relevance_score": 71.14563,
+            "relevance_score": 71.47979,
             "publication_year": 2021,
             "publication_date": "2021-01-21",
             "ids": {
@@ -17044,11 +17078,11 @@
                 "currency": "CHF",
                 "value_usd": 2052
             },
-            "fwci": 5.3542,
+            "fwci": 5.1241,
             "has_fulltext": true,
-            "cited_by_count": 38,
+            "cited_by_count": 44,
             "citation_normalized_percentile": {
-                "value": 0.9526101,
+                "value": 0.95021921,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": true
             },
@@ -17493,34 +17527,34 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/2",
+                    "display_name": "Zero hunger",
                     "score": 0.8409000039100647,
-                    "display_name": "Zero hunger"
+                    "id": "https://metadata.un.org/sdg/2"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/16",
+                    "display_name": "Peace, justice, and strong institutions",
                     "score": 0.6601999998092651,
-                    "display_name": "Peace, justice, and strong institutions"
+                    "id": "https://metadata.un.org/sdg/16"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.5676000118255615,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.5378999710083008,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/12",
+                    "display_name": "Responsible consumption and production",
                     "score": 0.5171999931335449,
-                    "display_name": "Responsible consumption and production"
+                    "id": "https://metadata.un.org/sdg/12"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.41670000553131104,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 }
             ],
             "study_designs": [],
@@ -18077,11 +18111,11 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 6
+                    "cited_by_count": 8
                 },
                 {
                     "year": 2025,
-                    "cited_by_count": 8
+                    "cited_by_count": 11
                 },
                 {
                     "year": 2024,
@@ -18089,7 +18123,7 @@
                 },
                 {
                     "year": 2023,
-                    "cited_by_count": 7
+                    "cited_by_count": 8
                 },
                 {
                     "year": 2022,
@@ -18100,7 +18134,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-24T09:50:30.924529",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-02-01T00:00:00"
         },
         {
@@ -18108,7 +18142,7 @@
             "doi": "https://doi.org/10.1016/j.renene.2021.04.083",
             "title": "Modelling biomass gasifiers in hybrid renewable energy microgrids; a complete procedure for enabling gasifiers simulation in HOMER",
             "display_name": "Modelling biomass gasifiers in hybrid renewable energy microgrids; a complete procedure for enabling gasifiers simulation in HOMER",
-            "relevance_score": 57.94084,
+            "relevance_score": 57.832123,
             "publication_year": 2021,
             "publication_date": "2021-04-27",
             "ids": {
@@ -18374,11 +18408,11 @@
                 "value_usd": 3400
             },
             "apc_paid": null,
-            "fwci": 4.619,
+            "fwci": 4.5498,
             "has_fulltext": true,
-            "cited_by_count": 108,
+            "cited_by_count": 110,
             "citation_normalized_percentile": {
-                "value": 0.95455861,
+                "value": 0.95348837,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": true
             },
@@ -18854,19 +18888,19 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 1.0,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.6773999929428101,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -18886,7 +18920,7 @@
                 "pdf": "https://content.openalex.org/works/W3158903124.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W3158903124.grobid-xml"
             },
-            "referenced_works_count": 72,
+            "referenced_works_count": 71,
             "referenced_works": [
                 "https://openalex.org/W255065688",
                 "https://openalex.org/W262729592",
@@ -18955,11 +18989,10 @@
                 "https://openalex.org/W3121753092",
                 "https://openalex.org/W3122221365",
                 "https://openalex.org/W3124902401",
-                "https://openalex.org/W3201500856",
                 "https://openalex.org/W4285719527",
                 "https://openalex.org/W6610247007",
                 "https://openalex.org/W6788230700",
-                "https://openalex.org/W7220593250"
+                "https://openalex.org/W7097667931"
             ],
             "related_works": [
                 "https://openalex.org/W2782353128",
@@ -18977,7 +19010,7 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 11
+                    "cited_by_count": 12
                 },
                 {
                     "year": 2025,
@@ -18985,7 +19018,7 @@
                 },
                 {
                     "year": 2024,
-                    "cited_by_count": 27
+                    "cited_by_count": 28
                 },
                 {
                     "year": 2023,
@@ -19000,7 +19033,7 @@
                     "cited_by_count": 6
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-05-10T00:00:00"
         },
         {
@@ -19008,7 +19041,7 @@
             "doi": "https://doi.org/10.18687/laccei2024.1.1.1406",
             "title": "Optimized Off-grid Solar PV System with Energy Storage for Rural Residence: Techno-economic Analysis in San Francisco de Yojoa, Cortés.",
             "display_name": "Optimized Off-grid Solar PV System with Energy Storage for Rural Residence: Techno-economic Analysis in San Francisco de Yojoa, Cortés.",
-            "relevance_score": 45.766487,
+            "relevance_score": 45.754555,
             "publication_year": 2024,
             "publication_date": "2024-01-01",
             "ids": {
@@ -19115,7 +19148,7 @@
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.14291791,
+                "value": 0.14011106,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -19438,24 +19471,24 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.666700005531311,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.5351999998092651,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -19469,8 +19502,21 @@
                 "pdf": "https://content.openalex.org/works/W4401577725.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W4401577725.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 12,
+            "referenced_works": [
+                "https://openalex.org/W2157251306",
+                "https://openalex.org/W2561169556",
+                "https://openalex.org/W2995956551",
+                "https://openalex.org/W2996150600",
+                "https://openalex.org/W3003504069",
+                "https://openalex.org/W3080876347",
+                "https://openalex.org/W3184700471",
+                "https://openalex.org/W3208698870",
+                "https://openalex.org/W3212335647",
+                "https://openalex.org/W4200073811",
+                "https://openalex.org/W4296001710",
+                "https://openalex.org/W4362684981"
+            ],
             "related_works": [
                 "https://openalex.org/W3184700471",
                 "https://openalex.org/W4300818339",
@@ -19870,7 +19916,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-10-27T15:51:10.671819",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2024-08-15T00:00:00"
         },
         {
@@ -19878,7 +19924,7 @@
             "doi": "https://doi.org/10.1016/j.renene.2020.05.095",
             "title": "Hybrid assessment for a hybrid microgrid: A novel methodology to critically analyse generation technologies for hybrid microgrids",
             "display_name": "Hybrid assessment for a hybrid microgrid: A novel methodology to critically analyse generation technologies for hybrid microgrids",
-            "relevance_score": 42.02901,
+            "relevance_score": 41.948006,
             "publication_year": 2020,
             "publication_date": "2020-05-25",
             "ids": {
@@ -20121,17 +20167,17 @@
                 "value_usd": 2950
             },
             "apc_paid": null,
-            "fwci": 2.926,
+            "fwci": 2.7004,
             "has_fulltext": true,
-            "cited_by_count": 63,
+            "cited_by_count": 61,
             "citation_normalized_percentile": {
-                "value": 0.90282318,
+                "value": 0.8945746,
                 "is_in_top_1_percent": false,
-                "is_in_top_10_percent": true
+                "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
                 "min": 97,
-                "max": 100
+                "max": 99
             },
             "biblio": {
                 "volume": "157",
@@ -20616,19 +20662,19 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.8970999717712402,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.4399999976158142,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -20784,18 +20830,18 @@
                 },
                 {
                     "year": 2022,
-                    "cited_by_count": 10
+                    "cited_by_count": 9
                 },
                 {
                     "year": 2021,
-                    "cited_by_count": 17
+                    "cited_by_count": 16
                 },
                 {
                     "year": 2020,
                     "cited_by_count": 5
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2020-06-05T00:00:00"
         },
         {
@@ -20803,7 +20849,7 @@
             "doi": null,
             "title": "Electrificación de la última milla del corredor seco mesoamericano.: Solución del nexo agua - alimentación - energía.",
             "display_name": "Electrificación de la última milla del corredor seco mesoamericano.: Solución del nexo agua - alimentación - energía.",
-            "relevance_score": 39.765327,
+            "relevance_score": 40.0784,
             "publication_year": 2021,
             "publication_date": "2021-06-14",
             "ids": {
@@ -21263,34 +21309,34 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.9853000044822693,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.685699999332428,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/6",
+                    "display_name": "Clean water and sanitation",
                     "score": 0.6618000268936157,
-                    "display_name": "Clean water and sanitation"
+                    "id": "https://metadata.un.org/sdg/6"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/2",
+                    "display_name": "Zero hunger",
                     "score": 0.4359000027179718,
-                    "display_name": "Zero hunger"
+                    "id": "https://metadata.un.org/sdg/2"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.41670000553131104,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 }
             ],
             "study_designs": [],
@@ -21752,7 +21798,7 @@
             "doi": "https://doi.org/10.1016/j.esd.2021.11.007",
             "title": "Forecasting energy demand in isolated rural communities: A comparison between deterministic and stochastic approaches",
             "display_name": "Forecasting energy demand in isolated rural communities: A comparison between deterministic and stochastic approaches",
-            "relevance_score": 38.441658,
+            "relevance_score": 38.456978,
             "publication_year": 2021,
             "publication_date": "2021-12-06",
             "ids": {
@@ -21976,11 +22022,11 @@
                 "value_usd": 2750
             },
             "apc_paid": null,
-            "fwci": 1.4711,
+            "fwci": 1.4434,
             "has_fulltext": true,
-            "cited_by_count": 32,
+            "cited_by_count": 31,
             "citation_normalized_percentile": {
-                "value": 0.81299563,
+                "value": 0.80965332,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -22366,19 +22412,19 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.9786999821662903,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.8970999717712402,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -22440,7 +22486,7 @@
                 "https://openalex.org/W3158903124",
                 "https://openalex.org/W3185623524",
                 "https://openalex.org/W3191797731",
-                "https://openalex.org/W7220593250"
+                "https://openalex.org/W7097667931"
             ],
             "related_works": [
                 "https://openalex.org/W2971459233",
@@ -22458,7 +22504,7 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 6
+                    "cited_by_count": 5
                 },
                 {
                     "year": 2025,
@@ -22477,7 +22523,7 @@
                     "cited_by_count": 4
                 }
             ],
-            "updated_date": "2026-10-19T09:35:57.686232",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-12-31T00:00:00"
         },
         {
@@ -22485,7 +22531,7 @@
             "doi": "https://doi.org/10.1016/j.apenergy.2021.117499",
             "title": "Three-dimensional optimization of penstock layouts for micro-hydropower plants using genetic algorithms",
             "display_name": "Three-dimensional optimization of penstock layouts for micro-hydropower plants using genetic algorithms",
-            "relevance_score": 37.175404,
+            "relevance_score": 37.186695,
             "publication_year": 2021,
             "publication_date": "2021-08-06",
             "ids": {
@@ -22730,11 +22776,11 @@
                 "value_usd": 4020
             },
             "apc_paid": null,
-            "fwci": 1.3202,
+            "fwci": 1.2633,
             "has_fulltext": false,
-            "cited_by_count": 18,
+            "cited_by_count": 19,
             "citation_normalized_percentile": {
-                "value": 0.81931887,
+                "value": 0.8121756,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -23110,14 +23156,14 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.9853000044822693,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -23189,7 +23235,7 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 2
+                    "cited_by_count": 3
                 },
                 {
                     "year": 2025,
@@ -23212,7 +23258,7 @@
                     "cited_by_count": 2
                 }
             ],
-            "updated_date": "2026-10-31T12:09:11.096373",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-08-16T00:00:00"
         },
         {
@@ -23220,7 +23266,7 @@
             "doi": "https://doi.org/10.1109/cec45853.2021.9504994",
             "title": "A Genetic Algorithm To Optimize Penstocks For Micro-Hydro Power Plants",
             "display_name": "A Genetic Algorithm To Optimize Penstocks For Micro-Hydro Power Plants",
-            "relevance_score": 36.250416,
+            "relevance_score": 36.238903,
             "publication_year": 2021,
             "publication_date": "2021-06-28",
             "ids": {
@@ -23438,17 +23484,17 @@
             "corresponding_institution_ids": [],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.3465,
+            "fwci": 0.3346,
             "has_fulltext": false,
-            "cited_by_count": 4,
+            "cited_by_count": 5,
             "citation_normalized_percentile": {
-                "value": 0.54484762,
+                "value": 0.53834959,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 89,
-                "max": 96
+                "min": 88,
+                "max": 97
             },
             "biblio": {
                 "volume": null,
@@ -23744,14 +23790,14 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.8485000133514404,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -24150,7 +24196,7 @@
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 1
+                    "cited_by_count": 2
                 },
                 {
                     "year": 2024,
@@ -24161,749 +24207,15 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2021-08-16T00:00:00"
-        },
-        {
-            "id": "https://openalex.org/W4407025643",
-            "doi": "https://doi.org/10.1109/urucon63440.2024.10850313",
-            "title": "Assessing the Economic Impact on the Isolated Microgrid System of Brus Laguna during the Solar Eclipses of October 2023 and April 2024",
-            "display_name": "Assessing the Economic Impact on the Isolated Microgrid System of Brus Laguna during the Solar Eclipses of October 2023 and April 2024",
-            "relevance_score": 35.62887,
-            "publication_year": 2024,
-            "publication_date": "2024-11-18",
-            "ids": {
-                "openalex": "https://openalex.org/W4407025643",
-                "doi": "https://doi.org/10.1109/urucon63440.2024.10850313"
-            },
-            "language": "en",
-            "primary_location": {
-                "id": "doi:10.1109/urucon63440.2024.10850313",
-                "doi": "https://doi.org/10.1109/urucon63440.2024.10850313",
-                "is_oa": false,
-                "landing_page_url": "https://doi.org/10.1109/urucon63440.2024.10850313",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4363606058",
-                    "display_name": "IEEE URUCON",
-                    "issn_l": null,
-                    "issn": null,
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [],
-                    "host_organization": null,
-                    "host_organization_name": null,
-                    "host_organization_lineage": [],
-                    "host_organization_lineage_names": [],
-                    "type": "conference"
-                },
-                "license": null,
-                "license_id": null,
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "2024 IEEE URUCON",
-                "raw_type": "proceedings-article"
-            },
-            "volume": null,
-            "type": "conference-paper",
-            "indexed_in": [
-                "crossref"
-            ],
-            "open_access": {
-                "is_oa": false,
-                "oa_status": "closed",
-                "oa_url": null,
-                "any_repository_has_fulltext": false
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5116101196",
-                        "display_name": "Lindon Paul Fagot",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I3130110478",
-                            "display_name": "Universidad Tecnológica de Honduras",
-                            "ror": "https://ror.org/00j5cb536",
-                            "country_code": "HN",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I3130110478"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "HN"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Lindon Paul Fagot",
-                    "raw_affiliation_strings": [
-                        "Universidad Tecnol&#x00F3;gica de Honduras,Postgraduate Department,Tegucigalpa,Honduras"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Tecnol&#x00F3;gica de Honduras,Postgraduate Department,Tegucigalpa,Honduras",
-                            "institution_ids": [
-                                "https://openalex.org/I3130110478"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "author_position": "last",
-                    "author": {
-                        "id": "https://openalex.org/A5011634686",
-                        "display_name": "Diego Armando Zaldivar",
-                        "orcid": "https://orcid.org/0000-0002-9287-1027",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0002-9287-1027"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I3130110478",
-                            "display_name": "Universidad Tecnológica de Honduras",
-                            "ror": "https://ror.org/00j5cb536",
-                            "country_code": "HN",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I3130110478"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "HN"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Diego Armando Zaldivar",
-                    "raw_affiliation_strings": [
-                        "Universidad Tecnol&#x00F3;gica de Honduras,Postgraduate Department,Tegucigalpa,Honduras"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Tecnol&#x00F3;gica de Honduras,Postgraduate Department,Tegucigalpa,Honduras",
-                            "institution_ids": [
-                                "https://openalex.org/I3130110478"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 1,
-            "institutions_distinct_count": 1,
-            "corresponding_author_ids": [],
-            "corresponding_institution_ids": [
-                "https://openalex.org/I3130110478"
-            ],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.0,
-            "has_fulltext": false,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": {
-                "value": 0.38462631,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": null,
-                "issue": null,
-                "first_page": "1",
-                "last_page": "5"
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T10223",
-                "display_name": "Microgrid Control and Optimization",
-                "score": 0.698199987411499,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/2207",
-                    "display_name": "Control and Systems Engineering"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/22",
-                    "display_name": "Engineering"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/3",
-                    "display_name": "Physical Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T10223",
-                    "display_name": "Microgrid Control and Optimization",
-                    "score": 0.698199987411499,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2207",
-                        "display_name": "Control and Systems Engineering"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/22",
-                        "display_name": "Engineering"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T11007",
-                    "display_name": "Hybrid Renewable Energy Systems",
-                    "score": 0.14069999754428864,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2102",
-                        "display_name": "Energy Engineering and Power Technology"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/21",
-                        "display_name": "Energy"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T14444",
-                    "display_name": "Power Systems and Renewable Energy",
-                    "score": 0.10329999774694443,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2102",
-                        "display_name": "Energy Engineering and Power Technology"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/21",
-                        "display_name": "Energy"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/solar-eclipse",
-                    "display_name": "solar eclipse",
-                    "score": 0.7649999856948853
-                },
-                {
-                    "id": "https://openalex.org/keywords/isolated-microgrid",
-                    "display_name": "isolated microgrid",
-                    "score": 0.9850000143051147
-                },
-                {
-                    "id": "https://openalex.org/keywords/hybrid-microgrid",
-                    "display_name": "hybrid microgrid",
-                    "score": 0.7889999747276306
-                },
-                {
-                    "id": "https://openalex.org/keywords/solar-photovoltaic-generation",
-                    "display_name": "solar photovoltaic generation",
-                    "score": 0.9010000228881836
-                },
-                {
-                    "id": "https://openalex.org/keywords/thermal-power-generation",
-                    "display_name": "thermal power generation",
-                    "score": 0.7229999899864197
-                },
-                {
-                    "id": "https://openalex.org/keywords/economic-impact",
-                    "display_name": "economic impact",
-                    "score": 0.6209999918937683
-                },
-                {
-                    "id": "https://openalex.org/keywords/energy-costs",
-                    "display_name": "energy costs",
-                    "score": 0.4650000035762787
-                },
-                {
-                    "id": "https://openalex.org/keywords/rural-electrification",
-                    "display_name": "rural electrification",
-                    "score": 0.6840000152587891
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C39432304",
-                    "wikidata": "https://www.wikidata.org/wiki/Q188847",
-                    "display_name": "Environmental science",
-                    "level": 0,
-                    "score": 0.5295805931091309
-                },
-                {
-                    "id": "https://openalex.org/C2776784348",
-                    "wikidata": "https://www.wikidata.org/wiki/Q5762595",
-                    "display_name": "Microgrid",
-                    "level": 3,
-                    "score": 0.5150191783905029
-                },
-                {
-                    "id": "https://openalex.org/C153294291",
-                    "wikidata": "https://www.wikidata.org/wiki/Q25261",
-                    "display_name": "Meteorology",
-                    "level": 1,
-                    "score": 0.4896429181098938
-                },
-                {
-                    "id": "https://openalex.org/C205649164",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
-                    "display_name": "Geography",
-                    "level": 0,
-                    "score": 0.21296477317810059
-                },
-                {
-                    "id": "https://openalex.org/C127413603",
-                    "wikidata": "https://www.wikidata.org/wiki/Q11023",
-                    "display_name": "Engineering",
-                    "level": 0,
-                    "score": 0.13682788610458374
-                },
-                {
-                    "id": "https://openalex.org/C188573790",
-                    "wikidata": "https://www.wikidata.org/wiki/Q12705",
-                    "display_name": "Renewable energy",
-                    "level": 2,
-                    "score": 0.08259183168411255
-                },
-                {
-                    "id": "https://openalex.org/C119599485",
-                    "wikidata": "https://www.wikidata.org/wiki/Q43035",
-                    "display_name": "Electrical engineering",
-                    "level": 1,
-                    "score": 0.0758274495601654
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "doi:10.1109/urucon63440.2024.10850313",
-                    "doi": "https://doi.org/10.1109/urucon63440.2024.10850313",
-                    "is_oa": false,
-                    "landing_page_url": "https://doi.org/10.1109/urucon63440.2024.10850313",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4363606058",
-                        "display_name": "IEEE URUCON",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": null,
-                        "host_organization_name": null,
-                        "host_organization_lineage": [],
-                        "host_organization_lineage_names": [],
-                        "type": "conference"
-                    },
-                    "license": null,
-                    "license_id": null,
-                    "version": "publishedVersion",
-                    "is_accepted": true,
-                    "is_published": true,
-                    "raw_source_name": "2024 IEEE URUCON",
-                    "raw_type": "proceedings-article"
-                }
-            ],
-            "best_oa_location": null,
-            "sustainable_development_goals": [
-                {
-                    "id": "https://metadata.un.org/sdg/7",
-                    "score": 0.9853000044822693,
-                    "display_name": "Affordable and clean energy"
-                },
-                {
-                    "id": "https://metadata.un.org/sdg/13",
-                    "score": 0.9786999821662903,
-                    "display_name": "Climate action"
-                },
-                {
-                    "id": "https://metadata.un.org/sdg/9",
-                    "score": 0.651199996471405,
-                    "display_name": "Industry, innovation and infrastructure"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "pdf": false,
-                "grobid_xml": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 6,
-            "referenced_works": [
-                "https://openalex.org/W1925808460",
-                "https://openalex.org/W2899173576",
-                "https://openalex.org/W3168100522",
-                "https://openalex.org/W4205775844",
-                "https://openalex.org/W4384436086",
-                "https://openalex.org/W4399851129"
-            ],
-            "related_works": [
-                "https://openalex.org/W2899173576",
-                "https://openalex.org/W2947005659",
-                "https://openalex.org/W2949437389",
-                "https://openalex.org/W2946672543",
-                "https://openalex.org/W6922487333",
-                "https://openalex.org/W6960237387",
-                "https://openalex.org/W1952720411",
-                "https://openalex.org/W4306651085",
-                "https://openalex.org/W7172540859",
-                "https://openalex.org/W2900146477"
-            ],
-            "abstract_inverted_index": {
-                "Abstrac": [
-                    0
-                ],
-                "In": [
-                    1,
-                    71
-                ],
-                "our": [
-                    2
-                ],
-                "era,": [
-                    3
-                ],
-                "the": [
-                    4,
-                    10,
-                    29,
-                    93,
-                    104,
-                    114,
-                    117,
-                    124,
-                    127,
-                    133
-                ],
-                "electrification": [
-                    5
-                ],
-                "of": [
-                    6,
-                    13,
-                    31,
-                    95,
-                    106,
-                    119
-                ],
-                "isolated": [
-                    7,
-                    72,
-                    101
-                ],
-                "communities": [
-                    8,
-                    73
-                ],
-                "and": [
-                    9,
-                    20,
-                    40,
-                    80,
-                    126
-                ],
-                "widespread": [
-                    11
-                ],
-                "use": [
-                    12
-                ],
-                "renewable": [
-                    14
-                ],
-                "energy": [
-                    15,
-                    36,
-                    69
-                ],
-                "sources": [
-                    16
-                ],
-                "such": [
-                    17,
-                    52
-                ],
-                "as": [
-                    18,
-                    53
-                ],
-                "solar": [
-                    19,
-                    35,
-                    67,
-                    79,
-                    97
-                ],
-                "wind": [
-                    21
-                ],
-                "are": [
-                    22
-                ],
-                "considered": [
-                    23
-                ],
-                "increasingly": [
-                    24
-                ],
-                "fundamental": [
-                    25
-                ],
-                "priorities": [
-                    26
-                ],
-                "to": [
-                    27,
-                    49
-                ],
-                "counteract": [
-                    28
-                ],
-                "effects": [
-                    30
-                ],
-                "climate": [
-                    32
-                ],
-                "change.": [
-                    33
-                ],
-                "While": [
-                    34
-                ],
-                "is": [
-                    37,
-                    45,
-                    86
-                ],
-                "an": [
-                    38,
-                    100
-                ],
-                "economical": [
-                    39
-                ],
-                "easily": [
-                    41
-                ],
-                "implementable": [
-                    42
-                ],
-                "alternative,": [
-                    43
-                ],
-                "it": [
-                    44
-                ],
-                "also": [
-                    46
-                ],
-                "highly": [
-                    47
-                ],
-                "susceptible": [
-                    48
-                ],
-                "weather": [
-                    50
-                ],
-                "conditions": [
-                    51
-                ],
-                "clouds,": [
-                    54
-                ],
-                "rain,": [
-                    55
-                ],
-                "or": [
-                    56
-                ],
-                "eclipses.": [
-                    57
-                ],
-                "Although": [
-                    58
-                ],
-                "eclipses": [
-                    59,
-                    98
-                ],
-                "do": [
-                    60
-                ],
-                "not": [
-                    61
-                ],
-                "occur": [
-                    62
-                ],
-                "frequently,": [
-                    63
-                ],
-                "they": [
-                    64
-                ],
-                "significantly": [
-                    65
-                ],
-                "impact": [
-                    66,
-                    85
-                ],
-                "photovoltaic": [
-                    68
-                ],
-                "generation.": [
-                    70
-                ],
-                "with": [
-                    74
-                ],
-                "hybrid": [
-                    75
-                ],
-                "microgrids": [
-                    76
-                ],
-                "that": [
-                    77
-                ],
-                "include": [
-                    78
-                ],
-                "thermal": [
-                    81,
-                    120
-                ],
-                "generation": [
-                    82
-                ],
-                "components,": [
-                    83
-                ],
-                "this": [
-                    84
-                ],
-                "felt": [
-                    87
-                ],
-                "more": [
-                    88
-                ],
-                "intensely.": [
-                    89
-                ],
-                "This": [
-                    90
-                ],
-                "paper": [
-                    91
-                ],
-                "analyzes": [
-                    92
-                ],
-                "impacts": [
-                    94
-                ],
-                "two": [
-                    96
-                ],
-                "on": [
-                    99,
-                    116
-                ],
-                "microgrid": [
-                    102,
-                    125
-                ],
-                "in": [
-                    103,
-                    130
-                ],
-                "municipality": [
-                    105
-                ],
-                "Gracias": [
-                    107
-                ],
-                "a": [
-                    108
-                ],
-                "Dios,": [
-                    109
-                ],
-                "Honduras.": [
-                    110
-                ],
-                "The": [
-                    111
-                ],
-                "results": [
-                    112
-                ],
-                "show": [
-                    113
-                ],
-                "effect": [
-                    115
-                ],
-                "balance": [
-                    118
-                ],
-                "component": [
-                    121
-                ],
-                "utilization": [
-                    122
-                ],
-                "within": [
-                    123
-                ],
-                "consequent": [
-                    128
-                ],
-                "increase": [
-                    129
-                ],
-                "costs": [
-                    131
-                ],
-                "for": [
-                    132
-                ],
-                "community.": [
-                    134
-                ]
-            },
-            "counts_by_year": [],
-            "updated_date": "2026-10-06T10:28:23.643775",
-            "created_date": "2025-02-01T00:00:00"
         },
         {
             "id": "https://openalex.org/W7151275662",
             "doi": "https://doi.org/10.1016/j.seta.2026.104954",
             "title": "Decarbonising hybrid renewable energy systems for electricity access from the project",
             "display_name": "Decarbonising hybrid renewable energy systems for electricity access from the project",
-            "relevance_score": 35.492847,
+            "relevance_score": 35.640144,
             "publication_year": 2026,
             "publication_date": "2026-04-01",
             "ids": {
@@ -25146,7 +24458,7 @@
             "has_fulltext": false,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.1588855,
+                "value": 0.1429889,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -25525,29 +24837,29 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 1.0,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/12",
+                    "display_name": "Responsible consumption and production",
                     "score": 0.7811999917030334,
-                    "display_name": "Responsible consumption and production"
+                    "id": "https://metadata.un.org/sdg/12"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.4074000120162964,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 }
             ],
             "study_designs": [],
@@ -25564,11 +24876,12 @@
                 "grobid_xml": false
             },
             "content_urls": null,
-            "referenced_works_count": 21,
+            "referenced_works_count": 22,
             "referenced_works": [
                 "https://openalex.org/W1992880908",
                 "https://openalex.org/W2063939020",
                 "https://openalex.org/W2212828786",
+                "https://openalex.org/W2292022028",
                 "https://openalex.org/W2395061667",
                 "https://openalex.org/W2566605528",
                 "https://openalex.org/W2982142219",
@@ -25602,30 +24915,31 @@
             ],
             "abstract_inverted_index": null,
             "counts_by_year": [],
-            "updated_date": "2026-09-24T07:57:37.273135",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2026-04-08T00:00:00"
         },
         {
-            "id": "https://openalex.org/W7206698944",
-            "doi": null,
-            "title": "Yeeee!!! Anem a energitzar una comunitat aïllada a Hondures",
-            "display_name": "Yeeee!!! Anem a energitzar una comunitat aïllada a Hondures",
-            "relevance_score": 33.206177,
-            "publication_year": 2023,
-            "publication_date": "2023-09-01",
+            "id": "https://openalex.org/W4407025643",
+            "doi": "https://doi.org/10.1109/urucon63440.2024.10850313",
+            "title": "Assessing the Economic Impact on the Isolated Microgrid System of Brus Laguna during the Solar Eclipses of October 2023 and April 2024",
+            "display_name": "Assessing the Economic Impact on the Isolated Microgrid System of Brus Laguna during the Solar Eclipses of October 2023 and April 2024",
+            "relevance_score": 35.632957,
+            "publication_year": 2024,
+            "publication_date": "2024-11-18",
             "ids": {
-                "openalex": "https://openalex.org/W7206698944"
+                "openalex": "https://openalex.org/W4407025643",
+                "doi": "https://doi.org/10.1109/urucon63440.2024.10850313"
             },
-            "language": "es",
+            "language": "en",
             "primary_location": {
-                "id": "pmh:oai:hispana.mcu.es:62360205",
-                "doi": null,
+                "id": "doi:10.1109/urucon63440.2024.10850313",
+                "doi": "https://doi.org/10.1109/urucon63440.2024.10850313",
                 "is_oa": false,
-                "landing_page_url": "https://riunet.upv.es/handle/10251/195796",
+                "landing_page_url": "https://doi.org/10.1109/urucon63440.2024.10850313",
                 "pdf_url": null,
                 "source": {
-                    "id": "https://openalex.org/S4377196108",
-                    "display_name": "Hispana",
+                    "id": "https://openalex.org/S4363606058",
+                    "display_name": "IEEE URUCON",
                     "issn_l": null,
                     "issn": null,
                     "is_oa": false,
@@ -25636,19 +24950,21 @@
                     "host_organization_name": null,
                     "host_organization_lineage": [],
                     "host_organization_lineage_names": [],
-                    "type": "repository"
+                    "type": "conference"
                 },
                 "license": null,
                 "license_id": null,
-                "version": "submittedVersion",
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": "info:eu-repo/semantics/bachelorThesis"
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "2024 IEEE URUCON",
+                "raw_type": "proceedings-article"
             },
             "volume": null,
-            "type": "dissertation",
-            "indexed_in": [],
+            "type": "conference-paper",
+            "indexed_in": [
+                "crossref"
+            ],
             "open_access": {
                 "is_oa": false,
                 "oa_status": "closed",
@@ -25659,54 +24975,120 @@
                 {
                     "author_position": "first",
                     "author": {
-                        "id": "https://openalex.org/A5149116221",
-                        "display_name": "Tatiana Isabel Ruiz Pilato",
+                        "id": "https://openalex.org/A5116101196",
+                        "display_name": "Lindon Paul Fagot",
                         "orcid": null,
                         "observed_orcids": []
                     },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": true,
-                    "raw_author_name": "Ruiz Pilato, Tatiana Isabel",
-                    "raw_affiliation_strings": [],
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I3130110478",
+                            "display_name": "Universidad Tecnológica de Honduras",
+                            "ror": "https://ror.org/00j5cb536",
+                            "country_code": "HN",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I3130110478"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "HN"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "Lindon Paul Fagot",
+                    "raw_affiliation_strings": [
+                        "Universidad Tecnol&#x00F3;gica de Honduras,Postgraduate Department,Tegucigalpa,Honduras"
+                    ],
                     "raw_orcid": null,
-                    "affiliations": []
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Tecnol&#x00F3;gica de Honduras,Postgraduate Department,Tegucigalpa,Honduras",
+                            "institution_ids": [
+                                "https://openalex.org/I3130110478"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author_position": "last",
+                    "author": {
+                        "id": "https://openalex.org/A5011634686",
+                        "display_name": "Diego Armando Zaldivar",
+                        "orcid": "https://orcid.org/0000-0002-9287-1027",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0002-9287-1027"
+                        ]
+                    },
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I3130110478",
+                            "display_name": "Universidad Tecnológica de Honduras",
+                            "ror": "https://ror.org/00j5cb536",
+                            "country_code": "HN",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I3130110478"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "HN"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "Diego Armando Zaldivar",
+                    "raw_affiliation_strings": [
+                        "Universidad Tecnol&#x00F3;gica de Honduras,Postgraduate Department,Tegucigalpa,Honduras"
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Tecnol&#x00F3;gica de Honduras,Postgraduate Department,Tegucigalpa,Honduras",
+                            "institution_ids": [
+                                "https://openalex.org/I3130110478"
+                            ]
+                        }
+                    ]
                 }
             ],
             "institutions": [],
-            "countries_distinct_count": 0,
-            "institutions_distinct_count": 0,
-            "corresponding_author_ids": [
-                "https://openalex.org/A5149116221"
+            "countries_distinct_count": 1,
+            "institutions_distinct_count": 1,
+            "corresponding_author_ids": [],
+            "corresponding_institution_ids": [
+                "https://openalex.org/I3130110478"
             ],
-            "corresponding_institution_ids": [],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": null,
+            "fwci": 0.0,
             "has_fulltext": false,
             "cited_by_count": 0,
-            "citation_normalized_percentile": null,
+            "citation_normalized_percentile": {
+                "value": 0.38462631,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": false
+            },
             "cited_by_percentile_year": null,
             "biblio": {
                 "volume": null,
                 "issue": null,
-                "first_page": null,
-                "last_page": null
+                "first_page": "1",
+                "last_page": "5"
             },
             "is_retracted": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
-                "id": "https://openalex.org/T11007",
-                "display_name": "Hybrid Renewable Energy Systems",
-                "score": 0.7856000065803528,
+                "id": "https://openalex.org/T10223",
+                "display_name": "Microgrid Control and Optimization",
+                "score": 0.698199987411499,
                 "subfield": {
-                    "id": "https://openalex.org/subfields/2102",
-                    "display_name": "Energy Engineering and Power Technology"
+                    "id": "https://openalex.org/subfields/2207",
+                    "display_name": "Control and Systems Engineering"
                 },
                 "field": {
-                    "id": "https://openalex.org/fields/21",
-                    "display_name": "Energy"
+                    "id": "https://openalex.org/fields/22",
+                    "display_name": "Engineering"
                 },
                 "domain": {
                     "id": "https://openalex.org/domains/3",
@@ -25715,9 +25097,26 @@
             },
             "topics": [
                 {
+                    "id": "https://openalex.org/T10223",
+                    "display_name": "Microgrid Control and Optimization",
+                    "score": 0.698199987411499,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2207",
+                        "display_name": "Control and Systems Engineering"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/22",
+                        "display_name": "Engineering"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                {
                     "id": "https://openalex.org/T11007",
                     "display_name": "Hybrid Renewable Energy Systems",
-                    "score": 0.7856000065803528,
+                    "score": 0.14069999754428864,
                     "subfield": {
                         "id": "https://openalex.org/subfields/2102",
                         "display_name": "Energy Engineering and Power Technology"
@@ -25734,7 +25133,7 @@
                 {
                     "id": "https://openalex.org/T14444",
                     "display_name": "Power Systems and Renewable Energy",
-                    "score": 0.16380000114440918,
+                    "score": 0.10329999774694443,
                     "subfield": {
                         "id": "https://openalex.org/subfields/2102",
                         "display_name": "Energy Engineering and Power Technology"
@@ -25747,156 +25146,113 @@
                         "id": "https://openalex.org/domains/3",
                         "display_name": "Physical Sciences"
                     }
-                },
-                {
-                    "id": "https://openalex.org/T10223",
-                    "display_name": "Microgrid Control and Optimization",
-                    "score": 0.014100000262260437,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2207",
-                        "display_name": "Control and Systems Engineering"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/22",
-                        "display_name": "Engineering"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
                 }
             ],
             "keywords": [
                 {
-                    "id": "https://openalex.org/keywords/off-grid-electrification",
-                    "display_name": "off-grid electrification",
-                    "score": 0.796999990940094
+                    "id": "https://openalex.org/keywords/solar-eclipse",
+                    "display_name": "solar eclipse",
+                    "score": 0.7649999856948853
                 },
                 {
-                    "id": "https://openalex.org/keywords/remote-communities",
-                    "display_name": "remote communities",
-                    "score": 0.6230000257492065
+                    "id": "https://openalex.org/keywords/isolated-microgrid",
+                    "display_name": "isolated microgrid",
+                    "score": 0.9850000143051147
                 },
                 {
-                    "id": "https://openalex.org/keywords/photovoltaic-system-design",
-                    "display_name": "photovoltaic system design",
-                    "score": 0.5920000076293945
+                    "id": "https://openalex.org/keywords/hybrid-microgrid",
+                    "display_name": "hybrid microgrid",
+                    "score": 0.7889999747276306
                 },
                 {
-                    "id": "https://openalex.org/keywords/biomass-energy",
-                    "display_name": "biomass energy",
-                    "score": 0.6019999980926514
+                    "id": "https://openalex.org/keywords/solar-photovoltaic-generation",
+                    "display_name": "solar photovoltaic generation",
+                    "score": 0.9010000228881836
                 },
                 {
-                    "id": "https://openalex.org/keywords/energy-storage",
-                    "display_name": "energy storage",
-                    "score": 0.6480000019073486
+                    "id": "https://openalex.org/keywords/thermal-power-generation",
+                    "display_name": "thermal power generation",
+                    "score": 0.7229999899864197
                 },
                 {
-                    "id": "https://openalex.org/keywords/battery-sizing",
-                    "display_name": "battery sizing",
-                    "score": 0.6949999928474426
+                    "id": "https://openalex.org/keywords/economic-impact",
+                    "display_name": "economic impact",
+                    "score": 0.6209999918937683
                 },
                 {
-                    "id": "https://openalex.org/keywords/demand-curve",
-                    "display_name": "demand curve",
-                    "score": 0.47099998593330383
-                },
-                {
-                    "id": "https://openalex.org/keywords/electrical-protection-systems",
-                    "display_name": "electrical protection systems",
-                    "score": 0.6919999718666077
+                    "id": "https://openalex.org/keywords/energy-costs",
+                    "display_name": "energy costs",
+                    "score": 0.4650000035762787
                 },
                 {
                     "id": "https://openalex.org/keywords/rural-electrification",
                     "display_name": "rural electrification",
-                    "score": 0.7149999737739563
+                    "score": 0.6840000152587891
                 }
             ],
             "concepts": [
                 {
-                    "id": "https://openalex.org/C15708023",
-                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
-                    "display_name": "Humanities",
-                    "level": 1,
-                    "score": 0.6545000076293945
+                    "id": "https://openalex.org/C39432304",
+                    "wikidata": "https://www.wikidata.org/wiki/Q188847",
+                    "display_name": "Environmental science",
+                    "level": 0,
+                    "score": 0.5295805931091309
                 },
                 {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.5023000240325928
+                    "id": "https://openalex.org/C2776784348",
+                    "wikidata": "https://www.wikidata.org/wiki/Q5762595",
+                    "display_name": "Microgrid",
+                    "level": 3,
+                    "score": 0.5150191783905029
+                },
+                {
+                    "id": "https://openalex.org/C153294291",
+                    "wikidata": "https://www.wikidata.org/wiki/Q25261",
+                    "display_name": "Meteorology",
+                    "level": 1,
+                    "score": 0.4896429181098938
                 },
                 {
                     "id": "https://openalex.org/C205649164",
                     "wikidata": "https://www.wikidata.org/wiki/Q1071",
                     "display_name": "Geography",
                     "level": 0,
-                    "score": 0.2143000066280365
+                    "score": 0.21296477317810059
                 },
                 {
-                    "id": "https://openalex.org/C138885662",
-                    "wikidata": "https://www.wikidata.org/wiki/Q5891",
-                    "display_name": "Philosophy",
+                    "id": "https://openalex.org/C127413603",
+                    "wikidata": "https://www.wikidata.org/wiki/Q11023",
+                    "display_name": "Engineering",
                     "level": 0,
-                    "score": 0.1599999964237213
+                    "score": 0.13682788610458374
                 },
                 {
-                    "id": "https://openalex.org/C71924100",
-                    "wikidata": "https://www.wikidata.org/wiki/Q11190",
-                    "display_name": "Medicine",
-                    "level": 0,
-                    "score": 0.13249999284744263
-                },
-                {
-                    "id": "https://openalex.org/C3017944768",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1450463",
-                    "display_name": "Poison control",
+                    "id": "https://openalex.org/C188573790",
+                    "wikidata": "https://www.wikidata.org/wiki/Q12705",
+                    "display_name": "Renewable energy",
                     "level": 2,
-                    "score": 0.1289999932050705
+                    "score": 0.08259183168411255
                 },
                 {
-                    "id": "https://openalex.org/C2779343474",
-                    "wikidata": "https://www.wikidata.org/wiki/Q3109175",
-                    "display_name": "Context (archaeology)",
-                    "level": 2,
-                    "score": 0.11949999630451202
-                },
-                {
-                    "id": "https://openalex.org/C58640448",
-                    "wikidata": "https://www.wikidata.org/wiki/Q42515",
-                    "display_name": "Cartography",
+                    "id": "https://openalex.org/C119599485",
+                    "wikidata": "https://www.wikidata.org/wiki/Q43035",
+                    "display_name": "Electrical engineering",
                     "level": 1,
-                    "score": 0.10830000042915344
-                },
-                {
-                    "id": "https://openalex.org/C142362112",
-                    "wikidata": "https://www.wikidata.org/wiki/Q735",
-                    "display_name": "Art",
-                    "level": 0,
-                    "score": 0.1046999990940094
-                },
-                {
-                    "id": "https://openalex.org/C2779274809",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1197588",
-                    "display_name": "Military government",
-                    "level": 3,
-                    "score": 0.10170000046491623
+                    "score": 0.0758274495601654
                 }
             ],
             "mesh": [],
-            "locations_count": 2,
+            "locations_count": 1,
             "locations": [
                 {
-                    "id": "pmh:oai:hispana.mcu.es:62360205",
-                    "doi": null,
+                    "id": "doi:10.1109/urucon63440.2024.10850313",
+                    "doi": "https://doi.org/10.1109/urucon63440.2024.10850313",
                     "is_oa": false,
-                    "landing_page_url": "https://riunet.upv.es/handle/10251/195796",
+                    "landing_page_url": "https://doi.org/10.1109/urucon63440.2024.10850313",
                     "pdf_url": null,
                     "source": {
-                        "id": "https://openalex.org/S4377196108",
-                        "display_name": "Hispana",
+                        "id": "https://openalex.org/S4363606058",
+                        "display_name": "IEEE URUCON",
                         "issn_l": null,
                         "issn": null,
                         "is_oa": false,
@@ -25907,62 +25263,33 @@
                         "host_organization_name": null,
                         "host_organization_lineage": [],
                         "host_organization_lineage_names": [],
-                        "type": "repository"
+                        "type": "conference"
                     },
                     "license": null,
                     "license_id": null,
-                    "version": "submittedVersion",
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": "info:eu-repo/semantics/bachelorThesis"
-                },
-                {
-                    "id": "pmh:oai:hispana.mcu.es:63057753",
-                    "doi": null,
-                    "is_oa": false,
-                    "landing_page_url": "https://hispana.mcu.es/es/registros/registro.do?tipoRegistro=MTD&idBib=63057753",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4377196108",
-                        "display_name": "Hispana",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": null,
-                        "host_organization_name": null,
-                        "host_organization_lineage": [],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": null,
-                    "license_id": null,
-                    "version": "submittedVersion",
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": "info:eu-repo/semantics/bachelorThesis"
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "2024 IEEE URUCON",
+                    "raw_type": "proceedings-article"
                 }
             ],
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
-                    "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "display_name": "Affordable and clean energy",
+                    "score": 0.9853000044822693,
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
-                    "score": 0.8970999717712402,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "display_name": "Climate action",
+                    "score": 0.9786999821662903,
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/11",
-                    "score": 0.666700005531311,
-                    "display_name": "Sustainable cities and communities"
+                    "display_name": "Industry, innovation and infrastructure",
+                    "score": 0.651199996471405,
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -25973,379 +25300,364 @@
                 "grobid_xml": false
             },
             "content_urls": null,
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 6,
+            "referenced_works": [
+                "https://openalex.org/W1925808460",
+                "https://openalex.org/W2899173576",
+                "https://openalex.org/W3168100522",
+                "https://openalex.org/W4205775844",
+                "https://openalex.org/W4384436086",
+                "https://openalex.org/W4399851129"
+            ],
             "related_works": [
-                "https://openalex.org/W7025688380",
-                "https://openalex.org/W7206829451",
-                "https://openalex.org/W7009174067",
-                "https://openalex.org/W7065363850",
-                "https://openalex.org/W6996025588",
-                "https://openalex.org/W7207079669",
-                "https://openalex.org/W7046557148",
-                "https://openalex.org/W7038740050",
-                "https://openalex.org/W7037262874",
-                "https://openalex.org/W6981187077"
+                "https://openalex.org/W2899173576",
+                "https://openalex.org/W2947005659",
+                "https://openalex.org/W2949437389",
+                "https://openalex.org/W2946672543",
+                "https://openalex.org/W6922487333",
+                "https://openalex.org/W6960237387",
+                "https://openalex.org/W1952720411",
+                "https://openalex.org/W4306651085",
+                "https://openalex.org/W7172540859",
+                "https://openalex.org/W2900146477"
             ],
             "abstract_inverted_index": {
-                "[ES]": [
+                "Abstrac": [
                     0
                 ],
-                "El": [
+                "In": [
                     1,
-                    30
-                ],
-                "TFG": [
-                    2
-                ],
-                "consistirá": [
-                    3
-                ],
-                "en": [
-                    4,
-                    25,
-                    96,
-                    129,
-                    143
-                ],
-                "diseñar": [
-                    5
-                ],
-                "las": [
-                    6,
-                    77,
-                    87,
-                    153
-                ],
-                "instalaciones": [
-                    7,
-                    154
-                ],
-                "eléctricas": [
-                    8,
-                    79
-                ],
-                "para": [
-                    9,
-                    53,
-                    112
-                ],
-                "dotar": [
-                    10
-                ],
-                "de": [
-                    11,
-                    18,
-                    21,
-                    27,
-                    32,
-                    48,
-                    60,
-                    68,
-                    76,
-                    82,
-                    92,
-                    99,
-                    120,
-                    122,
-                    140,
-                    152
-                ],
-                "suministro": [
-                    12,
-                    64
-                ],
-                "eléctrico": [
-                    13
-                ],
-                "a": [
-                    14
-                ],
-                "una": [
-                    15
-                ],
-                "comunidad": [
-                    16
-                ],
-                "aislada": [
-                    17
-                ],
-                "la": [
-                    19,
-                    46,
-                    66,
-                    83,
-                    123,
-                    134,
-                    141,
-                    146
-                ],
-                "red": [
-                    20
-                ],
-                "unas": [
-                    22
-                ],
-                "60": [
-                    23
-                ],
-                "viviendas": [
-                    24,
-                    94
-                ],
-                "Torrecilla": [
-                    26
-                ],
-                "Nacaome": [
-                    28
-                ],
-                "(Honduras).": [
-                    29
-                ],
-                "recurso": [
-                    31,
-                    108
-                ],
-                "energía": [
-                    33,
-                    67
-                ],
-                "que": [
-                    34,
-                    50,
-                    104,
-                    136,
-                    145
-                ],
-                "se": [
-                    35,
-                    51,
-                    56,
-                    105,
-                    127
-                ],
-                "utilizará": [
-                    36
-                ],
-                "será": [
-                    37
-                ],
-                "un": [
-                    38,
-                    130
-                ],
-                "sistema": [
-                    39
-                ],
-                "hibrido,": [
-                    40
-                ],
-                "solar-biomasa,": [
-                    41
-                ],
-                "por": [
-                    42,
-                    102,
-                    133
-                ],
-                "lo": [
-                    43,
-                    103
-                ],
-                "que,": [
-                    44,
-                    80
-                ],
-                "según": [
-                    45
-                ],
-                "curva": [
-                    47
-                ],
-                "demanda": [
-                    49
-                ],
-                "determinara": [
-                    52
-                ],
-                "esa": [
-                    54
-                ],
-                "población,": [
-                    55
-                ],
-                "calculara": [
-                    57,
-                    106
-                ],
-                "pa": [
-                    58
-                ],
-                "potencia": [
-                    59
-                ],
-                "uno": [
-                    61
-                ],
-                "y": [
-                    62,
-                    65,
-                    110,
-                    155
-                ],
-                "otro": [
-                    63
-                ],
-                "los": [
-                    69,
-                    118
-                ],
-                "acumuladores": [
-                    70,
-                    111
-                ],
-                "necesarios.": [
                     71
                 ],
-                "Se": [
-                    72,
-                    89,
-                    114
+                "our": [
+                    2
                 ],
-                "realizará": [
-                    73
+                "era,": [
+                    3
                 ],
-                "el": [
-                    74,
-                    97,
-                    107,
-                    138,
-                    144,
-                    150
+                "the": [
+                    4,
+                    10,
+                    29,
+                    93,
+                    104,
+                    114,
+                    117,
+                    124,
+                    127,
+                    133
                 ],
-                "cálculo": [
-                    75
+                "electrification": [
+                    5
                 ],
-                "líneas": [
-                    78
-                ],
-                "partiendo": [
-                    81
-                ],
-                "central,": [
-                    84
-                ],
-                "abastezca": [
-                    85
-                ],
-                "todas": [
-                    86
-                ],
-                "viviendas.": [
-                    88
-                ],
-                "analizarán": [
-                    90
-                ],
-                "casos": [
-                    91
-                ],
-                "dejar": [
-                    93
-                ],
-                "aisladas": [
-                    95
-                ],
-                "caso": [
-                    98
-                ],
-                "excesivas": [
-                    100
-                ],
-                "distancias,": [
-                    101
-                ],
-                "solar": [
-                    109
-                ],
-                "ellas.": [
-                    113
-                ],
-                "diseñarán": [
-                    115
-                ],
-                "también": [
-                    116
-                ],
-                "todos": [
-                    117
-                ],
-                "sistemas": [
+                "of": [
+                    6,
+                    13,
+                    31,
+                    95,
+                    106,
                     119
                 ],
-                "protección": [
-                    121
+                "isolated": [
+                    7,
+                    72,
+                    101
                 ],
-                "instalación.": [
-                    124
+                "communities": [
+                    8,
+                    73
                 ],
-                "Este": [
-                    125
-                ],
-                "trabajo": [
+                "and": [
+                    9,
+                    20,
+                    40,
+                    80,
                     126
                 ],
-                "enmarca": [
+                "widespread": [
+                    11
+                ],
+                "use": [
+                    12
+                ],
+                "renewable": [
+                    14
+                ],
+                "energy": [
+                    15,
+                    36,
+                    69
+                ],
+                "sources": [
+                    16
+                ],
+                "such": [
+                    17,
+                    52
+                ],
+                "as": [
+                    18,
+                    53
+                ],
+                "solar": [
+                    19,
+                    35,
+                    67,
+                    79,
+                    97
+                ],
+                "wind": [
+                    21
+                ],
+                "are": [
+                    22
+                ],
+                "considered": [
+                    23
+                ],
+                "increasingly": [
+                    24
+                ],
+                "fundamental": [
+                    25
+                ],
+                "priorities": [
+                    26
+                ],
+                "to": [
+                    27,
+                    49
+                ],
+                "counteract": [
+                    28
+                ],
+                "effects": [
+                    30
+                ],
+                "climate": [
+                    32
+                ],
+                "change.": [
+                    33
+                ],
+                "While": [
+                    34
+                ],
+                "is": [
+                    37,
+                    45,
+                    86
+                ],
+                "an": [
+                    38,
+                    100
+                ],
+                "economical": [
+                    39
+                ],
+                "easily": [
+                    41
+                ],
+                "implementable": [
+                    42
+                ],
+                "alternative,": [
+                    43
+                ],
+                "it": [
+                    44
+                ],
+                "also": [
+                    46
+                ],
+                "highly": [
+                    47
+                ],
+                "susceptible": [
+                    48
+                ],
+                "weather": [
+                    50
+                ],
+                "conditions": [
+                    51
+                ],
+                "clouds,": [
+                    54
+                ],
+                "rain,": [
+                    55
+                ],
+                "or": [
+                    56
+                ],
+                "eclipses.": [
+                    57
+                ],
+                "Although": [
+                    58
+                ],
+                "eclipses": [
+                    59,
+                    98
+                ],
+                "do": [
+                    60
+                ],
+                "not": [
+                    61
+                ],
+                "occur": [
+                    62
+                ],
+                "frequently,": [
+                    63
+                ],
+                "they": [
+                    64
+                ],
+                "significantly": [
+                    65
+                ],
+                "impact": [
+                    66,
+                    85
+                ],
+                "photovoltaic": [
+                    68
+                ],
+                "generation.": [
+                    70
+                ],
+                "with": [
+                    74
+                ],
+                "hybrid": [
+                    75
+                ],
+                "microgrids": [
+                    76
+                ],
+                "that": [
+                    77
+                ],
+                "include": [
+                    78
+                ],
+                "thermal": [
+                    81,
+                    120
+                ],
+                "generation": [
+                    82
+                ],
+                "components,": [
+                    83
+                ],
+                "this": [
+                    84
+                ],
+                "felt": [
+                    87
+                ],
+                "more": [
+                    88
+                ],
+                "intensely.": [
+                    89
+                ],
+                "This": [
+                    90
+                ],
+                "paper": [
+                    91
+                ],
+                "analyzes": [
+                    92
+                ],
+                "impacts": [
+                    94
+                ],
+                "two": [
+                    96
+                ],
+                "on": [
+                    99,
+                    116
+                ],
+                "microgrid": [
+                    102,
+                    125
+                ],
+                "in": [
+                    103,
+                    130
+                ],
+                "municipality": [
+                    105
+                ],
+                "Gracias": [
+                    107
+                ],
+                "a": [
+                    108
+                ],
+                "Dios,": [
+                    109
+                ],
+                "Honduras.": [
+                    110
+                ],
+                "The": [
+                    111
+                ],
+                "results": [
+                    112
+                ],
+                "show": [
+                    113
+                ],
+                "effect": [
+                    115
+                ],
+                "balance": [
+                    118
+                ],
+                "component": [
+                    121
+                ],
+                "utilization": [
+                    122
+                ],
+                "within": [
+                    123
+                ],
+                "consequent": [
                     128
                 ],
-                "proyecto": [
-                    131,
-                    151
+                "increase": [
+                    129
                 ],
-                "financiado": [
+                "costs": [
+                    131
+                ],
+                "for": [
                     132
                 ],
-                "AECID": [
-                    135
-                ],
-                "desarrolla": [
-                    137
-                ],
-                "IIE": [
-                    139
-                ],
-                "UPV,": [
-                    142
-                ],
-                "alumna": [
-                    147
-                ],
-                "designada": [
-                    148
-                ],
-                "realiza": [
-                    149
-                ],
-                "supervisa": [
-                    156
-                ],
-                "su": [
-                    157
-                ],
-                "construcción": [
-                    158
+                "community.": [
+                    134
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-09-29T14:09:16.559479",
-            "created_date": "2026-09-03T00:00:00"
+            "updated_date": "2026-10-06T10:28:23.643775",
+            "created_date": "2025-02-01T00:00:00"
         },
         {
             "id": "https://openalex.org/W7141773024",
             "doi": null,
             "title": "Estudi de la viabilitat de l'electrificació del petit municipi de Petoa, Hondures, mitjançant l'aprofitament d'energies renovables",
             "display_name": "Estudi de la viabilitat de l'electrificació del petit municipi de Petoa, Hondures, mitjançant l'aprofitament d'energies renovables",
-            "relevance_score": 32.29393,
+            "relevance_score": 32.325554,
             "publication_year": 2026,
             "publication_date": "2026-03-25",
             "ids": {
@@ -26753,29 +26065,29 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 1.0,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.8787999749183655,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/12",
+                    "display_name": "Responsible consumption and production",
                     "score": 0.833299994468689,
-                    "display_name": "Responsible consumption and production"
+                    "id": "https://metadata.un.org/sdg/12"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.75,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
@@ -27247,7 +26559,7 @@
             "doi": "https://doi.org/10.18687/laccei2022.1.1.708",
             "title": "Use of coffee pulp as a means to produce biogas.",
             "display_name": "Use of coffee pulp as a means to produce biogas.",
-            "relevance_score": 31.376125,
+            "relevance_score": 31.386042,
             "publication_year": 2022,
             "publication_date": "2022-01-01",
             "ids": {
@@ -27635,9 +26947,9 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/12",
+                    "display_name": "Responsible consumption and production",
                     "score": 1.0,
-                    "display_name": "Responsible consumption and production"
+                    "id": "https://metadata.un.org/sdg/12"
                 }
             ],
             "study_designs": [],
@@ -28851,7 +28163,7 @@
             "doi": "https://doi.org/10.18260/1-2--3850",
             "title": "Using Technical Entrepreneurship And Service Learning To Promote An International Perspective In An Undergraduate Engineering Program",
             "display_name": "Using Technical Entrepreneurship And Service Learning To Promote An International Perspective In An Undergraduate Engineering Program",
-            "relevance_score": 30.491417,
+            "relevance_score": 30.61323,
             "publication_year": 2020,
             "publication_date": "2020-09-04",
             "ids": {
@@ -29505,19 +28817,19 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/4",
+                    "display_name": "Quality education",
                     "score": 0.9235000014305115,
-                    "display_name": "Quality education"
+                    "id": "https://metadata.un.org/sdg/4"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.651199996471405,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/17",
+                    "display_name": "Partnerships for the goals",
                     "score": 0.5217000246047974,
-                    "display_name": "Partnerships for the goals"
+                    "id": "https://metadata.un.org/sdg/17"
                 }
             ],
             "study_designs": [],
@@ -30547,7 +29859,7 @@
             "doi": "https://doi.org/10.1017/bca.2024.14",
             "title": "Estimating Lost Dividends from Incomplete Energy Access Transitions",
             "display_name": "Estimating Lost Dividends from Incomplete Energy Access Transitions",
-            "relevance_score": 25.627829,
+            "relevance_score": 25.644709,
             "publication_year": 2024,
             "publication_date": "2024-01-01",
             "ids": {
@@ -31090,29 +30402,29 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.9090999960899353,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.7578999996185303,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.7207000255584717,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.666700005531311,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/13",
+                    "display_name": "Climate action",
                     "score": 0.5351999998092651,
-                    "display_name": "Climate action"
+                    "id": "https://metadata.un.org/sdg/13"
                 }
             ],
             "study_designs": [],
@@ -31675,7 +30987,7 @@
             "doi": "https://doi.org/10.1016/j.engappai.2024.109249",
             "title": "A geospatial clustering algorithm and its integration into a techno-economic rural electrification planning model",
             "display_name": "A geospatial clustering algorithm and its integration into a techno-economic rural electrification planning model",
-            "relevance_score": 24.209663,
+            "relevance_score": 24.242577,
             "publication_year": 2024,
             "publication_date": "2024-09-08",
             "ids": {
@@ -32380,24 +31692,24 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.75,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.5676000118255615,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
                     "score": 0.5142999887466431,
-                    "display_name": "Sustainable cities and communities"
+                    "id": "https://metadata.un.org/sdg/11"
                 }
             ],
             "study_designs": [],
@@ -33119,7 +32431,7 @@
             "doi": "https://doi.org/10.1016/j.jpolmod.2026.107085",
             "title": "Causality and policy dilemmas: Energy access curse or inequality conundrum?",
             "display_name": "Causality and policy dilemmas: Energy access curse or inequality conundrum?",
-            "relevance_score": 12.547815,
+            "relevance_score": 12.591207,
             "publication_year": 2026,
             "publication_date": "2026-07-23",
             "ids": {
@@ -33431,7 +32743,7 @@
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.40836025,
+                "value": 0.38755101,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -33748,19 +33060,19 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 1.0,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty",
                     "score": 0.8928999900817871,
-                    "display_name": "No poverty"
+                    "id": "https://metadata.un.org/sdg/1"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/7",
+                    "display_name": "Affordable and clean energy",
                     "score": 0.75,
-                    "display_name": "Affordable and clean energy"
+                    "id": "https://metadata.un.org/sdg/7"
                 }
             ],
             "study_designs": [],
@@ -33863,7 +33175,7 @@
                 "pdf": "https://content.openalex.org/works/W7170145106.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W7170145106.grobid-xml"
             },
-            "referenced_works_count": 21,
+            "referenced_works_count": 22,
             "referenced_works": [
                 "https://openalex.org/W2040471878",
                 "https://openalex.org/W2165649196",
@@ -33882,6 +33194,7 @@
                 "https://openalex.org/W4285592797",
                 "https://openalex.org/W4317677633",
                 "https://openalex.org/W4376651139",
+                "https://openalex.org/W4389093941",
                 "https://openalex.org/W4400983685",
                 "https://openalex.org/W4403109666",
                 "https://openalex.org/W4403990469",
@@ -34154,7 +33467,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2026-11-01T11:40:01.658920",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2026-07-24T00:00:00"
         },
         {
@@ -34162,7 +33475,7 @@
             "doi": "https://doi.org/10.1596/35938",
             "title": "Avoiding a Lost Decade in Latin America and the Caribbean",
             "display_name": "Avoiding a Lost Decade in Latin America and the Caribbean",
-            "relevance_score": 11.326494,
+            "relevance_score": 11.435703,
             "publication_year": 2021,
             "publication_date": "2021-06-23",
             "ids": {
@@ -34517,24 +33830,24 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/8",
+                    "display_name": "Decent work and economic growth",
                     "score": 0.9211000204086304,
-                    "display_name": "Decent work and economic growth"
+                    "id": "https://metadata.un.org/sdg/8"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.5378999710083008,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/17",
+                    "display_name": "Partnerships for the goals",
                     "score": 0.5217000246047974,
-                    "display_name": "Partnerships for the goals"
+                    "id": "https://metadata.un.org/sdg/17"
                 },
                 {
-                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities",
                     "score": 0.4000000059604645,
-                    "display_name": "Reduced inequalities"
+                    "id": "https://metadata.un.org/sdg/10"
                 }
             ],
             "study_designs": [],
@@ -34983,7 +34296,7 @@
             "doi": "https://doi.org/10.1109/mie.2021.3117046",
             "title": "The Energy, Information, Robotics, and Industrial Revolution [Students and Young Professionals News]",
             "display_name": "The Energy, Information, Robotics, and Industrial Revolution [Students and Young Professionals News]",
-            "relevance_score": 10.913625,
+            "relevance_score": 10.948854,
             "publication_year": 2021,
             "publication_date": "2021-12-01",
             "ids": {
@@ -35488,9 +34801,9 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.8970999717712402,
-                    "display_name": "Industry, innovation and infrastructure"
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],

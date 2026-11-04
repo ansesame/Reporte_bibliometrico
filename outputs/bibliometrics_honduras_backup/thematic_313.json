@@ -1,7 +1,7 @@
 {
     "meta": {
-        "count": 6,
-        "db_response_time_ms": 53,
+        "count": 5,
+        "db_response_time_ms": 64,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -177,7 +177,7 @@
             "doi": "https://doi.org/10.5377/eya.v18i1.22791",
             "title": "Percepción del desempeño del Servicio Aduanero en Honduras desde la experiencia del agente aduanero como usuario clave del sistema",
             "display_name": "Percepción del desempeño del Servicio Aduanero en Honduras desde la experiencia del agente aduanero como usuario clave del sistema",
-            "relevance_score": 132.06064,
+            "relevance_score": 132.41425,
             "publication_year": 2026,
             "publication_date": "2026-06-29",
             "ids": {
@@ -1071,15 +1071,16 @@
             "created_date": "2026-07-04T00:00:00"
         },
         {
-            "id": "https://openalex.org/W7205118378",
+            "id": "https://openalex.org/W3045204247",
             "doi": null,
             "title": "Reducción del costo de importación, desde Honduras hacia Guatemala, con la implementación de un sello electrónico, en una empresa importadora de productos lácteos",
             "display_name": "Reducción del costo de importación, desde Honduras hacia Guatemala, con la implementación de un sello electrónico, en una empresa importadora de productos lácteos",
-            "relevance_score": 114.18999,
+            "relevance_score": 114.20415,
             "publication_year": 2019,
             "publication_date": "2019-11-01",
             "ids": {
-                "openalex": "https://openalex.org/W7205118378"
+                "openalex": "https://openalex.org/W3045204247",
+                "mag": "3045204247"
             },
             "language": "es",
             "primary_location": {
@@ -1110,455 +1111,6 @@
                 "is_published": false,
                 "raw_source_name": null,
                 "raw_type": "Thesis"
-            },
-            "volume": null,
-            "type": "dissertation",
-            "indexed_in": [],
-            "open_access": {
-                "is_oa": false,
-                "oa_status": "closed",
-                "oa_url": null,
-                "any_repository_has_fulltext": false
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5148978792",
-                        "display_name": "Leonel de Jesús Borrayo Molina",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": true,
-                    "raw_author_name": "Borrayo Molina, Leonel de Jesús",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 0,
-            "institutions_distinct_count": 0,
-            "corresponding_author_ids": [
-                "https://openalex.org/A5148978792"
-            ],
-            "corresponding_institution_ids": [],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": null,
-            "has_fulltext": false,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": null,
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": null,
-                "issue": null,
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T14133",
-                "display_name": "Border Security and International Relations",
-                "score": 0.7231000065803528,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/3320",
-                    "display_name": "Political Science and International Relations"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/33",
-                    "display_name": "Social Sciences"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T14133",
-                    "display_name": "Border Security and International Relations",
-                    "score": 0.7231000065803528,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3320",
-                        "display_name": "Political Science and International Relations"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T14180",
-                    "display_name": "Law, logistics, and international trade",
-                    "score": 0.12710000574588776,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1402",
-                        "display_name": "Accounting"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/14",
-                        "display_name": "Business, Management and Accounting"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T14121",
-                    "display_name": "Logistics and Transportation Systems",
-                    "score": 0.08889999985694885,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1404",
-                        "display_name": "Management Information Systems"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/14",
-                        "display_name": "Business, Management and Accounting"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/electronic-seals",
-                    "display_name": "electronic seals",
-                    "score": 0.7620000243186951
-                },
-                {
-                    "id": "https://openalex.org/keywords/import-costs",
-                    "display_name": "import costs",
-                    "score": 0.6639999747276306
-                },
-                {
-                    "id": "https://openalex.org/keywords/customs-clearance",
-                    "display_name": "customs clearance",
-                    "score": 0.5860000252723694
-                },
-                {
-                    "id": "https://openalex.org/keywords/dairy-products",
-                    "display_name": "dairy products",
-                    "score": 0.7139999866485596
-                },
-                {
-                    "id": "https://openalex.org/keywords/cargo-protection",
-                    "display_name": "cargo protection",
-                    "score": 0.4090000092983246
-                },
-                {
-                    "id": "https://openalex.org/keywords/cost-reduction",
-                    "display_name": "cost reduction",
-                    "score": 0.5860000252723694
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C549774020",
-                    "wikidata": "https://www.wikidata.org/wiki/Q851147",
-                    "display_name": "Welfare economics",
-                    "level": 1,
-                    "score": 0.3993000090122223
-                },
-                {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.34360000491142273
-                },
-                {
-                    "id": "https://openalex.org/C205649164",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
-                    "display_name": "Geography",
-                    "level": 0,
-                    "score": 0.32249999046325684
-                },
-                {
-                    "id": "https://openalex.org/C15708023",
-                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
-                    "display_name": "Humanities",
-                    "level": 1,
-                    "score": 0.3149999976158142
-                },
-                {
-                    "id": "https://openalex.org/C2779343474",
-                    "wikidata": "https://www.wikidata.org/wiki/Q3109175",
-                    "display_name": "Context (archaeology)",
-                    "level": 2,
-                    "score": 0.3012999892234802
-                },
-                {
-                    "id": "https://openalex.org/C18762648",
-                    "wikidata": "https://www.wikidata.org/wiki/Q42213",
-                    "display_name": "Work (physics)",
-                    "level": 2,
-                    "score": 0.2703000009059906
-                },
-                {
-                    "id": "https://openalex.org/C98045186",
-                    "wikidata": "https://www.wikidata.org/wiki/Q205663",
-                    "display_name": "Process (computing)",
-                    "level": 2,
-                    "score": 0.2565999925136566
-                },
-                {
-                    "id": "https://openalex.org/C162324750",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8134",
-                    "display_name": "Economics",
-                    "level": 0,
-                    "score": 0.2565000057220459
-                },
-                {
-                    "id": "https://openalex.org/C144133560",
-                    "wikidata": "https://www.wikidata.org/wiki/Q4830453",
-                    "display_name": "Business",
-                    "level": 0,
-                    "score": 0.23639999330043793
-                },
-                {
-                    "id": "https://openalex.org/C182306322",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1779371",
-                    "display_name": "Order (exchange)",
-                    "level": 2,
-                    "score": 0.22280000150203705
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "pmh:oai:www.repositorio.usac.edu.gt:14238",
-                    "doi": null,
-                    "is_oa": false,
-                    "landing_page_url": "http://www.repositorio.usac.edu.gt/14238/1/Leonel%20de%20Jes%C3%BAs%20Borrayo%20Molina.pdf",
-                    "pdf_url": "http://www.repositorio.usac.edu.gt/14238/1/Leonel%20de%20Jes%C3%BAs%20Borrayo%20Molina.pdf",
-                    "source": {
-                        "id": "https://openalex.org/S4406922657",
-                        "display_name": "Repositorio Institucional USAC",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": null,
-                        "host_organization_name": null,
-                        "host_organization_lineage": [],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": null,
-                    "license_id": null,
-                    "version": "acceptedVersion",
-                    "is_accepted": true,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": "Thesis"
-                }
-            ],
-            "best_oa_location": null,
-            "sustainable_development_goals": [
-                {
-                    "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.5378999710083008,
-                    "id": "https://metadata.un.org/sdg/9"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": false,
-                "pdf": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W7000956468",
-                "https://openalex.org/W7163779245",
-                "https://openalex.org/W7056144528",
-                "https://openalex.org/W7205291394",
-                "https://openalex.org/W7070746755",
-                "https://openalex.org/W7001042273",
-                "https://openalex.org/W7048710655",
-                "https://openalex.org/W7018476034",
-                "https://openalex.org/W3104254071",
-                "https://openalex.org/W7026251679"
-            ],
-            "abstract_inverted_index": {
-                "Reducir": [
-                    0
-                ],
-                "el": [
-                    1,
-                    45
-                ],
-                "costo": [
-                    2
-                ],
-                "de": [
-                    3,
-                    18,
-                    40,
-                    42,
-                    47
-                ],
-                "importación": [
-                    4
-                ],
-                "desde": [
-                    5
-                ],
-                "Honduras": [
-                    6
-                ],
-                "hacia": [
-                    7
-                ],
-                "Guatemala,": [
-                    8
-                ],
-                "con": [
-                    9,
-                    28,
-                    44
-                ],
-                "la": [
-                    10,
-                    29
-                ],
-                "implementación": [
-                    11
-                ],
-                "del": [
-                    12,
-                    31
-                ],
-                "sello": [
-                    13,
-                    32
-                ],
-                "electrónico,": [
-                    14
-                ],
-                "en": [
-                    15,
-                    26
-                ],
-                "una": [
-                    16
-                ],
-                "empresa": [
-                    17
-                ],
-                "productos": [
-                    19
-                ],
-                "lácteos,": [
-                    20
-                ],
-                "así": [
-                    21
-                ],
-                "resguardar": [
-                    22
-                ],
-                "las": [
-                    23
-                ],
-                "mercancías": [
-                    24
-                ],
-                "importadas": [
-                    25
-                ],
-                "ruta,": [
-                    27
-                ],
-                "aplicación": [
-                    30
-                ],
-                "electrónico": [
-                    33
-                ],
-                "para": [
-                    34
-                ],
-                "conocer": [
-                    35
-                ],
-                "nuevos": [
-                    36
-                ],
-                "y": [
-                    37
-                ],
-                "tecnológicos": [
-                    38
-                ],
-                "modelos": [
-                    39
-                ],
-                "resguardo": [
-                    41
-                ],
-                "mercadería": [
-                    43
-                ],
-                "fin": [
-                    46
-                ],
-                "disminuir": [
-                    48
-                ],
-                "costos.": [
-                    49
-                ]
-            },
-            "counts_by_year": [],
-            "updated_date": "2026-09-02T18:50:13.731487",
-            "created_date": "2026-09-02T00:00:00"
-        },
-        {
-            "id": "https://openalex.org/W3045204247",
-            "doi": null,
-            "title": "Reducción del costo de importación, desde Honduras hacia Guatemala, con la implementación de un sello electrónico, en una empresa importadora de productos lácteos",
-            "display_name": "Reducción del costo de importación, desde Honduras hacia Guatemala, con la implementación de un sello electrónico, en una empresa importadora de productos lácteos",
-            "relevance_score": 113.98727,
-            "publication_year": 2019,
-            "publication_date": "2019-11-01",
-            "ids": {
-                "openalex": "https://openalex.org/W3045204247",
-                "mag": "3045204247"
-            },
-            "language": "es",
-            "primary_location": {
-                "id": "mag:3045204247",
-                "doi": null,
-                "is_oa": false,
-                "landing_page_url": "http://www.repositorio.usac.edu.gt/14238/",
-                "pdf_url": null,
-                "source": null,
-                "license": null,
-                "license_id": null,
-                "version": null,
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": null
             },
             "volume": null,
             "type": "dissertation",
@@ -1750,8 +1302,37 @@
                 }
             ],
             "mesh": [],
-            "locations_count": 1,
+            "locations_count": 2,
             "locations": [
+                {
+                    "id": "pmh:oai:www.repositorio.usac.edu.gt:14238",
+                    "doi": null,
+                    "is_oa": false,
+                    "landing_page_url": "http://www.repositorio.usac.edu.gt/14238/1/Leonel%20de%20Jes%C3%BAs%20Borrayo%20Molina.pdf",
+                    "pdf_url": "http://www.repositorio.usac.edu.gt/14238/1/Leonel%20de%20Jes%C3%BAs%20Borrayo%20Molina.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4406922657",
+                        "display_name": "Repositorio Institucional USAC",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": null,
+                        "host_organization_name": null,
+                        "host_organization_lineage": [],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "acceptedVersion",
+                    "is_accepted": true,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "Thesis"
+                },
                 {
                     "id": "mag:3045204247",
                     "doi": null,
@@ -1771,9 +1352,9 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
+                    "id": "https://metadata.un.org/sdg/9",
                     "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.7207000255584717,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "score": 0.7207000255584717
                 }
             ],
             "study_designs": [],
@@ -1816,7 +1397,7 @@
                     42,
                     47
                 ],
-                "importacion": [
+                "importación": [
                     4
                 ],
                 "desde": [
@@ -1840,7 +1421,7 @@
                     10,
                     29
                 ],
-                "implementacion": [
+                "implementación": [
                     11
                 ],
                 "del": [
@@ -1851,7 +1432,7 @@
                     13,
                     32
                 ],
-                "electronico,": [
+                "electrónico,": [
                     14
                 ],
                 "en": [
@@ -1867,10 +1448,10 @@
                 "productos": [
                     19
                 ],
-                "lacteos,": [
+                "lácteos,": [
                     20
                 ],
-                "asi": [
+                "así": [
                     21
                 ],
                 "resguardar": [
@@ -1879,7 +1460,7 @@
                 "las": [
                     23
                 ],
-                "mercancias": [
+                "mercancías": [
                     24
                 ],
                 "importadas": [
@@ -1888,10 +1469,10 @@
                 "ruta,": [
                     27
                 ],
-                "aplicacion": [
+                "aplicación": [
                     30
                 ],
-                "electronico": [
+                "electrónico": [
                     33
                 ],
                 "para": [
@@ -1906,7 +1487,7 @@
                 "y": [
                     37
                 ],
-                "tecnologicos": [
+                "tecnológicos": [
                     38
                 ],
                 "modelos": [
@@ -1915,7 +1496,7 @@
                 "resguardo": [
                     41
                 ],
-                "mercaderia": [
+                "mercadería": [
                     43
                 ],
                 "fin": [
@@ -1929,7 +1510,7 @@
                 ]
             },
             "counts_by_year": [],
-            "updated_date": "2025-11-06T04:12:42.849631",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2020-07-29T00:00:00"
         },
         {
@@ -1937,7 +1518,7 @@
             "doi": null,
             "title": "Integración regional de las repúblicas de Guatemala, Honduras y El Salvador 1991 2015, una perspectiva desde el intergubernamentalismo liberal",
             "display_name": "Integración regional de las repúblicas de Guatemala, Honduras y El Salvador 1991 2015, una perspectiva desde el intergubernamentalismo liberal",
-            "relevance_score": 106.89576,
+            "relevance_score": 106.71471,
             "publication_year": 2023,
             "publication_date": "2023-01-01",
             "ids": {
@@ -2307,9 +1888,9 @@
             },
             "sustainable_development_goals": [
                 {
+                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.6601999998092651,
-                    "id": "https://metadata.un.org/sdg/16"
+                    "score": 0.6601999998092651
                 }
             ],
             "study_designs": [],
@@ -3294,7 +2875,7 @@
             "doi": null,
             "title": "Análisis de las Relaciones Comerciales entre países del Triángulo Norte Centroamericano (República de Guatemala, República de Honduras y República de El Salvador) a partir del Acuerdo sobre Facilitación del Comercio de la Organización Mundial del Comercio. Período 2014-2017.",
             "display_name": "Análisis de las Relaciones Comerciales entre países del Triángulo Norte Centroamericano (República de Guatemala, República de Honduras y República de El Salvador) a partir del Acuerdo sobre Facilitación del Comercio de la Organización Mundial del Comercio. Período 2014-2017.",
-            "relevance_score": 95.224655,
+            "relevance_score": 95.36958,
             "publication_year": 2019,
             "publication_date": "2019-05-01",
             "ids": {
@@ -4201,7 +3782,7 @@
             "doi": "https://doi.org/10.37656/s20768400-2020-3-05",
             "title": "Insufficiency of the Customs Union as an Engine of Economic Development in the Northern Triangle of Central America",
             "display_name": "Insufficiency of the Customs Union as an Engine of Economic Development in the Northern Triangle of Central America",
-            "relevance_score": 36.285664,
+            "relevance_score": 36.2285,
             "publication_year": 2020,
             "publication_date": "2020-01-01",
             "ids": {
@@ -4583,14 +4164,14 @@
             },
             "sustainable_development_goals": [
                 {
+                    "id": "https://metadata.un.org/sdg/9",
                     "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.7207000255584717,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "score": 0.7207000255584717
                 },
                 {
+                    "id": "https://metadata.un.org/sdg/17",
                     "display_name": "Partnerships for the goals",
-                    "score": 0.42089998722076416,
-                    "id": "https://metadata.un.org/sdg/17"
+                    "score": 0.42089998722076416
                 }
             ],
             "study_designs": [],

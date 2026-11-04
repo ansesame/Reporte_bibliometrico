@@ -86,13 +86,7 @@ Si los ejes temáticos del nuevo país son similares a los de Honduras, el archi
 
 ### 3. Revisar el saldo de OpenAlex
 
-La API de OpenAlex tiene un presupuesto diario de USD 1, que se renueva a las 00:00 UTC. Para ver el saldo disponible, sin costo:
-
-```
-curl -H "Authorization: Bearer <OPENALEX_API_KEY>" https://api.openalex.org/rate-limit
-```
-
-El campo `daily_remaining_usd` muestra el saldo. Los costos de referencia están más abajo.
+La API de OpenAlex tiene un presupuesto diario de USD 1, que se renueva a las 00:00 UTC. Para ver el saldo disponible, acceda a la sección [Usage](https://openalex.org/settings/usage) en su perfil de OpenAlex.
 
 ### 4. Ejecutar
 
@@ -138,6 +132,12 @@ Hojas de `{name}_db.xlsx`:
 Los ids se guardan sin el prefijo `https://openalex.org/`. Los ids de tópicos, subcampos, campos y dominios se guardan como número.
 
 **Reutilización de respaldos.** Si `thematic_<id>.json` o `topics_snapshot.json` ya existen en la carpeta de respaldo, se reutilizan y no se vuelven a consultar. Para actualizar un eje, borra su archivo. Para una corrida completamente nueva, usa otro `--name` o borra la carpeta.
+
+> **Los resultados cambian según la fecha de ejecución.** OpenAlex actualiza de forma continua su índice de búsqueda, sus registros (citas, tópicos, autores, afiliaciones) y su catálogo de instituciones. Por eso, la misma consulta puede devolver resultados distintos en distintos días, y esa variación no depende del pipeline ni se puede controlar desde aquí.
+
+> Para que un reporte sea reproducible:
+> - registra la fecha de extracción, que queda en `run_summary.json` y en los respaldos;
+> - conserva la carpeta `{name}_backup/`. Al volver a ejecutar con esos respaldos se obtienen los mismos estudios, sin pagar otra vez las consultas.
 
 ## Costos y tiempos de referencia
 

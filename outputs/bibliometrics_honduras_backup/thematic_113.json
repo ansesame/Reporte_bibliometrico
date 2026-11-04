@@ -1,7 +1,7 @@
 {
     "meta": {
         "count": 6,
-        "db_response_time_ms": 136,
+        "db_response_time_ms": 89,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -187,7 +187,7 @@
             "doi": "https://doi.org/10.1080/07352166.2019.1654894",
             "title": "Gating Tegucigalpa, Honduras: The paradoxical effects of “Safer Barrios”",
             "display_name": "Gating Tegucigalpa, Honduras: The paradoxical effects of “Safer Barrios”",
-            "relevance_score": 173.18105,
+            "relevance_score": 171.5075,
             "publication_year": 2019,
             "publication_date": "2019-10-01",
             "ids": {
@@ -353,15 +353,15 @@
             "apc_paid": null,
             "fwci": 0.0,
             "has_fulltext": false,
-            "cited_by_count": 4,
+            "cited_by_count": 2,
             "citation_normalized_percentile": {
-                "value": 0.1718779,
+                "value": 0.18151932,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 90,
-                "max": 96
+                "min": 89,
+                "max": 95
             },
             "biblio": {
                 "volume": "44",
@@ -806,15 +806,14 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 38,
             "referenced_works": [
                 "https://openalex.org/W18856604",
                 "https://openalex.org/W132807525",
-                "https://openalex.org/W133664784",
                 "https://openalex.org/W1523105510",
                 "https://openalex.org/W1557892030",
                 "https://openalex.org/W1580483797",
@@ -845,10 +844,11 @@
                 "https://openalex.org/W2589103744",
                 "https://openalex.org/W2594191088",
                 "https://openalex.org/W3145167467",
+                "https://openalex.org/W3197618489",
+                "https://openalex.org/W4235434007",
                 "https://openalex.org/W4244984155",
                 "https://openalex.org/W4254770141",
                 "https://openalex.org/W4294625551",
-                "https://openalex.org/W4298700848",
                 "https://openalex.org/W4300823227"
             ],
             "related_works": [
@@ -1219,15 +1219,11 @@
                     "cited_by_count": 1
                 },
                 {
-                    "year": 2025,
-                    "cited_by_count": 1
-                },
-                {
                     "year": 2024,
-                    "cited_by_count": 2
+                    "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-14T16:39:01.820549",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2019-10-10T00:00:00"
         },
         {
@@ -1235,7 +1231,7 @@
             "doi": "https://doi.org/10.13140/rg.2.2.29112.30729",
             "title": "Pre-Feasibility Study for the Integration of an Aerial Ropeway in the Historic Center of Tegucigalpa, Honduras",
             "display_name": "Pre-Feasibility Study for the Integration of an Aerial Ropeway in the Historic Center of Tegucigalpa, Honduras",
-            "relevance_score": 144.33539,
+            "relevance_score": 145.04138,
             "publication_year": 2026,
             "publication_date": "2026-08-08",
             "ids": {
@@ -1534,8 +1530,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -1562,7 +1558,7 @@
             "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
             "title": "Aporte de la UNAH para el estudio de condiciones urbano-arquitectónicas del municipio de Marcala en el diseño de una terminal central de buses interurbanos",
             "display_name": "Aporte de la UNAH para el estudio de condiciones urbano-arquitectónicas del municipio de Marcala en el diseño de una terminal central de buses interurbanos",
-            "relevance_score": 33.56894,
+            "relevance_score": 33.608734,
             "publication_year": 2023,
             "publication_date": "2023-12-13",
             "ids": {
@@ -1742,15 +1738,18 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.0,
+            "fwci": 0.1863,
             "has_fulltext": true,
-            "cited_by_count": 0,
+            "cited_by_count": 1,
             "citation_normalized_percentile": {
-                "value": 0.16904058,
+                "value": 0.5434582,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
-            "cited_by_percentile_year": null,
+            "cited_by_percentile_year": {
+                "min": 92,
+                "max": 95
+            },
             "biblio": {
                 "volume": "5",
                 "issue": "VIII",
@@ -1966,8 +1965,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4389673530.pdf",
@@ -2494,8 +2493,13 @@
                     231
                 ]
             },
-            "counts_by_year": [],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "counts_by_year": [
+                {
+                    "year": 2026,
+                    "cited_by_count": 1
+                }
+            ],
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2023-12-14T00:00:00"
         },
         {
@@ -2503,7 +2507,7 @@
             "doi": "https://doi.org/10.51378/eca.v76i767.6472",
             "title": "Movilidad urbana socialmente sostenible, un modelo no explorado para las capitales del Triángulo Norte",
             "display_name": "Movilidad urbana socialmente sostenible, un modelo no explorado para las capitales del Triángulo Norte",
-            "relevance_score": 33.302994,
+            "relevance_score": 33.32555,
             "publication_year": 2021,
             "publication_date": "2021-12-30",
             "ids": {
@@ -2607,17 +2611,17 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.1844,
+            "fwci": 0.1758,
             "has_fulltext": true,
             "cited_by_count": 1,
             "citation_normalized_percentile": {
-                "value": 0.61809045,
+                "value": 0.59883946,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
                 "min": 89,
-                "max": 94
+                "max": 93
             },
             "biblio": {
                 "volume": "76",
@@ -2936,8 +2940,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4214503700.pdf",
@@ -2977,19 +2981,19 @@
                 "https://openalex.org/W2189572170",
                 "https://openalex.org/W2346476828",
                 "https://openalex.org/W2521473933",
+                "https://openalex.org/W2587093601",
                 "https://openalex.org/W2741817651",
                 "https://openalex.org/W2763679392",
                 "https://openalex.org/W2796023185",
                 "https://openalex.org/W2887231519",
-                "https://openalex.org/W2912574881",
-                "https://openalex.org/W2930027796",
                 "https://openalex.org/W2937839256",
+                "https://openalex.org/W2945792041",
                 "https://openalex.org/W2977316654",
                 "https://openalex.org/W2999108557",
                 "https://openalex.org/W3017122090",
                 "https://openalex.org/W3116162719",
+                "https://openalex.org/W4238488985",
                 "https://openalex.org/W4246371390",
-                "https://openalex.org/W4288400169",
                 "https://openalex.org/W6989728854"
             ],
             "related_works": [
@@ -3634,7 +3638,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2022-03-02T00:00:00"
         },
         {
@@ -3642,7 +3646,7 @@
             "doi": "https://doi.org/10.18845/tm.v32i4.4801",
             "title": "Rediseño del sistema de transporte de racimos de banano para la recolección en el campo Caso de estudio: Studer Innotec",
             "display_name": "Rediseño del sistema de transporte de racimos de banano para la recolección en el campo Caso de estudio: Studer Innotec",
-            "relevance_score": 19.65902,
+            "relevance_score": 19.685556,
             "publication_year": 2019,
             "publication_date": "2019-10-23",
             "ids": {
@@ -4149,8 +4153,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W2985001762.pdf",
@@ -4699,7 +4703,7 @@
             "doi": "https://doi.org/10.18235/0003972",
             "title": "Electric Mobility in Central America",
             "display_name": "Electric Mobility in Central America",
-            "relevance_score": 12.82849,
+            "relevance_score": 12.857084,
             "publication_year": 2021,
             "publication_date": "2021-12-09",
             "ids": {
@@ -4762,7 +4766,7 @@
             "apc_paid": null,
             "fwci": null,
             "has_fulltext": false,
-            "cited_by_count": 4,
+            "cited_by_count": 5,
             "citation_normalized_percentile": null,
             "cited_by_percentile_year": null,
             "biblio": {
@@ -5019,8 +5023,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -5316,6 +5320,10 @@
             },
             "counts_by_year": [
                 {
+                    "year": 2026,
+                    "cited_by_count": 1
+                },
+                {
                     "year": 2025,
                     "cited_by_count": 1
                 },
@@ -5328,7 +5336,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-16T09:59:22.235173",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2022-04-03T00:00:00"
         }
     ],

@@ -1,7 +1,7 @@
 {
     "meta": {
         "count": 3,
-        "db_response_time_ms": 279,
+        "db_response_time_ms": 230,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -197,7 +197,7 @@
             "doi": "https://doi.org/10.33412/idt.v15.2.2233",
             "title": "Gobernanza de datos públicos en Honduras",
             "display_name": "Gobernanza de datos públicos en Honduras",
-            "relevance_score": 189.3772,
+            "relevance_score": 189.37282,
             "publication_year": 2019,
             "publication_date": "2019-07-30",
             "ids": {
@@ -347,17 +347,17 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 2.1152,
+            "fwci": 1.9967,
             "has_fulltext": true,
             "cited_by_count": 2,
             "citation_normalized_percentile": {
-                "value": 0.90605553,
+                "value": 0.90026604,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": true
             },
             "cited_by_percentile_year": {
                 "min": 88,
-                "max": 94
+                "max": 93
             },
             "biblio": {
                 "volume": "15",
@@ -657,19 +657,22 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.8999999761581421
+                    "score": 0.8999999761581421,
+                    "id": "https://metadata.un.org/sdg/16"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": true,
+                "pdf": true
             },
-            "content_urls": null,
+            "content_urls": {
+                "pdf": "https://content.openalex.org/works/W2966447695.pdf",
+                "grobid_xml": "https://content.openalex.org/works/W2966447695.grobid-xml"
+            },
             "referenced_works_count": 2,
             "referenced_works": [
                 "https://openalex.org/W2027600959",
@@ -1212,7 +1215,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-10-08T09:06:37.294493",
+            "updated_date": "2026-11-04T10:54:05.112534",
             "created_date": "2019-08-13T00:00:00"
         },
         {
@@ -1220,7 +1223,7 @@
             "doi": "https://doi.org/10.5281/zenodo.8101855",
             "title": "(Memacu Reformasi Birokrasi dan Meningkatkan Daya Saing Indonesia",
             "display_name": "(Memacu Reformasi Birokrasi dan Meningkatkan Daya Saing Indonesia",
-            "relevance_score": 30.49242,
+            "relevance_score": 30.365528,
             "publication_year": 2023,
             "publication_date": "2023-06-30",
             "ids": {
@@ -1569,17 +1572,17 @@
             },
             "sustainable_development_goals": [
                 {
-                    "id": "https://metadata.un.org/sdg/16",
                     "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.8046000003814697
+                    "score": 0.8046000003814697,
+                    "id": "https://metadata.un.org/sdg/16"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -2435,7 +2438,7 @@
             "doi": null,
             "title": "Diseño de un manual de atención al cliente para los núcleos de apoyo contable y fiscal (naf) de la Universidad de Córdoba en los trámites y servicios tributarios ofertados por la Dirección de Impuestos y Aduanas Nacionales",
             "display_name": "Diseño de un manual de atención al cliente para los núcleos de apoyo contable y fiscal (naf) de la Universidad de Córdoba en los trámites y servicios tributarios ofertados por la Dirección de Impuestos y Aduanas Nacionales",
-            "relevance_score": 28.095312,
+            "relevance_score": 28.017443,
             "publication_year": 2021,
             "publication_date": "2021-09-30",
             "ids": {
@@ -2767,8 +2770,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
