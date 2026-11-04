@@ -1,0 +1,17 @@
+# Dependencias directas del proyecto (Python 3.12)
+# Instalar:  pip install -r requirements.txt
+
+# Analisis de datos
+pandas==3.0.5
+numpy==2.5.2
+openpyxl==3.1.5          # lectura/escritura de archivos .xlsx
+matplotlib==3.11.1
+
+# Consultas a la API de OpenAlex
+requests==2.34.2
+
+# Entorno de notebooks
+jupyter==1.1.1
+jupyterlab==4.6.3
+notebook==7.6.2
+ipykernel==7.3.0
