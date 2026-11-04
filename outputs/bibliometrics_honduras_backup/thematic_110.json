@@ -1,0 +1,4118 @@
+{
+    "meta": {
+        "count": 3,
+        "db_response_time_ms": 279,
+        "page": null,
+        "per_page": 100,
+        "next_cursor": null,
+        "groups_count": null,
+        "x_query": {
+            "oql": "get works from 2019–2026 about ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"public services access\" OR stemmed \"acceso a servicios públicos\" OR stemmed \"quality of public services\" OR stemmed \"Calidad de servicios públicos\" OR stemmed \"equity in access\" OR stemmed \"equidad en acceso\" OR stemmed \"coverage of public services\" OR stemmed \"cobertura de servicios públicos\" OR stemmed \"public services infraestructure\" OR stemmed \"infraestructura de servicios públicos\")) where type is ([article](article) or [report](report) or [conference-paper](conference-paper) or [book](book) or [book-chapter](book-chapter) or [dissertation](dissertation) or [conference-abstract](conference-abstract))",
+            "x_new_oql": "get works from 2019–2026 about ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"public services access\" OR stemmed \"acceso a servicios públicos\" OR stemmed \"quality of public services\" OR stemmed \"Calidad de servicios públicos\" OR stemmed \"equity in access\" OR stemmed \"equidad en acceso\" OR stemmed \"coverage of public services\" OR stemmed \"cobertura de servicios públicos\" OR stemmed \"public services infraestructure\" OR stemmed \"infraestructura de servicios públicos\")) where type is ([article](article) or [report](report) or [conference-paper](conference-paper) or [book](book) or [book-chapter](book-chapter) or [dissertation](dissertation) or [conference-abstract](conference-abstract))",
+            "oqo": {
+                "get_rows": "works",
+                "filter_rows": [
+                    {
+                        "column_id": "publication_year",
+                        "value": 2019,
+                        "operator": ">="
+                    },
+                    {
+                        "column_id": "publication_year",
+                        "value": 2026,
+                        "operator": "<="
+                    },
+                    {
+                        "join": "or",
+                        "filters": [
+                            {
+                                "column_id": "type",
+                                "value": "article"
+                            },
+                            {
+                                "column_id": "type",
+                                "value": "report"
+                            },
+                            {
+                                "column_id": "type",
+                                "value": "conference-paper"
+                            },
+                            {
+                                "column_id": "type",
+                                "value": "book"
+                            },
+                            {
+                                "column_id": "type",
+                                "value": "book-chapter"
+                            },
+                            {
+                                "column_id": "type",
+                                "value": "dissertation"
+                            },
+                            {
+                                "column_id": "type",
+                                "value": "conference-abstract"
+                            }
+                        ]
+                    },
+                    {
+                        "join": "or",
+                        "filters": [
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "Honduras",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "Honduran",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "Hondurans",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "hondureño",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "hondureña",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "hondureños",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "hondureñas",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "afrohondureño",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "afrohondureña",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "afrohondureños",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "afrohondureñas",
+                                "operator": "has"
+                            }
+                        ]
+                    },
+                    {
+                        "join": "or",
+                        "filters": [
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"public services access\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"acceso a servicios públicos\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"quality of public services\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"Calidad de servicios públicos\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"equity in access\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"equidad en acceso\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"coverage of public services\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"cobertura de servicios públicos\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"public services infraestructure\"",
+                                "operator": "has"
+                            },
+                            {
+                                "column_id": "title_abstract_keywords.search",
+                                "value": "\"infraestructura de servicios públicos\"",
+                                "operator": "has"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "url": "/works?filter=publication_year:2019-2026,type:article|report|conference-paper|book|book-chapter|dissertation|conference-abstract,title_abstract_keywords.search:Honduras|Honduran|Hondurans|hondure%C3%B1o|hondure%C3%B1a|hondure%C3%B1os|hondure%C3%B1as|afrohondure%C3%B1o|afrohondure%C3%B1a|afrohondure%C3%B1os|afrohondure%C3%B1as,title_abstract_keywords.search:%22public services access%22|%22acceso a servicios p%C3%BAblicos%22|%22quality of public services%22|%22Calidad de servicios p%C3%BAblicos%22|%22equity in access%22|%22equidad en acceso%22|%22coverage of public services%22|%22cobertura de servicios p%C3%BAblicos%22|%22public services infraestructure%22|%22infraestructura de servicios p%C3%BAblicos%22&per_page=100&cursor=%2A",
+            "order": "best matches first",
+            "order_default": true
+        },
+        "cost": {
+            "credits": 10,
+            "usd": 0.001,
+            "steps": [
+                {
+                    "credits": 10,
+                    "what": "a search"
+                }
+            ]
+        },
+        "cost_usd": 0.001,
+        "pages": 1,
+        "complete": true,
+        "duplicates_removed": 0
+    },
+    "results": [
+        {
+            "id": "https://openalex.org/W2966447695",
+            "doi": "https://doi.org/10.33412/idt.v15.2.2233",
+            "title": "Gobernanza de datos públicos en Honduras",
+            "display_name": "Gobernanza de datos públicos en Honduras",
+            "relevance_score": 189.3772,
+            "publication_year": 2019,
+            "publication_date": "2019-07-30",
+            "ids": {
+                "openalex": "https://openalex.org/W2966447695",
+                "doi": "https://doi.org/10.33412/idt.v15.2.2233",
+                "mag": "2966447695"
+            },
+            "language": "es",
+            "primary_location": {
+                "id": "doi:10.33412/idt.v15.2.2233",
+                "doi": "https://doi.org/10.33412/idt.v15.2.2233",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.33412/idt.v15.2.2233",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S4210186348",
+                    "display_name": "I+D Tecnológico",
+                    "issn_l": "1680-8894",
+                    "issn": [
+                        "1680-8894",
+                        "2219-6714"
+                    ],
+                    "is_oa": true,
+                    "is_in_doaj": true,
+                    "is_core": false,
+                    "listed_in": [
+                        "doaj",
+                        "erih-plus",
+                        "latindex"
+                    ],
+                    "host_organization": "https://openalex.org/I86831216",
+                    "host_organization_name": "Universidad Tecnológica de Panamá",
+                    "host_organization_lineage": [
+                        "https://openalex.org/I86831216"
+                    ],
+                    "host_organization_lineage_names": [],
+                    "type": "journal"
+                },
+                "license": "cc-by-nc-sa",
+                "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "I+D Tecnológico",
+                "raw_type": "journal-article"
+            },
+            "volume": null,
+            "type": "article",
+            "indexed_in": [
+                "crossref",
+                "doaj"
+            ],
+            "open_access": {
+                "is_oa": true,
+                "oa_status": "diamond",
+                "oa_url": "https://doi.org/10.33412/idt.v15.2.2233",
+                "any_repository_has_fulltext": true
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": "https://openalex.org/A5016595187",
+                        "display_name": "Fredis Dubal Medina Escoto",
+                        "orcid": "https://orcid.org/0000-0003-1451-9738",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0003-1451-9738"
+                        ]
+                    },
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I86831216",
+                            "display_name": "Universidad Tecnológica de Panamá",
+                            "ror": "https://ror.org/030ve2c48",
+                            "country_code": "PA",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I86831216"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "PA"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "Fredis Medina Escoto",
+                    "raw_affiliation_strings": [
+                        "Universidad Tecnológica de Panamá"
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Tecnológica de Panamá",
+                            "institution_ids": [
+                                "https://openalex.org/I86831216"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author_position": "last",
+                    "author": {
+                        "id": "https://openalex.org/A5063107577",
+                        "display_name": "Armando Jipsion",
+                        "orcid": "https://orcid.org/0000-0002-2018-4826",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0002-2018-4826"
+                        ]
+                    },
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I86831216",
+                            "display_name": "Universidad Tecnológica de Panamá",
+                            "ror": "https://ror.org/030ve2c48",
+                            "country_code": "PA",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I86831216"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "PA"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "Armando Jipsion",
+                    "raw_affiliation_strings": [
+                        "Universidad Tecnológica de Panamá"
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Tecnológica de Panamá",
+                            "institution_ids": [
+                                "https://openalex.org/I86831216"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 1,
+            "institutions_distinct_count": 1,
+            "corresponding_author_ids": [],
+            "corresponding_institution_ids": [
+                "https://openalex.org/I86831216"
+            ],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": 2.1152,
+            "has_fulltext": true,
+            "cited_by_count": 2,
+            "citation_normalized_percentile": {
+                "value": 0.90605553,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": true
+            },
+            "cited_by_percentile_year": {
+                "min": 88,
+                "max": 94
+            },
+            "biblio": {
+                "volume": "15",
+                "issue": "2",
+                "first_page": "46",
+                "last_page": "55"
+            },
+            "is_retracted": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T10953",
+                "display_name": "E-Government and Public Services",
+                "score": 0.9955999851226807,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/3320",
+                    "display_name": "Political Science and International Relations"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/33",
+                    "display_name": "Social Sciences"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T10953",
+                    "display_name": "E-Government and Public Services",
+                    "score": 0.9955999851226807,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3320",
+                        "display_name": "Political Science and International Relations"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T13364",
+                    "display_name": "Digitalization, Law, and Regulation",
+                    "score": 0.0008999999845400453,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3308",
+                        "display_name": "Law"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T13573",
+                    "display_name": "Government, Law, and Information Management",
+                    "score": 0.0005000000237487257,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3308",
+                        "display_name": "Law"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/e-government",
+                    "display_name": "e-government",
+                    "score": 0.7609999775886536
+                },
+                {
+                    "id": "https://openalex.org/keywords/interoperability",
+                    "display_name": "interoperability",
+                    "score": 0.5860000252723694
+                },
+                {
+                    "id": "https://openalex.org/keywords/digitalization-of-business-processes",
+                    "display_name": "digitalization of business processes",
+                    "score": 0.8730000257492065
+                },
+                {
+                    "id": "https://openalex.org/keywords/personal-data-protection",
+                    "display_name": "personal data protection",
+                    "score": 0.9980000257492065
+                },
+                {
+                    "id": "https://openalex.org/keywords/information-security",
+                    "display_name": "information security",
+                    "score": 0.9940000176429749
+                },
+                {
+                    "id": "https://openalex.org/keywords/digital-identity",
+                    "display_name": "digital identity",
+                    "score": 0.718999981880188
+                },
+                {
+                    "id": "https://openalex.org/keywords/public-service-quality",
+                    "display_name": "public service quality",
+                    "score": 0.7670000195503235
+                },
+                {
+                    "id": "https://openalex.org/keywords/transparency",
+                    "display_name": "transparency",
+                    "score": 0.5049999952316284
+                },
+                {
+                    "id": "https://openalex.org/keywords/honduras",
+                    "display_name": "Honduras",
+                    "score": 0.6380000114440918
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C17744445",
+                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
+                    "display_name": "Political science",
+                    "level": 0,
+                    "score": 0.673133134841919
+                },
+                {
+                    "id": "https://openalex.org/C15708023",
+                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
+                    "display_name": "Humanities",
+                    "level": 1,
+                    "score": 0.47480738162994385
+                },
+                {
+                    "id": "https://openalex.org/C138885662",
+                    "wikidata": "https://www.wikidata.org/wiki/Q5891",
+                    "display_name": "Philosophy",
+                    "level": 0,
+                    "score": 0.1620998978614807
+                }
+            ],
+            "mesh": [],
+            "locations_count": 3,
+            "locations": [
+                {
+                    "id": "doi:10.33412/idt.v15.2.2233",
+                    "doi": "https://doi.org/10.33412/idt.v15.2.2233",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.33412/idt.v15.2.2233",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4210186348",
+                        "display_name": "I+D Tecnológico",
+                        "issn_l": "1680-8894",
+                        "issn": [
+                            "1680-8894",
+                            "2219-6714"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": false,
+                        "listed_in": [
+                            "doaj",
+                            "erih-plus",
+                            "latindex"
+                        ],
+                        "host_organization": "https://openalex.org/I86831216",
+                        "host_organization_name": "Universidad Tecnológica de Panamá",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I86831216"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc-sa",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "I+D Tecnológico",
+                    "raw_type": "journal-article"
+                },
+                {
+                    "id": "pmh:oai:revistas.utp.ac.pa:article/2233",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://revistas.utp.ac.pa/index.php/id-tecnologico/article/view/2233",
+                    "pdf_url": "https://revistas.utp.ac.pa/index.php/id-tecnologico/article/download/2233/3140",
+                    "source": {
+                        "id": "https://openalex.org/S4210186348",
+                        "display_name": "I+D Tecnológico",
+                        "issn_l": "1680-8894",
+                        "issn": [
+                            "1680-8894",
+                            "2219-6714"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": true,
+                        "is_core": false,
+                        "listed_in": [
+                            "doaj",
+                            "erih-plus",
+                            "latindex"
+                        ],
+                        "host_organization": "https://openalex.org/I86831216",
+                        "host_organization_name": "Universidad Tecnológica de Panamá",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I86831216"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "journal"
+                    },
+                    "license": "cc-by-nc-sa",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "1680-8894",
+                    "raw_type": "info:eu-repo/semantics/article"
+                },
+                {
+                    "id": "pmh:oai:doaj.org/article:6a68d6df081145f2948f30e539637af3",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://doaj.org/article/6a68d6df081145f2948f30e539637af3",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306401280",
+                        "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": null,
+                        "host_organization_name": null,
+                        "host_organization_lineage": [],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "cc-by-sa",
+                    "license_id": "https://openalex.org/licenses/cc-by-sa",
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": "Revista de I + D Tecnológico, Vol 15, Iss 2, Pp 46-55 (2019)",
+                    "raw_type": "article"
+                }
+            ],
+            "best_oa_location": {
+                "id": "doi:10.33412/idt.v15.2.2233",
+                "doi": "https://doi.org/10.33412/idt.v15.2.2233",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.33412/idt.v15.2.2233",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S4210186348",
+                    "display_name": "I+D Tecnológico",
+                    "issn_l": "1680-8894",
+                    "issn": [
+                        "1680-8894",
+                        "2219-6714"
+                    ],
+                    "is_oa": true,
+                    "is_in_doaj": true,
+                    "is_core": false,
+                    "listed_in": [
+                        "doaj",
+                        "erih-plus",
+                        "latindex"
+                    ],
+                    "host_organization": "https://openalex.org/I86831216",
+                    "host_organization_name": "Universidad Tecnológica de Panamá",
+                    "host_organization_lineage": [
+                        "https://openalex.org/I86831216"
+                    ],
+                    "host_organization_lineage_names": [],
+                    "type": "journal"
+                },
+                "license": "cc-by-nc-sa",
+                "license_id": "https://openalex.org/licenses/cc-by-nc-sa",
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "I+D Tecnológico",
+                "raw_type": "journal-article"
+            },
+            "sustainable_development_goals": [
+                {
+                    "id": "https://metadata.un.org/sdg/16",
+                    "display_name": "Peace, justice, and strong institutions",
+                    "score": 0.8999999761581421
+                }
+            ],
+            "study_designs": [],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "pdf": false,
+                "grobid_xml": false
+            },
+            "content_urls": null,
+            "referenced_works_count": 2,
+            "referenced_works": [
+                "https://openalex.org/W2027600959",
+                "https://openalex.org/W2555582359"
+            ],
+            "related_works": [
+                "https://openalex.org/W7214849396",
+                "https://openalex.org/W7017299412",
+                "https://openalex.org/W7054480838",
+                "https://openalex.org/W7048695921",
+                "https://openalex.org/W3046441792",
+                "https://openalex.org/W4397001931",
+                "https://openalex.org/W4400176230",
+                "https://openalex.org/W7125602619",
+                "https://openalex.org/W6898725146",
+                "https://openalex.org/W2973025741"
+            ],
+            "abstract_inverted_index": {
+                "La": [
+                    0,
+                    130
+                ],
+                "gobernanza": [
+                    1,
+                    137,
+                    169
+                ],
+                "de": [
+                    2,
+                    21,
+                    27,
+                    38,
+                    45,
+                    47,
+                    50,
+                    66,
+                    68,
+                    70,
+                    85,
+                    93,
+                    97,
+                    100,
+                    102,
+                    106,
+                    111,
+                    117,
+                    124,
+                    127,
+                    132,
+                    138,
+                    155,
+                    162,
+                    164,
+                    172,
+                    179,
+                    197,
+                    211,
+                    215,
+                    221,
+                    237
+                ],
+                "datos": [
+                    3,
+                    107,
+                    174
+                ],
+                "públicos": [
+                    4,
+                    175
+                ],
+                "utilizados": [
+                    5
+                ],
+                "por": [
+                    6,
+                    89
+                ],
+                "los": [
+                    7,
+                    13,
+                    39,
+                    118,
+                    128,
+                    139,
+                    145,
+                    150,
+                    173,
+                    202,
+                    206,
+                    225,
+                    230
+                ],
+                "gobiernos": [
+                    8
+                ],
+                "para": [
+                    9,
+                    53
+                ],
+                "brindar": [
+                    10
+                ],
+                "servicios": [
+                    11,
+                    146,
+                    185
+                ],
+                "a": [
+                    12,
+                    149,
+                    201,
+                    205
+                ],
+                "ciudadanos,": [
+                    14
+                ],
+                "debe": [
+                    15
+                ],
+                "estar": [
+                    16
+                ],
+                "definida": [
+                    17
+                ],
+                "en": [
+                    18,
+                    78,
+                    234
+                ],
+                "un": [
+                    19,
+                    83
+                ],
+                "marco": [
+                    20
+                ],
+                "referencia": [
+                    22
+                ],
+                "que": [
+                    23
+                ],
+                "garantice": [
+                    24
+                ],
+                "su": [
+                    25,
+                    235
+                ],
+                "gestión": [
+                    26,
+                    86,
+                    171,
+                    222
+                ],
+                "forma": [
+                    28
+                ],
+                "transparente,": [
+                    29
+                ],
+                "ágil,": [
+                    30
+                ],
+                "accesible": [
+                    31
+                ],
+                "y": [
+                    32,
+                    56,
+                    62,
+                    109,
+                    120,
+                    157,
+                    170,
+                    192,
+                    199,
+                    204,
+                    217
+                ],
+                "segura,": [
+                    33
+                ],
+                "considerando": [
+                    34
+                ],
+                "la": [
+                    35,
+                    48,
+                    51,
+                    54,
+                    71,
+                    98,
+                    112,
+                    125,
+                    136,
+                    167,
+                    177,
+                    213
+                ],
+                "declaración": [
+                    36
+                ],
+                "universal": [
+                    37
+                ],
+                "derechos": [
+                    40
+                ],
+                "humanos": [
+                    41
+                ],
+                "[14],": [
+                    42
+                ],
+                "el": [
+                    43,
+                    57,
+                    63,
+                    195,
+                    219
+                ],
+                "principio": [
+                    44
+                ],
+                "salvaguardia": [
+                    46
+                ],
+                "seguridad": [
+                    49,
+                    110
+                ],
+                "Organización": [
+                    52
+                ],
+                "Cooperación": [
+                    55
+                ],
+                "Desarrollo": [
+                    58
+                ],
+                "Económico": [
+                    59
+                ],
+                "(OCDE)": [
+                    60
+                ],
+                "[15]": [
+                    61
+                ],
+                "Reglamento": [
+                    64
+                ],
+                "General": [
+                    65
+                ],
+                "Protección": [
+                    67,
+                    105
+                ],
+                "Datos": [
+                    69
+                ],
+                "Unión": [
+                    72
+                ],
+                "Europea": [
+                    73
+                ],
+                "[13].": [
+                    74
+                ],
+                "Para": [
+                    75
+                ],
+                "tal": [
+                    76
+                ],
+                "fin,": [
+                    77
+                ],
+                "este": [
+                    79
+                ],
+                "escrito": [
+                    80,
+                    209
+                ],
+                "se": [
+                    81,
+                    232
+                ],
+                "propone": [
+                    82,
+                    218
+                ],
+                "modelo": [
+                    84,
+                    134,
+                    220
+                ],
+                "organizacional": [
+                    87,
+                    223
+                ],
+                "compuesto": [
+                    88
+                ],
+                "cinco": [
+                    90,
+                    226
+                ],
+                "habilitadores:1.": [
+                    91
+                ],
+                "Marco": [
+                    92
+                ],
+                "interoperabilidad,": [
+                    94
+                ],
+                "2.": [
+                    95
+                ],
+                "Priorización": [
+                    96
+                ],
+                "digitalización": [
+                    99
+                ],
+                "procesos": [
+                    101
+                ],
+                "negocio,": [
+                    103
+                ],
+                "3.": [
+                    104
+                ],
+                "personales": [
+                    108
+                ],
+                "información,": [
+                    113
+                ],
+                "4.": [
+                    114
+                ],
+                "Identificación": [
+                    115
+                ],
+                "digital": [
+                    116
+                ],
+                "ciudadanos": [
+                    119,
+                    151,
+                    203
+                ],
+                "5.": [
+                    121
+                ],
+                "Mejora": [
+                    122
+                ],
+                "continua": [
+                    123
+                ],
+                "calidad": [
+                    126
+                ],
+                "servicios.": [
+                    129
+                ],
+                "implementación": [
+                    131
+                ],
+                "dicho": [
+                    133
+                ],
+                "dinamizará": [
+                    135
+                ],
+                "datos;": [
+                    140
+                ],
+                "con": [
+                    141,
+                    184,
+                    224
+                ],
+                "mayor": [
+                    142
+                ],
+                "relevancia": [
+                    143
+                ],
+                "cuando": [
+                    144
+                ],
+                "son": [
+                    147
+                ],
+                "prestados": [
+                    148
+                ],
+                "utilizando": [
+                    152
+                ],
+                "las": [
+                    153
+                ],
+                "tecnologías": [
+                    154
+                ],
+                "información": [
+                    156
+                ],
+                "comunicación": [
+                    158
+                ],
+                "(TIC)": [
+                    159
+                ],
+                "como": [
+                    160
+                ],
+                "parte": [
+                    161
+                ],
+                "iniciativas": [
+                    163
+                ],
+                "gobierno": [
+                    165
+                ],
+                "electrónico;": [
+                    166
+                ],
+                "correcta": [
+                    168
+                ],
+                "permitirá": [
+                    176
+                ],
+                "sostenibilidad": [
+                    178
+                ],
+                "operaciones": [
+                    180
+                ],
+                "electrónicas,": [
+                    181
+                ],
+                "permitiendo": [
+                    182,
+                    194
+                ],
+                "contar": [
+                    183
+                ],
+                "efectivos,": [
+                    186
+                ],
+                "seguros,": [
+                    187
+                ],
+                "ágiles,": [
+                    188
+                ],
+                "modernos,": [
+                    189
+                ],
+                "competitivos,": [
+                    190
+                ],
+                "ubicuos": [
+                    191
+                ],
+                "transparentes;": [
+                    193
+                ],
+                "ahorro": [
+                    196
+                ],
+                "tiempo": [
+                    198
+                ],
+                "dinero": [
+                    200
+                ],
+                "gobiernos.": [
+                    207
+                ],
+                "Este": [
+                    208
+                ],
+                "utiliza": [
+                    210
+                ],
+                "ejemplo": [
+                    212
+                ],
+                "situación": [
+                    214
+                ],
+                "Honduras": [
+                    216
+                ],
+                "componentes": [
+                    227
+                ],
+                "antes": [
+                    228
+                ],
+                "descritos,": [
+                    229
+                ],
+                "mismos": [
+                    231
+                ],
+                "presentan": [
+                    233
+                ],
+                "etapa": [
+                    236
+                ],
+                "diseño.": [
+                    238
+                ]
+            },
+            "counts_by_year": [
+                {
+                    "year": 2021,
+                    "cited_by_count": 1
+                },
+                {
+                    "year": 2019,
+                    "cited_by_count": 1
+                }
+            ],
+            "updated_date": "2026-10-08T09:06:37.294493",
+            "created_date": "2019-08-13T00:00:00"
+        },
+        {
+            "id": "https://openalex.org/W4382626586",
+            "doi": "https://doi.org/10.5281/zenodo.8101855",
+            "title": "(Memacu Reformasi Birokrasi dan Meningkatkan Daya Saing Indonesia",
+            "display_name": "(Memacu Reformasi Birokrasi dan Meningkatkan Daya Saing Indonesia",
+            "relevance_score": 30.49242,
+            "publication_year": 2023,
+            "publication_date": "2023-06-30",
+            "ids": {
+                "openalex": "https://openalex.org/W4382626586",
+                "doi": "https://doi.org/10.5281/zenodo.8101855"
+            },
+            "language": "id",
+            "primary_location": {
+                "id": "doi:10.5281/zenodo.8101855",
+                "doi": "https://doi.org/10.5281/zenodo.8101855",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.5281/zenodo.8101855",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S4306400562",
+                    "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+                    "issn_l": null,
+                    "issn": null,
+                    "is_oa": true,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [],
+                    "host_organization": "https://openalex.org/I67311998",
+                    "host_organization_name": "European Organization for Nuclear Research",
+                    "host_organization_lineage": [
+                        "https://openalex.org/I67311998"
+                    ],
+                    "host_organization_lineage_names": [],
+                    "type": "repository"
+                },
+                "license": "cc-by",
+                "license_id": "https://openalex.org/licenses/cc-by",
+                "version": null,
+                "is_accepted": false,
+                "is_published": false,
+                "raw_source_name": null,
+                "raw_type": "article-journal"
+            },
+            "volume": null,
+            "type": "article",
+            "indexed_in": [
+                "datacite"
+            ],
+            "open_access": {
+                "is_oa": true,
+                "oa_status": "green",
+                "oa_url": "https://doi.org/10.5281/zenodo.8101855",
+                "any_repository_has_fulltext": true
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": "https://openalex.org/A5092363513",
+                        "display_name": "Abi siddiq wannov",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Abi Siddiq Wannov",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                },
+                {
+                    "author_position": "last",
+                    "author": {
+                        "id": "https://openalex.org/A5092363481",
+                        "display_name": "S.Sos. Mimin Sundari Nasution",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": false,
+                    "raw_author_name": "Mimin Sundari Nasution, S.Sos.",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 0,
+            "institutions_distinct_count": 0,
+            "corresponding_author_ids": [],
+            "corresponding_institution_ids": [],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": 0.0,
+            "has_fulltext": false,
+            "cited_by_count": 0,
+            "citation_normalized_percentile": {
+                "value": 0.1168038,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": false
+            },
+            "cited_by_percentile_year": null,
+            "biblio": {
+                "volume": null,
+                "issue": null,
+                "first_page": null,
+                "last_page": null
+            },
+            "is_retracted": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T12687",
+                "display_name": "Public Administration in Developing Nations",
+                "score": 0.9775000214576721,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/3320",
+                    "display_name": "Political Science and International Relations"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/33",
+                    "display_name": "Social Sciences"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T12687",
+                    "display_name": "Public Administration in Developing Nations",
+                    "score": 0.9775000214576721,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3320",
+                        "display_name": "Political Science and International Relations"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T10213",
+                    "display_name": "Public Policy and Administration Research",
+                    "score": 0.013199999928474426,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3321",
+                        "display_name": "Public Administration"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T13988",
+                    "display_name": "Public Administration and Governance",
+                    "score": 0.006399999838322401,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3320",
+                        "display_name": "Political Science and International Relations"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/bureaucratic-reform",
+                    "display_name": "bureaucratic reform",
+                    "score": 0.7260000109672546
+                },
+                {
+                    "id": "https://openalex.org/keywords/public-administration-reform",
+                    "display_name": "public administration reform",
+                    "score": 0.5450000166893005
+                },
+                {
+                    "id": "https://openalex.org/keywords/good-governance",
+                    "display_name": "good governance",
+                    "score": 0.9020000100135803
+                },
+                {
+                    "id": "https://openalex.org/keywords/good-corporate-governance",
+                    "display_name": "good corporate governance",
+                    "score": 0.8740000128746033
+                },
+                {
+                    "id": "https://openalex.org/keywords/political-corruption",
+                    "display_name": "political corruption",
+                    "score": 0.36399999260902405
+                },
+                {
+                    "id": "https://openalex.org/keywords/public-service-quality",
+                    "display_name": "public service quality",
+                    "score": 0.5040000081062317
+                },
+                {
+                    "id": "https://openalex.org/keywords/state-owned-enterprises",
+                    "display_name": "state-owned enterprises",
+                    "score": 0.492000013589859
+                },
+                {
+                    "id": "https://openalex.org/keywords/economic-competitiveness",
+                    "display_name": "economic competitiveness",
+                    "score": 0.4399999976158142
+                },
+                {
+                    "id": "https://openalex.org/keywords/transparency",
+                    "display_name": "transparency",
+                    "score": 0.6460000276565552
+                },
+                {
+                    "id": "https://openalex.org/keywords/citizen-participation",
+                    "display_name": "citizen participation",
+                    "score": 0.49000000953674316
+                },
+                {
+                    "id": "https://openalex.org/keywords/rule-of-law",
+                    "display_name": "rule of law",
+                    "score": 0.578000009059906
+                },
+                {
+                    "id": "https://openalex.org/keywords/efficiency-and-effectiveness",
+                    "display_name": "efficiency and effectiveness",
+                    "score": 0.5989999771118164
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C17744445",
+                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
+                    "display_name": "Political science",
+                    "level": 0,
+                    "score": 0.650159478187561
+                }
+            ],
+            "mesh": [],
+            "locations_count": 2,
+            "locations": [
+                {
+                    "id": "doi:10.5281/zenodo.8101855",
+                    "doi": "https://doi.org/10.5281/zenodo.8101855",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.5281/zenodo.8101855",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306400562",
+                        "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": true,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I67311998",
+                        "host_organization_name": "European Organization for Nuclear Research",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I67311998"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": null,
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "article-journal"
+                },
+                {
+                    "id": "doi:10.5281/zenodo.8101856",
+                    "doi": "https://doi.org/10.5281/zenodo.8101856",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.5281/zenodo.8101856",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306400562",
+                        "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": true,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I67311998",
+                        "host_organization_name": "European Organization for Nuclear Research",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I67311998"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": null,
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "article-journal"
+                }
+            ],
+            "best_oa_location": {
+                "id": "doi:10.5281/zenodo.8101855",
+                "doi": "https://doi.org/10.5281/zenodo.8101855",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.5281/zenodo.8101855",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S4306400562",
+                    "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+                    "issn_l": null,
+                    "issn": null,
+                    "is_oa": true,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [],
+                    "host_organization": "https://openalex.org/I67311998",
+                    "host_organization_name": "European Organization for Nuclear Research",
+                    "host_organization_lineage": [
+                        "https://openalex.org/I67311998"
+                    ],
+                    "host_organization_lineage_names": [],
+                    "type": "repository"
+                },
+                "license": "cc-by",
+                "license_id": "https://openalex.org/licenses/cc-by",
+                "version": null,
+                "is_accepted": false,
+                "is_published": false,
+                "raw_source_name": null,
+                "raw_type": "article-journal"
+            },
+            "sustainable_development_goals": [
+                {
+                    "id": "https://metadata.un.org/sdg/16",
+                    "display_name": "Peace, justice, and strong institutions",
+                    "score": 0.8046000003814697
+                }
+            ],
+            "study_designs": [],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "pdf": false,
+                "grobid_xml": false
+            },
+            "content_urls": null,
+            "referenced_works_count": 0,
+            "referenced_works": [],
+            "related_works": [
+                "https://openalex.org/W6931879154",
+                "https://openalex.org/W3152840982",
+                "https://openalex.org/W4396595156",
+                "https://openalex.org/W2763748801",
+                "https://openalex.org/W2946306949",
+                "https://openalex.org/W4382915989",
+                "https://openalex.org/W7216171410",
+                "https://openalex.org/W3214385118",
+                "https://openalex.org/W2581148248",
+                "https://openalex.org/W3119386200"
+            ],
+            "abstract_inverted_index": {
+                "LATAR": [
+                    0
+                ],
+                "BELAKANG": [
+                    1
+                ],
+                "Pada": [
+                    2
+                ],
+                "masa": [
+                    3
+                ],
+                "Orde": [
+                    4
+                ],
+                "Baru,": [
+                    5
+                ],
+                "birokrasi": [
+                    6,
+                    11,
+                    13,
+                    47,
+                    74,
+                    114,
+                    232,
+                    264
+                ],
+                "publik": [
+                    7,
+                    152,
+                    233
+                ],
+                "selalu": [
+                    8
+                ],
+                "disebut": [
+                    9
+                ],
+                "sebagai": [
+                    10,
+                    49,
+                    105,
+                    266
+                ],
+                "atau": [
+                    12,
+                    36
+                ],
+                "yang": [
+                    14,
+                    39,
+                    67,
+                    80,
+                    118,
+                    146,
+                    153,
+                    167,
+                    171,
+                    188,
+                    261,
+                    267,
+                    303,
+                    323
+                ],
+                "membingungkan;": [
+                    15
+                ],
+                "fenomena": [
+                    16,
+                    141
+                ],
+                "lambat,": [
+                    17
+                ],
+                "tidak": [
+                    18,
+                    20,
+                    22,
+                    234,
+                    289,
+                    337
+                ],
+                "profesional,": [
+                    19
+                ],
+                "kompetitif,": [
+                    21
+                ],
+                "efisien,": [
+                    23
+                ],
+                "besar": [
+                    24,
+                    148
+                ],
+                "dan": [
+                    25,
+                    54,
+                    87,
+                    101,
+                    156,
+                    194,
+                    201,
+                    229,
+                    248,
+                    331
+                ],
+                "korup.": [
+                    26
+                ],
+                "Salah": [
+                    27
+                ],
+                "satu": [
+                    28
+                ],
+                "asal": [
+                    29
+                ],
+                "muasal": [
+                    30
+                ],
+                "reformasi": [
+                    31,
+                    73,
+                    113,
+                    239
+                ],
+                "(1998)": [
+                    32
+                ],
+                "adalah": [
+                    33,
+                    75
+                ],
+                "mengubah": [
+                    34
+                ],
+                "image": [
+                    35
+                ],
+                "positioning": [
+                    37
+                ],
+                "negatif": [
+                    38
+                ],
+                "dikenal": [
+                    40
+                ],
+                "dengan": [
+                    41,
+                    82,
+                    116,
+                    178,
+                    184,
+                    272,
+                    325,
+                    340
+                ],
+                "patologi": [
+                    42
+                ],
+                "birokrasi.": [
+                    43
+                ],
+                "Secara": [
+                    44
+                ],
+                "singkat": [
+                    45
+                ],
+                "Reformasi": [
+                    46
+                ],
+                "diartikan": [
+                    48
+                ],
+                "upaya": [
+                    50
+                ],
+                "untuk": [
+                    51,
+                    111,
+                    149
+                ],
+                "melakukan": [
+                    52
+                ],
+                "pembaharuan": [
+                    53
+                ],
+                "perubahan": [
+                    55
+                ],
+                "mendasar": [
+                    56
+                ],
+                "terhadap": [
+                    57
+                ],
+                "sistem": [
+                    58,
+                    185
+                ],
+                "penyelenggaraan": [
+                    59
+                ],
+                "pemerintah": [
+                    60,
+                    66
+                ],
+                "dalam": [
+                    61,
+                    91,
+                    206,
+                    321
+                ],
+                "rangka": [
+                    62,
+                    92
+                ],
+                "mewujudkan": [
+                    63
+                ],
+                "tata": [
+                    64,
+                    77,
+                    164
+                ],
+                "kelola": [
+                    65,
+                    78,
+                    165
+                ],
+                "baik": [
+                    68,
+                    81,
+                    155,
+                    168,
+                    237
+                ],
+                "(good": [
+                    69
+                ],
+                "governance).": [
+                    70
+                ],
+                "Tujuan": [
+                    71
+                ],
+                "dari": [
+                    72,
+                    300,
+                    309
+                ],
+                "terwujudnya": [
+                    76
+                ],
+                "pemerintahan": [
+                    79
+                ],
+                "aparatur": [
+                    83
+                ],
+                "berintegritas": [
+                    84
+                ],
+                "tinggi,": [
+                    85
+                ],
+                "produktif,": [
+                    86
+                ],
+                "melayani": [
+                    88
+                ],
+                "secara": [
+                    89
+                ],
+                "prima": [
+                    90
+                ],
+                "meningkatkan": [
+                    93
+                ],
+                "kepercayaan": [
+                    94
+                ],
+                "publik.": [
+                    95
+                ],
+                "Kementerian": [
+                    96,
+                    122
+                ],
+                "Koordinator": [
+                    97
+                ],
+                "Bidang": [
+                    98
+                ],
+                "Pembangunan": [
+                    99
+                ],
+                "Manusia": [
+                    100
+                ],
+                "Kebudayaan": [
+                    102
+                ],
+                "(Kemenko": [
+                    103
+                ],
+                "PMK)": [
+                    104
+                ],
+                "instansi": [
+                    106
+                ],
+                "Pemerintah": [
+                    107
+                ],
+                "juga": [
+                    108
+                ],
+                "memiliki": [
+                    109,
+                    144
+                ],
+                "kewajiban": [
+                    110
+                ],
+                "melaksanakan": [
+                    112
+                ],
+                "sesuai": [
+                    115
+                ],
+                "arah": [
+                    117
+                ],
+                "telah": [
+                    119
+                ],
+                "ditetapkan": [
+                    120
+                ],
+                "oleh": [
+                    121,
+                    173
+                ],
+                "Pendayagunaan": [
+                    123
+                ],
+                "Aparatur": [
+                    124,
+                    334
+                ],
+                "Negara.": [
+                    125
+                ],
+                "Dalam": [
+                    126,
+                    254
+                ],
+                "pandangan": [
+                    127
+                ],
+                "Lord": [
+                    128
+                ],
+                "Acton,": [
+                    129
+                ],
+                "power": [
+                    130,
+                    135
+                ],
+                "tends": [
+                    131,
+                    136
+                ],
+                "to": [
+                    132,
+                    137
+                ],
+                "corrupt.": [
+                    133
+                ],
+                "Absolutely": [
+                    134
+                ],
+                "corrupt": [
+                    138
+                ],
+                "absolutely.": [
+                    139
+                ],
+                "Karena": [
+                    140
+                ],
+                "tersebut,": [
+                    142
+                ],
+                "Indonesia": [
+                    143,
+                    265,
+                    288,
+                    294,
+                    319
+                ],
+                "kekuatan": [
+                    145
+                ],
+                "lebih": [
+                    147,
+                    154,
+                    236
+                ],
+                "menjamin": [
+                    150
+                ],
+                "pelayanan": [
+                    151
+                ],
+                "lancar": [
+                    157
+                ],
+                "serta": [
+                    158
+                ],
+                "peningkatan": [
+                    159
+                ],
+                "daya": [
+                    160
+                ],
+                "saingnya,": [
+                    161
+                ],
+                "termasuk": [
+                    162,
+                    291,
+                    320
+                ],
+                "penerapan": [
+                    163
+                ],
+                "perusahaan": [
+                    166,
+                    187
+                ],
+                "-": [
+                    169
+                ],
+                "istilah": [
+                    170
+                ],
+                "diperkenalkan": [
+                    172
+                ],
+                "Dana": [
+                    174
+                ],
+                "Moneter": [
+                    175
+                ],
+                "Internasional": [
+                    176
+                ],
+                "sehubungan": [
+                    177
+                ],
+                "ekonomi": [
+                    179
+                ],
+                "pasca": [
+                    180
+                ],
+                "krisis.": [
+                    181
+                ],
+                "Yang": [
+                    182
+                ],
+                "dimaksud": [
+                    183
+                ],
+                "manajemen": [
+                    186,
+                    193
+                ],
+                "mencerminkan": [
+                    189
+                ],
+                "hubungan": [
+                    190
+                ],
+                "sinergis": [
+                    191
+                ],
+                "antara": [
+                    192
+                ],
+                "pemegang": [
+                    195
+                ],
+                "saham,": [
+                    196
+                ],
+                "kreditur,": [
+                    197
+                ],
+                "dewan": [
+                    198
+                ],
+                "direksi,": [
+                    199
+                ],
+                "pemasok": [
+                    200
+                ],
+                "pemangku": [
+                    202
+                ],
+                "kepentingan": [
+                    203
+                ],
+                "lainnya": [
+                    204
+                ],
+                "(Nindyo": [
+                    205
+                ],
+                "Khairandy,": [
+                    207
+                ],
+                "2007).": [
+                    208
+                ],
+                "Konsep": [
+                    209
+                ],
+                "good": [
+                    210,
+                    215
+                ],
+                "corporate": [
+                    211
+                ],
+                "governance,": [
+                    212,
+                    216
+                ],
+                "pengembangan": [
+                    213
+                ],
+                "konsep": [
+                    214
+                ],
+                "meliputi": [
+                    217
+                ],
+                "unsur": [
+                    218
+                ],
+                "partisipasi,": [
+                    219
+                ],
+                "supremasi": [
+                    220
+                ],
+                "hukum,": [
+                    221
+                ],
+                "keterbukaan,": [
+                    222
+                ],
+                "tanggung": [
+                    223
+                ],
+                "jawab,": [
+                    224
+                ],
+                "orientasi": [
+                    225
+                ],
+                "konsensus,": [
+                    226
+                ],
+                "keadilan,": [
+                    227
+                ],
+                "efektifitas": [
+                    228
+                ],
+                "efisiensi.": [
+                    230
+                ],
+                "Namun,": [
+                    231
+                ],
+                "bernasib": [
+                    235
+                ],
+                "sejak": [
+                    238
+                ],
+                "1998,": [
+                    240
+                ],
+                "setidaknya": [
+                    241
+                ],
+                "menurut": [
+                    242
+                ],
+                "laporan": [
+                    243
+                ],
+                "tahunan": [
+                    244
+                ],
+                "Konsultan": [
+                    245
+                ],
+                "Risiko": [
+                    246
+                ],
+                "Politik": [
+                    247
+                ],
+                "Ekonomi": [
+                    249
+                ],
+                "Hong": [
+                    250
+                ],
+                "1": [
+                    251
+                ],
+                "Kong": [
+                    252
+                ],
+                "(PERC).": [
+                    253
+                ],
+                "laporannya,": [
+                    255
+                ],
+                "PERC": [
+                    256
+                ],
+                "menghimpun": [
+                    257
+                ],
+                "peringkat": [
+                    258,
+                    298
+                ],
+                "pengusaha": [
+                    259
+                ],
+                "asing": [
+                    260
+                ],
+                "terus": [
+                    262
+                ],
+                "menempatkan": [
+                    263
+                ],
+                "terburuk": [
+                    268
+                ],
+                "di": [
+                    269
+                ],
+                "dunia;": [
+                    270
+                ],
+                "Negara": [
+                    271,
+                    336
+                ],
+                "tingkat": [
+                    273
+                ],
+                "korupsi": [
+                    274
+                ],
+                "tertinggi": [
+                    275
+                ],
+                "(Makka,": [
+                    276
+                ],
+                "2004).": [
+                    277
+                ],
+                "Selain": [
+                    278
+                ],
+                "itu,": [
+                    279
+                ],
+                "hasil": [
+                    280
+                ],
+                "Indeks": [
+                    281,
+                    305,
+                    333,
+                    341
+                ],
+                "Persepsi": [
+                    282,
+                    306,
+                    342
+                ],
+                "Korupsi": [
+                    283,
+                    307
+                ],
+                "Transparency": [
+                    284
+                ],
+                "International": [
+                    285
+                ],
+                "menunjukkan": [
+                    286
+                ],
+                "bahwa": [
+                    287
+                ],
+                "lagi": [
+                    290
+                ],
+                "negara": [
+                    292,
+                    302
+                ],
+                "terkorup.": [
+                    293
+                ],
+                "saat": [
+                    295
+                ],
+                "ini": [
+                    296
+                ],
+                "menempati": [
+                    297
+                ],
+                "126": [
+                    299
+                ],
+                "180": [
+                    301
+                ],
+                "disurvei.": [
+                    304
+                ],
+                "meningkat": [
+                    308
+                ],
+                "0,3": [
+                    310
+                ],
+                "pada": [
+                    311,
+                    316
+                ],
+                "tahun": [
+                    312,
+                    317
+                ],
+                "2007": [
+                    313
+                ],
+                "menjadi": [
+                    314
+                ],
+                "2,6": [
+                    315
+                ],
+                "2008.": [
+                    318
+                ],
+                "kelompok": [
+                    322
+                ],
+                "sama": [
+                    324
+                ],
+                "Eritrea,": [
+                    326
+                ],
+                "Guyana,": [
+                    327
+                ],
+                "Honduras,": [
+                    328
+                ],
+                "Libya,": [
+                    329
+                ],
+                "Mozambik,": [
+                    330
+                ],
+                "Uganda.": [
+                    332
+                ],
+                "Sipil": [
+                    335
+                ],
+                "jauh": [
+                    338
+                ],
+                "berbeda": [
+                    339
+                ],
+                "Korupsi.": [
+                    343
+                ]
+            },
+            "counts_by_year": [],
+            "updated_date": "2026-10-07T09:51:55.459714",
+            "created_date": "2023-06-30T00:00:00"
+        },
+        {
+            "id": "https://openalex.org/W7159735624",
+            "doi": null,
+            "title": "Diseño de un manual de atención al cliente para los núcleos de apoyo contable y fiscal (naf) de la Universidad de Córdoba en los trámites y servicios tributarios ofertados por la Dirección de Impuestos y Aduanas Nacionales",
+            "display_name": "Diseño de un manual de atención al cliente para los núcleos de apoyo contable y fiscal (naf) de la Universidad de Córdoba en los trámites y servicios tributarios ofertados por la Dirección de Impuestos y Aduanas Nacionales",
+            "relevance_score": 28.095312,
+            "publication_year": 2021,
+            "publication_date": "2021-09-30",
+            "ids": {
+                "openalex": "https://openalex.org/W7159735624"
+            },
+            "language": "es",
+            "primary_location": {
+                "id": "pmh:oai:repositorio.unicordoba.edu.co:ucordoba/4595",
+                "doi": null,
+                "is_oa": true,
+                "landing_page_url": "https://repositorio.unicordoba.edu.co/handle/ucordoba/4595",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S7407055401",
+                    "display_name": "Repositorio Universidad de Córdoba",
+                    "issn_l": null,
+                    "issn": null,
+                    "is_oa": false,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [],
+                    "host_organization": null,
+                    "host_organization_name": null,
+                    "host_organization_lineage": [],
+                    "host_organization_lineage_names": [],
+                    "type": "repository"
+                },
+                "license": "cc-by-nc-nd",
+                "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                "version": "submittedVersion",
+                "is_accepted": false,
+                "is_published": false,
+                "raw_source_name": null,
+                "raw_type": "info:eu-repo/semantics/bachelorThesis"
+            },
+            "volume": null,
+            "type": "dissertation",
+            "indexed_in": [],
+            "open_access": {
+                "is_oa": true,
+                "oa_status": "green",
+                "oa_url": "https://repositorio.unicordoba.edu.co/handle/ucordoba/4595",
+                "any_repository_has_fulltext": true
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": "https://openalex.org/A5134984181",
+                        "display_name": "Edna Rocio Sandon Mejia",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [],
+                    "countries": [],
+                    "is_corresponding": true,
+                    "raw_author_name": "Sandon Mejia, Edna Rocio",
+                    "raw_affiliation_strings": [],
+                    "raw_orcid": null,
+                    "affiliations": []
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 0,
+            "institutions_distinct_count": 0,
+            "corresponding_author_ids": [
+                "https://openalex.org/A5134984181"
+            ],
+            "corresponding_institution_ids": [],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": null,
+            "has_fulltext": false,
+            "cited_by_count": 0,
+            "citation_normalized_percentile": null,
+            "cited_by_percentile_year": null,
+            "biblio": {
+                "volume": null,
+                "issue": null,
+                "first_page": null,
+                "last_page": null
+            },
+            "is_retracted": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T10154",
+                "display_name": "Customer Service Quality and Loyalty",
+                "score": 0.4684999883174896,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/1407",
+                    "display_name": "Organizational Behavior and Human Resource Management"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/14",
+                    "display_name": "Business, Management and Accounting"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T10154",
+                    "display_name": "Customer Service Quality and Loyalty",
+                    "score": 0.4684999883174896,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1407",
+                        "display_name": "Organizational Behavior and Human Resource Management"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/14",
+                        "display_name": "Business, Management and Accounting"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T12687",
+                    "display_name": "Public Administration in Developing Nations",
+                    "score": 0.15889999270439148,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3320",
+                        "display_name": "Political Science and International Relations"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T11726",
+                    "display_name": "Organizational Management and Innovation",
+                    "score": 0.10890000313520432,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1407",
+                        "display_name": "Organizational Behavior and Human Resource Management"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/14",
+                        "display_name": "Business, Management and Accounting"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/tax-compliance",
+                    "display_name": "tax compliance",
+                    "score": 0.5429999828338623
+                },
+                {
+                    "id": "https://openalex.org/keywords/public-service-quality",
+                    "display_name": "public service quality",
+                    "score": 0.3970000147819519
+                },
+                {
+                    "id": "https://openalex.org/keywords/tax-services",
+                    "display_name": "tax services",
+                    "score": 0.31200000643730164
+                },
+                {
+                    "id": "https://openalex.org/keywords/university-of-cordoba",
+                    "display_name": "Universidad de Córdoba",
+                    "score": 0.7820000052452087
+                },
+                {
+                    "id": "https://openalex.org/keywords/tax-evasion-reduction",
+                    "display_name": "tax evasion reduction",
+                    "score": 0.4090000092983246
+                },
+                {
+                    "id": "https://openalex.org/keywords/voluntary-tax-compliance",
+                    "display_name": "voluntary tax compliance",
+                    "score": 0.6370000243186951
+                },
+                {
+                    "id": "https://openalex.org/keywords/user-satisfaction",
+                    "display_name": "user satisfaction",
+                    "score": 0.38100001215934753
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C15708023",
+                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
+                    "display_name": "Humanities",
+                    "level": 1,
+                    "score": 0.48170000314712524
+                },
+                {
+                    "id": "https://openalex.org/C17744445",
+                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
+                    "display_name": "Political science",
+                    "level": 0,
+                    "score": 0.45010000467300415
+                },
+                {
+                    "id": "https://openalex.org/C205649164",
+                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
+                    "display_name": "Geography",
+                    "level": 0,
+                    "score": 0.36230000853538513
+                },
+                {
+                    "id": "https://openalex.org/C138885662",
+                    "wikidata": "https://www.wikidata.org/wiki/Q5891",
+                    "display_name": "Philosophy",
+                    "level": 0,
+                    "score": 0.3140999972820282
+                },
+                {
+                    "id": "https://openalex.org/C58640448",
+                    "wikidata": "https://www.wikidata.org/wiki/Q42515",
+                    "display_name": "Cartography",
+                    "level": 1,
+                    "score": 0.303600013256073
+                },
+                {
+                    "id": "https://openalex.org/C549774020",
+                    "wikidata": "https://www.wikidata.org/wiki/Q851147",
+                    "display_name": "Welfare economics",
+                    "level": 1,
+                    "score": 0.21279999613761902
+                },
+                {
+                    "id": "https://openalex.org/C144024400",
+                    "wikidata": "https://www.wikidata.org/wiki/Q21201",
+                    "display_name": "Sociology",
+                    "level": 0,
+                    "score": 0.19779999554157257
+                },
+                {
+                    "id": "https://openalex.org/C188198153",
+                    "wikidata": "https://www.wikidata.org/wiki/Q1613840",
+                    "display_name": "Limiting",
+                    "level": 2,
+                    "score": 0.1949000060558319
+                },
+                {
+                    "id": "https://openalex.org/C2986587452",
+                    "wikidata": "https://www.wikidata.org/wiki/Q938438",
+                    "display_name": "Statistical analysis",
+                    "level": 2,
+                    "score": 0.18330000340938568
+                },
+                {
+                    "id": "https://openalex.org/C2779343474",
+                    "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+                    "display_name": "Context (archaeology)",
+                    "level": 2,
+                    "score": 0.17839999496936798
+                }
+            ],
+            "mesh": [],
+            "locations_count": 1,
+            "locations": [
+                {
+                    "id": "pmh:oai:repositorio.unicordoba.edu.co:ucordoba/4595",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://repositorio.unicordoba.edu.co/handle/ucordoba/4595",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S7407055401",
+                        "display_name": "Repositorio Universidad de Córdoba",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": null,
+                        "host_organization_name": null,
+                        "host_organization_lineage": [],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "cc-by-nc-nd",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": null,
+                    "raw_type": "info:eu-repo/semantics/bachelorThesis"
+                }
+            ],
+            "best_oa_location": {
+                "id": "pmh:oai:repositorio.unicordoba.edu.co:ucordoba/4595",
+                "doi": null,
+                "is_oa": true,
+                "landing_page_url": "https://repositorio.unicordoba.edu.co/handle/ucordoba/4595",
+                "pdf_url": null,
+                "source": {
+                    "id": "https://openalex.org/S7407055401",
+                    "display_name": "Repositorio Universidad de Córdoba",
+                    "issn_l": null,
+                    "issn": null,
+                    "is_oa": false,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [],
+                    "host_organization": null,
+                    "host_organization_name": null,
+                    "host_organization_lineage": [],
+                    "host_organization_lineage_names": [],
+                    "type": "repository"
+                },
+                "license": "cc-by-nc-nd",
+                "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                "version": "submittedVersion",
+                "is_accepted": false,
+                "is_published": false,
+                "raw_source_name": null,
+                "raw_type": "info:eu-repo/semantics/bachelorThesis"
+            },
+            "sustainable_development_goals": [],
+            "study_designs": [],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "pdf": false,
+                "grobid_xml": false
+            },
+            "content_urls": null,
+            "referenced_works_count": 0,
+            "referenced_works": [],
+            "related_works": [
+                "https://openalex.org/W4390767728",
+                "https://openalex.org/W7215013360",
+                "https://openalex.org/W7202234972",
+                "https://openalex.org/W7133060365",
+                "https://openalex.org/W7214853360",
+                "https://openalex.org/W7159746248",
+                "https://openalex.org/W7215005210",
+                "https://openalex.org/W7214845604",
+                "https://openalex.org/W7132991591",
+                "https://openalex.org/W7214849901"
+            ],
+            "abstract_inverted_index": {
+                "Uno": [
+                    0
+                ],
+                "de": [
+                    1,
+                    9,
+                    24,
+                    38,
+                    45,
+                    60,
+                    69,
+                    80,
+                    93,
+                    131,
+                    139,
+                    166,
+                    179,
+                    221,
+                    245,
+                    253,
+                    266,
+                    269,
+                    274,
+                    283,
+                    286,
+                    298,
+                    309,
+                    315,
+                    317,
+                    322,
+                    335,
+                    351,
+                    362,
+                    382,
+                    392,
+                    413,
+                    421,
+                    423,
+                    426,
+                    429,
+                    438,
+                    444,
+                    447,
+                    458,
+                    471,
+                    482,
+                    485,
+                    495,
+                    513,
+                    540,
+                    547,
+                    563,
+                    574,
+                    577,
+                    585,
+                    592,
+                    598,
+                    601,
+                    607,
+                    626,
+                    640,
+                    661
+                ],
+                "los": [
+                    2,
+                    46,
+                    61,
+                    66,
+                    98,
+                    129,
+                    158,
+                    216,
+                    270,
+                    284,
+                    296,
+                    325,
+                    336,
+                    349,
+                    504,
+                    527,
+                    548,
+                    641
+                ],
+                "componentes": [
+                    3
+                ],
+                "más": [
+                    4,
+                    27,
+                    190,
+                    263,
+                    611
+                ],
+                "influyentes": [
+                    5
+                ],
+                "en": [
+                    6,
+                    32,
+                    56,
+                    174,
+                    183,
+                    199,
+                    304,
+                    360,
+                    399,
+                    479,
+                    488,
+                    571,
+                    632
+                ],
+                "la": [
+                    7,
+                    16,
+                    25,
+                    43,
+                    103,
+                    111,
+                    164,
+                    171,
+                    175,
+                    237,
+                    243,
+                    275,
+                    281,
+                    313,
+                    390,
+                    409,
+                    456,
+                    483,
+                    489,
+                    496,
+                    508,
+                    522,
+                    583,
+                    599,
+                    624,
+                    634,
+                    648,
+                    656
+                ],
+                "operación": [
+                    8
+                ],
+                "toda": [
+                    10,
+                    70
+                ],
+                "institución,": [
+                    11
+                ],
+                "organización": [
+                    12
+                ],
+                "o": [
+                    13,
+                    542,
+                    550
+                ],
+                "empresa": [
+                    14
+                ],
+                "es": [
+                    15,
+                    134,
+                    250
+                ],
+                "atención": [
+                    17,
+                    94,
+                    180,
+                    323,
+                    410,
+                    509,
+                    578,
+                    608,
+                    618
+                ],
+                "al": [
+                    18,
+                    146,
+                    148,
+                    181,
+                    510,
+                    579,
+                    619
+                ],
+                "cliente,": [
+                    19
+                ],
+                "pues": [
+                    20
+                ],
+                "controlar": [
+                    21
+                ],
+                "su": [
+                    22,
+                    144,
+                    193
+                ],
+                "ejecución": [
+                    23
+                ],
+                "manera": [
+                    26
+                ],
+                "eficiente": [
+                    28,
+                    235
+                ],
+                "se": [
+                    29,
+                    54,
+                    186,
+                    196,
+                    357,
+                    440,
+                    467,
+                    569
+                ],
+                "puede": [
+                    30,
+                    531
+                ],
+                "convertir": [
+                    31
+                ],
+                "un": [
+                    33,
+                    91,
+                    251,
+                    469,
+                    575
+                ],
+                "aspecto": [
+                    34
+                ],
+                "diferenciador": [
+                    35
+                ],
+                "y": [
+                    36,
+                    42,
+                    87,
+                    96,
+                    116,
+                    195,
+                    206,
+                    212,
+                    223,
+                    231,
+                    247,
+                    280,
+                    301,
+                    312,
+                    329,
+                    333,
+                    340,
+                    354,
+                    373,
+                    404,
+                    411,
+                    419,
+                    460,
+                    474,
+                    524,
+                    595,
+                    603,
+                    613,
+                    621,
+                    629,
+                    653
+                ],
+                "capaz": [
+                    37
+                ],
+                "otorgar": [
+                    39
+                ],
+                "el": [
+                    40,
+                    119,
+                    135,
+                    262,
+                    331,
+                    377,
+                    387,
+                    417,
+                    480,
+                    566,
+                    572,
+                    590,
+                    638,
+                    645
+                ],
+                "reconocimiento": [
+                    41
+                ],
+                "preferencia": [
+                    44
+                ],
+                "consumidores,": [
+                    47
+                ],
+                "como": [
+                    48,
+                    258,
+                    295
+                ],
+                "expone": [
+                    49
+                ],
+                "Godoy": [
+                    50
+                ],
+                "(2011),": [
+                    51
+                ],
+                "este": [
+                    52,
+                    140,
+                    346
+                ],
+                "proceso": [
+                    53
+                ],
+                "orienta": [
+                    55
+                ],
+                "satisfacer": [
+                    57
+                ],
+                "las": [
+                    58,
+                    137,
+                    177,
+                    210,
+                    229,
+                    307,
+                    445,
+                    518,
+                    586
+                ],
+                "necesidades": [
+                    59
+                ],
+                "clientes,": [
+                    62
+                ],
+                "por": [
+                    63,
+                    73,
+                    463,
+                    589
+                ],
+                "ser": [
+                    64
+                ],
+                "estos": [
+                    65,
+                    534
+                ],
+                "principales": [
+                    67
+                ],
+                "protagonistas": [
+                    68
+                ],
+                "actividad": [
+                    71
+                ],
+                "económica,": [
+                    72
+                ],
+                "lo": [
+                    74,
+                    529,
+                    564
+                ],
+                "cual": [
+                    75,
+                    466
+                ],
+                "debe": [
+                    76
+                ],
+                "ejercerse": [
+                    77
+                ],
+                "con": [
+                    78,
+                    83,
+                    118,
+                    236,
+                    306,
+                    345,
+                    416,
+                    455,
+                    526,
+                    557
+                ],
+                "estándares": [
+                    79
+                ],
+                "alta": [
+                    81
+                ],
+                "calidad,": [
+                    82
+                ],
+                "información": [
+                    84,
+                    104,
+                    205,
+                    544
+                ],
+                "veraz,": [
+                    85
+                ],
+                "concreta": [
+                    86
+                ],
+                "precisa,": [
+                    88
+                ],
+                "para": [
+                    89,
+                    128,
+                    201,
+                    218,
+                    290,
+                    327,
+                    555,
+                    581,
+                    647
+                ],
+                "obtener": [
+                    90
+                ],
+                "nivel": [
+                    92,
+                    265
+                ],
+                "adecuado": [
+                    95
+                ],
+                "que": [
+                    97,
+                    105,
+                    108,
+                    120,
+                    151,
+                    160,
+                    214,
+                    226,
+                    256,
+                    303,
+                    375,
+                    395,
+                    450,
+                    477,
+                    503,
+                    506,
+                    516,
+                    530,
+                    533,
+                    552,
+                    643
+                ],
+                "clientes": [
+                    99
+                ],
+                "no": [
+                    100,
+                    536
+                ],
+                "solo": [
+                    101
+                ],
+                "reciban": [
+                    102,
+                    537,
+                    543
+                ],
+                "solicitan": [
+                    106
+                ],
+                "sino": [
+                    107
+                ],
+                "también": [
+                    109
+                ],
+                "reconozcan": [
+                    110
+                ],
+                "calidad": [
+                    112,
+                    541,
+                    584
+                ],
+                "del": [
+                    113,
+                    277,
+                    402,
+                    432,
+                    465,
+                    650,
+                    658
+                ],
+                "capital": [
+                    114
+                ],
+                "humano": [
+                    115
+                ],
+                "técnico": [
+                    117
+                ],
+                "van": [
+                    121
+                ],
+                "a": [
+                    122,
+                    192,
+                    209,
+                    272,
+                    324,
+                    408,
+                    493,
+                    521,
+                    623
+                ],
+                "establecer": [
+                    123,
+                    219,
+                    232
+                ],
+                "una": [
+                    124,
+                    233,
+                    514,
+                    538,
+                    616,
+                    627
+                ],
+                "relación.": [
+                    125
+                ],
+                "El": [
+                    126,
+                    365
+                ],
+                "panorama": [
+                    127
+                ],
+                "organismos": [
+                    130
+                ],
+                "administración": [
+                    132,
+                    254
+                ],
+                "pública": [
+                    133
+                ],
+                "mismo,": [
+                    136
+                ],
+                "instituciones": [
+                    138,
+                    308,
+                    428,
+                    446
+                ],
+                "sector": [
+                    141
+                ],
+                "han": [
+                    142,
+                    197,
+                    292,
+                    405,
+                    451
+                ],
+                "volcado": [
+                    143
+                ],
+                "preocupación": [
+                    145
+                ],
+                "usuario,": [
+                    147
+                ],
+                "darse": [
+                    149
+                ],
+                "cuenta": [
+                    150
+                ],
+                "son": [
+                    152
+                ],
+                "ellos": [
+                    153
+                ],
+                "quienes": [
+                    154
+                ],
+                "aportan": [
+                    155
+                ],
+                "mayor": [
+                    156
+                ],
+                "valor": [
+                    157
+                ],
+                "servicios": [
+                    159,
+                    398
+                ],
+                "les": [
+                    161
+                ],
+                "proveen,": [
+                    162
+                ],
+                "desde": [
+                    163,
+                    376
+                ],
+                "perspectiva": [
+                    165
+                ],
+                "Fontalvo,": [
+                    167
+                ],
+                "Dominguez,": [
+                    168
+                ],
+                "&": [
+                    169
+                ],
+                "De": [
+                    170
+                ],
+                "Hoz": [
+                    172
+                ],
+                "(2020),": [
+                    173
+                ],
+                "actualidad": [
+                    176
+                ],
+                "entidades": [
+                    178
+                ],
+                "usuario": [
+                    182,
+                    511
+                ],
+                "organizaciones": [
+                    184
+                ],
+                "públicas": [
+                    185
+                ],
+                "encuentran": [
+                    187,
+                    358
+                ],
+                "cada": [
+                    188,
+                    609
+                ],
+                "vez": [
+                    189,
+                    610
+                ],
+                "orientadas": [
+                    191
+                ],
+                "bienestar": [
+                    194
+                ],
+                "convertido": [
+                    198
+                ],
+                "espacios": [
+                    200,
+                    321
+                ],
+                "captar,": [
+                    202
+                ],
+                "recibir,": [
+                    203
+                ],
+                "consolidar": [
+                    204
+                ],
+                "dar": [
+                    207
+                ],
+                "respuesta": [
+                    208
+                ],
+                "solicitudes": [
+                    211
+                ],
+                "requerimientos": [
+                    213
+                ],
+                "realizan": [
+                    215
+                ],
+                "usuarios,": [
+                    217
+                ],
+                "rutas": [
+                    220
+                ],
+                "acciones": [
+                    222
+                ],
+                "actitudes": [
+                    224
+                ],
+                "efectivas": [
+                    225
+                ],
+                "permitan": [
+                    227
+                ],
+                "cumplir": [
+                    228,
+                    556
+                ],
+                "expectativas": [
+                    230
+                ],
+                "relación": [
+                    234,
+                    523
+                ],
+                "sociedad.": [
+                    238
+                ],
+                "En": [
+                    239
+                ],
+                "esta": [
+                    240,
+                    383
+                ],
+                "misma": [
+                    241
+                ],
+                "línea,": [
+                    242
+                ],
+                "Dirección": [
+                    244,
+                    457
+                ],
+                "Impuestos": [
+                    246,
+                    459
+                ],
+                "Aduanas": [
+                    248,
+                    461
+                ],
+                "Nacionales": [
+                    249
+                ],
+                "organismo": [
+                    252
+                ],
+                "tributaria": [
+                    255
+                ],
+                "tiene": [
+                    257
+                ],
+                "propósito": [
+                    259
+                ],
+                "fundamental": [
+                    260
+                ],
+                "garantizar": [
+                    261,
+                    330,
+                    605
+                ],
+                "alto": [
+                    264
+                ],
+                "cumplimiento": [
+                    267,
+                    278,
+                    334,
+                    659
+                ],
+                "tributario": [
+                    268
+                ],
+                "contribuyentes,": [
+                    271
+                ],
+                "través": [
+                    273,
+                    494
+                ],
+                "promoción": [
+                    276,
+                    625
+                ],
+                "voluntario": [
+                    279,
+                    660
+                ],
+                "reducción": [
+                    282
+                ],
+                "niveles": [
+                    285
+                ],
+                "evasión": [
+                    287
+                ],
+                "e": [
+                    288
+                ],
+                "informalidad,": [
+                    289
+                ],
+                "ello": [
+                    291
+                ],
+                "creado": [
+                    293
+                ],
+                "iniciativas": [
+                    294
+                ],
+                "Núcleos": [
+                    297,
+                    350
+                ],
+                "Apoyo": [
+                    299,
+                    352,
+                    472,
+                    593
+                ],
+                "Contable": [
+                    300,
+                    353,
+                    473,
+                    594
+                ],
+                "Fiscal,": [
+                    302
+                ],
+                "convenio": [
+                    305,
+                    453
+                ],
+                "educación": [
+                    310,
+                    448
+                ],
+                "superior": [
+                    311,
+                    449
+                ],
+                "participación": [
+                    314,
+                    420
+                ],
+                "estudiantes": [
+                    316,
+                    425,
+                    505
+                ],
+                "últimos": [
+                    318,
+                    535
+                ],
+                "semestres": [
+                    319
+                ],
+                "ofrecen": [
+                    320,
+                    507
+                ],
+                "ciudadanos,": [
+                    326,
+                    528
+                ],
+                "facilitar": [
+                    328
+                ],
+                "entendimiento": [
+                    332
+                ],
+                "deberes": [
+                    337
+                ],
+                "tributarios,": [
+                    338
+                ],
+                "aduaneros": [
+                    339
+                ],
+                "cambiarios": [
+                    341
+                ],
+                "(DIAN,": [
+                    342
+                ],
+                "2018).": [
+                    343
+                ],
+                "Siguiendo": [
+                    344
+                ],
+                "argumento,": [
+                    347
+                ],
+                "actualmente": [
+                    348,
+                    442
+                ],
+                "Fiscal": [
+                    355,
+                    475,
+                    596
+                ],
+                "(NAF)": [
+                    356,
+                    597
+                ],
+                "operando": [
+                    359
+                ],
+                "universidades": [
+                    361
+                ],
+                "Brasil,": [
+                    363
+                ],
+                "Ecuador,": [
+                    364
+                ],
+                "Salvador,": [
+                    366
+                ],
+                "Costa": [
+                    367
+                ],
+                "Rica,": [
+                    368
+                ],
+                "Guatemala,": [
+                    369
+                ],
+                "Honduras,": [
+                    370
+                ],
+                "México,": [
+                    371
+                ],
+                "Chile": [
+                    372
+                ],
+                "Colombia,": [
+                    374
+                ],
+                "año": [
+                    378,
+                    388
+                ],
+                "2017": [
+                    379
+                ],
+                "hace": [
+                    380
+                ],
+                "parte": [
+                    381
+                ],
+                "Red,": [
+                    384
+                ],
+                "logrando": [
+                    385
+                ],
+                "durante": [
+                    386
+                ],
+                "señalado": [
+                    389
+                ],
+                "creación": [
+                    391
+                ],
+                "52": [
+                    393
+                ],
+                "NAF": [
+                    394
+                ],
+                "prestan": [
+                    396
+                ],
+                "sus": [
+                    397,
+                    558,
+                    662
+                ],
+                "27": [
+                    400
+                ],
+                "ciudades": [
+                    401
+                ],
+                "país,": [
+                    403
+                ],
+                "dado": [
+                    406
+                ],
+                "lugar": [
+                    407
+                ],
+                "solución": [
+                    412
+                ],
+                "24.736": [
+                    414
+                ],
+                "consultas,": [
+                    415
+                ],
+                "apoyo": [
+                    418
+                ],
+                "alrededor": [
+                    422
+                ],
+                "856": [
+                    424
+                ],
+                "diferentes": [
+                    427
+                ],
+                "Educación": [
+                    430
+                ],
+                "Superior": [
+                    431
+                ],
+                "país": [
+                    433
+                ],
+                "(Orozco,": [
+                    434
+                ],
+                "2019).": [
+                    435
+                ],
+                "La": [
+                    436
+                ],
+                "Universidad": [
+                    437,
+                    600
+                ],
+                "Córdoba": [
+                    439
+                ],
+                "encuentra": [
+                    441
+                ],
+                "dentro": [
+                    443
+                ],
+                "establecido": [
+                    452
+                ],
+                "interinstitucional": [
+                    454
+                ],
+                "Nacionales,": [
+                    462
+                ],
+                "medio": [
+                    464
+                ],
+                "creó": [
+                    468
+                ],
+                "Núcleo": [
+                    470,
+                    591
+                ],
+                "(NAF),": [
+                    476
+                ],
+                "opera": [
+                    478
+                ],
+                "punto": [
+                    481
+                ],
+                "Bolsa": [
+                    484
+                ],
+                "Valores": [
+                    486
+                ],
+                "ubicado": [
+                    487
+                ],
+                "universidad.": [
+                    490
+                ],
+                "Sin": [
+                    491
+                ],
+                "embargo,": [
+                    492
+                ],
+                "investigación": [
+                    497
+                ],
+                "participativa": [
+                    498
+                ],
+                "ha": [
+                    499
+                ],
+                "sido": [
+                    500
+                ],
+                "posible": [
+                    501
+                ],
+                "evidenciar": [
+                    502
+                ],
+                "carecen": [
+                    512
+                ],
+                "herramienta": [
+                    515
+                ],
+                "aborde": [
+                    517
+                ],
+                "cuestiones": [
+                    519
+                ],
+                "relativas": [
+                    520
+                ],
+                "comunicación": [
+                    525
+                ],
+                "provocar": [
+                    532
+                ],
+                "orientación": [
+                    539
+                ],
+                "distorsionada": [
+                    545
+                ],
+                "acerca": [
+                    546
+                ],
+                "trámites": [
+                    549
+                ],
+                "procesos": [
+                    551
+                ],
+                "deben": [
+                    553
+                ],
+                "seguir": [
+                    554
+                ],
+                "obligaciones": [
+                    559
+                ],
+                "fiscales.": [
+                    560
+                ],
+                "A": [
+                    561
+                ],
+                "partir": [
+                    562
+                ],
+                "anterior,": [
+                    565
+                ],
+                "presente": [
+                    567
+                ],
+                "informe": [
+                    568
+                ],
+                "enmarca": [
+                    570
+                ],
+                "diseño": [
+                    573
+                ],
+                "manual": [
+                    576
+                ],
+                "cliente": [
+                    580
+                ],
+                "elevar": [
+                    582
+                ],
+                "asesorías": [
+                    587
+                ],
+                "ofrecidas": [
+                    588
+                ],
+                "Córdoba,": [
+                    602
+                ],
+                "así": [
+                    604
+                ],
+                "ambientes": [
+                    606
+                ],
+                "controlados": [
+                    612
+                ],
+                "eficientes,": [
+                    614
+                ],
+                "ofrecer": [
+                    615
+                ],
+                "excelente": [
+                    617
+                ],
+                "ciudadano": [
+                    620
+                ],
+                "contribuir": [
+                    622
+                ],
+                "cultura": [
+                    628
+                ],
+                "conciencia": [
+                    630
+                ],
+                "fiscal,": [
+                    631
+                ],
+                "donde": [
+                    633
+                ],
+                "comunidad": [
+                    635
+                ],
+                "pueda": [
+                    636
+                ],
+                "reconocer": [
+                    637
+                ],
+                "papel": [
+                    639
+                ],
+                "recursos": [
+                    642
+                ],
+                "recauda": [
+                    644
+                ],
+                "gobierno": [
+                    646
+                ],
+                "generación": [
+                    649
+                ],
+                "beneficio": [
+                    651
+                ],
+                "colectivo": [
+                    652
+                ],
+                "reflexionar": [
+                    654
+                ],
+                "sobre": [
+                    655
+                ],
+                "importancia": [
+                    657
+                ],
+                "obligaciones.": [
+                    663
+                ]
+            },
+            "counts_by_year": [],
+            "updated_date": "2026-09-11T09:22:31.653822",
+            "created_date": "2026-05-02T00:00:00"
+        }
+    ],
+    "group_by": []
+}

@@ -1,0 +1,58 @@
+{
+    "meta": {
+        "country": "Honduras",
+        "start_year": 2019,
+        "end_year": 2026,
+        "type_search": "title_and_abstract"
+    },
+    "queries":[
+        {
+            "query_id": "1.1A",
+            "query_search": "Honduras AND (\"public services access\" OR \"acceso a servicios públicos\" OR \"quality of public services\" OR \"Calidad de servicios públicos\" OR \"equity in Access\" OR \"equidad en acceso\" OR \"electricity access\" OR \"acceso a la electricidad\" OR \"electricity services\" OR \"servicios eléctricos\" OR \"transport network\" OR \"red de transporte\" OR \"transportation system\" OR \"sistema de transporte\" OR \"urban transportation\" OR \"transporte urbano\" OR \"Acceso a electricidad\" OR \"access to electricity\" OR \"Electrificación rural\" OR \"rural electrification\" OR \"inclusive energy access\" OR \"Inclusión energética\" OR \"energy inclusion\" OR \"Movilidad urbana\" OR \"urban mobility\")",
+            "pillar": "1. Upgrade public service delivery",
+            "strategic_objective": "1.1. Strengthen the quality and access of public services"
+        },
+        {
+            "query_id": "1.1B",
+            "query_search": "Honduras AND (\"service infrastructure\" OR \"infraestructura de servicios\" OR \"coverage of services\" OR \"cobertura de servicios\" OR \"water and sanitation\" OR \"agua y saneamiento\" OR \"sewer network\" OR \"red de alcantarillado\" OR \"Acceso a agua potable\" OR \"access to drinking water\" OR \"Agua y Saneamiento de calidad\" OR \"quality water and sanitation\" OR \"water utilities\" OR \"servicios públicos de agua\" OR \"sanitation services\" OR \"servicios de saneamiento\" OR \"citizen security\" OR \"seguridad ciudadana\" OR \"public security\" OR \"seguridad pública\" OR \"crime prevention\" OR \"prevención del crimen\" OR \"Prevención del delito\" OR \"police coverage\" OR \"cobertura policial\" OR \"Respuesta policial\" OR \"police response\")",
+            "pillar": "1. Upgrade public service delivery",
+            "strategic_objective": "1.1. Strengthen the quality and access of public services"
+        },
+        {
+            "query_id": "1.2",
+            "query_search": "Honduras AND (\"hospital services\" OR \"servicios hospitalarios\" OR \"health system\" OR \"sistema de salud\" OR \"public health\" OR \"salud pública\" OR \"education system\" OR \"sistema educativo\" OR \"rural education\" OR \"educación rural\" OR \"basic education\" OR \"educación básica\" OR \"education quality\" OR \"calidad educativa\" OR \"social protection\" OR \"protección social\" OR \"cash transfers\" OR \"transferencias monetarias\" OR \"vulnerable population\" OR \"población vulnerable\" OR \"indigenous people\" OR \"pueblos indígenas\" OR \"Capacidad hospitalaria\" OR \"hospital capacity\" OR \"Servicios de salud\" OR \"health services\" OR \"Acceso a educación\" OR \"access to education\" OR \"Calidad educativa\" OR \"educational quality\" OR \"Programas de protección social\" OR \"social protection programs\" OR \"Inclusión de población vulnerable\" OR \"inclusion of vulnerable populations\")",
+            "pillar": "1. Upgrade public service delivery",
+            "strategic_objective": "1.2. Reinforce human capital and social protection, with a focus on vulnerable populations"
+        },
+        {
+            "query_id": "2.1",
+            "query_search": "Honduras AND (\"fiscal capacity\" OR \"capacidad fiscal\" OR \"fiscal sustainability\" OR \"sostenibilidad fiscal\" OR \"fiscal efficiency\" OR \"eficiencia fiscal\" OR \"fiscal policy\" OR \"política fiscal\" OR \"tax administration\" OR \"administración tributaria\" OR \"tax expenditure\" OR \"gasto tributario\" OR \"public spending\" OR \"gasto público\" OR \"public expenditure\" OR \"efficiency of expenditure\" OR \"eficiencia del gasto\" OR \"Eficiencia tributaria\" OR \"tax efficiency\" OR \"Recaudación fiscal\" OR \"tax revenue collection\" OR \"Gestión del gasto público\" OR \"public expenditure management\" OR \"Eficiencia del gasto\" OR \"expenditure efficiency\")",
+            "pillar": "2. Enhance government effectiveness",
+            "strategic_objective": "2.1. Promote fiscal sustainability through tax administration and public spending"
+        },
+        {
+            "query_id": "2.2",
+            "query_search": "Honduras AND (\"statistical capacity\" OR \"capacidad estadística\" OR \"regulatory framework\" OR \"marco regulatorio\" OR \"regulatory quality\" OR \"calidad regulatoria\" OR \"government modernization\" OR \"modernización del gobierno\" OR \"digital government\" OR \"gobierno digital\" OR \"disaster risk management\" OR \"gestión del riesgo de desastres\" OR \"disaster risk governance\" OR \"gobernanza del riesgo de desastres\" OR \"shock resilience\" OR \"resiliencia ante choques\" OR \"Digitalización del gobierno\" OR \"government digitalization\" OR \"Simplificación regulatoria\" OR \"regulatory simplification\" OR \"Gestión de riesgo de desastres\" OR \"Resiliencia\" OR \"resilience\")",
+            "pillar": "2. Enhance government effectiveness",
+            "strategic_objective": "2.2. Strengthen institutional capacity and regulatory frameworks"
+        },
+        {
+            "query_id": "3.1",
+            "query_search": "Honduras AND (\"productive infrastructure\" OR \"infraestructura productiva\" OR \"economic corridors\" OR \"corredores económicos\" OR \"energy systems\" OR \"sistemas energéticos\" OR \"sistemas de energía\" OR \"energy production\" OR \"producción de energía\" OR \"energy supply\" OR \"suministro de energía\" OR \"electricity generation\" OR \"generación de electricidad\" OR \"electricity transmission\" OR \"transmisión eléctrica\" OR \"electricity distribution\" OR \"distribución eléctrica\" OR \"customs efficiency\" OR \"eficiencia aduanera\" OR \"customs clearance\" OR \"despacho aduanero\" OR \"trade facilitation\" OR \"facilitación del comercio\" OR \"logistics systems\" OR \"sistemas logísticos\" OR \"Generación eléctrica\" OR \"Transmisión eléctrica\" OR \"Infraestructura logística\" OR \"logistics infrastructure\")",
+            "pillar": "3. Bolster economic integration and private sector productivity",
+            "strategic_objective": "3.1. Promote productive infrastructure and economic corridors"
+        },
+        {
+            "query_id": "3.2",
+            "query_search": "Honduras AND (\"access to finance\" OR \"acceso al financiamiento\" OR \"access to credit\" OR \"acceso al crédito\" OR \"financial inclusion\" OR \"inclusión financiera\" OR \"firm growth\" OR \"crecimiento empresarial\" OR \"market access\" OR \"acceso a mercados\" OR \"credit constraints\" OR \"restricciones crediticias\" OR \"restricciones de crédito\" OR \"venture capital\" OR \"capital de riesgo\" OR \"fintech\" OR \"tecnología financiera\" OR \"technology adoption\" OR \"adopción tecnológica\" OR \"adopción de tecnología\" OR \"Liquidez\" OR \"liquidity\" OR \"Capacidades tecnológicas\" OR \"technological capabilities\" OR \"Innovación tecnológica\" OR \"technological innovation\" OR \"technology innovation\")",
+            "pillar": "3. Bolster economic integration and private sector productivity",
+            "strategic_objective": "3.2. Improve firm performance and private sector access to finance"
+        },
+        {
+            "query_id": "3.3",
+            "query_search": "Honduras AND (\"employment\" OR \"Empleo\" OR \"labor market\" OR \"mercado laboral\" OR \"skills development\" OR \"desarrollo de habilidades\" OR \"developing skills\" OR \"desarrollo de competencias\" OR \"workforce development\" OR \"desarrollo de la fuerza laboral\" OR \"employability\" OR \"empleabilidad\" OR \"formal employment\" OR \"empleo formal\" OR \"Servicios de empleo\" OR \"employment services\")",
+            "pillar": "3. Bolster economic integration and private sector productivity",
+            "strategic_objective": "3.3. Promote pathways to formal employment"
+        }
+    ]
+}

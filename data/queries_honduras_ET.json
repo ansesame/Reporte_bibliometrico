@@ -1,0 +1,403 @@
+{
+    "meta": {
+        "country": "Honduras",
+        "start_year": 2019,
+        "end_year": 2026,
+        "description": "This dataset contains a set of queries related to public service delivery in Honduras. Each query  is designed to retrieve studies for each thematic axis (eje temático) defined by experts", 
+        "country_terms": ["Honduras", "Honduran", "Hondurans","hondureño", "hondureña", "hondureños", "hondureñas","afrohondureño", "afrohondureña", "afrohondureños", "afrohondureñas"]
+    },
+    "thematics": [
+        {
+            "thematic_id": "110",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.1. Fortalecer la calidad y acceso de los servicios públicos",
+            "expected_result": "",
+            "thematic_axis": "Acceso y calidad de servicios",
+            "keywords": [
+                "public services access",
+                "acceso a servicios públicos",
+                "quality of public services",
+                "Calidad de servicios públicos",
+                "equity in access",
+                "equidad en acceso",
+                "coverage of public services",
+                "cobertura de servicios públicos",
+                "public services infraestructure",
+                "infraestructura de servicios públicos"
+            ]
+        },
+        {
+            "thematic_id": "111",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.1. Fortalecer la calidad y acceso de los servicios públicos",
+            "expected_result": "1.1.1. Mejora del acceso a servicios de agua y saneamiento de calidad",
+            "thematic_axis": "Agua y saneamiento",
+            "keywords": [
+                "water and sanitation",
+                "agua y saneamiento",
+                "sewer network",
+                "red de alcantarillado",
+                "Acceso a agua potable",
+                "access to drinking water",
+                "Agua y Saneamiento de calidad",
+                "quality water and sanitation",
+                "water utilities",
+                "servicios públicos de agua",
+                "sanitation services",
+                "servicios de saneamiento"
+            ]
+        },
+        {
+            "thematic_id": "112",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.1. Fortalecer la calidad y acceso de los servicios públicos",
+            "expected_result": "1.1.2. Ampliación del acceso a la electricidad en comunidades indígenas y afrohondureñas",
+            "thematic_axis": "Acceso a electricidad",
+            "keywords": [
+                "electricity access",
+                "acceso a la electricidad",
+                "electricity services",
+                "servicios eléctricos",
+                "Acceso a electricidad",
+                "access to electricity",
+                "Electrificación rural",
+                "rural electrification",
+                "inclusive energy access",
+                "Inclusión energética",
+                "energy inclusion"
+            ]
+        },
+        {
+            "thematic_id": "113",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.1. Fortalecer la calidad y acceso de los servicios públicos",
+            "expected_result": "1.1.3. Ampliación de la infraestructura de transporte urbano",
+            "thematic_axis": "Movilidad urbana",
+            "keywords": [
+                "transport network",
+                "red de transporte",
+                "transportation system",
+                "sistema de transporte",
+                "urban transportation",
+                "transporte urbano",
+                "Movilidad urbana",
+                "urban mobility"
+            ]
+        },
+        {
+            "thematic_id": "114",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.1. Fortalecer la calidad y acceso de los servicios públicos",
+            "expected_result": "1.1.4. Respuesta policial reforzada para la prevención del delito",
+            "thematic_axis": "Seguridad ciudadana",
+            "keywords": [
+                "citizen security",
+                "seguridad ciudadana",
+                "public security",
+                "seguridad pública",
+                "crime prevention",
+                "prevención del crimen",
+                "Prevención del delito",
+                "police coverage",
+                "cobertura policial",
+                "Respuesta policial",
+                "police response"
+            ]
+        },
+        {
+            "thematic_id": "120",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.2. Reforzar el capital humano y la protección social, con enfoque en población vulnerable",
+            "expected_result": "",
+            "thematic_axis": "Población vulnerable",
+            "keywords": [
+                "vulnerable population",
+                "población vulnerable",
+                "indigenous people",
+                "pueblos indígenas",
+                "Inclusión de población vulnerable",
+                "inclusion of vulnerable populations"
+            ]
+        },
+        {
+            "thematic_id": "121",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.2. Reforzar el capital humano y la protección social, con enfoque en población vulnerable",
+            "expected_result": "1.2.1. Mayor capacidad de los servicios hospitalarios públicos",
+            "thematic_axis": "Salud",
+            "keywords": [
+                "hospital services",
+                "servicios hospitalarios",
+                "health system",
+                "sistema de salud",
+                "public health",
+                "salud pública",
+                "Capacidad hospitalaria",
+                "hospital capacity",
+                "Servicios de salud",
+                "health services"
+            ]
+        },
+        {
+            "thematic_id": "122",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.2. Reforzar el capital humano y la protección social, con enfoque en población vulnerable",
+            "expected_result": "1.2.2. Mayor acceso a una educación rural de calidad",
+            "thematic_axis": "Educación",
+            "keywords": [
+                "education system",
+                "sistema educativo",
+                "rural education",
+                "educación rural",
+                "basic education",
+                "educación básica",
+                "education quality",
+                "calidad educativa",
+                "Acceso a educación",
+                "access to education"
+            ]
+        },
+        {
+            "thematic_id": "123",
+            "pillar": "1. Mejorar la prestación de servicios públicos",
+            "strategic_objective": "1.2. Reforzar el capital humano y la protección social, con enfoque en población vulnerable",
+            "expected_result": "1.2.3. Fortalecimiento de los programas de protección social, incluyendo a mujeres y población indígena",
+            "thematic_axis": "Protección social",
+            "keywords": [
+                "social protection",
+                "protección social",
+                "cash transfers",
+                "transferencias monetarias",
+                "Programas de protección social",
+                "social protection programs"
+            ]
+        },
+        {
+            "thematic_id": "210",
+            "pillar": "2. Fortalecer la efectividad del gobierno",
+            "strategic_objective": "2.1. Promover la sostenibilidad fiscal mediante la administración fiscal y el gasto público",
+            "expected_result": "",
+            "thematic_axis": "Sostenibilidad fiscal",
+            "keywords": [
+                "fiscal capacity",
+                "capacidad fiscal",
+                "fiscal sustainability",
+                "sostenibilidad fiscal",
+                "fiscal efficiency",
+                "eficiencia fiscal",
+                "fiscal policy",
+                "política fiscal",
+                "gestión fiscal",
+                "fiscal management"
+            ]
+        },
+        {
+            "thematic_id": "211",
+            "pillar": "2. Fortalecer la efectividad del gobierno",
+            "strategic_objective": "2.1. Promover la sostenibilidad fiscal mediante la administración fiscal y el gasto público",
+            "expected_result": "2.1.1. Mejora de la eficiencia en la administración tributaria",
+            "thematic_axis": "Administración tributaria",
+            "keywords": [
+                "tax administration",
+                "administración tributaria",
+                "tax expenditure",
+                "gasto tributario",
+                "Eficiencia tributaria",
+                "tax efficiency",
+                "Recaudación fiscal",
+                "tax revenue collection"
+            ]
+        },
+        {
+            "thematic_id": "212",
+            "pillar": "2. Fortalecer la efectividad del gobierno",
+            "strategic_objective": "2.1. Promover la sostenibilidad fiscal mediante la administración fiscal y el gasto público",
+            "expected_result": "2.1.2. Gestión del gasto público reforzada",
+            "thematic_axis": "Gasto público",
+            "keywords": [
+                "public spending",
+                "gasto público",
+                "public expenditure",
+                "efficiency of expenditure",
+                "eficiencia del gasto",
+                "Gestión del gasto público",
+                "public expenditure management",
+                "Eficiencia del gasto",
+                "expenditure efficiency",
+                "control de gasto",
+                "expenditure control"
+            ]
+        },
+        {
+            "thematic_id": "222",
+            "pillar": "2. Fortalecer la efectividad del gobierno",
+            "strategic_objective": "2.2. Fortalecimiento de la capacidad institucional y los marcos regulatorios",
+            "expected_result": "2.2.2. Modernización de los servicios gubernamentales mediante la simplificación regulatoria y la digitalización",
+            "thematic_axis": "Capacidad institucional",
+            "keywords": [
+                "statistical capacity",
+                "capacidad estadística",
+                "regulatory framework",
+                "marco regulatorio",
+                "regulatory quality",
+                "calidad regulatoria",
+                "government modernization",
+                "modernización del gobierno",
+                "digital government",
+                "gobierno digital",
+                "Digitalización del gobierno",
+                "government digitalization",
+                "Simplificación regulatoria",
+                "regulatory simplification",
+                "Capacidad institucional",
+                "institutional capacity",
+                "regulación eficiente",
+                "efficient regulation"
+            ]
+        },
+        {
+            "thematic_id": "223",
+            "pillar": "2. Fortalecer la efectividad del gobierno",
+            "strategic_objective": "2.2. Fortalecimiento de la capacidad institucional y los marcos regulatorios",
+            "expected_result": "2.2.3. Capacidades mejoradas de gestión del riesgo de desastres y resiliencia ante los choques",
+            "thematic_axis": "Gestión del riesgo y resiliencia",
+            "keywords": [
+                "disaster risk management",
+                "gestión del riesgo de desastres",
+                "disaster risk governance",
+                "gobernanza del riesgo de desastres",
+                "shock resilience",
+                "resiliencia ante choques",
+                "Gestión de riesgo de desastres"
+            ]
+        },
+        {
+            "thematic_id": "311",
+            "pillar": "3. Promover la integración económica y la productividad del sector privado",
+            "strategic_objective": "3.1. Promover infraestructuras productivas y corredores económicos",
+            "expected_result": "3.1.1. Ampliación de la generación y transmisión eléctrica",
+            "thematic_axis": "Sistema eléctrico",
+            "keywords": [
+                "energy systems",
+                "sistemas energéticos",
+                "sistemas de energía",
+                "energy production",
+                "producción de energía",
+                "energy supply",
+                "suministro de energía",
+                "electricity generation",
+                "generación de electricidad",
+                "electricity transmission",
+                "transmisión eléctrica",
+                "electricity distribution",
+                "distribución eléctrica"
+            ]
+        },
+        {
+            "thematic_id": "312",
+            "pillar": "3. Promover la integración económica y la productividad del sector privado",
+            "strategic_objective": "3.1. Promover infraestructuras productivas y corredores económicos",
+            "expected_result": "3.1.2. Ampliación de la infraestructura logística y los servicios",
+            "thematic_axis": "Infraestructura logística",
+            "keywords": [
+                "productive infrastructure",
+                "infraestructura productiva",
+                "economic corridors",
+                "corredores económicos",
+                "logistics systems",
+                "sistemas logísticos",
+                "Infraestructura logística",
+                "logistics infrastructure"
+            ]
+        },
+        {
+            "thematic_id": "313",
+            "pillar": "3. Promover la integración económica y la productividad del sector privado",
+            "strategic_objective": "3.1. Promover infraestructuras productivas y corredores económicos",
+            "expected_result": "3.1.3. Fortalecimiento de la eficiencia aduanera",
+            "thematic_axis": "Facilitación del comercio",
+            "keywords": [
+                "trade facilitation",
+                "facilitación del comercio",
+                "customs efficiency",
+                "eficiencia aduanera",
+                "customs clearance",
+                "despacho aduanero"
+            ]
+        },
+        {
+            "thematic_id": "321",
+            "pillar": "3. Promover la integración económica y la productividad del sector privado",
+            "strategic_objective": "3.2. Mejorar el rendimiento de la empresa y el acceso del sector privado a la financiación",
+            "expected_result": "3.2.1.Aumento de los flujos financieros para liquidez y para segmentos con limitaciones crediticias",
+            "thematic_axis": "Productividad empresarial y financiamiento",
+            "keywords": [
+                "access to finance",
+                "acceso al financiamiento",
+                "access to credit",
+                "acceso al crédito",
+                "financial inclusion",
+                "inclusión financiera",
+                "firm growth",
+                "crecimiento empresarial",
+                "market access",
+                "acceso a mercados",
+                "credit constraints",
+                "restricciones crediticias",
+                "restricciones de crédito",
+                "venture capital",
+                "capital de riesgo",
+                "Liquidez",
+                "liquidity",
+                "Productividad empresarial",
+                "private sector productivity",
+                "desarrollo del sector privado",
+                "private sector development"
+            ]
+        },
+        {
+            "thematic_id": "322",
+            "pillar": "3. Promover la integración económica y la productividad del sector privado",
+            "strategic_objective": "3.2. Mejorar el rendimiento de la empresa y el acceso del sector privado a la financiación",
+            "expected_result": "3.2.2. Fomento de la adopción y capacidades tecnológicas en segmentos seleccionados (fabricación, logística y agricultura), incluyendo empresas lideradas por mujeres",
+            "thematic_axis": "Adopción tecnológica",
+            "keywords": [
+                "fintech",
+                "tecnología financiera",
+                "technology adoption",
+                "adopción tecnológica",
+                "adopción de tecnología",
+                "Capacidades tecnológicas",
+                "technological capabilities",
+                "technological innovation",
+                "technology innovation",
+                "Innovación tecnológica"
+            ]
+        },
+        {
+            "thematic_id": "331",
+            "pillar": "3. Promover la integración económica y la productividad del sector privado",
+            "strategic_objective": "3.3. Promover vías hacia el empleo formal",
+            "expected_result": "3.3.1. Fortalecimiento de los servicios de empleo y el desarrollo de habilidades",
+            "thematic_axis": "Mercado laboral",
+            "keywords": [
+                "employment",
+                "Empleo",
+                "labor market",
+                "mercado laboral",
+                "skills development",
+                "desarrollo de habilidades",
+                "developing skills",
+                "desarrollo de competencias",
+                "workforce development",
+                "desarrollo de la fuerza laboral",
+                "employability",
+                "empleabilidad",
+                "formal employment",
+                "empleo formal",
+                "Servicios de empleo",
+                "employment services"
+            ]
+        }
+    ]
+}

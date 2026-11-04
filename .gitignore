@@ -1,5 +1,6 @@
-# Entorno virtual
+# Virtual env
 .venv/
+.claude/
 
 # Python
 __pycache__/
@@ -9,10 +10,15 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Datos pesados / exportaciones (no se versionan)
+# Heavy data and reference docs files
 docs/
+notebooks/*.xlsx
+notebooks/honduras_backup/
 
 # Sistema operativo / editor
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Environment variables
+.env
