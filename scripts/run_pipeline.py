@@ -30,7 +30,7 @@ from bibliometrics import authorships as au
 from bibliometrics.classification import classify_institutions
 from bibliometrics.config import DROP_COLS
 from bibliometrics.database import build_audit_table, build_db_tables
-from bibliometrics.enrichment import blank_to_nan, impute_abstracts, impute_language, impute_publisher
+from bibliometrics.enrichment import blank_to_nan, impute_abstracts, impute_language, impute_publisher, impute_source_oa
 from bibliometrics.export import write_excel, write_json
 from bibliometrics.openalex import OpenAlexClient, fetch_topics_snapshot
 from bibliometrics.queries import load_queries, build_thematics_df, thematic_oql
@@ -112,13 +112,16 @@ def main():
     log(summary, 'duplicates', **{f'removed_by_{key}': n for key, n in removed.items()}, studies=len(studies),
         multiple_thematics=int(studies['thematic_id'].str.contains(';').sum()))
 
-    # 3. Abstracts, language and publisher
+    # 3. Abstracts, language, source open access and publisher
     studies = blank_to_nan(studies)
     studies = impute_abstracts(studies, os.getenv("S2_API_KEY"))
     log(summary, 'abstracts', **studies['abstract_source'].fillna('none').value_counts().to_dict())
     studies = impute_language(studies)
     log(summary, 'language', imputed=int(studies['language_imputed'].sum()),
         without_language=int(studies['language'].isna().sum()))
+    studies = impute_source_oa(studies)
+    log(summary, 'source_oa', imputed=int(studies['source_is_oa_imputed'].sum()),
+        without_value=int(studies['primary_location.source.is_oa'].isna().sum()))
     studies = impute_publisher(studies)
     log(summary, 'publisher', **studies['publisher_source'].fillna('none').value_counts().to_dict())
     if studies['publisher'].isna().any():

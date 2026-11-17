@@ -1,12 +1,12 @@
 {
-    "queries_file": "data\\queries_honduras_ET.json",
+    "queries_file": "data/queries_honduras_ET.json",
     "subfields_file": "C:\\Users\\andre\\Documents_local\\BID_2026\\Reporte_bibliometrico\\data\\subfields_tagged.xlsx",
     "name": "bibliometrics_honduras",
-    "start": "2026-11-04 10:26:34",
+    "start": "2026-11-16 19:21:50",
     "stages": {
         "queries": {
             "thematics": 20,
-            "from_backup": 0,
+            "from_backup": 20,
             "studies": 1728
         },
         "subfields": {
@@ -29,6 +29,10 @@
             "imputed": 0,
             "without_language": 0
         },
+        "source_oa": {
+            "imputed": 102,
+            "without_value": 14
+        },
         "publisher": {
             "host_organization_name": 778,
             "display_name": 340,
@@ -40,7 +44,7 @@
             "author_entities": 2772,
             "names_rebuilt": 0,
             "studies_without_institutions_openalex": 498,
-            "org_candidates": 301,
+            "org_candidates": 302,
             "org_matches": 15,
             "studies_author_as_institution": 44,
             "studies_without_authors": 24,
@@ -49,31 +53,31 @@
             "searched_authors": 70,
             "imputed_author_ids": 18,
             "studies_without_institutions": 433,
-            "studies_without_institutions_after_affiliations": 284,
-            "institution_entities": 941,
+            "studies_without_institutions_after_affiliations": 283,
+            "institution_entities": 943,
             "filled_fields": {},
             "merged_ids": 1,
             "studies_without_authors_after": 3,
-            "studies_without_institutions_after": 284
+            "studies_without_institutions_after": 283
         },
         "inst_groups": {
-            "unique_institutions": 821,
+            "unique_institutions": 822,
             "unclassified_institutions": 0,
             "failed_batches": 0,
-            "input_tokens": 56300,
-            "output_tokens": 30447
+            "input_tokens": 56337,
+            "output_tokens": 28832
         },
         "database": {
             "studies": [
                 1234,
-                22
+                24
             ],
             "institutions": [
-                821,
+                822,
                 6
             ],
             "study_institutions": [
-                1835,
+                1836,
                 2
             ],
             "topics": [
@@ -97,11 +101,11 @@
         }
     },
     "costs_usd": {
-        "openalex_queries": 0.02900000000000001,
-        "openalex_imputation": 0.39590000000000014,
-        "anthropic": 0.0208535,
-        "openalex_total": 0.42490000000000017
+        "openalex_queries": 0,
+        "openalex_imputation": 0.3978000000000001,
+        "anthropic": 0.0200497,
+        "openalex_total": 0.3978000000000001
     },
     "openalex_failures": [],
-    "time_s": 536.8
+    "time_s": 711.6
 }

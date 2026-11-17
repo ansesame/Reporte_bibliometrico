@@ -13,11 +13,10 @@ ALLOWED_TYPES = ["article", "report", "conference-paper", "book", "book-chapter"
 
 INTEREST_VARS = ["id", "doi", "display_name", "relevance_score",
                  "publication_year", "publication_date", "language",
-                 "primary_location.landing_page_url",
-                 "primary_location.source.id", "primary_location.source.host_organization_name",
+                 "primary_location.landing_page_url", "primary_location.source.host_organization_name",
                  "primary_location.source.display_name", "primary_location.raw_source_name",
-                 "primary_location.source.type", "primary_location.raw_type", "type",
-                 "primary_location.is_oa", "open_access.is_oa", "open_access.oa_status", "open_access.oa_url",
+                 "primary_location.source.is_oa", "primary_location.source.type", "type",
+                 "open_access.is_oa", "open_access.oa_status", "open_access.oa_url",
                  "fwci", "cited_by_count", "citation_normalized_percentile.value",
                  "primary_topic.id", "primary_topic.display_name",
                  "primary_topic.subfield.id", "primary_topic.subfield.display_name",
@@ -29,6 +28,7 @@ AUTHORS_VARS = ["author.id", "author.display_name"] # Inside "authorships" list
 INSTITUTIONS_VARS = ["id", "display_name", "country_code", "type"] # Inside "authorships[n].institutions" list
 ABSTRACT_OBJECT = "abstract_inverted_index" # Abstract as words with their positions
 KEYWORDS_OBJECT = "keywords" # Keyword objects with "id", "display_name" and "score"
+SDG_OBJECT = "sustainable_development_goals" # SDG objects sorted by "score" (the first one is kept)
 
 AUTHOR_COLS = ['authorships.author.id', 'authorships.author.display_name', 'authorships.author.id_imputed']
 INST_COLS = [f'authorships.institutions.{inst_var}' for inst_var in INSTITUTIONS_VARS] + ['authorships.institutions.root_display_name']
@@ -42,12 +42,15 @@ AUTHOR_ENTITY_SELECT = "id,display_name,affiliations"
 INSTITUTION_AUTHOR_TYPES = {'government', 'nonprofit', 'other', 'healthcare', 'facility', 'funder'} # Accepted as institutional authors
 
 # Columns used to impute and then dropped from the studies output
-DROP_COLS = ['primary_location.source.type', 'primary_location.raw_type',
-             'primary_location.is_oa', 'primary_location.source.id',
+DROP_COLS = ['primary_location.source.type',
              'primary_location.source.host_organization_name', 'primary_location.source.display_name',
              'authorships.author.id']
 # Imputation trace columns: kept in the studies file, dropped from the database
-SOURCE_COLS = ['institutions_source', 'publisher_source', 'language_imputed', 'abstract_source']
+SOURCE_COLS = ['institutions_source', 'publisher_source', 'language_imputed', 'abstract_source',
+               'source_is_oa_imputed']
+
+# Missing primary_location.source.is_oa from open_access.oa_status (green is ambiguous and is not imputed)
+OA_STATUS_SOURCE_OA = {'gold': True, 'diamond': True, 'hybrid': False, 'bronze': False, 'closed': False}
 
 # Abstracts, publisher and language
 S2_BATCH_URL = "https://api.semanticscholar.org/graph/v1/paper/batch"

@@ -8,6 +8,7 @@ Pipeline que, a partir de un archivo JSON con ejes temáticos y palabras clave, 
 4. **Imputa** datos faltantes:
    - el abstract, desde Semantic Scholar y Europe PMC;
    - el idioma;
+   - si la fuente es de acceso abierto, a partir del estado de acceso abierto del estudio;
    - el publisher;
    - los autores y las instituciones.
 5. **Clasifica** el origen de cada institución con Claude: el país, LAC, Europa, multilaterales, etc.
@@ -115,13 +116,14 @@ Todas se escriben en `outputs/`.
 Columnas de trazabilidad en `{name}.xlsx`:
 - `abstract_source`, `publisher_source` e `institutions_source` indican de dónde viene cada valor.
 - `language_imputed` marca los idiomas detectados automáticamente.
+- `source_is_oa_imputed` marca los estudios donde `primary_location.source.is_oa` se imputó desde `open_access.oa_status`.
 - `authorships.author.id_imputed` marca los ids de autor imputados.
 
 Hojas de `{name}_db.xlsx`:
 
 | Hoja | Llave | Contenido |
 |---|---|---|
-| `studies` | `study_id` | Metadatos, abstract, publisher, autores y citaciones del estudio. |
+| `studies` | `study_id` | Metadatos, abstract, publisher, ODS principal, autores y citaciones del estudio. |
 | `institutions` | `institution_id` | Nombre, país, tipo, organización raíz y grupo de origen. |
 | `study_institutions` | `study_id`, `institution_id` | Relación entre estudios e instituciones. |
 | `topics` | `topic_id` | Catálogo completo de tópicos de OpenAlex, con su subcampo, campo y dominio. |

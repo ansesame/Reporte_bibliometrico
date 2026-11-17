@@ -1,4 +1,4 @@
-''' Imputation of abstracts, language and publisher '''
+''' Imputation of abstracts, language, source open access and publisher '''
 import re
 import time
 from functools import lru_cache
@@ -7,7 +7,8 @@ from html import unescape
 import pandas as pd
 import requests
 
-from .config import (TEXT_COLUMNS, S2_BATCH_URL, EPMC_SEARCH_URL, DOI_HEADERS, DOMAIN_PUBLISHERS, LANGUAGES)
+from .config import (TEXT_COLUMNS, S2_BATCH_URL, EPMC_SEARCH_URL, DOI_HEADERS, DOMAIN_PUBLISHERS, LANGUAGES,
+                     OA_STATUS_SOURCE_OA)
 from .utils import clean_name
 
 
@@ -100,6 +101,20 @@ def impute_language(studies):
     if imputed.any():
         studies.loc[imputed, 'language'] = studies[imputed].apply(
             lambda row: detect_language(row['display_name'], row['abstract']), axis=1)
+    return studies
+
+
+# Source open access
+
+def impute_source_oa(studies):
+    ''' Missing primary_location.source.is_oa (unknown source) from open_access.oa_status:
+    gold and diamond imply a fully OA source; hybrid, bronze and closed a non OA one; green stays missing.
+    source_is_oa_imputed flags the imputed rows '''
+    studies = studies.copy()
+    column = 'primary_location.source.is_oa'
+    imputed = studies[column].isna() & studies['open_access.oa_status'].isin(list(OA_STATUS_SOURCE_OA))
+    studies.loc[imputed, column] = studies.loc[imputed, 'open_access.oa_status'].map(OA_STATUS_SOURCE_OA)
+    studies['source_is_oa_imputed'] = imputed
     return studies
 
 
