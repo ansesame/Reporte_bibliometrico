@@ -1,7 +1,7 @@
 {
     "meta": {
         "count": 5,
-        "db_response_time_ms": 64,
+        "db_response_time_ms": 227,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -177,7 +177,10 @@
             "doi": "https://doi.org/10.5377/eya.v18i1.22791",
             "title": "Percepción del desempeño del Servicio Aduanero en Honduras desde la experiencia del agente aduanero como usuario clave del sistema",
             "display_name": "Percepción del desempeño del Servicio Aduanero en Honduras desde la experiencia del agente aduanero como usuario clave del sistema",
-            "relevance_score": 132.41425,
+            "alternate_titles": [
+                "Perception of the performance of the Customs Service in Honduras from the experience of the customs agent as a key system user"
+            ],
+            "relevance_score": 132.75665,
             "publication_year": 2026,
             "publication_date": "2026-06-29",
             "ids": {
@@ -220,8 +223,13 @@
                 "raw_source_name": "Economía y Administración (E&amp;A)",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W7167271118"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref"
             ],
@@ -261,10 +269,11 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": 0.0,
+            "is_authors_truncated": false,
             "has_fulltext": false,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.46592934,
+                "value": 0.0,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -276,6 +285,7 @@
                 "last_page": "169"
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -621,8 +631,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -1066,8 +1076,9 @@
                     174
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W7167271118",
             "counts_by_year": [],
-            "updated_date": "2026-10-28T10:33:24.094632",
+            "updated_date": "2026-11-17T12:49:18.490984",
             "created_date": "2026-07-04T00:00:00"
         },
         {
@@ -1075,7 +1086,8 @@
             "doi": null,
             "title": "Reducción del costo de importación, desde Honduras hacia Guatemala, con la implementación de un sello electrónico, en una empresa importadora de productos lácteos",
             "display_name": "Reducción del costo de importación, desde Honduras hacia Guatemala, con la implementación de un sello electrónico, en una empresa importadora de productos lácteos",
-            "relevance_score": 114.20415,
+            "alternate_titles": [],
+            "relevance_score": 113.877426,
             "publication_year": 2019,
             "publication_date": "2019-11-01",
             "ids": {
@@ -1112,8 +1124,13 @@
                 "raw_source_name": null,
                 "raw_type": "Thesis"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W3045204247"
+            ],
+            "child_works_count": 0,
             "type": "dissertation",
+            "is_traditional": true,
             "indexed_in": [],
             "open_access": {
                 "is_oa": false,
@@ -1163,6 +1180,7 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": null,
+            "is_authors_truncated": false,
             "has_fulltext": false,
             "cited_by_count": 0,
             "citation_normalized_percentile": null,
@@ -1174,12 +1192,13 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
                 "id": "https://openalex.org/T14133",
                 "display_name": "Border Security and International Relations",
-                "score": 0.6327999830245972,
+                "score": 0.7231000065803528,
                 "subfield": {
                     "id": "https://openalex.org/subfields/3320",
                     "display_name": "Political Science and International Relations"
@@ -1197,7 +1216,7 @@
                 {
                     "id": "https://openalex.org/T14133",
                     "display_name": "Border Security and International Relations",
-                    "score": 0.6327999830245972,
+                    "score": 0.7231000065803528,
                     "subfield": {
                         "id": "https://openalex.org/subfields/3320",
                         "display_name": "Political Science and International Relations"
@@ -1212,16 +1231,16 @@
                     }
                 },
                 {
-                    "id": "https://openalex.org/T14121",
-                    "display_name": "Logistics and Transportation Systems",
-                    "score": 0.16040000319480896,
+                    "id": "https://openalex.org/T14180",
+                    "display_name": "Law, logistics, and international trade",
+                    "score": 0.12710000574588776,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/1404",
-                        "display_name": "Management Information Systems"
+                        "id": "https://openalex.org/subfields/3308",
+                        "display_name": "Law"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/14",
-                        "display_name": "Business, Management and Accounting"
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
                     },
                     "domain": {
                         "id": "https://openalex.org/domains/2",
@@ -1229,16 +1248,16 @@
                     }
                 },
                 {
-                    "id": "https://openalex.org/T14180",
-                    "display_name": "Law, logistics, and international trade",
-                    "score": 0.11959999799728394,
+                    "id": "https://openalex.org/T14121",
+                    "display_name": "Business Logistics and Inventory Control",
+                    "score": 0.08889999985694885,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/1402",
-                        "display_name": "Accounting"
+                        "id": "https://openalex.org/subfields/1803",
+                        "display_name": "Management Science and Operations Research"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/14",
-                        "display_name": "Business, Management and Accounting"
+                        "id": "https://openalex.org/fields/18",
+                        "display_name": "Decision Sciences"
                     },
                     "domain": {
                         "id": "https://openalex.org/domains/2",
@@ -1250,32 +1269,32 @@
                 {
                     "id": "https://openalex.org/keywords/electronic-seals",
                     "display_name": "electronic seals",
-                    "score": 0.7239999771118164
+                    "score": 0.7620000243186951
                 },
                 {
                     "id": "https://openalex.org/keywords/import-costs",
                     "display_name": "import costs",
-                    "score": 0.6919999718666077
+                    "score": 0.6639999747276306
                 },
                 {
                     "id": "https://openalex.org/keywords/customs-clearance",
                     "display_name": "customs clearance",
-                    "score": 0.5699999928474426
+                    "score": 0.5860000252723694
                 },
                 {
                     "id": "https://openalex.org/keywords/dairy-products",
                     "display_name": "dairy products",
-                    "score": 0.6669999957084656
+                    "score": 0.7139999866485596
                 },
                 {
                     "id": "https://openalex.org/keywords/cargo-protection",
                     "display_name": "cargo protection",
-                    "score": 0.4259999990463257
+                    "score": 0.4090000092983246
                 },
                 {
                     "id": "https://openalex.org/keywords/cost-reduction",
                     "display_name": "cost reduction",
-                    "score": 0.5659999847412109
+                    "score": 0.5860000252723694
                 }
             ],
             "concepts": [
@@ -1353,16 +1372,16 @@
             "sustainable_development_goals": [
                 {
                     "id": "https://metadata.un.org/sdg/9",
-                    "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.7207000255584717
+                    "score": 0.5378999710083008,
+                    "display_name": "Industry, innovation and infrastructure"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -1370,12 +1389,12 @@
             "related_works": [
                 "https://openalex.org/W7000956468",
                 "https://openalex.org/W6990202826",
-                "https://openalex.org/W7001042273",
+                "https://openalex.org/W2903535574",
                 "https://openalex.org/W2497835546",
                 "https://openalex.org/W2800245826",
                 "https://openalex.org/W7070746755",
                 "https://openalex.org/W7026742927",
-                "https://openalex.org/W7026251679",
+                "https://openalex.org/W2604455920",
                 "https://openalex.org/W7018476034",
                 "https://openalex.org/W7048710655"
             ],
@@ -1509,8 +1528,9 @@
                     49
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W3045204247",
             "counts_by_year": [],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-14T11:04:58.165337",
             "created_date": "2020-07-29T00:00:00"
         },
         {
@@ -1518,7 +1538,8 @@
             "doi": null,
             "title": "Integración regional de las repúblicas de Guatemala, Honduras y El Salvador 1991 2015, una perspectiva desde el intergubernamentalismo liberal",
             "display_name": "Integración regional de las repúblicas de Guatemala, Honduras y El Salvador 1991 2015, una perspectiva desde el intergubernamentalismo liberal",
-            "relevance_score": 106.71471,
+            "alternate_titles": [],
+            "relevance_score": 106.58895,
             "publication_year": 2023,
             "publication_date": "2023-01-01",
             "ids": {
@@ -1556,8 +1577,13 @@
                 "raw_source_name": "Ciudad Universitaria Rodrigo Facio, Costa Rica",
                 "raw_type": "tesis doctoral"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W7135337960"
+            ],
+            "child_works_count": 0,
             "type": "dissertation",
+            "is_traditional": true,
             "indexed_in": [],
             "open_access": {
                 "is_oa": true,
@@ -1593,6 +1619,7 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": null,
+            "is_authors_truncated": false,
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": null,
@@ -1604,6 +1631,7 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -1889,23 +1917,117 @@
             "sustainable_development_goals": [
                 {
                     "id": "https://metadata.un.org/sdg/16",
-                    "display_name": "Peace, justice, and strong institutions",
-                    "score": 0.6601999998092651
+                    "score": 0.6601999998092651,
+                    "display_name": "Peace, justice, and strong institutions"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W7135337960.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W7135337960.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 93,
+            "referenced_works": [
+                "https://openalex.org/W36073597",
+                "https://openalex.org/W124095577",
+                "https://openalex.org/W180979610",
+                "https://openalex.org/W600742985",
+                "https://openalex.org/W610968520",
+                "https://openalex.org/W856315955",
+                "https://openalex.org/W969356351",
+                "https://openalex.org/W1498343547",
+                "https://openalex.org/W1503796948",
+                "https://openalex.org/W1512382693",
+                "https://openalex.org/W1512880766",
+                "https://openalex.org/W1522599888",
+                "https://openalex.org/W1532586480",
+                "https://openalex.org/W1565745275",
+                "https://openalex.org/W1579497637",
+                "https://openalex.org/W1585272301",
+                "https://openalex.org/W1635816521",
+                "https://openalex.org/W1725209229",
+                "https://openalex.org/W1807633285",
+                "https://openalex.org/W1821162825",
+                "https://openalex.org/W1948362769",
+                "https://openalex.org/W1960608679",
+                "https://openalex.org/W1964336196",
+                "https://openalex.org/W1973921467",
+                "https://openalex.org/W1976513859",
+                "https://openalex.org/W1984448975",
+                "https://openalex.org/W1989930905",
+                "https://openalex.org/W1993041134",
+                "https://openalex.org/W2001338123",
+                "https://openalex.org/W2002896987",
+                "https://openalex.org/W2017990047",
+                "https://openalex.org/W2031429514",
+                "https://openalex.org/W2044608039",
+                "https://openalex.org/W2045027389",
+                "https://openalex.org/W2049463971",
+                "https://openalex.org/W2057826352",
+                "https://openalex.org/W2072470960",
+                "https://openalex.org/W2100666645",
+                "https://openalex.org/W2100981798",
+                "https://openalex.org/W2114442842",
+                "https://openalex.org/W2118253012",
+                "https://openalex.org/W2124318041",
+                "https://openalex.org/W2141035778",
+                "https://openalex.org/W2144938152",
+                "https://openalex.org/W2159961463",
+                "https://openalex.org/W2162285626",
+                "https://openalex.org/W2164704757",
+                "https://openalex.org/W2171894967",
+                "https://openalex.org/W2249420553",
+                "https://openalex.org/W2283559154",
+                "https://openalex.org/W2294013454",
+                "https://openalex.org/W2296999409",
+                "https://openalex.org/W2485390879",
+                "https://openalex.org/W2520644934",
+                "https://openalex.org/W2589784018",
+                "https://openalex.org/W2607396145",
+                "https://openalex.org/W2777225720",
+                "https://openalex.org/W2798221310",
+                "https://openalex.org/W2809026228",
+                "https://openalex.org/W2884355890",
+                "https://openalex.org/W2890115872",
+                "https://openalex.org/W2947948390",
+                "https://openalex.org/W2948451150",
+                "https://openalex.org/W2954592182",
+                "https://openalex.org/W2964287565",
+                "https://openalex.org/W2966816487",
+                "https://openalex.org/W2970490961",
+                "https://openalex.org/W3003533487",
+                "https://openalex.org/W3010366222",
+                "https://openalex.org/W3040429783",
+                "https://openalex.org/W3041960729",
+                "https://openalex.org/W3111911659",
+                "https://openalex.org/W3123217077",
+                "https://openalex.org/W3123534221",
+                "https://openalex.org/W3123683947",
+                "https://openalex.org/W3124690615",
+                "https://openalex.org/W3124949184",
+                "https://openalex.org/W3125146190",
+                "https://openalex.org/W3134041900",
+                "https://openalex.org/W3205949897",
+                "https://openalex.org/W3211963640",
+                "https://openalex.org/W4229943301",
+                "https://openalex.org/W4230127468",
+                "https://openalex.org/W4237611233",
+                "https://openalex.org/W4239725537",
+                "https://openalex.org/W4248554038",
+                "https://openalex.org/W4310583594",
+                "https://openalex.org/W6920833375",
+                "https://openalex.org/W6982967920",
+                "https://openalex.org/W7005313088",
+                "https://openalex.org/W7017581049",
+                "https://openalex.org/W7055397960",
+                "https://openalex.org/W7066726451"
+            ],
             "related_works": [
                 "https://openalex.org/W2562389057",
                 "https://openalex.org/W2547182220",
@@ -1913,7 +2035,7 @@
                 "https://openalex.org/W572209178",
                 "https://openalex.org/W570018757",
                 "https://openalex.org/W110964333",
-                "https://openalex.org/W6986403824",
+                "https://openalex.org/W610968520",
                 "https://openalex.org/W4392446809",
                 "https://openalex.org/W2196464385",
                 "https://openalex.org/W809784655"
@@ -2866,8 +2988,9 @@
                     449
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W7135337960",
             "counts_by_year": [],
-            "updated_date": "2026-10-12T09:40:04.860316",
+            "updated_date": "2026-11-16T12:05:36.265796",
             "created_date": "2026-03-14T00:00:00"
         },
         {
@@ -2875,7 +2998,8 @@
             "doi": null,
             "title": "Análisis de las Relaciones Comerciales entre países del Triángulo Norte Centroamericano (República de Guatemala, República de Honduras y República de El Salvador) a partir del Acuerdo sobre Facilitación del Comercio de la Organización Mundial del Comercio. Período 2014-2017.",
             "display_name": "Análisis de las Relaciones Comerciales entre países del Triángulo Norte Centroamericano (República de Guatemala, República de Honduras y República de El Salvador) a partir del Acuerdo sobre Facilitación del Comercio de la Organización Mundial del Comercio. Período 2014-2017.",
-            "relevance_score": 95.36958,
+            "alternate_titles": [],
+            "relevance_score": 96.05039,
             "publication_year": 2019,
             "publication_date": "2019-05-01",
             "ids": {
@@ -2914,8 +3038,13 @@
                 "raw_source_name": "",
                 "raw_type": "Thesis"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W2986315841"
+            ],
+            "child_works_count": 0,
             "type": "dissertation",
+            "is_traditional": true,
             "indexed_in": [],
             "open_access": {
                 "is_oa": true,
@@ -2981,8 +3110,9 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": null,
+            "is_authors_truncated": false,
             "has_fulltext": true,
-            "cited_by_count": 0,
+            "cited_by_count": 1,
             "citation_normalized_percentile": null,
             "cited_by_percentile_year": null,
             "biblio": {
@@ -2992,12 +3122,13 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
                 "id": "https://openalex.org/T10128",
                 "display_name": "Global trade and economics",
-                "score": 0.6211000084877014,
+                "score": 0.5853999853134155,
                 "subfield": {
                     "id": "https://openalex.org/subfields/2000",
                     "display_name": "General Economics, Econometrics and Finance"
@@ -3015,7 +3146,7 @@
                 {
                     "id": "https://openalex.org/T10128",
                     "display_name": "Global trade and economics",
-                    "score": 0.6211000084877014,
+                    "score": 0.5853999853134155,
                     "subfield": {
                         "id": "https://openalex.org/subfields/2000",
                         "display_name": "General Economics, Econometrics and Finance"
@@ -3032,7 +3163,7 @@
                 {
                     "id": "https://openalex.org/T13352",
                     "display_name": "International Relations in Latin America",
-                    "score": 0.2085999995470047,
+                    "score": 0.20630000531673431,
                     "subfield": {
                         "id": "https://openalex.org/subfields/3320",
                         "display_name": "Political Science and International Relations"
@@ -3049,7 +3180,7 @@
                 {
                     "id": "https://openalex.org/T12156",
                     "display_name": "World Trade Organization Law",
-                    "score": 0.1526000052690506,
+                    "score": 0.18880000710487366,
                     "subfield": {
                         "id": "https://openalex.org/subfields/3320",
                         "display_name": "Political Science and International Relations"
@@ -3068,22 +3199,22 @@
                 {
                     "id": "https://openalex.org/keywords/trade-facilitation-agreement",
                     "display_name": "Trade Facilitation Agreement",
-                    "score": 0.7559999823570251
+                    "score": 0.7910000085830688
                 },
                 {
                     "id": "https://openalex.org/keywords/world-trade-organization",
                     "display_name": "World Trade Organization",
-                    "score": 0.9269999861717224
+                    "score": 0.8949999809265137
                 },
                 {
                     "id": "https://openalex.org/keywords/guatemala",
                     "display_name": "Guatemala",
-                    "score": 0.9100000262260437
+                    "score": 0.925000011920929
                 },
                 {
                     "id": "https://openalex.org/keywords/honduras",
                     "display_name": "Honduras",
-                    "score": 0.9959999918937683
+                    "score": 0.9940000176429749
                 },
                 {
                     "id": "https://openalex.org/keywords/el-salvador",
@@ -3091,19 +3222,19 @@
                     "score": 1.0
                 },
                 {
-                    "id": "https://openalex.org/keywords/bilateral-trade-relations",
-                    "display_name": "bilateral trade relations",
-                    "score": 0.7960000038146973
+                    "id": "https://openalex.org/keywords/international-trade-relations",
+                    "display_name": "international trade relations",
+                    "score": 0.7210000157356262
                 },
                 {
                     "id": "https://openalex.org/keywords/gatt",
                     "display_name": "GATT",
-                    "score": 0.7379999756813049
+                    "score": 0.7599999904632568
                 },
                 {
                     "id": "https://openalex.org/keywords/trade-regulation",
                     "display_name": "trade regulation",
-                    "score": 0.4830000102519989
+                    "score": 0.492000013589859
                 }
             ],
             "concepts": [
@@ -3215,17 +3346,22 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W2986315841.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W2986315841.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 4,
+            "referenced_works": [
+                "https://openalex.org/W2621380741",
+                "https://openalex.org/W2755341204",
+                "https://openalex.org/W3088698630",
+                "https://openalex.org/W7217034085"
+            ],
             "related_works": [
-                "https://openalex.org/W3124379445",
+                "https://openalex.org/W7043885282",
                 "https://openalex.org/W3004531631",
                 "https://openalex.org/W2474256356",
                 "https://openalex.org/W7132233225",
@@ -3233,7 +3369,7 @@
                 "https://openalex.org/W7165500930",
                 "https://openalex.org/W194511535",
                 "https://openalex.org/W2310585804",
-                "https://openalex.org/W7062779164",
+                "https://openalex.org/W2948799845",
                 "https://openalex.org/W7000745837"
             ],
             "abstract_inverted_index": {
@@ -3773,8 +3909,14 @@
                     248
                 ]
             },
-            "counts_by_year": [],
-            "updated_date": "2026-10-27T15:51:10.671819",
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2986315841",
+            "counts_by_year": [
+                {
+                    "year": 2023,
+                    "cited_by_count": 1
+                }
+            ],
+            "updated_date": "2026-11-16T12:05:36.265796",
             "created_date": "2019-11-22T00:00:00"
         },
         {
@@ -3782,7 +3924,10 @@
             "doi": "https://doi.org/10.37656/s20768400-2020-3-05",
             "title": "Insufficiency of the Customs Union as an Engine of Economic Development in the Northern Triangle of Central America",
             "display_name": "Insufficiency of the Customs Union as an Engine of Economic Development in the Northern Triangle of Central America",
-            "relevance_score": 36.2285,
+            "alternate_titles": [
+                "Insuficiencia de la Unión Aduanera como motor de desarrollo económico en el triángulo norte centroamericano"
+            ],
+            "relevance_score": 36.23613,
             "publication_year": 2020,
             "publication_date": "2020-01-01",
             "ids": {
@@ -3826,8 +3971,13 @@
                 "raw_source_name": "IBEROAMERICA",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W3130862539"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref"
             ],
@@ -3936,10 +4086,11 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": 0.0,
+            "is_authors_truncated": false,
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.35796309,
+                "value": 0.0,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -3951,6 +4102,7 @@
                 "last_page": "120"
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -4165,41 +4317,44 @@
             "sustainable_development_goals": [
                 {
                     "id": "https://metadata.un.org/sdg/9",
-                    "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.7207000255584717
+                    "score": 0.7207000255584717,
+                    "display_name": "Industry, innovation and infrastructure"
                 },
                 {
                     "id": "https://metadata.un.org/sdg/17",
-                    "display_name": "Partnerships for the goals",
-                    "score": 0.42089998722076416
+                    "score": 0.42089998722076416,
+                    "display_name": "Partnerships for the goals"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W3130862539.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W3130862539.grobid-xml"
             },
-            "referenced_works_count": 4,
+            "referenced_works_count": 7,
             "referenced_works": [
                 "https://openalex.org/W31487802",
                 "https://openalex.org/W70897991",
                 "https://openalex.org/W1536003753",
-                "https://openalex.org/W2323506780"
+                "https://openalex.org/W1549342455",
+                "https://openalex.org/W2323506780",
+                "https://openalex.org/W2626042897",
+                "https://openalex.org/W7065509876"
             ],
             "related_works": [
                 "https://openalex.org/W2509035751",
                 "https://openalex.org/W1938104145",
                 "https://openalex.org/W1567278388",
-                "https://openalex.org/W7057685259",
+                "https://openalex.org/W3210188269",
                 "https://openalex.org/W7029690501",
                 "https://openalex.org/W6917504549",
-                "https://openalex.org/W7219238923",
+                "https://openalex.org/W2901764427",
                 "https://openalex.org/W4392446809",
                 "https://openalex.org/W2986315841",
                 "https://openalex.org/W584833290"
@@ -4500,8 +4655,9 @@
                     123
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W3130862539",
             "counts_by_year": [],
-            "updated_date": "2026-10-30T12:39:25.321706",
+            "updated_date": "2026-11-17T12:49:18.490984",
             "created_date": "2021-03-01T00:00:00"
         }
     ],

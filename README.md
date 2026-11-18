@@ -117,7 +117,11 @@ Columnas de trazabilidad en `{name}.xlsx`:
 - `abstract_source`, `publisher_source` e `institutions_source` indican de dónde viene cada valor.
 - `language_imputed` marca los idiomas detectados automáticamente.
 - `source_is_oa_imputed` marca los estudios donde `primary_location.source.is_oa` se imputó desde `open_access.oa_status`.
-- `authorships.author.id_imputed` marca los ids de autor imputados.
+- `authorships.author.id_imputed` marca los ids de autor imputados. Esta columna solo está en `{name}.xlsx`, no en la hoja `studies` de `{name}_db.xlsx`.
+
+Fechas de cada estudio (en ambos archivos):
+- `retrieved_date` es la fecha de la corrida en que el estudio entró a la base. Si ya existe `{name}_db.xlsx`, los estudios que ya estaban conservan su fecha y solo los nuevos reciben la fecha de la corrida actual.
+- `openalex_updated_date` es la fecha en que OpenAlex actualizó el registro por última vez. No es la fecha de la corrida.
 
 Hojas de `{name}_db.xlsx`:
 
@@ -130,6 +134,8 @@ Hojas de `{name}_db.xlsx`:
 | `study_topics` | `study_id`, `topic_id` | Relación entre estudios y tópicos. |
 | `thematics` | `thematic_id` | Ejes temáticos del JSON, con su OQL. |
 | `study_thematics` | `study_id`, `thematic_id` | Relación entre estudios y ejes temáticos. |
+| `study_year_cites` | `study_id`, `year` | Citas recibidas por año (`cited_by_count`), tomadas de `counts_by_year` de OpenAlex. Solo incluye los años que OpenAlex reporta: años con al menos una cita, y como máximo los últimos 10. |
+| `metadata` | — | Una fila con el objeto `meta` del JSON de queries (las listas, como `country_terms`, van unidas con `; `) y `updated_date`, la fecha de la última actualización de los datos. |
 
 Los ids se guardan sin el prefijo `https://openalex.org/`. Los ids de tópicos, subcampos, campos y dominios se guardan como número.
 

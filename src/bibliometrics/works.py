@@ -58,6 +58,7 @@ def build_studies_df(results, thematic_id):
     nested_vars = ['authorships', ABSTRACT_OBJECT, KEYWORDS_OBJECT, SDG_OBJECT]
     studies = pd.json_normalize([{k: v for k, v in result.items() if k not in nested_vars} for result in results])
     studies = studies.reindex(columns=INTEREST_VARS) # Missing columns as NaN
+    studies = studies.rename(columns={'updated_date': 'openalex_updated_date'}) # Not the date of the run
 
     extra = pd.DataFrame([
         {**build_authors(result.get('authorships')),

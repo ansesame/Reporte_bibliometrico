@@ -14,6 +14,7 @@ __pycache__/
 docs/
 notebooks/*.xlsx
 notebooks/honduras_backup/
+data/queries_honduras_OE.json
 
 # Sistema operativo / editor
 .DS_Store

@@ -1,7 +1,7 @@
 {
     "meta": {
         "count": 3,
-        "db_response_time_ms": 230,
+        "db_response_time_ms": 554,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -197,7 +197,8 @@
             "doi": "https://doi.org/10.33412/idt.v15.2.2233",
             "title": "Gobernanza de datos públicos en Honduras",
             "display_name": "Gobernanza de datos públicos en Honduras",
-            "relevance_score": 189.37282,
+            "alternate_titles": [],
+            "relevance_score": 190.0539,
             "publication_year": 2019,
             "publication_date": "2019-07-30",
             "ids": {
@@ -244,8 +245,13 @@
                 "raw_source_name": "I+D Tecnológico",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W2966447695"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref",
                 "doaj"
@@ -253,7 +259,7 @@
             "open_access": {
                 "is_oa": true,
                 "oa_status": "diamond",
-                "oa_url": "https://doi.org/10.33412/idt.v15.2.2233",
+                "oa_url": "https://revistas.utp.ac.pa/index.php/id-tecnologico/article/download/2233/3140",
                 "any_repository_has_fulltext": true
             },
             "authorships": [
@@ -347,17 +353,18 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 1.9967,
+            "fwci": 1.7315,
+            "is_authors_truncated": false,
             "has_fulltext": true,
-            "cited_by_count": 2,
+            "cited_by_count": 3,
             "citation_normalized_percentile": {
-                "value": 0.90026604,
+                "value": 0.86515828,
                 "is_in_top_1_percent": false,
-                "is_in_top_10_percent": true
+                "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 88,
-                "max": 93
+                "min": 87,
+                "max": 94
             },
             "biblio": {
                 "volume": "15",
@@ -366,6 +373,7 @@
                 "last_page": "55"
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -618,11 +626,11 @@
                 }
             ],
             "best_oa_location": {
-                "id": "doi:10.33412/idt.v15.2.2233",
-                "doi": "https://doi.org/10.33412/idt.v15.2.2233",
+                "id": "pmh:oai:revistas.utp.ac.pa:article/2233",
+                "doi": null,
                 "is_oa": true,
-                "landing_page_url": "https://doi.org/10.33412/idt.v15.2.2233",
-                "pdf_url": null,
+                "landing_page_url": "https://revistas.utp.ac.pa/index.php/id-tecnologico/article/view/2233",
+                "pdf_url": "https://revistas.utp.ac.pa/index.php/id-tecnologico/article/download/2233/3140",
                 "source": {
                     "id": "https://openalex.org/S4210186348",
                     "display_name": "I+D Tecnológico",
@@ -652,8 +660,8 @@
                 "version": "publishedVersion",
                 "is_accepted": true,
                 "is_published": true,
-                "raw_source_name": "I+D Tecnológico",
-                "raw_type": "journal-article"
+                "raw_source_name": "1680-8894",
+                "raw_type": "info:eu-repo/semantics/article"
             },
             "sustainable_development_goals": [
                 {
@@ -673,10 +681,12 @@
                 "pdf": "https://content.openalex.org/works/W2966447695.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W2966447695.grobid-xml"
             },
-            "referenced_works_count": 2,
+            "referenced_works_count": 4,
             "referenced_works": [
                 "https://openalex.org/W2027600959",
-                "https://openalex.org/W2555582359"
+                "https://openalex.org/W2555582359",
+                "https://openalex.org/W4240739585",
+                "https://openalex.org/W4241203813"
             ],
             "related_works": [
                 "https://openalex.org/W7214849396",
@@ -1205,17 +1215,18 @@
                     238
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2966447695",
             "counts_by_year": [
                 {
                     "year": 2021,
-                    "cited_by_count": 1
+                    "cited_by_count": 2
                 },
                 {
                     "year": 2019,
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-16T12:05:36.265796",
             "created_date": "2019-08-13T00:00:00"
         },
         {
@@ -1223,7 +1234,8 @@
             "doi": "https://doi.org/10.5281/zenodo.8101855",
             "title": "(Memacu Reformasi Birokrasi dan Meningkatkan Daya Saing Indonesia",
             "display_name": "(Memacu Reformasi Birokrasi dan Meningkatkan Daya Saing Indonesia",
-            "relevance_score": 30.365528,
+            "alternate_titles": [],
+            "relevance_score": 30.208178,
             "publication_year": 2023,
             "publication_date": "2023-06-30",
             "ids": {
@@ -1262,8 +1274,13 @@
                 "raw_source_name": null,
                 "raw_type": "article-journal"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4382626586"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "datacite"
             ],
@@ -1315,10 +1332,11 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": 0.0,
+            "is_authors_truncated": false,
             "has_fulltext": false,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.1168038,
+                "value": 0.0,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -1330,6 +1348,7 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -2429,6 +2448,7 @@
                     343
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4382626586",
             "counts_by_year": [],
             "updated_date": "2026-10-07T09:51:55.459714",
             "created_date": "2023-06-30T00:00:00"
@@ -2438,7 +2458,8 @@
             "doi": null,
             "title": "Diseño de un manual de atención al cliente para los núcleos de apoyo contable y fiscal (naf) de la Universidad de Córdoba en los trámites y servicios tributarios ofertados por la Dirección de Impuestos y Aduanas Nacionales",
             "display_name": "Diseño de un manual de atención al cliente para los núcleos de apoyo contable y fiscal (naf) de la Universidad de Córdoba en los trámites y servicios tributarios ofertados por la Dirección de Impuestos y Aduanas Nacionales",
-            "relevance_score": 28.017443,
+            "alternate_titles": [],
+            "relevance_score": 27.900415,
             "publication_year": 2021,
             "publication_date": "2021-09-30",
             "ids": {
@@ -2474,8 +2495,13 @@
                 "raw_source_name": null,
                 "raw_type": "info:eu-repo/semantics/bachelorThesis"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W7159735624"
+            ],
+            "child_works_count": 0,
             "type": "dissertation",
+            "is_traditional": true,
             "indexed_in": [],
             "open_access": {
                 "is_oa": true,
@@ -2511,6 +2537,7 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": null,
+            "is_authors_truncated": false,
             "has_fulltext": false,
             "cited_by_count": 0,
             "citation_normalized_percentile": null,
@@ -2522,6 +2549,7 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -2529,8 +2557,8 @@
                 "display_name": "Customer Service Quality and Loyalty",
                 "score": 0.4684999883174896,
                 "subfield": {
-                    "id": "https://openalex.org/subfields/1407",
-                    "display_name": "Organizational Behavior and Human Resource Management"
+                    "id": "https://openalex.org/subfields/1406",
+                    "display_name": "Marketing"
                 },
                 "field": {
                     "id": "https://openalex.org/fields/14",
@@ -2547,8 +2575,8 @@
                     "display_name": "Customer Service Quality and Loyalty",
                     "score": 0.4684999883174896,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/1407",
-                        "display_name": "Organizational Behavior and Human Resource Management"
+                        "id": "https://openalex.org/subfields/1406",
+                        "display_name": "Marketing"
                     },
                     "field": {
                         "id": "https://openalex.org/fields/14",
@@ -4112,6 +4140,7 @@
                     663
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W7159735624",
             "counts_by_year": [],
             "updated_date": "2026-09-11T09:22:31.653822",
             "created_date": "2026-05-02T00:00:00"

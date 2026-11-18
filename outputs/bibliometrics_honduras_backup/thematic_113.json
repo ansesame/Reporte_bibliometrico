@@ -1,7 +1,7 @@
 {
     "meta": {
-        "count": 6,
-        "db_response_time_ms": 89,
+        "count": 5,
+        "db_response_time_ms": 203,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -187,7 +187,8 @@
             "doi": "https://doi.org/10.1080/07352166.2019.1654894",
             "title": "Gating Tegucigalpa, Honduras: The paradoxical effects of “Safer Barrios”",
             "display_name": "Gating Tegucigalpa, Honduras: The paradoxical effects of “Safer Barrios”",
-            "relevance_score": 171.5075,
+            "alternate_titles": [],
+            "relevance_score": 173.89084,
             "publication_year": 2019,
             "publication_date": "2019-10-01",
             "ids": {
@@ -246,8 +247,13 @@
                 "raw_source_name": "Journal of Urban Affairs",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W2977711193"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref",
                 "datacite"
@@ -351,17 +357,18 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.0,
+            "fwci": 0.5878,
+            "is_authors_truncated": false,
             "has_fulltext": false,
-            "cited_by_count": 2,
+            "cited_by_count": 5,
             "citation_normalized_percentile": {
-                "value": 0.18151932,
+                "value": 0.73751276,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 89,
-                "max": 95
+                "min": 86,
+                "max": 94
             },
             "biblio": {
                 "volume": "44",
@@ -370,6 +377,7 @@
                 "last_page": "79"
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -787,18 +795,18 @@
             },
             "sustainable_development_goals": [
                 {
-                    "display_name": "Sustainable cities and communities",
                     "score": 1.0,
+                    "display_name": "Sustainable cities and communities",
                     "id": "https://metadata.un.org/sdg/11"
                 },
                 {
-                    "display_name": "Peace, justice, and strong institutions",
                     "score": 0.8999999761581421,
+                    "display_name": "Peace, justice, and strong institutions",
                     "id": "https://metadata.un.org/sdg/16"
                 },
                 {
-                    "display_name": "Reduced inequalities",
                     "score": 0.7307999730110168,
+                    "display_name": "Reduced inequalities",
                     "id": "https://metadata.un.org/sdg/10"
                 }
             ],
@@ -810,10 +818,11 @@
                 "pdf": false
             },
             "content_urls": null,
-            "referenced_works_count": 38,
+            "referenced_works_count": 46,
             "referenced_works": [
                 "https://openalex.org/W18856604",
                 "https://openalex.org/W132807525",
+                "https://openalex.org/W649073412",
                 "https://openalex.org/W1523105510",
                 "https://openalex.org/W1557892030",
                 "https://openalex.org/W1580483797",
@@ -827,6 +836,7 @@
                 "https://openalex.org/W2023921369",
                 "https://openalex.org/W2033394450",
                 "https://openalex.org/W2041656516",
+                "https://openalex.org/W2052148605",
                 "https://openalex.org/W2053919327",
                 "https://openalex.org/W2083421871",
                 "https://openalex.org/W2093060718",
@@ -835,6 +845,7 @@
                 "https://openalex.org/W2146354668",
                 "https://openalex.org/W2150422410",
                 "https://openalex.org/W2160104336",
+                "https://openalex.org/W2160364513",
                 "https://openalex.org/W2168689965",
                 "https://openalex.org/W2169548120",
                 "https://openalex.org/W2184498845",
@@ -843,13 +854,18 @@
                 "https://openalex.org/W2481367368",
                 "https://openalex.org/W2589103744",
                 "https://openalex.org/W2594191088",
+                "https://openalex.org/W2807737200",
                 "https://openalex.org/W3145167467",
                 "https://openalex.org/W3197618489",
                 "https://openalex.org/W4235434007",
                 "https://openalex.org/W4244984155",
                 "https://openalex.org/W4254770141",
                 "https://openalex.org/W4294625551",
-                "https://openalex.org/W4300823227"
+                "https://openalex.org/W4300823227",
+                "https://openalex.org/W6986592247",
+                "https://openalex.org/W7024500352",
+                "https://openalex.org/W7028334185",
+                "https://openalex.org/W7070706578"
             ],
             "related_works": [
                 "https://openalex.org/W7066114836",
@@ -861,7 +877,7 @@
                 "https://openalex.org/W2904258960",
                 "https://openalex.org/W2940244499",
                 "https://openalex.org/W321848351",
-                "https://openalex.org/W4407191518"
+                "https://openalex.org/W1489331844"
             ],
             "abstract_inverted_index": {
                 "This": [
@@ -1213,6 +1229,7 @@
                     141
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2977711193",
             "counts_by_year": [
                 {
                     "year": 2026,
@@ -1221,344 +1238,32 @@
                 {
                     "year": 2024,
                     "cited_by_count": 1
+                },
+                {
+                    "year": 2023,
+                    "cited_by_count": 1
+                },
+                {
+                    "year": 2022,
+                    "cited_by_count": 1
+                },
+                {
+                    "year": 2020,
+                    "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-17T12:49:18.490984",
             "created_date": "2019-10-10T00:00:00"
-        },
-        {
-            "id": "https://openalex.org/W7201950605",
-            "doi": "https://doi.org/10.13140/rg.2.2.29112.30729",
-            "title": "Pre-Feasibility Study for the Integration of an Aerial Ropeway in the Historic Center of Tegucigalpa, Honduras",
-            "display_name": "Pre-Feasibility Study for the Integration of an Aerial Ropeway in the Historic Center of Tegucigalpa, Honduras",
-            "relevance_score": 145.04138,
-            "publication_year": 2026,
-            "publication_date": "2026-08-08",
-            "ids": {
-                "openalex": "https://openalex.org/W7201950605",
-                "doi": "https://doi.org/10.13140/rg.2.2.29112.30729"
-            },
-            "language": "en",
-            "primary_location": {
-                "id": "doi:10.13140/rg.2.2.29112.30729",
-                "doi": "https://doi.org/10.13140/rg.2.2.29112.30729",
-                "is_oa": false,
-                "landing_page_url": "https://doi.org/10.13140/rg.2.2.29112.30729",
-                "pdf_url": null,
-                "source": null,
-                "license": null,
-                "license_id": null,
-                "version": null,
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": "article-journal"
-            },
-            "volume": null,
-            "type": "article",
-            "indexed_in": [
-                "datacite"
-            ],
-            "open_access": {
-                "is_oa": false,
-                "oa_status": "closed",
-                "oa_url": null,
-                "any_repository_has_fulltext": false
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5125246963",
-                        "display_name": "Ricardo A. Gallopp Ramírez",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [],
-                    "countries": [],
-                    "is_corresponding": true,
-                    "raw_author_name": "Ricardo Arturo Gallopp Ramirez",
-                    "raw_affiliation_strings": [],
-                    "raw_orcid": null,
-                    "affiliations": []
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 0,
-            "institutions_distinct_count": 0,
-            "corresponding_author_ids": [
-                "https://openalex.org/A5125246963"
-            ],
-            "corresponding_institution_ids": [],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.0,
-            "has_fulltext": false,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": {
-                "value": 0.57621533,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": null,
-                "issue": null,
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T13520",
-                "display_name": "Architectural and Urban Studies",
-                "score": 0.16220000386238098,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/1206",
-                    "display_name": "Conservation"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/12",
-                    "display_name": "Arts and Humanities"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T13520",
-                    "display_name": "Architectural and Urban Studies",
-                    "score": 0.16220000386238098,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1206",
-                        "display_name": "Conservation"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/12",
-                        "display_name": "Arts and Humanities"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T10698",
-                    "display_name": "Transportation Planning and Optimization",
-                    "score": 0.1128000020980835,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3313",
-                        "display_name": "Transportation"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T13601",
-                    "display_name": "Urban Transport Systems Analysis",
-                    "score": 0.07010000199079514,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2205",
-                        "display_name": "Civil and Structural Engineering"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/22",
-                        "display_name": "Engineering"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/aerial-ropeways",
-                    "display_name": "aerial ropeways",
-                    "score": 0.9909999966621399
-                },
-                {
-                    "id": "https://openalex.org/keywords/cable-car",
-                    "display_name": "cable car",
-                    "score": 0.7570000290870667
-                },
-                {
-                    "id": "https://openalex.org/keywords/historic-city-centre",
-                    "display_name": "historic city centre",
-                    "score": 0.6000000238418579
-                },
-                {
-                    "id": "https://openalex.org/keywords/urban-transport-integration",
-                    "display_name": "urban transport integration",
-                    "score": 0.5550000071525574
-                },
-                {
-                    "id": "https://openalex.org/keywords/pre-feasibility-study",
-                    "display_name": "prefeasibility study",
-                    "score": 0.8330000042915344
-                },
-                {
-                    "id": "https://openalex.org/keywords/tegucigalpa",
-                    "display_name": "Tegucigalpa",
-                    "score": 0.8989999890327454
-                },
-                {
-                    "id": "https://openalex.org/keywords/historic-preservation",
-                    "display_name": "historic preservation",
-                    "score": 0.6039999723434448
-                },
-                {
-                    "id": "https://openalex.org/keywords/urban-mobility",
-                    "display_name": "urban mobility",
-                    "score": 0.6169999837875366
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C205649164",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1071",
-                    "display_name": "Geography",
-                    "level": 0,
-                    "score": 0.49390000104904175
-                },
-                {
-                    "id": "https://openalex.org/C2779463800",
-                    "wikidata": "https://www.wikidata.org/wiki/Q5062222",
-                    "display_name": "Center (category theory)",
-                    "level": 2,
-                    "score": 0.4519999921321869
-                },
-                {
-                    "id": "https://openalex.org/C166957645",
-                    "wikidata": "https://www.wikidata.org/wiki/Q23498",
-                    "display_name": "Archaeology",
-                    "level": 1,
-                    "score": 0.3319000005722046
-                },
-                {
-                    "id": "https://openalex.org/C58640448",
-                    "wikidata": "https://www.wikidata.org/wiki/Q42515",
-                    "display_name": "Cartography",
-                    "level": 1,
-                    "score": 0.26159998774528503
-                },
-                {
-                    "id": "https://openalex.org/C116834253",
-                    "wikidata": "https://www.wikidata.org/wiki/Q2039217",
-                    "display_name": "Identification (biology)",
-                    "level": 2,
-                    "score": 0.2529999911785126
-                },
-                {
-                    "id": "https://openalex.org/C133214962",
-                    "wikidata": "https://www.wikidata.org/wiki/Q191839",
-                    "display_name": "Aerial photography",
-                    "level": 2,
-                    "score": 0.2451999932527542
-                },
-                {
-                    "id": "https://openalex.org/C62649853",
-                    "wikidata": "https://www.wikidata.org/wiki/Q199687",
-                    "display_name": "Remote sensing",
-                    "level": 1,
-                    "score": 0.23800000548362732
-                },
-                {
-                    "id": "https://openalex.org/C127313418",
-                    "wikidata": "https://www.wikidata.org/wiki/Q1069",
-                    "display_name": "Geology",
-                    "level": 0,
-                    "score": 0.23350000381469727
-                },
-                {
-                    "id": "https://openalex.org/C127413603",
-                    "wikidata": "https://www.wikidata.org/wiki/Q11023",
-                    "display_name": "Engineering",
-                    "level": 0,
-                    "score": 0.2167000025510788
-                },
-                {
-                    "id": "https://openalex.org/C18762648",
-                    "wikidata": "https://www.wikidata.org/wiki/Q42213",
-                    "display_name": "Work (physics)",
-                    "level": 2,
-                    "score": 0.20569999516010284
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "doi:10.13140/rg.2.2.29112.30729",
-                    "doi": "https://doi.org/10.13140/rg.2.2.29112.30729",
-                    "is_oa": false,
-                    "landing_page_url": "https://doi.org/10.13140/rg.2.2.29112.30729",
-                    "pdf_url": null,
-                    "source": null,
-                    "license": null,
-                    "license_id": null,
-                    "version": null,
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": "article-journal"
-                }
-            ],
-            "best_oa_location": null,
-            "sustainable_development_goals": [
-                {
-                    "display_name": "Sustainable cities and communities",
-                    "score": 0.7646999955177307,
-                    "id": "https://metadata.un.org/sdg/11"
-                },
-                {
-                    "display_name": "Industry, innovation and infrastructure",
-                    "score": 0.7207000255584717,
-                    "id": "https://metadata.un.org/sdg/9"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": false,
-                "pdf": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 0,
-            "referenced_works": [],
-            "related_works": [
-                "https://openalex.org/W7216697525",
-                "https://openalex.org/W7018975832",
-                "https://openalex.org/W7014521803",
-                "https://openalex.org/W6903979539",
-                "https://openalex.org/W3032668711",
-                "https://openalex.org/W1466857685",
-                "https://openalex.org/W2243332039",
-                "https://openalex.org/W3158271938",
-                "https://openalex.org/W6991032343",
-                "https://openalex.org/W2995793852"
-            ],
-            "abstract_inverted_index": null,
-            "counts_by_year": [],
-            "updated_date": "2026-10-28T10:33:24.094632",
-            "created_date": "2026-08-09T00:00:00"
         },
         {
             "id": "https://openalex.org/W4389673530",
             "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
             "title": "Aporte de la UNAH para el estudio de condiciones urbano-arquitectónicas del municipio de Marcala en el diseño de una terminal central de buses interurbanos",
             "display_name": "Aporte de la UNAH para el estudio de condiciones urbano-arquitectónicas del municipio de Marcala en el diseño de una terminal central de buses interurbanos",
-            "relevance_score": 33.608734,
+            "alternate_titles": [
+                "Contributi on from UNAH for the study of urban-architectural conditi ons of the municipality of Marcala in the design of a central intercity bus terminal"
+            ],
+            "relevance_score": 33.574574,
             "publication_year": 2023,
             "publication_date": "2023-12-13",
             "ids": {
@@ -1600,8 +1305,13 @@
                 "raw_source_name": "Revista UNAH Sociedad",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4389673530"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref"
             ],
@@ -1738,17 +1448,18 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.1863,
+            "fwci": 0.111,
+            "is_authors_truncated": false,
             "has_fulltext": true,
             "cited_by_count": 1,
             "citation_normalized_percentile": {
-                "value": 0.5434582,
+                "value": 0.3534074,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 92,
-                "max": 95
+                "min": 89,
+                "max": 94
             },
             "biblio": {
                 "volume": "5",
@@ -1757,6 +1468,7 @@
                 "last_page": "21"
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -1813,7 +1525,7 @@
                 },
                 {
                     "id": "https://openalex.org/T13527",
-                    "display_name": "Transportation Systems and Logistics",
+                    "display_name": "Road Transport and Highway Systems",
                     "score": 0.003000000026077032,
                     "subfield": {
                         "id": "https://openalex.org/subfields/2205",
@@ -1951,13 +1663,13 @@
             },
             "sustainable_development_goals": [
                 {
-                    "display_name": "Sustainable cities and communities",
                     "score": 1.0,
+                    "display_name": "Sustainable cities and communities",
                     "id": "https://metadata.un.org/sdg/11"
                 },
                 {
-                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.6773999929428101,
+                    "display_name": "Industry, innovation and infrastructure",
                     "id": "https://metadata.un.org/sdg/9"
                 }
             ],
@@ -1972,9 +1684,15 @@
                 "pdf": "https://content.openalex.org/works/W4389673530.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W4389673530.grobid-xml"
             },
-            "referenced_works_count": 2,
+            "referenced_works_count": 8,
             "referenced_works": [
+                "https://openalex.org/W1487255485",
+                "https://openalex.org/W1727038039",
                 "https://openalex.org/W2049476954",
+                "https://openalex.org/W2197940149",
+                "https://openalex.org/W2468800216",
+                "https://openalex.org/W3183239124",
+                "https://openalex.org/W4225396317",
                 "https://openalex.org/W4293832181"
             ],
             "related_works": [
@@ -2493,13 +2211,14 @@
                     231
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4389673530",
             "counts_by_year": [
                 {
                     "year": 2026,
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-17T12:49:18.490984",
             "created_date": "2023-12-14T00:00:00"
         },
         {
@@ -2507,7 +2226,8 @@
             "doi": "https://doi.org/10.51378/eca.v76i767.6472",
             "title": "Movilidad urbana socialmente sostenible, un modelo no explorado para las capitales del Triángulo Norte",
             "display_name": "Movilidad urbana socialmente sostenible, un modelo no explorado para las capitales del Triángulo Norte",
-            "relevance_score": 33.32555,
+            "alternate_titles": [],
+            "relevance_score": 33.52801,
             "publication_year": 2021,
             "publication_date": "2021-12-30",
             "ids": {
@@ -2547,8 +2267,13 @@
                 "raw_source_name": "ECA: Estudios Centroamericanos",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4214503700"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref"
             ],
@@ -2611,17 +2336,18 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.1758,
+            "fwci": 0.1104,
+            "is_authors_truncated": false,
             "has_fulltext": true,
             "cited_by_count": 1,
             "citation_normalized_percentile": {
-                "value": 0.59883946,
+                "value": 0.40051598,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 89,
-                "max": 93
+                "min": 86,
+                "max": 92
             },
             "biblio": {
                 "volume": "76",
@@ -2630,6 +2356,7 @@
                 "last_page": "478"
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -2669,7 +2396,7 @@
                 },
                 {
                     "id": "https://openalex.org/T12725",
-                    "display_name": "transportation and logistics systems",
+                    "display_name": "Railways and European Transport Policy",
                     "score": 0.2777999937534332,
                     "subfield": {
                         "id": "https://openalex.org/subfields/3313",
@@ -2872,9 +2599,11 @@
                         "is_in_doaj": false,
                         "is_core": false,
                         "listed_in": [],
-                        "host_organization": null,
-                        "host_organization_name": null,
-                        "host_organization_lineage": [],
+                        "host_organization": "https://openalex.org/I63797719",
+                        "host_organization_name": "Universidad Centroamericana José Simeón Cañas",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I63797719"
+                        ],
                         "host_organization_lineage_names": [],
                         "type": "repository"
                     },
@@ -2921,18 +2650,18 @@
             },
             "sustainable_development_goals": [
                 {
-                    "display_name": "Sustainable cities and communities",
                     "score": 1.0,
+                    "display_name": "Sustainable cities and communities",
                     "id": "https://metadata.un.org/sdg/11"
                 },
                 {
-                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.5378999710083008,
+                    "display_name": "Industry, innovation and infrastructure",
                     "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "display_name": "Reduced inequalities",
                     "score": 0.4000000059604645,
+                    "display_name": "Reduced inequalities",
                     "id": "https://metadata.un.org/sdg/10"
                 }
             ],
@@ -2947,7 +2676,7 @@
                 "pdf": "https://content.openalex.org/works/W4214503700.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W4214503700.grobid-xml"
             },
-            "referenced_works_count": 46,
+            "referenced_works_count": 54,
             "referenced_works": [
                 "https://openalex.org/W9727776",
                 "https://openalex.org/W19839144",
@@ -2966,8 +2695,10 @@
                 "https://openalex.org/W1505015964",
                 "https://openalex.org/W1509301944",
                 "https://openalex.org/W1540782722",
+                "https://openalex.org/W1551342262",
                 "https://openalex.org/W1560617638",
                 "https://openalex.org/W1583681696",
+                "https://openalex.org/W1823920166",
                 "https://openalex.org/W1973573843",
                 "https://openalex.org/W1982094103",
                 "https://openalex.org/W1995821039",
@@ -2976,15 +2707,21 @@
                 "https://openalex.org/W2040964302",
                 "https://openalex.org/W2041192154",
                 "https://openalex.org/W2056321007",
+                "https://openalex.org/W2101733610",
                 "https://openalex.org/W2115204714",
+                "https://openalex.org/W2144938152",
                 "https://openalex.org/W2163920146",
                 "https://openalex.org/W2189572170",
                 "https://openalex.org/W2346476828",
+                "https://openalex.org/W2397573637",
                 "https://openalex.org/W2521473933",
                 "https://openalex.org/W2587093601",
                 "https://openalex.org/W2741817651",
                 "https://openalex.org/W2763679392",
+                "https://openalex.org/W2782443874",
+                "https://openalex.org/W2784709103",
                 "https://openalex.org/W2796023185",
+                "https://openalex.org/W2809547710",
                 "https://openalex.org/W2887231519",
                 "https://openalex.org/W2937839256",
                 "https://openalex.org/W2945792041",
@@ -3632,13 +3369,14 @@
                     303
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4214503700",
             "counts_by_year": [
                 {
                     "year": 2024,
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-16T12:05:36.265796",
             "created_date": "2022-03-02T00:00:00"
         },
         {
@@ -3646,7 +3384,8 @@
             "doi": "https://doi.org/10.18845/tm.v32i4.4801",
             "title": "Rediseño del sistema de transporte de racimos de banano para la recolección en el campo Caso de estudio: Studer Innotec",
             "display_name": "Rediseño del sistema de transporte de racimos de banano para la recolección en el campo Caso de estudio: Studer Innotec",
-            "relevance_score": 19.685556,
+            "alternate_titles": [],
+            "relevance_score": 20.019325,
             "publication_year": 2019,
             "publication_date": "2019-10-23",
             "ids": {
@@ -3698,8 +3437,13 @@
                 "raw_source_name": "Revista Tecnología en Marcha",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W2985001762"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref",
                 "doaj"
@@ -3801,15 +3545,19 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.0,
+            "fwci": 0.1341,
+            "is_authors_truncated": false,
             "has_fulltext": true,
-            "cited_by_count": 0,
+            "cited_by_count": 2,
             "citation_normalized_percentile": {
-                "value": 0.13065107,
+                "value": 0.40748376,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
-            "cited_by_percentile_year": null,
+            "cited_by_percentile_year": {
+                "min": 86,
+                "max": 92
+            },
             "biblio": {
                 "volume": null,
                 "issue": null,
@@ -3817,6 +3565,7 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -3947,7 +3696,7 @@
                 }
             ],
             "mesh": [],
-            "locations_count": 4,
+            "locations_count": 5,
             "locations": [
                 {
                     "id": "doi:10.18845/tm.v32i4.4801",
@@ -3991,6 +3740,68 @@
                     "is_published": true,
                     "raw_source_name": "Revista Tecnología en Marcha",
                     "raw_type": "journal-article"
+                },
+                {
+                    "id": "pmh:oai:repositoriotec.tec.ac.cr:2238/12029",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://revistas.tec.ac.cr/index.php/tec_marcha/article/view/4801",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306402641",
+                        "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I4383465926",
+                        "host_organization_name": "LA Referencia",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I4383465926"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "other-oa",
+                    "license_id": "https://openalex.org/licenses/other-oa",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Tecnología en marcha Journal; 2019: Vol. 32 Núm. 4 Octubre-Diciembre; Pág. 171-178",
+                    "raw_type": "info:eu-repo/semantics/article"
+                },
+                {
+                    "id": "pmh:oai:repositoriotec.tec.ac.cr:2238/17754",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://hdl.handle.net/2238/17754",
+                    "pdf_url": null,
+                    "source": {
+                        "id": "https://openalex.org/S4306402205",
+                        "display_name": "TEC repository (Technological Institute of Costa Rica)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I145372079",
+                        "host_organization_name": "Instituto Tecnológico de Costa Rica",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I145372079"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": "cc-by-nc-nd",
+                    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "0379-3982",
+                    "raw_type": "info:eu-repo/semantics/article"
                 },
                 {
                     "id": "pmh:oai:dialnet.unirioja.es:ART0001392553",
@@ -4051,37 +3862,6 @@
                     "is_published": false,
                     "raw_source_name": "Tecnología en Marcha, Vol 32, Iss 4 (2019)",
                     "raw_type": "article"
-                },
-                {
-                    "id": "pmh:oai:repositoriotec.tec.ac.cr:2238/12029",
-                    "doi": null,
-                    "is_oa": true,
-                    "landing_page_url": "https://revistas.tec.ac.cr/index.php/tec_marcha/article/view/4801",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4306402641",
-                        "display_name": "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": "https://openalex.org/I4383465926",
-                        "host_organization_name": "LA Referencia",
-                        "host_organization_lineage": [
-                            "https://openalex.org/I4383465926"
-                        ],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": "cc-by-nc-nd",
-                    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
-                    "version": "submittedVersion",
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": "Tecnología en marcha Journal; 2019: Vol. 32 Núm. 4 Octubre-Diciembre; Pág. 171-178",
-                    "raw_type": "info:eu-repo/semantics/article"
                 }
             ],
             "best_oa_location": {
@@ -4129,23 +3909,23 @@
             },
             "sustainable_development_goals": [
                 {
-                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
+                    "display_name": "Industry, innovation and infrastructure",
                     "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "display_name": "Responsible consumption and production",
                     "score": 1.0,
+                    "display_name": "Responsible consumption and production",
                     "id": "https://metadata.un.org/sdg/12"
                 },
                 {
-                    "display_name": "Zero hunger",
                     "score": 0.8409000039100647,
+                    "display_name": "Zero hunger",
                     "id": "https://metadata.un.org/sdg/2"
                 },
                 {
-                    "display_name": "Affordable and clean energy",
                     "score": 0.5690000057220459,
+                    "display_name": "Affordable and clean energy",
                     "id": "https://metadata.un.org/sdg/7"
                 }
             ],
@@ -4160,8 +3940,13 @@
                 "pdf": "https://content.openalex.org/works/W2985001762.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W2985001762.grobid-xml"
             },
-            "referenced_works_count": 0,
-            "referenced_works": [],
+            "referenced_works_count": 4,
+            "referenced_works": [
+                "https://openalex.org/W2474986758",
+                "https://openalex.org/W2516786006",
+                "https://openalex.org/W2560493523",
+                "https://openalex.org/W2742884521"
+            ],
             "related_works": [
                 "https://openalex.org/W4386619086",
                 "https://openalex.org/W7019121223",
@@ -4694,8 +4479,18 @@
                     237
                 ]
             },
-            "counts_by_year": [],
-            "updated_date": "2026-11-01T11:40:01.658920",
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2985001762",
+            "counts_by_year": [
+                {
+                    "year": 2023,
+                    "cited_by_count": 1
+                },
+                {
+                    "year": 2022,
+                    "cited_by_count": 1
+                }
+            ],
+            "updated_date": "2026-11-17T12:49:18.490984",
             "created_date": "2019-11-22T00:00:00"
         },
         {
@@ -4703,7 +4498,8 @@
             "doi": "https://doi.org/10.18235/0003972",
             "title": "Electric Mobility in Central America",
             "display_name": "Electric Mobility in Central America",
-            "relevance_score": 12.857084,
+            "alternate_titles": [],
+            "relevance_score": 12.967343,
             "publication_year": 2021,
             "publication_date": "2021-12-09",
             "ids": {
@@ -4726,8 +4522,13 @@
                 "raw_source_name": null,
                 "raw_type": "report"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4220901027"
+            ],
+            "child_works_count": 0,
             "type": "report",
+            "is_traditional": false,
             "indexed_in": [
                 "crossref"
             ],
@@ -4765,8 +4566,9 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": null,
+            "is_authors_truncated": false,
             "has_fulltext": false,
-            "cited_by_count": 5,
+            "cited_by_count": 6,
             "citation_normalized_percentile": null,
             "cited_by_percentile_year": null,
             "biblio": {
@@ -4776,6 +4578,7 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -5009,13 +4812,13 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "display_name": "Industry, innovation and infrastructure",
                     "score": 1.0,
+                    "display_name": "Industry, innovation and infrastructure",
                     "id": "https://metadata.un.org/sdg/9"
                 },
                 {
-                    "display_name": "Sustainable cities and communities",
                     "score": 0.761900007724762,
+                    "display_name": "Sustainable cities and communities",
                     "id": "https://metadata.un.org/sdg/11"
                 }
             ],
@@ -5035,7 +4838,7 @@
                 "https://openalex.org/W2937694435",
                 "https://openalex.org/W7127672911",
                 "https://openalex.org/W4401596669",
-                "https://openalex.org/W7000436476",
+                "https://openalex.org/W2398092954",
                 "https://openalex.org/W2949910585",
                 "https://openalex.org/W4405547933",
                 "https://openalex.org/W6998489087",
@@ -5318,6 +5121,7 @@
                     111
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4220901027",
             "counts_by_year": [
                 {
                     "year": 2026,
@@ -5325,7 +5129,7 @@
                 },
                 {
                     "year": 2025,
-                    "cited_by_count": 1
+                    "cited_by_count": 2
                 },
                 {
                     "year": 2024,
@@ -5336,7 +5140,7 @@
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-16T12:05:36.265796",
             "created_date": "2022-04-03T00:00:00"
         }
     ],

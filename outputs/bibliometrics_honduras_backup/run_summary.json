@@ -1,28 +1,28 @@
 {
-    "queries_file": "data/queries_honduras_ET.json",
-    "subfields_file": "C:\\Users\\andre\\Documents_local\\BID_2026\\Reporte_bibliometrico\\data\\subfields_tagged.xlsx",
+    "queries_file": ".\\data\\queries_honduras_ET.json",
+    "subfields_file": ".\\data\\subfields_tagged.xlsx",
     "name": "bibliometrics_honduras",
-    "start": "2026-11-16 19:21:50",
+    "start": "2026-11-18 14:17:51",
     "stages": {
         "queries": {
             "thematics": 20,
-            "from_backup": 20,
-            "studies": 1728
+            "from_backup": 0,
+            "studies": 1767
         },
         "subfields": {
-            "studies": 1408
+            "studies": 1468
         },
         "duplicates": {
-            "removed_by_id": 171,
+            "removed_by_id": 179,
             "removed_by_doi": 0,
-            "removed_by_title_key": 3,
-            "studies": 1234,
-            "multiple_thematics": 44
+            "removed_by_title_key": 8,
+            "studies": 1281,
+            "multiple_thematics": 45
         },
         "abstracts": {
-            "openalex": 1127,
-            "none": 78,
-            "semantic_scholar": 28,
+            "openalex": 1169,
+            "none": 84,
+            "semantic_scholar": 27,
             "europepmc": 1
         },
         "language": {
@@ -30,54 +30,59 @@
             "without_language": 0
         },
         "source_oa": {
-            "imputed": 102,
-            "without_value": 14
+            "imputed": 88,
+            "without_value": 7
         },
         "publisher": {
-            "host_organization_name": 778,
-            "display_name": 340,
-            "doi": 49,
-            "landing_page_url": 39,
-            "raw_source_name": 28
+            "host_organization_name": 851,
+            "display_name": 335,
+            "doi": 38,
+            "landing_page_url": 35,
+            "raw_source_name": 22
         },
         "authorships": {
-            "author_entities": 2772,
+            "author_entities": 2949,
             "names_rebuilt": 0,
-            "studies_without_institutions_openalex": 498,
-            "org_candidates": 302,
-            "org_matches": 15,
-            "studies_author_as_institution": 44,
-            "studies_without_authors": 24,
-            "publisher_candidates": 23,
+            "studies_without_institutions_openalex": 526,
+            "org_candidates": 329,
+            "org_matches": 11,
+            "studies_author_as_institution": 37,
+            "studies_without_authors": 27,
+            "publisher_candidates": 25,
             "studies_publisher_as_author": 21,
-            "searched_authors": 70,
-            "imputed_author_ids": 18,
-            "studies_without_institutions": 433,
-            "studies_without_institutions_after_affiliations": 283,
-            "institution_entities": 943,
+            "searched_authors": 79,
+            "imputed_author_ids": 24,
+            "studies_without_institutions": 468,
+            "studies_without_institutions_after_affiliations": 305,
+            "institution_entities": 1007,
             "filled_fields": {},
-            "merged_ids": 1,
-            "studies_without_authors_after": 3,
-            "studies_without_institutions_after": 283
+            "merged_ids": 0,
+            "studies_without_authors_after": 6,
+            "studies_without_institutions_after": 305
         },
         "inst_groups": {
-            "unique_institutions": 822,
+            "unique_institutions": 888,
             "unclassified_institutions": 0,
             "failed_batches": 0,
-            "input_tokens": 56337,
-            "output_tokens": 28832
+            "input_tokens": 60178,
+            "output_tokens": 32080
+        },
+        "retrieved_date": {
+            "kept_previous": 0,
+            "new": 1281,
+            "run_date": "2026-11-18"
         },
         "database": {
             "studies": [
-                1234,
+                1281,
                 24
             ],
             "institutions": [
-                822,
+                888,
                 6
             ],
             "study_institutions": [
-                1836,
+                1966,
                 2
             ],
             "topics": [
@@ -85,7 +90,7 @@
                 13
             ],
             "study_topics": [
-                1234,
+                1281,
                 2
             ],
             "thematics": [
@@ -93,19 +98,27 @@
                 8
             ],
             "study_thematics": [
-                1280,
+                1328,
                 2
             ],
+            "study_year_cites": [
+                1696,
+                3
+            ],
+            "metadata": [
+                1,
+                6
+            ],
             "topics_snapshot": "2026-10-14",
-            "studies_with_topic_differences": 1
+            "studies_with_topic_differences": 223
         }
     },
     "costs_usd": {
-        "openalex_queries": 0,
-        "openalex_imputation": 0.3978000000000001,
-        "anthropic": 0.0200497,
-        "openalex_total": 0.3978000000000001
+        "openalex_queries": 0.03000000000000001,
+        "openalex_imputation": 0.4362000000000002,
+        "anthropic": 0.0220578,
+        "openalex_total": 0.4662000000000002
     },
     "openalex_failures": [],
-    "time_s": 711.6
+    "time_s": 1459.8
 }

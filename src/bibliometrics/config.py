@@ -47,7 +47,7 @@ DROP_COLS = ['primary_location.source.type',
              'authorships.author.id']
 # Imputation trace columns: kept in the studies file, dropped from the database
 SOURCE_COLS = ['institutions_source', 'publisher_source', 'language_imputed', 'abstract_source',
-               'source_is_oa_imputed']
+               'source_is_oa_imputed', 'authorships.author.id_imputed']
 
 # Missing primary_location.source.is_oa from open_access.oa_status (green is ambiguous and is not imputed)
 OA_STATUS_SOURCE_OA = {'gold': True, 'diamond': True, 'hybrid': False, 'bronze': False, 'closed': False}

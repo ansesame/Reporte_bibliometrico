@@ -68,7 +68,7 @@ def build_topics_table(topics_snapshot):
         'keywords': topic.get('legacy_keywords'),
         'summary': topic.get('description'),
         'wikipedia_url': (topic.get('ids') or {}).get('wikipedia'),
-        'works_count': topic.get('works_count'), 'updated_date': topic.get('updated_date'),
+        'works_count': topic.get('works_count'), 'openalex_updated_date': topic.get('updated_date'),
         } for topic in topics_snapshot['results']]).sort_values('topic_id', ignore_index=True)
     assert topics['topic_id'].is_unique, "Duplicated topic ids"
     return topics
@@ -89,7 +89,40 @@ def check_topic_assignments(studies, study_topics, topics):
                          for column, name in TOPIC_PAIRS.items()})
 
 
-def build_db_tables(studies, thematics, topics_snapshot):
+def build_study_year_cites(study_ids, counts_by_year):
+    ''' Citations per year of each study as reported by OpenAlex (only the years in counts_by_year).
+    counts_by_year: {short study id: list of {"year", "cited_by_count"}} '''
+    missing = set(study_ids) - set(counts_by_year)
+    assert not missing, f"Studies without counts_by_year: {sorted(missing)[:5]}"
+    return pd.DataFrame(
+        [(study_id, count['year'], count['cited_by_count'])
+         for study_id in study_ids for count in counts_by_year[study_id]],
+        columns=['study_id', 'year', 'cited_by_count']).sort_values(['study_id', 'year'], ignore_index=True)
+
+
+def build_metadata_table(meta, run_date):
+    ''' One row with the meta of the queries file (lists joined by "; ") and the date of the run '''
+    return pd.DataFrame([{**{key: '; '.join(map(str, value)) if isinstance(value, list) else value
+                             for key, value in meta.items()},
+                          'updated_date': run_date}])
+
+
+def assign_retrieved_date(studies, previous_db_path, run_date):
+    ''' retrieved_date column: the date of the previous database for the studies already in it, run_date for the new ones.
+    Returns (studies, number of studies that kept their previous date) '''
+    previous = {}
+    if previous_db_path.exists():
+        previous_studies = pd.read_excel(previous_db_path, sheet_name='studies', dtype=str)
+        if 'retrieved_date' in previous_studies.columns:
+            previous = previous_studies.dropna(subset=['retrieved_date']).\
+                set_index('study_id')['retrieved_date'].to_dict()
+    studies = studies.copy()
+    kept = studies['id'].map(short_id).map(previous)
+    studies['retrieved_date'] = kept.fillna(run_date)
+    return studies, int(kept.notna().sum())
+
+
+def build_db_tables(studies, thematics, topics_snapshot, meta, run_date, counts_by_year):
     ''' Relational tables of the studies. Returns (tables, topic differences) '''
     studies = studies.reset_index(drop=True)
     studies_table = build_studies_table(studies)
@@ -101,5 +134,7 @@ def build_db_tables(studies, thematics, topics_snapshot):
     topic_diffs = check_topic_assignments(studies, study_topics, topics)
     tables = {'studies': studies_table, 'institutions': institutions, 'study_institutions': study_institutions,
               'topics': topics, 'study_topics': study_topics,
-              'thematics': thematics_table, 'study_thematics': study_thematics}
+              'thematics': thematics_table, 'study_thematics': study_thematics,
+              'study_year_cites': build_study_year_cites(study_ids, counts_by_year),
+              'metadata': build_metadata_table(meta, run_date)}
     return tables, topic_diffs

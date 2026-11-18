@@ -1,7 +1,7 @@
 {
     "meta": {
         "count": 5,
-        "db_response_time_ms": 112,
+        "db_response_time_ms": 96,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
@@ -187,7 +187,8 @@
             "doi": "https://doi.org/10.1177/17488958241289362",
             "title": "Enduring flows: The transit of drugs in contemporary Honduras",
             "display_name": "Enduring flows: The transit of drugs in contemporary Honduras",
-            "relevance_score": 172.47264,
+            "alternate_titles": [],
+            "relevance_score": 172.30843,
             "publication_year": 2024,
             "publication_date": "2024-11-26",
             "ids": {
@@ -241,8 +242,13 @@
                 "raw_source_name": "Criminology &amp; Criminal Justice",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4404779955"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref"
             ],
@@ -250,7 +256,7 @@
                 "is_oa": true,
                 "oa_status": "hybrid",
                 "oa_url": "https://doi.org/10.1177/17488958241289362",
-                "any_repository_has_fulltext": false
+                "any_repository_has_fulltext": true
             },
             "authorships": [
                 {
@@ -313,17 +319,18 @@
                 "currency": "USD",
                 "value_usd": 3450
             },
-            "fwci": 2.1053,
-            "has_fulltext": false,
-            "cited_by_count": 4,
+            "fwci": 1.7303,
+            "is_authors_truncated": false,
+            "has_fulltext": true,
+            "cited_by_count": 5,
             "citation_normalized_percentile": {
-                "value": 0.88771517,
+                "value": 0.836139,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 89,
-                "max": 98
+                "min": 86,
+                "max": 97
             },
             "biblio": {
                 "volume": "25",
@@ -332,6 +339,7 @@
                 "last_page": "146"
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -556,9 +564,9 @@
                 {
                     "id": "pmh:oai:ora.ox.ac.uk:uuid:9e38bba5-db9b-4dc1-afa3-df76a2dfd114",
                     "doi": null,
-                    "is_oa": false,
+                    "is_oa": true,
                     "landing_page_url": "https://ora.ox.ac.uk/objects/uuid:9e38bba5-db9b-4dc1-afa3-df76a2dfd114/files/rbr86b5004",
-                    "pdf_url": null,
+                    "pdf_url": "https://ora.ox.ac.uk/objects/uuid:9e38bba5-db9b-4dc1-afa3-df76a2dfd114/files/rbr86b5004",
                     "source": {
                         "id": "https://openalex.org/S4306402636",
                         "display_name": "Oxford University Research Archive (ORA) (University of Oxford)",
@@ -633,9 +641,9 @@
             },
             "sustainable_development_goals": [
                 {
-                    "display_name": "Peace, justice, and strong institutions",
                     "score": 0.8999999761581421,
-                    "id": "https://metadata.un.org/sdg/16"
+                    "id": "https://metadata.un.org/sdg/16",
+                    "display_name": "Peace, justice, and strong institutions"
                 }
             ],
             "study_designs": [],
@@ -650,14 +658,22 @@
                     "id": "https://openalex.org/F4320320290",
                     "display_name": "University of Oxford",
                     "ror": "https://ror.org/052gg0110"
+                },
+                {
+                    "id": "https://openalex.org/F4320320300",
+                    "display_name": "European Commission",
+                    "ror": "https://ror.org/00k4n6c32"
                 }
             ],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": true,
+                "pdf": true
             },
-            "content_urls": null,
-            "referenced_works_count": 34,
+            "content_urls": {
+                "pdf": "https://content.openalex.org/works/W4404779955.pdf",
+                "grobid_xml": "https://content.openalex.org/works/W4404779955.grobid-xml"
+            },
+            "referenced_works_count": 37,
             "referenced_works": [
                 "https://openalex.org/W625028906",
                 "https://openalex.org/W1579571995",
@@ -676,8 +692,11 @@
                 "https://openalex.org/W2883595144",
                 "https://openalex.org/W2903957146",
                 "https://openalex.org/W2904819910",
+                "https://openalex.org/W2969731100",
                 "https://openalex.org/W3015027753",
                 "https://openalex.org/W3044469172",
+                "https://openalex.org/W3084163495",
+                "https://openalex.org/W3122332618",
                 "https://openalex.org/W3134791230",
                 "https://openalex.org/W3137038421",
                 "https://openalex.org/W3153936717",
@@ -1368,17 +1387,22 @@
                     295
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4404779955",
             "counts_by_year": [
                 {
                     "year": 2026,
                     "cited_by_count": 3
                 },
                 {
+                    "year": 2025,
+                    "cited_by_count": 1
+                },
+                {
                     "year": 2024,
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-17T12:49:18.490984",
             "created_date": "2024-11-28T00:00:00"
         },
         {
@@ -1386,7 +1410,8 @@
             "doi": "https://doi.org/10.18235/0003885",
             "title": "BIDeconomics Honduras: oportunidades de mayor desarrollo para todos en post pandemia",
             "display_name": "BIDeconomics Honduras: oportunidades de mayor desarrollo para todos en post pandemia",
-            "relevance_score": 172.27762,
+            "alternate_titles": [],
+            "relevance_score": 172.10068,
             "publication_year": 2021,
             "publication_date": "2021-12-23",
             "ids": {
@@ -1423,8 +1448,13 @@
                 "raw_source_name": null,
                 "raw_type": "monograph"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4200110670"
+            ],
+            "child_works_count": 0,
             "type": "book",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref"
             ],
@@ -1526,10 +1556,11 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": 0.0,
+            "is_authors_truncated": false,
             "has_fulltext": false,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.13490196,
+                "value": 0.0,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -1541,6 +1572,7 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -1583,16 +1615,16 @@
                     "display_name": "Economic Growth and Development",
                     "score": 0.29269999265670776,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/1710",
-                        "display_name": "Information Systems"
+                        "id": "https://openalex.org/subfields/2002",
+                        "display_name": "Economics and Econometrics"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/17",
-                        "display_name": "Computer Science"
+                        "id": "https://openalex.org/fields/20",
+                        "display_name": "Economics, Econometrics and Finance"
                     },
                     "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
                     }
                 },
                 {
@@ -1776,34 +1808,34 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "display_name": "Decent work and economic growth",
                     "score": 0.833299994468689,
-                    "id": "https://metadata.un.org/sdg/8"
+                    "id": "https://metadata.un.org/sdg/8",
+                    "display_name": "Decent work and economic growth"
                 },
                 {
-                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.6773999929428101,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure"
                 },
                 {
-                    "display_name": "Reduced inequalities",
                     "score": 0.4000000059604645,
-                    "id": "https://metadata.un.org/sdg/10"
+                    "id": "https://metadata.un.org/sdg/10",
+                    "display_name": "Reduced inequalities"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
             "referenced_works": [],
             "related_works": [
                 "https://openalex.org/W6981334993",
-                "https://openalex.org/W7017260951",
+                "https://openalex.org/W2194459826",
                 "https://openalex.org/W4245415351",
                 "https://openalex.org/W1595584709",
                 "https://openalex.org/W171185498",
@@ -2335,8 +2367,9 @@
                     225
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4200110670",
             "counts_by_year": [],
-            "updated_date": "2026-09-29T14:09:16.559479",
+            "updated_date": "2026-11-14T11:04:58.165337",
             "created_date": "2021-12-31T00:00:00"
         },
         {
@@ -2344,7 +2377,8 @@
             "doi": "https://doi.org/10.56712/latam.v5i6.3195",
             "title": "Medios de vida y capacidad adaptativa en las familias de la microcuenca del río Talgua, Honduras 2024",
             "display_name": "Medios de vida y capacidad adaptativa en las familias de la microcuenca del río Talgua, Honduras 2024",
-            "relevance_score": 130.8946,
+            "alternate_titles": [],
+            "relevance_score": 130.52971,
             "publication_year": 2024,
             "publication_date": "2024-12-26",
             "ids": {
@@ -2385,8 +2419,13 @@
                 "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4405797915"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref"
             ],
@@ -2488,10 +2527,11 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": 0.0,
+            "is_authors_truncated": false,
             "has_fulltext": true,
             "cited_by_count": 0,
             "citation_normalized_percentile": {
-                "value": 0.20093937,
+                "value": 0.0,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
@@ -2503,6 +2543,7 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -2510,8 +2551,8 @@
                 "display_name": "Climate change impacts on agriculture",
                 "score": 0.8593999743461609,
                 "subfield": {
-                    "id": "https://openalex.org/subfields/1105",
-                    "display_name": "Ecology, Evolution, Behavior and Systematics"
+                    "id": "https://openalex.org/subfields/1102",
+                    "display_name": "Agronomy and Crop Science"
                 },
                 "field": {
                     "id": "https://openalex.org/fields/11",
@@ -2528,8 +2569,8 @@
                     "display_name": "Climate change impacts on agriculture",
                     "score": 0.8593999743461609,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/1105",
-                        "display_name": "Ecology, Evolution, Behavior and Systematics"
+                        "id": "https://openalex.org/subfields/1102",
+                        "display_name": "Agronomy and Crop Science"
                     },
                     "field": {
                         "id": "https://openalex.org/fields/11",
@@ -2562,16 +2603,16 @@
                     "display_name": "Rural Development and Agriculture",
                     "score": 0.020400000736117363,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/2308",
-                        "display_name": "Management, Monitoring, Policy and Law"
+                        "id": "https://openalex.org/subfields/3303",
+                        "display_name": "Development"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/23",
-                        "display_name": "Environmental Science"
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
                     },
                     "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
                     }
                 }
             ],
@@ -2738,36 +2779,37 @@
             },
             "sustainable_development_goals": [
                 {
-                    "display_name": "No poverty",
                     "score": 0.666700005531311,
-                    "id": "https://metadata.un.org/sdg/1"
+                    "id": "https://metadata.un.org/sdg/1",
+                    "display_name": "No poverty"
                 },
                 {
-                    "display_name": "Zero hunger",
                     "score": 0.40450000762939453,
-                    "id": "https://metadata.un.org/sdg/2"
+                    "id": "https://metadata.un.org/sdg/2",
+                    "display_name": "Zero hunger"
                 }
             ],
             "study_designs": [
                 {
-                    "display_name": "Observational Study",
-                    "id": "https://openalex.org/study-designs/observational-study"
+                    "id": "https://openalex.org/study-designs/observational-study",
+                    "display_name": "Observational Study"
                 }
             ],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4405797915.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W4405797915.grobid-xml"
             },
-            "referenced_works_count": 14,
+            "referenced_works_count": 16,
             "referenced_works": [
                 "https://openalex.org/W1588713494",
                 "https://openalex.org/W2148500142",
+                "https://openalex.org/W2194268767",
                 "https://openalex.org/W2527046457",
                 "https://openalex.org/W2750183730",
                 "https://openalex.org/W2788463809",
@@ -2779,12 +2821,11 @@
                 "https://openalex.org/W3016047683",
                 "https://openalex.org/W3026747215",
                 "https://openalex.org/W3123183652",
-                "https://openalex.org/W3157579043"
+                "https://openalex.org/W3157579043",
+                "https://openalex.org/W7033848824"
             ],
             "related_works": [
-                "https://openalex.org/W7001951558",
                 "https://openalex.org/W4405797960",
-                "https://openalex.org/W7018506142",
                 "https://openalex.org/W3217066224",
                 "https://openalex.org/W993344097",
                 "https://openalex.org/W4282043267",
@@ -3302,8 +3343,9 @@
                     236
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4405797915",
             "counts_by_year": [],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-16T12:05:36.265796",
             "created_date": "2024-12-26T00:00:00"
         },
         {
@@ -3311,7 +3353,8 @@
             "doi": "https://doi.org/10.18235/0003310",
             "title": "Evaluación de los efectos e impactos de la tormenta tropical Eta y el huracán Iota en Honduras",
             "display_name": "Evaluación de los efectos e impactos de la tormenta tropical Eta y el huracán Iota en Honduras",
-            "relevance_score": 114.13936,
+            "alternate_titles": [],
+            "relevance_score": 121.48341,
             "publication_year": 2021,
             "publication_date": "2021-05-28",
             "ids": {
@@ -3335,8 +3378,13 @@
                 "raw_source_name": null,
                 "raw_type": "report"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W3170746673"
+            ],
+            "child_works_count": 0,
             "type": "report",
+            "is_traditional": false,
             "indexed_in": [
                 "crossref"
             ],
@@ -3388,8 +3436,9 @@
             "apc_list": null,
             "apc_paid": null,
             "fwci": null,
+            "is_authors_truncated": false,
             "has_fulltext": false,
-            "cited_by_count": 6,
+            "cited_by_count": 24,
             "citation_normalized_percentile": null,
             "cited_by_percentile_year": null,
             "biblio": {
@@ -3399,6 +3448,7 @@
                 "last_page": null
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -3596,8 +3646,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": false,
-                "grobid_xml": false
+                "grobid_xml": false,
+                "pdf": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -3611,7 +3661,7 @@
                 "https://openalex.org/W7214787900",
                 "https://openalex.org/W4387074157",
                 "https://openalex.org/W6981762294",
-                "https://openalex.org/W7065851458",
+                "https://openalex.org/W7028649867",
                 "https://openalex.org/W7135170394"
             ],
             "abstract_inverted_index": {
@@ -4447,29 +4497,30 @@
                     400
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W3170746673",
             "counts_by_year": [
                 {
                     "year": 2026,
-                    "cited_by_count": 1
+                    "cited_by_count": 6
                 },
                 {
                     "year": 2025,
-                    "cited_by_count": 1
+                    "cited_by_count": 3
                 },
                 {
                     "year": 2024,
-                    "cited_by_count": 1
+                    "cited_by_count": 4
                 },
                 {
                     "year": 2023,
-                    "cited_by_count": 2
+                    "cited_by_count": 10
                 },
                 {
                     "year": 2021,
                     "cited_by_count": 1
                 }
             ],
-            "updated_date": "2026-11-04T10:54:05.112534",
+            "updated_date": "2026-11-17T12:49:18.490984",
             "created_date": "2021-06-22T00:00:00"
         },
         {
@@ -4477,7 +4528,8 @@
             "doi": "https://doi.org/10.5377/innovare.v8i2.9086",
             "title": "Simulación con robots colaborativos para prácticas de sistemas de información logística con estudiantes de ingeniería",
             "display_name": "Simulación con robots colaborativos para prácticas de sistemas de información logística con estudiantes de ingeniería",
-            "relevance_score": 10.735846,
+            "alternate_titles": [],
+            "relevance_score": 11.168874,
             "publication_year": 2019,
             "publication_date": "2019-12-31",
             "ids": {
@@ -4524,8 +4576,13 @@
                 "raw_source_name": "Innovare: Revista de ciencia y tecnología",
                 "raw_type": "journal-article"
             },
-            "volume": null,
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W3006150102"
+            ],
+            "child_works_count": 0,
             "type": "article",
+            "is_traditional": true,
             "indexed_in": [
                 "crossref"
             ],
@@ -4626,17 +4683,18 @@
             ],
             "apc_list": null,
             "apc_paid": null,
-            "fwci": 0.2307,
+            "fwci": 1.6695,
+            "is_authors_truncated": false,
             "has_fulltext": true,
-            "cited_by_count": 4,
+            "cited_by_count": 10,
             "citation_normalized_percentile": {
-                "value": 0.61412835,
+                "value": 0.84997286,
                 "is_in_top_1_percent": false,
                 "is_in_top_10_percent": false
             },
             "cited_by_percentile_year": {
-                "min": 89,
-                "max": 94
+                "min": 86,
+                "max": 97
             },
             "biblio": {
                 "volume": "8",
@@ -4645,6 +4703,7 @@
                 "last_page": "119"
             },
             "is_retracted": false,
+            "is_pulled": false,
             "is_paratext": false,
             "is_xpac": false,
             "primary_topic": {
@@ -4652,16 +4711,16 @@
                 "display_name": "Educational Robotics and Engineering",
                 "score": 0.6851000189781189,
                 "subfield": {
-                    "id": "https://openalex.org/subfields/1702",
-                    "display_name": "Artificial Intelligence"
+                    "id": "https://openalex.org/subfields/3304",
+                    "display_name": "Education"
                 },
                 "field": {
-                    "id": "https://openalex.org/fields/17",
-                    "display_name": "Computer Science"
+                    "id": "https://openalex.org/fields/33",
+                    "display_name": "Social Sciences"
                 },
                 "domain": {
-                    "id": "https://openalex.org/domains/3",
-                    "display_name": "Physical Sciences"
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
                 }
             },
             "topics": [
@@ -4670,16 +4729,16 @@
                     "display_name": "Educational Robotics and Engineering",
                     "score": 0.6851000189781189,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/1702",
-                        "display_name": "Artificial Intelligence"
+                        "id": "https://openalex.org/subfields/3304",
+                        "display_name": "Education"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/17",
-                        "display_name": "Computer Science"
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
                     },
                     "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
                     }
                 },
                 {
@@ -4687,16 +4746,16 @@
                     "display_name": "Experimental Learning in Engineering",
                     "score": 0.2506999969482422,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/2214",
-                        "display_name": "Media Technology"
+                        "id": "https://openalex.org/subfields/3304",
+                        "display_name": "Education"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/22",
-                        "display_name": "Engineering"
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
                     },
                     "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
                     }
                 },
                 {
@@ -4704,16 +4763,16 @@
                     "display_name": "Engineering Education and Pedagogy",
                     "score": 0.013700000010430813,
                     "subfield": {
-                        "id": "https://openalex.org/subfields/2216",
-                        "display_name": "Architecture"
+                        "id": "https://openalex.org/subfields/3304",
+                        "display_name": "Education"
                     },
                     "field": {
-                        "id": "https://openalex.org/fields/22",
-                        "display_name": "Engineering"
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
                     },
                     "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
                     }
                 }
             ],
@@ -4879,37 +4938,41 @@
             },
             "sustainable_development_goals": [
                 {
-                    "display_name": "Quality education",
                     "score": 0.8278999924659729,
-                    "id": "https://metadata.un.org/sdg/4"
+                    "id": "https://metadata.un.org/sdg/4",
+                    "display_name": "Quality education"
                 },
                 {
-                    "display_name": "Industry, innovation and infrastructure",
                     "score": 0.5378999710083008,
-                    "id": "https://metadata.un.org/sdg/9"
+                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "pdf": true,
-                "grobid_xml": true
+                "grobid_xml": true,
+                "pdf": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W3006150102.pdf",
                 "grobid_xml": "https://content.openalex.org/works/W3006150102.grobid-xml"
             },
-            "referenced_works_count": 2,
+            "referenced_works_count": 6,
             "referenced_works": [
+                "https://openalex.org/W39723503",
                 "https://openalex.org/W1485443335",
-                "https://openalex.org/W1563720478"
+                "https://openalex.org/W1491944225",
+                "https://openalex.org/W1563720478",
+                "https://openalex.org/W2760164337",
+                "https://openalex.org/W4407516436"
             ],
             "related_works": [
                 "https://openalex.org/W2252379003",
                 "https://openalex.org/W4414928244",
                 "https://openalex.org/W4414928211",
-                "https://openalex.org/W7025185415",
+                "https://openalex.org/W2524819191",
                 "https://openalex.org/W6981118036",
                 "https://openalex.org/W28798288",
                 "https://openalex.org/W2518602393",
@@ -5307,10 +5370,15 @@
                     169
                 ]
             },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W3006150102",
             "counts_by_year": [
                 {
-                    "year": 2024,
+                    "year": 2025,
                     "cited_by_count": 1
+                },
+                {
+                    "year": 2024,
+                    "cited_by_count": 4
                 },
                 {
                     "year": 2023,
@@ -5318,14 +5386,14 @@
                 },
                 {
                     "year": 2022,
-                    "cited_by_count": 1
+                    "cited_by_count": 2
                 },
                 {
                     "year": 2020,
-                    "cited_by_count": 1
+                    "cited_by_count": 2
                 }
             ],
-            "updated_date": "2026-09-22T06:50:58.402377",
+            "updated_date": "2026-11-16T12:05:36.265796",
             "created_date": "2020-02-24T00:00:00"
         }
     ],
