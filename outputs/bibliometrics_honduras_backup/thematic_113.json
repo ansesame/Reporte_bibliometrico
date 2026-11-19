@@ -1,14 +1,14 @@
 {
     "meta": {
-        "count": 5,
-        "db_response_time_ms": 203,
+        "count": 4,
+        "db_response_time_ms": 99,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
         "groups_count": null,
         "x_query": {
-            "oql": "get works from 2019–2026 about ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"transport network\" OR stemmed \"red de transporte\" OR stemmed \"transportation system\" OR stemmed \"sistema de transporte\" OR stemmed \"urban transportation\" OR stemmed \"transporte urbano\" OR stemmed \"Movilidad urbana\" OR stemmed \"urban mobility\")) where type is ([article](article) or [report](report) or [conference-paper](conference-paper) or [book](book) or [book-chapter](book-chapter) or [dissertation](dissertation) or [conference-abstract](conference-abstract))",
-            "x_new_oql": "get works from 2019–2026 about ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"transport network\" OR stemmed \"red de transporte\" OR stemmed \"transportation system\" OR stemmed \"sistema de transporte\" OR stemmed \"urban transportation\" OR stemmed \"transporte urbano\" OR stemmed \"Movilidad urbana\" OR stemmed \"urban mobility\")) where type is ([article](article) or [report](report) or [conference-paper](conference-paper) or [book](book) or [book-chapter](book-chapter) or [dissertation](dissertation) or [conference-abstract](conference-abstract))",
+            "oql": "get works from 2019–2026 with ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"transport network\" OR stemmed \"red de transporte\" OR stemmed \"transportation system\" OR stemmed \"sistema de transporte\" OR stemmed \"urban transportation\" OR stemmed \"transporte urbano\" OR stemmed \"Movilidad urbana\" OR stemmed \"urban mobility\")) in the title or abstract where type is ([article](article) or [report](report) or [dissertation](dissertation) or [book](book) or [book-chapter](book-chapter) or [conference-paper](conference-paper) or [dataset](dataset) or [data-paper](data-paper))",
+            "x_new_oql": "get works from 2019–2026 with ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"transport network\" OR stemmed \"red de transporte\" OR stemmed \"transportation system\" OR stemmed \"sistema de transporte\" OR stemmed \"urban transportation\" OR stemmed \"transporte urbano\" OR stemmed \"Movilidad urbana\" OR stemmed \"urban mobility\")) in the title or abstract where type is ([article](article) or [report](report) or [dissertation](dissertation) or [book](book) or [book-chapter](book-chapter) or [conference-paper](conference-paper) or [dataset](dataset) or [data-paper](data-paper))",
             "oqo": {
                 "get_rows": "works",
                 "filter_rows": [
@@ -35,7 +35,7 @@
                             },
                             {
                                 "column_id": "type",
-                                "value": "conference-paper"
+                                "value": "dissertation"
                             },
                             {
                                 "column_id": "type",
@@ -47,11 +47,15 @@
                             },
                             {
                                 "column_id": "type",
-                                "value": "dissertation"
+                                "value": "conference-paper"
                             },
                             {
                                 "column_id": "type",
-                                "value": "conference-abstract"
+                                "value": "dataset"
+                            },
+                            {
+                                "column_id": "type",
+                                "value": "data-paper"
                             }
                         ]
                     },
@@ -59,57 +63,57 @@
                         "join": "or",
                         "filters": [
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "Honduras",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "Honduran",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "Hondurans",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "hondureño",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "hondureña",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "hondureños",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "hondureñas",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "afrohondureño",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "afrohondureña",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "afrohondureños",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "afrohondureñas",
                                 "operator": "has"
                             }
@@ -119,42 +123,42 @@
                         "join": "or",
                         "filters": [
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"transport network\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"red de transporte\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"transportation system\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"sistema de transporte\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"urban transportation\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"transporte urbano\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"Movilidad urbana\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"urban mobility\"",
                                 "operator": "has"
                             }
@@ -162,7 +166,7 @@
                     }
                 ]
             },
-            "url": "/works?filter=publication_year:2019-2026,type:article|report|conference-paper|book|book-chapter|dissertation|conference-abstract,title_abstract_keywords.search:Honduras|Honduran|Hondurans|hondure%C3%B1o|hondure%C3%B1a|hondure%C3%B1os|hondure%C3%B1as|afrohondure%C3%B1o|afrohondure%C3%B1a|afrohondure%C3%B1os|afrohondure%C3%B1as,title_abstract_keywords.search:%22transport network%22|%22red de transporte%22|%22transportation system%22|%22sistema de transporte%22|%22urban transportation%22|%22transporte urbano%22|%22Movilidad urbana%22|%22urban mobility%22&per_page=100&cursor=%2A",
+            "url": "/works?filter=publication_year:2019-2026,type:article|report|dissertation|book|book-chapter|conference-paper|dataset|data-paper,title_and_abstract.search:Honduras|Honduran|Hondurans|hondure%C3%B1o|hondure%C3%B1a|hondure%C3%B1os|hondure%C3%B1as|afrohondure%C3%B1o|afrohondure%C3%B1a|afrohondure%C3%B1os|afrohondure%C3%B1as,title_and_abstract.search:%22transport network%22|%22red de transporte%22|%22transportation system%22|%22sistema de transporte%22|%22urban transportation%22|%22transporte urbano%22|%22Movilidad urbana%22|%22urban mobility%22&per_page=100&cursor=%2A",
             "order": "best matches first",
             "order_default": true
         },
@@ -179,2055 +183,17 @@
         "cost_usd": 0.001,
         "pages": 1,
         "complete": true,
-        "duplicates_removed": 0
+        "duplicates_removed": 0,
+        "pipeline_oql": "get works where year >= (2019) and year <= (2026) and type is (article or report or dissertation or book or book-chapter or conference-paper or dataset or data-paper) and title-abstract has ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"transport network\" OR stemmed \"red de transporte\" OR stemmed \"transportation system\" OR stemmed \"sistema de transporte\" OR stemmed \"urban transportation\" OR stemmed \"transporte urbano\" OR stemmed \"Movilidad urbana\" OR stemmed \"urban mobility\"))"
     },
     "results": [
-        {
-            "id": "https://openalex.org/W2977711193",
-            "doi": "https://doi.org/10.1080/07352166.2019.1654894",
-            "title": "Gating Tegucigalpa, Honduras: The paradoxical effects of “Safer Barrios”",
-            "display_name": "Gating Tegucigalpa, Honduras: The paradoxical effects of “Safer Barrios”",
-            "alternate_titles": [],
-            "relevance_score": 173.89084,
-            "publication_year": 2019,
-            "publication_date": "2019-10-01",
-            "ids": {
-                "openalex": "https://openalex.org/W2977711193",
-                "doi": "https://doi.org/10.1080/07352166.2019.1654894",
-                "mag": "2977711193"
-            },
-            "language": "en",
-            "primary_location": {
-                "id": "doi:10.1080/07352166.2019.1654894",
-                "doi": "https://doi.org/10.1080/07352166.2019.1654894",
-                "is_oa": false,
-                "landing_page_url": "https://doi.org/10.1080/07352166.2019.1654894",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S158923391",
-                    "display_name": "Journal of Urban Affairs",
-                    "issn_l": "0735-2166",
-                    "issn": [
-                        "0735-2166",
-                        "1467-9906"
-                    ],
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": true,
-                    "listed_in": [
-                        "abdc-a",
-                        "anvur-class-a",
-                        "anvur-scientific",
-                        "cwts-core",
-                        "dongbi-b",
-                        "erih-plus",
-                        "jufo-2",
-                        "norway-1",
-                        "poland-100",
-                        "russia-white-list-1",
-                        "vabb-shw"
-                    ],
-                    "host_organization": "https://openalex.org/P4310320547",
-                    "host_organization_name": "Taylor & Francis",
-                    "host_organization_lineage": [
-                        "https://openalex.org/P4310320547",
-                        "https://openalex.org/P4310320449"
-                    ],
-                    "host_organization_lineage_names": [
-                        "Taylor & Francis",
-                        "Informa"
-                    ],
-                    "type": "journal"
-                },
-                "license": null,
-                "license_id": null,
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "Journal of Urban Affairs",
-                "raw_type": "journal-article"
-            },
-            "parent_works": [],
-            "lineage": [
-                "https://openalex.org/W2977711193"
-            ],
-            "child_works_count": 0,
-            "type": "article",
-            "is_traditional": true,
-            "indexed_in": [
-                "crossref",
-                "datacite"
-            ],
-            "open_access": {
-                "is_oa": true,
-                "oa_status": "green",
-                "oa_url": "https://doi.org/10.13016/vgnb-q83z",
-                "any_repository_has_fulltext": true
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5048201269",
-                        "display_name": "Cristina Handal",
-                        "orcid": "https://orcid.org/0000-0003-0046-1571",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0003-0046-1571"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I102179633",
-                            "display_name": "The New School",
-                            "ror": "https://ror.org/02tvcev59",
-                            "country_code": "US",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I102179633"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "US"
-                    ],
-                    "is_corresponding": true,
-                    "raw_author_name": "Cristina Handal",
-                    "raw_affiliation_strings": [
-                        "The New School"
-                    ],
-                    "raw_orcid": "https://orcid.org/0000-0003-0046-1571",
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "The New School",
-                            "institution_ids": [
-                                "https://openalex.org/I102179633"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "author_position": "last",
-                    "author": {
-                        "id": "https://openalex.org/A5054329768",
-                        "display_name": "Clara Irazábal",
-                        "orcid": "https://orcid.org/0000-0003-2312-9360",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0003-2312-9360"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I76835614",
-                            "display_name": "University of Missouri",
-                            "ror": "https://ror.org/02ymw8z06",
-                            "country_code": "US",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I76835614"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "US"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Clara Irazábal",
-                    "raw_affiliation_strings": [
-                        "University of Missouri"
-                    ],
-                    "raw_orcid": "https://orcid.org/0000-0003-2312-9360",
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "University of Missouri",
-                            "institution_ids": [
-                                "https://openalex.org/I76835614"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 1,
-            "institutions_distinct_count": 2,
-            "corresponding_author_ids": [
-                "https://openalex.org/A5048201269"
-            ],
-            "corresponding_institution_ids": [
-                "https://openalex.org/I102179633"
-            ],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.5878,
-            "is_authors_truncated": false,
-            "has_fulltext": false,
-            "cited_by_count": 5,
-            "citation_normalized_percentile": {
-                "value": 0.73751276,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": {
-                "min": 86,
-                "max": 94
-            },
-            "biblio": {
-                "volume": "44",
-                "issue": "1",
-                "first_page": "57",
-                "last_page": "79"
-            },
-            "is_retracted": false,
-            "is_pulled": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T12273",
-                "display_name": "Latin American Urban Studies",
-                "score": 0.8521000146865845,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/3322",
-                    "display_name": "Urban Studies"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/33",
-                    "display_name": "Social Sciences"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T12273",
-                    "display_name": "Latin American Urban Studies",
-                    "score": 0.8521000146865845,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3322",
-                        "display_name": "Urban Studies"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T10239",
-                    "display_name": "Urban Planning and Governance",
-                    "score": 0.13979999721050262,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3322",
-                        "display_name": "Urban Studies"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T11858",
-                    "display_name": "Urban Development and Societal Issues",
-                    "score": 0.0024999999441206455,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3322",
-                        "display_name": "Urban Studies"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/gated-communities",
-                    "display_name": "gated communities",
-                    "score": 0.9599999785423279
-                },
-                {
-                    "id": "https://openalex.org/keywords/urban-security",
-                    "display_name": "urban security",
-                    "score": 0.6949999928474426
-                },
-                {
-                    "id": "https://openalex.org/keywords/citizenship",
-                    "display_name": "citizenship",
-                    "score": 0.5989999771118164
-                },
-                {
-                    "id": "https://openalex.org/keywords/local-government",
-                    "display_name": "local government",
-                    "score": 0.5299999713897705
-                },
-                {
-                    "id": "https://openalex.org/keywords/urban-mobility",
-                    "display_name": "urban mobility",
-                    "score": 0.6240000128746033
-                },
-                {
-                    "id": "https://openalex.org/keywords/sociability",
-                    "display_name": "sociability",
-                    "score": 0.9319999814033508
-                },
-                {
-                    "id": "https://openalex.org/keywords/community-safety",
-                    "display_name": "community safety",
-                    "score": 0.746999979019165
-                },
-                {
-                    "id": "https://openalex.org/keywords/urban-planning-policy",
-                    "display_name": "urban planning policy",
-                    "score": 0.7250000238418579
-                },
-                {
-                    "id": "https://openalex.org/keywords/tegucigalpa",
-                    "display_name": "Tegucigalpa",
-                    "score": 0.9819999933242798
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C2776654903",
-                    "wikidata": "https://www.wikidata.org/wiki/Q2601463",
-                    "display_name": "SAFER",
-                    "level": 2,
-                    "score": 0.7334132194519043
-                },
-                {
-                    "id": "https://openalex.org/C2780781376",
-                    "wikidata": "https://www.wikidata.org/wiki/Q42138",
-                    "display_name": "Citizenship",
-                    "level": 3,
-                    "score": 0.7011358737945557
-                },
-                {
-                    "id": "https://openalex.org/C94625758",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7163",
-                    "display_name": "Politics",
-                    "level": 2,
-                    "score": 0.5592155456542969
-                },
-                {
-                    "id": "https://openalex.org/C48103436",
-                    "wikidata": "https://www.wikidata.org/wiki/Q599031",
-                    "display_name": "State (computer science)",
-                    "level": 2,
-                    "score": 0.5075393915176392
-                },
-                {
-                    "id": "https://openalex.org/C2778137410",
-                    "wikidata": "https://www.wikidata.org/wiki/Q2732820",
-                    "display_name": "Government (linguistics)",
-                    "level": 2,
-                    "score": 0.49086910486221313
-                },
-                {
-                    "id": "https://openalex.org/C3116431",
-                    "wikidata": "https://www.wikidata.org/wiki/Q31728",
-                    "display_name": "Public administration",
-                    "level": 1,
-                    "score": 0.4823455214500427
-                },
-                {
-                    "id": "https://openalex.org/C2776154427",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7755",
-                    "display_name": "Constitution",
-                    "level": 2,
-                    "score": 0.46961361169815063
-                },
-                {
-                    "id": "https://openalex.org/C39389867",
-                    "wikidata": "https://www.wikidata.org/wiki/Q380767",
-                    "display_name": "Corporate governance",
-                    "level": 2,
-                    "score": 0.4639793038368225
-                },
-                {
-                    "id": "https://openalex.org/C2778572836",
-                    "wikidata": "https://www.wikidata.org/wiki/Q380933",
-                    "display_name": "Space (punctuation)",
-                    "level": 2,
-                    "score": 0.46216604113578796
-                },
-                {
-                    "id": "https://openalex.org/C2778719706",
-                    "wikidata": "https://www.wikidata.org/wiki/Q6501447",
-                    "display_name": "Local government",
-                    "level": 2,
-                    "score": 0.443651020526886
-                },
-                {
-                    "id": "https://openalex.org/C144024400",
-                    "wikidata": "https://www.wikidata.org/wiki/Q21201",
-                    "display_name": "Sociology",
-                    "level": 0,
-                    "score": 0.443293035030365
-                },
-                {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.4152320325374603
-                },
-                {
-                    "id": "https://openalex.org/C50522688",
-                    "wikidata": "https://www.wikidata.org/wiki/Q189833",
-                    "display_name": "Economic growth",
-                    "level": 1,
-                    "score": 0.3422812223434448
-                },
-                {
-                    "id": "https://openalex.org/C199539241",
-                    "wikidata": "https://www.wikidata.org/wiki/Q7748",
-                    "display_name": "Law",
-                    "level": 1,
-                    "score": 0.2279236614704132
-                },
-                {
-                    "id": "https://openalex.org/C38652104",
-                    "wikidata": "https://www.wikidata.org/wiki/Q3510521",
-                    "display_name": "Computer security",
-                    "level": 1,
-                    "score": 0.14688348770141602
-                },
-                {
-                    "id": "https://openalex.org/C162324750",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8134",
-                    "display_name": "Economics",
-                    "level": 0,
-                    "score": 0.14082753658294678
-                },
-                {
-                    "id": "https://openalex.org/C187736073",
-                    "wikidata": "https://www.wikidata.org/wiki/Q2920921",
-                    "display_name": "Management",
-                    "level": 1,
-                    "score": 0.09563854336738586
-                },
-                {
-                    "id": "https://openalex.org/C41895202",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8162",
-                    "display_name": "Linguistics",
-                    "level": 1,
-                    "score": 0.0
-                },
-                {
-                    "id": "https://openalex.org/C41008148",
-                    "wikidata": "https://www.wikidata.org/wiki/Q21198",
-                    "display_name": "Computer science",
-                    "level": 0,
-                    "score": 0.0
-                },
-                {
-                    "id": "https://openalex.org/C11413529",
-                    "wikidata": "https://www.wikidata.org/wiki/Q8366",
-                    "display_name": "Algorithm",
-                    "level": 1,
-                    "score": 0.0
-                },
-                {
-                    "id": "https://openalex.org/C138885662",
-                    "wikidata": "https://www.wikidata.org/wiki/Q5891",
-                    "display_name": "Philosophy",
-                    "level": 0,
-                    "score": 0.0
-                }
-            ],
-            "mesh": [],
-            "locations_count": 3,
-            "locations": [
-                {
-                    "id": "doi:10.1080/07352166.2019.1654894",
-                    "doi": "https://doi.org/10.1080/07352166.2019.1654894",
-                    "is_oa": false,
-                    "landing_page_url": "https://doi.org/10.1080/07352166.2019.1654894",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S158923391",
-                        "display_name": "Journal of Urban Affairs",
-                        "issn_l": "0735-2166",
-                        "issn": [
-                            "0735-2166",
-                            "1467-9906"
-                        ],
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": true,
-                        "listed_in": [
-                            "abdc-a",
-                            "anvur-class-a",
-                            "anvur-scientific",
-                            "cwts-core",
-                            "dongbi-b",
-                            "erih-plus",
-                            "jufo-2",
-                            "norway-1",
-                            "poland-100",
-                            "russia-white-list-1",
-                            "vabb-shw"
-                        ],
-                        "host_organization": "https://openalex.org/P4310320547",
-                        "host_organization_name": "Taylor & Francis",
-                        "host_organization_lineage": [
-                            "https://openalex.org/P4310320547",
-                            "https://openalex.org/P4310320449"
-                        ],
-                        "host_organization_lineage_names": [
-                            "Taylor & Francis",
-                            "Informa"
-                        ],
-                        "type": "journal"
-                    },
-                    "license": null,
-                    "license_id": null,
-                    "version": "publishedVersion",
-                    "is_accepted": true,
-                    "is_published": true,
-                    "raw_source_name": "Journal of Urban Affairs",
-                    "raw_type": "journal-article"
-                },
-                {
-                    "id": "pmh:oai:drum.lib.umd.edu:1903/26964",
-                    "doi": null,
-                    "is_oa": false,
-                    "landing_page_url": "http://hdl.handle.net/1903/26964",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4306401518",
-                        "display_name": "University Libraries (University of Maryland)",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": "https://openalex.org/I66946132",
-                        "host_organization_name": "University of Maryland, College Park",
-                        "host_organization_lineage": [
-                            "https://openalex.org/I66946132"
-                        ],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": null,
-                    "license_id": null,
-                    "version": "submittedVersion",
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": "Article"
-                },
-                {
-                    "id": "doi:10.13016/vgnb-q83z",
-                    "doi": "https://doi.org/10.13016/vgnb-q83z",
-                    "is_oa": true,
-                    "landing_page_url": "https://doi.org/10.13016/vgnb-q83z",
-                    "pdf_url": null,
-                    "source": {
-                        "id": "https://openalex.org/S4306402644",
-                        "display_name": "Digital Repository at the University of Maryland (University of Maryland College Park)",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": "https://openalex.org/I66946132",
-                        "host_organization_name": "University of Maryland, College Park",
-                        "host_organization_lineage": [
-                            "https://openalex.org/I66946132"
-                        ],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": null,
-                    "license_id": null,
-                    "version": null,
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": null,
-                    "raw_type": "article-journal"
-                }
-            ],
-            "best_oa_location": {
-                "id": "doi:10.13016/vgnb-q83z",
-                "doi": "https://doi.org/10.13016/vgnb-q83z",
-                "is_oa": true,
-                "landing_page_url": "https://doi.org/10.13016/vgnb-q83z",
-                "pdf_url": null,
-                "source": {
-                    "id": "https://openalex.org/S4306402644",
-                    "display_name": "Digital Repository at the University of Maryland (University of Maryland College Park)",
-                    "issn_l": null,
-                    "issn": null,
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [],
-                    "host_organization": "https://openalex.org/I66946132",
-                    "host_organization_name": "University of Maryland, College Park",
-                    "host_organization_lineage": [
-                        "https://openalex.org/I66946132"
-                    ],
-                    "host_organization_lineage_names": [],
-                    "type": "repository"
-                },
-                "license": null,
-                "license_id": null,
-                "version": null,
-                "is_accepted": false,
-                "is_published": false,
-                "raw_source_name": null,
-                "raw_type": "article-journal"
-            },
-            "sustainable_development_goals": [
-                {
-                    "score": 1.0,
-                    "display_name": "Sustainable cities and communities",
-                    "id": "https://metadata.un.org/sdg/11"
-                },
-                {
-                    "score": 0.8999999761581421,
-                    "display_name": "Peace, justice, and strong institutions",
-                    "id": "https://metadata.un.org/sdg/16"
-                },
-                {
-                    "score": 0.7307999730110168,
-                    "display_name": "Reduced inequalities",
-                    "id": "https://metadata.un.org/sdg/10"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": false,
-                "pdf": false
-            },
-            "content_urls": null,
-            "referenced_works_count": 46,
-            "referenced_works": [
-                "https://openalex.org/W18856604",
-                "https://openalex.org/W132807525",
-                "https://openalex.org/W649073412",
-                "https://openalex.org/W1523105510",
-                "https://openalex.org/W1557892030",
-                "https://openalex.org/W1580483797",
-                "https://openalex.org/W1598773870",
-                "https://openalex.org/W1929552144",
-                "https://openalex.org/W1983876944",
-                "https://openalex.org/W1996664937",
-                "https://openalex.org/W1997758486",
-                "https://openalex.org/W2022095309",
-                "https://openalex.org/W2022318905",
-                "https://openalex.org/W2023921369",
-                "https://openalex.org/W2033394450",
-                "https://openalex.org/W2041656516",
-                "https://openalex.org/W2052148605",
-                "https://openalex.org/W2053919327",
-                "https://openalex.org/W2083421871",
-                "https://openalex.org/W2093060718",
-                "https://openalex.org/W2125104580",
-                "https://openalex.org/W2143791200",
-                "https://openalex.org/W2146354668",
-                "https://openalex.org/W2150422410",
-                "https://openalex.org/W2160104336",
-                "https://openalex.org/W2160364513",
-                "https://openalex.org/W2168689965",
-                "https://openalex.org/W2169548120",
-                "https://openalex.org/W2184498845",
-                "https://openalex.org/W2260337978",
-                "https://openalex.org/W2275295690",
-                "https://openalex.org/W2481367368",
-                "https://openalex.org/W2589103744",
-                "https://openalex.org/W2594191088",
-                "https://openalex.org/W2807737200",
-                "https://openalex.org/W3145167467",
-                "https://openalex.org/W3197618489",
-                "https://openalex.org/W4235434007",
-                "https://openalex.org/W4244984155",
-                "https://openalex.org/W4254770141",
-                "https://openalex.org/W4294625551",
-                "https://openalex.org/W4300823227",
-                "https://openalex.org/W6986592247",
-                "https://openalex.org/W7024500352",
-                "https://openalex.org/W7028334185",
-                "https://openalex.org/W7070706578"
-            ],
-            "related_works": [
-                "https://openalex.org/W7066114836",
-                "https://openalex.org/W3126600275",
-                "https://openalex.org/W4403684181",
-                "https://openalex.org/W7019435916",
-                "https://openalex.org/W4409538131",
-                "https://openalex.org/W4206590514",
-                "https://openalex.org/W2904258960",
-                "https://openalex.org/W2940244499",
-                "https://openalex.org/W321848351",
-                "https://openalex.org/W1489331844"
-            ],
-            "abstract_inverted_index": {
-                "This": [
-                    0
-                ],
-                "paper": [
-                    1
-                ],
-                "analyzes": [
-                    2
-                ],
-                "the": [
-                    3,
-                    36,
-                    49,
-                    52,
-                    84,
-                    95,
-                    103,
-                    126
-                ],
-                "paradoxical": [
-                    4
-                ],
-                "political": [
-                    5
-                ],
-                "and": [
-                    6,
-                    23,
-                    47,
-                    92,
-                    100,
-                    115,
-                    123,
-                    140
-                ],
-                "socio-spatial": [
-                    7
-                ],
-                "dynamics": [
-                    8
-                ],
-                "created": [
-                    9
-                ],
-                "by": [
-                    10,
-                    35,
-                    102
-                ],
-                "“Safer": [
-                    11
-                ],
-                "Barrios,”": [
-                    12
-                ],
-                "a": [
-                    13,
-                    54,
-                    71,
-                    110
-                ],
-                "security": [
-                    14
-                ],
-                "program": [
-                    15,
-                    40,
-                    107
-                ],
-                "that": [
-                    16,
-                    56,
-                    64,
-                    76
-                ],
-                "redefines": [
-                    17
-                ],
-                "notions": [
-                    18
-                ],
-                "of": [
-                    19,
-                    31,
-                    113,
-                    128
-                ],
-                "citizenship,": [
-                    20
-                ],
-                "governance,": [
-                    21
-                ],
-                "participation,": [
-                    22
-                ],
-                "space": [
-                    24
-                ],
-                "in": [
-                    25,
-                    83
-                ],
-                "Tegucigalpa,": [
-                    26
-                ],
-                "Honduras.": [
-                    27
-                ],
-                "The": [
-                    28,
-                    61,
-                    106,
-                    131
-                ],
-                "rapid": [
-                    29
-                ],
-                "proliferation": [
-                    30
-                ],
-                "street": [
-                    32
-                ],
-                "gates": [
-                    33,
-                    50
-                ],
-                "sanctioned": [
-                    34
-                ],
-                "state": [
-                    37
-                ],
-                "under": [
-                    38
-                ],
-                "this": [
-                    39,
-                    57,
-                    86
-                ],
-                "is": [
-                    41
-                ],
-                "producing": [
-                    42
-                ],
-                "understudied": [
-                    43
-                ],
-                "effects": [
-                    44
-                ],
-                "both": [
-                    45
-                ],
-                "within": [
-                    46
-                ],
-                "outside": [
-                    48
-                ],
-                "throughout": [
-                    51
-                ],
-                "city,": [
-                    53
-                ],
-                "phenomenon": [
-                    55
-                ],
-                "study": [
-                    58
-                ],
-                "qualitatively": [
-                    59
-                ],
-                "analyzes.": [
-                    60
-                ],
-                "findings": [
-                    62,
-                    132
-                ],
-                "reveal": [
-                    63
-                ],
-                "these": [
-                    65
-                ],
-                "newly": [
-                    66
-                ],
-                "gated": [
-                    67,
-                    79
-                ],
-                "residential": [
-                    68
-                ],
-                "areas": [
-                    69
-                ],
-                "demand": [
-                    70
-                ],
-                "more": [
-                    72
-                ],
-                "nuanced": [
-                    73
-                ],
-                "analysis": [
-                    74
-                ],
-                "than": [
-                    75
-                ],
-                "which": [
-                    77
-                ],
-                "traditional": [
-                    78
-                ],
-                "communities": [
-                    80
-                ],
-                "have": [
-                    81
-                ],
-                "received": [
-                    82
-                ],
-                "past;": [
-                    85
-                ],
-                "stems": [
-                    87
-                ],
-                "from": [
-                    88
-                ],
-                "their": [
-                    89
-                ],
-                "different": [
-                    90
-                ],
-                "constitution": [
-                    91
-                ],
-                "consequences,": [
-                    93
-                ],
-                "particularly": [
-                    94
-                ],
-                "program’s": [
-                    96
-                ],
-                "unique": [
-                    97
-                ],
-                "relationship": [
-                    98
-                ],
-                "to": [
-                    99
-                ],
-                "sponsorship": [
-                    101
-                ],
-                "local": [
-                    104
-                ],
-                "government.": [
-                    105
-                ],
-                "paradoxically": [
-                    108
-                ],
-                "fosters": [
-                    109
-                ],
-                "greater": [
-                    111
-                ],
-                "sense": [
-                    112
-                ],
-                "community": [
-                    114
-                ],
-                "safety": [
-                    116
-                ],
-                "for": [
-                    117,
-                    125,
-                    136
-                ],
-                "participants": [
-                    118
-                ],
-                "while": [
-                    119
-                ],
-                "negatively": [
-                    120
-                ],
-                "affecting": [
-                    121
-                ],
-                "mobility": [
-                    122
-                ],
-                "sociability": [
-                    124
-                ],
-                "rest": [
-                    127
-                ],
-                "city": [
-                    129,
-                    137
-                ],
-                "residents.": [
-                    130
-                ],
-                "hold": [
-                    133
-                ],
-                "critical": [
-                    134
-                ],
-                "implications": [
-                    135
-                ],
-                "design,": [
-                    138
-                ],
-                "planning,": [
-                    139
-                ],
-                "policymaking.": [
-                    141
-                ]
-            },
-            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W2977711193",
-            "counts_by_year": [
-                {
-                    "year": 2026,
-                    "cited_by_count": 1
-                },
-                {
-                    "year": 2024,
-                    "cited_by_count": 1
-                },
-                {
-                    "year": 2023,
-                    "cited_by_count": 1
-                },
-                {
-                    "year": 2022,
-                    "cited_by_count": 1
-                },
-                {
-                    "year": 2020,
-                    "cited_by_count": 1
-                }
-            ],
-            "updated_date": "2026-11-17T12:49:18.490984",
-            "created_date": "2019-10-10T00:00:00"
-        },
-        {
-            "id": "https://openalex.org/W4389673530",
-            "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
-            "title": "Aporte de la UNAH para el estudio de condiciones urbano-arquitectónicas del municipio de Marcala en el diseño de una terminal central de buses interurbanos",
-            "display_name": "Aporte de la UNAH para el estudio de condiciones urbano-arquitectónicas del municipio de Marcala en el diseño de una terminal central de buses interurbanos",
-            "alternate_titles": [
-                "Contributi on from UNAH for the study of urban-architectural conditi ons of the municipality of Marcala in the design of a central intercity bus terminal"
-            ],
-            "relevance_score": 33.574574,
-            "publication_year": 2023,
-            "publication_date": "2023-12-13",
-            "ids": {
-                "openalex": "https://openalex.org/W4389673530",
-                "doi": "https://doi.org/10.5377/rus.v5iviii.17152"
-            },
-            "language": "es",
-            "primary_location": {
-                "id": "doi:10.5377/rus.v5iviii.17152",
-                "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
-                "is_oa": true,
-                "landing_page_url": "https://doi.org/10.5377/rus.v5iviii.17152",
-                "pdf_url": "https://www.camjol.info/index.php/UNAHSOCIEDAD/article/download/17152/20693",
-                "source": {
-                    "id": "https://openalex.org/S4210204532",
-                    "display_name": "Revista UNAH Sociedad",
-                    "issn_l": "2709-0027",
-                    "issn": [
-                        "2709-0027",
-                        "2709-0035"
-                    ],
-                    "is_oa": true,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [
-                        "latindex"
-                    ],
-                    "host_organization": null,
-                    "host_organization_name": null,
-                    "host_organization_lineage": [],
-                    "host_organization_lineage_names": [],
-                    "type": "journal"
-                },
-                "license": "cc-by",
-                "license_id": "https://openalex.org/licenses/cc-by",
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "Revista UNAH Sociedad",
-                "raw_type": "journal-article"
-            },
-            "parent_works": [],
-            "lineage": [
-                "https://openalex.org/W4389673530"
-            ],
-            "child_works_count": 0,
-            "type": "article",
-            "is_traditional": true,
-            "indexed_in": [
-                "crossref"
-            ],
-            "open_access": {
-                "is_oa": true,
-                "oa_status": "diamond",
-                "oa_url": "https://www.camjol.info/index.php/UNAHSOCIEDAD/article/download/17152/20693",
-                "any_repository_has_fulltext": false
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5075770120",
-                        "display_name": "Nitzia Vásquez Alvarado",
-                        "orcid": "https://orcid.org/0000-0002-1487-7992",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0002-1487-7992"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I169009895",
-                            "display_name": "National Autonomous University of Honduras",
-                            "ror": "https://ror.org/03xyve152",
-                            "country_code": "HN",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "HN"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Nitzia Vásquez",
-                    "raw_affiliation_strings": [
-                        "Universidad Nacional Autónoma de Honduras"
-                    ],
-                    "raw_orcid": "https://orcid.org/0000-0002-1487-7992",
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras",
-                            "institution_ids": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "author_position": "middle",
-                    "author": {
-                        "id": "https://openalex.org/A5111092207",
-                        "display_name": "Cindy Hernández Flores",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I169009895",
-                            "display_name": "National Autonomous University of Honduras",
-                            "ror": "https://ror.org/03xyve152",
-                            "country_code": "HN",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "HN"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Cindy Hernández Flores",
-                    "raw_affiliation_strings": [
-                        "Universidad Nacional Autónoma de Honduras"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras",
-                            "institution_ids": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "author_position": "last",
-                    "author": {
-                        "id": "https://openalex.org/A5111092208",
-                        "display_name": "Darlyn Martínez Martínez",
-                        "orcid": null,
-                        "observed_orcids": []
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I169009895",
-                            "display_name": "National Autonomous University of Honduras",
-                            "ror": "https://ror.org/03xyve152",
-                            "country_code": "HN",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "HN"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Darlyn Martínez Martínez",
-                    "raw_affiliation_strings": [
-                        "Universidad Nacional Autónoma de Honduras"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras",
-                            "institution_ids": [
-                                "https://openalex.org/I169009895"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 1,
-            "institutions_distinct_count": 1,
-            "corresponding_author_ids": [],
-            "corresponding_institution_ids": [
-                "https://openalex.org/I169009895"
-            ],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.111,
-            "is_authors_truncated": false,
-            "has_fulltext": true,
-            "cited_by_count": 1,
-            "citation_normalized_percentile": {
-                "value": 0.3534074,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": {
-                "min": 89,
-                "max": 94
-            },
-            "biblio": {
-                "volume": "5",
-                "issue": "VIII",
-                "first_page": "6",
-                "last_page": "21"
-            },
-            "is_retracted": false,
-            "is_pulled": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T10698",
-                "display_name": "Transportation Planning and Optimization",
-                "score": 0.9839000105857849,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/3313",
-                    "display_name": "Transportation"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/33",
-                    "display_name": "Social Sciences"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/2",
-                    "display_name": "Social Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T10698",
-                    "display_name": "Transportation Planning and Optimization",
-                    "score": 0.9839000105857849,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3313",
-                        "display_name": "Transportation"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T13601",
-                    "display_name": "Urban Transport Systems Analysis",
-                    "score": 0.0066999997943639755,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2205",
-                        "display_name": "Civil and Structural Engineering"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/22",
-                        "display_name": "Engineering"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T13527",
-                    "display_name": "Road Transport and Highway Systems",
-                    "score": 0.003000000026077032,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/2205",
-                        "display_name": "Civil and Structural Engineering"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/22",
-                        "display_name": "Engineering"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/3",
-                        "display_name": "Physical Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/public-transport-demand",
-                    "display_name": "public transport demand",
-                    "score": 0.7960000038146973
-                },
-                {
-                    "id": "https://openalex.org/keywords/bus-routes",
-                    "display_name": "bus routes",
-                    "score": 0.46700000762939453
-                },
-                {
-                    "id": "https://openalex.org/keywords/urban-mobility",
-                    "display_name": "urban mobility",
-                    "score": 0.7210000157356262
-                },
-                {
-                    "id": "https://openalex.org/keywords/sustainable-urban-mobility",
-                    "display_name": "sustainable urban mobility",
-                    "score": 0.7260000109672546
-                },
-                {
-                    "id": "https://openalex.org/keywords/tourism",
-                    "display_name": "tourism",
-                    "score": 0.32899999618530273
-                },
-                {
-                    "id": "https://openalex.org/keywords/housing-growth",
-                    "display_name": "housing growth",
-                    "score": 0.46399998664855957
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C15708023",
-                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
-                    "display_name": "Humanities",
-                    "level": 1,
-                    "score": 0.8611162900924683
-                },
-                {
-                    "id": "https://openalex.org/C142362112",
-                    "wikidata": "https://www.wikidata.org/wiki/Q735",
-                    "display_name": "Art",
-                    "level": 0,
-                    "score": 0.22440215945243835
-                }
-            ],
-            "mesh": [],
-            "locations_count": 1,
-            "locations": [
-                {
-                    "id": "doi:10.5377/rus.v5iviii.17152",
-                    "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
-                    "is_oa": true,
-                    "landing_page_url": "https://doi.org/10.5377/rus.v5iviii.17152",
-                    "pdf_url": "https://www.camjol.info/index.php/UNAHSOCIEDAD/article/download/17152/20693",
-                    "source": {
-                        "id": "https://openalex.org/S4210204532",
-                        "display_name": "Revista UNAH Sociedad",
-                        "issn_l": "2709-0027",
-                        "issn": [
-                            "2709-0027",
-                            "2709-0035"
-                        ],
-                        "is_oa": true,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [
-                            "latindex"
-                        ],
-                        "host_organization": null,
-                        "host_organization_name": null,
-                        "host_organization_lineage": [],
-                        "host_organization_lineage_names": [],
-                        "type": "journal"
-                    },
-                    "license": "cc-by",
-                    "license_id": "https://openalex.org/licenses/cc-by",
-                    "version": "publishedVersion",
-                    "is_accepted": true,
-                    "is_published": true,
-                    "raw_source_name": "Revista UNAH Sociedad",
-                    "raw_type": "journal-article"
-                }
-            ],
-            "best_oa_location": {
-                "id": "doi:10.5377/rus.v5iviii.17152",
-                "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
-                "is_oa": true,
-                "landing_page_url": "https://doi.org/10.5377/rus.v5iviii.17152",
-                "pdf_url": "https://www.camjol.info/index.php/UNAHSOCIEDAD/article/download/17152/20693",
-                "source": {
-                    "id": "https://openalex.org/S4210204532",
-                    "display_name": "Revista UNAH Sociedad",
-                    "issn_l": "2709-0027",
-                    "issn": [
-                        "2709-0027",
-                        "2709-0035"
-                    ],
-                    "is_oa": true,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [
-                        "latindex"
-                    ],
-                    "host_organization": null,
-                    "host_organization_name": null,
-                    "host_organization_lineage": [],
-                    "host_organization_lineage_names": [],
-                    "type": "journal"
-                },
-                "license": "cc-by",
-                "license_id": "https://openalex.org/licenses/cc-by",
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "Revista UNAH Sociedad",
-                "raw_type": "journal-article"
-            },
-            "sustainable_development_goals": [
-                {
-                    "score": 1.0,
-                    "display_name": "Sustainable cities and communities",
-                    "id": "https://metadata.un.org/sdg/11"
-                },
-                {
-                    "score": 0.6773999929428101,
-                    "display_name": "Industry, innovation and infrastructure",
-                    "id": "https://metadata.un.org/sdg/9"
-                }
-            ],
-            "study_designs": [],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": true,
-                "pdf": true
-            },
-            "content_urls": {
-                "pdf": "https://content.openalex.org/works/W4389673530.pdf",
-                "grobid_xml": "https://content.openalex.org/works/W4389673530.grobid-xml"
-            },
-            "referenced_works_count": 8,
-            "referenced_works": [
-                "https://openalex.org/W1487255485",
-                "https://openalex.org/W1727038039",
-                "https://openalex.org/W2049476954",
-                "https://openalex.org/W2197940149",
-                "https://openalex.org/W2468800216",
-                "https://openalex.org/W3183239124",
-                "https://openalex.org/W4225396317",
-                "https://openalex.org/W4293832181"
-            ],
-            "related_works": [
-                "https://openalex.org/W4404878322",
-                "https://openalex.org/W7056412339",
-                "https://openalex.org/W7009005144",
-                "https://openalex.org/W4411205890",
-                "https://openalex.org/W6999864640",
-                "https://openalex.org/W3049396611",
-                "https://openalex.org/W4410168242",
-                "https://openalex.org/W2906324520",
-                "https://openalex.org/W3146695737",
-                "https://openalex.org/W1880308167"
-            ],
-            "abstract_inverted_index": {
-                "The": [
-                    0,
-                    32,
-                    62
-                ],
-                "following": [
-                    1
-                ],
-                "research": [
-                    2,
-                    66
-                ],
-                "consists": [
-                    3
-                ],
-                "of": [
-                    4,
-                    11,
-                    15,
-                    23,
-                    28,
-                    47,
-                    64,
-                    77,
-                    90,
-                    99,
-                    112,
-                    120,
-                    123,
-                    131,
-                    148,
-                    160,
-                    169,
-                    176,
-                    188,
-                    201,
-                    205,
-                    208,
-                    221
-                ],
-                "a": [
-                    5,
-                    12,
-                    75,
-                    194
-                ],
-                "preliminary": [
-                    6
-                ],
-                "study": [
-                    7,
-                    182
-                ],
-                "for": [
-                    8,
-                    40,
-                    197
-                ],
-                "the": [
-                    9,
-                    21,
-                    26,
-                    38,
-                    51,
-                    88,
-                    97,
-                    108,
-                    115,
-                    121,
-                    129,
-                    132,
-                    157,
-                    161,
-                    167,
-                    174,
-                    189,
-                    198,
-                    206,
-                    219
-                ],
-                "design": [
-                    10
-                ],
-                "central": [
-                    13
-                ],
-                "station": [
-                    14
-                ],
-                "urban": [
-                    16,
-                    52,
-                    158,
-                    225
-                ],
-                "and": [
-                    17,
-                    45,
-                    57,
-                    71,
-                    83,
-                    93,
-                    101,
-                    110,
-                    117,
-                    151,
-                    163,
-                    185,
-                    223,
-                    229
-                ],
-                "interurban": [
-                    18,
-                    203
-                ],
-                "transport": [
-                    19,
-                    58,
-                    84,
-                    140,
-                    179
-                ],
-                "in": [
-                    20,
-                    25,
-                    54,
-                    156,
-                    166
-                ],
-                "municipality": [
-                    22,
-                    122,
-                    162,
-                    207
-                ],
-                "Marcala,": [
-                    24,
-                    124
-                ],
-                "department": [
-                    27,
-                    168
-                ],
-                "La": [
-                    29,
-                    170
-                ],
-                "Paz,": [
-                    30
-                ],
-                "Honduras.": [
-                    31
-                ],
-                "main": [
-                    33
-                ],
-                "objective": [
-                    34
-                ],
-                "is": [
-                    35
-                ],
-                "to": [
-                    36,
-                    49,
-                    173,
-                    217
-                ],
-                "know": [
-                    37
-                ],
-                "demand": [
-                    39
-                ],
-                "public": [
-                    41,
-                    139
-                ],
-                "transport,": [
-                    42
-                ],
-                "coverage": [
-                    43
-                ],
-                "areas": [
-                    44
-                ],
-                "radius": [
-                    46
-                ],
-                "action": [
-                    48
-                ],
-                "examine": [
-                    50
-                ],
-                "dimension": [
-                    53
-                ],
-                "which": [
-                    55,
-                    192
-                ],
-                "users": [
-                    56
-                ],
-                "units": [
-                    59
-                ],
-                "are": [
-                    60,
-                    136,
-                    146
-                ],
-                "located.": [
-                    61
-                ],
-                "application": [
-                    63,
-                    98
-                ],
-                "field": [
-                    65
-                ],
-                "methodology": [
-                    67
-                ],
-                "based": [
-                    68
-                ],
-                "on": [
-                    69
-                ],
-                "simple": [
-                    70
-                ],
-                "participant": [
-                    72
-                ],
-                "observation;": [
-                    73
-                ],
-                "with": [
-                    74
-                ],
-                "sample": [
-                    76
-                ],
-                "28": [
-                    78
-                ],
-                "people": [
-                    79
-                ],
-                "(coun-cilors,": [
-                    80
-                ],
-                "leaders,": [
-                    81
-                ],
-                "users,": [
-                    82
-                ],
-                "drivers),": [
-                    85
-                ],
-                "has": [
-                    86,
-                    104,
-                    125
-                ],
-                "allowed": [
-                    87
-                ],
-                "collection": [
-                    89
-                ],
-                "qualitative,": [
-                    91
-                ],
-                "quantitative,": [
-                    92
-                ],
-                "inferential": [
-                    94
-                ],
-                "data": [
-                    95
-                ],
-                "through": [
-                    96,
-                    107
-                ],
-                "surveys": [
-                    100
-                ],
-                "interviews.": [
-                    102
-                ],
-                "It": [
-                    103
-                ],
-                "been": [
-                    105,
-                    126
-                ],
-                "demonstrated": [
-                    106
-                ],
-                "analysis": [
-                    109
-                ],
-                "interpretation": [
-                    111
-                ],
-                "data,": [
-                    113
-                ],
-                "that": [
-                    114,
-                    154
-                ],
-                "demographic": [
-                    116
-                ],
-                "housing": [
-                    118
-                ],
-                "growth": [
-                    119
-                ],
-                "projected": [
-                    127
-                ],
-                "towards": [
-                    128
-                ],
-                "north": [
-                    130
-                ],
-                "city.": [
-                    133
-                ],
-                "Therefore,": [
-                    134
-                ],
-                "there": [
-                    135
-                ],
-                "approximately": [
-                    137
-                ],
-                "300": [
-                    138
-                ],
-                "units,": [
-                    141
-                ],
-                "where": [
-                    142
-                ],
-                "more": [
-                    143
-                ],
-                "than": [
-                    144
-                ],
-                "53%": [
-                    145
-                ],
-                "buses": [
-                    147
-                ],
-                "32": [
-                    149
-                ],
-                "direct": [
-                    150
-                ],
-                "indirect": [
-                    152
-                ],
-                "routes": [
-                    153,
-                    204
-                ],
-                "converge": [
-                    155
-                ],
-                "structure": [
-                    159,
-                    186
-                ],
-                "its": [
-                    164
-                ],
-                "surroundings": [
-                    165
-                ],
-                "Paz.": [
-                    171
-                ],
-                "Due": [
-                    172
-                ],
-                "existence": [
-                    175
-                ],
-                "3": [
-                    177
-                ],
-                "informal": [
-                    178
-                ],
-                "terminals,": [
-                    180
-                ],
-                "this": [
-                    181,
-                    211
-                ],
-                "recommends": [
-                    183
-                ],
-                "rearranging": [
-                    184
-                ],
-                "one": [
-                    187
-                ],
-                "bus": [
-                    190
-                ],
-                "stations,": [
-                    191
-                ],
-                "provides": [
-                    193
-                ],
-                "road": [
-                    195
-                ],
-                "solution": [
-                    196
-                ],
-                "effective": [
-                    199
-                ],
-                "management": [
-                    200
-                ],
-                "all": [
-                    202
-                ],
-                "Marcala.": [
-                    209
-                ],
-                "In": [
-                    210
-                ],
-                "way,": [
-                    212
-                ],
-                "it": [
-                    213
-                ],
-                "will": [
-                    214
-                ],
-                "be": [
-                    215
-                ],
-                "possible": [
-                    216
-                ],
-                "improve": [
-                    218
-                ],
-                "conditions": [
-                    220
-                ],
-                "development": [
-                    222
-                ],
-                "sustainable": [
-                    224
-                ],
-                "mobility,": [
-                    226
-                ],
-                "promoting": [
-                    227
-                ],
-                "local": [
-                    228
-                ],
-                "foreign": [
-                    230
-                ],
-                "tourism.": [
-                    231
-                ]
-            },
-            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4389673530",
-            "counts_by_year": [
-                {
-                    "year": 2026,
-                    "cited_by_count": 1
-                }
-            ],
-            "updated_date": "2026-11-17T12:49:18.490984",
-            "created_date": "2023-12-14T00:00:00"
-        },
         {
             "id": "https://openalex.org/W4214503700",
             "doi": "https://doi.org/10.51378/eca.v76i767.6472",
             "title": "Movilidad urbana socialmente sostenible, un modelo no explorado para las capitales del Triángulo Norte",
             "display_name": "Movilidad urbana socialmente sostenible, un modelo no explorado para las capitales del Triángulo Norte",
             "alternate_titles": [],
-            "relevance_score": 33.52801,
+            "relevance_score": 21.908592,
             "publication_year": 2021,
             "publication_date": "2021-12-30",
             "ids": {
@@ -2650,19 +616,19 @@
             },
             "sustainable_development_goals": [
                 {
-                    "score": 1.0,
+                    "id": "https://metadata.un.org/sdg/11",
                     "display_name": "Sustainable cities and communities",
-                    "id": "https://metadata.un.org/sdg/11"
+                    "score": 1.0
                 },
                 {
-                    "score": 0.5378999710083008,
+                    "id": "https://metadata.un.org/sdg/9",
                     "display_name": "Industry, innovation and infrastructure",
-                    "id": "https://metadata.un.org/sdg/9"
+                    "score": 0.5378999710083008
                 },
                 {
-                    "score": 0.4000000059604645,
+                    "id": "https://metadata.un.org/sdg/10",
                     "display_name": "Reduced inequalities",
-                    "id": "https://metadata.un.org/sdg/10"
+                    "score": 0.4000000059604645
                 }
             ],
             "study_designs": [],
@@ -3385,7 +1351,7 @@
             "title": "Rediseño del sistema de transporte de racimos de banano para la recolección en el campo Caso de estudio: Studer Innotec",
             "display_name": "Rediseño del sistema de transporte de racimos de banano para la recolección en el campo Caso de estudio: Studer Innotec",
             "alternate_titles": [],
-            "relevance_score": 20.019325,
+            "relevance_score": 19.443045,
             "publication_year": 2019,
             "publication_date": "2019-10-23",
             "ids": {
@@ -3909,24 +1875,24 @@
             },
             "sustainable_development_goals": [
                 {
-                    "score": 1.0,
+                    "id": "https://metadata.un.org/sdg/9",
                     "display_name": "Industry, innovation and infrastructure",
-                    "id": "https://metadata.un.org/sdg/9"
+                    "score": 1.0
                 },
                 {
-                    "score": 1.0,
+                    "id": "https://metadata.un.org/sdg/12",
                     "display_name": "Responsible consumption and production",
-                    "id": "https://metadata.un.org/sdg/12"
+                    "score": 1.0
                 },
                 {
-                    "score": 0.8409000039100647,
+                    "id": "https://metadata.un.org/sdg/2",
                     "display_name": "Zero hunger",
-                    "id": "https://metadata.un.org/sdg/2"
+                    "score": 0.8409000039100647
                 },
                 {
-                    "score": 0.5690000057220459,
+                    "id": "https://metadata.un.org/sdg/7",
                     "display_name": "Affordable and clean energy",
-                    "id": "https://metadata.un.org/sdg/7"
+                    "score": 0.5690000057220459
                 }
             ],
             "study_designs": [],
@@ -4499,7 +2465,7 @@
             "title": "Electric Mobility in Central America",
             "display_name": "Electric Mobility in Central America",
             "alternate_titles": [],
-            "relevance_score": 12.967343,
+            "relevance_score": 11.968196,
             "publication_year": 2021,
             "publication_date": "2021-12-09",
             "ids": {
@@ -4812,14 +2778,14 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
                 {
-                    "score": 1.0,
+                    "id": "https://metadata.un.org/sdg/9",
                     "display_name": "Industry, innovation and infrastructure",
-                    "id": "https://metadata.un.org/sdg/9"
+                    "score": 1.0
                 },
                 {
-                    "score": 0.761900007724762,
+                    "id": "https://metadata.un.org/sdg/11",
                     "display_name": "Sustainable cities and communities",
-                    "id": "https://metadata.un.org/sdg/11"
+                    "score": 0.761900007724762
                 }
             ],
             "study_designs": [],
@@ -5142,6 +3108,972 @@
             ],
             "updated_date": "2026-11-16T12:05:36.265796",
             "created_date": "2022-04-03T00:00:00"
+        },
+        {
+            "id": "https://openalex.org/W4389673530",
+            "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
+            "title": "Aporte de la UNAH para el estudio de condiciones urbano-arquitectónicas del municipio de Marcala en el diseño de una terminal central de buses interurbanos",
+            "display_name": "Aporte de la UNAH para el estudio de condiciones urbano-arquitectónicas del municipio de Marcala en el diseño de una terminal central de buses interurbanos",
+            "alternate_titles": [
+                "Contributi on from UNAH for the study of urban-architectural conditi ons of the municipality of Marcala in the design of a central intercity bus terminal"
+            ],
+            "relevance_score": 9.612724,
+            "publication_year": 2023,
+            "publication_date": "2023-12-13",
+            "ids": {
+                "openalex": "https://openalex.org/W4389673530",
+                "doi": "https://doi.org/10.5377/rus.v5iviii.17152"
+            },
+            "language": "es",
+            "primary_location": {
+                "id": "doi:10.5377/rus.v5iviii.17152",
+                "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.5377/rus.v5iviii.17152",
+                "pdf_url": "https://www.camjol.info/index.php/UNAHSOCIEDAD/article/download/17152/20693",
+                "source": {
+                    "id": "https://openalex.org/S4210204532",
+                    "display_name": "Revista UNAH Sociedad",
+                    "issn_l": "2709-0027",
+                    "issn": [
+                        "2709-0027",
+                        "2709-0035"
+                    ],
+                    "is_oa": true,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [
+                        "latindex"
+                    ],
+                    "host_organization": null,
+                    "host_organization_name": null,
+                    "host_organization_lineage": [],
+                    "host_organization_lineage_names": [],
+                    "type": "journal"
+                },
+                "license": "cc-by",
+                "license_id": "https://openalex.org/licenses/cc-by",
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "Revista UNAH Sociedad",
+                "raw_type": "journal-article"
+            },
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4389673530"
+            ],
+            "child_works_count": 0,
+            "type": "article",
+            "is_traditional": true,
+            "indexed_in": [
+                "crossref"
+            ],
+            "open_access": {
+                "is_oa": true,
+                "oa_status": "diamond",
+                "oa_url": "https://www.camjol.info/index.php/UNAHSOCIEDAD/article/download/17152/20693",
+                "any_repository_has_fulltext": false
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": "https://openalex.org/A5075770120",
+                        "display_name": "Nitzia Vásquez Alvarado",
+                        "orcid": "https://orcid.org/0000-0002-1487-7992",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0002-1487-7992"
+                        ]
+                    },
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I169009895",
+                            "display_name": "National Autonomous University of Honduras",
+                            "ror": "https://ror.org/03xyve152",
+                            "country_code": "HN",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I169009895"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "HN"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "Nitzia Vásquez",
+                    "raw_affiliation_strings": [
+                        "Universidad Nacional Autónoma de Honduras"
+                    ],
+                    "raw_orcid": "https://orcid.org/0000-0002-1487-7992",
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras",
+                            "institution_ids": [
+                                "https://openalex.org/I169009895"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author_position": "middle",
+                    "author": {
+                        "id": "https://openalex.org/A5111092207",
+                        "display_name": "Cindy Hernández Flores",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I169009895",
+                            "display_name": "National Autonomous University of Honduras",
+                            "ror": "https://ror.org/03xyve152",
+                            "country_code": "HN",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I169009895"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "HN"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "Cindy Hernández Flores",
+                    "raw_affiliation_strings": [
+                        "Universidad Nacional Autónoma de Honduras"
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras",
+                            "institution_ids": [
+                                "https://openalex.org/I169009895"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author_position": "last",
+                    "author": {
+                        "id": "https://openalex.org/A5111092208",
+                        "display_name": "Darlyn Martínez Martínez",
+                        "orcid": null,
+                        "observed_orcids": []
+                    },
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I169009895",
+                            "display_name": "National Autonomous University of Honduras",
+                            "ror": "https://ror.org/03xyve152",
+                            "country_code": "HN",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I169009895"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "HN"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "Darlyn Martínez Martínez",
+                    "raw_affiliation_strings": [
+                        "Universidad Nacional Autónoma de Honduras"
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Nacional Autónoma de Honduras",
+                            "institution_ids": [
+                                "https://openalex.org/I169009895"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 1,
+            "institutions_distinct_count": 1,
+            "corresponding_author_ids": [],
+            "corresponding_institution_ids": [
+                "https://openalex.org/I169009895"
+            ],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": 0.1103,
+            "is_authors_truncated": false,
+            "has_fulltext": true,
+            "cited_by_count": 1,
+            "citation_normalized_percentile": {
+                "value": 0.35148515,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": false
+            },
+            "cited_by_percentile_year": {
+                "min": 89,
+                "max": 94
+            },
+            "biblio": {
+                "volume": "5",
+                "issue": "VIII",
+                "first_page": "6",
+                "last_page": "21"
+            },
+            "is_retracted": false,
+            "is_pulled": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T10698",
+                "display_name": "Transportation Planning and Optimization",
+                "score": 0.9839000105857849,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/3313",
+                    "display_name": "Transportation"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/33",
+                    "display_name": "Social Sciences"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/2",
+                    "display_name": "Social Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T10698",
+                    "display_name": "Transportation Planning and Optimization",
+                    "score": 0.9839000105857849,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3313",
+                        "display_name": "Transportation"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T13601",
+                    "display_name": "Urban Transport Systems Analysis",
+                    "score": 0.0066999997943639755,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2205",
+                        "display_name": "Civil and Structural Engineering"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/22",
+                        "display_name": "Engineering"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T13527",
+                    "display_name": "Road Transport and Highway Systems",
+                    "score": 0.003000000026077032,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/2205",
+                        "display_name": "Civil and Structural Engineering"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/22",
+                        "display_name": "Engineering"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/3",
+                        "display_name": "Physical Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/public-transport-demand",
+                    "display_name": "public transport demand",
+                    "score": 0.7960000038146973
+                },
+                {
+                    "id": "https://openalex.org/keywords/bus-routes",
+                    "display_name": "bus routes",
+                    "score": 0.46700000762939453
+                },
+                {
+                    "id": "https://openalex.org/keywords/urban-mobility",
+                    "display_name": "urban mobility",
+                    "score": 0.7210000157356262
+                },
+                {
+                    "id": "https://openalex.org/keywords/sustainable-urban-mobility",
+                    "display_name": "sustainable urban mobility",
+                    "score": 0.7260000109672546
+                },
+                {
+                    "id": "https://openalex.org/keywords/tourism",
+                    "display_name": "tourism",
+                    "score": 0.32899999618530273
+                },
+                {
+                    "id": "https://openalex.org/keywords/housing-growth",
+                    "display_name": "housing growth",
+                    "score": 0.46399998664855957
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C15708023",
+                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
+                    "display_name": "Humanities",
+                    "level": 1,
+                    "score": 0.8611162900924683
+                },
+                {
+                    "id": "https://openalex.org/C142362112",
+                    "wikidata": "https://www.wikidata.org/wiki/Q735",
+                    "display_name": "Art",
+                    "level": 0,
+                    "score": 0.22440215945243835
+                }
+            ],
+            "mesh": [],
+            "locations_count": 1,
+            "locations": [
+                {
+                    "id": "doi:10.5377/rus.v5iviii.17152",
+                    "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.5377/rus.v5iviii.17152",
+                    "pdf_url": "https://www.camjol.info/index.php/UNAHSOCIEDAD/article/download/17152/20693",
+                    "source": {
+                        "id": "https://openalex.org/S4210204532",
+                        "display_name": "Revista UNAH Sociedad",
+                        "issn_l": "2709-0027",
+                        "issn": [
+                            "2709-0027",
+                            "2709-0035"
+                        ],
+                        "is_oa": true,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [
+                            "latindex"
+                        ],
+                        "host_organization": null,
+                        "host_organization_name": null,
+                        "host_organization_lineage": [],
+                        "host_organization_lineage_names": [],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "Revista UNAH Sociedad",
+                    "raw_type": "journal-article"
+                }
+            ],
+            "best_oa_location": {
+                "id": "doi:10.5377/rus.v5iviii.17152",
+                "doi": "https://doi.org/10.5377/rus.v5iviii.17152",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.5377/rus.v5iviii.17152",
+                "pdf_url": "https://www.camjol.info/index.php/UNAHSOCIEDAD/article/download/17152/20693",
+                "source": {
+                    "id": "https://openalex.org/S4210204532",
+                    "display_name": "Revista UNAH Sociedad",
+                    "issn_l": "2709-0027",
+                    "issn": [
+                        "2709-0027",
+                        "2709-0035"
+                    ],
+                    "is_oa": true,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [
+                        "latindex"
+                    ],
+                    "host_organization": null,
+                    "host_organization_name": null,
+                    "host_organization_lineage": [],
+                    "host_organization_lineage_names": [],
+                    "type": "journal"
+                },
+                "license": "cc-by",
+                "license_id": "https://openalex.org/licenses/cc-by",
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "Revista UNAH Sociedad",
+                "raw_type": "journal-article"
+            },
+            "sustainable_development_goals": [
+                {
+                    "id": "https://metadata.un.org/sdg/11",
+                    "display_name": "Sustainable cities and communities",
+                    "score": 1.0
+                },
+                {
+                    "id": "https://metadata.un.org/sdg/9",
+                    "display_name": "Industry, innovation and infrastructure",
+                    "score": 0.6773999929428101
+                }
+            ],
+            "study_designs": [],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "grobid_xml": true,
+                "pdf": true
+            },
+            "content_urls": {
+                "pdf": "https://content.openalex.org/works/W4389673530.pdf",
+                "grobid_xml": "https://content.openalex.org/works/W4389673530.grobid-xml"
+            },
+            "referenced_works_count": 8,
+            "referenced_works": [
+                "https://openalex.org/W1487255485",
+                "https://openalex.org/W1727038039",
+                "https://openalex.org/W2049476954",
+                "https://openalex.org/W2197940149",
+                "https://openalex.org/W2468800216",
+                "https://openalex.org/W3183239124",
+                "https://openalex.org/W4225396317",
+                "https://openalex.org/W4293832181"
+            ],
+            "related_works": [
+                "https://openalex.org/W4404878322",
+                "https://openalex.org/W7056412339",
+                "https://openalex.org/W7009005144",
+                "https://openalex.org/W4411205890",
+                "https://openalex.org/W6999864640",
+                "https://openalex.org/W3049396611",
+                "https://openalex.org/W4410168242",
+                "https://openalex.org/W2906324520",
+                "https://openalex.org/W3146695737",
+                "https://openalex.org/W1880308167"
+            ],
+            "abstract_inverted_index": {
+                "The": [
+                    0,
+                    32,
+                    62
+                ],
+                "following": [
+                    1
+                ],
+                "research": [
+                    2,
+                    66
+                ],
+                "consists": [
+                    3
+                ],
+                "of": [
+                    4,
+                    11,
+                    15,
+                    23,
+                    28,
+                    47,
+                    64,
+                    77,
+                    90,
+                    99,
+                    112,
+                    120,
+                    123,
+                    131,
+                    148,
+                    160,
+                    169,
+                    176,
+                    188,
+                    201,
+                    205,
+                    208,
+                    221
+                ],
+                "a": [
+                    5,
+                    12,
+                    75,
+                    194
+                ],
+                "preliminary": [
+                    6
+                ],
+                "study": [
+                    7,
+                    182
+                ],
+                "for": [
+                    8,
+                    40,
+                    197
+                ],
+                "the": [
+                    9,
+                    21,
+                    26,
+                    38,
+                    51,
+                    88,
+                    97,
+                    108,
+                    115,
+                    121,
+                    129,
+                    132,
+                    157,
+                    161,
+                    167,
+                    174,
+                    189,
+                    198,
+                    206,
+                    219
+                ],
+                "design": [
+                    10
+                ],
+                "central": [
+                    13
+                ],
+                "station": [
+                    14
+                ],
+                "urban": [
+                    16,
+                    52,
+                    158,
+                    225
+                ],
+                "and": [
+                    17,
+                    45,
+                    57,
+                    71,
+                    83,
+                    93,
+                    101,
+                    110,
+                    117,
+                    151,
+                    163,
+                    185,
+                    223,
+                    229
+                ],
+                "interurban": [
+                    18,
+                    203
+                ],
+                "transport": [
+                    19,
+                    58,
+                    84,
+                    140,
+                    179
+                ],
+                "in": [
+                    20,
+                    25,
+                    54,
+                    156,
+                    166
+                ],
+                "municipality": [
+                    22,
+                    122,
+                    162,
+                    207
+                ],
+                "Marcala,": [
+                    24,
+                    124
+                ],
+                "department": [
+                    27,
+                    168
+                ],
+                "La": [
+                    29,
+                    170
+                ],
+                "Paz,": [
+                    30
+                ],
+                "Honduras.": [
+                    31
+                ],
+                "main": [
+                    33
+                ],
+                "objective": [
+                    34
+                ],
+                "is": [
+                    35
+                ],
+                "to": [
+                    36,
+                    49,
+                    173,
+                    217
+                ],
+                "know": [
+                    37
+                ],
+                "demand": [
+                    39
+                ],
+                "public": [
+                    41,
+                    139
+                ],
+                "transport,": [
+                    42
+                ],
+                "coverage": [
+                    43
+                ],
+                "areas": [
+                    44
+                ],
+                "radius": [
+                    46
+                ],
+                "action": [
+                    48
+                ],
+                "examine": [
+                    50
+                ],
+                "dimension": [
+                    53
+                ],
+                "which": [
+                    55,
+                    192
+                ],
+                "users": [
+                    56
+                ],
+                "units": [
+                    59
+                ],
+                "are": [
+                    60,
+                    136,
+                    146
+                ],
+                "located.": [
+                    61
+                ],
+                "application": [
+                    63,
+                    98
+                ],
+                "field": [
+                    65
+                ],
+                "methodology": [
+                    67
+                ],
+                "based": [
+                    68
+                ],
+                "on": [
+                    69
+                ],
+                "simple": [
+                    70
+                ],
+                "participant": [
+                    72
+                ],
+                "observation;": [
+                    73
+                ],
+                "with": [
+                    74
+                ],
+                "sample": [
+                    76
+                ],
+                "28": [
+                    78
+                ],
+                "people": [
+                    79
+                ],
+                "(coun-cilors,": [
+                    80
+                ],
+                "leaders,": [
+                    81
+                ],
+                "users,": [
+                    82
+                ],
+                "drivers),": [
+                    85
+                ],
+                "has": [
+                    86,
+                    104,
+                    125
+                ],
+                "allowed": [
+                    87
+                ],
+                "collection": [
+                    89
+                ],
+                "qualitative,": [
+                    91
+                ],
+                "quantitative,": [
+                    92
+                ],
+                "inferential": [
+                    94
+                ],
+                "data": [
+                    95
+                ],
+                "through": [
+                    96,
+                    107
+                ],
+                "surveys": [
+                    100
+                ],
+                "interviews.": [
+                    102
+                ],
+                "It": [
+                    103
+                ],
+                "been": [
+                    105,
+                    126
+                ],
+                "demonstrated": [
+                    106
+                ],
+                "analysis": [
+                    109
+                ],
+                "interpretation": [
+                    111
+                ],
+                "data,": [
+                    113
+                ],
+                "that": [
+                    114,
+                    154
+                ],
+                "demographic": [
+                    116
+                ],
+                "housing": [
+                    118
+                ],
+                "growth": [
+                    119
+                ],
+                "projected": [
+                    127
+                ],
+                "towards": [
+                    128
+                ],
+                "north": [
+                    130
+                ],
+                "city.": [
+                    133
+                ],
+                "Therefore,": [
+                    134
+                ],
+                "there": [
+                    135
+                ],
+                "approximately": [
+                    137
+                ],
+                "300": [
+                    138
+                ],
+                "units,": [
+                    141
+                ],
+                "where": [
+                    142
+                ],
+                "more": [
+                    143
+                ],
+                "than": [
+                    144
+                ],
+                "53%": [
+                    145
+                ],
+                "buses": [
+                    147
+                ],
+                "32": [
+                    149
+                ],
+                "direct": [
+                    150
+                ],
+                "indirect": [
+                    152
+                ],
+                "routes": [
+                    153,
+                    204
+                ],
+                "converge": [
+                    155
+                ],
+                "structure": [
+                    159,
+                    186
+                ],
+                "its": [
+                    164
+                ],
+                "surroundings": [
+                    165
+                ],
+                "Paz.": [
+                    171
+                ],
+                "Due": [
+                    172
+                ],
+                "existence": [
+                    175
+                ],
+                "3": [
+                    177
+                ],
+                "informal": [
+                    178
+                ],
+                "terminals,": [
+                    180
+                ],
+                "this": [
+                    181,
+                    211
+                ],
+                "recommends": [
+                    183
+                ],
+                "rearranging": [
+                    184
+                ],
+                "one": [
+                    187
+                ],
+                "bus": [
+                    190
+                ],
+                "stations,": [
+                    191
+                ],
+                "provides": [
+                    193
+                ],
+                "road": [
+                    195
+                ],
+                "solution": [
+                    196
+                ],
+                "effective": [
+                    199
+                ],
+                "management": [
+                    200
+                ],
+                "all": [
+                    202
+                ],
+                "Marcala.": [
+                    209
+                ],
+                "In": [
+                    210
+                ],
+                "way,": [
+                    212
+                ],
+                "it": [
+                    213
+                ],
+                "will": [
+                    214
+                ],
+                "be": [
+                    215
+                ],
+                "possible": [
+                    216
+                ],
+                "improve": [
+                    218
+                ],
+                "conditions": [
+                    220
+                ],
+                "development": [
+                    222
+                ],
+                "sustainable": [
+                    224
+                ],
+                "mobility,": [
+                    226
+                ],
+                "promoting": [
+                    227
+                ],
+                "local": [
+                    228
+                ],
+                "foreign": [
+                    230
+                ],
+                "tourism.": [
+                    231
+                ]
+            },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4389673530",
+            "counts_by_year": [
+                {
+                    "year": 2026,
+                    "cited_by_count": 1
+                }
+            ],
+            "updated_date": "2026-11-19T14:11:59.513116",
+            "created_date": "2023-12-14T00:00:00"
         }
     ],
     "group_by": []

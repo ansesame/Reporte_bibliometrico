@@ -1,14 +1,14 @@
 {
     "meta": {
         "count": 5,
-        "db_response_time_ms": 96,
+        "db_response_time_ms": 113,
         "page": null,
         "per_page": 100,
         "next_cursor": null,
         "groups_count": null,
         "x_query": {
-            "oql": "get works from 2019–2026 about ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"productive infrastructure\" OR stemmed \"infraestructura productiva\" OR stemmed \"economic corridors\" OR stemmed \"corredores económicos\" OR stemmed \"logistics systems\" OR stemmed \"sistemas logísticos\" OR stemmed \"Infraestructura logística\" OR stemmed \"logistics infrastructure\")) where type is ([article](article) or [report](report) or [conference-paper](conference-paper) or [book](book) or [book-chapter](book-chapter) or [dissertation](dissertation) or [conference-abstract](conference-abstract))",
-            "x_new_oql": "get works from 2019–2026 about ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"productive infrastructure\" OR stemmed \"infraestructura productiva\" OR stemmed \"economic corridors\" OR stemmed \"corredores económicos\" OR stemmed \"logistics systems\" OR stemmed \"sistemas logísticos\" OR stemmed \"Infraestructura logística\" OR stemmed \"logistics infrastructure\")) where type is ([article](article) or [report](report) or [conference-paper](conference-paper) or [book](book) or [book-chapter](book-chapter) or [dissertation](dissertation) or [conference-abstract](conference-abstract))",
+            "oql": "get works from 2019–2026 with ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"productive infrastructure\" OR stemmed \"infraestructura productiva\" OR stemmed \"economic corridors\" OR stemmed \"corredores económicos\" OR stemmed \"logistics systems\" OR stemmed \"sistemas logísticos\" OR stemmed \"Infraestructura logística\" OR stemmed \"logistics infrastructure\")) in the title or abstract where type is ([article](article) or [report](report) or [dissertation](dissertation) or [book](book) or [book-chapter](book-chapter) or [conference-paper](conference-paper) or [dataset](dataset) or [data-paper](data-paper))",
+            "x_new_oql": "get works from 2019–2026 with ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"productive infrastructure\" OR stemmed \"infraestructura productiva\" OR stemmed \"economic corridors\" OR stemmed \"corredores económicos\" OR stemmed \"logistics systems\" OR stemmed \"sistemas logísticos\" OR stemmed \"Infraestructura logística\" OR stemmed \"logistics infrastructure\")) in the title or abstract where type is ([article](article) or [report](report) or [dissertation](dissertation) or [book](book) or [book-chapter](book-chapter) or [conference-paper](conference-paper) or [dataset](dataset) or [data-paper](data-paper))",
             "oqo": {
                 "get_rows": "works",
                 "filter_rows": [
@@ -35,7 +35,7 @@
                             },
                             {
                                 "column_id": "type",
-                                "value": "conference-paper"
+                                "value": "dissertation"
                             },
                             {
                                 "column_id": "type",
@@ -47,11 +47,15 @@
                             },
                             {
                                 "column_id": "type",
-                                "value": "dissertation"
+                                "value": "conference-paper"
                             },
                             {
                                 "column_id": "type",
-                                "value": "conference-abstract"
+                                "value": "dataset"
+                            },
+                            {
+                                "column_id": "type",
+                                "value": "data-paper"
                             }
                         ]
                     },
@@ -59,57 +63,57 @@
                         "join": "or",
                         "filters": [
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "Honduras",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "Honduran",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "Hondurans",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "hondureño",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "hondureña",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "hondureños",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "hondureñas",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "afrohondureño",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "afrohondureña",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "afrohondureños",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "afrohondureñas",
                                 "operator": "has"
                             }
@@ -119,42 +123,42 @@
                         "join": "or",
                         "filters": [
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"productive infrastructure\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"infraestructura productiva\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"economic corridors\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"corredores económicos\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"logistics systems\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"sistemas logísticos\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"Infraestructura logística\"",
                                 "operator": "has"
                             },
                             {
-                                "column_id": "title_abstract_keywords.search",
+                                "column_id": "title_and_abstract.search",
                                 "value": "\"logistics infrastructure\"",
                                 "operator": "has"
                             }
@@ -162,7 +166,7 @@
                     }
                 ]
             },
-            "url": "/works?filter=publication_year:2019-2026,type:article|report|conference-paper|book|book-chapter|dissertation|conference-abstract,title_abstract_keywords.search:Honduras|Honduran|Hondurans|hondure%C3%B1o|hondure%C3%B1a|hondure%C3%B1os|hondure%C3%B1as|afrohondure%C3%B1o|afrohondure%C3%B1a|afrohondure%C3%B1os|afrohondure%C3%B1as,title_abstract_keywords.search:%22productive infrastructure%22|%22infraestructura productiva%22|%22economic corridors%22|%22corredores econ%C3%B3micos%22|%22logistics systems%22|%22sistemas log%C3%ADsticos%22|%22Infraestructura log%C3%ADstica%22|%22logistics infrastructure%22&per_page=100&cursor=%2A",
+            "url": "/works?filter=publication_year:2019-2026,type:article|report|dissertation|book|book-chapter|conference-paper|dataset|data-paper,title_and_abstract.search:Honduras|Honduran|Hondurans|hondure%C3%B1o|hondure%C3%B1a|hondure%C3%B1os|hondure%C3%B1as|afrohondure%C3%B1o|afrohondure%C3%B1a|afrohondure%C3%B1os|afrohondure%C3%B1as,title_and_abstract.search:%22productive infrastructure%22|%22infraestructura productiva%22|%22economic corridors%22|%22corredores econ%C3%B3micos%22|%22logistics systems%22|%22sistemas log%C3%ADsticos%22|%22Infraestructura log%C3%ADstica%22|%22logistics infrastructure%22&per_page=100&cursor=%2A",
             "order": "best matches first",
             "order_default": true
         },
@@ -179,7 +183,8 @@
         "cost_usd": 0.001,
         "pages": 1,
         "complete": true,
-        "duplicates_removed": 0
+        "duplicates_removed": 0,
+        "pipeline_oql": "get works where year >= (2019) and year <= (2026) and type is (article or report or dissertation or book or book-chapter or conference-paper or dataset or data-paper) and title-abstract has ((Honduras OR Honduran OR Hondurans OR hondureño OR hondureña OR hondureños OR hondureñas OR afrohondureño OR afrohondureña OR afrohondureños OR afrohondureñas) AND (stemmed \"productive infrastructure\" OR stemmed \"infraestructura productiva\" OR stemmed \"economic corridors\" OR stemmed \"corredores económicos\" OR stemmed \"logistics systems\" OR stemmed \"sistemas logísticos\" OR stemmed \"Infraestructura logística\" OR stemmed \"logistics infrastructure\"))"
     },
     "results": [
         {
@@ -188,7 +193,7 @@
             "title": "Enduring flows: The transit of drugs in contemporary Honduras",
             "display_name": "Enduring flows: The transit of drugs in contemporary Honduras",
             "alternate_titles": [],
-            "relevance_score": 172.30843,
+            "relevance_score": 150.44682,
             "publication_year": 2024,
             "publication_date": "2024-11-26",
             "ids": {
@@ -642,8 +647,8 @@
             "sustainable_development_goals": [
                 {
                     "score": 0.8999999761581421,
-                    "id": "https://metadata.un.org/sdg/16",
-                    "display_name": "Peace, justice, and strong institutions"
+                    "display_name": "Peace, justice, and strong institutions",
+                    "id": "https://metadata.un.org/sdg/16"
                 }
             ],
             "study_designs": [],
@@ -666,8 +671,8 @@
                 }
             ],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W4404779955.pdf",
@@ -1411,7 +1416,7 @@
             "title": "BIDeconomics Honduras: oportunidades de mayor desarrollo para todos en post pandemia",
             "display_name": "BIDeconomics Honduras: oportunidades de mayor desarrollo para todos en post pandemia",
             "alternate_titles": [],
-            "relevance_score": 172.10068,
+            "relevance_score": 122.04525,
             "publication_year": 2021,
             "publication_date": "2021-12-23",
             "ids": {
@@ -1809,26 +1814,26 @@
             "sustainable_development_goals": [
                 {
                     "score": 0.833299994468689,
-                    "id": "https://metadata.un.org/sdg/8",
-                    "display_name": "Decent work and economic growth"
+                    "display_name": "Decent work and economic growth",
+                    "id": "https://metadata.un.org/sdg/8"
                 },
                 {
                     "score": 0.6773999929428101,
-                    "id": "https://metadata.un.org/sdg/9",
-                    "display_name": "Industry, innovation and infrastructure"
+                    "display_name": "Industry, innovation and infrastructure",
+                    "id": "https://metadata.un.org/sdg/9"
                 },
                 {
                     "score": 0.4000000059604645,
-                    "id": "https://metadata.un.org/sdg/10",
-                    "display_name": "Reduced inequalities"
+                    "display_name": "Reduced inequalities",
+                    "id": "https://metadata.un.org/sdg/10"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -2373,988 +2378,12 @@
             "created_date": "2021-12-31T00:00:00"
         },
         {
-            "id": "https://openalex.org/W4405797915",
-            "doi": "https://doi.org/10.56712/latam.v5i6.3195",
-            "title": "Medios de vida y capacidad adaptativa en las familias de la microcuenca del río Talgua, Honduras 2024",
-            "display_name": "Medios de vida y capacidad adaptativa en las familias de la microcuenca del río Talgua, Honduras 2024",
-            "alternate_titles": [],
-            "relevance_score": 130.52971,
-            "publication_year": 2024,
-            "publication_date": "2024-12-26",
-            "ids": {
-                "openalex": "https://openalex.org/W4405797915",
-                "doi": "https://doi.org/10.56712/latam.v5i6.3195"
-            },
-            "language": "es",
-            "primary_location": {
-                "id": "doi:10.56712/latam.v5i6.3195",
-                "doi": "https://doi.org/10.56712/latam.v5i6.3195",
-                "is_oa": true,
-                "landing_page_url": "https://doi.org/10.56712/latam.v5i6.3195",
-                "pdf_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
-                "source": {
-                    "id": "https://openalex.org/S4387283194",
-                    "display_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
-                    "issn_l": "2789-3855",
-                    "issn": [
-                        "2789-3855"
-                    ],
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [
-                        "erih-plus"
-                    ],
-                    "host_organization": null,
-                    "host_organization_name": null,
-                    "host_organization_lineage": [],
-                    "host_organization_lineage_names": [],
-                    "type": "journal"
-                },
-                "license": "cc-by",
-                "license_id": "https://openalex.org/licenses/cc-by",
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
-                "raw_type": "journal-article"
-            },
-            "parent_works": [],
-            "lineage": [
-                "https://openalex.org/W4405797915"
-            ],
-            "child_works_count": 0,
-            "type": "article",
-            "is_traditional": true,
-            "indexed_in": [
-                "crossref"
-            ],
-            "open_access": {
-                "is_oa": true,
-                "oa_status": "hybrid",
-                "oa_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
-                "any_repository_has_fulltext": true
-            },
-            "authorships": [
-                {
-                    "author_position": "first",
-                    "author": {
-                        "id": "https://openalex.org/A5003415604",
-                        "display_name": "René Amílcar Gómez",
-                        "orcid": "https://orcid.org/0000-0003-4860-5853",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0003-4860-5853"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I4394709124",
-                            "display_name": "Universidad Nacional Francisco Luis Espinoza Pineda",
-                            "ror": "https://ror.org/039ffyr38",
-                            "country_code": "NI",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I4394709124"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "NI"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "René Amílcar Gómez",
-                    "raw_affiliation_strings": [
-                        "Universidad Nacional Francisco Luis Espinoza Pineda"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Nacional Francisco Luis Espinoza Pineda",
-                            "institution_ids": [
-                                "https://openalex.org/I4394709124"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "author_position": "last",
-                    "author": {
-                        "id": "https://openalex.org/A5092988484",
-                        "display_name": "Noemí del Carmen Obregón",
-                        "orcid": "https://orcid.org/0000-0002-4758-7182",
-                        "observed_orcids": [
-                            "https://orcid.org/0000-0002-4758-7182"
-                        ]
-                    },
-                    "institutions": [
-                        {
-                            "id": "https://openalex.org/I4394709124",
-                            "display_name": "Universidad Nacional Francisco Luis Espinoza Pineda",
-                            "ror": "https://ror.org/039ffyr38",
-                            "country_code": "NI",
-                            "type": "education",
-                            "lineage": [
-                                "https://openalex.org/I4394709124"
-                            ]
-                        }
-                    ],
-                    "countries": [
-                        "NI"
-                    ],
-                    "is_corresponding": false,
-                    "raw_author_name": "Noemi del Carmen Obregón",
-                    "raw_affiliation_strings": [
-                        "Universidad Nacional Francisco Luis Espinoza Pineda"
-                    ],
-                    "raw_orcid": null,
-                    "affiliations": [
-                        {
-                            "raw_affiliation_string": "Universidad Nacional Francisco Luis Espinoza Pineda",
-                            "institution_ids": [
-                                "https://openalex.org/I4394709124"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "institutions": [],
-            "countries_distinct_count": 1,
-            "institutions_distinct_count": 1,
-            "corresponding_author_ids": [],
-            "corresponding_institution_ids": [
-                "https://openalex.org/I4394709124"
-            ],
-            "apc_list": null,
-            "apc_paid": null,
-            "fwci": 0.0,
-            "is_authors_truncated": false,
-            "has_fulltext": true,
-            "cited_by_count": 0,
-            "citation_normalized_percentile": {
-                "value": 0.0,
-                "is_in_top_1_percent": false,
-                "is_in_top_10_percent": false
-            },
-            "cited_by_percentile_year": null,
-            "biblio": {
-                "volume": "5",
-                "issue": "6",
-                "first_page": null,
-                "last_page": null
-            },
-            "is_retracted": false,
-            "is_pulled": false,
-            "is_paratext": false,
-            "is_xpac": false,
-            "primary_topic": {
-                "id": "https://openalex.org/T10439",
-                "display_name": "Climate change impacts on agriculture",
-                "score": 0.8593999743461609,
-                "subfield": {
-                    "id": "https://openalex.org/subfields/1102",
-                    "display_name": "Agronomy and Crop Science"
-                },
-                "field": {
-                    "id": "https://openalex.org/fields/11",
-                    "display_name": "Agricultural and Biological Sciences"
-                },
-                "domain": {
-                    "id": "https://openalex.org/domains/1",
-                    "display_name": "Life Sciences"
-                }
-            },
-            "topics": [
-                {
-                    "id": "https://openalex.org/T10439",
-                    "display_name": "Climate change impacts on agriculture",
-                    "score": 0.8593999743461609,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1102",
-                        "display_name": "Agronomy and Crop Science"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/11",
-                        "display_name": "Agricultural and Biological Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/1",
-                        "display_name": "Life Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T13011",
-                    "display_name": "Latin American rural development",
-                    "score": 0.046300001442432404,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/1100",
-                        "display_name": "General Agricultural and Biological Sciences"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/11",
-                        "display_name": "Agricultural and Biological Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/1",
-                        "display_name": "Life Sciences"
-                    }
-                },
-                {
-                    "id": "https://openalex.org/T12348",
-                    "display_name": "Rural Development and Agriculture",
-                    "score": 0.020400000736117363,
-                    "subfield": {
-                        "id": "https://openalex.org/subfields/3303",
-                        "display_name": "Development"
-                    },
-                    "field": {
-                        "id": "https://openalex.org/fields/33",
-                        "display_name": "Social Sciences"
-                    },
-                    "domain": {
-                        "id": "https://openalex.org/domains/2",
-                        "display_name": "Social Sciences"
-                    }
-                }
-            ],
-            "keywords": [
-                {
-                    "id": "https://openalex.org/keywords/livelihoods",
-                    "display_name": "livelihoods",
-                    "score": 0.7620000243186951
-                },
-                {
-                    "id": "https://openalex.org/keywords/adaptive-capacity",
-                    "display_name": "adaptive capacity",
-                    "score": 0.9990000128746033
-                },
-                {
-                    "id": "https://openalex.org/keywords/household-food-security",
-                    "display_name": "household food security",
-                    "score": 0.5870000123977661
-                },
-                {
-                    "id": "https://openalex.org/keywords/agrarian-change",
-                    "display_name": "agricultural transformation",
-                    "score": 0.5789999961853027
-                },
-                {
-                    "id": "https://openalex.org/keywords/climate-change-adaptation",
-                    "display_name": "climate change adaptation",
-                    "score": 0.8100000023841858
-                },
-                {
-                    "id": "https://openalex.org/keywords/natural-capital",
-                    "display_name": "natural capital",
-                    "score": 0.7350000143051147
-                },
-                {
-                    "id": "https://openalex.org/keywords/productive-infrastructure",
-                    "display_name": "productive infrastructure",
-                    "score": 0.7390000224113464
-                }
-            ],
-            "concepts": [
-                {
-                    "id": "https://openalex.org/C15708023",
-                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
-                    "display_name": "Humanities",
-                    "level": 1,
-                    "score": 0.6218035817146301
-                },
-                {
-                    "id": "https://openalex.org/C17744445",
-                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
-                    "display_name": "Political science",
-                    "level": 0,
-                    "score": 0.33011049032211304
-                },
-                {
-                    "id": "https://openalex.org/C142362112",
-                    "wikidata": "https://www.wikidata.org/wiki/Q735",
-                    "display_name": "Art",
-                    "level": 0,
-                    "score": 0.22712230682373047
-                }
-            ],
-            "mesh": [],
-            "locations_count": 2,
-            "locations": [
-                {
-                    "id": "doi:10.56712/latam.v5i6.3195",
-                    "doi": "https://doi.org/10.56712/latam.v5i6.3195",
-                    "is_oa": true,
-                    "landing_page_url": "https://doi.org/10.56712/latam.v5i6.3195",
-                    "pdf_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
-                    "source": {
-                        "id": "https://openalex.org/S4387283194",
-                        "display_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
-                        "issn_l": "2789-3855",
-                        "issn": [
-                            "2789-3855"
-                        ],
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [
-                            "erih-plus"
-                        ],
-                        "host_organization": null,
-                        "host_organization_name": null,
-                        "host_organization_lineage": [],
-                        "host_organization_lineage_names": [],
-                        "type": "journal"
-                    },
-                    "license": "cc-by",
-                    "license_id": "https://openalex.org/licenses/cc-by",
-                    "version": "publishedVersion",
-                    "is_accepted": true,
-                    "is_published": true,
-                    "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
-                    "raw_type": "journal-article"
-                },
-                {
-                    "id": "pmh:oai:dialnet.unirioja.es:ART0001749688",
-                    "doi": null,
-                    "is_oa": true,
-                    "landing_page_url": "https://dialnet.unirioja.es/servlet/oaiart?codigo=10082245",
-                    "pdf_url": "https://dialnet.unirioja.es/descarga/articulo/10082245.pdf",
-                    "source": {
-                        "id": "https://openalex.org/S4306401293",
-                        "display_name": "Dialnet (Universidad de la Rioja)",
-                        "issn_l": null,
-                        "issn": null,
-                        "is_oa": false,
-                        "is_in_doaj": false,
-                        "is_core": false,
-                        "listed_in": [],
-                        "host_organization": "https://openalex.org/I168974976",
-                        "host_organization_name": "Universidad de La Rioja",
-                        "host_organization_lineage": [
-                            "https://openalex.org/I168974976"
-                        ],
-                        "host_organization_lineage_names": [],
-                        "type": "repository"
-                    },
-                    "license": null,
-                    "license_id": null,
-                    "version": "submittedVersion",
-                    "is_accepted": false,
-                    "is_published": false,
-                    "raw_source_name": "Latam: revista latinoamericana de Ciencias Sociales y Humanidades, ISSN 2789-3855, null 5, Nº. 6, 2024 (Ejemplar dedicado a: LATAM; 1 – 20)",
-                    "raw_type": "text (article)"
-                }
-            ],
-            "best_oa_location": {
-                "id": "doi:10.56712/latam.v5i6.3195",
-                "doi": "https://doi.org/10.56712/latam.v5i6.3195",
-                "is_oa": true,
-                "landing_page_url": "https://doi.org/10.56712/latam.v5i6.3195",
-                "pdf_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
-                "source": {
-                    "id": "https://openalex.org/S4387283194",
-                    "display_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
-                    "issn_l": "2789-3855",
-                    "issn": [
-                        "2789-3855"
-                    ],
-                    "is_oa": false,
-                    "is_in_doaj": false,
-                    "is_core": false,
-                    "listed_in": [
-                        "erih-plus"
-                    ],
-                    "host_organization": null,
-                    "host_organization_name": null,
-                    "host_organization_lineage": [],
-                    "host_organization_lineage_names": [],
-                    "type": "journal"
-                },
-                "license": "cc-by",
-                "license_id": "https://openalex.org/licenses/cc-by",
-                "version": "publishedVersion",
-                "is_accepted": true,
-                "is_published": true,
-                "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
-                "raw_type": "journal-article"
-            },
-            "sustainable_development_goals": [
-                {
-                    "score": 0.666700005531311,
-                    "id": "https://metadata.un.org/sdg/1",
-                    "display_name": "No poverty"
-                },
-                {
-                    "score": 0.40450000762939453,
-                    "id": "https://metadata.un.org/sdg/2",
-                    "display_name": "Zero hunger"
-                }
-            ],
-            "study_designs": [
-                {
-                    "id": "https://openalex.org/study-designs/observational-study",
-                    "display_name": "Observational Study"
-                }
-            ],
-            "awards": [],
-            "funders": [],
-            "has_content": {
-                "grobid_xml": true,
-                "pdf": true
-            },
-            "content_urls": {
-                "pdf": "https://content.openalex.org/works/W4405797915.pdf",
-                "grobid_xml": "https://content.openalex.org/works/W4405797915.grobid-xml"
-            },
-            "referenced_works_count": 16,
-            "referenced_works": [
-                "https://openalex.org/W1588713494",
-                "https://openalex.org/W2148500142",
-                "https://openalex.org/W2194268767",
-                "https://openalex.org/W2527046457",
-                "https://openalex.org/W2750183730",
-                "https://openalex.org/W2788463809",
-                "https://openalex.org/W2792213895",
-                "https://openalex.org/W2895597253",
-                "https://openalex.org/W2898034033",
-                "https://openalex.org/W2911837544",
-                "https://openalex.org/W3014057218",
-                "https://openalex.org/W3016047683",
-                "https://openalex.org/W3026747215",
-                "https://openalex.org/W3123183652",
-                "https://openalex.org/W3157579043",
-                "https://openalex.org/W7033848824"
-            ],
-            "related_works": [
-                "https://openalex.org/W4405797960",
-                "https://openalex.org/W3217066224",
-                "https://openalex.org/W993344097",
-                "https://openalex.org/W4282043267",
-                "https://openalex.org/W4200018246",
-                "https://openalex.org/W7017841847",
-                "https://openalex.org/W7164914975",
-                "https://openalex.org/W4388637602"
-            ],
-            "abstract_inverted_index": {
-                "El": [
-                    0,
-                    115
-                ],
-                "estudio": [
-                    1,
-                    35
-                ],
-                "se": [
-                    2,
-                    11,
-                    76,
-                    168,
-                    223
-                ],
-                "realizó": [
-                    3,
-                    90
-                ],
-                "en": [
-                    4,
-                    13,
-                    112,
-                    131,
-                    148,
-                    165
-                ],
-                "la": [
-                    5,
-                    14,
-                    22,
-                    53,
-                    58,
-                    65,
-                    74,
-                    87,
-                    99,
-                    141,
-                    152,
-                    173,
-                    190,
-                    216,
-                    228
-                ],
-                "microcuenca": [
-                    6
-                ],
-                "del": [
-                    7
-                ],
-                "rio": [
-                    8
-                ],
-                "Talgua": [
-                    9
-                ],
-                "que": [
-                    10,
-                    120,
-                    150,
-                    201,
-                    222,
-                    231
-                ],
-                "encuentra": [
-                    12
-                ],
-                "sierra": [
-                    15
-                ],
-                "de": [
-                    16,
-                    21,
-                    24,
-                    30,
-                    32,
-                    41,
-                    48,
-                    55,
-                    60,
-                    62,
-                    73,
-                    86,
-                    92,
-                    94,
-                    102,
-                    105,
-                    109,
-                    118,
-                    124,
-                    137,
-                    155,
-                    172,
-                    178,
-                    189
-                ],
-                "Agalta": [
-                    17
-                ],
-                "a": [
-                    18,
-                    107,
-                    140,
-                    175,
-                    227
-                ],
-                "15": [
-                    19
-                ],
-                "kilómetros": [
-                    20
-                ],
-                "ciudad": [
-                    23
-                ],
-                "Catacamas,": [
-                    25
-                ],
-                "Olancho,": [
-                    26
-                ],
-                "Honduras": [
-                    27
-                ],
-                "para": [
-                    28,
-                    70,
-                    98,
-                    215
-                ],
-                "disponibilidad": [
-                    29
-                ],
-                "alimentos": [
-                    31
-                ],
-                "familias,": [
-                    33
-                ],
-                "el": [
-                    34,
-                    71,
-                    78,
-                    113,
-                    122,
-                    162,
-                    187,
-                    194,
-                    204,
-                    208,
-                    212,
-                    219,
-                    232
-                ],
-                "tuvo": [
-                    36
-                ],
-                "un": [
-                    37
-                ],
-                "enfoque": [
-                    38
-                ],
-                "cuantitativo-cualitativo,": [
-                    39
-                ],
-                "diseño": [
-                    40
-                ],
-                "tipo": [
-                    42
-                ],
-                "transversal.": [
-                    43
-                ],
-                "Se": [
-                    44,
-                    89
-                ],
-                "utilizó": [
-                    45,
-                    77
-                ],
-                "una": [
-                    46,
-                    170
-                ],
-                "muestra": [
-                    47
-                ],
-                "166": [
-                    49
-                ],
-                "familias": [
-                    50
-                ],
-                "al": [
-                    51
-                ],
-                "aplicar": [
-                    52
-                ],
-                "fórmula": [
-                    54
-                ],
-                "poblaciones": [
-                    56
-                ],
-                "finitas,": [
-                    57
-                ],
-                "técnica": [
-                    59
-                ],
-                "recopilación": [
-                    61
-                ],
-                "información": [
-                    63,
-                    75
-                ],
-                "fue": [
-                    64
-                ],
-                "encuesta": [
-                    66
-                ],
-                "y": [
-                    67,
-                    139,
-                    183,
-                    197,
-                    211,
-                    235
-                ],
-                "grupo": [
-                    68
-                ],
-                "focal,": [
-                    69
-                ],
-                "análisis": [
-                    72
-                ],
-                "paquete": [
-                    79
-                ],
-                "estadístico": [
-                    80
-                ],
-                "SPSS": [
-                    81
-                ],
-                "versión": [
-                    82
-                ],
-                "25": [
-                    83
-                ],
-                "con": [
-                    84
-                ],
-                "triangulación": [
-                    85
-                ],
-                "información.": [
-                    88
-                ],
-                "diagnóstico": [
-                    91
-                ],
-                "medios": [
-                    93,
-                    104
-                ],
-                "Vida": [
-                    95
-                ],
-                "e": [
-                    96
-                ],
-                "Indicadores": [
-                    97
-                ],
-                "capacidad": [
-                    100,
-                    153
-                ],
-                "adaptativa": [
-                    101,
-                    154
-                ],
-                "los": [
-                    103,
-                    156,
-                    176
-                ],
-                "vida": [
-                    106
-                ],
-                "partir": [
-                    108
-                ],
-                "metodología": [
-                    110
-                ],
-                "IPCC": [
-                    111
-                ],
-                "2007.": [
-                    114
-                ],
-                "principal": [
-                    116
-                ],
-                "medio": [
-                    117
-                ],
-                "vida,": [
-                    119
-                ],
-                "es": [
-                    121,
-                    128,
-                    193
-                ],
-                "cultivo": [
-                    123
-                ],
-                "granos": [
-                    125
-                ],
-                "básicos,": [
-                    126
-                ],
-                "donde": [
-                    127
-                ],
-                "necesario": [
-                    129
-                ],
-                "invertir": [
-                    130
-                ],
-                "infraestructura": [
-                    132
-                ],
-                "productiva,": [
-                    133
-                ],
-                "hacer": [
-                    134,
-                    159
-                ],
-                "agro": [
-                    135
-                ],
-                "transformación": [
-                    136
-                ],
-                "productos": [
-                    138
-                ],
-                "vez": [
-                    142,
-                    230
-                ],
-                "introducir": [
-                    143
-                ],
-                "o": [
-                    144
-                ],
-                "explorar": [
-                    145
-                ],
-                "nuevas": [
-                    146
-                ],
-                "tecnologías": [
-                    147
-                ],
-                "lo": [
-                    149
-                ],
-                "respecta": [
-                    151
-                ],
-                "territorios": [
-                    157
-                ],
-                "puedan": [
-                    158
-                ],
-                "frente": [
-                    160
-                ],
-                "ante": [
-                    161
-                ],
-                "cambio": [
-                    163
-                ],
-                "climático": [
-                    164
-                ],
-                "años": [
-                    166
-                ],
-                "futuros,": [
-                    167
-                ],
-                "debe": [
-                    169,
-                    224
-                ],
-                "priorización": [
-                    171
-                ],
-                "atención": [
-                    174
-                ],
-                "capitales": [
-                    177
-                ],
-                "forma": [
-                    179
-                ],
-                "diferencia": [
-                    180
-                ],
-                "zona": [
-                    181,
-                    184,
-                    191,
-                    217
-                ],
-                "alta": [
-                    182,
-                    218
-                ],
-                "baja.": [
-                    185
-                ],
-                "En": [
-                    186
-                ],
-                "caso": [
-                    188
-                ],
-                "baja,": [
-                    192
-                ],
-                "capital": [
-                    195,
-                    209,
-                    213,
-                    220,
-                    233
-                ],
-                "natural": [
-                    196,
-                    234
-                ],
-                "sus": [
-                    198
-                ],
-                "elementos": [
-                    199
-                ],
-                "biofísicos": [
-                    200
-                ],
-                "deben": [
-                    202
-                ],
-                "tener": [
-                    203
-                ],
-                "primer": [
-                    205
-                ],
-                "lugar,": [
-                    206
-                ],
-                "seguido": [
-                    207
-                ],
-                "físico/tecnológico": [
-                    210,
-                    221
-                ],
-                "financiero;": [
-                    214
-                ],
-                "priorizar,": [
-                    225
-                ],
-                "pero": [
-                    226
-                ],
-                "misma": [
-                    229
-                ],
-                "financiero.": [
-                    236
-                ]
-            },
-            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4405797915",
-            "counts_by_year": [],
-            "updated_date": "2026-11-16T12:05:36.265796",
-            "created_date": "2024-12-26T00:00:00"
-        },
-        {
             "id": "https://openalex.org/W3170746673",
             "doi": "https://doi.org/10.18235/0003310",
             "title": "Evaluación de los efectos e impactos de la tormenta tropical Eta y el huracán Iota en Honduras",
             "display_name": "Evaluación de los efectos e impactos de la tormenta tropical Eta y el huracán Iota en Honduras",
             "alternate_titles": [],
-            "relevance_score": 121.48341,
+            "relevance_score": 102.235886,
             "publication_year": 2021,
             "publication_date": "2021-05-28",
             "ids": {
@@ -3646,8 +2675,8 @@
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": false,
-                "pdf": false
+                "pdf": false,
+                "grobid_xml": false
             },
             "content_urls": null,
             "referenced_works_count": 0,
@@ -4524,12 +3553,1000 @@
             "created_date": "2021-06-22T00:00:00"
         },
         {
+            "id": "https://openalex.org/W4405797915",
+            "doi": "https://doi.org/10.56712/latam.v5i6.3195",
+            "title": "Medios de vida y capacidad adaptativa en las familias de la microcuenca del río Talgua, Honduras 2024",
+            "display_name": "Medios de vida y capacidad adaptativa en las familias de la microcuenca del río Talgua, Honduras 2024",
+            "alternate_titles": [],
+            "relevance_score": 92.99016,
+            "publication_year": 2024,
+            "publication_date": "2024-12-26",
+            "ids": {
+                "openalex": "https://openalex.org/W4405797915",
+                "doi": "https://doi.org/10.56712/latam.v5i6.3195"
+            },
+            "language": "es",
+            "primary_location": {
+                "id": "doi:10.56712/latam.v5i6.3195",
+                "doi": "https://doi.org/10.56712/latam.v5i6.3195",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.56712/latam.v5i6.3195",
+                "pdf_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
+                "source": {
+                    "id": "https://openalex.org/S4387283194",
+                    "display_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
+                    "issn_l": "2789-3855",
+                    "issn": [
+                        "2789-3855"
+                    ],
+                    "is_oa": false,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [
+                        "erih-plus"
+                    ],
+                    "host_organization": "https://openalex.org/P4404680288",
+                    "host_organization_name": "Red de Investigadores Latinoamericanos",
+                    "host_organization_lineage": [
+                        "https://openalex.org/P4404680288"
+                    ],
+                    "host_organization_lineage_names": [
+                        "Red de Investigadores Latinoamericanos"
+                    ],
+                    "type": "journal"
+                },
+                "license": "cc-by",
+                "license_id": "https://openalex.org/licenses/cc-by",
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
+                "raw_type": "journal-article"
+            },
+            "parent_works": [],
+            "lineage": [
+                "https://openalex.org/W4405797915"
+            ],
+            "child_works_count": 0,
+            "type": "article",
+            "is_traditional": true,
+            "indexed_in": [
+                "crossref"
+            ],
+            "open_access": {
+                "is_oa": true,
+                "oa_status": "hybrid",
+                "oa_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
+                "any_repository_has_fulltext": true
+            },
+            "authorships": [
+                {
+                    "author_position": "first",
+                    "author": {
+                        "id": "https://openalex.org/A5003415604",
+                        "display_name": "René Amílcar Gómez",
+                        "orcid": "https://orcid.org/0000-0003-4860-5853",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0003-4860-5853"
+                        ]
+                    },
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I4394709124",
+                            "display_name": "Universidad Nacional Francisco Luis Espinoza Pineda",
+                            "ror": "https://ror.org/039ffyr38",
+                            "country_code": "NI",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I4394709124"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "NI"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "René Amílcar Gómez",
+                    "raw_affiliation_strings": [
+                        "Universidad Nacional Francisco Luis Espinoza Pineda"
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Nacional Francisco Luis Espinoza Pineda",
+                            "institution_ids": [
+                                "https://openalex.org/I4394709124"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author_position": "last",
+                    "author": {
+                        "id": "https://openalex.org/A5092988484",
+                        "display_name": "Noemí del Carmen Obregón",
+                        "orcid": "https://orcid.org/0000-0002-4758-7182",
+                        "observed_orcids": [
+                            "https://orcid.org/0000-0002-4758-7182"
+                        ]
+                    },
+                    "institutions": [
+                        {
+                            "id": "https://openalex.org/I4394709124",
+                            "display_name": "Universidad Nacional Francisco Luis Espinoza Pineda",
+                            "ror": "https://ror.org/039ffyr38",
+                            "country_code": "NI",
+                            "type": "education",
+                            "lineage": [
+                                "https://openalex.org/I4394709124"
+                            ]
+                        }
+                    ],
+                    "countries": [
+                        "NI"
+                    ],
+                    "is_corresponding": false,
+                    "raw_author_name": "Noemi del Carmen Obregón",
+                    "raw_affiliation_strings": [
+                        "Universidad Nacional Francisco Luis Espinoza Pineda"
+                    ],
+                    "raw_orcid": null,
+                    "affiliations": [
+                        {
+                            "raw_affiliation_string": "Universidad Nacional Francisco Luis Espinoza Pineda",
+                            "institution_ids": [
+                                "https://openalex.org/I4394709124"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "institutions": [],
+            "countries_distinct_count": 1,
+            "institutions_distinct_count": 1,
+            "corresponding_author_ids": [],
+            "corresponding_institution_ids": [
+                "https://openalex.org/I4394709124"
+            ],
+            "apc_list": null,
+            "apc_paid": null,
+            "fwci": 0.0,
+            "is_authors_truncated": false,
+            "has_fulltext": true,
+            "cited_by_count": 0,
+            "citation_normalized_percentile": {
+                "value": 0.0,
+                "is_in_top_1_percent": false,
+                "is_in_top_10_percent": false
+            },
+            "cited_by_percentile_year": null,
+            "biblio": {
+                "volume": "5",
+                "issue": "6",
+                "first_page": null,
+                "last_page": null
+            },
+            "is_retracted": false,
+            "is_pulled": false,
+            "is_paratext": false,
+            "is_xpac": false,
+            "primary_topic": {
+                "id": "https://openalex.org/T10439",
+                "display_name": "Climate change impacts on agriculture",
+                "score": 0.8593999743461609,
+                "subfield": {
+                    "id": "https://openalex.org/subfields/1102",
+                    "display_name": "Agronomy and Crop Science"
+                },
+                "field": {
+                    "id": "https://openalex.org/fields/11",
+                    "display_name": "Agricultural and Biological Sciences"
+                },
+                "domain": {
+                    "id": "https://openalex.org/domains/1",
+                    "display_name": "Life Sciences"
+                }
+            },
+            "topics": [
+                {
+                    "id": "https://openalex.org/T10439",
+                    "display_name": "Climate change impacts on agriculture",
+                    "score": 0.8593999743461609,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1102",
+                        "display_name": "Agronomy and Crop Science"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/11",
+                        "display_name": "Agricultural and Biological Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T13011",
+                    "display_name": "Latin American rural development",
+                    "score": 0.046300001442432404,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/1100",
+                        "display_name": "General Agricultural and Biological Sciences"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/11",
+                        "display_name": "Agricultural and Biological Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/1",
+                        "display_name": "Life Sciences"
+                    }
+                },
+                {
+                    "id": "https://openalex.org/T12348",
+                    "display_name": "Rural Development and Agriculture",
+                    "score": 0.020400000736117363,
+                    "subfield": {
+                        "id": "https://openalex.org/subfields/3303",
+                        "display_name": "Development"
+                    },
+                    "field": {
+                        "id": "https://openalex.org/fields/33",
+                        "display_name": "Social Sciences"
+                    },
+                    "domain": {
+                        "id": "https://openalex.org/domains/2",
+                        "display_name": "Social Sciences"
+                    }
+                }
+            ],
+            "keywords": [
+                {
+                    "id": "https://openalex.org/keywords/livelihoods",
+                    "display_name": "livelihoods",
+                    "score": 0.7620000243186951
+                },
+                {
+                    "id": "https://openalex.org/keywords/adaptive-capacity",
+                    "display_name": "adaptive capacity",
+                    "score": 0.9990000128746033
+                },
+                {
+                    "id": "https://openalex.org/keywords/household-food-security",
+                    "display_name": "household food security",
+                    "score": 0.5870000123977661
+                },
+                {
+                    "id": "https://openalex.org/keywords/agrarian-change",
+                    "display_name": "agricultural transformation",
+                    "score": 0.5789999961853027
+                },
+                {
+                    "id": "https://openalex.org/keywords/climate-change-adaptation",
+                    "display_name": "climate change adaptation",
+                    "score": 0.8100000023841858
+                },
+                {
+                    "id": "https://openalex.org/keywords/natural-capital",
+                    "display_name": "natural capital",
+                    "score": 0.7350000143051147
+                },
+                {
+                    "id": "https://openalex.org/keywords/productive-infrastructure",
+                    "display_name": "productive infrastructure",
+                    "score": 0.7390000224113464
+                }
+            ],
+            "concepts": [
+                {
+                    "id": "https://openalex.org/C15708023",
+                    "wikidata": "https://www.wikidata.org/wiki/Q80083",
+                    "display_name": "Humanities",
+                    "level": 1,
+                    "score": 0.6218035817146301
+                },
+                {
+                    "id": "https://openalex.org/C17744445",
+                    "wikidata": "https://www.wikidata.org/wiki/Q36442",
+                    "display_name": "Political science",
+                    "level": 0,
+                    "score": 0.33011049032211304
+                },
+                {
+                    "id": "https://openalex.org/C142362112",
+                    "wikidata": "https://www.wikidata.org/wiki/Q735",
+                    "display_name": "Art",
+                    "level": 0,
+                    "score": 0.22712230682373047
+                }
+            ],
+            "mesh": [],
+            "locations_count": 2,
+            "locations": [
+                {
+                    "id": "doi:10.56712/latam.v5i6.3195",
+                    "doi": "https://doi.org/10.56712/latam.v5i6.3195",
+                    "is_oa": true,
+                    "landing_page_url": "https://doi.org/10.56712/latam.v5i6.3195",
+                    "pdf_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
+                    "source": {
+                        "id": "https://openalex.org/S4387283194",
+                        "display_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
+                        "issn_l": "2789-3855",
+                        "issn": [
+                            "2789-3855"
+                        ],
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [
+                            "erih-plus"
+                        ],
+                        "host_organization": "https://openalex.org/P4404680288",
+                        "host_organization_name": "Red de Investigadores Latinoamericanos",
+                        "host_organization_lineage": [
+                            "https://openalex.org/P4404680288"
+                        ],
+                        "host_organization_lineage_names": [
+                            "Red de Investigadores Latinoamericanos"
+                        ],
+                        "type": "journal"
+                    },
+                    "license": "cc-by",
+                    "license_id": "https://openalex.org/licenses/cc-by",
+                    "version": "publishedVersion",
+                    "is_accepted": true,
+                    "is_published": true,
+                    "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
+                    "raw_type": "journal-article"
+                },
+                {
+                    "id": "pmh:oai:dialnet.unirioja.es:ART0001749688",
+                    "doi": null,
+                    "is_oa": true,
+                    "landing_page_url": "https://dialnet.unirioja.es/servlet/oaiart?codigo=10082245",
+                    "pdf_url": "https://dialnet.unirioja.es/descarga/articulo/10082245.pdf",
+                    "source": {
+                        "id": "https://openalex.org/S4306401293",
+                        "display_name": "Dialnet (Universidad de la Rioja)",
+                        "issn_l": null,
+                        "issn": null,
+                        "is_oa": false,
+                        "is_in_doaj": false,
+                        "is_core": false,
+                        "listed_in": [],
+                        "host_organization": "https://openalex.org/I168974976",
+                        "host_organization_name": "Universidad de La Rioja",
+                        "host_organization_lineage": [
+                            "https://openalex.org/I168974976"
+                        ],
+                        "host_organization_lineage_names": [],
+                        "type": "repository"
+                    },
+                    "license": null,
+                    "license_id": null,
+                    "version": "submittedVersion",
+                    "is_accepted": false,
+                    "is_published": false,
+                    "raw_source_name": "Latam: revista latinoamericana de Ciencias Sociales y Humanidades, ISSN 2789-3855, null 5, Nº. 6, 2024 (Ejemplar dedicado a: LATAM; 1 – 20)",
+                    "raw_type": "text (article)"
+                }
+            ],
+            "best_oa_location": {
+                "id": "doi:10.56712/latam.v5i6.3195",
+                "doi": "https://doi.org/10.56712/latam.v5i6.3195",
+                "is_oa": true,
+                "landing_page_url": "https://doi.org/10.56712/latam.v5i6.3195",
+                "pdf_url": "https://latam.redilat.org/index.php/lt/article/download/3195/5467",
+                "source": {
+                    "id": "https://openalex.org/S4387283194",
+                    "display_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
+                    "issn_l": "2789-3855",
+                    "issn": [
+                        "2789-3855"
+                    ],
+                    "is_oa": false,
+                    "is_in_doaj": false,
+                    "is_core": false,
+                    "listed_in": [
+                        "erih-plus"
+                    ],
+                    "host_organization": "https://openalex.org/P4404680288",
+                    "host_organization_name": "Red de Investigadores Latinoamericanos",
+                    "host_organization_lineage": [
+                        "https://openalex.org/P4404680288"
+                    ],
+                    "host_organization_lineage_names": [
+                        "Red de Investigadores Latinoamericanos"
+                    ],
+                    "type": "journal"
+                },
+                "license": "cc-by",
+                "license_id": "https://openalex.org/licenses/cc-by",
+                "version": "publishedVersion",
+                "is_accepted": true,
+                "is_published": true,
+                "raw_source_name": "LATAM Revista Latinoamericana de Ciencias Sociales y Humanidades",
+                "raw_type": "journal-article"
+            },
+            "sustainable_development_goals": [
+                {
+                    "score": 0.666700005531311,
+                    "display_name": "No poverty",
+                    "id": "https://metadata.un.org/sdg/1"
+                },
+                {
+                    "score": 0.40450000762939453,
+                    "display_name": "Zero hunger",
+                    "id": "https://metadata.un.org/sdg/2"
+                }
+            ],
+            "study_designs": [
+                {
+                    "display_name": "Observational Study",
+                    "id": "https://openalex.org/study-designs/observational-study"
+                }
+            ],
+            "awards": [],
+            "funders": [],
+            "has_content": {
+                "pdf": true,
+                "grobid_xml": true
+            },
+            "content_urls": {
+                "pdf": "https://content.openalex.org/works/W4405797915.pdf",
+                "grobid_xml": "https://content.openalex.org/works/W4405797915.grobid-xml"
+            },
+            "referenced_works_count": 16,
+            "referenced_works": [
+                "https://openalex.org/W1588713494",
+                "https://openalex.org/W2148500142",
+                "https://openalex.org/W2194268767",
+                "https://openalex.org/W2527046457",
+                "https://openalex.org/W2750183730",
+                "https://openalex.org/W2788463809",
+                "https://openalex.org/W2792213895",
+                "https://openalex.org/W2895597253",
+                "https://openalex.org/W2898034033",
+                "https://openalex.org/W2911837544",
+                "https://openalex.org/W3014057218",
+                "https://openalex.org/W3016047683",
+                "https://openalex.org/W3026747215",
+                "https://openalex.org/W3123183652",
+                "https://openalex.org/W3157579043",
+                "https://openalex.org/W7033848824"
+            ],
+            "related_works": [
+                "https://openalex.org/W4405797960",
+                "https://openalex.org/W3217066224",
+                "https://openalex.org/W993344097",
+                "https://openalex.org/W4282043267",
+                "https://openalex.org/W4200018246",
+                "https://openalex.org/W7017841847",
+                "https://openalex.org/W7164914975",
+                "https://openalex.org/W4388637602"
+            ],
+            "abstract_inverted_index": {
+                "El": [
+                    0,
+                    115
+                ],
+                "estudio": [
+                    1,
+                    35
+                ],
+                "se": [
+                    2,
+                    11,
+                    76,
+                    168,
+                    223
+                ],
+                "realizó": [
+                    3,
+                    90
+                ],
+                "en": [
+                    4,
+                    13,
+                    112,
+                    131,
+                    148,
+                    165
+                ],
+                "la": [
+                    5,
+                    14,
+                    22,
+                    53,
+                    58,
+                    65,
+                    74,
+                    87,
+                    99,
+                    141,
+                    152,
+                    173,
+                    190,
+                    216,
+                    228
+                ],
+                "microcuenca": [
+                    6
+                ],
+                "del": [
+                    7
+                ],
+                "rio": [
+                    8
+                ],
+                "Talgua": [
+                    9
+                ],
+                "que": [
+                    10,
+                    120,
+                    150,
+                    201,
+                    222,
+                    231
+                ],
+                "encuentra": [
+                    12
+                ],
+                "sierra": [
+                    15
+                ],
+                "de": [
+                    16,
+                    21,
+                    24,
+                    30,
+                    32,
+                    41,
+                    48,
+                    55,
+                    60,
+                    62,
+                    73,
+                    86,
+                    92,
+                    94,
+                    102,
+                    105,
+                    109,
+                    118,
+                    124,
+                    137,
+                    155,
+                    172,
+                    178,
+                    189
+                ],
+                "Agalta": [
+                    17
+                ],
+                "a": [
+                    18,
+                    107,
+                    140,
+                    175,
+                    227
+                ],
+                "15": [
+                    19
+                ],
+                "kilómetros": [
+                    20
+                ],
+                "ciudad": [
+                    23
+                ],
+                "Catacamas,": [
+                    25
+                ],
+                "Olancho,": [
+                    26
+                ],
+                "Honduras": [
+                    27
+                ],
+                "para": [
+                    28,
+                    70,
+                    98,
+                    215
+                ],
+                "disponibilidad": [
+                    29
+                ],
+                "alimentos": [
+                    31
+                ],
+                "familias,": [
+                    33
+                ],
+                "el": [
+                    34,
+                    71,
+                    78,
+                    113,
+                    122,
+                    162,
+                    187,
+                    194,
+                    204,
+                    208,
+                    212,
+                    219,
+                    232
+                ],
+                "tuvo": [
+                    36
+                ],
+                "un": [
+                    37
+                ],
+                "enfoque": [
+                    38
+                ],
+                "cuantitativo-cualitativo,": [
+                    39
+                ],
+                "diseño": [
+                    40
+                ],
+                "tipo": [
+                    42
+                ],
+                "transversal.": [
+                    43
+                ],
+                "Se": [
+                    44,
+                    89
+                ],
+                "utilizó": [
+                    45,
+                    77
+                ],
+                "una": [
+                    46,
+                    170
+                ],
+                "muestra": [
+                    47
+                ],
+                "166": [
+                    49
+                ],
+                "familias": [
+                    50
+                ],
+                "al": [
+                    51
+                ],
+                "aplicar": [
+                    52
+                ],
+                "fórmula": [
+                    54
+                ],
+                "poblaciones": [
+                    56
+                ],
+                "finitas,": [
+                    57
+                ],
+                "técnica": [
+                    59
+                ],
+                "recopilación": [
+                    61
+                ],
+                "información": [
+                    63,
+                    75
+                ],
+                "fue": [
+                    64
+                ],
+                "encuesta": [
+                    66
+                ],
+                "y": [
+                    67,
+                    139,
+                    183,
+                    197,
+                    211,
+                    235
+                ],
+                "grupo": [
+                    68
+                ],
+                "focal,": [
+                    69
+                ],
+                "análisis": [
+                    72
+                ],
+                "paquete": [
+                    79
+                ],
+                "estadístico": [
+                    80
+                ],
+                "SPSS": [
+                    81
+                ],
+                "versión": [
+                    82
+                ],
+                "25": [
+                    83
+                ],
+                "con": [
+                    84
+                ],
+                "triangulación": [
+                    85
+                ],
+                "información.": [
+                    88
+                ],
+                "diagnóstico": [
+                    91
+                ],
+                "medios": [
+                    93,
+                    104
+                ],
+                "Vida": [
+                    95
+                ],
+                "e": [
+                    96
+                ],
+                "Indicadores": [
+                    97
+                ],
+                "capacidad": [
+                    100,
+                    153
+                ],
+                "adaptativa": [
+                    101,
+                    154
+                ],
+                "los": [
+                    103,
+                    156,
+                    176
+                ],
+                "vida": [
+                    106
+                ],
+                "partir": [
+                    108
+                ],
+                "metodología": [
+                    110
+                ],
+                "IPCC": [
+                    111
+                ],
+                "2007.": [
+                    114
+                ],
+                "principal": [
+                    116
+                ],
+                "medio": [
+                    117
+                ],
+                "vida,": [
+                    119
+                ],
+                "es": [
+                    121,
+                    128,
+                    193
+                ],
+                "cultivo": [
+                    123
+                ],
+                "granos": [
+                    125
+                ],
+                "básicos,": [
+                    126
+                ],
+                "donde": [
+                    127
+                ],
+                "necesario": [
+                    129
+                ],
+                "invertir": [
+                    130
+                ],
+                "infraestructura": [
+                    132
+                ],
+                "productiva,": [
+                    133
+                ],
+                "hacer": [
+                    134,
+                    159
+                ],
+                "agro": [
+                    135
+                ],
+                "transformación": [
+                    136
+                ],
+                "productos": [
+                    138
+                ],
+                "vez": [
+                    142,
+                    230
+                ],
+                "introducir": [
+                    143
+                ],
+                "o": [
+                    144
+                ],
+                "explorar": [
+                    145
+                ],
+                "nuevas": [
+                    146
+                ],
+                "tecnologías": [
+                    147
+                ],
+                "lo": [
+                    149
+                ],
+                "respecta": [
+                    151
+                ],
+                "territorios": [
+                    157
+                ],
+                "puedan": [
+                    158
+                ],
+                "frente": [
+                    160
+                ],
+                "ante": [
+                    161
+                ],
+                "cambio": [
+                    163
+                ],
+                "climático": [
+                    164
+                ],
+                "años": [
+                    166
+                ],
+                "futuros,": [
+                    167
+                ],
+                "debe": [
+                    169,
+                    224
+                ],
+                "priorización": [
+                    171
+                ],
+                "atención": [
+                    174
+                ],
+                "capitales": [
+                    177
+                ],
+                "forma": [
+                    179
+                ],
+                "diferencia": [
+                    180
+                ],
+                "zona": [
+                    181,
+                    184,
+                    191,
+                    217
+                ],
+                "alta": [
+                    182,
+                    218
+                ],
+                "baja.": [
+                    185
+                ],
+                "En": [
+                    186
+                ],
+                "caso": [
+                    188
+                ],
+                "baja,": [
+                    192
+                ],
+                "capital": [
+                    195,
+                    209,
+                    213,
+                    220,
+                    233
+                ],
+                "natural": [
+                    196,
+                    234
+                ],
+                "sus": [
+                    198
+                ],
+                "elementos": [
+                    199
+                ],
+                "biofísicos": [
+                    200
+                ],
+                "deben": [
+                    202
+                ],
+                "tener": [
+                    203
+                ],
+                "primer": [
+                    205
+                ],
+                "lugar,": [
+                    206
+                ],
+                "seguido": [
+                    207
+                ],
+                "físico/tecnológico": [
+                    210,
+                    221
+                ],
+                "financiero;": [
+                    214
+                ],
+                "priorizar,": [
+                    225
+                ],
+                "pero": [
+                    226
+                ],
+                "misma": [
+                    229
+                ],
+                "financiero.": [
+                    236
+                ]
+            },
+            "cited_by_api_url": "https://api.openalex.org/works?filter=cites:W4405797915",
+            "counts_by_year": [],
+            "updated_date": "2026-11-19T14:11:59.513116",
+            "created_date": "2024-12-26T00:00:00"
+        },
+        {
             "id": "https://openalex.org/W3006150102",
             "doi": "https://doi.org/10.5377/innovare.v8i2.9086",
             "title": "Simulación con robots colaborativos para prácticas de sistemas de información logística con estudiantes de ingeniería",
             "display_name": "Simulación con robots colaborativos para prácticas de sistemas de información logística con estudiantes de ingeniería",
             "alternate_titles": [],
-            "relevance_score": 11.168874,
+            "relevance_score": 10.378971,
             "publication_year": 2019,
             "publication_date": "2019-12-31",
             "ids": {
@@ -4939,21 +4956,21 @@
             "sustainable_development_goals": [
                 {
                     "score": 0.8278999924659729,
-                    "id": "https://metadata.un.org/sdg/4",
-                    "display_name": "Quality education"
+                    "display_name": "Quality education",
+                    "id": "https://metadata.un.org/sdg/4"
                 },
                 {
                     "score": 0.5378999710083008,
-                    "id": "https://metadata.un.org/sdg/9",
-                    "display_name": "Industry, innovation and infrastructure"
+                    "display_name": "Industry, innovation and infrastructure",
+                    "id": "https://metadata.un.org/sdg/9"
                 }
             ],
             "study_designs": [],
             "awards": [],
             "funders": [],
             "has_content": {
-                "grobid_xml": true,
-                "pdf": true
+                "pdf": true,
+                "grobid_xml": true
             },
             "content_urls": {
                 "pdf": "https://content.openalex.org/works/W3006150102.pdf",

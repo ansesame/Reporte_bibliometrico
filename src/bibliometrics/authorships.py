@@ -11,7 +11,7 @@ import requests
 
 from .config import (MISSING, INSTITUTIONS_VARS, AUTHOR_COLS, INST_COLS, INST_SELECT, AUTHORS_SELECT,
                      AUTHOR_ENTITY_SELECT, INST_TREE_SELECT, INSTITUTION_AUTHOR_TYPES, ROR_URL)
-from .utils import short_id, split_list, join_list, norm_name, name_similarity, group_counts
+from .utils import short_id, split_list, join_list, norm_name, name_similarity, group_counts, progress
 
 
 @dataclass
@@ -102,10 +102,12 @@ def fetch_ror(ror, cache):
 
 def fetch_institution_tree(client, ids):
     ''' OpenAlex entities of the institutions and all their parents ({institution id: entity}) '''
-    institutions, requested, pending = {}, set(), set(ids)
+    institutions, requested, pending, level = {}, set(), set(ids), 0
     while pending: # Fetch parents (grandparents...) until no new ones are found
         requested = requested | pending
-        institutions.update(client.fetch_entities('institutions', pending, INST_TREE_SELECT))
+        institutions.update(client.fetch_entities('institutions', pending, INST_TREE_SELECT,
+                                                  desc=f"Institution tree (level {level})"))
+        level += 1
         pending = {parent['id'] for inst in institutions.values()
                    for parent in inst.get('associated_institutions') or []
                    if parent.get('relationship') == 'parent'} - requested
@@ -149,7 +151,8 @@ def prepare_authorships(client, studies):
 
     author_ids = studies['authorships.author.id'].map(split_list)
     author_names = studies['authorships.author.display_name'].map(split_list)
-    author_entities = client.fetch_entities('authors', author_ids.explode().dropna(), AUTHOR_ENTITY_SELECT)
+    author_entities = client.fetch_entities('authors', author_ids.explode().dropna(), AUTHOR_ENTITY_SELECT,
+                                            desc="Author entities")
 
     # A ";" inside a name breaks the alignment: names are rebuilt from the author entities
     misaligned = (author_ids.str.len() > 0) & (author_ids.str.len() != author_names.str.len())
@@ -180,7 +183,8 @@ def add_authors_as_institutions(client, auth):
                       if name != MISSING and (author_id == MISSING or
                                               (len(auth.author_names[index]) <= 3 and
                                                not (auth.author_entities.get(author_id) or {}).get('affiliations')))}
-    auth.org_matches = {name: match for name in sorted(org_candidates) if (match := match_institution(client, name))}
+    auth.org_matches = {name: match for name in progress(sorted(org_candidates), "Authors as institutions")
+                        if (match := match_institution(client, name))}
 
     for index, names in auth.author_names.items():
         for name in names:
@@ -199,7 +203,8 @@ def add_publisher_as_authors(client, auth, studies):
     author if it matches an OpenAlex institution of an accepted type (not companies or universities) '''
     no_authors = auth.author_names[auth.author_names.str.len() == 0].index
     candidates = studies.loc[no_authors].query("`primary_location.source.type` != 'journal' and publisher.notna()")
-    publisher_matches = {publisher: match_institution(client, publisher) for publisher in candidates['publisher'].unique()}
+    publisher_matches = {publisher: match_institution(client, publisher)
+                         for publisher in progress(candidates['publisher'].unique(), "Publishers as authors")}
 
     for index, publisher in candidates['publisher'].items():
         match = publisher_matches[publisher]
@@ -222,7 +227,7 @@ def impute_author_ids(client, auth, studies):
                       for index in empty_studies
                       for author_id, name in zip(auth.author_ids[index], auth.author_names[index])
                       if author_id == MISSING and name != MISSING and name not in auth.org_matches}
-    author_matches = {query: search_author(client, *query) for query in sorted(author_queries)}
+    author_matches = {query: search_author(client, *query) for query in progress(sorted(author_queries), "Author search")}
 
     for index in empty_studies:
         ids, names = auth.author_ids[index], auth.author_names[index]
@@ -242,7 +247,8 @@ def add_author_affiliations(client, auth, studies):
     ''' Studies without institutions: institutions of their authors' affiliations in the publication year '''
     empty_studies = auth.empty_studies()
     missing_entities = {author_id for index in empty_studies for author_id in auth.author_ids[index]} - set(auth.author_entities)
-    auth.author_entities.update(client.fetch_entities('authors', missing_entities, AUTHOR_ENTITY_SELECT))
+    auth.author_entities.update(client.fetch_entities('authors', missing_entities, AUTHOR_ENTITY_SELECT,
+                                                      desc="Author affiliations"))
 
     for index in empty_studies:
         year = int(studies.at[index, 'publication_year'])

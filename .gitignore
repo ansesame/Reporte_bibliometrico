@@ -10,10 +10,10 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Heavy data and reference docs files
-docs/
-notebooks/*.xlsx
-notebooks/honduras_backup/
+# Heavy data
+notebooks/*
+!notebooks/*.ipynb
+outputs/bibliometrics_*_backup
 data/queries_honduras_OE.json
 
 # Sistema operativo / editor
@@ -23,3 +23,9 @@ Thumbs.db
 
 # Environment variables
 .env
+
+# Docs
+docs/*
+!docs/*.md
+!docs/diccionario_works_openalex.xlsx
+!docs/diccionario_bibliometrics_bd.xlsx

@@ -4,10 +4,11 @@ from typing import Literal
 
 import pandas as pd
 from pydantic import BaseModel
+from tqdm import tqdm
 
 from .config import (MISSING, INST_COLS, INST_GROUP_COL, CLAUDE_MODEL, CLASSIFY_BATCH_SIZE,
                      TOKENS_PER_INSTITUTION, CLAUDE_PRICE_PER_MTOK)
-from .utils import split_list, join_list, group_counts
+from .utils import split_list, join_list, group_counts, progress
 
 INST_CONTEXT_FIELDS = {'name': 'display_name', 'country_code': 'country_code', 'type': 'type', 'root': 'root_display_name'}
 
@@ -70,7 +71,7 @@ def classify_inst_batch(client, batch_df, country, output_model, max_tokens):
         output_format=output_model,
     )
     if response.stop_reason != "end_turn" or response.parsed_output is None:
-        print(f"Warning: batch not classified (stop_reason: {response.stop_reason})")
+        tqdm.write(f"Warning: batch not classified (stop_reason: {response.stop_reason})")
         return {}, response.usage
     inst_ids = batch_df.index
     groups = {inst_ids[inst.key]: inst.inst_group for inst in response.parsed_output.institutions
@@ -86,12 +87,12 @@ def classify_institutions(client, studies, country, batch_size=CLASSIFY_BATCH_SI
     inst_table = build_inst_table(studies)
     output_model = batch_models(country)
     groups_by_id, input_tokens, output_tokens, failed_batches = {}, 0, 0, 0
-    for start in range(0, len(inst_table), batch_size):
+    for start in progress(range(0, len(inst_table), batch_size), "Institution groups (batches)"):
         try:
             groups, usage = classify_inst_batch(client, inst_table.iloc[start:start + batch_size], country,
                                                 output_model, TOKENS_PER_INSTITUTION * batch_size)
         except (anthropic.APIStatusError, anthropic.APIConnectionError) as e:
-            print(f"Error in batch {start}: {e}")
+            tqdm.write(f"Error in batch {start}: {e}")
             failed_batches += 1
             continue
         groups_by_id.update(groups)

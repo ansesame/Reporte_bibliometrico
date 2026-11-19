@@ -101,7 +101,8 @@ def build_study_year_cites(study_ids, counts_by_year):
 
 
 def build_metadata_table(meta, run_date):
-    ''' One row with the meta of the queries file (lists joined by "; ") and the date of the run '''
+    ''' One row with the meta of the queries file and the search parameters (lists joined by "; ")
+    and the date of the run '''
     return pd.DataFrame([{**{key: '; '.join(map(str, value)) if isinstance(value, list) else value
                              for key, value in meta.items()},
                           'updated_date': run_date}])

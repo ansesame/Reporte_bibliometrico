@@ -3,7 +3,7 @@ import json
 
 import pandas as pd
 
-from .config import ALLOWED_TYPES
+from .config import ALLOWED_TYPES, SEARCH_FIELD
 
 META_FIELDS = ['country', 'start_year', 'end_year', 'country_terms']
 THEMATIC_FIELDS = ['thematic_id', 'pillar', 'strategic_objective', 'expected_result', 'thematic_axis', 'keywords']
@@ -25,11 +25,13 @@ def load_queries(path):
     return queries
 
 
-def build_oql(keywords, start_year, end_year, country_terms, allowed_types=ALLOWED_TYPES, field="title-abstract-keywords"):
-    ''' Build OQL: works between years, with allowed types,
-    containing any country term AND any keyword (stemmed) '''
+def build_oql(keywords, start_year, end_year, country_terms, allowed_types=ALLOWED_TYPES, field=SEARCH_FIELD,
+              stem=True):
+    ''' Build OQL: works between years, with allowed types, containing any country term AND any keyword
+    in the title or abstract. Keywords are stemmed if stem, exact phrases otherwise; country terms of one word
+    are searched as they are and those of several words are always stemmed '''
     clean = lambda text: text.replace('"', '').strip()
-    kw_search = " OR ".join(f'stemmed "{clean(kw)}"' for kw in keywords)
+    kw_search = " OR ".join(f'stemmed "{clean(kw)}"' if stem else f'"{clean(kw)}"' for kw in keywords)
     country_search = " OR ".join(clean(term) if " " not in clean(term) else f'stemmed "{clean(term)}"'
                                  for term in country_terms)
     types = " or ".join(allowed_types)
@@ -38,15 +40,15 @@ def build_oql(keywords, start_year, end_year, country_terms, allowed_types=ALLOW
             f" and {field} has (({country_search}) AND ({kw_search}))")
 
 
-def thematic_oql(thematic, meta):
+def thematic_oql(thematic, meta, stem=True):
     ''' OQL of a thematic axis with the meta of the queries file '''
-    return build_oql(thematic['keywords'], meta['start_year'], meta['end_year'], meta['country_terms'])
+    return build_oql(thematic['keywords'], meta['start_year'], meta['end_year'], meta['country_terms'], stem=stem)
 
 
-def build_thematics_df(queries):
+def build_thematics_df(queries, stem=True):
     ''' Thematics dataframe: fields of the queries file, number of keywords and OQL '''
     thematics = pd.DataFrame(queries['thematics'])
     thematics['n_keywords'] = thematics['keywords'].apply(len)
-    thematics['oql'] = [thematic_oql(thematic, queries['meta']) for thematic in queries['thematics']]
+    thematics['oql'] = [thematic_oql(thematic, queries['meta'], stem) for thematic in queries['thematics']]
     thematics['keywords'] = thematics['keywords'].apply('; '.join)
     return thematics

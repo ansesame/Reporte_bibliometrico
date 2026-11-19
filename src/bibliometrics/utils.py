@@ -4,8 +4,20 @@ import re
 import unicodedata
 
 import pandas as pd
+from tqdm import tqdm
 
 from .config import MISSING
+
+
+def progress(iterable, desc, total=None):
+    ''' Progress bar over a slow loop (requests to APIs) '''
+    return tqdm(iterable, desc=desc, total=total, dynamic_ncols=True)
+
+
+def progress_map(series, func, desc):
+    ''' series.map(func) with a progress bar, keeping the index '''
+    return pd.Series([func(value) for value in progress(series, desc, total=len(series))],
+                     index=series.index, dtype=object)
 
 
 def short_id(openalex_id):

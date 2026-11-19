@@ -6,10 +6,11 @@ from html import unescape
 
 import pandas as pd
 import requests
+from tqdm import tqdm
 
 from .config import (TEXT_COLUMNS, S2_BATCH_URL, EPMC_SEARCH_URL, DOI_HEADERS, DOMAIN_PUBLISHERS, LANGUAGES,
                      OA_STATUS_SOURCE_OA)
-from .utils import clean_name
+from .utils import clean_name, progress, progress_map
 
 
 def blank_to_nan(studies, columns=TEXT_COLUMNS):
@@ -25,7 +26,7 @@ def fetch_s2_abstracts(dois, api_key=None, retries=10):
     ''' Abstracts from the Semantic Scholar batch endpoint by DOI (max 100 ids per request) '''
     headers = {"x-api-key": api_key} if api_key else {}
     abstracts = {}
-    for start in range(0, len(dois), 100):
+    for start in progress(range(0, len(dois), 100), "Abstracts Semantic Scholar (batches)"):
         batch = dois[start:start + 100]
         for attempt in range(retries):
             req = requests.post(S2_BATCH_URL, params={"fields": "abstract"},
@@ -34,7 +35,7 @@ def fetch_s2_abstracts(dois, api_key=None, retries=10):
                 break
             time.sleep(5) # Shared rate limit without API key
         if req.status_code != 200:
-            print(f"Semantic Scholar error: {req.status_code}")
+            tqdm.write(f"Semantic Scholar error: {req.status_code}")
             continue
         abstracts.update({doi: paper['abstract'] for doi, paper in zip(batch, req.json())
                           if paper and paper.get('abstract')})
@@ -68,7 +69,7 @@ def impute_abstracts(studies, s2_api_key=None):
     studies.loc[s2_abstracts.index, 'abstract'] = s2_abstracts
     studies.loc[s2_abstracts.index, 'abstract_source'] = 'semantic_scholar'
 
-    epmc_abstracts = dois.drop(s2_abstracts.index).map(fetch_epmc_abstract).dropna()
+    epmc_abstracts = progress_map(dois.drop(s2_abstracts.index), fetch_epmc_abstract, "Abstracts Europe PMC").dropna()
     studies.loc[epmc_abstracts.index, 'abstract'] = epmc_abstracts
     studies.loc[epmc_abstracts.index, 'abstract_source'] = 'europepmc'
     return studies
@@ -99,8 +100,9 @@ def impute_language(studies):
     studies['language_imputed'] = studies['language'].isna()
     imputed = studies['language_imputed']
     if imputed.any():
-        studies.loc[imputed, 'language'] = studies[imputed].apply(
-            lambda row: detect_language(row['display_name'], row['abstract']), axis=1)
+        rows = studies.loc[imputed, ['display_name', 'abstract']]
+        studies.loc[imputed, 'language'] = [detect_language(title, abstract) for title, abstract
+                                            in progress(rows.itertuples(index=False), "Language", total=len(rows))]
     return studies
 
 
@@ -126,10 +128,10 @@ def doi_publisher(doi):
         req = requests.get(doi, headers=DOI_HEADERS, timeout=30)
         publisher = req.json().get('publisher') if req.status_code == 200 else None
     except (requests.RequestException, ValueError) as e:
-        print(f"Warning: {doi} ({type(e).__name__})")
+        tqdm.write(f"Warning: {doi} ({type(e).__name__})")
         return None
     if req.status_code != 200:
-        print(f"Warning: {doi} ({req.status_code})")
+        tqdm.write(f"Warning: {doi} ({req.status_code})")
     return publisher if publisher != "Unpublished" else None # ResearchGate DOIs are registered as "Unpublished"
 
 
@@ -150,8 +152,9 @@ PUBLISHER_STEPS = {
     'host_organization_name': lambda df: df['primary_location.source.host_organization_name'],
     'display_name': lambda df: df['primary_location.source.display_name'],
     'raw_source_name': lambda df: df['primary_location.raw_source_name'],
-    'doi': lambda df: df['doi'].dropna().map(doi_publisher),
-    'landing_page_url': lambda df: df['primary_location.landing_page_url'].map(landing_publisher),
+    'doi': lambda df: progress_map(df['doi'].dropna(), doi_publisher, "Publisher by DOI"),
+    'landing_page_url': lambda df: progress_map(df['primary_location.landing_page_url'], landing_publisher,
+                                                "Publisher by landing page"),
 }
 
 

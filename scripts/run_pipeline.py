@@ -2,17 +2,21 @@
 the relational database in outputs/.
 
 Usage:
-    python scripts/run_pipeline.py data/queries_honduras_ET.json --name bibliometrics_honduras
-        [--subfields data/subfields_tagged.xlsx]
+    python scripts/run_pipeline.py data/queries_honduras_ET.json --subfields data/subfields_tagged_honduras.xlsx
+        [--name bibliometrics_honduras] [--no-stemming]
 
 Outputs:
     outputs/{name}.xlsx          studies with imputations and thematic fields
     outputs/{name}_db.xlsx       one sheet per table (studies, institutions, topics, thematics, bridges,
                                  citations per year and metadata of the queries file)
-    outputs/{name}_backup/       OpenAlex responses per thematic, topics snapshot and run_summary.json
+    outputs/{name}_backup/       OpenAlex responses per thematic, topics catalog and run_summary.json
 
 Requires OPENALEX_API_KEY and ANTHROPIC_API_KEY in .env (S2_API_KEY is optional).
-The backups are reused when they exist, so a rerun does not pay the queries again.
+The complete backups are reused when they exist, so a rerun does not pay those queries again; failed or
+incomplete thematics stop the run before the later stages and are queried again on the next run.
+A backup made with another OQL (other types, keywords or stemming) stops the run until it is deleted.
+The subfields file is checked against the current OpenAlex subfields, and the topics catalog is downloaded
+from the API whenever a thematic is queried, so that it matches the topic assignments of the works.
 '''
 import argparse
 import json
@@ -29,13 +33,13 @@ from dotenv import load_dotenv
 
 from bibliometrics import authorships as au
 from bibliometrics.classification import classify_institutions
-from bibliometrics.config import DROP_COLS
+from bibliometrics.config import ALLOWED_TYPES, DROP_COLS, SEARCH_FIELD, SUBFIELD_FIELDS
 from bibliometrics.database import assign_retrieved_date, build_audit_table, build_db_tables
 from bibliometrics.enrichment import blank_to_nan, impute_abstracts, impute_language, impute_publisher, impute_source_oa
 from bibliometrics.export import write_excel, write_json
-from bibliometrics.openalex import OpenAlexClient, fetch_topics_snapshot
+from bibliometrics.openalex import OpenAlexClient, fetch_topics
 from bibliometrics.queries import load_queries, build_thematics_df, thematic_oql
-from bibliometrics.selection import filter_interest_subfields, deduplicate
+from bibliometrics.selection import check_subfields, filter_interest_subfields, deduplicate
 from bibliometrics.utils import short_id
 from bibliometrics.works import build_studies_df
 
@@ -44,8 +48,11 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Bibliometric pipeline over OpenAlex")
     parser.add_argument("queries", help="JSON file with meta and thematics (format of data/queries_honduras_ET.json)")
     parser.add_argument("--name", help="Base name of the outputs (default: bibliometrics_{country})")
-    parser.add_argument("--subfields", default=str(ROOT / "data" / "subfields_tagged.xlsx"),
-                        help="Excel with the OpenAlex subfield 'id' and 'interest_subfield' (1 = keep)")
+    parser.add_argument("--subfields", required=True,
+                        help="Excel of the country with the OpenAlex subfield 'id' and 'interest_subfield' (1 = keep), "
+                             "e.g. data/subfields_tagged_honduras.xlsx")
+    parser.add_argument("--stemming", action=argparse.BooleanOptionalAction, default=True,
+                        help="Search the keywords with stemming (default); --no-stemming searches them as exact phrases")
     return parser.parse_args()
 
 
@@ -55,14 +62,30 @@ def log(summary, stage, **values):
     print(f"[{stage}]", ", ".join(f"{k}: {v}" for k, v in values.items()))
 
 
-def fetch_thematic(client, thematic, meta, backup_dir):
-    ''' OpenAlex results of a thematic (from the backup if it exists) '''
-    path = backup_dir / f"thematic_{thematic['thematic_id']}.json"
+def backup_path(backup_dir, thematic_id):
+    return backup_dir / f"thematic_{thematic_id}.json"
+
+
+def backup_oql(path):
+    ''' OQL with which the pipeline made a thematic backup (None for backups made before it was recorded) '''
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)['meta'].get('pipeline_oql')
+
+
+def fetch_thematic(client, thematic_id, oql, backup_dir):
+    ''' OpenAlex results of a thematic (from the backup if it exists and is complete).
+    An incomplete backup is queried again; it is only replaced if the new query returns data.
+    The OQL is saved in the backup meta as pipeline_oql '''
+    path = backup_path(backup_dir, thematic_id)
     if path.exists():
         with open(path, encoding="utf-8") as f:
-            return json.load(f), True
-    data = client.request_oql(thematic_oql(thematic, meta))
+            data = json.load(f)
+        if data['meta'].get('complete', True):
+            return data, True
+        print(f"Thematic {thematic_id}: backup is incomplete, querying again")
+    data = client.request_oql(oql)
     if data is not None:
+        data['meta']['pipeline_oql'] = oql
         write_json(path, data)
     return data, False
 
@@ -78,40 +101,81 @@ def main():
     backup_dir.mkdir(parents=True, exist_ok=True)
 
     run_date = time.strftime("%Y-%m-%d")
+    search = {'search_fields': SEARCH_FIELD, 'allowed_types': ALLOWED_TYPES, 'stemming': args.stemming}
     summary = {'queries_file': str(args.queries), 'subfields_file': str(args.subfields), 'name': name,
-               'start': time.strftime("%Y-%m-%d %H:%M:%S"), 'stages': {}, 'costs_usd': {}}
+               'start': time.strftime("%Y-%m-%d %H:%M:%S"), 'search': search, 'stages': {}, 'costs_usd': {}}
     start_time = time.perf_counter()
     client = OpenAlexClient(os.getenv("OPENALEX_API_KEY"))
-    thematics = build_thematics_df(queries)
+    thematics = build_thematics_df(queries, args.stemming)
+    oqls = {thematic['thematic_id']: thematic_oql(thematic, meta, args.stemming) for thematic in queries['thematics']}
 
-    # 1. Validate the OQL (free endpoint) and query OpenAlex per thematic
-    invalid = [thematic['thematic_id'] for thematic in queries['thematics']
-               if not (backup_dir / f"thematic_{thematic['thematic_id']}.json").exists()
-               and not client.validate_oql(thematic_oql(thematic, meta))[0]]
+    # 0. Subfields file against the current OpenAlex subfields
+    subfields = pd.read_excel(args.subfields)
+    live_subfields = client.fetch_all('subfields', ",".join(SUBFIELD_FIELDS), "OpenAlex subfields")
+    if live_subfields is None:
+        sys.exit("Could not download the OpenAlex subfields to check the subfields file: rerun later")
+    check = check_subfields(subfields, live_subfields)
+    summary['stages']['subfields_check'] = check
+    print(f"[subfields_check] missing_in_file: {len(check['missing_in_file'])}, "
+          f"extra_in_file: {len(check['extra_in_file'])}, changed: {len(check['changed'])}")
+    if check['missing_in_file'] or check['extra_in_file']:
+        sys.exit(f"The subfields of {args.subfields} differ from OpenAlex: missing in the file "
+                 f"{check['missing_in_file']}, not in OpenAlex {check['extra_in_file']}. "
+                 "Update the file and tag the new subfields (interest_subfield) before running")
+    for change in check['changed']:
+        print(f"Warning: subfield {change['id']} {change['column']} is '{change['openalex']}' in OpenAlex "
+              f"and '{change['file']}' in the file")
+    cost_before = client.cost_usd
+
+    # 1. Check the backups, validate the OQL (free endpoint) and query OpenAlex per thematic
+    stale = [path.name for thematic_id, oql in oqls.items()
+             if (path := backup_path(backup_dir, thematic_id)).exists() and backup_oql(path) != oql]
+    if stale:
+        sys.exit(f"The backups {stale} in {backup_dir} were made with another OQL (types, search field, keywords"
+                 " or stemming): delete them to query those thematics again")
+
+    invalid, unvalidated = [], []
+    for thematic_id, oql in oqls.items():
+        if backup_path(backup_dir, thematic_id).exists():
+            continue
+        valid, body = client.validate_oql(oql)
+        if body is None or 'validation' not in body: # Network or API error, not a verdict on the OQL
+            unvalidated.append(thematic['thematic_id'])
+        elif not valid:
+            invalid.append(thematic['thematic_id'])
     if invalid:
         sys.exit(f"Invalid OQL for thematics {invalid}: fix the keywords before running")
+    if unvalidated:
+        sys.exit(f"Could not validate the OQL of thematics {unvalidated} (network or API error): rerun later")
 
     studies_list, from_backup, failed, counts_by_year = [], 0, [], {}
     for thematic in queries['thematics']:
-        data, cached = fetch_thematic(client, thematic, meta, backup_dir)
-        if data is None:
+        data, cached = fetch_thematic(client, thematic['thematic_id'], oqls[thematic['thematic_id']], backup_dir)
+        if data is None or not data['meta'].get('complete', True):
             failed.append(thematic['thematic_id'])
             continue
         from_backup += cached
-        if not data['meta'].get('complete', True):
-            print(f"Warning: thematic {thematic['thematic_id']} is incomplete")
         studies_list.append(build_studies_df(data['results'], thematic['thematic_id']))
         counts_by_year.update({short_id(result['id']): result.get('counts_by_year') or []
                                for result in data['results']})
         print(f"Thematic {thematic['thematic_id']} ({thematic['thematic_axis']}): {len(data['results'])} works")
     if failed:
-        sys.exit(f"Thematics {failed} failed: rerun to retry them (the others are kept in {backup_dir})")
+        sys.exit(f"Thematics {failed} failed or are incomplete: rerun to retry them "
+                 f"(the complete ones are kept in {backup_dir})")
     studies = pd.concat(studies_list, ignore_index=True)
-    summary['costs_usd']['openalex_queries'] = client.cost_usd
+    summary['costs_usd']['openalex_queries'] = client.cost_usd - cost_before
     log(summary, 'queries', thematics=len(studies_list), from_backup=from_backup, studies=len(studies))
 
+    # Topics catalog of the same date as the works: downloaded again if a thematic was queried in this run
+    # (fetched here so that a failure stops the run before the paid imputations)
+    try:
+        topics_snapshot, topics_downloaded = fetch_topics(client, backup_dir / "topics_snapshot.json",
+                                                          refresh=from_backup < len(studies_list))
+    except RuntimeError as e:
+        sys.exit(str(e))
+
     # 2. Subfields of interest and duplicates
-    studies = filter_interest_subfields(studies, pd.read_excel(args.subfields))
+    studies = filter_interest_subfields(studies, subfields)
     log(summary, 'subfields', studies=len(studies))
     studies, removed = deduplicate(studies, thematics)
     log(summary, 'duplicates', **{f'removed_by_{key}': n for key, n in removed.items()}, studies=len(studies),
@@ -157,11 +221,15 @@ def main():
     studies_path, db_path = out_dir / f"{name}.xlsx", out_dir / f"{name}_db.xlsx"
     studies, kept = assign_retrieved_date(studies, db_path, run_date) # Reads the previous database before overwriting it
     log(summary, 'retrieved_date', kept_previous=kept, new=len(studies) - kept, run_date=run_date)
-    topics_snapshot = fetch_topics_snapshot(backup_dir / "topics_snapshot.json")
-    tables, topic_diffs = build_db_tables(studies, thematics, topics_snapshot, meta, run_date, counts_by_year)
+    tables, topic_diffs = build_db_tables(studies, thematics, topics_snapshot, {**meta, **search}, run_date,
+                                          counts_by_year)
     log(summary, 'database', **{table: list(df.shape) for table, df in tables.items()},
-        topics_snapshot=topics_snapshot['meta']['date'],
+        topics_snapshot=topics_snapshot['meta']['date'], topics_source=topics_snapshot['meta']['source'],
+        topics_downloaded=topics_downloaded,
         studies_with_topic_differences=int(topic_diffs.any(axis=1).sum()))
+    if topic_diffs.any(axis=1).any():
+        print(f"Warning: {int(topic_diffs.any(axis=1).sum())} studies have a topic hierarchy different from the"
+              " topics catalog (the catalog is older than some works). See README, 'Reutilización de respaldos'")
 
     summary['openalex_failures'] = client.failures
     summary['costs_usd']['openalex_total'] = client.cost_usd

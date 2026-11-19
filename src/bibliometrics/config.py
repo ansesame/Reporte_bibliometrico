@@ -4,12 +4,13 @@ MISSING = "Not indicated" # Missing element inside a multi-valued field
 
 # OpenAlex
 OA_BASE = "https://api.openalex.org/"
-TOPICS_MANIFEST = "https://openalex.s3.amazonaws.com/data/jsonl/topics/manifest.json" # Public snapshot: no API key or cost
 TOPIC_FIELDS = ['id', 'display_name', 'description', 'legacy_keywords', 'ids', 'subfield', 'field', 'domain',
-                'works_count', 'updated_date'] # Fields kept in the backup (the full records weigh ~40 MB)
+                'works_count', 'updated_date'] # select of the topics catalog (the full records weigh ~40 MB)
+SUBFIELD_FIELDS = ['id', 'display_name', 'field'] # select of the subfields catalog
 
-ALLOWED_TYPES = ["article", "report", "conference-paper", "book", "book-chapter",
-                 "dissertation", "conference-abstract"]
+ALLOWED_TYPES = ["article", "report", "dissertation", "book", "book-chapter", "conference-paper",
+                 "dataset", "data-paper"]
+SEARCH_FIELD = "title-abstract" # OQL search field of the works query
 
 INTEREST_VARS = ["id", "doi", "display_name", "relevance_score",
                  "publication_year", "publication_date", "language",

@@ -2,6 +2,21 @@
 import pandas as pd
 
 
+def check_subfields(subfields, live):
+    ''' Compare the tagged subfields file with the current OpenAlex subfields (records with id, display_name, field).
+    Returns {missing_in_file, extra_in_file, changed}: ids only in OpenAlex, ids only in the file and
+    the name or field changes (only for the columns "name" and "field" present in the file) '''
+    live = {int(str(record['id']).rsplit('/', 1)[-1]): {'name': record['display_name'],
+                                                         'field': (record.get('field') or {}).get('display_name')}
+            for record in live}
+    file_rows = {int(row['id']): row for row in subfields.to_dict('records')}
+    changed = [{'id': subfield_id, 'column': column, 'file': row[column], 'openalex': live[subfield_id][column]}
+               for subfield_id, row in file_rows.items() if subfield_id in live
+               for column in ('name', 'field') if column in row and row[column] != live[subfield_id][column]]
+    return {'missing_in_file': sorted(set(live) - set(file_rows)), 'extra_in_file': sorted(set(file_rows) - set(live)),
+            'changed': changed}
+
+
 def filter_interest_subfields(studies, subfields):
     ''' Studies whose primary subfield is tagged with interest_subfield == 1.
     subfields: table with the OpenAlex subfield "id" and "interest_subfield".
