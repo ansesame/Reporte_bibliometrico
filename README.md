@@ -184,6 +184,8 @@ Honduras, 2019–2026, 20 ejes, 1.044 estudios finales (2026-11-19):
 
 El costo crece con el número de estudios y de autores sin datos. Si el total de OpenAlex supera el saldo diario se debe ejecutar el pipeline otro día o usar saldo prepagado.
 
+La comparación con Ecuador (16.021 estudios) y una estimación del costo por estudio están en [Ejemplo: replicación para Ecuador](#ejemplo-replicación-para-ecuador).
+
 ## Validaciones y fallas
 
 - **Archivo de subcampos:** si sus ids no coinciden con los subcampos actuales de OpenAlex, el pipeline se detiene antes de consultar.
@@ -228,3 +230,124 @@ outputs/                  salidas
 ```
 
 `src/` solo contiene funciones reutilizables y no define el orden de ejecución; ese orden lo fija `scripts/`.
+
+## Ejemplo: replicación para Ecuador
+
+Ecuador se replicó a partir de `docs/Reporte bibliografico Ecuador 2019-2026.pdf`. La tabla de la sección "2. Definición de palabras clave" (págs. 4–10) tiene 3 áreas prioritarias, 5 objetivos estratégicos, 13 resultados esperados y 22 ejes temáticos, cada uno con sus palabras clave en inglés y español.
+
+### Paso 1: `data/queries_ecuador.json`
+
+La tabla se pasó al formato de `queries_honduras_ET.json` con estas decisiones:
+
+| Decisión | Detalle |
+|---|---|
+| `pillar` | El "Área prioritaria" del reporte (p. ej. `"1. Promoción de la inversión privada"`). |
+| `thematic_id` | 4 dígitos: área · objetivo estratégico · resultado esperado · eje. Honduras usa 3 porque cada resultado tiene un solo eje; en Ecuador varios resultados tienen 2 o 3 ejes. Por ejemplo, `1121` (Logística e infraestructura de transporte) y `1122` (Comercio exterior e integración comercial) son los dos ejes del resultado 1.1.2. |
+| `country_terms` | `Ecuador`, los gentilicios en inglés y español (`Ecuadorian`, `ecuatoriano`, `ecuatorianas`…) y sus variantes `afroecuatoriano…`, igual que en Honduras. |
+| Palabras clave | Cada término separado por `/` o `;` en la tabla es una palabra clave. Se quitaron los duplicados dentro de cada eje, incluidas las variantes de mayúsculas o singular/plural que el stemming ya iguala. |
+| Notas del reporte | Se agregaron las variantes británicas `labour` en Regulación laboral, como indica la nota del reporte, y las "Other key words" de 3.1.1 quedaron en el mismo eje. |
+| Erratas | Se corrigieron erratas evidentes del PDF (`digitalizacíon`, `subministro`, `evasion`…) y las tildes de los nombres de los ejes. |
+
+Para revisar el JSON antes de ejecutar, sin costo:
+
+```
+.venv\Scripts\python.exe -c "import sys; sys.path.insert(0, 'src'); from bibliometrics.queries import load_queries, build_thematics_df; t = build_thematics_df(load_queries('data/queries_ecuador.json')); print(t[['thematic_id', 'thematic_axis', 'n_keywords']])"
+```
+
+Esto revisa los campos obligatorios y que los ids sean únicos, y muestra el número de palabras clave de cada eje. La validez de cada OQL la revisa el pipeline al iniciar, con el endpoint gratuito.
+
+### Paso 2: `data/subfields_tagged_ecuador.xlsx`
+
+Se partió de una copia del archivo de Honduras. Se revisó `interest_subfield` contra los ejes de Ecuador y se reescribió `justificacion` con los `thematic_id` de Ecuador (p. ej. `2131 Agua potable y saneamiento`). Quedaron 73 subcampos de interés, frente a 86 en Honduras:
+
+| Cambio | Subcampos | Motivo |
+|---|---|---|
+| 0 → 1 | 1705 Computer Networks and Communications | Eje 1131, conectividad e infraestructura digital |
+| 1 → 0 | 2706, 2711, 3604 (cuidados intensivos y urgencias) | Ecuador apunta a la atención primaria, no a la capacidad hospitalaria |
+| 1 → 0 | 2717, 2729, 2735, 2916 (geriatría, obstetricia, pediatría, nutrición) | Ecuador no tiene ejes de población vulnerable ni de protección social, y la salud materna e infantil no está entre las palabras clave de atención primaria |
+| 1 → 0 | 3314, 3316 (antropología, estudios culturales) | Ecuador no tiene un eje de pueblos indígenas |
+| 1 → 0 | 2405, 2725 (parasitología, enfermedades infecciosas) | El reporte de Ecuador descartó a mano estos tópicos |
+| 1 → 0 | 1908, 2202, 3307 (geofísica, ingeniería aeroespacial, ergonomía) | Ningún eje de Ecuador los cubre |
+
+En la columna `justificacion`, las filas que pasaron a 0 explican el cambio, y las asignaciones inciertas llevan la marca `dudoso` para que el experto las revise primero.
+
+### Prompts de ejemplo para un chat de IA
+
+**Prompt A: archivo de queries.** Adjunta el PDF del reporte del país y `data/queries_honduras_ET.json`.
+
+```
+Adjunto el reporte bibliométrico de <PAÍS> (PDF) y un archivo de queries de ejemplo (queries_honduras_ET.json).
+Genera queries_<pais>.json con exactamente el mismo formato, a partir de la tabla de la sección
+"2. Definición de palabras clave" del reporte.
+
+Reglas:
+1. meta: country en inglés, start_year y end_year del período del reporte, una description breve y
+   country_terms con el nombre del país y sus gentilicios en inglés y español, con variantes de género
+   y número (y "afro" si aplica).
+2. Una entrada en thematics por cada eje temático de la tabla. pillar = área prioritaria (o pilar),
+   strategic_objective = objetivo estratégico, expected_result = resultado esperado, thematic_axis =
+   nombre del eje. Escribe los numerales con punto final ("1.1.", "1.1.1.").
+3. thematic_id: texto que siga la jerarquía (pilar, objetivo, resultado y, si un resultado tiene varios
+   ejes, un dígito más para el eje). Todos deben ser únicos.
+4. keywords: cada término separado por "/" o ";" en la tabla es un elemento de la lista, en inglés y
+   español. Elimina duplicados dentro de cada eje (sin distinguir mayúsculas ni singular/plural).
+   Respeta las notas de la tabla (p. ej. variantes ortográficas como "labor"/"labour") y corrige erratas
+   evidentes.
+5. Si una celda del PDF continúa en la página siguiente, asigna el eje al resultado esperado que corresponde.
+
+Devuelve el JSON completo y, aparte, una lista breve de las decisiones que tomaste (erratas
+corregidas, términos agregados o eliminados, asignaciones dudosas).
+```
+
+**Prompt B: subcampos de interés.** Adjunta el JSON generado y el Excel de subcampos de un país con ejes parecidos (p. ej. `data/subfields_tagged_ecuador.xlsx`).
+
+```
+Adjunto el archivo de queries de <PAÍS> (ejes temáticos con thematic_id y palabras clave) y un Excel
+con los 252 subcampos de OpenAlex (id, name, description, field), etiquetados para otro país en la
+columna interest_subfield (1 = se conserva, 0 = se descarta).
+
+Revisa cada subcampo para <PAÍS>: marca 1 si es probable que un estudio de ese subcampo trate alguno
+de los ejes temáticos, y 0 si no. En justificacion, para cada 1 escribe los thematic_id y ejes que lo
+justifican (p. ej. "2131 Agua potable y saneamiento"); agrega "; dudoso" si la asignación es incierta.
+Para cada subcampo que cambie de valor respecto del archivo original, explica el motivo.
+
+Devuelve una tabla con las columnas id, name, interest_subfield y justificacion para los 252 subcampos,
+y aparte la lista de subcampos que cambiaron de valor.
+```
+
+Un experto debe revisar los dos resultados antes de ejecutar.
+
+### Paso 3: ejecución
+
+```
+.venv\Scripts\python.exe scripts\run_pipeline.py data\queries_ecuador.json --subfields data\subfields_tagged_ecuador.xlsx --name bibliometrics_ecuador
+```
+
+Resultado (2026-11-19): de 22.350 estudios recuperados en los 22 ejes, 18.733 pasaron el filtro de subcampos y quedaron 16.021 después de eliminar duplicados, con 2.330 instituciones clasificadas. Hubo una llamada fallida (código 400, un nombre de autor con caracteres que la API no acepta), sin impacto en los resultados.
+
+### Costos: Honduras y Ecuador
+
+| Concepto | Honduras | Ecuador |
+|---|---|---|
+| Ejes temáticos | 20 | 22 |
+| Estudios recuperados / finales | 1.443 / 1.044 | 22.350 / 16.021 |
+| OpenAlex: consultas por eje | USD 0.03 | USD 0.24 |
+| OpenAlex: imputación de autores e instituciones | USD 0.32 | USD 7.93 |
+| OpenAlex: catálogo de tópicos y control de subcampos | USD 0.003 | USD 0.003 |
+| Anthropic: clasificación de instituciones | USD 0.02 (806) | USD 0.06 (2.330) |
+| **Total** | **USD 0.37** | **USD 8.22** |
+| Costo por 1.000 estudios finales | USD 0.36 | USD 0.51 |
+| Tiempo | ~15 minutos | ~2 horas 15 minutos |
+
+### Estimación de costo por estudio
+
+Con los datos de ambas corridas:
+
+| Componente | Estimación |
+|---|---|
+| Consultas por eje (OpenAlex) | USD 0.001 por página de 100 resultados, con al menos una página por eje: ~USD 0.01–0.02 por 1.000 estudios recuperados. |
+| Imputación de autores e instituciones (OpenAlex) | Es el 91–97 % del costo. Depende sobre todo de cuántos estudios no traen instituciones en OpenAlex, porque en esos estudios se busca si cada autor sin afiliación es en realidad una institución: ~USD 0.0012 de imputación por nombre candidato (249 en Honduras, 6.668 en Ecuador). Por estudio final, USD 0.0003–0.0005. |
+| Clasificación de instituciones (Anthropic) | ~USD 0.024 por 1.000 instituciones. |
+| **Regla práctica** | **~USD 0.50 por 1.000 estudios finales** (promedio ponderado de ambas corridas: USD 8.60 / 17.065 estudios) y ~0.5–0.9 segundos por estudio. |
+
+Por ejemplo, un país con ~15.000 estudios finales costaría ~USD 7.50 y tardaría ~2 horas. Ese costo supera el presupuesto diario de OpenAlex (USD 1), así que hace falta saldo prepagado (ver [Revisar el saldo de OpenAlex](#3-revisar-el-saldo-de-openalex)).

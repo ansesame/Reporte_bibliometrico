@@ -14,7 +14,6 @@ __pycache__/
 notebooks/*
 !notebooks/*.ipynb
 outputs/bibliometrics_*_backup
-data/queries_honduras_OE.json
 
 # Sistema operativo / editor
 .DS_Store

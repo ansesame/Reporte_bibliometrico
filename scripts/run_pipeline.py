@@ -2,8 +2,8 @@
 the relational database in outputs/.
 
 Usage:
-    python scripts/run_pipeline.py data/queries_honduras_ET.json --subfields data/subfields_tagged_honduras.xlsx
-        [--name bibliometrics_honduras] [--no-stemming]
+    python scripts/run_pipeline.py data/queries_{country}.json --subfields data/subfields_tagged_{country}.xlsx
+        [--name bibliometrics_{country}] [--no-stemming]
 
 Outputs:
     outputs/{name}.xlsx          studies with imputations and thematic fields
