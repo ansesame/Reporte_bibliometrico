@@ -23,6 +23,9 @@ Thumbs.db
 # Environment variables
 .env
 
+# Interfaz: últimas rutas y opciones usadas
+.gui_settings.json
+
 # Docs
 docs/*
 !docs/*.md

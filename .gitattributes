@@ -1,0 +1,3 @@
+# Lanzadores: finales de línea de cada sistema
+*.bat text eol=crlf
+*.command text eol=lf

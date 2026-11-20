@@ -1,12 +1,11 @@
-# Dependencias directas del proyecto (Python 3.12)
+# Dependencias del pipeline (Python 3.12). La interfaz (scripts/app.py) instala este archivo.
 # Instalar:  pip install -r requirements.txt
+# Para los notebooks:  pip install -r requirements-dev.txt
 
 # Analisis de datos
 pandas==3.0.5
 numpy==2.5.2
 openpyxl==3.1.5          # lectura/escritura de archivos .xlsx
-matplotlib==3.11.1
-seaborn==0.13.2
 lingua-language-detector==2.2.0   # detección de idioma (imputar language)
 
 # Consultas a la API de OpenAlex
@@ -17,9 +16,3 @@ python-dotenv==1.2.3     # claves de API desde .env
 # Clasificación con LLM (Claude API)
 anthropic==1.14.0
 pydantic==2.14.1         # salida estructurada de la clasificación
-
-# Entorno de notebooks
-jupyter==1.1.1
-jupyterlab==4.6.3
-notebook==7.6.2
-ipykernel==7.3.0

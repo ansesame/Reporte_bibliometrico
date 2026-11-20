@@ -29,7 +29,38 @@ Para obtener una API KEY de OpenAlex registrese en la página web y accesa a el 
 
 Para obtener una API Key de Anthropic debe tener una cuenta en Claude Platform e ingresar al panel [Claves y Acceso](https://platform.claude.com/settings/keys), donde podra crear una clave/key. También debe tener suficiente saldo para completar la ejecución, el detalle del costo lo encontrará más adelante.
 
-Instalación en Windows:
+## Uso con la interfaz (recomendado)
+
+La interfaz instala el entorno, guarda las claves y ejecuta el pipeline sin usar la terminal. Solo requiere Python 3.12 instalado, con tkinter:
+- **Windows:** el instalador de [python.org](https://www.python.org/downloads/) incluye tkinter (opción "tcl/tk and IDLE", marcada por defecto). Marca también "Add python.exe to PATH". Miniconda y Anaconda también lo incluyen.
+- **macOS:** el instalador de [python.org](https://www.python.org/downloads/macos/) incluye tkinter. Con Homebrew hay que instalarlo aparte: `brew install python@3.12 python-tk@3.12`. El Python que trae macOS no sirve, porque es de otra versión.
+
+Para abrirla, haz doble clic en:
+
+| Sistema | Archivo | Nota |
+|---|---|---|
+| Windows | `Iniciar.bat` | Si no encuentra Python 3.12 con tkinter, explica qué instalar. |
+| macOS | `Iniciar.command` | La primera vez, macOS puede bloquearlo por venir de internet: clic derecho → Abrir → Abrir. Si dice que no tiene permiso de ejecución, corre `chmod +x Iniciar.command` en la Terminal, desde la carpeta del proyecto. Se abre una ventana de Terminal detrás de la interfaz; ciérrala al terminar. |
+
+También se puede abrir con `python scripts/app.py`.
+
+La ventana tiene cuatro secciones:
+
+1. **Entorno.** "Instalar entorno" crea `.venv` e instala `requirements.txt`. La primera vez tarda unos minutos. Después, la interfaz solo pide reinstalar si cambia `requirements.txt`, o si `.venv` se creó con otra versión de Python.
+2. **Claves de API.** "Verificar y guardar claves" prueba cada clave con un endpoint gratuito y la guarda en `.env`. Para OpenAlex muestra además el saldo diario y el prepagado. Una clave rechazada no se guarda.
+3. **Parámetros.**
+   - El JSON de queries y el Excel de subcampos. Al elegir el JSON, la interfaz muestra el país, los años y el número de ejes. Si el archivo tiene un error de formato, indica la línea y la columna. Si existe `data/subfields_tagged_<pais>.xlsx`, lo propone.
+   - El nombre (opcional, equivale a `--name`).
+   - Las casillas *Actualizar* (`--update`) y *Stemming* (`--stemming`), activadas por defecto.
+
+   La interfaz también avisa si ya existe una base con ese nombre (se actualizará) y si la corrida anterior quedó interrumpida (conviene desactivar *Actualizar* para retomarla).
+4. **Consola.** Muestra los mensajes del pipeline mientras corre, con las barras de progreso. "Detener" interrumpe la corrida; los ejes ya consultados quedan respaldados. Al terminar, la consola se guarda en `outputs/{name}_backup/run_log_<fecha_hora>.txt` y "Abrir resultados" abre `outputs/`.
+
+La interfaz ejecuta el mismo comando de la sección [Ejecutar](#4-ejecutar), con el Python de `.venv`. Recuerda las últimas rutas y opciones usadas en `.gui_settings.json`.
+
+## Instalación por terminal
+
+En Windows:
 
 ```
 python -m venv .venv
@@ -46,6 +77,8 @@ cp .env_example .env
 ```
 
 Después, completa las claves en `.env`.
+
+`requirements.txt` tiene solo las dependencias del pipeline. Para usar los notebooks, instala `requirements-dev.txt`, que agrega Jupyter, matplotlib y seaborn.
 
 ## Replicar el reporte para un país nuevo
 
@@ -256,7 +289,10 @@ El pipeline supone un país de América Latina y el Caribe. Para otras regiones,
 ## Estructura del código
 
 ```
+Iniciar.bat               abre la interfaz en Windows (doble clic)
+Iniciar.command           abre la interfaz en macOS (doble clic)
 data/                     queries por país y subcampos de interés
+scripts/app.py            interfaz gráfica (solo biblioteca estándar): entorno, claves y ejecución
 scripts/run_pipeline.py   orquesta las etapas y escribe las salidas
 src/bibliometrics/
   config.py               constantes: variables, tipos, selects, modelo, columnas a eliminar

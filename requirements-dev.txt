@@ -1,0 +1,13 @@
+# Dependencias de los notebooks (desarrollo), además de las del pipeline
+# Instalar:  pip install -r requirements-dev.txt
+-r requirements.txt
+
+# Gráficos
+matplotlib==3.11.1
+seaborn==0.13.2
+
+# Entorno de notebooks
+jupyter==1.1.1
+jupyterlab==4.6.3
+notebook==7.6.2
+ipykernel==7.3.0
