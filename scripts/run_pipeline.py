@@ -33,7 +33,7 @@ from dotenv import load_dotenv
 
 from bibliometrics import authorships as au
 from bibliometrics.classification import classify_institutions
-from bibliometrics.config import ALLOWED_TYPES, DROP_COLS, SEARCH_FIELD, SUBFIELD_FIELDS
+from bibliometrics.config import ALLOWED_TYPES, DROP_COLS, SEARCH_FIELD, SUBFIELD_FIELDS, OA_RATE_SHARE
 from bibliometrics.database import assign_retrieved_date, build_audit_table, build_db_tables
 from bibliometrics.enrichment import blank_to_nan, impute_abstracts, impute_language, impute_publisher, impute_source_oa
 from bibliometrics.export import write_excel, write_json
@@ -56,10 +56,24 @@ def parse_args():
     return parser.parse_args()
 
 
+STAGE_CLOCK = {'last': time.perf_counter()} # End of the previous stage
+
+
 def log(summary, stage, **values):
-    ''' Print and keep the counts of a stage '''
+    ''' Print and keep the counts of a stage, with time_s: seconds since the previous stage ended '''
+    now = time.perf_counter()
+    values['time_s'] = round(now - STAGE_CLOCK['last'], 1)
+    STAGE_CLOCK['last'] = now
     summary['stages'][stage] = values
     print(f"[{stage}]", ", ".join(f"{k}: {v}" for k, v in values.items()))
+
+
+def timed(times, step, func, *args):
+    ''' func(*args) keeping its duration in times[step] (seconds) '''
+    start = time.perf_counter()
+    result = func(*args)
+    times[step] = round(time.perf_counter() - start, 1)
+    return result
 
 
 def backup_path(backup_dir, thematic_id):
@@ -105,7 +119,10 @@ def main():
     summary = {'queries_file': str(args.queries), 'subfields_file': str(args.subfields), 'name': name,
                'start': time.strftime("%Y-%m-%d %H:%M:%S"), 'search': search, 'stages': {}, 'costs_usd': {}}
     start_time = time.perf_counter()
+    STAGE_CLOCK['last'] = start_time
     client = OpenAlexClient(os.getenv("OPENALEX_API_KEY"))
+    print(f"OpenAlex: {client.rate:.1f} requests/s ({OA_RATE_SHARE:.0%} of the limit of {client.per_second_limit}/s"
+          f"{'' if client.limits else ', /rate-limit not available'}), {client.workers} threads")
     thematics = build_thematics_df(queries, args.stemming)
     oqls = {thematic['thematic_id']: thematic_oql(thematic, meta, args.stemming) for thematic in queries['thematics']}
 
@@ -115,7 +132,9 @@ def main():
     if live_subfields is None:
         sys.exit("Could not download the OpenAlex subfields to check the subfields file: rerun later")
     check = check_subfields(subfields, live_subfields)
-    summary['stages']['subfields_check'] = check
+    now = time.perf_counter()
+    summary['stages']['subfields_check'] = {**check, 'time_s': round(now - STAGE_CLOCK['last'], 1)}
+    STAGE_CLOCK['last'] = now
     print(f"[subfields_check] missing_in_file: {len(check['missing_in_file'])}, "
           f"extra_in_file: {len(check['extra_in_file'])}, changed: {len(check['changed'])}")
     if check['missing_in_file'] or check['extra_in_file']:
@@ -198,15 +217,17 @@ def main():
 
     # 4. Authors and institutions
     cost_before = client.cost_usd
-    studies, auth = au.prepare_authorships(client, studies)
-    au.add_authors_as_institutions(client, auth, [meta['country']] + meta['country_terms'])
-    au.add_publisher_as_authors(client, auth, studies)
-    au.impute_author_ids(client, auth, studies)
-    au.add_author_affiliations(client, auth, studies)
-    au.standardize_institutions(client, auth)
+    steps_time = {}
+    studies, auth = timed(steps_time, 'prepare_authorships', au.prepare_authorships, client, studies)
+    timed(steps_time, 'authors_as_institutions', au.add_authors_as_institutions, client, auth,
+          [meta['country']] + meta['country_terms'])
+    timed(steps_time, 'publisher_as_authors', au.add_publisher_as_authors, client, auth, studies)
+    timed(steps_time, 'impute_author_ids', au.impute_author_ids, client, auth, studies)
+    timed(steps_time, 'author_affiliations', au.add_author_affiliations, client, auth, studies)
+    timed(steps_time, 'standardize_institutions', au.standardize_institutions, client, auth)
     studies = au.write_authorship_columns(studies, auth)
     summary['costs_usd']['openalex_imputation'] = client.cost_usd - cost_before
-    log(summary, 'authorships', **auth.stats,
+    log(summary, 'authorships', **auth.stats, steps_time_s=steps_time,
         studies_without_authors_after=int(studies['authorships.author.display_name'].isna().sum()),
         studies_without_institutions_after=int(studies['authorships.institutions.id'].isna().sum()))
     studies = studies.drop(columns=DROP_COLS)
@@ -231,6 +252,7 @@ def main():
         print(f"Warning: {int(topic_diffs.any(axis=1).sum())} studies have a topic hierarchy different from the"
               " topics catalog (the catalog is older than some works). See README, 'Reutilización de respaldos'")
 
+    summary['openalex_requests'] = client.settings()
     summary['openalex_failures'] = client.failures
     summary['costs_usd']['openalex_total'] = client.cost_usd
     summary['time_s'] = round(time.perf_counter() - start_time, 1)

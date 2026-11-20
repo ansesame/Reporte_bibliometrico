@@ -314,6 +314,21 @@ Los pasos siguientes se aplican en orden y se concentran en los estudios sin ins
    - la unificación de identificadores (como en la UNAH) y la organización raíz se aplican a todas por igual.
 7. **Todo antes de la agrupación por origen (sección 4.9).** La clasificación con Claude Haiku 5.5 usa la organización raíz y el país ya completados, y clasifica cada institución por su identificador unificado. Si se hiciera antes, una misma institución podría quedar con dos identificadores y recibir dos grupos distintos.
 
+**Consultas en paralelo.** El orden *entre* pasos se mantiene. Dentro de cada paso, las consultas a OpenAlex se hacen en paralelo, con 8 hilos:
+
+| Paso | Consultas en paralelo |
+|---|---|
+| Preparación | Fichas de los autores con identificador, en lotes de 50 |
+| a) Autores que son instituciones | Búsqueda de cada nombre candidato en el catálogo de instituciones |
+| b) Publisher como autor | Búsqueda de cada editorial candidata en el catálogo de instituciones |
+| c) Identificador para autores sin identificador | Búsqueda de cada par (nombre, año) en el catálogo de autores |
+| d) Afiliaciones | Fichas de los autores que faltan, en lotes de 50 |
+| e) Estandarización | Fichas del árbol institucional, en lotes de 50. Los niveles (padres, abuelos…) se recorren uno tras otro, porque cada nivel depende del anterior |
+
+El resultado no cambia respecto de hacerlas una por una. Cada consulta es independiente de las demás y las respuestas se reúnen en el mismo orden en que se pidieron. Solo cambia el tiempo: en Ecuador, la imputación tomaba ~2 horas con consultas secuenciales.
+
+Para no exceder el límite de OpenAlex, todas las consultas, de todos los hilos, pasan por un limitador común. El limitador separa el inicio de cada solicitud y usa 2/3 del límite por segundo de la clave, que lee del endpoint gratuito `/rate-limit` (20 solicitudes/s con el límite de 30/s de una clave gratuita o prepagada). Las consultas de ROR, de Europe PMC y a Claude siguen siendo secuenciales.
+
 #### a) Autores que son instituciones
 
 En OpenAlex, algunos "autores" son organizaciones (World Bank, OECD, BID…).

@@ -121,6 +121,11 @@ Todas se escriben en `outputs/`.
 | `{name}_db.xlsx` | Base relacional, con una hoja por tabla (ver abajo). |
 | `{name}_backup/` | Respuestas de OpenAlex por eje (`thematic_<id>.json`), el catálogo de tópicos descargado de la API de OpenAlex (`topics_snapshot.json`) y `run_summary.json`, con los conteos, costos, tiempos y llamadas fallidas de cada etapa. |
 
+En `run_summary.json`:
+- cada etapa tiene `time_s`: los segundos desde el fin de la etapa anterior;
+- `stages.authorships.steps_time_s` separa el tiempo de cada paso de la imputación de autores e instituciones;
+- `openalex_requests` registra el límite por segundo de la clave, la tasa usada, el número de hilos y cuántas respuestas 429 se reintentaron.
+
 Columnas de trazabilidad en `{name}.xlsx`:
 - `abstract_source`, `publisher_source` e `institutions_source` indican de dónde viene cada valor.
 - `language_imputed` marca los idiomas detectados automáticamente.
@@ -192,6 +197,9 @@ La comparación con Ecuador (16.021 estudios) y una estimación del costo por es
 - **Consultas inválidas:** antes de consultar, las OQL se validan con un endpoint gratuito. Si alguna es inválida, el pipeline se detiene sin gastar.
 - **Falla en un eje:** si la consulta de un eje falla, el pipeline se detiene. Basta con volver a ejecutarlo: los ejes que ya terminaron se leen de su respaldo.
 - **Falla en la imputación:** si una llamada falla, por ejemplo por falta de saldo, la imputación continúa sin ese dato. Las llamadas fallidas quedan registradas en `run_summary.json` y aparece un aviso en la consola.
+- **Límite de solicitudes por segundo:** la imputación hace las consultas a OpenAlex en paralelo (`OA_WORKERS` = 8 hilos). Para no exceder el límite de la clave, al iniciar se lee ese límite desde `/rate-limit`, que es gratuito, y todas las solicitudes pasan por un limitador común que usa 2/3 de él (`OA_RATE_SHARE`). Con una clave gratuita o prepagada, el límite es de 30/s y la tasa queda en 20/s. Si `/rate-limit` no responde, se usa 2/3 del límite sin clave (10/s). El margen absorbe los retrasos de la red y el uso simultáneo de la misma clave en otro programa.
+- **Respuestas 429:** si OpenAlex rechaza una solicitud por el límite por segundo, se espera lo que indica `Retry-After` y se reintenta (hasta 10 veces), sin costo. Si la rechaza porque se agotó el saldo diario (`daily_budget`), no se reintenta y queda registrada como falla. Los demás errores 4xx, como un 400 por caracteres no válidos, tampoco se reintentan.
+- **Requisitos del equipo:** la paralelización no exige un computador especial. Los hilos pasan casi todo el tiempo esperando respuestas de la red, y el tráfico, de hasta 20 solicitudes/s con respuestas pequeñas, no supera unos pocos MB/s.
 - **Controles de consistencia:**
   - **Alineación:** en cada estudio, las columnas de autores tienen el mismo número de elementos, y lo mismo ocurre con las de instituciones.
   - **Llaves:** son únicas y no hay referencias rotas entre tablas.

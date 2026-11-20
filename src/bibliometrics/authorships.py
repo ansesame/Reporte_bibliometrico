@@ -11,7 +11,7 @@ import requests
 
 from .config import (MISSING, INSTITUTIONS_VARS, AUTHOR_COLS, INST_COLS, INST_SELECT, AUTHORS_SELECT,
                      AUTHOR_ENTITY_SELECT, INST_TREE_SELECT, INSTITUTION_AUTHOR_TYPES, ROR_URL)
-from .utils import short_id, split_list, join_list, norm_name, name_similarity, group_counts, progress, looks_like_org
+from .utils import short_id, split_list, join_list, norm_name, name_similarity, group_counts, looks_like_org
 
 
 @dataclass
@@ -189,10 +189,10 @@ def org_candidate_names(auth):
 def add_authors_as_institutions(client, auth, country_terms=()):
     ''' Authors that are institutions (org_candidate_names whose name looks like an organization, see
     utils.looks_like_org). A matched institution is added to every study where the name appears '''
-    names = org_candidate_names(auth)
-    org_candidates = {name for name in names if looks_like_org(name, country_terms)}
-    auth.org_matches = {name: match for name in progress(sorted(org_candidates), "Authors as institutions")
-                        if (match := match_institution(client, name))}
+    candidate_names = org_candidate_names(auth)
+    org_candidates = sorted(name for name in candidate_names if looks_like_org(name, country_terms))
+    matches = client.pmap(lambda name: match_institution(client, name), org_candidates, "Authors as institutions")
+    auth.org_matches = {name: match for name, match in zip(org_candidates, matches) if match}
 
     for index, names in auth.author_names.items():
         for name in names:
@@ -202,7 +202,7 @@ def add_authors_as_institutions(client, auth, country_terms=()):
                 if 'author_as_institution' not in auth.inst_sources[index]:
                     auth.inst_sources[index].append('author_as_institution')
     auth.stats.update({'org_candidates': len(org_candidates),
-                       'org_candidates_filtered_out': len(names) - len(org_candidates),
+                       'org_candidates_filtered_out': len(candidate_names) - len(org_candidates),
                        'org_matches': len(auth.org_matches),
                        'studies_author_as_institution': int(auth.inst_sources.map(lambda s: 'author_as_institution' in s).sum())})
     return auth
@@ -213,8 +213,9 @@ def add_publisher_as_authors(client, auth, studies):
     author if it matches an OpenAlex institution of an accepted type (not companies or universities) '''
     no_authors = auth.author_names[auth.author_names.str.len() == 0].index
     candidates = studies.loc[no_authors].query("`primary_location.source.type` != 'journal' and publisher.notna()")
-    publisher_matches = {publisher: match_institution(client, publisher)
-                         for publisher in progress(candidates['publisher'].unique(), "Publishers as authors")}
+    publishers = list(candidates['publisher'].unique())
+    publisher_matches = dict(zip(publishers, client.pmap(lambda publisher: match_institution(client, publisher),
+                                                         publishers, "Publishers as authors")))
 
     for index, publisher in candidates['publisher'].items():
         match = publisher_matches[publisher]
@@ -237,7 +238,9 @@ def impute_author_ids(client, auth, studies):
                       for index in empty_studies
                       for author_id, name in zip(auth.author_ids[index], auth.author_names[index])
                       if author_id == MISSING and name != MISSING and name not in auth.org_matches}
-    author_matches = {query: search_author(client, *query) for query in progress(sorted(author_queries), "Author search")}
+    author_queries = sorted(author_queries)
+    author_matches = dict(zip(author_queries, client.pmap(lambda query: search_author(client, *query),
+                                                          author_queries, "Author search")))
 
     for index in empty_studies:
         ids, names = auth.author_ids[index], auth.author_names[index]

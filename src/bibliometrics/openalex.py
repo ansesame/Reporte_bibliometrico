@@ -2,37 +2,121 @@
 import json
 import math
 import os
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import quote
 
 import requests
 from tqdm import tqdm
 
-from .config import OA_BASE, TOPIC_FIELDS, MISSING
+from .config import OA_BASE, TOPIC_FIELDS, MISSING, OA_RATE_SHARE, OA_WORKERS, OA_FALLBACK_RPS
 from .utils import short_id, progress
 
 RETRY_STATUS = {429, 500, 502, 503, 504} # Transient responses worth retrying
+MAX_THROTTLED_RETRIES = 10 # Retries of a request refused by a per-second limit (429), not counted as attempts
+
+
+class RateLimiter:
+    ''' At most `rate` request starts per second, shared by all the threads: each call reserves the next slot,
+    spaced 1/rate seconds after the previous one, and waits until it '''
+
+    def __init__(self, rate):
+        self.interval = 1 / rate
+        self.next_slot = time.monotonic()
+        self.lock = threading.Lock()
+
+    def wait(self):
+        with self.lock:
+            slot = max(time.monotonic(), self.next_slot)
+            self.next_slot = slot + self.interval
+        time.sleep(max(0, slot - time.monotonic()))
+
+
+def retry_after(req):
+    ''' Seconds to wait after a 429 (Retry-After header, 1 by default) '''
+    try:
+        return max(float(req.headers.get('Retry-After', 1)), 0.5)
+    except ValueError:
+        return 1
+
+
+def limit_reason(req):
+    ''' reason of a 429 response (requests_per_second, daily_budget...) or None '''
+    try:
+        return req.json().get('reason')
+    except ValueError:
+        return None
 
 
 class OpenAlexClient:
     ''' Requests to the OpenAlex API adding the cost of each response to cost_usd.
-    Failed requests are recorded in failures (they return None) '''
+    Every request goes through a rate limiter shared by the threads of pmap: OA_RATE_SHARE of the per-second
+    limit of the key, read from the free /rate-limit endpoint. Failed requests are recorded in failures
+    (they return None) '''
 
-    def __init__(self, api_key, sleep_s=0.5, retries=5, backoff_s=5):
+    def __init__(self, api_key, sleep_s=0.5, retries=5, backoff_s=5, workers=OA_WORKERS):
         self.headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
         self.sleep_s = sleep_s
         self.retries = retries
         self.backoff_s = backoff_s
+        self.workers = workers
         self.cost_usd = 0
         self.failures = []
+        self.throttled = 0 # 429 responses for a per-second limit (retried)
+        self.lock = threading.Lock()
+        self._local = threading.local()
+        self.limits = self.rate_limit() if api_key else None
+        self.per_second_limit = ((self.limits or {}).get('per_second_limits') or {}).get('all_requests') or OA_FALLBACK_RPS
+        self.rate = OA_RATE_SHARE * self.per_second_limit
+        self.limiter = RateLimiter(self.rate)
+
+    @property
+    def session(self):
+        ''' requests.Session of the current thread (connections are reused, sessions are not shared) '''
+        if not hasattr(self._local, 'session'):
+            self._local.session = requests.Session()
+        return self._local.session
+
+    def rate_limit(self):
+        ''' Limits, costs and balance of the key from /rate-limit (free). None if it cannot be read '''
+        try:
+            req = self.session.get(OA_BASE + "rate-limit", headers=self.headers, timeout=30)
+            return req.json().get('rate_limit') if req.status_code == 200 else None
+        except (requests.RequestException, ValueError):
+            return None
+
+    def settings(self):
+        ''' Request settings for run_summary.json '''
+        return {'per_second_limit': self.per_second_limit, 'rate_per_second': round(self.rate, 2),
+                'workers': self.workers, 'throttled_429': self.throttled}
+
+    def _add_cost(self, cost):
+        with self.lock:
+            self.cost_usd += cost or 0
+
+    def _fail(self, record):
+        with self.lock:
+            self.failures.append(record)
+
+    def pmap(self, func, items, desc=None):
+        ''' [func(item) for item in items] in OA_WORKERS threads, in the order of items; desc shows a progress bar.
+        The requests of every thread go through the shared rate limiter '''
+        items = list(items)
+        if not items:
+            return []
+        with ThreadPoolExecutor(max_workers=self.workers) as pool:
+            results = pool.map(func, items)
+            return list(progress(results, desc, total=len(items)) if desc else results)
 
     def _send(self, method, url, **kwargs):
         ''' HTTP request retrying network errors (DNS, connection, timeout) and transient statuses
         with exponential backoff. Returns the last response, or None if every attempt hit a network error '''
         req = None
         for attempt in range(self.retries):
+            self.limiter.wait()
             try:
-                req = requests.request(method, url, headers=self.headers, **kwargs)
+                req = self.session.request(method, url, headers=self.headers, **kwargs)
                 if req.status_code not in RETRY_STATUS:
                     return req
                 reason = req.status_code
@@ -85,7 +169,7 @@ class OpenAlexClient:
                     print(f"Error: {status}", req.json().get("validation"))
                 except (AttributeError, ValueError):
                     print(f"Error: {status}")
-                self.failures.append({'path': 'oql', 'status': status, 'cursor': cursor})
+                self._fail({'path': 'oql', 'status': status, 'cursor': cursor})
                 if data is None:
                     return None # First page failed
                 complete = False # Keep pages already fetched
@@ -105,7 +189,7 @@ class OpenAlexClient:
             if cursor is not None:
                 time.sleep(self.sleep_s)
 
-        self.cost_usd += total_cost
+        self._add_cost(total_cost)
         # Cursor paging sorted by relevance can repeat a few works between pages
         n_fetched = len(results)
         if all('id' in result for result in results):
@@ -118,21 +202,39 @@ class OpenAlexClient:
         return data
 
     def get(self, path, params, retries=3):
-        ''' GET to the API with retries (None if every attempt fails) '''
-        req = None
-        for attempt in range(retries):
+        ''' GET to the API through the rate limiter (None if every attempt fails).
+        A 429 for a per-second limit waits Retry-After and is retried without spending an attempt; a 429 for
+        the daily budget and other 4xx responses (e.g. 400 for invalid characters) are not retried '''
+        req, attempt, throttled = None, 0, 0
+        while attempt < retries:
+            self.limiter.wait()
             try:
-                req = requests.get(OA_BASE + path, params=params, headers=self.headers, timeout=60)
-                if req.status_code == 200:
+                req = self.session.get(OA_BASE + path, params=params, headers=self.headers, timeout=60)
+            except requests.RequestException:
+                req = None
+            if req is not None and req.status_code == 200:
+                try:
                     data = req.json()
-                    self.cost_usd += data['meta'].get('cost_usd') or 0
+                    self._add_cost(data['meta'].get('cost_usd'))
                     return data
-            except (requests.RequestException, ValueError):
-                pass
-            time.sleep(2 * (attempt + 1))
+                except (ValueError, KeyError):
+                    pass
+            elif req is not None and req.status_code == 429 and limit_reason(req) != 'daily_budget':
+                if throttled < MAX_THROTTLED_RETRIES:
+                    throttled += 1
+                    with self.lock:
+                        self.throttled += 1
+                    time.sleep(retry_after(req))
+                    continue
+            elif req is not None and 400 <= req.status_code < 500:
+                break
+            attempt += 1
+            if attempt < retries:
+                time.sleep(2 * attempt)
         status = req.status_code if req is not None else 'unknown'
-        tqdm.write(f"Warning: {path} failed ({params}) with code {status}")
-        self.failures.append({'path': path, 'status': status, 'params': params})
+        reason = limit_reason(req) if req is not None and req.status_code == 429 else None
+        tqdm.write(f"Warning: {path} failed ({params}) with code {status}" + (f" ({reason})" if reason else ""))
+        self._fail({'path': path, 'status': status, 'params': params, **({'reason': reason} if reason else {})})
         return None
 
     def fetch_all(self, path, select, desc, per_page=200):
@@ -155,15 +257,12 @@ class OpenAlexClient:
         return records if len(records) == data['meta']['count'] else None
 
     def fetch_entities(self, entity, ids, select, desc=None):
-        ''' Entities by id in batches of 50 ({id: entity}); desc shows a progress bar '''
+        ''' Entities by id in batches of 50, requested in parallel ({id: entity}); desc shows a progress bar '''
         ids = sorted({short_id(openalex_id) for openalex_id in ids if openalex_id and openalex_id != MISSING})
-        entities = {}
-        starts = range(0, len(ids), 50)
-        for start in (progress(starts, desc) if desc else starts):
-            data = self.get(entity, {"filter": "ids.openalex:" + "|".join(ids[start:start + 50]),
-                                     "per_page": 50, "select": select})
-            entities.update({result['id']: result for result in (data or {}).get('results', [])})
-        return entities
+        batches = [ids[start:start + 50] for start in range(0, len(ids), 50)]
+        pages = self.pmap(lambda batch: self.get(entity, {"filter": "ids.openalex:" + "|".join(batch),
+                                                          "per_page": 50, "select": select}), batches, desc)
+        return {result['id']: result for data in pages for result in (data or {}).get('results', [])}
 
 
 TOPICS_SOURCE = "openalex_api" # meta.source of the topics catalogs downloaded from the API
