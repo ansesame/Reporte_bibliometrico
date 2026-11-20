@@ -6,7 +6,7 @@ Pipeline que, a partir de un archivo JSON con ejes temáticos y palabras clave, 
 2. **Filtra** los estudios cuyo subcampo de OpenAlex es de interés.
 3. **Elimina duplicados** en cascada por id, DOI y título.
 4. **Imputa** datos faltantes:
-   - el abstract, desde Semantic Scholar y Europe PMC;
+   - el abstract, desde Semantic Scholar;
    - el idioma;
    - si la fuente es de acceso abierto, a partir del estado de acceso abierto del estudio;
    - el publisher;
@@ -121,6 +121,7 @@ En Linux o macOS se usa `.venv/bin/python scripts/run_pipeline.py ...`.
 | `--name` | Nombre base de las salidas. Por defecto es `bibliometrics_<country>`. |
 | `--subfields` | Excel de subcampos de interés del país (obligatorio), p. ej. `data/subfields_tagged_honduras.xlsx`. |
 | `--stemming` / `--no-stemming` | Busca las palabras clave con stemming (por defecto) o como frase exacta. No cambia la búsqueda de los `country_terms`. |
+| `--update` / `--no-update` | Por defecto, cada corrida es una actualización: borra los respaldos de los ejes (`thematic_<id>.json`) y los vuelve a consultar en OpenAlex. Los estudios que ya estaban en `{name}_db.xlsx` conservan su `retrieved_date`. `--no-update` reutiliza los respaldos completos, sin pagar de nuevo esas consultas. Ver [Actualización y respaldos](#actualización-y-respaldos). |
 
 Se buscan estos tipos de documento: `article`, `report`, `dissertation`, `book`, `book-chapter`, `conference-paper`, `dataset` y `data-paper` (`ALLOWED_TYPES` en `src/bibliometrics/config.py`).
 
@@ -148,7 +149,7 @@ Columnas de trazabilidad en `{name}.xlsx`:
 - `authorships.author.id_imputed` marca los ids de autor imputados. Esta columna solo está en `{name}.xlsx`, no en la hoja `studies` de `{name}_db.xlsx`.
 
 Fechas de cada estudio (en ambos archivos):
-- `retrieved_date` es la fecha de la corrida en que el estudio entró a la base. Si ya existe `{name}_db.xlsx`, los estudios que ya estaban conservan su fecha y solo los nuevos reciben la fecha de la corrida actual.
+- `retrieved_date` es la fecha de la corrida en que el estudio entró a la base. En cada actualización, si ya existe `{name}_db.xlsx`, los estudios que ya estaban conservan su fecha y solo los nuevos reciben la fecha de la corrida actual. No borres ese archivo antes de actualizar: es el que guarda las fechas.
 - `openalex_updated_date` es la fecha en que OpenAlex actualizó el registro por última vez. No es la fecha de la corrida.
 
 Hojas de `{name}_db.xlsx`:
@@ -169,38 +170,59 @@ Los ids se guardan sin el prefijo `https://openalex.org/`. Los ids de tópicos, 
 
 La descripción de cada hoja y columna, con su tipo, llave, origen, campo de OpenAlex y valores posibles, está en `docs/diccionario_bibliometrics_bd.xlsx`.
 
-**Reutilización de respaldos.** Si `thematic_<id>.json` ya existe en la carpeta de respaldo, se reutiliza y el eje no se vuelve a consultar. Para actualizar un eje, borra su archivo. Para una corrida completamente nueva, usa otro `--name` o borra la carpeta.
+### Actualización y respaldos
+
+**Por defecto, cada corrida actualiza el país.** Borra los `thematic_<id>.json` de `{name}_backup/` y vuelve a consultar todos los ejes en OpenAlex.
+- La base se reconstruye con los resultados vigentes. Los estudios nuevos entran con la fecha de la corrida, y los que ya estaban en `{name}_db.xlsx` conservan su `retrieved_date`.
+- Un estudio que la consulta nueva ya no devuelve, porque OpenAlex lo reclasificó o lo retiró, sale de la base.
+- La imputación de autores e instituciones y la clasificación con Claude se rehacen completas, con su costo. Las consultas de los ejes también se pagan de nuevo: ~USD 0.03 en Honduras y ~USD 0.24 en Ecuador.
+
+**`--no-update` reutiliza los respaldos.** Si `thematic_<id>.json` existe y está completo, ese eje no se vuelve a consultar. Úsalo para:
+- **retomar una corrida que falló:** los ejes que ya terminaron se leen de su respaldo y solo se consultan los que faltan;
+- **actualizar solo algunos ejes:** borra sus archivos y corre con `--no-update`;
+- **reproducir una corrida** a partir de su carpeta de respaldo.
+
+Para una corrida completamente nueva, sin fechas previas, usa otro `--name`.
 
 **Catálogo de tópicos.** La base relacional toma el subcampo, el campo y el dominio de cada estudio del catálogo de tópicos. OpenAlex puede reasignar un tópico a otro subcampo, así que el catálogo debe ser de la misma fecha que los registros de los estudios. Por eso `topics_snapshot.json` se descarga de la API (~USD 0.002) o se reutiliza según cómo se obtuvieron los ejes:
 
 | Situación de la corrida | `topics_snapshot.json` |
 |---|---|
-| Al menos un eje se consultó a OpenAlex (primera corrida, o se borró algún `thematic_<id>.json`) | Se descarga de nuevo de la API |
-| Todos los ejes salen de respaldo y el catálogo existente vino de la API (`meta.source = "openalex_api"`) | Se reutiliza, sin costo; así una reejecución da el mismo resultado |
-| Todos los ejes salen de respaldo y el catálogo existente no tiene `meta.source` (versión anterior, tomada del snapshot de S3) | Se descarga de la API |
+| Al menos un eje se consultó a OpenAlex (actualización por defecto, primera corrida, o con `--no-update` se borró algún `thematic_<id>.json`) | Se descarga de nuevo de la API |
+| Con `--no-update`, todos los ejes salen de respaldo y el catálogo existente vino de la API (`meta.source = "openalex_api"`) | Se reutiliza, sin costo; así una reejecución da el mismo resultado |
+| Con `--no-update`, todos los ejes salen de respaldo y el catálogo existente no tiene `meta.source` (versión anterior, tomada del snapshot de S3) | Se descarga de la API |
 | No existe | Se descarga de la API |
 
-Para llevar todos los datos a la versión vigente de OpenAlex hay que borrar los `thematic_<id>.json`: con respaldos antiguos, el catálogo reutilizado tiene la misma antigüedad que los estudios.
-
-Cada respaldo guarda la OQL con que se generó (`meta.pipeline_oql`). Si la OQL actual es distinta, porque cambiaron los tipos, el campo de búsqueda, las palabras clave o el stemming, el pipeline se detiene antes de consultar e indica qué respaldos borrar. Los respaldos creados antes de este control no tienen `pipeline_oql` y también detienen la corrida.
+Cada respaldo guarda la OQL con que se generó (`meta.pipeline_oql`). Con `--no-update`, si la OQL actual es distinta, porque cambiaron los tipos, el campo de búsqueda, las palabras clave o el stemming, el pipeline se detiene antes de consultar e indica qué respaldos borrar. Los respaldos creados antes de este control no tienen `pipeline_oql` y también detienen la corrida. Una actualización (por defecto) no hace este control, porque borra los respaldos antes de consultar.
 
 > **Los resultados cambian según la fecha de ejecución.** OpenAlex actualiza de forma continua su índice de búsqueda, sus registros (citas, tópicos, autores, afiliaciones) y su catálogo de instituciones. Por eso, la misma consulta puede devolver resultados distintos en distintos días, y esa variación no depende del pipeline ni se puede controlar desde aquí.
 
 > Para que un reporte sea reproducible:
 > - registra la fecha de extracción, que queda en `run_summary.json` y en los respaldos;
-> - conserva la carpeta `{name}_backup/`. Al volver a ejecutar con esos respaldos se obtienen los mismos estudios, sin pagar otra vez las consultas.
+> - conserva la carpeta `{name}_backup/`. Al volver a ejecutar con `--no-update` se obtienen los mismos estudios, sin pagar otra vez las consultas. Sin `--no-update`, la corrida actualiza y los respaldos se reemplazan.
 
 ## Costos y tiempos de referencia
 
-Honduras, 2019–2026, 20 ejes, 1.044 estudios finales (2026-11-19):
+Honduras, 2019–2026, 20 ejes, 1.047 estudios finales (actualización completa del 2026-11-20):
 
 | Concepto | Costo |
 |---|---|
 | OpenAlex: consultas por eje | ~USD 0.03 |
-| OpenAlex: imputación de autores e instituciones | ~USD 0.32 |
-| Anthropic: clasificación de 806 instituciones con `claude-haiku-5-5` | ~USD 0.02 |
+| OpenAlex: imputación de autores e instituciones | ~USD 0.09 |
+| Anthropic: clasificación de 812 instituciones con `claude-haiku-5-5` | ~USD 0.02 |
 | OpenAlex: catálogo de tópicos y control de subcampos | ~USD 0.003 |
-| **Tiempo total** | **~15 minutos** |
+| **Total** | **~USD 0.14** |
+| **Tiempo total** | **~4 minutos** |
+
+Tiempo por etapa:
+
+| Etapa | Tiempo |
+|---|---|
+| Clasificación con Claude | 105 s |
+| Publisher | 52 s |
+| Consultas por eje | 42 s |
+| Autores e instituciones | 19 s |
+| Resto | ~15 s |
 
 El costo crece con el número de estudios y de autores sin datos. Si el total de OpenAlex supera el saldo diario se debe ejecutar el pipeline otro día o usar saldo prepagado.
 
@@ -210,7 +232,7 @@ La comparación con Ecuador (16.021 estudios) y una estimación del costo por es
 
 - **Archivo de subcampos:** si sus ids no coinciden con los subcampos actuales de OpenAlex, el pipeline se detiene antes de consultar.
 - **Consultas inválidas:** antes de consultar, las OQL se validan con un endpoint gratuito. Si alguna es inválida, el pipeline se detiene sin gastar.
-- **Falla en un eje:** si la consulta de un eje falla, el pipeline se detiene. Basta con volver a ejecutarlo: los ejes que ya terminaron se leen de su respaldo.
+- **Falla en un eje:** si la consulta de un eje falla, el pipeline se detiene. Hay que volver a ejecutarlo **con `--no-update`**: los ejes que ya terminaron se leen de su respaldo y solo se consultan los que faltan. Sin ese parámetro, la corrida borraría los respaldos y consultaría todo de nuevo.
 - **Falla en la imputación:** si una llamada falla, por ejemplo por falta de saldo, la imputación continúa sin ese dato. Las llamadas fallidas quedan registradas en `run_summary.json` y aparece un aviso en la consola.
 - **Límite de solicitudes por segundo:** la imputación hace las consultas a OpenAlex en paralelo (`OA_WORKERS` = 8 hilos). Para no exceder el límite de la clave, al iniciar se lee ese límite desde `/rate-limit`, que es gratuito, y todas las solicitudes pasan por un limitador común que usa 2/3 de él (`OA_RATE_SHARE`). Con una clave gratuita o prepagada, el límite es de 30/s y la tasa queda en 20/s. Si `/rate-limit` no responde, se usa 2/3 del límite sin clave (10/s). El margen absorbe los retrasos de la red y el uso simultáneo de la misma clave en otro programa.
 - **Respuestas 429:** si OpenAlex rechaza una solicitud por el límite por segundo, se espera lo que indica `Retry-After` y se reintenta (hasta 10 veces), sin costo. Si la rechaza porque se agotó el saldo diario (`daily_budget`), no se reintenta y queda registrada como falla. Los demás errores 4xx, como un 400 por caracteres no válidos, tampoco se reintentan.
@@ -348,19 +370,29 @@ Un experto debe revisar los dos resultados antes de ejecutar.
 
 Resultado (2026-11-19): de 22.350 estudios recuperados en los 22 ejes, 18.733 pasaron el filtro de subcampos y quedaron 16.021 después de eliminar duplicados, con 2.330 instituciones clasificadas. Hubo una llamada fallida (código 400, un nombre de autor con caracteres que la API no acepta), sin impacto en los resultados.
 
+Con la versión actual del pipeline (2026-11-20, mismos respaldos de ejes) se obtuvieron los mismos 16.021 estudios, con 2.333 instituciones y sin llamadas fallidas. El filtro de nombres buscó 105 candidatos en vez de 6.668 y conservó todas las coincidencias reales. Solo se perdió una falsa, el título "PhD" leído como autor. Las demás diferencias en instituciones, 0,09 % de los pares estudio-institución, vienen de afiliaciones que OpenAlex actualizó de un día a otro.
+
 ### Costos: Honduras y Ecuador
+
+Con la versión actual del pipeline (filtro de nombres, consultas en paralelo y sin Europe PMC):
 
 | Concepto | Honduras | Ecuador |
 |---|---|---|
 | Ejes temáticos | 20 | 22 |
-| Estudios recuperados / finales | 1.443 / 1.044 | 22.350 / 16.021 |
+| Estudios recuperados / finales | 1.442 / 1.047 | 22.350 / 16.021 |
 | OpenAlex: consultas por eje | USD 0.03 | USD 0.24 |
-| OpenAlex: imputación de autores e instituciones | USD 0.32 | USD 7.93 |
+| OpenAlex: imputación de autores e instituciones | USD 0.09 | USD 1.16 |
 | OpenAlex: catálogo de tópicos y control de subcampos | USD 0.003 | USD 0.003 |
-| Anthropic: clasificación de instituciones | USD 0.02 (806) | USD 0.06 (2.330) |
-| **Total** | **USD 0.37** | **USD 8.22** |
-| Costo por 1.000 estudios finales | USD 0.36 | USD 0.51 |
-| Tiempo | ~15 minutos | ~2 horas 15 minutos |
+| Anthropic: clasificación de instituciones | USD 0.02 (812) | USD 0.06 (2.333) |
+| **Total** | **USD 0.14** | **USD 1.46** |
+| Costo por 1.000 estudios finales | USD 0.13 | USD 0.09 |
+| Tiempo | ~4 minutos | ~23 minutos |
+
+Tiempos de Ecuador:
+- Las consultas por eje, ~11 minutos, se midieron en la corrida del 2026-11-19, con las mismas OQL. La corrida del 2026-11-20 leyó los ejes de su respaldo y tardó 12 minutos.
+- El resto se reparte así: clasificación con Claude 5 min, publisher 5 min, autores e instituciones 1,6 min y abstracts 16 s.
+
+Antes de estos cambios, Ecuador costaba USD 8.22 y tardaba ~2 horas 15 minutos. Casi todo era la búsqueda de 6.668 nombres como instituciones, hecha una por una.
 
 ### Estimación de costo por estudio
 
@@ -369,8 +401,8 @@ Con los datos de ambas corridas:
 | Componente | Estimación |
 |---|---|
 | Consultas por eje (OpenAlex) | USD 0.001 por página de 100 resultados, con al menos una página por eje: ~USD 0.01–0.02 por 1.000 estudios recuperados. |
-| Imputación de autores e instituciones (OpenAlex) | Es el 91–97 % del costo. Depende sobre todo de cuántos estudios no traen instituciones en OpenAlex, porque en esos estudios se busca si cada autor sin afiliación es en realidad una institución: ~USD 0.0012 de imputación por nombre candidato (249 en Honduras, 6.668 en Ecuador). Por estudio final, USD 0.0003–0.0005. **Estas cifras son anteriores al filtro de nombres:** ahora solo se buscan los nombres con forma de organización (~110 en Ecuador en vez de 6.668), así que el costo baja. Las cifras se actualizarán con la próxima corrida. |
+| Imputación de autores e instituciones (OpenAlex) | ~USD 0.07–0.09 por 1.000 estudios finales, el 60–80 % del costo. Lo que más pesa son las búsquedas de autores sin identificador en estudios sin instituciones (USD 0.001 cada una: 57 en Honduras, 933 en Ecuador). Las búsquedas de autores como institución pasan el filtro de nombres y son pocas (17 y 105). El monto exacto se anuncia antes de gastarlo (ver [Revisar el saldo de OpenAlex](#3-revisar-el-saldo-de-openalex)). |
 | Clasificación de instituciones (Anthropic) | ~USD 0.024 por 1.000 instituciones. |
-| **Regla práctica** | **~USD 0.50 por 1.000 estudios finales** (promedio ponderado de ambas corridas: USD 8.60 / 17.065 estudios) y ~0.5–0.9 segundos por estudio. |
+| **Regla práctica** | **~USD 0.10 por 1.000 estudios finales** (promedio ponderado de ambas corridas: USD 1.60 / 17.068 estudios). |
 
-Por ejemplo, un país con ~15.000 estudios finales costaría ~USD 7.50 y tardaría ~2 horas. Ese costo supera el presupuesto diario de OpenAlex (USD 1), así que hace falta saldo prepagado (ver [Revisar el saldo de OpenAlex](#3-revisar-el-saldo-de-openalex)).
+Por ejemplo, un país con ~15.000 estudios finales costaría ~USD 1.40 y tardaría ~20–25 minutos. Ese costo supera el presupuesto diario de OpenAlex (USD 1), así que hace falta saldo prepagado (ver [Revisar el saldo de OpenAlex](#3-revisar-el-saldo-de-openalex)).

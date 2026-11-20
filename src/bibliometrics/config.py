@@ -107,7 +107,6 @@ OA_STATUS_SOURCE_OA = {'gold': True, 'diamond': True, 'hybrid': False, 'bronze':
 
 # Abstracts, publisher and language
 S2_BATCH_URL = "https://api.semanticscholar.org/graph/v1/paper/batch"
-EPMC_SEARCH_URL = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 ROR_URL = "https://api.ror.org/v2/organizations/"
 DOI_HEADERS = {"Accept": "application/vnd.citationstyles.csl+json",
                "User-Agent": "Reporte-bibliometrico-BID/1.0"}

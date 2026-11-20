@@ -32,7 +32,7 @@ Los conteos presentados están sujetos a la fecha de ejecución del desarrollo, 
 | `queries_honduras_ET.json` | Definición del país, el periodo y los 20 ejes temáticos con sus palabras clave | Construcción de las consultas a OpenAlex y asignación del eje temático |
 | `subfields_tagged_honduras.xlsx` | Los 252 subcampos de la taxonomía de OpenAlex, marcados como de interés (1) o no (0) | Filtro temático de los estudios |
 | API de OpenAlex | Búsqueda de trabajos, consulta de autores e instituciones, y catálogos vigentes de tópicos y subcampos | Extracción, imputación, tabla `topics` y control del archivo de subcampos |
-| Semantic Scholar y Europe PMC | Bases de datos bibliográficas con resúmenes (abstracts) | Imputación de abstracts |
+| Semantic Scholar | Base de datos bibliográfica con resúmenes (abstracts) | Imputación de abstracts |
 | doi.org (Crossref / DataCite) | Registros oficiales de los DOI | Imputación de la editorial |
 | API de ROR | *Research Organization Registry*, registro internacional de organizaciones de investigación con identificador, país y tipo | Completar el país, el nombre o el tipo de instituciones |
 | API de Anthropic (Claude Haiku 5.5) | Modelo de lenguaje grande | Agrupación de las instituciones por origen |
@@ -168,7 +168,8 @@ El aviso `url_not_representable` es esperado y se ignora. Significa que la consu
 - Cada consulta se envía con una petición `POST` a la API de OpenAlex. La paginación es por cursor (un marcador que indica a la API dónde continuar), con 100 resultados por página y un máximo de 10.000 por consulta. Si una consulta superara ese máximo, el cuaderno lo advierte.
 - Los resultados se ordenan por `relevance_score`, el puntaje con que OpenAlex mide qué tan bien coincide el trabajo con la búsqueda. Este orden puede repetir algunos trabajos entre páginas, así que se eliminan las repeticiones por identificador dentro de cada consulta.
 - Si falla una página intermedia, se conservan las páginas ya obtenidas y se registra que la consulta quedó incompleta.
-- La respuesta completa de cada eje se guarda como `thematic_{thematic_id}.json` como respaldo, junto con la OQL que la generó (`meta.pipeline_oql`). Si en una nueva ejecución la OQL de un eje cambia (tipos, campo de búsqueda, palabras clave o stemming), el proceso se detiene antes de consultar e indica qué respaldos borrar, para no mezclar resultados de búsquedas distintas.
+- La respuesta completa de cada eje se guarda como `thematic_{thematic_id}.json` como respaldo, junto con la OQL que la generó (`meta.pipeline_oql`).
+- **Actualización.** Por defecto, cada ejecución borra los respaldos y vuelve a consultar todos los ejes, para trabajar con los datos vigentes de OpenAlex. Con `--no-update` se reutilizan los respaldos completos: sirve para retomar una ejecución que falló, actualizar solo algunos ejes o reproducir una ejecución anterior. En ese modo, si la OQL de un eje cambió (tipos, campo de búsqueda, palabras clave o stemming), el proceso se detiene antes de consultar e indica qué respaldos borrar, para no mezclar resultados de búsquedas distintas.
 
 **Resultado:** 1.443 registros de las 20 consultas, con un costo de $0,03 en OpenAlex.
 
@@ -226,12 +227,15 @@ Primero, los textos vacíos se convierten en valores nulos para tratarlos de for
 
 **DOI.** No se imputa. Faltan 144 (13,8 %), concentrados en tesis (90 % sin DOI), libros (28 %) e informes (27 %). Es literatura gris alojada en repositorios, que normalmente no registra DOI. Ninguna URL de esos estudios contiene un patrón de DOI, y las demás ubicaciones del trabajo en los respaldos tampoco lo traen.
 
-**Abstract.** Se busca por DOI, en este orden:
-1. **Semantic Scholar**, con consultas por lotes de 100
-2. **Europe PMC**, para los que siguen sin abstract
+**Abstract.** Si OpenAlex no lo trae, se busca por DOI en **Semantic Scholar**, con consultas por lotes de 100.
 
-- Resultado: 978 abstracts de OpenAlex, 21 de Semantic Scholar y 1 de Europe PMC, y quedan 44 sin abstract.
+- Resultado: 978 abstracts de OpenAlex y 21 de Semantic Scholar; quedan 45 sin abstract.
 - `abstract_source` indica la fuente.
+- **No se usa Europe PMC.** Antes se consultaba como segunda fuente, un DOI por vez. Recuperó muy poco y tardó mucho:
+  - en Honduras, 1 abstract en 39 consultas que tomaron 12 minutos (~19 s por consulta);
+  - en Ecuador, 5 abstracts.
+
+  Los DOIs que siguen sin abstract son casi todos de Springer y Elsevier, sobre todo ponencias y capítulos de libro. Estas editoriales no publican sus abstracts en fuentes abiertas. También se probaron Crossref, DataCite y OpenAIRE, que permiten consultar por lotes, con los DOIs sin abstract: Crossref recuperó 1 de 38 en Honduras y ninguna recuperó alguno de los 451 de Ecuador.
 
 **Idioma.** Cuando OpenAlex no informa el idioma, se detecta con la librería `lingua`, restringida a 6 idiomas (inglés, español, portugués, francés, italiano y alemán).
 - Se usa primero el **título** y, solo si no permite detectar el idioma, el abstract. En los estudios con idioma conocido, la detección sobre el título coincide con OpenAlex en 93 % y sobre el abstract en 84 %, teniendo en cuenta que estudios en español pueden traer el abstract traducido al inglés.
@@ -303,7 +307,7 @@ Los pasos siguientes se aplican en orden y se concentran en los estudios sin ins
 
    Una fuente menos precisa nunca se mezcla con una más precisa: a un estudio que ya tiene instituciones de OpenAlex no se le agregan afiliaciones inferidas.
 2. **Cada paso reduce el trabajo, y el costo, del siguiente.** Una búsqueda por nombre cuesta unas 10 veces más que una consulta de fichas por lotes ($0,001 frente a $0,0001).
-   - Limitar a) a los estudios sin instituciones bajó las búsquedas de ~690 a 306 (de ≈ $0,73 a ≈ $0,31) en la ejecución con la que se diseñó el proceso. En esta ejecución, a) buscó 249 nombres.
+   - Limitar a) a los estudios sin instituciones bajó las búsquedas de ~690 a 306 (de ≈ $0,73 a ≈ $0,31) en la ejecución con la que se diseñó el proceso. En esta ejecución, a) buscó 17 nombres: el filtro de nombres con forma de organización descartó 208 de 225.
    - Hacer c) después de a) y b) limitó la búsqueda de autores a 71 nombres, en lugar de ~245, en esa misma ejecución de diseño. En esta ejecución, c) buscó 57 nombres.
 3. **a) antes que c).** Los nombres reconocidos como instituciones (World Bank, OECD…) no se buscan después como personas. Así no se gastan búsquedas en nombres que no son de personas, ni se asigna por error el perfil de una persona a una organización.
 4. **b) después de imputar el publisher (sección 4.7) y antes que c).** La editorial solo se puede buscar como institución cuando el publisher ya está completo. Los estudios que la reciben como autora institucional ya tienen institución, así que salen del grupo que se procesa en c) y d).
@@ -325,9 +329,9 @@ Los pasos siguientes se aplican en orden y se concentran en los estudios sin ins
 | d) Afiliaciones | Fichas de los autores que faltan, en lotes de 50 |
 | e) Estandarización | Fichas del árbol institucional, en lotes de 50. Los niveles (padres, abuelos…) se recorren uno tras otro, porque cada nivel depende del anterior |
 
-El resultado no cambia respecto de hacerlas una por una. Cada consulta es independiente de las demás y las respuestas se reúnen en el mismo orden en que se pidieron. Solo cambia el tiempo: en Ecuador, la imputación tomaba ~2 horas con consultas secuenciales.
+El resultado no cambia respecto de hacerlas una por una. Cada consulta es independiente de las demás y las respuestas se reúnen en el mismo orden en que se pidieron. Solo cambia el tiempo. En Ecuador, la imputación tomaba ~2 horas con consultas secuenciales y sin el filtro de nombres; con ambos cambios toma 98 segundos.
 
-Para no exceder el límite de OpenAlex, todas las consultas, de todos los hilos, pasan por un limitador común. El limitador separa el inicio de cada solicitud y usa 2/3 del límite por segundo de la clave, que lee del endpoint gratuito `/rate-limit` (20 solicitudes/s con el límite de 30/s de una clave gratuita o prepagada). Las consultas de ROR, de Europe PMC y a Claude siguen siendo secuenciales.
+Para no exceder el límite de OpenAlex, todas las consultas, de todos los hilos, pasan por un limitador común. El limitador separa el inicio de cada solicitud y usa 2/3 del límite por segundo de la clave, que lee del endpoint gratuito `/rate-limit` (20 solicitudes/s con el límite de 30/s de una clave gratuita o prepagada). Las consultas de ROR y a Claude siguen siendo secuenciales.
 
 #### a) Autores que son instituciones
 
@@ -343,13 +347,13 @@ En OpenAlex, algunos "autores" son organizaciones (World Bank, OECD, BID…).
 
      También pasa un nombre que es solo una sigla en mayúsculas. Las listas están en español, inglés, portugués y francés, y son globales: no se ajustan por país. Están en `ORG_PREFIXES`, `ORG_WORDS`, `ORG_ACRONYMS` y `ORG_LEGAL_PATTERN` de `src/bibliometrics/config.py`.
 
-  **Justificación del filtro de nombre.** Sin el filtro, en Ecuador se buscaron 6.668 nombres (USD ~7, casi todo el costo de la corrida) y solo 55 resultaron ser instituciones. Casi todas eran afiliaciones que OpenAlex registró como autor ("Universidad de Guayaquil. Ecuador") u organismos (World Bank, CEPAL, FMI). Ninguna tenía ORCID. Al aplicar el filtro a los datos de esa corrida, los candidatos bajan a ~110 y se conservan todas las coincidencias, igual que en Honduras (de 249 a ~21). Los nombres descartados son nombres de personas. `run_summary.json` registra en `org_candidates_filtered_out` cuántos nombres descartó el filtro.
+  **Justificación del filtro de nombre.** Sin el filtro, en Ecuador se buscaron 6.668 nombres (USD ~7, casi todo el costo de la corrida) y solo 55 resultaron ser instituciones. Casi todas eran afiliaciones que OpenAlex registró como autor ("Universidad de Guayaquil. Ecuador") u organismos (World Bank, CEPAL, FMI). Ninguna tenía ORCID. Al volver a correr Ecuador con el filtro, se buscaron 105 nombres y se conservaron todas las coincidencias reales. Solo se perdió una falsa: el título "PhD", leído como autor, coincidía con la sigla de una institución. El costo de la imputación bajó de USD 7,93 a USD 1,16. En Honduras se conservaron las mismas 10 coincidencias. Los nombres descartados son nombres de personas. `run_summary.json` registra en `org_candidates_filtered_out` cuántos nombres descartó el filtro.
 - **Búsqueda:** cada nombre se busca en el catálogo de instituciones de OpenAlex. Se compara el nombre normalizado (sin tildes, mayúsculas ni puntuación) con el nombre, los nombres alternativos y las siglas de cada resultado.
   - La institución se asigna si la **similitud de texto es ≥ 0,85**. La similitud se mide por el emparejamiento de patrones Gestalt de Ratcliff y Obershelp, en una escala de 0 a 1 donde 1 es idéntico.
   - Se elige la más similar de los primeros 10 resultados, porque la coincidencia exacta no siempre aparece primera (p. ej. "United Nations" aparece después de FAO).
   - Si el nombre completo no coincide, se prueba con su primer segmento antes de ".", "," o "(", siempre que tenga dos palabras o más. Por ejemplo, "International Monetary Fund. Fiscal Affairs Dept." se reconoce como International Monetary Fund.
 - **Asignación:** la institución se agrega a todos los estudios donde aparece ese nombre, si no tenía institución, y se marca con `author_as_institution` en `institutions_source`. El autor se conserva tal cual.
-- **Resultado:** 249 candidatos y 10 nombres reconocidos, que corresponden a 9 instituciones: BID, Banco Mundial, World Bank Group, FMI, OCDE, PNUD, CEPAL, IFC y la Universidad Nacional de Ciencias Forestales. Algunos nombres son variantes de la misma institución. 31 estudios recibieron alguna institución.
+- **Resultado:** 225 nombres cumplen la condición de autoría. El filtro descartó 208, todos nombres de personas, y se buscaron 17. Antes del filtro se buscaban 249 nombres. Hubo 10 nombres reconocidos, que corresponden a 9 instituciones: BID, Banco Mundial, World Bank Group, FMI, OCDE, PNUD, CEPAL, IFC y la Universidad Nacional de Ciencias Forestales. Algunos nombres son variantes de la misma institución. 31 estudios recibieron alguna institución.
 
 #### b) Publisher como autor institucional
 
@@ -417,7 +421,7 @@ En los estudios que siguen sin instituciones se consulta el perfil de cada autor
 | `publisher_as_author`: publisher como autor institucional | 5 |
 | Sin instituciones | 233 |
 
-**Costo en OpenAlex de la etapa:** alrededor de $0,32 en total, cubierto por el plan gratuito de OpenAlex. La mayor parte corresponde a las búsquedas por nombre (≈ $0,001 cada una): los 249 nombres de a), los publishers de b) y los 57 autores de c). Las consultas de fichas por lotes cuestan mucho menos.
+**Costo en OpenAlex de la etapa:** alrededor de $0,09 en total, cubierto por el plan gratuito de OpenAlex. La mayor parte corresponde a las búsquedas por nombre (≈ $0,001 cada una): los 57 autores de c), los 17 nombres de a) y los 4 publishers de b). Las consultas de fichas por lotes cuestan mucho menos. Antes del filtro de nombres de a), la etapa costaba $0,32. El costo estimado se anuncia antes de las búsquedas, y la etapa completa toma unos 20 segundos con las consultas en paralelo.
 
 ### 4.9 Agrupación de instituciones por origen
 
@@ -496,7 +500,7 @@ Tiene una fila por estudio (1.044) y 48 columnas. En las columnas de lista, los 
 | `primary_topic.id`, `primary_topic.display_name` | Tópico principal del trabajo | OpenAlex |
 | `primary_topic.subfield.*`, `.field.*`, `.domain.*` | Subcampo (código numérico), campo y dominio del tópico principal | OpenAlex |
 | `openalex_updated_date` | Última actualización del registro en OpenAlex (no es la fecha de la extracción) | OpenAlex |
-| `retrieved_date` | Fecha de la ejecución en que el estudio entró a la base. En una actualización, los estudios que ya estaban en la base relacional anterior conservan su fecha y solo los nuevos reciben la fecha de la ejecución | Construida |
+| `retrieved_date` | Fecha de la ejecución en que el estudio entró a la base. Cada ejecución es una actualización por defecto: los estudios que ya estaban en la base relacional anterior conservan su fecha y solo los nuevos reciben la fecha de la ejecución | Construida |
 | `authorships.author.display_name` | Nombres de los autores, en orden de autoría | OpenAlex / imputado |
 | `authorships.author.id_imputed` | Por autor, `True` si su identificador se imputó por búsqueda | Construida |
 | `authorships.institutions.id` | Identificadores de OpenAlex de las instituciones únicas del estudio | OpenAlex / imputado |
@@ -506,7 +510,7 @@ Tiene una fila por estudio (1.044) y 48 columnas. En las columnas de lista, los 
 | `authorships.institutions.root_display_name` | Organización raíz de cada institución | Construida |
 | `authorships.institutions.inst_group` | Grupo de origen de cada institución | Construida (Claude Haiku 5.5) |
 | `institutions_source` | Origen de las instituciones del estudio | Construida |
-| `abstract` | Resumen | OpenAlex / Semantic Scholar / Europe PMC |
+| `abstract` | Resumen | OpenAlex / Semantic Scholar |
 | `abstract_source` | Fuente del resumen | Construida |
 | `keywords` | Palabras clave asignadas por OpenAlex | OpenAlex |
 | `sustainable_development_goals.display_name` | ODS con mayor puntaje asignado por OpenAlex. Vacío si no tiene ODS | OpenAlex |
@@ -643,8 +647,8 @@ Tiene una sola fila que documenta cómo se construyó la base:
 | Validación de las consultas | OpenAlex (endpoint gratuito) | $0 |
 | Control de subcampos y catálogo de tópicos | OpenAlex | ~$0,003 |
 | Extracción de los 20 ejes | OpenAlex | $0,03 |
-| Imputación de autores e instituciones | OpenAlex | ~$0,32 |
-| Abstracts, editorial, ROR | Semantic Scholar, Europe PMC, doi.org, ROR | Gratuito |
+| Imputación de autores e instituciones | OpenAlex | ~$0,09 |
+| Abstracts, editorial, ROR | Semantic Scholar, doi.org, ROR | Gratuito |
 | Agrupación de instituciones | Anthropic (Claude Haiku 5.5) | ~$0,02 |
 
 El costo total en OpenAlex es menor de $1, así que lo cubre el plan gratuito de OpenAlex.

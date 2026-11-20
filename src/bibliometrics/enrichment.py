@@ -2,13 +2,12 @@
 import re
 import time
 from functools import lru_cache
-from html import unescape
 
 import pandas as pd
 import requests
 from tqdm import tqdm
 
-from .config import (TEXT_COLUMNS, S2_BATCH_URL, EPMC_SEARCH_URL, DOI_HEADERS, DOMAIN_PUBLISHERS, LANGUAGES,
+from .config import (TEXT_COLUMNS, S2_BATCH_URL, DOI_HEADERS, DOMAIN_PUBLISHERS, LANGUAGES,
                      OA_STATUS_SOURCE_OA)
 from .utils import clean_name, progress, progress_map
 
@@ -42,23 +41,8 @@ def fetch_s2_abstracts(dois, api_key=None, retries=10):
     return abstracts
 
 
-def fetch_epmc_abstract(doi):
-    ''' Abstract from Europe PMC by DOI, without HTML tags (None if not found) '''
-    try:
-        req = requests.get(EPMC_SEARCH_URL, params={"query": f'DOI:"{doi}"', "resultType": "core", "format": "json"},
-                           timeout=60)
-    except requests.RequestException:
-        return None
-    if req.status_code != 200:
-        return None
-    results = req.json().get('resultList', {}).get('result', [])
-    if not results or not results[0].get('abstractText'):
-        return None
-    return re.sub(r'\s+', ' ', unescape(re.sub(r'<[^>]+>', ' ', results[0]['abstractText']))).strip()
-
-
 def impute_abstracts(studies, s2_api_key=None):
-    ''' Missing abstracts by DOI: Semantic Scholar, then Europe PMC. abstract_source keeps the origin '''
+    ''' Missing abstracts by DOI from Semantic Scholar. abstract_source keeps the origin '''
     studies = studies.copy()
     studies['abstract_source'] = pd.Series('openalex', index=studies.index).where(studies['abstract'].notna())
 
@@ -68,10 +52,6 @@ def impute_abstracts(studies, s2_api_key=None):
     s2_abstracts = dois.map(fetch_s2_abstracts(dois.tolist(), s2_api_key)).dropna()
     studies.loc[s2_abstracts.index, 'abstract'] = s2_abstracts
     studies.loc[s2_abstracts.index, 'abstract_source'] = 'semantic_scholar'
-
-    epmc_abstracts = progress_map(dois.drop(s2_abstracts.index), fetch_epmc_abstract, "Abstracts Europe PMC").dropna()
-    studies.loc[epmc_abstracts.index, 'abstract'] = epmc_abstracts
-    studies.loc[epmc_abstracts.index, 'abstract_source'] = 'europepmc'
     return studies
 
 

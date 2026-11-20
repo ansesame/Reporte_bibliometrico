@@ -3,7 +3,7 @@ the relational database in outputs/.
 
 Usage:
     python scripts/run_pipeline.py data/queries_{country}.json --subfields data/subfields_tagged_{country}.xlsx
-        [--name bibliometrics_{country}] [--no-stemming]
+        [--name bibliometrics_{country}] [--no-stemming] [--no-update]
 
 Outputs:
     outputs/{name}.xlsx          studies with imputations and thematic fields
@@ -12,9 +12,12 @@ Outputs:
     outputs/{name}_backup/       OpenAlex responses per thematic, topics catalog and run_summary.json
 
 Requires OPENALEX_API_KEY and ANTHROPIC_API_KEY in .env (S2_API_KEY is optional).
-The complete backups are reused when they exist, so a rerun does not pay those queries again; failed or
-incomplete thematics stop the run before the later stages and are queried again on the next run.
-A backup made with another OQL (other types, keywords or stemming) stops the run until it is deleted.
+By default every run is an update: the thematic backups are deleted and every thematic is queried again; the
+previous {name}_db.xlsx keeps the retrieved_date of the studies already in it. With --no-update the complete
+backups are reused, so a rerun does not pay those queries again. Failed or incomplete thematics stop the run
+before the later stages: rerun with --no-update to query only those thematics.
+With --no-update, a backup made with another OQL (other types, keywords or stemming) stops the run until it
+is deleted.
 The subfields file is checked against the current OpenAlex subfields, and the topics catalog is downloaded
 from the API whenever a thematic is queried, so that it matches the topic assignments of the works.
 '''
@@ -53,6 +56,9 @@ def parse_args():
                              "e.g. data/subfields_tagged_honduras.xlsx")
     parser.add_argument("--stemming", action=argparse.BooleanOptionalAction, default=True,
                         help="Search the keywords with stemming (default); --no-stemming searches them as exact phrases")
+    parser.add_argument("--update", action=argparse.BooleanOptionalAction, default=True,
+                        help="Delete the thematic backups and query every thematic again (default; the studies already "
+                             "in {name}_db.xlsx keep their retrieved_date); --no-update reuses the complete backups")
     return parser.parse_args()
 
 
@@ -166,12 +172,24 @@ def main():
               f"and '{change['file']}' in the file")
     cost_before = client.cost_usd
 
-    # 1. Check the backups, validate the OQL (free endpoint) and query OpenAlex per thematic
+    # 1. Update (delete the thematic backups), check the backups, validate the OQL (free endpoint) and query
+    # OpenAlex per thematic
+    previous_db = (out_dir / f"{name}_db.xlsx").exists()
+    deleted = 0
+    if args.update:
+        for path in backup_dir.glob("thematic_*.json"):
+            path.unlink()
+            deleted += 1
+        print(f"Update: {deleted} thematic backups deleted, every thematic is queried again. "
+              + ("Previous database found: the studies already in it keep their retrieved_date" if previous_db else
+                 f"No previous database ({name}_db.xlsx): every study gets retrieved_date {run_date}"))
+    summary['update'] = {'enabled': args.update, 'deleted_backups': deleted, 'previous_database': previous_db}
+
     stale = [path.name for thematic_id, oql in oqls.items()
              if (path := backup_path(backup_dir, thematic_id)).exists() and backup_oql(path) != oql]
     if stale:
         sys.exit(f"The backups {stale} in {backup_dir} were made with another OQL (types, search field, keywords"
-                 " or stemming): delete them to query those thematics again")
+                 " or stemming): delete them, or run without --no-update, to query those thematics again")
 
     invalid, unvalidated = [], []
     for thematic_id, oql in oqls.items():
@@ -179,9 +197,9 @@ def main():
             continue
         valid, body = client.validate_oql(oql)
         if body is None or 'validation' not in body: # Network or API error, not a verdict on the OQL
-            unvalidated.append(thematic['thematic_id'])
+            unvalidated.append(thematic_id)
         elif not valid:
-            invalid.append(thematic['thematic_id'])
+            invalid.append(thematic_id)
     if invalid:
         sys.exit(f"Invalid OQL for thematics {invalid}: fix the keywords before running")
     if unvalidated:
@@ -199,7 +217,7 @@ def main():
                                for result in data['results']})
         print(f"Thematic {thematic['thematic_id']} ({thematic['thematic_axis']}): {len(data['results'])} works")
     if failed:
-        sys.exit(f"Thematics {failed} failed or are incomplete: rerun to retry them "
+        sys.exit(f"Thematics {failed} failed or are incomplete: rerun with --no-update to retry only them "
                  f"(the complete ones are kept in {backup_dir})")
     studies = pd.concat(studies_list, ignore_index=True)
     summary['costs_usd']['openalex_queries'] = client.cost_usd - cost_before
