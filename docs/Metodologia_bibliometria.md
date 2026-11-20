@@ -317,7 +317,18 @@ Los pasos siguientes se aplican en orden y se concentran en los estudios sin ins
 #### a) Autores que son instituciones
 
 En OpenAlex, algunos "autores" son organizaciones (World Bank, OECD, BID…).
-- **Candidatos:** los autores de estudios sin instituciones, que no tienen id del autor o que tienen un perfil de autor sin afiliaciones en estudios de hasta 3 autores (estudios con múltiples autores se asumen como personas para evitar consultas que en su mayoría serían no relevantes).
+- **Candidatos:** autores de estudios sin instituciones que cumplen dos condiciones.
+  1. **No tienen id de autor, o tienen un perfil sin afiliaciones y sin ORCID** en un estudio de hasta 3 autores. Los estudios con más autores se asumen escritos por personas, para evitar consultas que casi nunca serían relevantes. ORCID es un identificador personal de investigadores que una organización no puede tener, así que un perfil con ORCID es una persona.
+  2. **Su nombre tiene forma de organización.** Contiene alguna de estas señales:
+     - una palabra o prefijo de organización: universidad, instituto, ministerio, banco, fundación, comisión, departamento, centro…;
+     - la sigla de un organismo, como CEPAL, OECD, FMI o BID;
+     - una forma jurídica, como S.A., Ltda. o Inc.;
+     - un "&";
+     - un término de país del archivo de queries (`country` y `country_terms`).
+
+     También pasa un nombre que es solo una sigla en mayúsculas. Las listas están en español, inglés, portugués y francés, y son globales: no se ajustan por país. Están en `ORG_PREFIXES`, `ORG_WORDS`, `ORG_ACRONYMS` y `ORG_LEGAL_PATTERN` de `src/bibliometrics/config.py`.
+
+  **Justificación del filtro de nombre.** Sin el filtro, en Ecuador se buscaron 6.668 nombres (USD ~7, casi todo el costo de la corrida) y solo 55 resultaron ser instituciones. Casi todas eran afiliaciones que OpenAlex registró como autor ("Universidad de Guayaquil. Ecuador") u organismos (World Bank, CEPAL, FMI). Ninguna tenía ORCID. Al aplicar el filtro a los datos de esa corrida, los candidatos bajan a ~110 y se conservan todas las coincidencias, igual que en Honduras (de 249 a ~21). Los nombres descartados son nombres de personas. `run_summary.json` registra en `org_candidates_filtered_out` cuántos nombres descartó el filtro.
 - **Búsqueda:** cada nombre se busca en el catálogo de instituciones de OpenAlex. Se compara el nombre normalizado (sin tildes, mayúsculas ni puntuación) con el nombre, los nombres alternativos y las siglas de cada resultado.
   - La institución se asigna si la **similitud de texto es ≥ 0,85**. La similitud se mide por el emparejamiento de patrones Gestalt de Ratcliff y Obershelp, en una escala de 0 a 1 donde 1 es idéntico.
   - Se elige la más similar de los primeros 10 resultados, porque la coincidencia exacta no siempre aparece primera (p. ej. "United Nations" aparece después de FAO).

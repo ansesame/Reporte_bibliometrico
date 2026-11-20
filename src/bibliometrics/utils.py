@@ -6,7 +6,7 @@ import unicodedata
 import pandas as pd
 from tqdm import tqdm
 
-from .config import MISSING
+from .config import MISSING, ORG_PREFIXES, ORG_WORDS, ORG_ACRONYMS, ORG_LEGAL_PATTERN
 
 
 def progress(iterable, desc, total=None):
@@ -65,6 +65,23 @@ def name_similarity(name, candidates):
     similarities = (difflib.SequenceMatcher(None, norm_name(name), norm_name(candidate)).ratio()
                     for candidate in candidates if candidate)
     return max(similarities, default=0)
+
+
+def looks_like_org(name, country_terms=()):
+    ''' True if a name looks like an organization and not a person: an organization word, prefix, acronym or
+    legal form (config ORG_*), a country term (single word as token, several words as phrase), an "&",
+    or the whole name is an upper case acronym '''
+    if not isinstance(name, str) or not name.strip():
+        return False
+    text = ' '.join(re.findall(r'[a-z0-9]+', norm_name(name)))
+    tokens = text.split()
+    padded = f' {text} '
+    terms = {' '.join(re.findall(r'[a-z0-9]+', norm_name(term))) for term in country_terms}
+    return (any(token in ORG_WORDS or token in ORG_ACRONYMS or token.startswith(ORG_PREFIXES) for token in tokens)
+            or any(term and f' {term} ' in padded for term in terms)
+            or '&' in name
+            or bool(re.search(ORG_LEGAL_PATTERN, text))
+            or bool(re.fullmatch(r'[A-Z0-9\-]{2,10}', name.strip())))
 
 
 def group_counts(df, columns):

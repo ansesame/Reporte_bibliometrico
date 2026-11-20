@@ -39,8 +39,52 @@ INST_TABLE_COLS = INST_COLS + [INST_GROUP_COL]
 INST_SELECT = "id,display_name,display_name_alternatives,display_name_acronyms,country_code,type" # Institution search
 INST_TREE_SELECT = "id,display_name,ror,country_code,type,associated_institutions,works_count" # Institution tree
 AUTHORS_SELECT = "id,display_name,display_name_alternatives,affiliations,relevance_score" # Author search
-AUTHOR_ENTITY_SELECT = "id,display_name,affiliations"
+AUTHOR_ENTITY_SELECT = "id,display_name,orcid,affiliations"
 INSTITUTION_AUTHOR_TYPES = {'government', 'nonprofit', 'other', 'healthcare', 'facility', 'funder'} # Accepted as institutional authors
+
+# Organization-like author names (utils.looks_like_org): only these names are searched as institutions.
+# Global lists (Spanish, English, Portuguese, French and international/regional acronyms), not adjusted per
+# country; the country terms come from the queries file. Normalized: no accents, lower case.
+# Words that are also common in person names (cent*, central, who, un, can, fond*) are left out on purpose
+ORG_PREFIXES = ( # A token matches if it starts with one of them
+    # Universities and institutes
+    'univers', 'institu', 'facult', 'academ', 'colleg', 'politecn', 'polytechn', 'tecnolog', 'technolog',
+    # Government and State
+    'minist', 'secretar', 'depart', 'gobiern', 'govern', 'gouvern', 'municip', 'prefectur', 'prefeitur',
+    'superintend', 'contralor', 'procurad', 'asamble', 'assemble', 'congres', 'parlament', 'embaj', 'embass',
+    'embaix', 'ambassad', 'consul',
+    # Organizations
+    'organi', 'fundac', 'foundation', 'fondation', 'associa', 'asocia', 'societ', 'socied', 'corpora', 'cooperat',
+    'federa', 'confedera', 'consor', 'allianc', 'alianz',
+    # Commissions and councils
+    'comis', 'commis', 'comit', 'committ', 'consej', 'conselh', 'conseil', 'council', 'agenc',
+    # Programs and services
+    'program', 'proyect', 'project', 'projet', 'iniciativ', 'initiativ', 'servic', 'system', 'network', 'group',
+    # Research and health
+    'observator', 'laborator', 'hospital', 'clinic',
+    # Companies and publishers
+    'compan', 'compagn', 'industri', 'edicion', 'edicoe', 'edition', 'editor', 'publish', 'publicac',
+)
+ORG_WORDS = { # A token matches if it is equal to one of them
+    'escuela', 'escola', 'ecole', 'school', 'colegio', 'liceo', 'lycee',
+    'centro', 'centros', 'center', 'centers', 'centre', 'centres', 'nucleo', 'unidad', 'unidade', 'unite', 'unit',
+    'oficina', 'office', 'bureau', 'escritorio',
+    'banco', 'bank', 'banque', 'banca', 'fund', 'fondo', 'fonds', 'fundo',
+    'red', 'rede', 'reseau', 'grupo', 'equipo', 'equipe', 'team', 'sistema', 'systeme',
+    'tribunal', 'corte', 'court', 'cour', 'juzgado', 'fiscalia', 'defensoria', 'senado', 'senate', 'senat',
+    'alcaldia', 'mairie', 'gad', 'junta', 'board', 'camara', 'chamber', 'chambre',
+    'empresa', 'entreprise', 'enterprise', 'editora', 'press', 'verlag',
+    'nacional', 'national', 'nationale', 'internacional', 'international', 'internationale',
+    'naciones', 'nations', 'nacoes', 'unidas', 'unies', 'united', 'union', 'uniao',
+}
+ORG_ACRONYMS = { # Acronyms of frequent organizations, matched as whole tokens
+    'cepal', 'eclac', 'oecd', 'ocde', 'fao', 'unesco', 'unicef', 'undp', 'pnud', 'onu', 'bid', 'idb', 'caf', 'imf',
+    'fmi', 'oms', 'ops', 'paho', 'ilo', 'oit', 'wto', 'omc', 'unctad', 'usaid', 'giz', 'jica', 'iica', 'flacso',
+    'clacso', 'ifad', 'fida', 'unep', 'pnuma', 'unhcr', 'acnur', 'iom', 'oim', 'wfp', 'pma', 'ifc', 'oea', 'oas',
+    'sela', 'mercosur', 'aladi', 'celac', 'unasur', 'iucn', 'uicn', 'wwf', 'conicet', 'senescyt', 'inec', 'ibge',
+    'insee',
+}
+ORG_LEGAL_PATTERN = r'\b(s a( s)?|sas|sarl|ltda|ltd|llc|inc|corp|gmbh|cia)\b' # Legal forms, on the normalized name
 
 # Columns used to impute and then dropped from the studies output
 DROP_COLS = ['primary_location.source.type',

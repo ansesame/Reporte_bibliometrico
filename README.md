@@ -346,7 +346,7 @@ Con los datos de ambas corridas:
 | Componente | Estimación |
 |---|---|
 | Consultas por eje (OpenAlex) | USD 0.001 por página de 100 resultados, con al menos una página por eje: ~USD 0.01–0.02 por 1.000 estudios recuperados. |
-| Imputación de autores e instituciones (OpenAlex) | Es el 91–97 % del costo. Depende sobre todo de cuántos estudios no traen instituciones en OpenAlex, porque en esos estudios se busca si cada autor sin afiliación es en realidad una institución: ~USD 0.0012 de imputación por nombre candidato (249 en Honduras, 6.668 en Ecuador). Por estudio final, USD 0.0003–0.0005. |
+| Imputación de autores e instituciones (OpenAlex) | Es el 91–97 % del costo. Depende sobre todo de cuántos estudios no traen instituciones en OpenAlex, porque en esos estudios se busca si cada autor sin afiliación es en realidad una institución: ~USD 0.0012 de imputación por nombre candidato (249 en Honduras, 6.668 en Ecuador). Por estudio final, USD 0.0003–0.0005. **Estas cifras son anteriores al filtro de nombres:** ahora solo se buscan los nombres con forma de organización (~110 en Ecuador en vez de 6.668), así que el costo baja. Las cifras se actualizarán con la próxima corrida. |
 | Clasificación de instituciones (Anthropic) | ~USD 0.024 por 1.000 instituciones. |
 | **Regla práctica** | **~USD 0.50 por 1.000 estudios finales** (promedio ponderado de ambas corridas: USD 8.60 / 17.065 estudios) y ~0.5–0.9 segundos por estudio. |
 

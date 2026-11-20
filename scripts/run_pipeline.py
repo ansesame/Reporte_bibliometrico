@@ -199,7 +199,7 @@ def main():
     # 4. Authors and institutions
     cost_before = client.cost_usd
     studies, auth = au.prepare_authorships(client, studies)
-    au.add_authors_as_institutions(client, auth)
+    au.add_authors_as_institutions(client, auth, [meta['country']] + meta['country_terms'])
     au.add_publisher_as_authors(client, auth, studies)
     au.impute_author_ids(client, auth, studies)
     au.add_author_affiliations(client, auth, studies)

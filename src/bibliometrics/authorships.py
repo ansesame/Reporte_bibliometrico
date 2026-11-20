@@ -11,7 +11,7 @@ import requests
 
 from .config import (MISSING, INSTITUTIONS_VARS, AUTHOR_COLS, INST_COLS, INST_SELECT, AUTHORS_SELECT,
                      AUTHOR_ENTITY_SELECT, INST_TREE_SELECT, INSTITUTION_AUTHOR_TYPES, ROR_URL)
-from .utils import short_id, split_list, join_list, norm_name, name_similarity, group_counts, progress
+from .utils import short_id, split_list, join_list, norm_name, name_similarity, group_counts, progress, looks_like_org
 
 
 @dataclass
@@ -174,15 +174,23 @@ def prepare_authorships(client, studies):
     return studies, auth
 
 
-def add_authors_as_institutions(client, auth):
-    ''' Authors that are institutions, only in studies without OpenAlex institutions: authors without id,
-    or with a profile without affiliations in studies with <= 3 authors. A matched institution is added
-    to every study where the name appears '''
-    org_candidates = {name for index in auth.empty_studies()
-                      for author_id, name in zip(auth.author_ids[index], auth.author_names[index])
-                      if name != MISSING and (author_id == MISSING or
-                                              (len(auth.author_names[index]) <= 3 and
-                                               not (auth.author_entities.get(author_id) or {}).get('affiliations')))}
+def org_candidate_names(auth):
+    ''' Names that could be institutions, in studies without OpenAlex institutions: authors without id, or with
+    a profile without affiliations and without ORCID (a personal identifier) in studies with <= 3 authors '''
+    def no_profile_data(author_id):
+        entity = auth.author_entities.get(author_id) or {}
+        return not entity.get('affiliations') and not entity.get('orcid')
+    return {name for index in auth.empty_studies()
+            for author_id, name in zip(auth.author_ids[index], auth.author_names[index])
+            if name != MISSING and (author_id == MISSING or
+                                    (len(auth.author_names[index]) <= 3 and no_profile_data(author_id)))}
+
+
+def add_authors_as_institutions(client, auth, country_terms=()):
+    ''' Authors that are institutions (org_candidate_names whose name looks like an organization, see
+    utils.looks_like_org). A matched institution is added to every study where the name appears '''
+    names = org_candidate_names(auth)
+    org_candidates = {name for name in names if looks_like_org(name, country_terms)}
     auth.org_matches = {name: match for name in progress(sorted(org_candidates), "Authors as institutions")
                         if (match := match_institution(client, name))}
 
@@ -193,7 +201,9 @@ def add_authors_as_institutions(client, auth):
                 auth.inst_lists[index].append(inst_record(match))
                 if 'author_as_institution' not in auth.inst_sources[index]:
                     auth.inst_sources[index].append('author_as_institution')
-    auth.stats.update({'org_candidates': len(org_candidates), 'org_matches': len(auth.org_matches),
+    auth.stats.update({'org_candidates': len(org_candidates),
+                       'org_candidates_filtered_out': len(names) - len(org_candidates),
+                       'org_matches': len(auth.org_matches),
                        'studies_author_as_institution': int(auth.inst_sources.map(lambda s: 'author_as_institution' in s).sum())})
     return auth
 
