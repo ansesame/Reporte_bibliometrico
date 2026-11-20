@@ -2,6 +2,7 @@
 
 The ";" joined authorships columns are handled as aligned lists in Authorships: within each study,
 every column of a group has the same number of elements, and a missing element is MISSING '''
+import math
 import re
 from collections import Counter
 from dataclasses import dataclass, field
@@ -10,7 +11,8 @@ import pandas as pd
 import requests
 
 from .config import (MISSING, INSTITUTIONS_VARS, AUTHOR_COLS, INST_COLS, INST_SELECT, AUTHORS_SELECT,
-                     AUTHOR_ENTITY_SELECT, INST_TREE_SELECT, INSTITUTION_AUTHOR_TYPES, ROR_URL)
+                     AUTHOR_ENTITY_SELECT, INST_TREE_SELECT, INSTITUTION_AUTHOR_TYPES, ROR_URL, OA_FALLBACK_PRICES,
+                     INST_TREE_LEVELS)
 from .utils import short_id, split_list, join_list, norm_name, name_similarity, group_counts, looks_like_org
 
 
@@ -39,13 +41,17 @@ def inst_record(inst):
     return {inst_var: inst.get(inst_var) for inst_var in INSTITUTIONS_VARS}
 
 
+def institution_queries(name):
+    ''' Searches of match_institution, in order: the full name, then its first segment if it has 2+ words '''
+    first_segment = re.split(r'[.,(]', name)[0].strip()
+    return [name] + ([first_segment] if first_segment != name and len(first_segment.split()) >= 2 else [])
+
+
 def match_institution(client, name, threshold=0.85):
-    ''' OpenAlex institution matching a name (full name, then its first segment with 2+ words).
+    ''' OpenAlex institution matching a name (institution_queries until one matches).
     The most similar of the first 10 results is kept: the exact match is not always ranked first
     (e.g. "United Nations" comes after FAO) and the cost of a search does not depend on per_page '''
-    first_segment = re.split(r'[.,(]', name)[0].strip()
-    queries = [name] + ([first_segment] if first_segment != name and len(first_segment.split()) >= 2 else [])
-    for query in queries:
+    for query in institution_queries(name):
         data = client.get("institutions", {"search": query, "per_page": 10, "select": INST_SELECT})
         scored = [(name_similarity(query, [inst['display_name']] + (inst.get('display_name_alternatives') or [])
                                    + (inst.get('display_name_acronyms') or [])), inst)
@@ -186,11 +192,18 @@ def org_candidate_names(auth):
                                     (len(auth.author_names[index]) <= 3 and no_profile_data(author_id)))}
 
 
-def add_authors_as_institutions(client, auth, country_terms=()):
-    ''' Authors that are institutions (org_candidate_names whose name looks like an organization, see
-    utils.looks_like_org). A matched institution is added to every study where the name appears '''
+def org_candidates_filtered(auth, country_terms=()):
+    ''' org_candidate_names whose name looks like an organization (utils.looks_like_org), sorted, and the number
+    of names left out by that filter '''
     candidate_names = org_candidate_names(auth)
     org_candidates = sorted(name for name in candidate_names if looks_like_org(name, country_terms))
+    return org_candidates, len(candidate_names) - len(org_candidates)
+
+
+def add_authors_as_institutions(client, auth, country_terms=()):
+    ''' Authors that are institutions (org_candidates_filtered). A matched institution is added to every
+    study where the name appears '''
+    org_candidates, filtered_out = org_candidates_filtered(auth, country_terms)
     matches = client.pmap(lambda name: match_institution(client, name), org_candidates, "Authors as institutions")
     auth.org_matches = {name: match for name, match in zip(org_candidates, matches) if match}
 
@@ -202,17 +215,22 @@ def add_authors_as_institutions(client, auth, country_terms=()):
                 if 'author_as_institution' not in auth.inst_sources[index]:
                     auth.inst_sources[index].append('author_as_institution')
     auth.stats.update({'org_candidates': len(org_candidates),
-                       'org_candidates_filtered_out': len(candidate_names) - len(org_candidates),
+                       'org_candidates_filtered_out': filtered_out,
                        'org_matches': len(auth.org_matches),
                        'studies_author_as_institution': int(auth.inst_sources.map(lambda s: 'author_as_institution' in s).sum())})
     return auth
 
 
+def publisher_candidates(auth, studies):
+    ''' Studies without authorships (index) and those whose source is not a journal and have a publisher '''
+    no_authors = auth.author_names[auth.author_names.str.len() == 0].index
+    return no_authors, studies.loc[no_authors].query("`primary_location.source.type` != 'journal' and publisher.notna()")
+
+
 def add_publisher_as_authors(client, auth, studies):
     ''' In studies without authorships whose source is not a journal, the publisher is the institutional
     author if it matches an OpenAlex institution of an accepted type (not companies or universities) '''
-    no_authors = auth.author_names[auth.author_names.str.len() == 0].index
-    candidates = studies.loc[no_authors].query("`primary_location.source.type` != 'journal' and publisher.notna()")
+    no_authors, candidates = publisher_candidates(auth, studies)
     publishers = list(candidates['publisher'].unique())
     publisher_matches = dict(zip(publishers, client.pmap(lambda publisher: match_institution(client, publisher),
                                                          publishers, "Publishers as authors")))
@@ -230,15 +248,20 @@ def add_publisher_as_authors(client, auth, studies):
     return auth
 
 
+def author_search_queries(auth, studies):
+    ''' (name, publication year) of the authors without id in studies without institutions, except the names
+    matched as institutions, sorted '''
+    return sorted({(name, int(studies.at[index, 'publication_year']))
+                   for index in auth.empty_studies()
+                   for author_id, name in zip(auth.author_ids[index], auth.author_names[index])
+                   if author_id == MISSING and name != MISSING and name not in auth.org_matches})
+
+
 def impute_author_ids(client, auth, studies):
     ''' Author ids for person authors without id, only in studies still without institutions
     (the ids are used to recover their institutions). id_imputed flags the imputed positions '''
     empty_studies = auth.empty_studies()
-    author_queries = {(name, int(studies.at[index, 'publication_year']))
-                      for index in empty_studies
-                      for author_id, name in zip(auth.author_ids[index], auth.author_names[index])
-                      if author_id == MISSING and name != MISSING and name not in auth.org_matches}
-    author_queries = sorted(author_queries)
+    author_queries = author_search_queries(auth, studies)
     author_matches = dict(zip(author_queries, client.pmap(lambda query: search_author(client, *query),
                                                           author_queries, "Author search")))
 
@@ -254,6 +277,31 @@ def impute_author_ids(client, auth, studies):
     auth.stats.update({'searched_authors': len(author_queries),
                        'imputed_author_ids': sum(author is not None for author, _ in author_matches.values())})
     return auth
+
+
+def estimate_imputation_cost(client, auth, studies, country_terms=()):
+    ''' Expected OpenAlex cost of the imputation steps after prepare_authorships, without paid requests: counts
+    the searches and entity batches that each step will request, with the prices of /rate-limit.
+    - Institution searches (authors as institutions and publishers): one per name; the search of the first
+      segment of a name is only made if the full name does not match, so it is added only to the upper bound.
+    - Author searches, affiliation batches and institution tree batches (INST_TREE_LEVELS levels) are upper
+      bounds: the earlier steps can only reduce them '''
+    prices = {**OA_FALLBACK_PRICES, **((client.limits or {}).get('endpoint_costs_usd') or {})}
+    org_names, _ = org_candidates_filtered(auth, country_terms)
+    publishers = list(publisher_candidates(auth, studies)[1]['publisher'].unique())
+    second_segments = sum(len(institution_queries(name)) - 1 for name in org_names + publishers)
+    author_searches = len(author_search_queries(auth, studies))
+    missing_entities = {author_id for index in auth.empty_studies() for author_id in auth.author_ids[index]
+                        if author_id != MISSING} - set(auth.author_entities)
+    institutions = {inst['id'] for insts in auth.inst_lists for inst in insts}
+    batches = math.ceil(len(missing_entities) / 50) + math.ceil(len(institutions) / 50) * INST_TREE_LEVELS
+
+    searches = len(org_names) + len(publishers) + author_searches
+    cost = searches * prices['search'] + batches * prices['list']
+    return {'org_searches': len(org_names), 'publisher_searches': len(publishers), 'author_searches': author_searches,
+            'second_segment_searches_max': second_segments, 'entity_batches': batches,
+            'cost_usd': round(cost, 4), 'cost_usd_max': round(cost + second_segments * prices['search'], 4),
+            'time_s': round((searches + second_segments + batches) / client.rate, 1)}
 
 
 def add_author_affiliations(client, auth, studies):

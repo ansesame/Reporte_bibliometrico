@@ -92,6 +92,21 @@ Al iniciar, el pipeline compara el archivo con los subcampos actuales de OpenAle
 
 La API de OpenAlex tiene un presupuesto diario de USD 1, que se renueva a las 00:00 UTC. Para ver el saldo disponible, acceda a la sección [Usage](https://openalex.org/settings/usage) en su perfil de OpenAlex.
 
+**Costo estimado de la imputación.** Antes de las búsquedas pagadas de autores e instituciones, el pipeline imprime un estimado del costo y el saldo de la clave. El saldo lo lee del endpoint gratuito `/rate-limit`. Por ejemplo, para Ecuador:
+
+```
+[estimate] OpenAlex imputation: ~USD 1.15 (upper bound USD 1.19) | searches: 110 authors as institutions, 12 publishers, up to 1021 authors | up to 99 entity batches | ~1 min
+[estimate] Already spent on author entities: USD 0.06 | OpenAlex balance: daily USD 1.00 + prepaid USD 2.56
+Warning: the estimate exceeds the daily balance; the prepaid balance will be used
+```
+
+- **Cómo se calcula:**
+  - se cuentan las búsquedas y los lotes de fichas que hará cada paso y se multiplican por los precios de `/rate-limit` (búsqueda USD 0.001, lote USD 0.0001);
+  - las búsquedas de autores, los lotes de afiliaciones y los lotes del árbol institucional son cotas superiores, porque los pasos anteriores pueden reducirlos;
+  - la cota superior suma además la segunda búsqueda por el primer segmento del nombre, que solo se hace si el nombre completo no coincide.
+- **El anuncio no detiene la corrida.** Si el estimado supera el saldo diario, avisa que se usará el saldo prepagado. Si supera el saldo total, avisa que la imputación quedará incompleta: las llamadas fallarán cuando se agote el saldo.
+- `run_summary.json` guarda el detalle en `imputation_estimate` y el total en `costs_usd.openalex_imputation_estimate`. Ese total incluye lo ya gastado en fichas de autores, así que se puede comparar con `costs_usd.openalex_imputation`.
+
 ### 4. Ejecutar
 
 ```

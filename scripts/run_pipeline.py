@@ -76,6 +76,26 @@ def timed(times, step, func, *args):
     return result
 
 
+def announce_estimate(client, estimate, spent):
+    ''' Print the estimated cost of the OpenAlex imputation and the balance of the key (it does not stop the run) '''
+    print(f"[estimate] OpenAlex imputation: ~USD {estimate['cost_usd']:.2f} (upper bound USD {estimate['cost_usd_max']:.2f})"
+          f" | searches: {estimate['org_searches']} authors as institutions, {estimate['publisher_searches']} publishers,"
+          f" up to {estimate['author_searches']} authors | up to {estimate['entity_batches']} entity batches"
+          f" | ~{estimate['time_s'] / 60:.0f} min")
+    limits = client.rate_limit() # Current balance (free)
+    if limits is None:
+        print(f"[estimate] Already spent on author entities: USD {spent:.2f} | OpenAlex balance not available")
+        return
+    daily, prepaid = limits.get('daily_remaining_usd') or 0, limits.get('prepaid_remaining_usd') or 0
+    print(f"[estimate] Already spent on author entities: USD {spent:.2f}"
+          f" | OpenAlex balance: daily USD {daily:.2f} + prepaid USD {prepaid:.2f}")
+    if estimate['cost_usd_max'] > daily + prepaid:
+        print("Warning: the estimate exceeds the OpenAlex balance; requests will fail when it runs out and the"
+              " imputation will be incomplete (see openalex_failures in run_summary.json)")
+    elif estimate['cost_usd_max'] > daily:
+        print("Warning: the estimate exceeds the daily balance; the prepaid balance will be used")
+
+
 def backup_path(backup_dir, thematic_id):
     return backup_dir / f"thematic_{thematic_id}.json"
 
@@ -218,9 +238,13 @@ def main():
     # 4. Authors and institutions
     cost_before = client.cost_usd
     steps_time = {}
+    country_terms = [meta['country']] + meta['country_terms']
     studies, auth = timed(steps_time, 'prepare_authorships', au.prepare_authorships, client, studies)
-    timed(steps_time, 'authors_as_institutions', au.add_authors_as_institutions, client, auth,
-          [meta['country']] + meta['country_terms'])
+    estimate = au.estimate_imputation_cost(client, auth, studies, country_terms)
+    announce_estimate(client, estimate, spent=client.cost_usd - cost_before)
+    summary['imputation_estimate'] = estimate
+    summary['costs_usd']['openalex_imputation_estimate'] = round(client.cost_usd - cost_before + estimate['cost_usd'], 4)
+    timed(steps_time, 'authors_as_institutions', au.add_authors_as_institutions, client, auth, country_terms)
     timed(steps_time, 'publisher_as_authors', au.add_publisher_as_authors, client, auth, studies)
     timed(steps_time, 'impute_author_ids', au.impute_author_ids, client, auth, studies)
     timed(steps_time, 'author_affiliations', au.add_author_affiliations, client, auth, studies)

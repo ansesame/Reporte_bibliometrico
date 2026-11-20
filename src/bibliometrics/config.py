@@ -9,6 +9,8 @@ OA_BASE = "https://api.openalex.org/"
 # programs using the same key. OA_FALLBACK_RPS is the lowest limit (no key), used if /rate-limit cannot be read
 OA_RATE_SHARE = 2 / 3
 OA_FALLBACK_RPS = 10
+OA_FALLBACK_PRICES = {'search': 0.001, 'list': 0.0001} # USD per request, if /rate-limit cannot be read
+INST_TREE_LEVELS = 3 # Levels of the institution tree assumed by the imputation cost estimate
 OA_WORKERS = 8 # Threads: requests are network bound; with ~0.4 s responses 8 threads reach the 20/s rate
 TOPIC_FIELDS = ['id', 'display_name', 'description', 'legacy_keywords', 'ids', 'subfield', 'field', 'domain',
                 'works_count', 'updated_date'] # select of the topics catalog (the full records weigh ~40 MB)
