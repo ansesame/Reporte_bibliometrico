@@ -6,11 +6,11 @@ Pipeline que, a partir de un archivo JSON con ejes temáticos y palabras clave, 
 2. **Filtra** los estudios cuyo subcampo de OpenAlex es de interés.
 3. **Elimina duplicados** en cascada por id, DOI y título.
 4. **Imputa** datos faltantes:
-   - el abstract, desde Semantic Scholar;
-   - el idioma;
-   - si la fuente es de acceso abierto, a partir del estado de acceso abierto del estudio;
-   - el publisher;
-   - los autores y las instituciones.
+   - Abstract
+   - Idioma;
+   - Si la fuente es de acceso abierto
+   - El editor o quien administra el repositorio
+   - Autores y instituciones.
 5. **Clasifica** el origen de cada institución con Claude: el país, LAC, Europa, multilaterales, etc.
 6. **Exporta** un archivo de estudios y una base relacional en Excel.
 
@@ -29,36 +29,35 @@ Para obtener una API KEY de OpenAlex registrese en la página web y accesa a el 
 
 Para obtener una API Key de Anthropic debe tener una cuenta en Claude Platform e ingresar al panel [Claves y Acceso](https://platform.claude.com/settings/keys), donde podra crear una clave/key. También debe tener suficiente saldo para completar la ejecución, el detalle del costo lo encontrará más adelante.
 
-## Uso con la interfaz (recomendado)
+## Uso con la interfaz
 
-La interfaz instala el entorno, guarda las claves y ejecuta el pipeline sin usar la terminal. Solo requiere Python 3.12 instalado, con tkinter:
-- **Windows:** el instalador de [python.org](https://www.python.org/downloads/) incluye tkinter (opción "tcl/tk and IDLE", marcada por defecto). Marca también "Add python.exe to PATH". Miniconda y Anaconda también lo incluyen.
-- **macOS:** el instalador de [python.org](https://www.python.org/downloads/macos/) incluye tkinter. Con Homebrew hay que instalarlo aparte: `brew install python@3.12 python-tk@3.12`. El Python que trae macOS no sirve, porque es de otra versión.
+La interfaz de usuario instala el entorno, guarda las claves y ejecuta el pipeline sin usar la terminal. Solo requiere Python 3.12 o superior instalado:
 
 Para abrirla, haz doble clic en:
 
 | Sistema | Archivo | Nota |
 |---|---|---|
-| Windows | `Iniciar.bat` | Si no encuentra Python 3.12 con tkinter, explica qué instalar. |
-| macOS | `Iniciar.command` | La primera vez, macOS puede bloquearlo por venir de internet: clic derecho → Abrir → Abrir. Si dice que no tiene permiso de ejecución, corre `chmod +x Iniciar.command` en la Terminal, desde la carpeta del proyecto. Se abre una ventana de Terminal detrás de la interfaz; ciérrala al terminar. |
+| Windows | `Iniciar.bat` | Si no encuentra Python 3.12 con tkinter, explica qué instalar. El equipo puede bloquear la ejecución por se descargado de la web, ejecutelo como administrador.|
+| macOS | `Iniciar.command` | La primera vez, macOS puede bloquearlo por venir de internet: clic derecho -> Abrir -> Abrir. Si dice que no tiene permiso de ejecución, corre `chmod +x Iniciar.command` en la Terminal, desde la carpeta del proyecto. Se abre una ventana de Terminal detrás de la interfaz; ciérrala al terminar. |
 
-También se puede abrir con `python scripts/app.py`.
+También se puede abrir desde python con `python scripts/app.py` .
 
 La ventana tiene cuatro secciones:
 
 1. **Entorno.** "Instalar entorno" crea `.venv` e instala `requirements.txt`. La primera vez tarda unos minutos. Después, la interfaz solo pide reinstalar si cambia `requirements.txt`, o si `.venv` se creó con otra versión de Python.
-2. **Claves de API.** "Verificar y guardar claves" prueba cada clave con un endpoint gratuito y la guarda en `.env`. Para OpenAlex muestra además el saldo diario y el prepagado. Una clave rechazada no se guarda.
+2. **Claves de API.** "Verificar y guardar claves" prueba cada clave con un endpoint gratuito y la guarda en `.env`.
 3. **Parámetros.**
-   - El JSON de queries y el Excel de subcampos. Al elegir el JSON, la interfaz muestra el país, los años y el número de ejes. Si el archivo tiene un error de formato, indica la línea y la columna. Si existe `data/subfields_tagged_<pais>.xlsx`, lo propone.
-   - El nombre (opcional, equivale a `--name`).
-   - Las casillas *Actualizar* (`--update`) y *Stemming* (`--stemming`), activadas por defecto.
+   - El JSON de queries y el Excel de subcampos. Al elegir el JSON, la interfaz muestra el país, los años y el número de ejes. Si el archivo tiene un error de formato, indica la línea y la columna.
+   - El nombre (opcional).
+   - Las casillas *Actualizar* (en caso de que exista una versión previa del reporte) y *Stemming* (uso de lematización en las palabras clave), activadas por defecto.
 
    La interfaz también avisa si ya existe una base con ese nombre (se actualizará) y si la corrida anterior quedó interrumpida (conviene desactivar *Actualizar* para retomarla).
-4. **Consola.** Muestra los mensajes del pipeline mientras corre, con las barras de progreso. "Detener" interrumpe la corrida; los ejes ya consultados quedan respaldados. Al terminar, la consola se guarda en `outputs/{name}_backup/run_log_<fecha_hora>.txt` y "Abrir resultados" abre `outputs/`.
+4. **Consola.** Muestra los mensajes del pipeline mientras corre, con las barras de progreso. "Detener" interrumpe la corrida; los ejes ya consultados quedan respaldados. Al terminar, la consola se guarda en `outputs/{name}_backup/run_log_<fecha_hora>.txt` y el botón "Abrir resultados" abre `outputs/`.
 
-La interfaz ejecuta el mismo comando de la sección [Ejecutar](#4-ejecutar), con el Python de `.venv`. Recuerda las últimas rutas y opciones usadas en `.gui_settings.json`.
 
-## Instalación por terminal
+## Uso con terminal
+
+Preparar entorno de trabajo
 
 En Windows:
 
@@ -76,15 +75,35 @@ python3 -m venv .venv
 cp .env_example .env
 ```
 
-Después, completa las claves en `.env`.
+Después, completa las claves de API en archivo `.env`.
 
-`requirements.txt` tiene solo las dependencias del pipeline. Para usar los notebooks, instala `requirements-dev.txt`, que agrega Jupyter, matplotlib y seaborn.
+`requirements.txt` tiene solo las dependencias del pipeline. 
+
+Ejecute el flujo de reporte usando 
+```
+.venv\Scripts\python.exe scripts\run_pipeline.py data\queries_<pais>.json --subfields data\subfields_tagged_<pais>.xlsx 
+```
+
+Aquí se asume que el json de queries y excel de filtro de subcampos están en la carpeta data/
+
+En Linux o macOS se usa `.venv/bin/python scripts/run_pipeline.py ...`.
+
+| Parámetro | Descripción |
+|---|---|
+| `queries` | Ruta del JSON de queries (obligatorio). |
+| `--subfields` | Excel de subcampos de interés del país (obligatorio), p. ej. `data/subfields_tagged_honduras.xlsx`. |
+| `--name` | Nombre base de las salidas. Por defecto es `bibliometrics_<country>`. |
+| `--stemming` / `--no-stemming` | Busca las palabras clave con stemming (por defecto) o como frase exacta.|
+| `--update` / `--no-update` | Por defecto, cada corrida es una actualización, vuelve a buscar todos los términos en OpenAlex y actualiza todos los datos. Por el contrario, `--no-update` reutiliza los respaldos de los ejes procesados para tener que pagar completo en caso de que algún query falle. Ver [Actualización y respaldos](#actualización-y-respaldos). |
+
+Durante la ejecución se imprime el progreso de cada etapa.
+
 
 ## Replicar el reporte para un país nuevo
 
 ### 1. Crear el archivo de queries
 
-Copia `data/queries_honduras_ET.json` como `data/queries_<pais>.json` y edítalo. Tiene dos partes: `meta` y `thematics`.
+Copia `data/queries_honduras.json` como `data/queries_<pais>.json` y edítalo. Tiene dos partes: `meta` y `thematics`.
 
 **`meta`**
 
@@ -92,7 +111,7 @@ Copia `data/queries_honduras_ET.json` como `data/queries_<pais>.json` y edítalo
 |---|---|
 | `country` | Nombre del país en inglés (p. ej. `"Guatemala"`). Se usa en el prompt de clasificación, como grupo de las instituciones nacionales y en el nombre de salida por defecto. |
 | `start_year`, `end_year` | Rango de años de publicación, ambos incluidos. |
-| `country_terms` | Términos que identifican al país: el nombre y los gentilicios en inglés y español, con sus variantes de género y número (`"Guatemalan"`, `"guatemalteco"`, `"guatemaltecas"`…). Un término de una sola palabra se busca tal cual; uno de varias palabras se busca con stemming (también con `--no-stemming`). |
+| `country_terms` | Términos que identifican al país: el nombre y los gentilicios en inglés y español, con sus variantes de género y número (`"Guatemalan"`, `"guatemalteco"`, `"guatemaltecas"`…). |
 | `description` | Descripción libre del conjunto de queries (opcional). |
 
 **`thematics`**: una entrada por eje temático.
@@ -104,61 +123,31 @@ Copia `data/queries_honduras_ET.json` como `data/queries_<pais>.json` y edítalo
 | `strategic_objective` | Objetivo estratégico. |
 | `expected_result` | Resultado esperado. |
 | `thematic_axis` | Nombre corto del eje. |
-| `keywords` | Lista de palabras clave en inglés y en el idioma local. Se buscan en el título y el abstract, con stemming por defecto (encuentra variantes como plurales); con `--no-stemming` se buscan como frase exacta. |
+| `keywords` | Lista de palabras clave en inglés y en el idioma local a buscar en el título y en el abstract  |
 
-> **Generar el JSON con apoyo de IA.** El JSON se puede generar con cualquier chat de IA. Para Honduras, se le pasó a Claude (chat) el archivo `Reporte bibliometrico-Honduras-2019-2026.pdf` con la instrucción de llenar el JSON a partir de la tabla de la sección "2. Definición de palabras clave". Después se revisó manualmente.
+> **Generar el JSON con apoyo de IA.** El JSON se puede generar con cualquier chat de IA. Para Honduras, se le pasó a Claude (chat) el archivo `Reporte bibliometrico-Honduras-2019-2026.pdf` con la instrucción de llenar el JSON a partir de la tabla de la sección "2. Definición de palabras clave". Después se revisó manualmente. Un prompt de ejemplo se puede encontrar en [Ejemplo: replicación para Ecuador](#ejemplo-replicación-para-ecuador).
 
 ### 2. Revisar los subcampos de interés
 
-Cada país tiene su archivo de subcampos, `data/subfields_tagged_<pais>.xlsx` (p. ej. `subfields_tagged_honduras.xlsx`), con los 252 subcampos de OpenAlex:
+Cada país tiene su archivo de subcampos, `data/subfields_tagged_<pais>.xlsx` debido a que la estrategia país cambia, que permite filtrar los estudios de interés. Este archivo con los 252 subcampos de OpenAlex tiene las variables:
 - La columna `id` es el número del subcampo.
 - La columna `interest_subfield` marca con `1` los que se conservan y con `0` los que se descartan.
-- Las columnas `name` y `field` (nombre y campo) se usan para avisar si OpenAlex los cambió.
+- La columna `justification` que indica los ejes temáticos que sustentan el interés en el subcampo
+- Junto a columnas de nombres y descripción.
 
-Si los ejes temáticos del nuevo país son similares a los de otro país, parte de una copia de su archivo y retaguéala. El archivo se pasa siempre con `--subfields`.
-
-Al iniciar, el pipeline compara el archivo con los subcampos actuales de OpenAlex (~USD 0.0002). Si OpenAlex tiene subcampos que el archivo no tiene, o al revés, se detiene antes de consultar, porque hay que etiquetar los subcampos nuevos. Si solo cambió el nombre o el campo de un subcampo, muestra un aviso y continúa; para quitar el aviso, actualiza el nombre en el archivo. El resultado queda en `run_summary.json` (`subfields_check`). Los archivos de Honduras y Ecuador tienen los nombres y las descripciones de la API de OpenAlex al 2026-11-19.
-
-> **Confirmar los subcampos con apoyo de IA.** Una vez definido el JSON, el archivo de subcampos también se puede confirmar con un chat de IA. Se le pasan el JSON y los subcampos con su descripción, y se retaguea si hace falta. Al final, el experto revisa el resultado.
+> **Confirmar los subcampos con apoyo de IA.** Una vez definido el JSON, el archivo de subcampos también se puede confirmar con un chat de IA. Se le pasan el JSON y los subcampos con su descripción, y se retaguea si hace falta. Al final, el experto revisa el resultado. Un prompt de ejemplo se puede encontrar en [Ejemplo: replicación para Ecuador](#ejemplo-replicación-para-ecuador).
 
 ### 3. Revisar el saldo de OpenAlex
 
 La API de OpenAlex tiene un presupuesto diario de USD 1, que se renueva a las 00:00 UTC. Para ver el saldo disponible, acceda a la sección [Usage](https://openalex.org/settings/usage) en su perfil de OpenAlex.
 
-**Costo estimado de la imputación.** Antes de las búsquedas pagadas de autores e instituciones, el pipeline imprime un estimado del costo y el saldo de la clave. El saldo lo lee del endpoint gratuito `/rate-limit`. Por ejemplo, para Ecuador:
+**Costo estimado de la imputación.** Antes de las búsquedas pagadas de autores e instituciones, el pipeline imprime un estimado del costo y el saldo de la clave, si no es suficiente el saldo el flujo saltará las imputaciones. Por ejemplo, para Ecuador:
 
 ```
 [estimate] OpenAlex imputation: ~USD 1.15 (upper bound USD 1.19) | searches: 110 authors as institutions, 12 publishers, up to 1021 authors | up to 99 entity batches | ~1 min
 [estimate] Already spent on author entities: USD 0.06 | OpenAlex balance: daily USD 1.00 + prepaid USD 2.56
 Warning: the estimate exceeds the daily balance; the prepaid balance will be used
 ```
-
-- **Cómo se calcula:**
-  - se cuentan las búsquedas y los lotes de fichas que hará cada paso y se multiplican por los precios de `/rate-limit` (búsqueda USD 0.001, lote USD 0.0001);
-  - las búsquedas de autores, los lotes de afiliaciones y los lotes del árbol institucional son cotas superiores, porque los pasos anteriores pueden reducirlos;
-  - la cota superior suma además la segunda búsqueda por el primer segmento del nombre, que solo se hace si el nombre completo no coincide.
-- **El anuncio no detiene la corrida.** Si el estimado supera el saldo diario, avisa que se usará el saldo prepagado. Si supera el saldo total, avisa que la imputación quedará incompleta: las llamadas fallarán cuando se agote el saldo.
-- `run_summary.json` guarda el detalle en `imputation_estimate` y el total en `costs_usd.openalex_imputation_estimate`. Ese total incluye lo ya gastado en fichas de autores, así que se puede comparar con `costs_usd.openalex_imputation`.
-
-### 4. Ejecutar
-
-```
-.venv\Scripts\python.exe scripts\run_pipeline.py data\queries_<pais>.json --subfields data\subfields_tagged_<pais>.xlsx --name bibliometrics_<pais>
-```
-
-En Linux o macOS se usa `.venv/bin/python scripts/run_pipeline.py ...`.
-
-| Parámetro | Descripción |
-|---|---|
-| `queries` | Ruta del JSON de queries (obligatorio). |
-| `--name` | Nombre base de las salidas. Por defecto es `bibliometrics_<country>`. |
-| `--subfields` | Excel de subcampos de interés del país (obligatorio), p. ej. `data/subfields_tagged_honduras.xlsx`. |
-| `--stemming` / `--no-stemming` | Busca las palabras clave con stemming (por defecto) o como frase exacta. No cambia la búsqueda de los `country_terms`. |
-| `--update` / `--no-update` | Por defecto, cada corrida es una actualización: borra los respaldos de los ejes (`thematic_<id>.json`) y los vuelve a consultar en OpenAlex. Los estudios que ya estaban en `{name}_db.xlsx` conservan su `retrieved_date`. `--no-update` reutiliza los respaldos completos, sin pagar de nuevo esas consultas. Ver [Actualización y respaldos](#actualización-y-respaldos). |
-
-Se buscan estos tipos de documento: `article`, `report`, `dissertation`, `book`, `book-chapter`, `conference-paper`, `dataset` y `data-paper` (`ALLOWED_TYPES` en `src/bibliometrics/config.py`).
-
-Durante la ejecución, cada etapa imprime sus conteos (`[queries]`, `[duplicates]`, `[abstracts]`…). Las etapas que hacen muchas consultas (abstracts, idioma, publisher, autores e instituciones, clasificación con Claude) muestran una barra de progreso con el avance y el tiempo restante estimado.
 
 ## Salidas
 
@@ -167,124 +156,60 @@ Todas se escriben en `outputs/`.
 | Archivo | Contenido |
 |---|---|
 | `{name}.xlsx` | Una fila por estudio, con todas las variables, las columnas de trazabilidad de las imputaciones y los campos temáticos (`thematic_axis`, `pillar`, `strategic_objective`). |
-| `{name}_db.xlsx` | Base relacional, con una hoja por tabla (ver abajo). |
+| `{name}_db.xlsx` | Base relacional, con una hoja por tabla. La descripción completa de hojas y variables se encuentran en [docs\diccionario_bibliometrics_bd.xlsx](https://github.com/ansesame/Reporte_bibliometrico/blob/main/docs/diccionario_bibliometrics_bd.xlsx) |
 | `{name}_backup/` | Respuestas de OpenAlex por eje (`thematic_<id>.json`), el catálogo de tópicos descargado de la API de OpenAlex (`topics_snapshot.json`) y `run_summary.json`, con los conteos, costos, tiempos y llamadas fallidas de cada etapa. |
-
-En `run_summary.json`:
-- cada etapa tiene `time_s`: los segundos desde el fin de la etapa anterior;
-- `stages.authorships.steps_time_s` separa el tiempo de cada paso de la imputación de autores e instituciones;
-- `openalex_requests` registra el límite por segundo de la clave, la tasa usada, el número de hilos y cuántas respuestas 429 se reintentaron.
 
 Columnas de trazabilidad en `{name}.xlsx`:
 - `abstract_source`, `publisher_source` e `institutions_source` indican de dónde viene cada valor.
 - `language_imputed` marca los idiomas detectados automáticamente.
 - `source_is_oa_imputed` marca los estudios donde `primary_location.source.is_oa` se imputó desde `open_access.oa_status`.
-- `authorships.author.id_imputed` marca los ids de autor imputados. Esta columna solo está en `{name}.xlsx`, no en la hoja `studies` de `{name}_db.xlsx`.
-
-Fechas de cada estudio (en ambos archivos):
-- `retrieved_date` es la fecha de la corrida en que el estudio entró a la base. En cada actualización, si ya existe `{name}_db.xlsx`, los estudios que ya estaban conservan su fecha y solo los nuevos reciben la fecha de la corrida actual. No borres ese archivo antes de actualizar: es el que guarda las fechas.
-- `openalex_updated_date` es la fecha en que OpenAlex actualizó el registro por última vez. No es la fecha de la corrida.
-
-Hojas de `{name}_db.xlsx`:
-
-| Hoja | Llave | Contenido |
-|---|---|---|
-| `studies` | `study_id` | Metadatos, abstract, publisher, ODS principal, autores y citaciones del estudio. |
-| `institutions` | `institution_id` | Nombre, país, tipo, organización raíz y grupo de origen. |
-| `study_institutions` | `study_id`, `institution_id` | Relación entre estudios e instituciones. |
-| `topics` | `topic_id` | Catálogo completo de tópicos de OpenAlex, con su subcampo, campo y dominio. |
-| `study_topics` | `study_id`, `topic_id` | Relación entre estudios y tópicos. |
-| `thematics` | `thematic_id` | Ejes temáticos del JSON, con su OQL. |
-| `study_thematics` | `study_id`, `thematic_id` | Relación entre estudios y ejes temáticos. |
-| `study_year_cites` | `study_id`, `year` | Citas recibidas por año (`cited_by_count`), tomadas de `counts_by_year` de OpenAlex. Solo incluye los años que OpenAlex reporta: años con al menos una cita, y como máximo los últimos 10. |
-| `metadata` | — | Una fila con el objeto `meta` del JSON de queries, los parámetros de búsqueda (`search_fields`, `allowed_types`, `stemming`) y `updated_date`, la fecha de la última actualización de los datos. Las listas, como `country_terms` y `allowed_types`, van unidas con `; `. |
-
-Los ids se guardan sin el prefijo `https://openalex.org/`. Los ids de tópicos, subcampos, campos y dominios se guardan como número.
-
-La descripción de cada hoja y columna, con su tipo, llave, origen, campo de OpenAlex y valores posibles, está en `docs/diccionario_bibliometrics_bd.xlsx`.
+- `authorships.author.id_imputed` marca los ids de autor imputados.
 
 ### Actualización y respaldos
 
 **Por defecto, cada corrida actualiza el país.** Borra los `thematic_<id>.json` de `{name}_backup/` y vuelve a consultar todos los ejes en OpenAlex.
-- La base se reconstruye con los resultados vigentes. Los estudios nuevos entran con la fecha de la corrida, y los que ya estaban en `{name}_db.xlsx` conservan su `retrieved_date`.
+- La base se reconstruye con los resultados vigentes. Los estudios nuevos entran con la fecha de la nueva, y los que ya estaban en `{name}_db.xlsx` conservan su `retrieved_date`.
 - Un estudio que la consulta nueva ya no devuelve, porque OpenAlex lo reclasificó o lo retiró, sale de la base.
-- La imputación de autores e instituciones y la clasificación con Claude se rehacen completas, con su costo. Las consultas de los ejes también se pagan de nuevo: ~USD 0.03 en Honduras y ~USD 0.24 en Ecuador.
+- La imputación de autores e instituciones y la clasificación con Claude se rehacen completas, con su costo.
 
 **`--no-update` reutiliza los respaldos.** Si `thematic_<id>.json` existe y está completo, ese eje no se vuelve a consultar. Úsalo para:
 - **retomar una corrida que falló:** los ejes que ya terminaron se leen de su respaldo y solo se consultan los que faltan;
 - **actualizar solo algunos ejes:** borra sus archivos y corre con `--no-update`;
 - **reproducir una corrida** a partir de su carpeta de respaldo.
 
-Para una corrida completamente nueva, sin fechas previas, usa otro `--name`.
+**Catálogo de tópicos.** La base relacional toma el subcampo, el campo y el dominio de cada estudio del catálogo de tópicos. OpenAlex puede reasignar un tópico a otro subcampo, así que el catálogo debe ser de la misma fecha que los registros de los estudios, por eso se guarda `topics_snapshot.json`.
 
-**Catálogo de tópicos.** La base relacional toma el subcampo, el campo y el dominio de cada estudio del catálogo de tópicos. OpenAlex puede reasignar un tópico a otro subcampo, así que el catálogo debe ser de la misma fecha que los registros de los estudios. Por eso `topics_snapshot.json` se descarga de la API (~USD 0.002) o se reutiliza según cómo se obtuvieron los ejes:
+Cada respaldo guarda la OQL con que se generó (`meta.pipeline_oql`), de tal manera que se garantice usar la misma consulta en cada actualización de un mismo reporte.
 
-| Situación de la corrida | `topics_snapshot.json` |
-|---|---|
-| Al menos un eje se consultó a OpenAlex (actualización por defecto, primera corrida, o con `--no-update` se borró algún `thematic_<id>.json`) | Se descarga de nuevo de la API |
-| Con `--no-update`, todos los ejes salen de respaldo y el catálogo existente vino de la API (`meta.source = "openalex_api"`) | Se reutiliza, sin costo; así una reejecución da el mismo resultado |
-| Con `--no-update`, todos los ejes salen de respaldo y el catálogo existente no tiene `meta.source` (versión anterior, tomada del snapshot de S3) | Se descarga de la API |
-| No existe | Se descarga de la API |
-
-Cada respaldo guarda la OQL con que se generó (`meta.pipeline_oql`). Con `--no-update`, si la OQL actual es distinta, porque cambiaron los tipos, el campo de búsqueda, las palabras clave o el stemming, el pipeline se detiene antes de consultar e indica qué respaldos borrar. Los respaldos creados antes de este control no tienen `pipeline_oql` y también detienen la corrida. Una actualización (por defecto) no hace este control, porque borra los respaldos antes de consultar.
-
-> **Los resultados cambian según la fecha de ejecución.** OpenAlex actualiza de forma continua su índice de búsqueda, sus registros (citas, tópicos, autores, afiliaciones) y su catálogo de instituciones. Por eso, la misma consulta puede devolver resultados distintos en distintos días, y esa variación no depende del pipeline ni se puede controlar desde aquí.
-
-> Para que un reporte sea reproducible:
-> - registra la fecha de extracción, que queda en `run_summary.json` y en los respaldos;
-> - conserva la carpeta `{name}_backup/`. Al volver a ejecutar con `--no-update` se obtienen los mismos estudios, sin pagar otra vez las consultas. Sin `--no-update`, la corrida actualiza y los respaldos se reemplazan.
+> **Los resultados cambian según la fecha de ejecución.** OpenAlex actualiza de forma continua su índice de búsqueda, sus registros (citas, tópicos, autores, afiliaciones) y su catálogo de instituciones. Por eso, la misma consulta puede devolver resultados distintos en distintos días, y esa variación no depende del pipeline.
 
 ## Costos y tiempos de referencia
 
-Honduras, 2019–2026, 20 ejes, 1.047 estudios finales (actualización completa del 2026-11-20):
+Honduras, 2019–2026, 20 ejes, 1.047 estudios finales (2026-11-20):
 
 | Concepto | Costo |
 |---|---|
+| OpenAlex: catálogo de tópicos y control de subcampos | ~USD 0.003 |
 | OpenAlex: consultas por eje | ~USD 0.03 |
 | OpenAlex: imputación de autores e instituciones | ~USD 0.09 |
 | Anthropic: clasificación de 812 instituciones con `claude-haiku-5-5` | ~USD 0.02 |
-| OpenAlex: catálogo de tópicos y control de subcampos | ~USD 0.003 |
 | **Total** | **~USD 0.14** |
-| **Tiempo total** | **~4 minutos** |
+| **Tiempo total** | **~3 minutos** |
 
-Tiempo por etapa:
+El costo crece con el número de estudios y de autores sin datos. Si el total de OpenAlex supera el saldo diario se debe ejecutar usando saldo prepagado.
 
-| Etapa | Tiempo |
-|---|---|
-| Clasificación con Claude | 105 s |
-| Publisher | 52 s |
-| Consultas por eje | 42 s |
-| Autores e instituciones | 19 s |
-| Resto | ~15 s |
+La comparación con Ecuador (16.033 estudios) y una estimación del costo por estudio están en [Ejemplo: replicación para Ecuador](#ejemplo-replicación-para-ecuador).
 
-El costo crece con el número de estudios y de autores sin datos. Si el total de OpenAlex supera el saldo diario se debe ejecutar el pipeline otro día o usar saldo prepagado.
-
-La comparación con Ecuador (16.021 estudios) y una estimación del costo por estudio están en [Ejemplo: replicación para Ecuador](#ejemplo-replicación-para-ecuador).
-
-## Validaciones y fallas
+## Validaciones del flujo
 
 - **Archivo de subcampos:** si sus ids no coinciden con los subcampos actuales de OpenAlex, el pipeline se detiene antes de consultar.
 - **Consultas inválidas:** antes de consultar, las OQL se validan con un endpoint gratuito. Si alguna es inválida, el pipeline se detiene sin gastar.
-- **Falla en un eje:** si la consulta de un eje falla, el pipeline se detiene. Hay que volver a ejecutarlo **con `--no-update`**: los ejes que ya terminaron se leen de su respaldo y solo se consultan los que faltan. Sin ese parámetro, la corrida borraría los respaldos y consultaría todo de nuevo.
+- **Falla en un eje:** si la consulta de un query (eje temático) falla, el pipeline se detiene. Hay que volver a ejecutarlo **con `--no-update`**: los ejes que ya terminaron se leen de su respaldo y solo se consultan los que faltan. Sin ese parámetro, la corrida borraría los respaldos y consultaría todo de nuevo.
 - **Falla en la imputación:** si una llamada falla, por ejemplo por falta de saldo, la imputación continúa sin ese dato. Las llamadas fallidas quedan registradas en `run_summary.json` y aparece un aviso en la consola.
-- **Límite de solicitudes por segundo:** la imputación hace las consultas a OpenAlex en paralelo (`OA_WORKERS` = 8 hilos). Para no exceder el límite de la clave, al iniciar se lee ese límite desde `/rate-limit`, que es gratuito, y todas las solicitudes pasan por un limitador común que usa 2/3 de él (`OA_RATE_SHARE`). Con una clave gratuita o prepagada, el límite es de 30/s y la tasa queda en 20/s. Si `/rate-limit` no responde, se usa 2/3 del límite sin clave (10/s). El margen absorbe los retrasos de la red y el uso simultáneo de la misma clave en otro programa.
+- **Límite de solicitudes por segundo:** la imputación hace las consultas a OpenAlex en paralelo (`OA_WORKERS` = 8 hilos). Para no exceder el límite de la clave, al iniciar se lee ese límite y todas las solicitudes pasan por un limitador común que usa 2/3 de él. Con una clave gratuita o prepagada, el límite es de 30/s y la tasa queda en 20/s. 
 - **Respuestas 429:** si OpenAlex rechaza una solicitud por el límite por segundo, se espera lo que indica `Retry-After` y se reintenta (hasta 10 veces), sin costo. Si la rechaza porque se agotó el saldo diario (`daily_budget`), no se reintenta y queda registrada como falla. Los demás errores 4xx, como un 400 por caracteres no válidos, tampoco se reintentan.
-- **Requisitos del equipo:** la paralelización no exige un computador especial. Los hilos pasan casi todo el tiempo esperando respuestas de la red, y el tráfico, de hasta 20 solicitudes/s con respuestas pequeñas, no supera unos pocos MB/s.
-- **Controles de consistencia:**
-  - **Alineación:** en cada estudio, las columnas de autores tienen el mismo número de elementos, y lo mismo ocurre con las de instituciones.
-  - **Llaves:** son únicas y no hay referencias rotas entre tablas.
-  - **Tópicos:** el tópico, subcampo, campo y dominio de cada estudio se comparan con el catálogo. No detiene la corrida: el número de estudios con diferencias queda en `run_summary.json` (`stages.database.studies_with_topic_differences`) y, si es mayor que 0, aparece un aviso en la consola. Con el catálogo alineado (ver **Catálogo de tópicos**) debería ser 0. Puede haber diferencias si OpenAlex reasignó tópicos entre la fecha de los registros de los estudios y la del catálogo.
 
-## Adaptaciones para países fuera de América Latina
-
-El pipeline supone un país de América Latina y el Caribe. Para otras regiones, revisa:
-
-| Qué | Dónde |
-|---|---|
-| Grupos de origen de las instituciones (`LAC`, `USA & Canada`, `Europe`…) y el prompt de clasificación | `inst_groups` y `system_prompt` en `src/bibliometrics/classification.py` |
-| Idiomas que se pueden detectar (inglés, español, portugués, francés, italiano y alemán) | `LANGUAGES` en `src/bibliometrics/config.py` |
-| Tipos de documento incluidos | `ALLOWED_TYPES` en `src/bibliometrics/config.py` |
-| Publishers asignados por dominio web | `DOMAIN_PUBLISHERS` en `src/bibliometrics/config.py` |
+- **Tópicos:** el tópico, subcampo, campo y dominio de cada estudio se comparan con el catálogo. Puede haber diferencias en esta estructura si OpenAlex reasignó tópicos entre la fecha de los registros de los estudios y la del catálogo. El número de estudios con diferencias queda en `run_summary.json` (`stages.database.studies_with_topic_differences`) y, si es mayor que 0, aparece un aviso en la consola. Con el catálogo alineado debería ser 0. 
 
 ## Estructura del código
 
@@ -292,13 +217,13 @@ El pipeline supone un país de América Latina y el Caribe. Para otras regiones,
 Iniciar.bat               abre la interfaz en Windows (doble clic)
 Iniciar.command           abre la interfaz en macOS (doble clic)
 data/                     queries por país y subcampos de interés
-scripts/app.py            interfaz gráfica (solo biblioteca estándar): entorno, claves y ejecución
+scripts/app.py            interfaz gráfica
 scripts/run_pipeline.py   orquesta las etapas y escribe las salidas
 src/bibliometrics/
-  config.py               constantes: variables, tipos, selects, modelo, columnas a eliminar
+  config.py               constantes: variables, tipos, selects, modelo
   utils.py                ids, listas unidas por ";" y normalización de nombres
   queries.py              lectura y validación del JSON, construcción de la OQL
-  openalex.py             cliente de la API (costo y fallas), catálogos de tópicos y subcampos
+  openalex.py             cliente de la API, catálogos de tópicos y subcampos
   works.py                resultados de OpenAlex -> tabla de estudios
   selection.py            filtro por subcampo y eliminación de duplicados
   enrichment.py           abstract, idioma y publisher
@@ -306,7 +231,7 @@ src/bibliometrics/
   classification.py       clasificación del origen de las instituciones con Claude
   database.py             archivo de estudios y tablas de la base relacional
   export.py               escritura de Excel y JSON
-notebooks/test_oql.ipynb  desarrollo y justificación de cada decisión metodológica
+notebooks/test_oql.ipynb  pruebas y justificación de decisiones metodológica
 outputs/                  salidas
 ```
 
@@ -318,85 +243,64 @@ Ecuador se replicó a partir de `docs/Reporte bibliografico Ecuador 2019-2026.pd
 
 ### Paso 1: `data/queries_ecuador.json`
 
-La tabla se pasó al formato de `queries_honduras_ET.json` con estas decisiones:
+La tabla se pasó al formato de `queries_honduras.json` con estas decisiones:
 
 | Decisión | Detalle |
 |---|---|
 | `pillar` | El "Área prioritaria" del reporte (p. ej. `"1. Promoción de la inversión privada"`). |
-| `thematic_id` | 4 dígitos: área · objetivo estratégico · resultado esperado · eje. Honduras usa 3 porque cada resultado tiene un solo eje; en Ecuador varios resultados tienen 2 o 3 ejes. Por ejemplo, `1121` (Logística e infraestructura de transporte) y `1122` (Comercio exterior e integración comercial) son los dos ejes del resultado 1.1.2. |
+| `thematic_id` | 4 dígitos: área · objetivo estratégico · resultado esperado · eje. Honduras usa 3 porque cada resultado tiene un solo eje; en Ecuador varios resultados tienen 2 o 3 ejes.|
 | `country_terms` | `Ecuador`, los gentilicios en inglés y español (`Ecuadorian`, `ecuatoriano`, `ecuatorianas`…) y sus variantes `afroecuatoriano…`, igual que en Honduras. |
 | Palabras clave | Cada término separado por `/` o `;` en la tabla es una palabra clave. Se quitaron los duplicados dentro de cada eje, incluidas las variantes de mayúsculas o singular/plural que el stemming ya iguala. |
 | Notas del reporte | Se agregaron las variantes británicas `labour` en Regulación laboral, como indica la nota del reporte, y las "Other key words" de 3.1.1 quedaron en el mismo eje. |
 | Erratas | Se corrigieron erratas evidentes del PDF (`digitalizacíon`, `subministro`, `evasion`…) y las tildes de los nombres de los ejes. |
 
-Para revisar el JSON antes de ejecutar, sin costo:
 
-```
-.venv\Scripts\python.exe -c "import sys; sys.path.insert(0, 'src'); from bibliometrics.queries import load_queries, build_thematics_df; t = build_thematics_df(load_queries('data/queries_ecuador.json')); print(t[['thematic_id', 'thematic_axis', 'n_keywords']])"
-```
-
-Esto revisa los campos obligatorios y que los ids sean únicos, y muestra el número de palabras clave de cada eje. La validez de cada OQL la revisa el pipeline al iniciar, con el endpoint gratuito.
 
 ### Paso 2: `data/subfields_tagged_ecuador.xlsx`
 
-Se partió de una copia del archivo de Honduras. Se revisó `interest_subfield` contra los ejes de Ecuador y se reescribió `justificacion` con los `thematic_id` de Ecuador (p. ej. `2131 Agua potable y saneamiento`). Quedaron 73 subcampos de interés, frente a 86 en Honduras:
+Se partió de una copia del archivo de Honduras. Se revisó `interest_subfield` contra los ejes de Ecuador y se reescribió `justification` con los ejes temáticos propios.
 
-| Cambio | Subcampos | Motivo |
-|---|---|---|
-| 0 → 1 | 1705 Computer Networks and Communications | Eje 1131, conectividad e infraestructura digital |
-| 1 → 0 | 2706, 2711, 3604 (cuidados intensivos y urgencias) | Ecuador apunta a la atención primaria, no a la capacidad hospitalaria |
-| 1 → 0 | 2717, 2729, 2735, 2916 (geriatría, obstetricia, pediatría, nutrición) | Ecuador no tiene ejes de población vulnerable ni de protección social, y la salud materna e infantil no está entre las palabras clave de atención primaria |
-| 1 → 0 | 3314, 3316 (antropología, estudios culturales) | Ecuador no tiene un eje de pueblos indígenas |
-| 1 → 0 | 2405, 2725 (parasitología, enfermedades infecciosas) | El reporte de Ecuador descartó a mano estos tópicos |
-| 1 → 0 | 1908, 2202, 3307 (geofísica, ingeniería aeroespacial, ergonomía) | Ningún eje de Ecuador los cubre |
 
-En la columna `justificacion`, las filas que pasaron a 0 explican el cambio, y las asignaciones inciertas llevan la marca `dudoso` para que el experto las revise primero.
+### Prompts de ejemplo para un chat de IA (ChatGPT, Claude, Gemini, etc)
 
-### Prompts de ejemplo para un chat de IA
-
-**Prompt A: archivo de queries.** Adjunta el PDF del reporte del país y `data/queries_honduras_ET.json`.
+**Prompt A: archivo de queries.** Adjunta el PDF/XLSX que contiene los ejes temáticos y palabras claves asociadas al reporte del país y `data/queries_honduras.json`.
 
 ```
-Adjunto el reporte bibliométrico de <PAÍS> (PDF) y un archivo de queries de ejemplo (queries_honduras_ET.json).
-Genera queries_<pais>.json con exactamente el mismo formato, a partir de la tabla de la sección
-"2. Definición de palabras clave" del reporte.
+Adjunto los pilares, objetivos estratégicos, ejes temáticos y palabras clave para el reporte bibliométrico de <PAÍS> en el documento <NOMBRE DOCUMENTO> (PDF/XLSX) y un archivo de queries de ejemplo (queries_honduras.json).
+Genera queries_<pais>.json con exactamente el mismo formato, a partir de la tabla en <SECCIÓN EN DOCUMENTO O HOJA DEL EXCEL>
 
 Reglas:
-1. meta: country en inglés, start_year y end_year del período del reporte, una description breve y
-   country_terms con el nombre del país y sus gentilicios en inglés y español, con variantes de género
-   y número (y "afro" si aplica).
-2. Una entrada en thematics por cada eje temático de la tabla. pillar = área prioritaria (o pilar),
-   strategic_objective = objetivo estratégico, expected_result = resultado esperado, thematic_axis =
-   nombre del eje. Escribe los numerales con punto final ("1.1.", "1.1.1.").
-3. thematic_id: texto que siga la jerarquía (pilar, objetivo, resultado y, si un resultado tiene varios
-   ejes, un dígito más para el eje). Todos deben ser únicos.
-4. keywords: cada término separado por "/" o ";" en la tabla es un elemento de la lista, en inglés y
-   español. Elimina duplicados dentro de cada eje (sin distinguir mayúsculas ni singular/plural).
-   Respeta las notas de la tabla (p. ej. variantes ortográficas como "labor"/"labour") y corrige erratas
-   evidentes.
-5. Si una celda del PDF continúa en la página siguiente, asigna el eje al resultado esperado que corresponde.
+1. meta: country en inglés, start_year y end_year del período del reporte, una description breve, y country_terms con el nombre del país y sus gentilicios en inglés y español, con variantes de género (y étnias comunes si aplica).
 
-Devuelve el JSON completo y, aparte, una lista breve de las decisiones que tomaste (erratas
-corregidas, términos agregados o eliminados, asignaciones dudosas).
+2. Una entrada en thematics por cada eje temático de la tabla. pillar = área prioritaria (o pilar), strategic_objective = objetivo estratégico, expected_result = resultado esperado, thematic_axis = nombre del eje. 
+Escribe los numerales con punto final ("1.1.", "1.1.1.").
+
+3. thematic_id: texto que siga la jerarquía (pilar, objetivo, resultado y, si un    resultado tiene varios ejes, un dígito más para el eje). Todos deben ser únicos.
+
+4. keywords: cada término separado por "/" o ";" en la tabla es un elemento de la lista, en inglés y español. 
+Elimina duplicados dentro de cada eje (sin distinguir mayúsculas ni singular/plural).
+Respeta las notas de la tabla y corrige erratas evidentes.
+
+5. Si la tabla está en PDF y una celda continúa en la página siguiente, asigna el eje al resultado esperado que corresponde.
+
+Devuelve el JSON completo y, aparte, una lista breve de las decisiones que tomaste (erratas corregidas, términos agregados o eliminados, asignaciones dudosas).
+
 ```
 
 **Prompt B: subcampos de interés.** Adjunta el JSON generado y el Excel de subcampos de un país con ejes parecidos (p. ej. `data/subfields_tagged_ecuador.xlsx`).
 
 ```
-Adjunto el archivo de queries de <PAÍS> (ejes temáticos con thematic_id y palabras clave) y un Excel
-con los 252 subcampos de OpenAlex (id, name, description, field), etiquetados para otro país en la
-columna interest_subfield (1 = se conserva, 0 = se descarta).
+Adjunto el archivo de queries de <PAÍS> queries_<pais>.json (ejes temáticos con thematic_id y palabras clave) y un Excel con los 252 subcampos de OpenAlex (id, name, description, field), etiquetados para otro país en la columna interest_subfield (1 = se conserva, 0 = se descarta).
 
-Revisa cada subcampo para <PAÍS>: marca 1 si es probable que un estudio de ese subcampo trate alguno
-de los ejes temáticos, y 0 si no. En justificacion, para cada 1 escribe los thematic_id y ejes que lo
-justifican (p. ej. "2131 Agua potable y saneamiento"); agrega "; dudoso" si la asignación es incierta.
-Para cada subcampo que cambie de valor respecto del archivo original, explica el motivo.
+Revisa cada subcampo para <PAÍS>: marca 1 si es probable que un estudio de ese subcampo trate alguno de los ejes temáticos del archivo de queries, y 0 si no. 
 
-Devuelve una tabla con las columnas id, name, interest_subfield y justificacion para los 252 subcampos,
-y aparte la lista de subcampos que cambiaron de valor.
+En justificacion, para cada 1 escribe los thematic_id y ejes que lo
+justifican (p. ej. "2131 Agua potable y saneamiento") junto a una muy breve explicación; agrega "; dudoso" si la asignación es incierta.
+
+Devuelve una tabla con las mismas columnas del excel de entrada para los 252 subcampos.
 ```
 
-Un experto debe revisar los dos resultados antes de ejecutar.
+Los resultados deben revisarse antes de proceder.
 
 ### Paso 3: ejecución
 
@@ -404,41 +308,19 @@ Un experto debe revisar los dos resultados antes de ejecutar.
 .venv\Scripts\python.exe scripts\run_pipeline.py data\queries_ecuador.json --subfields data\subfields_tagged_ecuador.xlsx --name bibliometrics_ecuador
 ```
 
-Resultado (2026-11-19): de 22.350 estudios recuperados en los 22 ejes, 18.733 pasaron el filtro de subcampos y quedaron 16.021 después de eliminar duplicados, con 2.330 instituciones clasificadas. Hubo una llamada fallida (código 400, un nombre de autor con caracteres que la API no acepta), sin impacto en los resultados.
+Resultado (2026-11-20): de 22.288 estudios recuperados en los 22 ejes, 18.749 pasaron el filtro de subcampos y quedaron 16.033 después de eliminar duplicados, con 2.341 instituciones clasificadas.
 
-Con la versión actual del pipeline (2026-11-20, mismos respaldos de ejes) se obtuvieron los mismos 16.021 estudios, con 2.333 instituciones y sin llamadas fallidas. El filtro de nombres buscó 105 candidatos en vez de 6.668 y conservó todas las coincidencias reales. Solo se perdió una falsa, el título "PhD" leído como autor. Las demás diferencias en instituciones, 0,09 % de los pares estudio-institución, vienen de afiliaciones que OpenAlex actualizó de un día a otro.
 
-### Costos: Honduras y Ecuador
-
-Con la versión actual del pipeline (filtro de nombres, consultas en paralelo y sin Europe PMC):
+### Costos de referencia: Honduras vs Ecuador
 
 | Concepto | Honduras | Ecuador |
 |---|---|---|
 | Ejes temáticos | 20 | 22 |
-| Estudios recuperados / finales | 1.442 / 1.047 | 22.350 / 16.021 |
-| OpenAlex: consultas por eje | USD 0.03 | USD 0.24 |
-| OpenAlex: imputación de autores e instituciones | USD 0.09 | USD 1.16 |
+| Estudios recuperados / finales | 1.442 / 1.047 | 22.288 / 16.033 |
+| OpenAlex: consultas por query | USD 0.03 | USD 0.23 |
+| OpenAlex: imputación de autores e instituciones | USD 0.09 | USD 1.14 |
 | OpenAlex: catálogo de tópicos y control de subcampos | USD 0.003 | USD 0.003 |
-| Anthropic: clasificación de instituciones | USD 0.02 (812) | USD 0.06 (2.333) |
-| **Total** | **USD 0.14** | **USD 1.46** |
+| Anthropic: clasificación de instituciones | USD 0.02 (812) | USD 0.06 (2.341) |
+| **Total** | **USD 0.14** | **USD 1.43** |
 | Costo por 1.000 estudios finales | USD 0.13 | USD 0.09 |
-| Tiempo | ~4 minutos | ~23 minutos |
-
-Tiempos de Ecuador:
-- Las consultas por eje, ~11 minutos, se midieron en la corrida del 2026-11-19, con las mismas OQL. La corrida del 2026-11-20 leyó los ejes de su respaldo y tardó 12 minutos.
-- El resto se reparte así: clasificación con Claude 5 min, publisher 5 min, autores e instituciones 1,6 min y abstracts 16 s.
-
-Antes de estos cambios, Ecuador costaba USD 8.22 y tardaba ~2 horas 15 minutos. Casi todo era la búsqueda de 6.668 nombres como instituciones, hecha una por una.
-
-### Estimación de costo por estudio
-
-Con los datos de ambas corridas:
-
-| Componente | Estimación |
-|---|---|
-| Consultas por eje (OpenAlex) | USD 0.001 por página de 100 resultados, con al menos una página por eje: ~USD 0.01–0.02 por 1.000 estudios recuperados. |
-| Imputación de autores e instituciones (OpenAlex) | ~USD 0.07–0.09 por 1.000 estudios finales, el 60–80 % del costo. Lo que más pesa son las búsquedas de autores sin identificador en estudios sin instituciones (USD 0.001 cada una: 57 en Honduras, 933 en Ecuador). Las búsquedas de autores como institución pasan el filtro de nombres y son pocas (17 y 105). El monto exacto se anuncia antes de gastarlo (ver [Revisar el saldo de OpenAlex](#3-revisar-el-saldo-de-openalex)). |
-| Clasificación de instituciones (Anthropic) | ~USD 0.024 por 1.000 instituciones. |
-| **Regla práctica** | **~USD 0.10 por 1.000 estudios finales** (promedio ponderado de ambas corridas: USD 1.60 / 17.068 estudios). |
-
-Por ejemplo, un país con ~15.000 estudios finales costaría ~USD 1.40 y tardaría ~20–25 minutos. Ese costo supera el presupuesto diario de OpenAlex (USD 1), así que hace falta saldo prepagado (ver [Revisar el saldo de OpenAlex](#3-revisar-el-saldo-de-openalex)).
+| Tiempo | ~3 minutos | ~25 minutos |

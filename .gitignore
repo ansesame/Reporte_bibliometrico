@@ -31,3 +31,4 @@ docs/*
 !docs/*.md
 !docs/diccionario_works_openalex.xlsx
 !docs/diccionario_bibliometrics_bd.xlsx
+!docs/Metodologia_bibliometria.pdf
