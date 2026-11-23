@@ -194,7 +194,7 @@ Un mismo estudio puede aparecer en varias consultas (si coincide con varios ejes
 
 1. **Identificador de OpenAlex** (`id`).
 2. **DOI** (*Digital Object Identifier*, identificador permanente de una publicación).
-3. **Título normalizado** (minúsculas, espacios simplificados), solo si tiene **4 palabras o más**. Así no se fusionan títulos genéricos como "Honduras" o "Introduction".
+3. **Título normalizado** (minúsculas, sin tildes ni signos de puntuación, espacios simplificados), solo si el título original tiene **4 palabras o más**. Así no se fusionan títulos genéricos como "Honduras" o "Introduction".
 
 En cada paso se ignoran los valores vacíos.
 

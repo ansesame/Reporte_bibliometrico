@@ -32,9 +32,12 @@ def filter_interest_subfields(studies, subfields):
 
 
 def title_key(titles, min_words=4):
-    ''' Normalized title as duplicate key, NaN for generic titles with less than min_words '''
-    titles = titles.str.casefold().str.replace(r'\s+', ' ', regex=True).str.strip()
-    return titles.where(titles.str.split(' ').str.len() >= min_words)
+    ''' Normalized title as duplicate key: casefold, without accents, punctuation or extra spaces.
+    NaN for generic titles with less than min_words (counted on the original whitespace-separated words) '''
+    words = titles.str.split().str.len()
+    titles = (titles.str.normalize('NFKD').str.replace(r'[\u0300-\u036f]', '', regex=True)
+              .str.casefold().str.replace(r'[\W_]+', ' ', regex=True).str.strip())
+    return titles.where((words >= min_words) & (titles != ''))
 
 
 def dedup_step(df, key):

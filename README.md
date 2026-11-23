@@ -198,7 +198,7 @@ Honduras, 2019–2026, 20 ejes, 1.047 estudios finales (2026-11-20):
 
 El costo crece con el número de estudios y de autores sin datos. Si el total de OpenAlex supera el saldo diario se debe ejecutar usando saldo prepagado.
 
-La comparación con Ecuador (16.033 estudios) y una estimación del costo por estudio están en [Ejemplo: replicación para Ecuador](#ejemplo-replicación-para-ecuador).
+La comparación con Ecuador (16.014 estudios) y una estimación del costo por estudio están en [Ejemplo: replicación para Ecuador](#ejemplo-replicación-para-ecuador).
 
 ## Validaciones del flujo
 
@@ -308,7 +308,7 @@ Los resultados deben revisarse antes de proceder.
 .venv\Scripts\python.exe scripts\run_pipeline.py data\queries_ecuador.json --subfields data\subfields_tagged_ecuador.xlsx --name bibliometrics_ecuador
 ```
 
-Resultado (2026-11-20): de 22.288 estudios recuperados en los 22 ejes, 18.749 pasaron el filtro de subcampos y quedaron 16.033 después de eliminar duplicados, con 2.341 instituciones clasificadas.
+Resultado (2026-11-20): de 22.288 estudios recuperados en los 22 ejes, 18.749 pasaron el filtro de subcampos y quedaron 16.014 después de eliminar duplicados, con 2.341 instituciones clasificadas.
 
 
 ### Costos de referencia: Honduras vs Ecuador
@@ -316,7 +316,7 @@ Resultado (2026-11-20): de 22.288 estudios recuperados en los 22 ejes, 18.749 pa
 | Concepto | Honduras | Ecuador |
 |---|---|---|
 | Ejes temáticos | 20 | 22 |
-| Estudios recuperados / finales | 1.442 / 1.047 | 22.288 / 16.033 |
+| Estudios recuperados / finales | 1.442 / 1.047 | 22.288 / 16.014 |
 | OpenAlex: consultas por query | USD 0.03 | USD 0.23 |
 | OpenAlex: imputación de autores e instituciones | USD 0.09 | USD 1.14 |
 | OpenAlex: catálogo de tópicos y control de subcampos | USD 0.003 | USD 0.003 |
