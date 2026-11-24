@@ -1,6 +1,6 @@
 # Metodología del análisis bibliométrico
 
-**Fecha del documento**: 2026-11-20
+**Fecha del documento**: 2026-11-23
 
 Este documento describe la metodología implementada en el flujo de procesamiento de datos para la automatización del reporte bibliométrico. A manera explicativa la metodología se desarrollará en torno al caso del Reporte bibliométrico de Honduras (2019-2026), pero los diferentes pasos metodológicos se extienden para la replicación de cualquier país.
 
@@ -13,8 +13,10 @@ A continuación se muestra cómo se construyen `bibliometrics_honduras.xlsx` y `
 3. [Flujo general](#3-flujo-general)
 4. [Etapas del proceso](#4-etapas-del-proceso)
 5. [Archivos de salida y diccionario de variables](#5-archivos-de-salida-y-diccionario-de-variables)
-6. [Costos y reproducibilidad](#6-costos-y-reproducibilidad)
-7. [Limitaciones](#7-limitaciones)
+6. [Limitaciones](#6-limitaciones)
+7. [Comparación con reportes manuales](#7-comparación-con-los-reportes-manuales)
+
+[Anexo A. Comparación por eje temático y objetivo estratégico](#anexo-a-comparación-por-eje-temático-y-objetivo-estratégico)
 
 ---
 
@@ -526,4 +528,206 @@ erDiagram
 - **Cobertura institucional.** 222 estudios de Honduras (21,2 %) quedan sin instituciones, sobre todo documentos cuyos autores no tienen perfil o afiliaciones en OpenAlex. Los indicadores por origen institucional se calculan sobre los estudios con instituciones.
 - **Imputación de autores.** La regla elegida tiene una precisión estimada del 95 %, pero solo recupera ~30 % de los autores sin identificador.
 - **Clasificación de instituciones con un modelo de lenguaje.** No se validó manualmente de forma exhaustiva. Puede haber errores en instituciones con poca información (sin país o con nombres ambiguos). Además, el modelo no es determinista por lo que los conteos por grupo pueden variar ligeramente entre ejecuciones.
+
+---
+
+## 7. Comparación con reportes manuales
+
+Antes del flujo automatizado descrito previamente, el procesamiento de los reportes bibliométricos se realizaba a mano. Esta sección compara las bases finales del flujo con las de los reportes manuales de Honduras y Ecuador. A continuación una tabla comparativa entre las estrategias utilizadas y los estudios recuperados.
+
+
+| | Honduras manual | Honduras automatizado | Ecuador manual | Ecuador automatizado |
+|---|---|---|---|---|
+| Consultas | 8 (por objetivo estratégico) | 20 (una por eje) | 22 (una por eje) | 22 (una por eje) |
+| Términos de país | "Honduras" | 11 términos incluyendo nombre y gentilicios en español e inglés | "Ecuador" | 11 términos incluyendo nombre y gentilicios en español e inglés |
+| Palabras clave | Frases exactas | Se plica *stemming* (plurales, conjugaciones) | Frases exactas | Se aplica *stemming* (plurales, conjugaciones) |
+| Resultados brutos | 1.521 | 1.442 | 13.802 | 22.288 |
+| Obras únicas en los resultados brutos | No informado | 1.291 | No informado | 19.487 |
+| Filtro temático | Exclusión de tópicos no pertinentes con revisión manual de estudios | Selección de subcampos de interés por definición | Revisión manual, con título y abstract, de las publicaciones en tópicos menos pertinentes | Selección de subcampos de interés por definición |
+| Tras el filtro temático | No informado | 1.192 | No informado | 18.749 |
+| Base final | 1.187 | 1.047 | 11.595 | 16.014 |
+| Fecha de resultados* | 2026-07-01 | 2026-11-20 | 2026-10-24 | 2026-11-20 |
+
+*Para los reportes manuales se presenta la fecha de publicación de resultados que es tiempo después de la fecha de la búsqueda en OpenAlex.
+
+
+### 7.1 Análisis de variables
+
+La siquiente tabla compara las variables recuperadas o definidas en cada caso. Las características compartidas se distinguen entre aquellas comparten su definición, y las que tienen un objetico parecido o que una deriva a la otra (por ejemplo puntade de relevanvia construye ranking de relevancia).
+
+| | Honduras | Ecuador |
+|---|---|---|
+| Columnas del manual | 37 | 24 |
+| Columnas del flujo automatizado | 48 | 48 |
+| Características compartidas | 17 | 20 |
+| Caracerísticas con la misma definición | 13 | 17 |
+| Caracerísticas con definición parecida o derivables | 4 | 3 |
+| Solo en el manual | 0 | 3 |
+| Solo en el flujo automatizado | 32 | 28 |
+
+
+Para Honduras, todas las características del proceso manual están cubiertas por el flujo automatizado, mientras que en Ecuador el proceso manual es el único en tener "Concepto" de OpenAlex, un identificador interno y una columna de citeciones vacía. En ambos países, el flujo guarda información adicional de la jerarquía completa del tópico, Objetivos de Desarrollo Sotenible (ODS), detalles del acceso abierto, institución raíz y columnas de trazabilidad de imputaciones.
+
+Además, se debe tener presente que existen columnas que comparten el mismo nombre pero diferente definición. Las "keywords" de los reportes manuales son los "conceptos" de OpenAlex, diferente a las palabras clave de los estudios. También, la pertinencia de los estudios según OpenAlex se toma del ranking de cada OQL, mientras en el flujo automatizado se usa el puntaje de relavancia, variable con que se ordena el ranking.
+
+
+### 7.2   Análisis de duplicados
+
+Antes de revisar los estudios que comparten ambas aproximaciones se realiza una revisión de duplicados en los reportes manuales siguiendo los criterios usados en el flujo, OpenAlex ID, DOI y título. Los títulos se comparan normalizados y solo si tienen 4 palabras o más. Los identificadores se comparan sin esa restricción. La siguiente tabla muestra las llaves por las cuales se encontraron duplicados, los estudios duplicados suceden a causa de que en el reporte manual se prioriza el doi, sin tener en cuenta posibles variaciones entre consultas a OpenAlex.
+
+| Base · llave | Filas | Filas en duplicados | LLaves únicas | Filas a eliminar |
+|---|---|---|---|---|
+| Honduras manual · título | 1.187 | 93 | 39 | 54 |
+| Ecuador manual · título | 11.595 | 907 | 445 | 462 |
+| Ecuador manual · OpenAlex ID | 11.595 | 624 | 307 | 317 |
+
+
+Al desagregar por tipo de estudios se encuentra que en Honduras estos duplicados se concentran de "dataset", donde 33 de las 48 filas son duplicados. Esto puede deberse a que repositorios como Zenodo o Mendeley Data asignan un DOI nuevo a cada versión de un conjunto de datos, por lo que el reporte manual conserva cada versión como una fila aparte. En el caso de Ecuador, la proporción de conjuntos de datos duplicados es del 26%, pero en terminos absolutos se identifican 723 filas duplicadas, la regla manual exigía el mismo DOI, autor, título y año, así que deja pasar registros que el flujo automatizado fusiona.
+
+### 7.3 Estudios compartidos y exclusivos
+
+| | Honduras | Ecuador |
+|---|---|---|
+| Estudios del flujo que también están en el manual | 648 de 1.047 (62 %) | 9.221 de 16.014 (58 %) |
+| Filas del manual que cruzan con el flujo | 657 de 1.187 (55 %) | 9.467 de 11.595 (82 %) |
+| Filas solo en el manual | 530 | 2.128 |
+| Estudios solo en el flujo | 399 | 6.793 |
+
+Las filas del manual que cruzan son más que los estudios en ambas bases porque el manual repite estudios. Varias filas del manual pueden cruzar con un mismo estudio del flujo.
+
+- **Honduras.**
+  - Lo que solo está en el manual se concentra en el objetivo estratégico 2.2: 51,9 % de ese grupo, frente a 4,8 % de lo que solo trae el flujo.
+  - Lo que solo trae el flujo se concentra en publicaciones de 2026 (31,8 %).
+- **Ecuador.**
+  - Lo que solo trae el flujo tiene muchas más tesis que el resto: 29,2 %, frente a 12,4 % entre los estudios de ambas bases. También tiene más publicaciones de 2026 (29,6 %).
+  - Lo que solo está en el manual se sobrerrepresenta en el objetivo estratégico 2.1 (31,3 %).
+
+**La coincidencia real es algo mayor que la que da la llave de cruce.**
+- En Ecuador, 327 filas del manual tienen OpenAlex ID pero no cruzan por él. Esas filas sí coinciden por título con 176 estudios del flujo.
+- Además, 261 filas del manual aparecen en el flujo con otro identificador (sección 7.7).
+- Ambas cosas indican que OpenAlex fusionó registros o cambió identificadores entre las dos extracciones.
+
+#### 7.3.1 Concordancia en los estudios que coinciden
+
+Para cada fila del manual que cruzó se comparan el año, el tipo, el objetivo estratégico, el eje temático (si alguno coincide) y las citas.
+
+| | Honduras | Ecuador |
+|---|---|---|
+| Filas cruzadas | 657 | 9.467 |
+| Mismo año | 98,6 % | 99,3 % |
+| Mismo tipo de documento | 91,9 % | 99,7 % |
+| Mismo objetivo estratégico | 92,4 % | 96,1 % |
+| Algún eje temático en común (% de las que tienen eje)* | 96,0 % | 96,0 % |
+| Citas: flujo ≥ manual | 97,6 % | 99,2 % |
+
+*Para Honduras solo 503 de las 767 filas que curzan tienen eje temático asignado
+
+En los estudios que coinciden, los metadatos concuerdan. Las citas del flujo suelen ser iguales o algo mayores porque su extracción es más reciente.
+
+### 7.3.2 Estudios que solo trae el flujo automatizado
+
+A cada estudio que solo trae el flujo se le asignó una causa principal, la primera que se cumple en este orden:
+
+1. el registro se creó en OpenAlex después del reporte manual.
+2. el título o el abstract solo mencionan una variante del país, no su nombre.
+3. no aparece ningún término de país en el título ni en el abstract disponibles.
+4. no contiene ninguna palabra clave del eje como frase exacta, así que probablemente entró por el *stemming*.
+5. cumple el nombre del país y una palabra clave exacta.
+
+En Honduras la principal la razón de estudios en flujo y no manual es el tiempo, en cambio en Ecuador hay un efecto grande del uso de variantes del país y el stemming.
+
+En ambos casos, usar o no stemming y variaciones del país, no se garantiza que los estudios sean de "interés", para ello debería definirse este criterio.
+
+De todas formas un porcentaje alto de los estudios depende únicamente de cambios en el algoritmo de OpenAlex, tanto en estudios de solo manual, como solo flujo
+
+**Honduras.**
+- **Registros nuevos.** De los 399 estudios que solo trae el flujo, 157 (39,3 %) se crearon en OpenAlex después del 2026-07-01, casi todos publicados en 2026, y pueden ser más porque la fecha de extracción de la informació fue previa publicación.
+- **País y palabra clave exacta.** Otros 189 (47,4 %) cumplen ambas condiciones. Corresponden a diferencias en las palabras clave (el manual buscó por objetivo estratégico y el flujo por eje), actualizaciones de OpenAlex o a la depuración manual.
+
+**Ecuador.** 
+El flujo encuentra más estudios sobre todo porque sus consultas son más amplias desde el inicio:
+- Los brutos son 22.288, frente a 13.802 (×1,61), y son mayores en los 22 ejes. Las brechas más fuertes están en Logística e infraestructura de transporte (×5,9) y en Productividad, innovación y cadenas productivas (×1,9) (Anexo A).
+- El 30,8 % de los estudios que solo trae el flujo no menciona "Ecuador", sino variantes como "ecuatoriano/a" o "Ecuadorian". Entre los estudios de ambas bases, esa proporción es 0,2 %, lo que confirma que la consulta manual, que solo usó el nombre del país, no los capta. Es la causa principal del 27,8% de los 6793 estudios que solo trae el flujo, seguido en un 20% por no contener ninguna palabra clave exacta, sugerencia de stemming, y con un 18.3% por estudios creados en OpenAlex después de 2026-10-24, sobre todo publicaciones de 2025 y 2026.
+
+### 7.4 Estudios que solo están en el manual
+
+Cada fila que solo está en el manual se buscó en los resultados brutos del flujo, antes del filtro de subcampo y de la eliminación de duplicados, y se clasificó según la etapa en que se perdió:
+- **(a)** Ninguna consulta del flujo automnatizado la recuperó.
+- **(b)** Se recuperó, pero su subcampo no es de interés y la eliminó el filtro.
+- **(c)** Se recuperó y pasó el filtro, pero se eliminó como duplicado de otro registro.
+- **(d)** Está en la base del flujo automatizado, pero con otro identificador o título (por ejemplo, porque OpenAlex fusionó registros).
+
+**Honduras: 530 filas que solo están en el manual**
+
+| Etapa | n | % |
+|---|---|---|
+| (a) No recuperada por las consultas del flujo | 395 | 74,5 % |
+| (b) Recuperada; eliminada por el filtro de subcampo | 109 | 20,6 % |
+| (c) Recuperada; eliminada como duplicado de otro registro | 4 | 0,8 % |
+| (d) En la base del flujo con otro identificador o título | 22 | 4,2 % |
+
+**Ecuador: 2.128 filas que solo están en el manual**
+
+| Etapa | n | % |
+|---|---|---|
+| (a) No recuperada por las consultas del flujo | 409 | 19,2 % |
+| (b) Recuperada; eliminada por el filtro de subcampo | 1.385 | 65,1 % |
+| (c) Recuperada; eliminada como duplicado de otro registro | 72 | 3,4 % |
+| (d) En la base del flujo con otro identificador o título | 261 | 12,3 % |
+
+**Honduras: la mayor parte de lo que falta nunca entró a las consultas del flujo.**
+- Los no recuperados se concentran en el objetivo estratégico 2.2: 261 de 395. La búsqueda manual de ese objetivo incluyó el término suelto "resiliencia" / "resilience", que aparece en 105 de los 395. El flujo restringe ese término a "resiliencia ante choques" / "shock resilience". Por eso el objetivo 2.2 tiene 338 estudios en el manual y 53 en el flujo.
+- El 26 % de los no recuperados no menciona "Honduras" en el título ni en el abstract. El reporte manual no indica el campo de búsqueda, así que pudo deberse a cambios en OpenAlex o usar la busqueda por palabras clave y texto completo.
+
+**Ecuador: lo que falta se perdió sobre todo en el filtro de subcampo.**
+- El filtro eliminó 1.385 estudios del manual, el 65 % de los que solo están en el manual. Vienen sobre todo de los subcampos Tourism, Leisure and Hospitality Management; Marketing; Communication; y Plant Science; descripciones no cubiertas en los objetivos estrategicos del país
+- Además, la deduplicación manual, más laxa, infla el manual con 462 filas repetidas por título.
+
+---
+
+## Anexo A. Comparación por eje temático y objetivo estratégico
+
+**Ecuador, por eje temático.** Las dos aproximaciones hicieron una consulta por eje, así que los resultados se pueden comparar eje por eje.
+- La razón es el valor del flujo dividido entre el del manual. Por ejemplo, una razón de brutos de 1,5 indica que el flujo recuperó 50 % más registros que el manual en ese eje.
+- En las bases finales, el flujo asigna a un estudio todos los ejes de su objetivo estratégico en los que apareció, así que la suma de ejes (17.238) supera los 16.014 estudios.
+- La tabla está ordenada por la razón de brutos.
+
+| Eje | Nombre | Palabras clave del flujo | Brutos manual (PDF) | Brutos flujo | Razón brutos | Final manual | Final flujo | Razón final |
+|---|---|---|---|---|---|---|---|---|
+| 1121 | Logística e infraestructura de transporte | 34 | 362 | 2.148 | 5,93 | 336 | 1.000 | 2,98 |
+| 1112 | Productividad, innovación y cadenas productivas | 18 | 798 | 1.481 | 1,86 | 698 | 1.106 | 1,58 |
+| 3113 | Gestión de inversión y riesgos fiscales | 16 | 129 | 218 | 1,69 | 116 | 150 | 1,29 |
+| 1111 | Entorno de negocios e inversión | 29 | 3.247 | 5.332 | 1,64 | 2.473 | 4.228 | 1,71 |
+| 3111 | Gestión fiscal y macroeconomía | 48 | 414 | 659 | 1,59 | 369 | 568 | 1,54 |
+| 1122 | Comercio exterior e integración comercial | 22 | 417 | 640 | 1,53 | 381 | 477 | 1,25 |
+| 1142 | Financiamiento de vivienda | 14 | 101 | 155 | 1,53 | 94 | 143 | 1,52 |
+| 3231 | Prevención del reclutamiento y violencia juvenil | 36 | 89 | 135 | 1,52 | 83 | 107 | 1,29 |
+| 1141 | Mercados financieros, financiamiento productivo e inclusión financiera | 36 | 405 | 594 | 1,47 | 369 | 531 | 1,44 |
+| 3221 | Lavado de activos y flujos financieros ilícitos | 20 | 150 | 220 | 1,47 | 126 | 159 | 1,26 |
+| 3232 | Prevención del crimen | 27 | 907 | 1.323 | 1,46 | 809 | 1.151 | 1,42 |
+| 2111 | Empleabilidad e inserción laboral | 48 | 1.632 | 2.383 | 1,46 | 1.396 | 1.864 | 1,34 |
+| 3211 | Control y gestión migratoria | 20 | 163 | 232 | 1,42 | 140 | 171 | 1,22 |
+| 3121 | Compras y contratación pública | 16 | 806 | 1.135 | 1,41 | 659 | 998 | 1,51 |
+| 1211 | Sistema eléctrico y distribución de electricidad | 29 | 949 | 1.319 | 1,39 | 791 | 1.157 | 1,46 |
+| 1131 | Conectividad e infraestructura digital | 28 | 1.138 | 1.580 | 1,39 | 907 | 1.313 | 1,45 |
+| 3112 | Administración tributaria | 16 | 511 | 699 | 1,37 | 384 | 636 | 1,66 |
+| 2131 | Agua potable y saneamiento | 28 | 842 | 1.117 | 1,33 | 775 | 879 | 1,13 |
+| 1113 | Regulación laboral | 25 | 148 | 187 | 1,26 | 136 | 146 | 1,07 |
+| 2121 | Atención primaria de salud | 32 | 419 | 523 | 1,25 | 397 | 282 | 0,71 |
+| 1221 | Resiliencia del sistema eléctrico | 37 | 139 | 166 | 1,19 | 126 | 145 | 1,15 |
+| 3122 | Eficiencia y transparencia del gasto público | 18 | 36 | 42 | 1,17 | 30 | 27 | 0,90 |
+| **Total** |  | 597 | 13.802 | 22.288 | 1,61 | 11.595 | 17.238 | 1,49 |
+
+**Honduras, por objetivo estratégico.** El manual hizo sus consultas por objetivo estratégico (8 para los 7 objetivos). Los brutos del flujo son la suma de sus consultas por eje, así que un estudio que aparece en dos ejes del mismo objetivo cuenta dos veces. En la base final del manual se usa el objetivo estratégico asignado a cada fila.
+
+| OE | Brutos manual (PDF) | Brutos flujo (suma de ejes) | Razón brutos | Final manual | Final flujo | Razón final |
+|---|---|---|---|---|---|---|
+| 1.1 | 99 | 93 | 0,94| 86 | 84 | 0,98 |
+| 1.2 | 698 | 728 | 1,04 | 441 | 490 | 1,11 |
+| 2.1 | 43 | 71 | 1,65 | 42 | 57 | 1,36 |
+| 2.2 | 285 | 87 | 0,31 | 338 | 53 | 0,16 |
+| 3.1 | 48 | 42 | 0,88 | 35 | 40 | 1,14 |
+| 3.2 | 62 | 82 | 1,32 | 54 | 63 | 1,17 |
+| 3.3 | 286 | 339 | 1,19 | 191 | 260 | 1,36 |
+| **Total** | 1.521 | 1.442 | 0,95 | 1.187 | 1.047 | 0,88 |
 
